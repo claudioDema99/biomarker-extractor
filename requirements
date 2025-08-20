@@ -1,5 +1,6 @@
 pandas
 #torch
 transformers
+accelerate
 rapidfuzz
 # Prova prima RapidFuzz (moderno), altrimenti fuzzywuzzy (legacy)
