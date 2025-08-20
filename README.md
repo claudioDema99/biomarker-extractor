@@ -1,8 +1,8 @@
 # Biomarker Extractor
 
-(se non hai venv:
-crea e attiva venv (altrimenti attiva soltanto)
-    python3 -m venv venv
+(se non hai venv:  
+crea e attiva venv (altrimenti attiva soltanto)  
+    python3 -m venv venv  
     source venv/bin/activate)
 
 setup:
