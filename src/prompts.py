@@ -1,0 +1,110 @@
+databases = {
+    "Alzheimer": {
+        "name": "Alzheimer",
+        "examples": "\n   - 'MMSE: Mini-Mental State Examination'\n   - 'APOE4: Apolipoprotein E epsilon 4 allele\n   - 'Beta-amyloid (CSF): Cerebrospinal fluid levels of beta-amyloid'",
+        "shots": "1. Input record:\n   {'outcome_measurement_title': '799865704 - OG000: Number of Participants With Incident Dementia;\n799865705 - OG001: Number of Participants With Incident Dementia;\n799865726 - OG000: Progression of Cognitive Decline in Standardized Z-score Scale. Higher Z-scores Indicate Worse Performance.;','outcome_measurement_description': '799865704 - OG000: All cause dementia based on DSM-IV criteria as determined by an expert panel of clinicians using an adjudication process. A full neuropsychological battery was administered annually, or at 6 month visit if there was a diagnosis of dementia or initiation of medication for dementia by private physician, or change in Modified Mini Mental State Exam (3MSE), Clinical Dementia Rating (CDR), or Alzheimer Disease Assessment Scale (ADAS-Cog). Decline on tests scores based on an algorithm resulted in a neurological exam and brain imaging. These data were used in the adjudication process.;'}\n   Output:\n   {'analysis':'Although 'Number of Participants With Incident Dementia' is the outcome, the 3MSE, CDR, and ADAS-Cog are explicitly named as the tools whose longitudinal decline (acting as cognitive biomarkers) is the primary indicator driving the diagnostic evaluation for that outcome. They are the measurable signals of cognitive change within this protocol.','biomarkers':['3MSE: Modified Mini Mental State Exam', 'CDR: Clinical Dementia Rating', 'ADAS-Cog: Alzheimer Disease Assessment Scale']}\n\n2. Input record:\n   {'outcome_measurement_title': '798273582 - OG000: Participant's Clinical Condition or Endpoint Assessed With the ADCS-Clinical Global Impression of Change (ADCS-CGIC);\n798273583 - OG001: Participant's Clinical Condition or Endpoint Assessed With the ADCS-Clinical Global Impression of Change (ADCS-CGIC);\n798273576 - OG000: Functional Performance Assessed by the Alzheimer's Disease Cooperative Study Activities of Daily Living (ADCS-ADL) Inventory;\n798273572 - OG000: Presence of Agitation and/or Psychosis Measured by the Neuropsychiatric Inventory (NPI) Combined With an Assessment of the Clinical Significance of Behavioral Change Rated by the Study Clinician;\n798273580 - OG000: Agitation Measured by the Cohen-Mansfield Agitation Inventory (CMAI), Community Version;', 'outcome_measurement_description': '798273582 - OG000: ADCS-Clinical Global Impression of Change (ADCS-CGIC) provides a means to reliably assess global change from baseline. It provides a semi-structured format to allow clinicians to gather necessary clinical information from both the participant and informant, in order to make an overall impression of clinical change. The range of this instrument is 1 to 7 with lower numbers indicating improvement and higher numbers indicating a worsened state.;\n798273576 - OG000: Alzheimer's Disease Cooperative Study Activities of Daily Living Score (ADCS-ADL) is a structured questionnaire about activities of daily living, administered to the subject's caregiver/study partner. The range of this instrument is 0 to 78 with lower numbers indicating greater impairment.;\n798273572 - OG000: NPI quantifies behavioral changes in dementia, including depression, anxiety, psychosis, agitation, and others. This is a questionnaire administered to the subject's study partner. The range of this instrument is 0 to 120 with higher numbers indicating greater impairment. To determine whether or not psychosis or agitation is present, there is no cutoff score but is based on the clinician's judgment. In the NPI, the subject responds to 'Yes' or 'No' questions. Then it is determined how often psychosis or agitation occurs and if it is mild, moderate or severe.;\n798273580 - OG000: The Cohen-Mansfield Agitation Inventory (CMAI) is a 29-item caregiver rating questionnaire for the assessment of agitation in older persons. It includes descriptions of 29 agitated behaviors, each rated on a 7-point scale of frequency. The range of this instrument is 29 to 203 with higher numbers indicating greater impairment.;'}\n   Output:\n   {'analysis':'The record explicitly defines four clinical assessment tools (ADCS-CGIC, ADCS-ADL, NPI, CMAI) whose standardized scores serve as quantifiable biomarkers for global clinical change, functional ability, neuropsychiatric symptoms, and agitation severity in Alzheimer's disease.', 'biomarkers':['ADCS-CGIC: Alzheimer's Disease Cooperative Study Clinical Global Impression of Change','ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score','NPI: Neuropsychiatric Inventory','CMAI: Cohen-Mansfield Agitation Inventory']}\n\n3. Input record:\n   {'outcome_measurement_title': '798051339 - OG002: Change in Scan Interpretation Reliability After Application of Quantitation Software;\n798051331 - OG000: Change in Scan Interpretation Reliability After Application of Quantitation Software;\n798051332 - OG001: Change in Scan Interpretation Reliability After Application of Quantitation Software;\n798051330 - OG000: Change in Reader Accuracy After Application of Quantitation Software','outcome_measurement_description': 'Evaluate whether the use of quantitation software improves florbetapir (18F) scan interpretation by using the net reclassification index (NRI). The NRI is a prospective measure that quantifies the correctness of upward and downward reclassification or movement of predicted probabilities as a result of adding a new marker. NRI Values \\>0 indicate an improvement in scan interpretation accuracy and values \\<0 indicate a decline in scan interpretation accuracy after application of quantitation software.\n\nNRI = \\[P(up,event)-P(down,event)\\]-\\[P(up,nonevent)-P(down,nonevent)\\] Where P(up,event) = # events up/# events P(down,event) = # events down/# events P(up,nonevent) = # nonevents up/# nonevents P(down,nonevent) = # nonevents down/# nonevents and events: true positive case nonevents: true negative case up: scan change from negative to positive down: scan change from positive to negative\nOnly the 46 scans with autopsy from A16 are used for this outcome measure.'}\n   Output:\n   {'analysis':'The outcome explicitly references florbetapir (18F) PET scans, a validated imaging biomarker targeting amyloid-beta plaques. This is the core biological signal being measured. The Net Reclassification Index (NRI) quantifies improvement in diagnostic accuracy when quantitation software is applied to the scans. Autopsy data from 46 subjects provides neuropathological confirmation. This anchors NRI not as an abstract statistic, but as a performance biomarker certifying real-world diagnostic utility. FDA biomarker qualification guidelines recognize tools that enhance interpretation reliability (e.g., software outputs) as companion biomarkers. NRI fits this role by qualifying the clinical validity of the quantitated Florbetapir-PET read.', 'biomarkers':['Florbetapir (18F): tracer used in scans to assess interpretation reliability', 'NRI: Net Reclassification Index']}\n\n4. Input record:\n   {'outcome_measurement_title': '797471211 - OG000: The Neuropsychiatric Inventory Questionnaire (NPI-Q);\n797471205 - OG000: The Clinical Dementia Rating Scale - Sum of Boxes (CDR-SOB);\n797471208 - OG001: The Alzheimer's Disease Cooperative Study - Activities of Daily Living (ADCS-ADL23);\n797471209 - OG000: The Alzheimer's Disease Cooperative Study - Clinical Global Impression of Change (ADCS-CGIC);\n797471204 - OG001: Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADASCog/11);\n797471201 - OG000: The Mini-Mental State Examination (MMSE);', 'outcome_measurement_description': '797471211 - OG000: Change on the NPI-Q. The NPI-Q comprises 12 domains: delusions, hallucinations, dysphoria, apathy, euphoria, disinhibition, aggressivity and restlessness, irritability, anxiety aberrant motor behavior, appetite and eating disorders, and nocturnal behavior. The severity of the reported symptoms is assessed on a 3-point scale. The total severity score can range from 0 to 36 with higher scores representing worse severity.;\n797471205 - OG000: Changes in the CDR-SOB. The CDR characterizes functioning in 6 domains: memory, orientation, judgment and problem solving, community affairs, home and hobbies and personal care. The score is obtained by summing each of the domain box scores. Scores range from 0 to 18 with higher scores reflecting worse cognition.;\n797471208 - OG001: Changes in the ADCS-ADL23. The ADCS-ADL23 assesses basic and instrumental activities of daily living covering physical and mental functioning and independence in self-care. The score ranges from 0 to 78 with higher scores indicating less functional impairment.;\n797471209 - OG000: The ADCS-CGIC focuses on clinicians' observations of change in the subject's cognitive, functional, and behavioral performance since the beginning of a trial. The ADCS-CGIC is a 7-point scale with lower values (\\<4) representing an improvement, higher values (\\>4) representing a worsening, and a value of 4 indicating no change.;\n797471204 - OG001: Changes in scores on the 11-item ADASCog/11. The ADAS-Cog/11 includes 11 items assessing cognitive function. The domains include memory, language, praxis, and orientation. There are 70 possible points. Higher scores reflect greater cognitive impairment.;\n797471201 - OG000: Changes in scores on the MMSE. The MMSE consists of 5 components: orientation to time and place, registration of 3 words, attention and calculation, recall of 3 words, and language. The scores from the 5 components are summed to obtain the overall MMSE total score. The MMSE total score can range from 0 to 30, with higher scores indicating better cognition.;'}\n   Output:\n   {'analysis':'The outcome titles and descriptions directly name established, validated clinical assessment tools: NPI-Q, CDR-SOB, ADCS-ADL23, ADCS-CGIC, ADAS-Cog/11, and MMSE. These are the core measures being used to track disease progression. Each instrument provides a standardized quantitative measure of a key clinical domain in Alzheimer's disease. Each tool provides a defined scoring range (e.g., NPI-Q: 0-36, CDR-SOB: 0-18, MMSE: 0-30) with explicit interpretation (higher/lower scores = worse/better function). These scores are the actionable numeric biomarker values used in trial analysis. While distinct from molecular biomarkers (e.g., amyloid PET), these instruments are foundational clinical biomarkers in AD trials. They provide the quantitative, domain-specific measures mandated by regulators to track disease-modifying effects and are universally accepted as primary/secondary endpoints reflecting clinically relevant progression.', 'biomarkers':['NPI-Q: Neuropsychiatric Inventory Questionnaire', 'CDR-SOB: Clinical Dementia Rating Scale Sum of Boxes', 'ADCS-ADL23: Alzheimer's Disease Cooperative Study Activities of Daily Living', 'ADCS-CGIC: The Alzheimer's Disease Cooperative Study Clinical Global Impression of Change', 'ADASCog/11: Alzheimer's Disease Assessment Scale-Cognitive Subscale', 'MMSE: Mini-Mental State Examination']}"
+    },
+    "Bipolar": {
+        "name": "system prompt for bipolar",
+        "examples": "user prompt for bipolar",
+        "shots": ""
+    },
+    "BPD": {
+        "name": "system prompt for BPD",
+        "examples": "user prompt for BPD",
+        "shots": ""
+    },
+    "CN": {
+        "name": "system prompt for CNV",
+        "examples": "user prompt for CNV",
+        "shots": ""
+    },
+    "Depression": {
+        "name": "system prompt for depression",
+        "examples": "user prompt for depression",
+        "shots": ""
+    },
+    "Dermatitis": {
+        "name": "system prompt for dermatitis",
+        "examples": "user prompt for dermatitis",
+        "shots": ""
+    },
+    "Diabete": {
+        "name": "system prompt for diabetes",
+        "examples": "user prompt for diabetes",
+        "shots": ""
+    },
+    "HT": {
+        "name": "system prompt for hypertension",
+        "examples": "user prompt for hypertension",
+        "shots": ""
+    },
+    "Hypertension": {
+        "name": "system prompt for hypertension",
+        "examples": "user prompt for hypertension",
+        "shots": ""
+    },
+    "KT": {
+        "name": "system prompt for kidney transplant",
+        "examples": "user prompt for kidney transplant",
+        "shots": ""
+    },
+    "LT": {
+        "name": "system prompt for liver transplant",
+        "examples": "user prompt for liver transplant",
+        "shots": ""
+    },
+    "MS": {
+        "name": "system prompt for multiple sclerosis",
+        "examples": "user prompt for multiple sclerosis",
+        "shots": ""
+    },
+    "Partial_Seizure": {
+        "name": "system prompt for partial seizure",
+        "examples": "user prompt for partial seizure",
+        "shots": ""
+    },
+    "PS00": {
+        "name": "system prompt for PS00",
+        "examples": "user prompt for PS00",
+        "shots": ""
+    },
+    "PSO01": {
+        "name": "system prompt for PSO01",
+        "examples": "user prompt for PSO01",
+        "shots": ""
+    },
+    "PSO02": {
+        "name": "system prompt for PSO02",
+        "examples": "user prompt for PSO02",
+        "shots": ""
+    },
+    "Schizophrenia": {
+        "name": "system prompt for schizophrenia",
+        "examples": "user prompt for schizophrenia",
+        "shots": ""
+    },
+    "Sclerosis": {
+        "name": "system prompt for sclerosis",
+        "examples": "user prompt for sclerosis",
+        "shots": ""
+    }
+}
+
+databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
+
+def get_prompt(dataset_type: str):
+    """
+    Restituisce il prompt di sistema e utente per il dataset specificato.
+    
+    Args:
+        dataset_type (str): Tipo di dataset (es. "Alzheimer", "Bipolar", etc.)
+        
+    Returns:
+        Tuple[str, str]: Prompt di sistema e utente
+    """
+    if dataset_type in databases:
+        return databases[dataset_type]["name"], databases[dataset_type]["examples"], databases[dataset_type]["shots"]
+    else:
+        raise ValueError(f"Dataset {dataset_type} non supportato.")
+
