@@ -1,0 +1,12 @@
+pandas
+json
+collections
+re
+torch
+transformers
+typing
+ast
+difflib
+rapidfuzz
+# Prova prima RapidFuzz (moderno), altrimenti fuzzywuzzy (legacy)
+ 
