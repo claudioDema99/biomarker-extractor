@@ -1,0 +1,177 @@
+['outcome_measurement_title', 'outcome_measurement_description']
+
+Riga 324:
+  outcome_measurement_title: 897830603 - OG000: Relationship Between ADA Status and Serum Concentration of RO7105705 at Specified Timepoints;
+897830604 - OG001: Relationship Between ADA Status and Serum Concentration of RO7105705 at Specified Timepoints;
+897830597 - OG000: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830598 - OG001: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830594 - OG001: Relationship Between ADA Status and Percentage of Participants With Adverse Events;
+897830593 - OG000: Relationship Between ADA Status and Percentage of Participants With Adverse Events;
+897830599 - OG000: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830600 - OG001: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830549 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830550 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830551 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830552 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830553 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830554 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+897830567 - OG000: Percentage of Participants With Adverse Events;
+897830568 - OG001: Percentage of Participants With Adverse Events;
+897830569 - OG002: Percentage of Participants With Adverse Events;
+897830555 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830556 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830557 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830558 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830559 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830560 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+897830543 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830544 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830545 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830546 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830547 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830548 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830561 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830562 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830563 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830564 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830565 - OG000: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830566 - OG001: Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830605 - OG000: Relationship Between ADA Status and Incidence of Anti-Drug Antibodies (ADAs) During the Study Relative to the Prevalence of ADAs at Baseline;
+897830606 - OG001: Relationship Between ADA Status and Incidence of Anti-Drug Antibodies (ADAs) During the Study Relative to the Prevalence of ADAs at Baseline;
+897830607 - OG000: Relationship Between ADA Status and Incidence of Anti-Drug Antibodies (ADAs) During the Study Relative to the Prevalence of ADAs at Baseline;
+897830608 - OG001: Relationship Between ADA Status and Incidence of Anti-Drug Antibodies (ADAs) During the Study Relative to the Prevalence of ADAs at Baseline;
+897830601 - OG000: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830602 - OG001: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+897830595 - OG000: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+897830596 - OG001: Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11)
+  outcome_measurement_description: 897830603 - OG000: Descriptive statistics will be used for assessment.;
+897830604 - OG001: Descriptive statistics will be used for assessment.;
+897830597 - OG000: Descriptive statistics will be used for assessment.
+
+A scale used to quantify performance of activities of daily living. Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830598 - OG001: Descriptive statistics will be used for assessment.
+
+A scale used to quantify performance of activities of daily living. Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830594 - OG001: Descriptive statistics will be used for assessment.;
+897830593 - OG000: Descriptive statistics will be used for assessment.;
+897830599 - OG000: Descriptive statistics will be used for assessment.
+
+A scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SOB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830600 - OG001: Descriptive statistics will be used for assessment.
+
+A scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SOB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830549 - OG000: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830550 - OG001: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830551 - OG000: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830552 - OG001: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830553 - OG000: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830554 - OG001: The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+897830567 - OG000: An Adverse Event is any untoward medical occurrence in a subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.;
+897830568 - OG001: An Adverse Event is any untoward medical occurrence in a subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.;
+897830569 - OG002: An Adverse Event is any untoward medical occurrence in a subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.;
+897830555 - OG000: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830556 - OG001: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830557 - OG000: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830558 - OG001: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830559 - OG000: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830560 - OG001: The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+897830543 - OG000: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830544 - OG001: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830545 - OG000: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830546 - OG001: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830547 - OG000: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830548 - OG001: The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+897830561 - OG000: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830562 - OG001: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830563 - OG000: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830564 - OG001: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830565 - OG000: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830566 - OG001: The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830605 - OG000: Descriptive statistics will be used for assessment.;
+897830606 - OG001: Descriptive statistics will be used for assessment.;
+897830607 - OG000: Descriptive statistics will be used for assessment.;
+897830608 - OG001: Descriptive statistics will be used for assessment.;
+897830601 - OG000: Descriptive statistics will be used for assessment.
+
+The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830602 - OG001: Descriptive statistics will be used for assessment.
+
+The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+897830595 - OG000: Descriptive statistics will be used for assessment.
+
+A 70-point scale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. Lower scores indicate better cognitive function.;
+897830596 - OG001: Descriptive statistics will be used for assessment.
+
+A 70-point scale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. Lower scores indicate better cognitive function.
+
+___________________________________________________
+['outcome_measurement_title', 'outcome_measurement_description']
+
+Riga 0:
+  outcome_measurement_title: Relationship Between ADA Status and Serum Concentration of RO7105705 at Specified Timepoints;
+Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+Relationship Between ADA Status and Percentage of Participants With Adverse Events;
+Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+Change From Baseline to Last Visit of Double-Blind Treatment Period in Functional Capacities as Measured by the Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL);
+Percentage of Participants With Adverse Events;
+Change From Baseline to Last Visit of Double-Blind Treatment Period on the Clinical Dementia Rating-Sum of Boxes (CDR-SB);
+Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+Relationship Between ADA Status and Incidence of Anti-Drug Antibodies (ADAs) During the Study Relative to the Prevalence of ADAs at Baseline;
+Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period on the Mini-Mental State Examination (MMSE);
+Relationship Between ADA Status and Change From Baseline to Last Visit of Double-Blind Treatment Period in Cognitive Function as Measured by the Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11);
+  outcome_measurement_description: Descriptive statistics will be used for assessment.;
+A scale used to quantify performance of activities of daily living. Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+A scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SOB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+The Alzheimer's Disease Cooperative Study-Daily Living Inventory (ADCS-ADL) is a scale used to quantify performance of activities of daily living (ADL). Scores on the ADCS-ADL range from 0-78, with higher scores indicating better ADL function.;
+An Adverse Event is any untoward medical occurrence in a subject administered a pharmaceutical product and which does not necessarily have to have a causal relationship with the treatment. An adverse event can therefore be any unfavorable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a pharmaceutical product, whether or not considered related to the pharmaceutical product. Preexisting conditions which worsen during a study are also considered as adverse events.;
+The Clinical Dementia Rating-Sum of Boxes (CDR-SB) is a scale used to quantify the severity of symptoms of dementia. The CDR-SB is obtained through interviews of patients and informants, and disease severity is rated in 6 domains of functioning: memory, orientation, judgment and problem solving, community affairs, home and hobbies, and personal care. Each domain is rated on a 5-point scale of functioning as follows: 0, no impairment; 0.5, questionable impairment; 1, mild impairment; 2, moderate impairment; and 3, severe impairment (personal care is scored on a 4-point scale without a 0.5 rating available). The CDR-SB score is obtained by summing each of the domain box scores, with scores ranging from 0 to 18, with the higher values representing more severe impairment.;
+The Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version (ADAS-Cog11) is an 11 item cognitive subscale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. The total score ranges from 0-70 with lower scores indicating better cognitive function.;
+The Mini Mental State Examination (MMSE) is a brief clinical cognitive examination commonly used to screen for dementia and other cognitive deficits that has a total score of 0-30. Higher scores indicate better cognitive function.;
+A 70-point scale used to quantify the areas of cognitive function most often affected in Alzheimer's disease. Lower scores indicate better cognitive function.;
+
+___________________________________________________
+['outcome_measurement_title', 'outcome_measurement_description']
+
+Riga 185:
+  outcome_measurement_title: 896372327 - OG000: Whole Brain Volume;
+896372328 - OG001: Whole Brain Volume;
+896372329 - OG000: Whole Brain Volume;
+896372330 - OG001: Whole Brain Volume;
+896372323 - OG000: Amyloid Burden;
+896372324 - OG001: Amyloid Burden;
+896372325 - OG000: Amyloid Burden;
+896372326 - OG001: Amyloid Burden;
+896372331 - OG000: Executive Function;
+896372332 - OG001: Executive Function;
+896372333 - OG000: Executive Function;
+896372334 - OG001: Executive Function;
+896372335 - OG000: Executive Function;
+896372336 - OG001: Executive Function
+  outcome_measurement_description: 896372327 - OG000: Whole brain volume in mL define by Freesurfer analysis. Higher numbers indicate greater brain volume. There is no defined maximum. Zero is the theoretical minimum.;
+896372328 - OG001: Whole brain volume in mL define by Freesurfer analysis. Higher numbers indicate greater brain volume. There is no defined maximum. Zero is the theoretical minimum.;
+896372329 - OG000: Whole brain volume in mL define by Freesurfer analysis. Higher numbers indicate greater brain volume. There is no defined maximum. Zero is the theoretical minimum.;
+896372330 - OG001: Whole brain volume in mL define by Freesurfer analysis. Higher numbers indicate greater brain volume. There is no defined maximum. Zero is the theoretical minimum.;
+896372323 - OG000: Amyloid burden measure is mean Florbetapir cortical-to-cerebellar uptake ratio averaged across 6 regions of interest (frontal, temporal, parietal, anterior cingulate, posterior cingulate, and precuneus). Higher numbers mean more amyloid accumulation. There is no defined maximum value. Zero is the theoretical minimum value.;
+896372324 - OG001: Amyloid burden measure is mean Florbetapir cortical-to-cerebellar uptake ratio averaged across 6 regions of interest (frontal, temporal, parietal, anterior cingulate, posterior cingulate, and precuneus). Higher numbers mean more amyloid accumulation. There is no defined maximum value. Zero is the theoretical minimum value.;
+896372325 - OG000: Amyloid burden measure is mean Florbetapir cortical-to-cerebellar uptake ratio averaged across 6 regions of interest (frontal, temporal, parietal, anterior cingulate, posterior cingulate, and precuneus). Higher numbers mean more amyloid accumulation. There is no defined maximum value. Zero is the theoretical minimum value.;
+896372326 - OG001: Amyloid burden measure is mean Florbetapir cortical-to-cerebellar uptake ratio averaged across 6 regions of interest (frontal, temporal, parietal, anterior cingulate, posterior cingulate, and precuneus). Higher numbers mean more amyloid accumulation. There is no defined maximum value. Zero is the theoretical minimum value.;
+896372331 - OG000: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+896372332 - OG001: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+896372333 - OG000: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+896372334 - OG001: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+896372335 - OG000: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+896372336 - OG001: Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.
+
+___________________________________________________
+['outcome_measurement_title', 'outcome_measurement_description']
+
+Riga 0:
+  outcome_measurement_title: Whole Brain Volume;
+Amyloid Burden;
+Executive Function;
+  outcome_measurement_description: Whole brain volume in mL define by Freesurfer analysis. Higher numbers indicate greater brain volume. There is no defined maximum. Zero is the theoretical minimum.;
+Amyloid burden measure is mean Florbetapir cortical-to-cerebellar uptake ratio averaged across 6 regions of interest (frontal, temporal, parietal, anterior cingulate, posterior cingulate, and precuneus). Higher numbers mean more amyloid accumulation. There is no defined maximum value. Zero is the theoretical minimum value.;
+Executive Function ability to be measured using confirmatory factor analysis (CFA). CFA aggregates scores from across multiple subtests. Values are standard deviations centered on a pooled baseline (all participant scores at baseline). Higher values mean improvement over baseline testing. Lower scores (including negative) mean worse performance after baseline testing. There is no minimum or maximum score.;
+
+___________________________________________________

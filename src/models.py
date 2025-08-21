@@ -57,7 +57,8 @@ MANDATORY OUTPUT RULES (must be followed exactly):
    {{"analysis": "<4-5 concise sentences>", "biomarkers": [list of biomarker with required syntax]}}
 2. "analysis" must be a single string of 4–5 sentences that reference the evidence in the records.
 3. "biomarkers" must be a JSON array. Each element in the array MUST follow this exact syntax:
-   "ACRONYM/NAME: expanded form of the acronym (or a brief description of the biomarker if not acronym)"
+   "ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
+   **CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
    Examples:{examples}
 4. Collapse duplicates (each biomarker appears once).
 5. If you cannot follow these rules, output exactly:

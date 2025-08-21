@@ -5,97 +5,136 @@ from src.models import call_model, get_token_count
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:
     """
-    Rimuove righe duplicate o quasi-duplicate all'interno di una cella.
+    Rimuove righe duplicate all'interno di una cella dopo aver rimosso 
+    i prefissi numerici e le sigle OG###.
     
-    Considera duplicate:
-    - Righe completamente identiche
-    - Righe identiche eccetto per un numero iniziale seguito da " - "
+    Pattern da rimuovere: "numero - OG###: " all'inizio di ogni riga
+    Esempio: "898604142 - OG000: Treatment Engagement" -> "Treatment Engagement"
+    
+    Ignora il ";" finale quando confronta le righe per duplicati.
     
     Args:
         cell_content (str): Il contenuto della cella da processare
         
     Returns:
-        str: Il contenuto della cella con le righe duplicate rimosse
+        str: Il contenuto della cella con prefissi rimossi e righe duplicate eliminate
     """
     if pd.isna(cell_content) or not isinstance(cell_content, str):
         return cell_content
     
     lines = cell_content.strip().split('\n')
     if len(lines) <= 1:
+        # Anche per una singola riga, rimuovi il prefisso se presente
+        if len(lines) == 1:
+            cleaned_line = _remove_prefix_from_line(lines[0])
+            return cleaned_line if cleaned_line.strip() else cell_content
         return cell_content
     
-    # Dizionario per raggruppare righe simili
-    # Chiave: riga normalizzata (senza numero iniziale)
-    # Valore: riga originale da mantenere
-    normalized_lines = {}
-    
-    for line in lines:
-        line = line.strip()
-        if not line:  # Mantieni righe vuote
-            if "" not in normalized_lines:
-                normalized_lines[""] = line
-            continue
-        
-        # Pattern per numero iniziale seguito da " - "
-        # Cerca numero di una o più cifre all'inizio, seguito da " - "
-        match = re.match(r'^\d+\s*-\s*(.+)$', line)
-        
-        if match:
-            # Riga con pattern "numero - testo"
-            normalized_key = match.group(1).strip()
-        else:
-            # Riga normale senza pattern
-            normalized_key = line
-        
-        # Mantieni solo la prima occorrenza di ogni riga normalizzata
-        if normalized_key not in normalized_lines:
-            normalized_lines[normalized_key] = line
-    
-    # Ricostruisci il contenuto mantenendo l'ordine originale
+    # Set per tenere traccia delle righe già viste (dopo pulizia e normalizzazione)
+    seen_normalized_lines = set()
     result_lines = []
-    seen_normalized = set()
     
     for line in lines:
         line = line.strip()
         
+        # Salta righe vuote
         if not line:
-            if "" not in seen_normalized:
-                result_lines.append(line)
-                seen_normalized.add("")
             continue
         
-        # Determina la chiave normalizzata
-        match = re.match(r'^\d+\s*-\s*(.+)$', line)
-        normalized_key = match.group(1).strip() if match else line
+        # Rimuovi il prefisso "numero - OG###: " dalla riga
+        cleaned_line = _remove_prefix_from_line(line)
         
-        # Aggiungi solo se non già visto
-        if normalized_key not in seen_normalized:
-            result_lines.append(line)
-            seen_normalized.add(normalized_key)
+        # Se la riga pulita è vuota, salta
+        if not cleaned_line.strip():
+            continue
+        
+        # Normalizza la riga per il confronto: rimuovi ";" finale se presente
+        normalized_line = _normalize_line_for_comparison(cleaned_line)
+        
+        # Aggiungi solo se non già vista (confronto normalizzato)
+        if normalized_line not in seen_normalized_lines:
+            seen_normalized_lines.add(normalized_line)
+            result_lines.append(cleaned_line)  # Mantieni la riga originale pulita
     
     return '\n'.join(result_lines)
 
-def process_batch_for_deduplication(batch_df: pd.DataFrame) -> List[Dict[str, Any]]:
+def _normalize_line_for_comparison(line: str) -> str:
     """
-    Processa un batch di righe del DataFrame rimuovendo le righe duplicate nelle colonne specificate.
+    Normalizza una riga per il confronto di duplicati rimuovendo il ";" finale.
+    
+    Questo permette di considerare uguali righe che differiscono solo per 
+    la presenza/assenza del punto e virgola finale.
+    
+    Args:
+        line (str): La riga da normalizzare
+        
+    Returns:
+        str: La riga normalizzata (senza ";" finale)
+    """
+    line = line.strip()
+    
+    # Rimuovi ";" finale se presente
+    if line.endswith(';'):
+        return line[:-1].strip()
+    
+    return line
+
+def _remove_prefix_from_line(line: str) -> str:
+    """
+    Rimuove il prefisso "numero - OG###: " da una singola riga.
+    
+    Pattern: numeri seguiti da " - OG" + numeri + ": "
+    Esempi:
+    - "898604142 - OG000: Treatment Engagement" -> "Treatment Engagement"
+    - "898604143 - OG001: Treatment Engagement" -> "Treatment Engagement"
+    
+    Args:
+        line (str): La riga da cui rimuovere il prefisso
+        
+    Returns:
+        str: La riga senza prefisso
+    """
+    line = line.strip()
+    
+    # Pattern per catturare: numero - OG + numeri + : + contenuto
+    # Gruppo 1: cattura tutto dopo "OG###: "
+    pattern = r'^\d+\s*-\s*OG\d+\s*:\s*(.+)$'
+    match = re.match(pattern, line)
+    
+    if match:
+        return match.group(1).strip()
+    else:
+        # Se il pattern non corrisponde, restituisci la riga originale
+        return line
+
+def process_batch_for_deduplication(batch_df: pd.DataFrame, 
+                                  columns_to_process: List[str] = None) -> List[Dict[str, Any]]:
+    """
+    Processa un batch di righe del DataFrame rimuovendo i prefissi e le righe duplicate 
+    nelle colonne specificate.
     
     Args:
         batch_df (pd.DataFrame): Il batch di righe da processare
-        columns_to_process (List[str]): Lista delle colonne da processare per la deduplicazione
+        columns_to_process (List[str], optional): Lista delle colonne da processare. 
+                                                Se None, processa tutte le colonne.
         
     Returns:
-        List[Dict[str, Any]]: Lista di record con contenuti deduplicati
+        List[Dict[str, Any]]: Lista di record con contenuti puliti e deduplicati
     """
     # Crea una copia del batch per non modificare l'originale
     processed_batch = batch_df.copy()
     
-    # Applica la deduplicazione solo alle colonne specificate
-    for col in processed_batch.columns:
-        processed_batch[col] = processed_batch[col].apply(remove_duplicate_lines_in_cell)
+    # Se non specificate, processa tutte le colonne
+    if columns_to_process is None:
+        columns_to_process = processed_batch.columns.tolist()
+    
+    # Applica la pulizia e deduplicazione solo alle colonne specificate
+    for col in columns_to_process:
+        if col in processed_batch.columns:
+            processed_batch[col] = processed_batch[col].apply(remove_duplicate_lines_in_cell)
     
     # Converti in dizionario di record
     return processed_batch.to_dict(orient="records")
-
 
 def tokens_of(df_slice):
     """Restituisce (token_count, records_json) per un blocco di righe."""

@@ -1,0 +1,105 @@
+['outcome_measurement_title', 'outcome_measurement_description']
+
+Riga 9:
+  outcome_measurement_title: 898604142 - OG000: Treatment Engagement;
+898604143 - OG001: Treatment Engagement;
+898604147 - OG001: Number of Days Engaged;
+898604146 - OG000: Number of Days Engaged
+  outcome_measurement_description: 898604142 - OG000: Number of inpatient and outpatient treatment sessions attended during the 8-week treatment period;
+898604143 - OG001: Number of inpatient and outpatient treatment sessions attended during the 8-week treatment period;
+898604147 - OG001: Number of days veteran was involved with the program, from initial consent to last day of contact;
+898604146 - OG000: Number of days veteran was involved with the program, from initial consent to last day of contact
+
+___________________________________________________
+Riga 253:
+  outcome_measurement_title: 902231738 - OG000: Average Proportion of Study Days With At Least 50% Completion of Daily Self-Reports Questions;
+902231739 - OG001: Average Proportion of Study Days With At Least 50% Completion of Daily Self-Reports Questions;
+902231737 - OG000: Proportion of Participants Who Report They Are More Likely to Use a Smart-phone App Over an Activity Tracker to Monitor Their Symptoms;
+902231744 - OG000: Average Change From Baseline in Severity of Manic Symptoms, as Measured With the Young Mania Rating Scale;
+902231745 - OG001: Average Change From Baseline in Severity of Manic Symptoms, as Measured With the Young Mania Rating Scale;
+902231746 - OG000: Average Change From Baseline in Severity of Depressive Symptoms, as Measured With the 17-item Structured Interview Guide for the Hamilton Rating Scale for Depression;
+902231747 - OG001: Average Change From Baseline in Severity of Depressive Symptoms, as Measured With the 17-item Structured Interview Guide for the Hamilton Rating Scale for Depression;
+902231740 - OG000: Average Proportion of Study Days With At Least 12 Hours of Activity Tracking;
+902231741 - OG001: Average Proportion of Study Days With At Least 12 Hours of Activity Tracking;
+902231742 - OG000: Proportion of Participants Who Have Higher Adherence Rates for Self-reporting Symptoms Than Adherence Rates for Activity Tracking;
+902231743 - OG001: Proportion of Participants Who Have Higher Adherence Rates for Self-reporting Symptoms Than Adherence Rates for Activity Tracking
+  outcome_measurement_description: 902231738 - OG000: For each individual, adherence rate for self-reporting symptoms is measured/defined as the proportion of study days with at least 50% completion of of daily self-reports questions (i.e. 6 questions completed out of a total of 12).
+
+This measure is the average adherence rate for individuals in each of the two intervention arms: individuals who review their data with an interviewer ('Weekly review' arm) vs those who do not review their data with an interviewer ('No weekly review' arm).;
+902231739 - OG001: For each individual, adherence rate for self-reporting symptoms is measured/defined as the proportion of study days with at least 50% completion of of daily self-reports questions (i.e. 6 questions completed out of a total of 12).
+902231737 - OG000: Likelihood of using app over activity tracker is measured using a survey designed specifically for this study to evaluate participant engagement in monitoring symptoms. The relevant question asks 'Which are you more likely to use to monitor your symptoms' and has two mutually-exclusive options for an answer: 'An activity tracker' or 'A smart-phone app'. Engagement survey is conducted over the phone by an interviewer.;
+902231744 - OG000: The Young Mania Rating Scale consists of clinician-rated 11 items to evaluate symptoms of mania, such as elevated mood, energy, and irritability. Item scores are added together to get a total score, ranging from 0 to 60. A higher score indicates more severe manic symptoms.;
+902231745 - OG001: The Young Mania Rating Scale consists of clinician-rated 11 items to evaluate symptoms of mania, such as elevated mood, energy, and irritability. Item scores are added together to get a total score, ranging from 0 to 60. A higher score indicates more severe manic symptoms.;
+902231746 - OG000: The 17-Item Structured Interview Guide for the Hamilton Rating Scale for Depression consists of 17 clinician-rated items to evaluate symptoms of depression, such as guilt, fatigue, and depressed mood. Item scores are summed to get a total score, ranging from 0 to 52. Higher scores indicate more severe symptoms.;
+902231747 - OG001: The 17-Item Structured Interview Guide for the Hamilton Rating Scale for Depression consists of 17 clinician-rated items to evaluate symptoms of depression, such as guilt, fatigue, and depressed mood. Item scores are summed to get a total score, ranging from 0 to 52. Higher scores indicate more severe symptoms.;
+902231740 - OG000: For each individual, adherence rate for activity tracking is measured as the proportion of study days with at least 12 hours of activity tracking.
+This measure is the average adherence rates among individuals in either arm: individuals who review their data weekly with an interviewer ('Weekly review' arm) compared to individuals who do not review their data weekly with an interviewer ('No weekly review' arm);
+902231741 - OG001: For each individual, adherence rate for activity tracking is measured as the proportion of study days with at least 12 hours of activity tracking.
+902231742 - OG000: For each individual, adherence rate for activity tracking is measured as the proportion of study days with at least 12 hours of activity tracking, whereas adherence rate for self-reporting symptoms is measured as the proportion of study days with at least 50% of daily self-reports survey questions completed.;
+902231743 - OG001: For each individual, adherence rate for activity tracking is measured as the proportion of study days with at least 12 hours of activity tracking, whereas adherence rate for self-reporting symptoms is measured as the proportion of study days with at least 50% of daily self-reports survey questions completed.
+
+___________________________________________________
+Riga 157:
+  outcome_measurement_title: 899425866 - OG003: Time From Randomization to Relapse Due to Psychiatric Hospitalization for Bipolar Disorder;
+899425863 - OG000: Time From Randomization to Relapse Due to Psychiatric Hospitalization for Bipolar Disorder;
+899425843 - OG000: Time From Randomization to Relapse Due to Depression;
+899425867 - OG000: Time From Randomization to Relapse Due to Electroconvulsive Therapy (ECT) Administration;
+899425880 - OG001: Quality of Life, Enjoyment and Satisfaction Questionnaire Short Form (Q-LES-Q-SF) Total Score;
+899425858 - OG003: Time From Randomization to Relapse Due to Mania/Hypomania;
+899425847 - OG000: Time From Randomization to Relapse Due to Mania/Hypomania or Mixed Episode;
+899425873 - OG002: Time From Randomization to Relapse Due to Psychotropic Medication Change Prescribed for the Treatment of Depression, Mania/Hypomania or Mixed Episodes;
+899425851 - OG000: Time From Randomization to Relapse Due to Depression From PI Judgement and/or MADRS ≥16;
+899425839 - OG000: Time From Randomization to Any Relapse;
+899425859 - OG000: Time From Randomization to Relapse Due to Mixed Episode;
+899425875 - OG000: Time From Randomization to Study Withdrawal for Any Reason;
+  outcome_measurement_description: 899425866 - OG003: The time from randomization to relapse event during the 12 months double-blind treatment period due to psychiatric hospitalization for bipolar disorder.;
+899425863 - OG000: The time from randomization to relapse event during the 12 months double-blind treatment period due to psychiatric hospitalization for bipolar disorder.;
+899425843 - OG000: Relapse due to depression determined by any of the following criteria during the 12-month double-blind treatment period: PI judgment, MADRS ≥16, psychiatry hospitalization, ECT or any psychotropic medication change prescribed for the treatment of depressive episodes.;
+899425867 - OG000: The time from randomization to relapse event during the 12 month double-blind treatment period due to ECT.;
+899425894 - OG003: Q-LES-Q-SF is a self-administered 16-item questionnaire to assess the degree of enjoyment and satisfaction experienced by patients in various areas of daily functioning. It includes 30 items across five subscales (daily activities, clothing, diet/food habits, relationship, psychological well-being and distress), scored on a 6-point Likert scale with subscale and total score ranging from 0 (none) to 5 (all the time). For reporting purposes, the scores are reversed and higher scores reflect improved quality of life and positive changes relative to baseline indicate improved quality of life.;
+899425858 - OG003: Relapse due to mania/hypomania is determined by the primary investigator (PI) judgement and/or a YMRS total score ≥16. YMRS is a 11 item scale with four items scale to assess manic symptoms, rated on a scale from 0 (symptom not present) to 8 (symptom extremely severe), with 7 items rated on a scale from 0 (symptom not present) to 4 (symptom extremely severe) with higher scores reflecting greater levels of mania. The YMRS total score is calculated as the sum of the 11 individual item scores and ranges from 0-60.;
+899425847 - OG000: Relapse due to mania/hypomania or mixed episode is determined by any of the following criteria: PI judgment, mania/hypomania \[YMRS ≥16\], mixed episode \[MADRS ≥16 and YMRS ≥16\], psychiatry hospitalization, ECT or any psychotropic medication change prescribed for the treatment of mania/hypomania or mixed episodes.;
+899425873 - OG002: The time from randomization to relapse event during the 12 month double-blind treatment period due to any psychotropic medication change prescribed for the treatment of depression, mania/hypomania or mixed episode(s).;
+899425851 - OG000: The time from randomization to relapse event during the 12 month double-blind treatment period due to depression, determined by the PI judgement and/or a MADRS score ≥16. MADRS is a 10-item clinician rated scale to measure overall severity of depressive symptoms (i.e., apparent sadness, reported sadness, inner tension, etc.) rated on a 7-point Likert scale from 0 (normal) to 6 (most abnormal) with a total score range from 0 to 60. Higher scores indicate greater severity of symptoms.;
+899425839 - OG000: The time from randomization to relapse over 12 months double-blind treatment period as determined by the Principal Investigator (PI) or defined by any of the following criteria: depression \[Montgomery-Åsberg Depression Rating Scale (MADRS) score ≥16\]; mania/hypomania \[Young Mania Rating Scale (YMRS) total score ≥14\]; mixed episode \[MADRS score ≥16 and YMRS total score ≥16\]; or, whether participant receives psychiatric hospitalization for bipolar disorder, electroconvulsive therapy (ECT) or any psychotropic medication change prescribed for the treatment of depression, mania/hypomania or mixed episodes.;
+899425862 - OG003: Relapse due to Mixed episode is determined by PI judgement and/or MADRS score ≥16 and YMRS total score ≥16. MADRS is a 10-item scale that measures overall severity of depressive symptoms rated on a 7-point Likert scale from 0 (normal) to 6 (most abnormal) with a total score range from 0 to 60. YMRS is a four item scale to assess manic symptoms, rated on a scale from 0 (symptom not present) to 8 (symptom extremely severe), with 7 items rated on a scale from 0 (symptom not present) to 4 (symptom extremely severe). The YMRS total score is calculated as the sum of the 11 individual item scores and ranges from 0-60.;
+899425875 - OG000: The time from randomization to study withdrawal during the 12 month double-blind treatment period. Withdrawal includes pretreatment event/adverse event; liver function test abnormalities; major protocol deviation; lost to follow-up; voluntary withdrawal; study termination; pregnancy; lack of efficacy; participant has a depressive, mania/hypomania or mixed episode; is hospitalized for psychiatric reasons; receives electroconvulsive therapy for bipolar disorder; receives any psychotropic medication change prescribed for the treatment of depression, mania/hypomania or mixed episodes; or any other reason.;
+
+___________________________________________________
+Riga 209:
+  outcome_measurement_title: 898951002 - OG001: Clinical Global Impression (CGI) Severity Scores;
+898951003 - OG000: Clinical Global Impression (CGI) Severity Scores;
+898950966 - OG001: Brief Psychiatric Rating Scale (BPRS) Scores;
+898950967 - OG000: Brief Psychiatric Rating Scale (BPRS) Scores;
+898950887 - OG000: Positive and Negative Symptom Scores;
+898950888 - OG001: Positive and Negative Symptom Scores;
+898951147 - OG000: Auditory Evoked Potentials in Latency (Msec);
+898951083 - OG000: Depression Symptom Scores;
+898951084 - OG001: Depression Symptom Scores;
+898951195 - OG000: Auditory Evoked Potentials - P50 Ratio (P50 S2/S1) (Amplitude);
+898951167 - OG000: Auditory Evoked Potentials in Amplitude (Degrees Measured in Microvolts);
+898951183 - OG000: Auditory Evoked Potentials in Gamma Oscillations (the Power Spectrum is Measured in Microvolts Squared);
+898951124 - OG000: Neurocognitive Function;
+898951089 - OG000: Mania Symptom Scores;
+898951090 - OG001: Mania Symptom Scores;
+898951137 - OG000: Brain Glycine/CR Ratio;
+898950988 - OG001: Brief Psychiatric Rating Scale (BPRS) Scores
+  outcome_measurement_description: 898951002 - OG001: CGI severity scores measure severity of mental illness on a scale of 1-7 where 1 means normal, not at all ill, 2 means borderline mentally ill, 3 means mildly ill, 4 means moderately ill, 5 means markedly ill, 6 means severely ill and 7 means among the most extremely ill patients.;
+898951003 - OG000: CGI severity scores measure severity of mental illness on a scale of 1-7 where 1 means normal, not at all ill, 2 means borderline mentally ill, 3 means mildly ill, 4 means moderately ill, 5 means markedly ill, 6 means severely ill and 7 means among the most extremely ill patients.;
+898950966 - OG001: Total BPRS score measures severity of 18 psychiatric symptoms. Each symptom is scored 1-7 with the total score ranging from 18-126. 18 means no symptoms and 126 means very severe symptoms.;
+898950967 - OG000: Total BPRS score measures severity of 18 psychiatric symptoms. Each symptom is scored 1-7 with the total score ranging from 18-126. 18 means no symptoms and 126 means very severe symptoms.;
+898950887 - OG000: Positive and Negative Symptom Scale (PANSS) measures positive and negative symptoms of schizophrenia. The sum of ratings for seven positive symptoms is measured on a scale from 7-49 with 7 meaning no symptoms and 49 meaning severe symptoms.The sum of ratings for seven negative symptoms is measured on a scale from 7-49 with 7 meaning no symptoms and 49 meaning severe symptoms.;
+898950888 - OG001: Positive and Negative Symptom Scale (PANSS) measures positive and negative symptoms of schizophrenia. The sum of ratings for seven positive symptoms is measured on a scale from 7-49 with 7 meaning no symptoms and 49 meaning severe symptoms.The sum of ratings for seven negative symptoms is measured on a scale from 7-49 with 7 meaning no symptoms and 49 meaning severe symptoms.;
+898951147 - OG000: Auditory evoked potential latency: P300 at fz, cz, and pz; N100 at fz and cz; P200 at fz and cz.;
+898951083 - OG000: Hamilton Depression Scale (HAM) measures severity of depression symptoms. The sum of the ratings for 9 depression symptoms is measured on a scale of 0-2 with 0 meaning no depression symptoms and 2 meaning some level of severity of that specific symptom. The rating for one depression symptom is measured on a scale of 0-3 with 0 meaning no depression symptoms and 3 meaning a severe level of that specific symptom. The sum of ratings for 11 depression symptoms is measured on a scale of 0-4, with 0 meaning no symptoms and 4 meaning a severe level of that specific symptom. The three sums are added to produce an overall depression rating scale score ranging from 0-65. Higher scores indicate worse depression symptoms.;
+898951084 - OG001: Hamilton Depression Scale (HAM) measures severity of depression symptoms. The sum of the ratings for 9 depression symptoms is measured on a scale of 0-2 with 0 meaning no depression symptoms and 2 meaning some level of severity of that specific symptom. The rating for one depression symptom is measured on a scale of 0-3 with 0 meaning no depression symptoms and 3 meaning a severe level of that specific symptom. The sum of ratings for 11 depression symptoms is measured on a scale of 0-4, with 0 meaning no symptoms and 4 meaning a severe level of that specific symptom. The three sums are added to produce an overall depression rating scale score ranging from 0-65. Higher scores indicate worse depression symptoms.;
+898951195 - OG000: Auditory evoked potential amplitude: P50 ratio (P50 S2/S1);
+898951167 - OG000: Auditory evoked potential amplitude: P300 at fz, cz, and pz; N100 at fz and cz; P200 at fz and cz; P50 S1 and S2; mismatch negativity (MMN) at fz and cz.;
+898951183 - OG000: Auditory evoked potential gamma: G40 hz phase locking at fz and cz; G30 hz phase locking at fz and cz; G20 hz phase locking at fz and cz;
+898951124 - OG000: Scores on each of 8 domains of cognitive function (speed of processing, attention/vigilance, working memory, verbal learning, visual learning, reasoning/problem solving, social cognition, overall composite). Scores are T scores ranging from 0-100, with 50 representing the mean for a population based on a normal distribution, standard deviation of 10. Higher scores signify better functioning.;
+898951089 - OG000: Young Mania Rating Scale (YMRS) measures severity of manic symptoms. The sum of the ratings for 7 symptoms of mania is measured on a scale of 0-4 and the sumof 4 symptoms of mania is measured on a scale of 0-8 to yield a total score ranging from 0-60, with 0 meaning no manic symptoms and 60 meaning severe manic symptoms.;
+898951090 - OG001: Young Mania Rating Scale (YMRS) measures severity of manic symptoms. The sum of the ratings for 7 symptoms of mania is measured on a scale of 0-4 and the sumof 4 symptoms of mania is measured on a scale of 0-8 to yield a total score ranging from 0-60, with 0 meaning no manic symptoms and 60 meaning severe manic symptoms.;
+898951137 - OG000: Proton magnetic resonance spectroscopy at 4T: brain glycine/CR ratio. Participants were assessed at baseline (pre-glycine challenge dose and 60, 80, 100 and 120 minutes post glycine dose) and in week 8 of of open-label DCS treatment: pre-DCS dose, and 60, 80, 100 and 120 minutes post DCS dose. Measured in posterior occipital cortex.;
+898950988 - OG001: Total BPRS score measures severity of 18 psychiatric symptoms. Each symptom is scored 1-7 with the total score ranging from 18-126. 18 means no symptoms and 126 means very severe symptoms.
+
+___________________________________________________
