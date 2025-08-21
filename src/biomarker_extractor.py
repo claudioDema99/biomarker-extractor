@@ -146,6 +146,12 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers = []
     all_biomarkers_extended = []
     j = 0  # Indice per debug
+    log_file = {
+        "batch_id": int,
+        "rows_ids": List[int],
+        "cot": str,
+        "response": str,
+    }
 
     # === BATCH SIZE ADATTIVO: Stabilisci threshold di token number (circa la metà della context window del modello), 
     # Vogliamo passare al modello un batch di righe che abbia un numero di token compreso tra TOK_MIN e TOK_MAX.
@@ -167,7 +173,7 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             print("\n\n\n_______________________________________________________________________________________\n")
             print(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
             print("_______________________________________________________________________________________\n\n\n")
-            with open("RIGHE_NON_PROCESSATE.txt", "a") as f:
+            with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
                 f.write(f"{df_filtered.iloc[i]['outcome_measurement_title']}\n")
@@ -191,34 +197,37 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
 
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
-        print(f"Batch {batch_id}: {rows_in_batch} righe – {batch_tokens} token")
-        # scrivi anche che righe sono attualmente processate per debug
         if rows_in_batch == 1:
-            print(f"Indice riga processata: {i}")
+            print(f"Batch {batch_id}: {rows_in_batch} riga – Indice {i}")
         else:
-            print(f"Indice righe processate: {i} - {i + rows_in_batch - 1}")
-        biomarkers = call_model(records, dataset_type)
+            print(f"Batch {batch_id}: {rows_in_batch} righe – Indici {i} - {i + rows_in_batch - 1}")
+        print(f"{batch_tokens} tokens => {batch_tokens + 3492} tokens totali")
+        biomarkers, cot, response = call_model(records, dataset_type)
 
         if biomarkers is None or biomarkers == "":
-            print(f"\nNESSUN BIOMARKER TROVATO PER IL BATCH {batch_id}\n")
-            with open("RIGHE_NON_PROCESSATE.txt", "a") as f:
+            with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"[WARNING] Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
                 f.write(f"{df_filtered.iloc[i]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
-            print(f"\nINSERITO BIOMARKERS PER IL BATCH {batch_id}\n")
             print(f"Biomarkers trovati: {biomarkers}")
             all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
+        
+        log_file["batch_id"] = batch_id
+        log_file["rows_ids"] = list(range(i, i + rows_in_batch))
+        log_file["cot"] = cot
+        log_file["response"] = response
+        with open("./results/log.txt", "a") as f:
+            f.write(f"{log_file}\n")
+
+        print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
 
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
         batch_id += 1
         
-        # stampa a che riga siamo arrivati rispetto al totale
-        print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
-
         if i == len(df_filtered) // 4:
             with open("./results/liste_biomarkers.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")

@@ -101,7 +101,7 @@ Output:
     # se vuoi impostare il reasoning su low invece che medium
     if full_prompt.count(" medium ") > 0:
         full_prompt = full_prompt.replace("medium", "low", 1)
-        print("Changed reasoning level to low for better performance.")
+        print("\n\nChanged reasoning level to low for better performance.\n")
 
     # Tokenizzazione dell'input completo
     # return_tensors="pt": Restituisce tensori PyTorch
@@ -116,8 +116,8 @@ Output:
     ).to(DEVICE)
     # Conteggio token effettivi
     token_count = inputs.input_ids.shape[1]
-    print(f"Token count effettivi: {token_count}")
-    print(f"Sending request to the {MODEL_NAME} model..")
+    #print(f"Token count effettivi: {token_count}")
+    print(f"--- Waiting for the {MODEL_NAME} response ---")
     # Generazione della risposta
     with torch.no_grad():
         outputs = model.generate(
@@ -146,35 +146,37 @@ Output:
         clean_up_tokenization_spaces=True
     )
 
-    # Filtra il reasoning usando i tag speciali altrimenti mi prendo anche tutto il reasoning
     final_start = '<|end|><|start|>assistant<|channel|>final<|message|>'
-    
     if final_start in output_text:
-        # Estrai solo la parte finale (dopo final_start)
-        output_text = output_text.split(final_start)[-1].strip()
-        # Rimuovi i tag di chiusura e lo special token <|return|>
-        output_text = (
-            output_text
+        parts = output_text.split(final_start)
+        cot = final_start.join(parts[:-1])  # Tutto prima del tag finale
+        response = parts[-1].strip()              # Solo la risposta finale
+        cot = (
+            cot
+            .replace('<|channel|>analysis<|message|>', '')
             .replace('<|end|>', '')
+            .strip()
+        )
+        response = (
+            response
             .replace('<|return|>', '')
             .strip()
         )
-        print(f"Filtered output..")#: \n\n{output_text}")
     else:
         # ritorna l'output completo se non trova i tag
-        print(f"No filtering tags found, returning full output: {output_text}")
+        print(f"No filtering tags found, returning full output.")
 
     #print(f"Output from {MODEL_NAME}: {output_text}")
 
     try:
         # Isola la sezione JSON anche se c'è testo extra
-        start = output_text.find('{')
-        end   = output_text.rfind('}') + 1   # rfind => ultima graffa
+        start = response.find('{')
+        end   = response.rfind('}') + 1   # rfind => ultima graffa
 
         if start == -1 or end == 0:
-            return []                        # nessuna struttura JSON trovata
+            return [], "", ""                        # nessuna struttura JSON trovata
 
-        json_str = output_text[start:end]
+        json_str = response[start:end]
 
         # Carica il JSON
         data = json.loads(json_str)
@@ -182,8 +184,11 @@ Output:
         # Estrai la lista biomarkers, se esiste
         biomarkers = data.get("biomarkers", [])
         # Garantisci che sia effettivamente una lista, altrimenti torna lista vuota
-        return biomarkers if isinstance(biomarkers, list) else []
+        if isinstance(biomarkers, list) and cot != "" and response != "":
+            return biomarkers, cot, response 
+        else:
+            return [], "", ""
 
     except (json.JSONDecodeError, TypeError) as e:
         print(f"Errore nell'estrazione dei biomarkers: {e}")
-        return []
+        return [], "", ""
