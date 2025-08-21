@@ -79,10 +79,10 @@ Input records:
 
 Output:
 """
-    print(system_prompt)
-    print("\n_____________________\n")
-    print(user_prompt)
-    input()
+    #print(system_prompt)
+    #print("\n_____________________\n")
+    #print(user_prompt)
+    #input()
 
     messages = [
         {"role": "system", "content": system_prompt},

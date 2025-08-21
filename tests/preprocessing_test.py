@@ -164,10 +164,20 @@ import random
 df = pd.read_csv("../data/Alzheimer_1row_Puri.csv")
 cols_to_keep = [
     #"study_type-intervention_type",
+    "brief_summary",
+    "detailed_description",
     "outcome_measurement_title",
     "outcome_measurement_description"
 ]
 df = df[cols_to_keep].dropna(how="all")
+
+#%%
+
+# Estrazione delle righe con indici specifici
+target_indices = [0, 1, 200, 300]
+extracted_rows = df.iloc[target_indices]
+df = pd.DataFrame(process_batch_for_deduplication(extracted_rows))
+write_debug()
 
 #%%
 

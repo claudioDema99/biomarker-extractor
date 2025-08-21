@@ -144,13 +144,14 @@ def tokens_of(df_slice):
 
 def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers = []
+    all_biomarkers_extended = []
     j = 0  # Indice per debug
 
     # === BATCH SIZE ADATTIVO: Stabilisci threshold di token number (circa la metà della context window del modello), 
     # Vogliamo passare al modello un batch di righe che abbia un numero di token compreso tra TOK_MIN e TOK_MAX.
     # dunque aumentiamo il numero di righe da processare in un batch fino a che non raggiungiamo TOK_MIN, ma non superiamo TOK_MAX.
-    TOK_MIN = 2500          # soglia minima
-    TOK_MAX = 4000          # soglia massima
+    TOK_MIN = 2000          # soglia minima
+    TOK_MAX = 3500          # soglia massima
 
     i = 0
     batch_id = 1
@@ -162,7 +163,7 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         batch_tokens, records = tokens_of(batch_df)
 
         # --- controllo iniziale --- (c'è una cella con più di 6000 token filtrati.. per ora le scartiamo)
-        if batch_tokens > TOK_MAX:
+        if batch_tokens > TOK_MAX + 500:
             print("\n\n\n_______________________________________________________________________________________\n")
             print(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
             print("_______________________________________________________________________________________\n\n\n")
@@ -200,10 +201,16 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
 
         if biomarkers is None or biomarkers == "":
             print(f"\nNESSUN BIOMARKER TROVATO PER IL BATCH {batch_id}\n")
+            with open("RIGHE_NON_PROCESSATE.txt", "a") as f:
+                f.write("\n\n________________________________________________________________\n")
+                f.write(f"[WARNING] Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
+                f.write(f"{df_filtered.iloc[i]['outcome_measurement_title']}\n")
+            i += 1                  # passa alla riga successiva
         else:
             print(f"\nINSERITO BIOMARKERS PER IL BATCH {batch_id}\n")
             print(f"Biomarkers trovati: {biomarkers}")
             all_biomarkers.append(biomarkers)
+            all_biomarkers_extended.extend(biomarkers)
 
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
@@ -232,4 +239,4 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         for biomarker in all_biomarkers:
             f.write(f"\n{biomarker}\n")
     print("Tutto il dataset è stato processato. Biomarkers salvati in ./results/liste_biomarkers.txt")
-    return all_biomarkers
+    return all_biomarkers, all_biomarkers_extended
