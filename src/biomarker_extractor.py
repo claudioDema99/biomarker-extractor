@@ -176,7 +176,7 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
-                f.write(f"{df_filtered.iloc[i]['outcome_measurement_title']}\n")
+                f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
 
@@ -208,7 +208,7 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"[WARNING] Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
-                f.write(f"{df_filtered.iloc[i]['outcome_measurement_title']}\n")
+                f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
             print(f"Biomarkers trovati: {biomarkers}")
@@ -222,11 +222,11 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         with open("./results/log.txt", "a") as f:
             f.write(f"{log_file}\n")
 
-        print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
-
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
         batch_id += 1
+
+        print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
         if i == len(df_filtered) // 4:
             with open("./results/liste_biomarkers.txt", "w") as f:

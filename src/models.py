@@ -163,6 +163,8 @@ Output:
             .strip()
         )
     else:
+        cot = ""
+        response = output_text.strip()
         # ritorna l'output completo se non trova i tag
         print(f"No filtering tags found, returning full output.")
 
