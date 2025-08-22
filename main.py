@@ -19,10 +19,10 @@ def main():
 
     # selezione del modello?
     _, biomarker_list = extraction(df_filtered, dataset_type="Alzheimer")
-    with open("./results/liste_biomarkers.txt", "w") as f:
+    with open("./results/lista_biomarkers.txt", "w") as f:
         f.write("Tutto il dataset è stato processato.\n")
         for biomarker in biomarker_list:
-            f.write(f"\n{biomarker}\n")
+            f.write(f"{biomarker}\n")
 
 if __name__ == "__main__":
     main()

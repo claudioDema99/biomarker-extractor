@@ -1,6 +1,7 @@
 import pandas as pd
 import re
 from typing import List, Dict, Any
+import json
 from src.models import call_model, get_token_count
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:
@@ -214,13 +215,23 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             print(f"Biomarkers trovati: {biomarkers}")
             all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
-        
+        '''
         log_file["batch_id"] = batch_id
         log_file["rows_ids"] = list(range(i, i + rows_in_batch))
         log_file["cot"] = cot
         log_file["response"] = response
         with open("./results/log.txt", "a") as f:
             f.write(f"{log_file}\n")
+        '''
+        log_file["batch_id"] = batch_id
+        log_file["rows_ids"] = list(range(i, i + rows_in_batch))
+        log_file["cot"]      = cot
+        log_file["response"] = response
+
+        with open("./results/log.jsonl", "a", encoding="utf-8") as f:
+            json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
+            f.write("\n")                               # va a capo per la riga successiva
+
 
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
@@ -229,23 +240,23 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
         if i == len(df_filtered) // 4:
-            with open("./results/liste_biomarkers.txt", "w") as f:
+            with open("./results/lista_biomarkers.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
-                    f.write(f"\n{biomarker}\n")
+                    f.write(f"{biomarker}\n")
         if i == len(df_filtered) // 2:
-            with open("./results/liste_biomarkers.txt", "w") as f:
+            with open("./results/lista_biomarkers.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
-                    f.write(f"\n{biomarker}\n")
+                    f.write(f"{biomarker}\n")
         if i == len(df_filtered) * 3 // 4:
-            with open("./results/liste_biomarkers.txt", "w") as f:
+            with open("./results/lista_biomarkers.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
-                    f.write(f"\n{biomarker}\n")
-    with open("./results/liste_biomarkers.txt", "w") as f:
+                    f.write(f"{biomarker}\n")
+    with open("./results/lista_biomarkers.txt", "w") as f:
         f.write("Tutto il dataset è stato processato.\n")
         for biomarker in all_biomarkers:
-            f.write(f"\n{biomarker}\n")
-    print("Tutto il dataset è stato processato. Biomarkers salvati in ./results/liste_biomarkers.txt")
+            f.write(f"{biomarker}\n")
+    print("Tutto il dataset è stato processato. Biomarkers salvati in ./results/lista_biomarkers.txt")
     return all_biomarkers, all_biomarkers_extended
