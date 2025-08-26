@@ -1,7 +1,7 @@
 import json
+import re
 import torch
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from src.prompts import get_prompt
 
 if torch.cuda.is_available():
     DEVICE = "cuda"
@@ -38,46 +38,65 @@ model = AutoModelForCausalLM.from_pretrained(
     low_cpu_mem_usage=True
 )
 
-# Set pad token per gpt-oss
-if tokenizer.pad_token is None:
-    tokenizer.pad_token = tokenizer.eos_token
+def read_json_arrays_to_list(filename):
+    """
+    Read a file containing multiple JSON arrays and combine them into one big list.
+    """
+    combined_list = []
+    
+    with open(filename, 'r') as file:
+        content = file.read()
+        
+        # Find all JSON arrays in the content using regex
+        # This looks for patterns that start with [ and end with ]
+        json_arrays = re.findall(r'\[.*?\]', content, re.DOTALL)
+        
+        for json_str in json_arrays:
+            try:
+                array_data = json.loads(json_str)
+                if isinstance(array_data, list):
+                    combined_list.extend(array_data)
+                else:
+                    print(f"Warning: Found non-array JSON: {json_str[:100]}...")
+            except json.JSONDecodeError as e:
+                print(f"Error parsing JSON: {e}")
+                continue
+    
+    return combined_list
 
-def get_token_count(records_json):
-    return len(tokenizer.encode(json.dumps(records_json)))
-
-def call_model(records, dataset_type):
-    # QUI MI SCELGO I PROMPT IN BASE AL DATASET_TYPE
-    name, examples, shots = get_prompt(dataset_type)
-    system_prompt = f"""You are an expert clinical data analyst specialized in identifying biomarkers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY biomarkers explicitly present in the text. Do NOT invent biomarkers not present in the records.
-
-BIOMARKER DEFINITION: A biomarker is a quantifiable characteristic of the body that serves as an objective indicator of biological processes or pathological conditions in {name}'s disease.
-
-MANDATORY OUTPUT RULES (must be followed exactly):
-1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:
-   {{"analysis": "<4-5 concise sentences>", "biomarkers": [list of biomarker with required syntax]}}
-2. "analysis" must be a single string of 4–5 sentences that reference the evidence in the records.
-3. "biomarkers" must be a JSON array. Each element in the array MUST follow this exact syntax:
-   "ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
-   **CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
-   Examples:{examples}
-4. Collapse duplicates (each biomarker appears once).
-5. If you cannot follow these rules, output exactly:
-   {{"analysis":"", "biomarkers":[]}}
-Always reason with clinical rigor and refer only to evidence in the records.
+def call_model(biomarkers):
+    system_prompt = f"""You are an expert biomedical data curator with deep knowledge of Alzheimer's disease pathophysiology and biomarkers. Your primary function is to process lists of biomarker terms, and group them by their underlying biological significance.
+Rules for Operation:
+Core Task: You will receive lists of raw biomarker strings. You must aggregate synonymous terms, even if they have different spellings, abbreviations, or syntactic structures (e.g., "P-Tau 181", "pTau181", "phosphorylated tau at threonine 181").
+Canonical Naming: For each group of synonyms, you must assign a single, scientifically precise, and human-readable canonical name (e.g., "P-Tau 181").
+Output Format: You will always output a valid JSON object. No other text, explanations, or apologies should precede or follow the JSON code block.
+Handling Uncertainty: If you encounter a highly ambiguous term, group it cautiously and use the "Other" category. It is more important to be accurate than to force a categorization.
+Focus: Do not provide commentary, summaries, or analysis beyond the requested JSON structure. Your entire output must be the JSON object.
 """
 
-    user_prompt = f"""You are an expert clinical data analyst specialized in identifying biomarkers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY biomarkers explicitly present in the text. Do NOT invent biomarkers not present in the records.
-Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
+    user_prompt = f"""Please process the following list of raw Alzheimer's disease biomarker terms. Aggregate synonymous terms, and provide a list of all occurrences and their count.
+Output a JSON object where each key is an object with these exact keys:
+"canonical_biomarker": (string) The standardized name.
+"occurrences": (array of strings) All raw terms grouped under this canonical name.
 
-Examples:
-{shots}   
+Example Input:
+["P-Tau 181", "pTau181", "Amyloid Beta 42/40 ratio"]
 
-Task: Identify all biomarkers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
+Expected Output Structure:
+[
+    {{
+        "canonical_biomarker": "P-Tau 181",
+        "occurrences": ["P-Tau 181", "pTau181"]
+    }},
+    {{
+        "canonical_biomarker": "Aβ42/40 Ratio",
+        "occurrences": ["Amyloid Beta 42/40 ratio, "Aβ42/40 Ratio", "Abeta42/40"]
+    }}
+]
 
-Input records:
-{json.dumps(records)}
+Here is the full list of biomarkers to process:
 
-Output:
+{biomarkers}
 """
     #print(system_prompt)
     #print("\n_____________________\n")
@@ -97,11 +116,6 @@ Output:
         tokenize=False, 
         add_generation_prompt=True
     )
-
-    # se vuoi impostare il reasoning su low invece che medium
-    if full_prompt.count(" medium") > 0:
-        full_prompt = full_prompt.replace("medium", "low", 1)
-        print("\n\nChanged reasoning level to low for better performance.\n")
 
     # Tokenizzazione dell'input completo
     # return_tensors="pt": Restituisce tensori PyTorch
@@ -172,25 +186,65 @@ Output:
 
     try:
         # Isola la sezione JSON anche se c'è testo extra
-        start = response.find('{')
-        end   = response.rfind('}') + 1   # rfind => ultima graffa
+        start = response.find('[')
+        end   = response.rfind(']') + 1   # rfind => ultima graffa
 
         if start == -1 or end == 0:
-            return [], "", ""                        # nessuna struttura JSON trovata
+            return [],
 
         json_str = response[start:end]
 
         # Carica il JSON
-        data = json.loads(json_str)
+        data = [json.loads(json_str)]
 
-        # Estrai la lista biomarkers, se esiste
-        biomarkers = data.get("biomarkers", [])
         # Garantisci che sia effettivamente una lista, altrimenti torna lista vuota
-        if isinstance(biomarkers, list) and cot != "" and response != "":
-            return biomarkers, cot, response 
+        if isinstance(data, list) and len(data) > 0:
+            return data
         else:
-            return [], "", ""
+            return []
 
     except (json.JSONDecodeError, TypeError) as e:
         print(f"Errore nell'estrazione dei biomarkers: {e}")
-        return [], "", ""
+        return []
+
+
+filename = 'risultati_acronyms.txt'
+acronyms = read_json_arrays_to_list(filename)
+
+print(f"Total dictionaries: {len(acronyms)}")
+print(f"First few items: {acronyms[:5]}")
+
+validated_biomarkers = []
+for acronym in acronyms:
+    if acronym["valid"] == True:
+        validated_biomarkers.append(acronym["acronym"])
+
+print(f"Total valid biomarkers: {len(validated_biomarkers)} on {len(acronyms)} total biomarkers")
+
+input()
+
+# try to add biomarkers until a max token count of 7000 is reached
+batch = []
+current_token_count = 0
+max_token_count = 6000
+
+while validated_biomarkers:
+    biomarker = validated_biomarkers[0]
+    tokenized = tokenizer(biomarker, return_tensors="pt", padding=True, truncation=True)
+    token_count = tokenized.input_ids.shape[1]
+    
+    if current_token_count + token_count <= max_token_count:
+        batch.append(biomarker)
+        validated_biomarkers.pop(0)
+        current_token_count += token_count
+    else:
+        call_model(batch)
+        batch = [biomarker]  # Start new batch with current biomarker
+        validated_biomarkers.pop(0)
+        current_token_count = token_count
+
+# Process any remaining batch
+if batch:
+    call_model(batch)
+
+# extract the canonical biomarkers from the grouped biomarkers and ask to an LLM to compare them and find synonyms
