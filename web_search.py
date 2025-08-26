@@ -1,121 +1,117 @@
 """
-Script: biomarkers_check.py
-Requisiti extra:
-    pip install requests requests-cache
-    # BRAVE_API_KEY va esportata nell'ambiente
+Script: biomarkers_check_no_agent.py
+Requisiti:
+    pip install smolagents[transformers] duckduckgo-search requests python-dotenv
+    # BRAVE_API_KEY nello .env o come variabile ambiente
 """
-
 from __future__ import annotations
-import os, time, functools, logging, requests, threading, json, torch
-from smolagents import CodeAgent, DuckDuckGoSearchTool, TransformersModel
-from duckduckgo_search import DuckDuckGoSearchException
+import os, time, functools, logging, threading, requests, torch
 from dotenv import load_dotenv
+from duckduckgo_search import DDGS, exceptions as ddg_exc
+from smolagents import TransformersModel            # LLM locale senza agent
 load_dotenv()
 
-# ───────────────────────────── 1. MODEL  ──────────────────────────────
+# ─────────────── 1. LLM locale (TransformersModel) ────────────────
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
-print("Usando", DEVICE.upper())
-model = TransformersModel(
-    model_id="openai/gpt-oss-20b",
-    max_new_tokens=512,
-    device_map="auto"
+llm = TransformersModel(
+    model_id="openai/gpt-oss-20b",                  # cambia con il tuo
+    max_new_tokens=256,
+    device_map="auto"                               # oppure "cpu"
 )
 
-
-# ─────────────────────── 2. BRAVE SEARCH TOOL  ────────────────────────
-class BraveSearchTool:
-    """Wrapper minimale per Brave Search API (richiede BRAVE_API_KEY)."""
+# ─────────────── 2. Brave wrapper ────────────────────────────────
+class BraveSearch:
     _URL = "https://api.search.brave.com/res/v1/web/search"
-    def __init__(self, api_key: str | None = None, top_k: int = 10, timeout: int = 10):
-        self.api_key = api_key or os.getenv("BRAVE_API_KEY")
-        if not self.api_key:
-            raise RuntimeError("Imposta la variabile d'ambiente BRAVE_API_KEY")
+    def __init__(self, top_k=10, timeout=10):
+        key = os.getenv("BRAVE_API_KEY")
+        if not key:
+            raise RuntimeError("BRAVE_API_KEY mancante")
+        self.hdrs = {"X-Subscription-Token": key}
         self.top_k, self.timeout = top_k, timeout
-
-    def run(self, query: str, **_) -> str:
-        hdrs = {"X-Subscription-Token": self.api_key}
-        params = {"q": query, "count": self.top_k}
-        r = requests.get(self._URL, headers=hdrs, params=params, timeout=self.timeout)
+    def __call__(self, query: str) -> str:
+        r = requests.get(
+            self._URL,
+            headers=self.hdrs,
+            params={"q": query, "count": self.top_k},
+            timeout=self.timeout,
+        )
         r.raise_for_status()
-        data = r.json()
-        return "\n".join(f"{item['title']} – {item['url']}" for item in data["results"])
+        return "\n".join(f"{d['title']} – {d['url']}" for d in r.json()["results"])
 
-# ───────────── 3. TTL CACHE DECORATOR (in-memory, 1 ora) ──────────────
-def ttl_cache(ttl: int = 3600, maxsize: int = 512):
-    def decorator(fn):
+# ─────────────── 3. Cache + back-off router (DDG ⇒ Brave) ─────────
+def ttl_cache(ttl=3600, maxsize=512):
+    def deco(fn):
         @functools.lru_cache(maxsize=maxsize)
-        def cached(ts_key, *a, **k):
-            return fn(*a, **k)
-        @functools.wraps(fn)
-        def wrapper(*a, **k):
-            return cached(round(time.time() / ttl), *a, **k)
-        wrapper.cache_clear = cached.cache_clear
-        return wrapper
-    return decorator
+        def cached(t,*a,**k): return fn(*a,**k)
+        return lambda *a,**k: cached(round(time.time()/ttl),*a,**k)
+    return deco
 
-# ──────────────── 4. ROUTER: CACHE, THROTTLE, FALLBACK ────────────────
-class SearchRouter:
-    """Tenta DuckDuckGo, effettua retry con back-off, poi passa a Brave."""
-    def __init__(
-        self,
-        ddg_tool,
-        brave_tool,
-        retries: int = 3,
-        backoff: int = 2,
-        ttl: int = 3600,
-    ):
-        self.ddg, self.brave = ddg_tool, brave_tool
+class WebSearch:
+    def __init__(self, retries=3, backoff=2, ttl=3600):
+        self.ddg   = DDGS()
+        self.brave = BraveSearch()
         self.retries, self.backoff = retries, backoff
-        self._cached_run = ttl_cache(ttl)(self._run_uncached)
         self.lock = threading.Lock()
+        self.cached = ttl_cache(ttl)(self._search)
 
-    def run(self, query: str, **kw):
-        return self._cached_run(query, **kw)
+    def __call__(self, query:str)->str: return self.cached(query)
 
-    def _run_uncached(self, query: str, **kw):
-        with self.lock:  # serializza i retry
-            for attempt in range(1, self.retries + 1):
+    def _search(self, query:str)->str:
+        with self.lock:
+            for i in range(1, self.retries+1):
                 try:
-                    return self.ddg.run(query, **kw)
+                    res = self.ddg.text(query, max_results=10)
+                    return "\n".join(f"{r['title']} – {r['href']}" for r in res)
                 except Exception as e:
-                    wait = self.backoff ** attempt
-                    logging.warning(f"DDG errore {attempt}/{self.retries}: {e} – "
-                                    f"ritento tra {wait}s")
+                    wait = self.backoff**i
+                    logging.warning(f"DDG errore {i}/{self.retries}: {e} – retry {wait}s")
                     time.sleep(wait)
-            logging.info("Troppi errori DDG ⇒ switch a Brave")
-            return self.brave.run(query, **kw)
+            logging.info("Switch a Brave")
+            return self.brave(query)
 
-# ───────────────────── 5. ISTANZA DEI TOOLS/AGENT  ─────────────────────
-router_tool = SearchRouter(
-    ddg_tool=DuckDuckGoSearchTool(),
-    brave_tool=BraveSearchTool()
-)
-agent = CodeAgent(tools=[router_tool], model=model)
+search_web = WebSearch()
 
-# ───────────────────────────── 6. WORKFLOW  ────────────────────────────
+# ─────────────── 4. Helper per interrogare il modello ─────────────
+def ask_llm(marker: str, snippets: str, llm) -> str:
+    system_msg = (
+        "You are a clinical biologist. "
+        "Given the web snippets, answer ONLY with:\n"
+        "  - the upper-case acronym if the marker is a biomarker;\n"
+        "  - 'N/A' if it is a biomarker without acronym;\n"
+        "  - 'N/B' if it is NOT a biomarker."
+    )
+    user_msg = f"Marker: {marker}\n\nWeb snippets:\n{snippets}"
+    print(f"{marker}: {snippets}")
+
+    messages = [
+        {
+            "role": "system",
+            "content": [{"type": "text", "text": system_msg}]
+        },
+        {
+            "role": "user",
+            "content": [{"type": "text", "text": user_msg}]
+        },
+    ]
+
+    raw_text = llm(messages)          # restituisce già una stringa
+    return raw_text.content.split("assistantfinal", 1)[-1].strip()
+
+
+
+# ─────────────── 5. Workflow principale ──────────────────────────
 with open("lista_biomarkers.txt") as f:
-    markers = [ln.strip() for ln in f if ln.strip()]
-
-tag = ".assistantfinal"
+    markers = [m.strip() for m in f if m.strip()]
 
 with open("biomarkers_with_acronyms.txt", "a") as fout:
-    for marker in markers:
-        prompt = (f"Is {marker} a valid biomarker? If yes, give its standard acronym. "
-                  "If none exists, reply 'N/A'. If not a biomarker, reply 'N/B'. "
-                  "Answer only with the acronym, 'N/A', or 'N/B'.")
-
+    for m in markers:
         try:
-            answer = agent.run(prompt, max_steps=3)
-            acronym = answer.split(tag, 1)[-1].strip() if tag in answer else "N/A"
-        except DuckDuckGoSearchException as e:
-            logging.warning(f"DDG rate-limit per {marker}: {e}")
-            acronym = "N/A-DDG_limit"           # fallback
-        except requests.RequestException as e:
-            logging.error(f"Brave error per {marker}: {e}")
-            acronym = "N/A-brave"
+            snip = search_web(f"{m} biomarker acronym")
+            acr = ask_llm(m, snip, llm) 
+        except (ddg_exc.DuckDuckGoSearchException, requests.RequestException) as e:
+            logging.warning(f"Web search error {m}: {e}")
+            acr = "N/A-web"
         except Exception:
-            logging.exception("Errore imprevisto")
-            acronym = "N/A-general"
-
-        fout.write(f"{marker}: {acronym}\n")  # la riga viene sempre salvata
-
+            logging.exception(f"LLM error su {m}")
+            acr = "N/A-llm"
+        fout.write(f"{m}: {acr}\n")
