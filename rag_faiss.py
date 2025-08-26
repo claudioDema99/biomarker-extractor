@@ -396,17 +396,17 @@ if __name__ == "__main__":
         
         print(f"Processed {len(acronyms)}/{len(biomarkers)} biomarkers so far.")
         
-        if i == 100 or i == 101:
-            with open("risultati_acronyms.txt", "w") as f:
+        if i % (MAX_BATCH_SIZE * 50) == 0: # salva ogni 100 biomarkers
+            with open("./results/acronym_results.txt", "w") as f:
                 for item in acronyms:
                     f.write(item + "\n")
 
-        
         # Memory cleanup between batches
         clear_gpu_memory()
     
     print("Step 5: Saving results...")
-    with open("risultati_acronyms.txt", "w") as f:
+    with open("./results/acronym_results.txt", "w") as f:
+        f.write("All biomarkers processed.\n")
         for item in acronyms:
             f.write(item + "\n")
     

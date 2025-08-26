@@ -130,7 +130,7 @@ Here is the full list of biomarkers to process:
     ).to(DEVICE)
     # Conteggio token effettivi
     token_count = inputs.input_ids.shape[1]
-    #print(f"Token count effettivi: {token_count}")
+    print(f"Token count effettivi: {token_count}")
     print(f"--- Waiting for the {MODEL_NAME} response ---")
     # Generazione della risposta
     with torch.no_grad():
@@ -208,7 +208,7 @@ Here is the full list of biomarkers to process:
         return []
 
 
-filename = 'risultati_acronyms.txt'
+filename = "./results/acronym_results.txt"
 acronyms = read_json_arrays_to_list(filename)
 
 print(f"Total dictionaries: {len(acronyms)}")
@@ -227,8 +227,10 @@ input()
 batch = []
 current_token_count = 0
 max_token_count = 6000
+grouped_biomarkers = []
 
 while validated_biomarkers:
+    print("In the while")
     biomarker = validated_biomarkers[0]
     tokenized = tokenizer(biomarker, return_tensors="pt", padding=True, truncation=True)
     token_count = tokenized.input_ids.shape[1]
@@ -237,8 +239,12 @@ while validated_biomarkers:
         batch.append(biomarker)
         validated_biomarkers.pop(0)
         current_token_count += token_count
+        print("Adding")
     else:
-        call_model(batch)
+        print(f"Processing batch of {len(batch)} biomarkers with total token count {current_token_count}...")
+        print("we have to call the model")
+        input("Press Enter to continue...")
+        grouped_biomarkers.extend(call_model(batch))
         batch = [biomarker]  # Start new batch with current biomarker
         validated_biomarkers.pop(0)
         current_token_count = token_count
