@@ -279,36 +279,9 @@ def generate_from_llm(prompt: str, model, tokenizer, device):
         print(f"No filtering tags found, returning full output.")
         return "", output_text.strip()
 
-    '''
-    try:
-        # Isola la sezione JSON anche se c'è testo extra
-        start = response.find('{')
-        end   = response.rfind('}') + 1   # rfind => ultima graffa
-
-        if start == -1 or end == 0:
-            return [], "", ""                        # nessuna struttura JSON trovata
-
-        json_str = response[start:end]
-
-        # Carica il JSON
-        data = json.loads(json_str)
-
-        # Estrai la lista biomarkers, se esiste
-        biomarkers = data.get("biomarkers", [])
-        # Garantisci che sia effettivamente una lista, altrimenti torna lista vuota
-        if isinstance(biomarkers, list) and cot != "" and response != "":
-            return biomarkers, cot, response 
-        else:
-            return [], "", ""
-
-    except (json.JSONDecodeError, TypeError) as e:
-        print(f"Errore nell'estrazione dei biomarkers: {e}")
-        return [], "", ""
-    '''
-
 def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, llm_model, tokenizer, device, first_time):
     """Process a batch of biomarkers with memory optimization"""
-    print(f"Processing batch: {batch}")
+    #print(f"Processing batch: {batch}")
     
     # Retrieve context for each biomarker
     all_retrieved_texts = []
@@ -326,8 +299,8 @@ def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, 
     
     # Generate prompt and get response
     prompt = build_prompt(batch, retrieved_context, max_context_chars=2500)
-    if first_time:
-        print(prompt)
+    #if first_time:
+        #print(prompt)
     cot, response = generate_from_llm(prompt, llm_model, tokenizer, device)
     
     return cot, response
@@ -370,11 +343,11 @@ if __name__ == "__main__":
             )
             first_time = False
             
-            print("=== COT ===")
-            print(cot)
-            print("\n=== RESPONSE ===")
-            print(response)
-            print("="*50)
+            #print("=== COT ===")
+            #print(cot)
+            #print("\n=== RESPONSE ===")
+            #print(response)
+            #print("="*50)
             
             acronyms.append(response)
             
@@ -387,7 +360,7 @@ if __name__ == "__main__":
             for single_item in batch:
                 try:
                     cot, response = process_biomarkers_batch(
-                        [single_item], index, chunks, metas, emb_model, model, tokenizer, emb_device
+                        [single_item], index, chunks, metas, emb_model, model, tokenizer, emb_device, first_time
                     )
                     acronyms.append(response)
                 except Exception as e2:
