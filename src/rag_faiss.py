@@ -8,8 +8,8 @@ import fitz  # PyMuPDF
 import numpy as np
 import faiss
 import torch
+import json
 from sentence_transformers import SentenceTransformer
-from transformers import AutoTokenizer, AutoModelForCausalLM
 
 # ---------- Config ----------
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"  # buona qualità
@@ -17,7 +17,6 @@ CHUNK_CHARS = 1500
 CHUNK_OVERLAP = 300
 FAISS_INDEX_PATH = "faiss_index.bin"
 METADATA_PATH = "faiss_metadata.pkl"
-LLM_MODEL_ID = "openai/gpt-oss-20b"  # sostituisci con il tuo path locale o repo HF
 MAX_BATCH_SIZE = 2
 # ----------------------------
 
@@ -123,7 +122,7 @@ def retrieve(query: str, index, chunk_texts: List[str], metas: List[Dict], model
     results = [chunk_texts[idx] for idx in I[0]]
     return results
 
-def build_prompt(query: str, retrieved: List[Tuple[Dict, float, str]], max_context_chars: int = 4000) -> str:
+def build_prompt(query: str, retrieved: List[Tuple[Dict, float, str]], tokenizer, max_context_chars: int = 4000) -> str:
     system_prompt = """You are an expert in Alzheimer's markers (and biomarkers). Your task is to analyze a list of potential markers extracted from datasets and validate them using the provided scientific literature.
 
 For each element in the list, you must:
@@ -141,7 +140,8 @@ For each element, use this JSON structure:
 }
 ```
 If an element is NOT a valid marker, indicate:
-```json{
+```json
+{
   "original_name": "name as provided",
   "valid": false,
   "acronym": "N/A"
@@ -187,29 +187,6 @@ Provide the answer in the JSON format specified in the system instructions. If a
 
     return full_prompt
 
-def load_local_llm_and_tokenizer(model_id: str = LLM_MODEL_ID, device: str = "cpu"):
-    """
-    Carica tokenizer e modello HF. Usa device_map='auto' e torch_dtype=float16 se possibile.
-    Richiede che tu abbia installato una build di PyTorch compatibile con ROCm se vuoi usare la MI210.
-    """
-    print("Loading tokenizer and model..")
-    tokenizer = AutoTokenizer.from_pretrained(
-        model_id, 
-        trust_remote_code=True,
-        use_fast=True
-    )
-    model = AutoModelForCausalLM.from_pretrained(
-        model_id, 
-        torch_dtype=torch.bfloat16 if device=="cuda" else torch.float32,
-        device_map="auto",
-        trust_remote_code=True,
-        low_cpu_mem_usage=True,
-        use_cache=True
-    )
-    if tokenizer.pad_token is None:
-        tokenizer.pad_token = tokenizer.eos_token
-    return tokenizer, model
-
 def generate_from_llm(prompt: str, model, tokenizer, device):
     # Tokenizzazione dell'input completo
     # return_tensors="pt": Restituisce tensori PyTorch
@@ -232,8 +209,8 @@ def generate_from_llm(prompt: str, model, tokenizer, device):
             **inputs,
             max_new_tokens=4096,          # Massimo numero di nuovi token da generare
             do_sample=False,              # Usa greedy decoding (deterministic!!!)
-            temperature=0.7,              # Controllo randomness (se do_sample=True) quindi inutile
-            top_p=0.9,                    # Nucleus sampling (se do_sample=True) quindi inutile
+            #temperature=0.7,             # Controllo randomness (se do_sample=True) quindi inutile
+            #top_p=0.9,                   # Nucleus sampling (se do_sample=True) quindi inutile
             pad_token_id=tokenizer.eos_token_id,  # Token di padding
             eos_token_id=tokenizer.eos_token_id,  # Token di fine sequenza
             use_cache=True,               ### Usala STA CACHE!!!!!
@@ -279,7 +256,7 @@ def generate_from_llm(prompt: str, model, tokenizer, device):
         print(f"No filtering tags found, returning full output.")
         return "", output_text.strip()
 
-def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, llm_model, tokenizer, device, first_time):
+def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, llm_model, tokenizer, device):
     """Process a batch of biomarkers with memory optimization"""
     #print(f"Processing batch: {batch}")
     
@@ -298,39 +275,36 @@ def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, 
     retrieved_context = "\n".join(all_retrieved_texts)
     
     # Generate prompt and get response
-    prompt = build_prompt(batch, retrieved_context, max_context_chars=2500)
-    #if first_time:
-        #print(prompt)
+    prompt = build_prompt(batch, retrieved_context, tokenizer, max_context_chars=2500)
+
     cot, response = generate_from_llm(prompt, llm_model, tokenizer, device)
     
     return cot, response
 
-# ---- Esempio d'uso ----
-if __name__ == "__main__":
+def validation(model, tokenizer, device, biomarkers):
     pdf_folder = "./docs"
 
-    # 1) crea index (esegui solo la prima volta)
+    # crea index (esegui solo la prima volta)
     # index, chunks, metas = build_embeddings_and_index(pdf_folder)
 
-    # 2) carica index
+    # carica index
     index, chunks, metas = load_index_and_metadata()
 
-    # 3) prepara modello embeddings (su GPU se disponibile)
-    emb_device = "cuda" if torch.cuda.is_available() else "cpu"
-    print(f"Using device: {emb_device}")
-
     clear_gpu_memory()
-    emb_model = SentenceTransformer(EMBEDDING_MODEL, device=emb_device)
+    emb_model = SentenceTransformer(EMBEDDING_MODEL, device=device)
 
-    # 4) load LLM HF (gpt-oss-20b)
-    tokenizer, model = load_local_llm_and_tokenizer(device=emb_device)
-
-    # 5) retrieval + generation
-    with open ("liste_biomarkers.txt", "r") as f:
+    # retrieval + generation
+    '''
+    with open ("./results/biomarkers_list.txt", "r") as f:
         biomarkers = [line.strip() for line in f if line.strip()]
+    '''
 
-    acronyms = []
-    first_time = True
+    evaluated_biomarkers = []
+    log_file = {
+        "acronyms": List,
+        "cot": str,
+        "response": str,
+    }
     
     # Process in smaller batches for memory efficiency
     for i in range(0, len(biomarkers), MAX_BATCH_SIZE):
@@ -339,17 +313,9 @@ if __name__ == "__main__":
         
         try:
             cot, response = process_biomarkers_batch(
-                batch, index, chunks, metas, emb_model, model, tokenizer, emb_device, first_time
+                batch, index, chunks, metas, emb_model, model, tokenizer, device
             )
-            first_time = False
-            
-            #print("=== COT ===")
-            #print(cot)
-            #print("\n=== RESPONSE ===")
-            #print(response)
-            #print("="*50)
-            
-            acronyms.append(response)
+            evaluated_biomarkers.append(response)
             
         except torch.cuda.OutOfMemoryError as e:
             print(f"OOM Error in batch {i//MAX_BATCH_SIZE + 1}: {e}")
@@ -360,27 +326,38 @@ if __name__ == "__main__":
             for single_item in batch:
                 try:
                     cot, response = process_biomarkers_batch(
-                        [single_item], index, chunks, metas, emb_model, model, tokenizer, emb_device, first_time
+                        [single_item], index, chunks, metas, emb_model, model, tokenizer, device
                     )
-                    acronyms.append(response)
+                    response_json = json.loads(response)
+                    to_log = False
+                    for acronym in response_json:
+                        if acronym["valid"] == False:
+                            to_log = True
+                    if to_log:
+                        log_file["acronyms"] = response_json
+                        log_file["cot"]      = cot
+                        log_file["response"] = response
+                    with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
+                        json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
+                        f.write("\n") 
+                    # a sto punto append response o response_json?
+                    evaluated_biomarkers.append(response)
+
                 except Exception as e2:
                     print(f"Failed to process {single_item}: {e2}")
-                    acronyms.append(f"ERROR: Could not process {single_item}")
+                    evaluated_biomarkers.append(f"ERROR: Could not process {single_item}")
         
-        print(f"Processed {len(acronyms)}/{len(biomarkers)} biomarkers so far.")
+        print(f"Processed {len(evaluated_biomarkers)*MAX_BATCH_SIZE}/{len(biomarkers)} biomarkers so far.")
         
         if i % (MAX_BATCH_SIZE * 50) == 0: # salva ogni 100 biomarkers
-            with open("./results/acronym_results.txt", "w") as f:
-                for item in acronyms:
+            with open("./results/evaluated_biomarkers.txt", "w") as f:
+                for item in evaluated_biomarkers:
                     f.write(item + "\n")
 
         # Memory cleanup between batches
         clear_gpu_memory()
-    
-    print("Step 5: Saving results...")
-    with open("./results/acronym_results.txt", "w") as f:
-        f.write("All biomarkers processed.\n")
-        for item in acronyms:
+
+    with open("./results/evaluated_biomarkers.txt", "w") as f:
+        for item in evaluated_biomarkers:
             f.write(item + "\n")
-    
-    print("Processing completed!")
+    return evaluated_biomarkers

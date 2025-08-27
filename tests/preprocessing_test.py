@@ -1,15 +1,9 @@
-#%%
 import pandas as pd
 import re
 from typing import List, Dict, Any
-
 import sys
 import os
-
-# Aggiungi la cartella parent al path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-
-# Ora puoi importare normalmente
 from src.models import get_token_count
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:

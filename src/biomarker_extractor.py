@@ -137,16 +137,15 @@ def process_batch_for_deduplication(batch_df: pd.DataFrame,
     # Converti in dizionario di record
     return processed_batch.to_dict(orient="records")
 
-def tokens_of(df_slice):
+def tokens_of(df_slice, tokenizer):
     """Restituisce (token_count, records_json) per un blocco di righe."""
     records_json = process_batch_for_deduplication(df_slice)
-    tok_count = get_token_count(records_json)
+    tok_count = get_token_count(records_json, tokenizer)
     return tok_count, records_json
 
-def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
+def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers = []
     all_biomarkers_extended = []
-    j = 0  # Indice per debug
     log_file = {
         "batch_id": int,
         "rows_ids": List[int],
@@ -167,16 +166,14 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         # inizia con una sola riga
         rows_in_batch = 1
         batch_df      = df_filtered.iloc[i : i + rows_in_batch]
-        batch_tokens, records = tokens_of(batch_df)
+        batch_tokens, records = tokens_of(batch_df, tokenizer)
 
         # --- controllo iniziale --- (c'è una cella con più di 6000 token filtrati.. per ora le scartiamo)
         if batch_tokens > TOK_MAX + 500:
-            print("\n\n\n_______________________________________________________________________________________\n")
             print(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
-            print("_______________________________________________________________________________________\n\n\n")
-            with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
+            with open("./results/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
+                f.write(f"Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
                 f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
@@ -186,7 +183,7 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             next_row_df = df_filtered.iloc[i + rows_in_batch : i + rows_in_batch + 1]
 
             tentative_df      = pd.concat([batch_df, next_row_df], ignore_index=True)
-            tentative_tokens, tentative_records = tokens_of(tentative_df)
+            tentative_tokens, tentative_records = tokens_of(tentative_df, tokenizer)
 
             if tentative_tokens <= TOK_MAX:
                 batch_df      = tentative_df
@@ -202,20 +199,21 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
             print(f"Batch {batch_id}: {rows_in_batch} riga – Indice {i}")
         else:
             print(f"Batch {batch_id}: {rows_in_batch} righe – Indici {i} - {i + rows_in_batch - 1}")
-        print(f"{batch_tokens} tokens => {batch_tokens + 3492} tokens totali")
-        biomarkers, cot, response = call_model(records, dataset_type)
+        print(f"{batch_tokens} tokens => {batch_tokens + 3492} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
+        biomarkers, cot, response = call_model(records, dataset_type, model, tokenizer, device)
 
         if biomarkers is None or biomarkers == "":
-            with open("./results/RIGHE_NON_PROCESSATE.txt", "a") as f:
+            with open("./results/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"[WARNING] Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
+                f.write(f"Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
                 f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
             print(f"Biomarkers trovati: {biomarkers}")
             all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
-        '''
+
+        ''' UNA VOLTA TESTATO EXTRACTION_LOGS, CANCELLARE
         log_file["batch_id"] = batch_id
         log_file["rows_ids"] = list(range(i, i + rows_in_batch))
         log_file["cot"] = cot
@@ -223,15 +221,14 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         with open("./results/log.txt", "a") as f:
             f.write(f"{log_file}\n")
         '''
+
         log_file["batch_id"] = batch_id
         log_file["rows_ids"] = list(range(i, i + rows_in_batch))
         log_file["cot"]      = cot
         log_file["response"] = response
-
-        with open("./results/log.jsonl", "a", encoding="utf-8") as f:
+        with open("./results/extraction_logs.jsonl", "a", encoding="utf-8") as f:
             json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
             f.write("\n")                               # va a capo per la riga successiva
-
 
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
@@ -240,23 +237,18 @@ def extraction(df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
         print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
         if i == len(df_filtered) // 4:
-            with open("./results/lista_biomarkers.txt", "w") as f:
+            with open("./results/biomarkers_list.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
                     f.write(f"{biomarker}\n")
         if i == len(df_filtered) // 2:
-            with open("./results/lista_biomarkers.txt", "w") as f:
+            with open("./results/biomarkers_list.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
                     f.write(f"{biomarker}\n")
         if i == len(df_filtered) * 3 // 4:
-            with open("./results/lista_biomarkers.txt", "w") as f:
+            with open("./results/biomarkers_list.txt", "w") as f:
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
                     f.write(f"{biomarker}\n")
-    with open("./results/lista_biomarkers.txt", "w") as f:
-        f.write("Tutto il dataset è stato processato.\n")
-        for biomarker in all_biomarkers:
-            f.write(f"{biomarker}\n")
-    print("Tutto il dataset è stato processato. Biomarkers salvati in ./results/lista_biomarkers.txt")
     return all_biomarkers, all_biomarkers_extended
