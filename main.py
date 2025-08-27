@@ -24,21 +24,20 @@ def main():
         for biomarker in biomarker_list:
             f.write(f"{biomarker}\n")
     print("""\n\nTutto il dataset è stato processato con successo.\n
-          I risultati dei biomarkers estratti si trovano in 'results/biomarkers_list.txt'.\n
-          Le righe non processate sono state salvate in 'results/unprocessed_lines.txt'.\n
-          I logs dell'analisi e estrazione dei biomarkers (con batch_id, rows_ids, CoT e response dell'LLM) sono stati salvati in 'results/extraction_logs.jsonl'.\n\n""")
+I risultati dei biomarkers estratti si trovano in 'results/biomarkers_list.txt'.\n
+Le righe non processate sono state salvate in 'results/unprocessed_lines.txt'.\n
+I logs dell'analisi e estrazione dei biomarkers (con batch_id, rows_ids, CoT e response dell'LLM) sono stati salvati in 'results/extraction_logs.jsonl'.\n\n""")
     
     # Seconda parte: validazione dei biomarkers estratti tramite RAG
-    # DA CAPIRE COME SARÀ EVALUATED BIOMARKERS (anche nel print)
-    evaluated_biomarkers = validation(model=model, tokeniker=tokenizer, device=device, biomarkers=biomarker_list)
+    evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker_list)
     print("""\n\nTutti i biomarkers estratti sono stati valutati.\n
-          I risultati completi della valutazione dei singoli biomarkers estratti si trovano in 'results/evaluated_biomarkers.txt'.\n
-          I biomarkers scartati (insieme alle CoT e risposte del modello) si trovano in 'results/not_validated_logs.jsonl'.\n\n""")
+I risultati completi della valutazione dei singoli biomarkers estratti si trovano in 'results/evaluated_biomarkers.jsonl'.\n
+I biomarkers scartati (insieme alle CoT e risposte del modello) si trovano in 'results/not_validated_logs.jsonl'.\n\n""")
     
     # Terza parte: raggruppare i biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
     biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, evaluated_biomarkers=evaluated_biomarkers)
     print("""\n\nTutti i biomarkers validati sono stati raggruppati tenendo considerando i vari sinonimi, differenze di nomenclatura e acronimi.\n
-          I risultati si trovano in 'results/biomarkers.txt'.\n\n""")
+I risultati si trovano in 'results/biomarkers.txt'.\n\n""")
 
 if __name__ == "__main__":
     main()

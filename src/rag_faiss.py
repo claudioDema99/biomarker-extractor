@@ -9,6 +9,7 @@ import numpy as np
 import faiss
 import torch
 import json
+import re
 from sentence_transformers import SentenceTransformer
 
 # ---------- Config ----------
@@ -294,8 +295,9 @@ def validation(model, tokenizer, device, biomarkers):
     emb_model = SentenceTransformer(EMBEDDING_MODEL, device=device)
 
     # retrieval + generation
+    
     '''
-    with open ("./results/biomarkers_list.txt", "r") as f:
+    with open ("liste_biomarkers.txt", "r") as f: #./results/biomarkers_list.txt
         biomarkers = [line.strip() for line in f if line.strip()]
     '''
 
@@ -315,7 +317,31 @@ def validation(model, tokenizer, device, biomarkers):
             cot, response = process_biomarkers_batch(
                 batch, index, chunks, metas, emb_model, model, tokenizer, device
             )
-            evaluated_biomarkers.append(response)
+            # se è un fenced code block ```json ... ```
+            fenced_match = re.search(r"^```(?:\w+)?\n(.*)\n```$", response.strip(), re.DOTALL)
+            if fenced_match:
+                s = fenced_match.group(1).strip()
+            else:
+                # altrimenti rimuove eventuali backtick sparsi all'inizio/fine
+                s = response.strip("` \t\n\r")
+            # primo tentativo diretto di parsing
+            try:
+                response_json = json.loads(s)
+                to_log = False
+                for acronym in response_json:
+                    if acronym["valid"] == False:
+                        to_log = True
+                if to_log:
+                    log_file["acronyms"] = response_json
+                    log_file["cot"]      = cot
+                    log_file["response"] = response
+                    with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
+                        json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
+                        f.write("\n") 
+            except json.JSONDecodeError:
+                response_json = []
+            # a sto punto append response o response_json?
+            evaluated_biomarkers.extend(response_json)
             
         except torch.cuda.OutOfMemoryError as e:
             print(f"OOM Error in batch {i//MAX_BATCH_SIZE + 1}: {e}")
@@ -328,20 +354,31 @@ def validation(model, tokenizer, device, biomarkers):
                     cot, response = process_biomarkers_batch(
                         [single_item], index, chunks, metas, emb_model, model, tokenizer, device
                     )
-                    response_json = json.loads(response)
-                    to_log = False
-                    for acronym in response_json:
-                        if acronym["valid"] == False:
-                            to_log = True
-                    if to_log:
-                        log_file["acronyms"] = response_json
-                        log_file["cot"]      = cot
-                        log_file["response"] = response
-                    with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
-                        json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
-                        f.write("\n") 
+                    # se è un fenced code block ```json ... ```
+                    fenced_match = re.search(r"^```(?:\w+)?\n(.*)\n```$", response.strip(), re.DOTALL)
+                    if fenced_match:
+                        s = fenced_match.group(1).strip()
+                    else:
+                        # altrimenti rimuove eventuali backtick sparsi all'inizio/fine
+                        s = response.strip("` \t\n\r")
+                    # primo tentativo diretto di parsing
+                    try:
+                        response_json = json.loads(s)
+                        to_log = False
+                        for acronym in response_json:
+                            if acronym["valid"] == False:
+                                to_log = True
+                        if to_log:
+                            log_file["acronyms"] = response_json
+                            log_file["cot"]      = cot
+                            log_file["response"] = response
+                            with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
+                                json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
+                                f.write("\n") 
+                    except json.JSONDecodeError:
+                        response_json = []
                     # a sto punto append response o response_json?
-                    evaluated_biomarkers.append(response)
+                    evaluated_biomarkers.extend(response_json)
 
                 except Exception as e2:
                     print(f"Failed to process {single_item}: {e2}")
@@ -350,14 +387,16 @@ def validation(model, tokenizer, device, biomarkers):
         print(f"Processed {len(evaluated_biomarkers)*MAX_BATCH_SIZE}/{len(biomarkers)} biomarkers so far.")
         
         if i % (MAX_BATCH_SIZE * 50) == 0: # salva ogni 100 biomarkers
-            with open("./results/evaluated_biomarkers.txt", "w") as f:
+            with open("./results/evaluated_biomarkers.jsonl", "w", encoding="utf-8") as f:
                 for item in evaluated_biomarkers:
-                    f.write(item + "\n")
+                    json.dump(item, f, ensure_ascii=False)
+                    f.write("\n")
 
         # Memory cleanup between batches
         clear_gpu_memory()
 
-    with open("./results/evaluated_biomarkers.txt", "w") as f:
+    with open("./results/evaluated_biomarkers.jsonl", "w", encoding="utf-8") as f:
         for item in evaluated_biomarkers:
-            f.write(item + "\n")
+            json.dump(item, f, ensure_ascii=False)
+            f.write("\n")
     return evaluated_biomarkers
