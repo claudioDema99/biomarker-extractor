@@ -29,7 +29,7 @@ def main():
           I logs dell'analisi e estrazione dei biomarkers (con batch_id, rows_ids, CoT e response dell'LLM) sono stati salvati in 'results/extraction_logs.jsonl'.\n\n""")
     
     # Seconda parte: validazione dei biomarkers estratti tramite RAG
-    # DA CAPIRE COME SARÀ VALIDATED BIOMARKERS (anche nel print)
+    # DA CAPIRE COME SARÀ EVALUATED BIOMARKERS (anche nel print)
     evaluated_biomarkers = validation(model=model, tokeniker=tokenizer, device=device, biomarkers=biomarker_list)
     print("""\n\nTutti i biomarkers estratti sono stati valutati.\n
           I risultati completi della valutazione dei singoli biomarkers estratti si trovano in 'results/evaluated_biomarkers.txt'.\n

@@ -15,8 +15,8 @@ from sentence_transformers import SentenceTransformer
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"  # buona qualità
 CHUNK_CHARS = 1500
 CHUNK_OVERLAP = 300
-FAISS_INDEX_PATH = "faiss_index.bin"
-METADATA_PATH = "faiss_metadata.pkl"
+FAISS_INDEX_PATH = "data/indices/faiss_index.bin"
+METADATA_PATH = "data/indices/faiss_metadata.pkl"
 MAX_BATCH_SIZE = 2
 # ----------------------------
 

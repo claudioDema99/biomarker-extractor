@@ -213,15 +213,6 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
             all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
 
-        ''' UNA VOLTA TESTATO EXTRACTION_LOGS, CANCELLARE
-        log_file["batch_id"] = batch_id
-        log_file["rows_ids"] = list(range(i, i + rows_in_batch))
-        log_file["cot"] = cot
-        log_file["response"] = response
-        with open("./results/log.txt", "a") as f:
-            f.write(f"{log_file}\n")
-        '''
-
         log_file["batch_id"] = batch_id
         log_file["rows_ids"] = list(range(i, i + rows_in_batch))
         log_file["cot"]      = cot
@@ -229,7 +220,7 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
         with open("./results/extraction_logs.jsonl", "a", encoding="utf-8") as f:
             json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
             f.write("\n")                               # va a capo per la riga successiva
-
+            
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
         batch_id += 1
