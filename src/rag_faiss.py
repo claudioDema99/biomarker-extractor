@@ -295,12 +295,9 @@ def validation(model, tokenizer, device, biomarkers):
     emb_model = SentenceTransformer(EMBEDDING_MODEL, device=device)
 
     # retrieval + generation
-    
-    '''for testing
-    with open ("./results/biomarkers_list.txt", "r") as f:
-        biomarkers = [line.strip() for line in f if line.strip()]
-    biomarkers = biomarkers[120:130]
-    '''
+    if biomarkers == [] or biomarkers == None:
+        with open ("./results/biomarkers_list.txt", "r") as f:
+            biomarkers = [line.strip() for line in f if line.strip()]
 
     evaluated_biomarkers = []
 

@@ -4,29 +4,24 @@ import torch
 
 def read_json_arrays_to_list(filename):
     """
-    Read a file containing multiple JSON arrays and combine them into one big list.
+    Read a JSON file containing an array and return it as a list of dictionaries.
     """
-    combined_list = []
-    
-    with open(filename, 'r') as file:
-        content = file.read()
-        
-        # Find all JSON arrays in the content using regex
-        # This looks for patterns that start with [ and end with ]
-        json_arrays = re.findall(r'\[.*?\]', content, re.DOTALL)
-        
-        for json_str in json_arrays:
-            try:
-                array_data = json.loads(json_str)
-                if isinstance(array_data, list):
-                    combined_list.extend(array_data)
-                else:
-                    print(f"Warning: Found non-array JSON: {json_str[:100]}...")
-            except json.JSONDecodeError as e:
-                print(f"Error parsing JSON: {e}")
-                continue
-    
-    return combined_list
+    try:
+        with open(filename, 'r', encoding='utf-8') as file:
+            data = json.load(file)
+            
+            if isinstance(data, list):
+                return data
+            else:
+                print(f"Warning: File does not contain a JSON array")
+                return []
+                
+    except json.JSONDecodeError as e:
+        print(f"Error parsing JSON: {e}")
+        return []
+    except FileNotFoundError as e:
+        print(f"File not found: {e}")
+        return []
 
 def call_model(biomarkers, task, model, tokenizer, device):
     max_retries = 5
@@ -239,17 +234,17 @@ def call_model(biomarkers, task, model, tokenizer, device):
                 raise ValueError("Response is not a valid non-empty list")
             
             if attempt > 0:
-                print(f"✓ Successo al tentativo {attempt + 1}")
+                print(f"Successo al tentativo {attempt + 1}")
             return data
 
         except Exception as e:
-            print(f" Tentativo {attempt + 1}/{max_retries} fallito: {e}")
+            print(f"Tentativo {attempt + 1}/{max_retries} fallito: {e}")
             
             if attempt == max_retries - 1:
-                print(f" Tutti i {max_retries} tentativi falliti. Ritorno lista vuota.")
+                print(f"Tutti i {max_retries} tentativi falliti. Ritorno lista vuota.")
                 return []
             else:
-                print(" Riprovo...")
+                print("Riprovo...")
 
     return []
 
@@ -295,24 +290,24 @@ def merge_biomarker_groups(biomarkers, merging_indexes):
 
 def aggregation(model, tokenizer, device, evaluated_biomarkers):
     '''
-    filename = "./results/evaluated_biomarkers.txt"
-    acronyms = read_json_arrays_to_list(filename)
+    filename = "./results/evaluated_biomarkers.json"
+    evaluated_biomarkers = read_json_arrays_to_list(filename)
     print(f"Total dictionaries: {len(evaluated_biomarkers)}")
     print(f"First few items: {evaluated_biomarkers[:5]}")
-    '''
+    '''    
 
     validated_biomarkers = []
     for acronym in evaluated_biomarkers:
         if acronym["valid"] == True:
             validated_biomarkers.append(acronym["acronym"])
 
-    print(f"Total valid biomarkers: {len(validated_biomarkers)} on {len(evaluated_biomarkers)} total biomarkers")
+    print(f"Valid biomarkers: {len(validated_biomarkers)} on {len(evaluated_biomarkers)} total biomarkers extracted.")
 
-    # try to add biomarkers until a max token count of 6000 is reached
+    # try to add biomarkers until a max token count of 4000 is reached
     batch = []
     batch_storage = []
     current_token_count = 0
-    max_token_count = 300 #6000
+    max_token_count = 4000
     grouped_biomarkers = []
 
     while validated_biomarkers:
@@ -329,7 +324,6 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
 
         batch_size, seq_len = tokenized.input_ids.shape
         token_count = batch_size * seq_len
-        #print(f"Current token count: {current_token_count + token_count}")
 
         if current_token_count + token_count <= max_token_count:
             batch_storage.append(batch)
@@ -345,14 +339,17 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         print(f"Processing last batch of {len(batch_storage)} biomarkers with total token count {current_token_count}...")
         grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
 
-    print(grouped_biomarkers)
-    print(f"\n\nNumber of groups (not merged): {len(grouped_biomarkers)}")
-
     merging_indexes = call_model(grouped_biomarkers, "merging_groups", model, tokenizer, device)
-    
-    print(merging_indexes)
 
     final_grouped_biomarkers = merge_biomarker_groups(grouped_biomarkers, merging_indexes)
+    # Aggiungi count
+    count = 0
+    for group in final_grouped_biomarkers:
+        count = len(group["occurrences"])
+        group["count"] = count
+    # Ordina in modo decrescente (dal count maggiore al minore)
+    final_biomarkers_sorted = sorted(final_grouped_biomarkers, key=lambda x: x['count'], reverse=True)
+
     with open("./results/biomarkers.json", "w", encoding="utf-8") as f:
-        json.dump(final_grouped_biomarkers, f, ensure_ascii=False, indent=2)
-    return final_grouped_biomarkers
+        json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
+    return final_biomarkers_sorted
