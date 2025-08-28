@@ -30,114 +30,114 @@ def call_model(biomarkers, task, model, tokenizer, device):
             if task == "grouping_biomarkers":
                 system_prompt = """You are an expert biomedical data curator with deep knowledge of Alzheimer's disease pathophysiology and biomarkers. Your primary function is to process lists of biomarker terms, and group them by their underlying biological significance.
 
-            CRITICAL ACCURACY REQUIREMENTS:
-            - You MUST NOT invent, create, or add any biomarkers that are not explicitly provided in the input list
-            - You MUST NOT omit, skip, or forget any biomarkers from the input list
-            - Every single biomarker term from the input MUST appear exactly once in the "occurrences" arrays
-            - If you are uncertain about a biomarker's identity or grouping, you MUST still include it (use "Other" category if needed)
-            - DOUBLE-CHECK: Before finalizing your response, verify that every input term appears exactly once in your output
+CRITICAL ACCURACY REQUIREMENTS:
+- You MUST NOT invent, create, or add any biomarkers that are not explicitly provided in the input list
+- You MUST NOT omit, skip, or forget any biomarkers from the input list
+- Every single biomarker term from the input MUST appear exactly once in the "occurrences" arrays
+- If you are uncertain about a biomarker's identity or grouping, you MUST still include it (use "Other" category if needed)
+- DOUBLE-CHECK: Before finalizing your response, verify that every input term appears exactly once in your output
 
-            Rules for Operation:
-            Core Task: You will receive lists of raw biomarker strings. You must aggregate synonymous terms, even if they have different spellings, abbreviations, or syntactic structures (e.g., "P-Tau 181", "pTau181", "phosphorylated tau at threonine 181").
-            Canonical Naming: For each group of synonyms, you must assign a single, scientifically precise, and human-readable canonical name (e.g., "P-Tau 181").
-            Output Format: You will always output a valid JSON object. No other text, explanations, or apologies should precede or follow the JSON code block.
-            Handling Uncertainty: If you encounter a highly ambiguous term, group it cautiously and use the "Other" category. It is more important to be accurate than to force a categorization. NEVER omit uncertain terms - include them somewhere.
-            Focus: Do not provide commentary, summaries, or analysis beyond the requested JSON structure. Your entire output must be the JSON object.
+Rules for Operation:
+Core Task: You will receive lists of raw biomarker strings. You must aggregate synonymous terms, even if they have different spellings, abbreviations, or syntactic structures (e.g., "P-Tau 181", "pTau181", "phosphorylated tau at threonine 181").
+Canonical Naming: For each group of synonyms, you must assign a single, scientifically precise, and human-readable canonical name (e.g., "P-Tau 181").
+Output Format: You will always output a valid JSON object. No other text, explanations, or apologies should precede or follow the JSON code block.
+Handling Uncertainty: If you encounter a highly ambiguous term, group it cautiously and use the "Other" category. It is more important to be accurate than to force a categorization. NEVER omit uncertain terms - include them somewhere.
+Focus: Do not provide commentary, summaries, or analysis beyond the requested JSON structure. Your entire output must be the JSON object.
 
-            MANDATORY VERIFICATION STEPS:
-            1. Count the total number of input biomarkers
-            2. Count the total number of biomarkers in all "occurrences" arrays combined
-            3. These numbers MUST be identical
-            4. If they don't match, you have made an error and must correct it
-            """
+MANDATORY VERIFICATION STEPS:
+1. Count the total number of input biomarkers
+2. Count the total number of biomarkers in all "occurrences" arrays combined
+3. These numbers MUST be identical
+4. If they don't match, you have made an error and must correct it
+"""
                 user_prompt = f"""Please process the following list of raw Alzheimer's disease biomarker terms. Aggregate synonymous terms, and provide a list of all occurrences and their count.
 
-            CRITICAL INSTRUCTIONS - READ CAREFULLY:
-            - You MUST include EVERY SINGLE biomarker from the input list in your output
-            - You MUST NOT add any biomarkers that are not in the input list
-            - If you are unsure about a biomarker, include it anyway (use "Other" category if needed)
-            - MANDATORY: Before providing your final answer, mentally count that all input biomarkers appear exactly once in your "occurrences" arrays
+CRITICAL INSTRUCTIONS - READ CAREFULLY:
+- You MUST include EVERY SINGLE biomarker from the input list in your output
+- You MUST NOT add any biomarkers that are not in the input list
+- If you are unsure about a biomarker, include it anyway (use "Other" category if needed)
+- MANDATORY: Before providing your final answer, mentally count that all input biomarkers appear exactly once in your "occurrences" arrays
 
-            Output a JSON object where each key is an object with these exact keys:
-            "canonical_biomarker": (string) The standardized name.
-            "occurrences": (array of strings) All raw terms grouped under this canonical name.
+Output a JSON object where each key is an object with these exact keys:
+"canonical_biomarker": (string) The standardized name.
+"occurrences": (array of strings) All raw terms grouped under this canonical name.
 
-            Example Input:
-            ["P-Tau 181", "pTau181", "Amyloid Beta 42/40 ratio"]
+Example Input:
+["P-Tau 181", "pTau181", "Amyloid Beta 42/40 ratio"]
 
-            Expected Output Structure:
-            [
-                {{
-                    "canonical_biomarker": "P-Tau 181",
-                    "occurrences": ["P-Tau 181", "pTau181"]
-                }},
-                {{
-                    "canonical_biomarker": "Aβ42/40 Ratio",
-                    "occurrences": ["Amyloid Beta 42/40 ratio"]
-                }}
-            ]
+Expected Output Structure:
+[
+    {{
+        "canonical_biomarker": "P-Tau 181",
+        "occurrences": ["P-Tau 181", "pTau181"]
+    }},
+    {{
+        "canonical_biomarker": "Aβ42/40 Ratio",
+        "occurrences": ["Amyloid Beta 42/40 ratio"]
+    }}
+]
 
-            INPUT COUNT: {len(biomarkers) if isinstance(biomarkers, list) else "Please count the biomarkers below"}
+INPUT COUNT: {len(biomarkers) if isinstance(biomarkers, list) else "Please count the biomarkers below"}
 
-            Here is the full list of biomarkers to process:
+Here is the full list of biomarkers to process:
 
-            {biomarkers}
-            """
+{biomarkers}
+"""
             elif task == "merging_groups":
                 canonical_biomarkers = [marker["canonical_biomarker"] for marker in biomarkers]
                 system_prompt = """You are an expert biomedical data curator specialized in Alzheimer's disease biomarkers. Your task is to identify groups of canonical biomarker names that represent the same biological entity and should be merged together.
 
-        CRITICAL ACCURACY REQUIREMENTS:
-        - You MUST analyze ONLY the canonical biomarker names provided in the input list
-        - You MUST NOT invent, add, or reference any biomarker names not in the input
-        - You MUST NOT skip or omit any biomarker from your analysis
-        - If you are uncertain whether two biomarkers should be merged, err on the side of caution and keep them separate
-        - MANDATORY: Every input biomarker must be accounted for in your output (either as a standalone group or part of a merge group)
+CRITICAL ACCURACY REQUIREMENTS:
+- You MUST analyze ONLY the canonical biomarker names provided in the input list
+- You MUST NOT invent, add, or reference any biomarker names not in the input
+- You MUST NOT skip or omit any biomarker from your analysis
+- If you are uncertain whether two biomarkers should be merged, err on the side of caution and keep them separate
+- MANDATORY: Every input biomarker must be accounted for in your output (either as a standalone group or part of a merge group)
 
-        CORE PRINCIPLES:
-        - Merge groups only when biomarkers represent the EXACT SAME biological measurement
-        - Consider different naming conventions, abbreviations, and synonyms (e.g., "P-Tau 181" and "Phosphorylated Tau 181")
-        - Do NOT merge biomarkers that are related but measure different things (e.g., "Aβ40" vs "Aβ42" vs "Aβ42/40 ratio")
-        - When in doubt, keep separate rather than incorrectly merging
+CORE PRINCIPLES:
+- Merge groups only when biomarkers represent the EXACT SAME biological measurement
+- Consider different naming conventions, abbreviations, and synonyms (e.g., "P-Tau 181" and "Phosphorylated Tau 181")
+- Do NOT merge biomarkers that are related but measure different things (e.g., "Aβ40" vs "Aβ42" vs "Aβ42/40 ratio")
+- When in doubt, keep separate rather than incorrectly merging
 
-        OUTPUT FORMAT:
-        - Return only a valid JSON array
-        - Each element represents a group of biomarkers to be merged
-        - Use 0-based indices corresponding to the input list positions
-        - Single biomarkers that don't need merging should appear as single-element arrays
-        - No explanations, comments, or additional text outside the JSON
+OUTPUT FORMAT:
+- Return only a valid JSON array
+- Each element represents a group of biomarkers to be merged
+- Use 0-based indices corresponding to the input list positions
+- Single biomarkers that don't need merging should appear as single-element arrays
+- No explanations, comments, or additional text outside the JSON
 
-        VERIFICATION REQUIREMENTS:
-        - Every index from 0 to (input_length-1) must appear exactly once across all merge groups
-        - No index should be duplicated
-        - No index should be omitted
-        """
+VERIFICATION REQUIREMENTS:
+- Every index from 0 to (input_length-1) must appear exactly once across all merge groups
+- No index should be duplicated
+- No index should be omitted
+"""
                 user_prompt = f"""Analyze the following list of canonical biomarker names and identify which groups should be merged because they represent the same biological measurement.
 
-        INSTRUCTIONS:
-        1. Examine each biomarker name for synonyms, abbreviations, or alternative naming conventions
-        2. Group biomarkers that measure the EXACT SAME biological entity
-        3. Return the 0-based indices of biomarkers that should be merged together
-        4. Each biomarker must appear in exactly one group (even if it's a group of one)
+INSTRUCTIONS:
+1. Examine each biomarker name for synonyms, abbreviations, or alternative naming conventions
+2. Group biomarkers that measure the EXACT SAME biological entity
+3. Return the 0-based indices of biomarkers that should be merged together
+4. Each biomarker must appear in exactly one group (even if it's a group of one)
 
-        INPUT VALIDATION:
-        - Total biomarkers to analyze: {len(canonical_biomarkers)}
-        - You must account for ALL biomarkers from index 0 to {len(canonical_biomarkers)-1}
+INPUT VALIDATION:
+- Total biomarkers to analyze: {len(canonical_biomarkers)}
+- You must account for ALL biomarkers from index 0 to {len(canonical_biomarkers)-1}
 
-        EXPECTED OUTPUT FORMAT:
-        [
-        [0, 1, 3],     // Indices of biomarkers to merge together
-        [2],           // Single biomarker (no merging needed)
-        [4, 7],        // Another group to merge
-        [5],           // Another standalone biomarker
-        [6]            // And so on...
-        ]
+EXPECTED OUTPUT FORMAT:
+[
+[0, 1, 3],     // Indices of biomarkers to merge together
+[2],           // Single biomarker (no merging needed)
+[4, 7],        // Another group to merge
+[5],           // Another standalone biomarker
+[6]            // And so on...
+]
 
-        CANONICAL BIOMARKERS TO ANALYZE:
-        {canonical_biomarkers}
+CANONICAL BIOMARKERS TO ANALYZE:
+{canonical_biomarkers}
 
-        Remember: Return ONLY the JSON array of index groups. No additional text.
-        """
+Remember: Return ONLY the JSON array of index groups. No additional text.
+"""
             else:
                 return []
 
