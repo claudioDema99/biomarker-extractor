@@ -207,6 +207,7 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
         else:
             print(f"Batch {batch_id}: {rows_in_batch} righe – Indici {i} - {i + rows_in_batch - 1}")
         print(f"{batch_tokens} tokens => {batch_tokens + 3492} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
+
         biomarkers, cot, response = call_model(records, dataset_type, model, tokenizer, device)
 
         if biomarkers is None or biomarkers == "":
@@ -227,11 +228,10 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
             "response": response
         }
         log_entries.append(log_entry)
-        
         # Save after each batch
         save_logs_as_json(log_entries, log_filepath)
 
-        # avanza l’indice; così eviti di ripetere le righe già processate
+        # avanza l’indice
         i += rows_in_batch
         batch_id += 1
 

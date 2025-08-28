@@ -1,5 +1,4 @@
 import json
-import re
 import torch
 
 def read_json_arrays_to_list(filename):

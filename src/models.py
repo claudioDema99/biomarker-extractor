@@ -236,4 +236,4 @@ Output:
             else:
                 print(" Riprovo...")
 
-    return [], "", ""  # Backup (non dovrebbe mai essere raggiunto)
+    return [], "", ""

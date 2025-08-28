@@ -294,7 +294,7 @@ def validation(model, tokenizer, device, biomarkers):
     clear_gpu_memory()
     emb_model = SentenceTransformer(EMBEDDING_MODEL, device=device)
 
-    # retrieval + generation
+    # for testing
     if biomarkers == [] or biomarkers == None:
         with open ("./results/biomarkers_list.txt", "r") as f:
             biomarkers = [line.strip() for line in f if line.strip()]
