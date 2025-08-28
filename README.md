@@ -84,5 +84,4 @@ I principali file prodotti dalla pipeline (tutti nella cartella `results`) sono:
 Nella repo GitHub non sono incluse le seguenti cartelle:
 - `data` — dataset analizzati
 - `docs` — documenti usati nel processo RAG
-- `shots` — esempi da fornire al modello per l’estrazione dei biomarkers
 - `venv` — virtual environment

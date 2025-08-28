@@ -1,0 +1,24 @@
+Examples:records[]
+
+1. Input record: 
+
+   Output:
+
+
+records[]
+2. Input record: 
+
+   Output: 
+
+
+records[]
+3. Input record: 
+
+   Output: 
+
+
+records[]
+4. Input record: 
+
+   Output: 
+

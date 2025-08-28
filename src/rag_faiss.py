@@ -9,7 +9,6 @@ import numpy as np
 import faiss
 import torch
 import json
-import re
 from sentence_transformers import SentenceTransformer
 
 # ---------- Config ----------
