@@ -346,15 +346,13 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
 
     print(grouped_biomarkers)
-
     print(f"\n\nNumber of groups (not merged): {len(grouped_biomarkers)}")
+
     merging_indexes = call_model(grouped_biomarkers, "merging_groups", model, tokenizer, device)
+    
     print(merging_indexes)
 
     final_grouped_biomarkers = merge_biomarker_groups(grouped_biomarkers, merging_indexes)
-    # salva in json? txt?
-    with open("./results/biomarkers.txt", "w") as f:
-        for item in final_grouped_biomarkers:
-            f.write(item + "\n")
-    print(final_grouped_biomarkers)
+    with open("./results/biomarkers.json", "w", encoding="utf-8") as f:
+        json.dump(final_grouped_biomarkers, f, ensure_ascii=False, indent=2)
     return final_grouped_biomarkers

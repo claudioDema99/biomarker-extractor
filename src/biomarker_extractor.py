@@ -2,6 +2,7 @@ import pandas as pd
 import re
 from typing import List, Dict, Any
 import json
+import os
 from src.models import call_model, get_token_count
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:
@@ -137,6 +138,11 @@ def process_batch_for_deduplication(batch_df: pd.DataFrame,
     # Converti in dizionario di record
     return processed_batch.to_dict(orient="records")
 
+def save_logs_as_json(log_entries, filepath):
+    """Save log entries as pretty-formatted JSON"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(log_entries, f, ensure_ascii=False, indent=2)
+
 def tokens_of(df_slice, tokenizer):
     """Restituisce (token_count, records_json) per un blocco di righe."""
     records_json = process_batch_for_deduplication(df_slice)
@@ -146,12 +152,13 @@ def tokens_of(df_slice, tokenizer):
 def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers = []
     all_biomarkers_extended = []
-    log_file = {
-        "batch_id": int,
-        "rows_ids": List[int],
-        "cot": str,
-        "response": str,
-    }
+    
+    log_filepath = "./results/extraction_logs.json"
+    if os.path.exists(log_filepath):
+        with open(log_filepath, "r", encoding="utf-8") as f:
+            log_entries = json.load(f)
+    else:
+        log_entries = []
 
     # === BATCH SIZE ADATTIVO: Stabilisci threshold di token number (circa la metà della context window del modello), 
     # Vogliamo passare al modello un batch di righe che abbia un numero di token compreso tra TOK_MIN e TOK_MAX.
@@ -213,14 +220,17 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
             all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
 
-        log_file["batch_id"] = batch_id
-        log_file["rows_ids"] = list(range(i, i + rows_in_batch))
-        log_file["cot"]      = cot
-        log_file["response"] = response
-        with open("./results/extraction_logs.jsonl", "a", encoding="utf-8") as f:
-            json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
-            f.write("\n")                               # va a capo per la riga successiva
-            
+        log_entry = {
+            "batch_id": batch_id,
+            "rows_ids": list(range(i, i + rows_in_batch)),
+            "cot": cot,
+            "response": response
+        }
+        log_entries.append(log_entry)
+        
+        # Save after each batch
+        save_logs_as_json(log_entries, log_filepath)
+
         # avanza l’indice; così eviti di ripetere le righe già processate
         i += rows_in_batch
         batch_id += 1
@@ -242,4 +252,7 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
                 f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
                 for biomarker in all_biomarkers:
                     f.write(f"{biomarker}\n")
+    with open("./results/biomarkers_list.txt", "w") as f:
+        for biomarker in all_biomarkers_extended:
+            f.write(f"{biomarker}\n")
     return all_biomarkers, all_biomarkers_extended

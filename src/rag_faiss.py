@@ -27,6 +27,11 @@ def clear_gpu_memory():
         torch.cuda.empty_cache()
     gc.collect()
 
+def save_logs_as_json(log_entries, filepath):
+    """Save log entries as pretty-formatted JSON"""
+    with open(filepath, "w", encoding="utf-8") as f:
+        json.dump(log_entries, f, ensure_ascii=False, indent=2)
+
 def extract_text_from_pdf(pdf_path: str) -> str:
     doc = fitz.open(pdf_path)
     pages = []
@@ -133,21 +138,17 @@ For each element in the list, you must:
 
 **Required response format:**
 For each element, use this JSON structure:
-```json
 {
   "original_name": "name as provided in the list",
   "valid": true/false,
-  "acronym": "ACR",
+  "acronym": "ACR"
 }
-```
 If an element is NOT a valid marker, indicate:
-```json
 {
   "original_name": "name as provided",
   "valid": false,
   "acronym": "N/A"
 }
-```
 The marker must be documented in scientific literature as correlated with Alzheimer's.
 Be precise, concise, and base your analysis exclusively on the evidence provided in the documents.
 """
@@ -214,7 +215,7 @@ def generate_from_llm(prompt: str, model, tokenizer, device):
             #top_p=0.9,                   # Nucleus sampling (se do_sample=True) quindi inutile
             pad_token_id=tokenizer.eos_token_id,  # Token di padding
             eos_token_id=tokenizer.eos_token_id,  # Token di fine sequenza
-            use_cache=True,               ### Usala STA CACHE!!!!!
+            use_cache=True,               ### Usala
             repetition_penalty=1.1,       # Penalità per ripetizioni
             length_penalty=1.0            # Penalità per lunghezza
         )
@@ -259,8 +260,7 @@ def generate_from_llm(prompt: str, model, tokenizer, device):
 
 def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, llm_model, tokenizer, device):
     """Process a batch of biomarkers with memory optimization"""
-    #print(f"Processing batch: {batch}")
-    
+        
     # Retrieve context for each biomarker
     all_retrieved_texts = []
     for biomarker in batch:
@@ -283,9 +283,9 @@ def process_biomarkers_batch(batch: List[str], index, chunks, metas, emb_model, 
     return cot, response
 
 def validation(model, tokenizer, device, biomarkers):
-    pdf_folder = "./docs"
 
     # crea index (esegui solo la prima volta)
+    # pdf_folder = "./docs"
     # index, chunks, metas = build_embeddings_and_index(pdf_folder)
 
     # carica index
@@ -296,17 +296,22 @@ def validation(model, tokenizer, device, biomarkers):
 
     # retrieval + generation
     
-    '''
-    with open ("liste_biomarkers.txt", "r") as f: #./results/biomarkers_list.txt
+    '''for testing
+    with open ("./results/biomarkers_list.txt", "r") as f:
         biomarkers = [line.strip() for line in f if line.strip()]
+    biomarkers = biomarkers[120:130]
     '''
 
     evaluated_biomarkers = []
-    log_file = {
-        "acronyms": List,
-        "cot": str,
-        "response": str,
-    }
+
+    # log file dove salvo tutti i biomarkers scartati insieme alle CoT (ragionamenti) dell'LLM: 
+    # in questo modo posso capire perchè il modello ha deciso di scartare quel biomarker
+    log_filepath = "./results/not_validated_logs.json"
+    if os.path.exists(log_filepath):
+        with open(log_filepath, "r", encoding="utf-8") as f:
+            log_entries = json.load(f)
+    else:
+        log_entries = []
     
     # Process in smaller batches for memory efficiency
     for i in range(0, len(biomarkers), MAX_BATCH_SIZE):
@@ -317,33 +322,28 @@ def validation(model, tokenizer, device, biomarkers):
             cot, response = process_biomarkers_batch(
                 batch, index, chunks, metas, emb_model, model, tokenizer, device
             )
-            # se è un fenced code block ```json ... ```
-            fenced_match = re.search(r"^```(?:\w+)?\n(.*)\n```$", response.strip(), re.DOTALL)
-            if fenced_match:
-                s = fenced_match.group(1).strip()
-            else:
-                # altrimenti rimuove eventuali backtick sparsi all'inizio/fine
-                s = response.strip("` \t\n\r")
-            # primo tentativo diretto di parsing
-            try:
-                response_json = json.loads(s)
-                to_log = False
-                for acronym in response_json:
-                    if acronym["valid"] == False:
-                        to_log = True
-                if to_log:
-                    log_file["acronyms"] = response_json
-                    log_file["cot"]      = cot
-                    log_file["response"] = response
-                    with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
-                        json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
-                        f.write("\n") 
-            except json.JSONDecodeError:
-                response_json = []
-            # a sto punto append response o response_json?
-            evaluated_biomarkers.extend(response_json)
+            start = response.find('[')
+            end   = response.rfind(']') + 1
+
+            if start == -1 or end == 0:
+                raise ValueError("JSON structure not found in response")
+
+            response_json = response[start:end]
+            data = json.loads(response_json)
+            for acronym in data:
+                if acronym["valid"] == False:
+                    log_entry = {
+                        "biomarker": acronym,
+                        "cot": cot,
+                        "response": response
+                    }
+                    log_entries.append(log_entry)
+                    # Save after each batch
+                    save_logs_as_json(log_entries, log_filepath)
+            evaluated_biomarkers.extend(data)
             
-        except torch.cuda.OutOfMemoryError as e:
+        except Exception as e:
+            # NOT SURE IS OUT OF MEMORY PROBLEM
             print(f"OOM Error in batch {i//MAX_BATCH_SIZE + 1}: {e}")
             print("Clearing memory and retrying with smaller batch...")
             clear_gpu_memory()
@@ -354,49 +354,38 @@ def validation(model, tokenizer, device, biomarkers):
                     cot, response = process_biomarkers_batch(
                         [single_item], index, chunks, metas, emb_model, model, tokenizer, device
                     )
-                    # se è un fenced code block ```json ... ```
-                    fenced_match = re.search(r"^```(?:\w+)?\n(.*)\n```$", response.strip(), re.DOTALL)
-                    if fenced_match:
-                        s = fenced_match.group(1).strip()
-                    else:
-                        # altrimenti rimuove eventuali backtick sparsi all'inizio/fine
-                        s = response.strip("` \t\n\r")
-                    # primo tentativo diretto di parsing
-                    try:
-                        response_json = json.loads(s)
-                        to_log = False
-                        for acronym in response_json:
-                            if acronym["valid"] == False:
-                                to_log = True
-                        if to_log:
-                            log_file["acronyms"] = response_json
-                            log_file["cot"]      = cot
-                            log_file["response"] = response
-                            with open("./results/not_validated_logs.jsonl", "a", encoding="utf-8") as f:
-                                json.dump(log_file, f, ensure_ascii=False)  # scrive il dict come JSON
-                                f.write("\n") 
-                    except json.JSONDecodeError:
-                        response_json = []
-                    # a sto punto append response o response_json?
-                    evaluated_biomarkers.extend(response_json)
+                    start = response.find('{')
+                    end   = response.rfind('}') + 1
+
+                    if start == -1 or end == 0:
+                        raise ValueError("JSON structure not found in response")
+
+                    response_json = response[start:end]
+                    data = json.loads(response_json)
+                    if data["valid"] == False:
+                        log_entry = {
+                            "biomarker": data,
+                            "cot": cot,
+                            "response": response
+                        }
+                        log_entries.append(log_entry)
+                        # Save after each batch
+                        save_logs_as_json(log_entries, log_filepath)
+                    evaluated_biomarkers.append(data)
 
                 except Exception as e2:
                     print(f"Failed to process {single_item}: {e2}")
                     evaluated_biomarkers.append(f"ERROR: Could not process {single_item}")
         
-        print(f"Processed {len(evaluated_biomarkers)*MAX_BATCH_SIZE}/{len(biomarkers)} biomarkers so far.")
+        print(f"Processed {len(evaluated_biomarkers)}/{len(biomarkers)} biomarkers so far.")
         
         if i % (MAX_BATCH_SIZE * 50) == 0: # salva ogni 100 biomarkers
-            with open("./results/evaluated_biomarkers.jsonl", "w", encoding="utf-8") as f:
-                for item in evaluated_biomarkers:
-                    json.dump(item, f, ensure_ascii=False)
-                    f.write("\n")
+            with open("./results/evaluated_biomarkers.json", "w", encoding="utf-8") as f:
+                json.dump(evaluated_biomarkers, f, ensure_ascii=False, indent=2)
 
         # Memory cleanup between batches
         clear_gpu_memory()
 
-    with open("./results/evaluated_biomarkers.jsonl", "w", encoding="utf-8") as f:
-        for item in evaluated_biomarkers:
-            json.dump(item, f, ensure_ascii=False)
-            f.write("\n")
+    with open("./results/evaluated_biomarkers.json", "w", encoding="utf-8") as f:
+        json.dump(evaluated_biomarkers, f, ensure_ascii=False, indent=2)
     return evaluated_biomarkers
