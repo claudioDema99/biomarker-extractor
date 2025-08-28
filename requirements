@@ -1,6 +1,7 @@
 pandas
-#torch
 transformers
 accelerate
-rapidfuzz
-# Prova prima RapidFuzz (moderno), altrimenti fuzzywuzzy (legacy)
+PyMuPDF
+faiss-cpu   # oppure faiss-gpu
+sentence-transformers
+# torch
