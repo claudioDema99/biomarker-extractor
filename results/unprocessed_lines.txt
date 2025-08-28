@@ -1,0 +1,407 @@
+
+
+________________________________________________________________
+[WARNING] Riga 11 supera TOK_MAX (5414 > 3500) – saltata.
+
+outcome_measurement_title:
+Change From Baseline in European Quality of Life -5 Dimensions (EQ-5D) Scale Total Score- Thermometer Score;
+Change From Baseline in CDR-SB Score at Week 48, as a Function of APOE ε4 Status in Full Population Cohort;
+Any Time on Treatment Differences in Frequencies of Clinical Chemistry Data Outside the Reference Range;
+Change From Baseline in HbA1c up to Week 54;
+Change From Baseline in Hemoglobin;
+Change From Baseline in ADAS-Cog Total Score at Week 48, as a Function of APOE ε4 Status in Full Population Cohort;
+Change From Baseline in CDR-SB Score at Week 48, as a Function of APOE ε4 Status in All Except E4/E4s Cohort;
+Change From Baseline in ADAS-Cog Total Score at Weeks 8, 16, 24 and 36;
+Number of Participants With On-treatment Adverse Events (AEs), Serious Adverse Events (SAEs) and Severity of AEs;
+Number of Participants With Change From Baseline in Vital Signs of Clinical Concern at Any Time on Treatment- Systolic Blood Pressure (SBP) and Diastolic Blood Pressure (DBP);
+Change From Baseline in ADAS-Cog Total Score at Week 48, as a Function of APOE ε4 Status in All Except E4/E4s Cohort;
+Change From Baseline in Clinical Dementia Rating Scale - Sum of Boxes (CDR-SB) Score at Week 48, as a Function of APOE ε4 Status in APOE4 Negatives Cohort;
+Change From Baseline in Disability Assessment for Dementia (DAD) Total Score;
+Change From Baseline in Short Term Memory Assessment;
+Change From Baseline in Weight;
+Change From Baseline in Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog) Total Score at Week 48, as a Function of APOE ε4 Status in APOE4 Negatives Cohort;
+Change From Screening in Mini Mental State Examination (MMSE) Total Score;
+Changes From Baseline in Electrocardiogram (ECG) Parameters- HR;
+Change in ADAS-Cog Total Score for Observed Cases at Week 54 Compared to Week 48;
+Change From Baseline in Hematocrit;
+Changes From Baseline in ECG Parameters- RR Interval, QT Interval, QTcB, QTcF, PR Interval and QRS Duration;
+Number of Participants With Change From Baseline in Vital Signs of Clinical Concern at Any Time on Treatment- Heart Rate (HR);
+Change From Baseline in Alzheimer's Carer's Quality of Life Instrument (ACQLI) Score;
+Change From Baseline in Domains of the Resource Utilization in Dementia Scale (RUD)- Q1 and Q2 Caregiver Hours;
+Change From Baseline in Glycosylated Hemoglobin (HbA1c) at Week 48;
+Change From Baseline in EQ-5D Scale Total Score- Utility Score;
+Change From Baseline in CDR-SB Score at Weeks 12, 24 and 36;
+Number of Participants With Change From Baseline in Vital Signs of Clinical Concern at Any Time on Treatment- Weight;
+Change in CDR-SB Total Score for Observed Cases at Week 54 Compared to Week 48;
+Change From Baseline in Neuropsychiatric Inventory (NPI) Total Score;
+Any Time on Treatment Differences in Frequencies of Hematology Data Outside the Reference Range;
+
+
+________________________________________________________________
+[WARNING] Riga 21 supera TOK_MAX (5068 > 3500) – saltata.
+
+outcome_measurement_title:
+Change From Baseline (W0) in Periodic HbA1c Assessment;
+Change From Baseline (W0) in Mean CIBIC+ Global Functioning Total Score at W24 as a Function of APOE e4 Status in APOE4 Negative Cohort;
+Number of Par. With Clinical Chemistry Values of Potential Clinical Concern Any Time on Treatment;
+Change From Baseline (W0) in Mean Disability Assessment for Dementia (DAD) Scale Total Score at W8, W16, W24;
+Change From Baseline (W0) in Mean ADAS-Cog Total Score at W24 as a Function of APOE e4 Status in All Except e4/e4's Cohort;
+Change From Baseline (W0) in Mean Short Term Memory Assessment Total Score (ADAS-Cog Q1 Plus Q7) at W8, W16, W24;
+Change From Baseline (W0) in Hemoglobin;
+Change From Baseline (W0) in Mini Mental State Examination (MMSE) Total Score at W24.;
+Change From Baseline (W0) in Body Weight;
+Change From Baseline (W0) in Mean European Quality of Life -5 Dimensions Proxy Version (EQ-5D Proxy) Total Score at W12, W24 Assessed by Utility;
+Change From Baseline (W0) in Hematocrit;
+Change From Baseline (W0) in Alzheimer's Carer's Quality of Life Instrument (ACQLI) Score at W12 and W24.;
+Change From Baseline (W0) in Mean ADAS-Cog Total Score at W8, W16, W24;
+Change From Baseline (W0) in 12-lead Electrocardiogram (ECG);
+Number of Par. With Hematology Data of Potential Clinical Concern Any Time on Treatment;
+Change From Baseline (W0) in Mean ADAS-Cog Total Score at W24 as a Function of APOE e4 Status in Apolipoprotein epsilon4 (APOE e4) Negative Cohort;
+Change From Baseline (W0) in Mean CIBIC+ Global Functioning Total Score at W24 as a Function of APOE e4 Status in All Except e4/e4's Cohort;
+Time Spent Caring for Basic and Instrumental Activities Resource Utilization in Dementia (RUD) Scale at W12 and W24;
+Number of Participants With Systolic and Diastolic Blood Pressure (SBP and DBP), Heart Rate (HR) and Weight Values of Potential Clinical Concern (PCC) Any Time on Treatment (ATOT).;
+Change From Baseline (W0) in Heart Rate (HR) Measured From 12-lead Electrocardiogram (ECG);
+Change From Baseline (W0) in Mean ADAS-Cog Total Score at W24 as a Function of APOE e4 Status in Full Population Cohort;
+Number of Participants With Adverse Events Defined by Severity;
+Change From Baseline (W0) in Glycosylated Hemoglobin (HbA1c) at W24.;
+Change From Baseline (W0) in Mean European Quality of Life -5 Dimensions Proxy Version (EQ-5D Proxy) Total Score at W12, W24 Assessed by Thermometer (Visual Analog Scale [VAS]);
+Change From Baseline (W0) in Mean Neuropsychiatric Inventory (NPI) Total Score at W8, W16, W24;
+Change From Baseline (W0) in Mean CIBIC+ Global Functioning Total Score at W8, W16, W24;
+Change From Baseline (W0) in Mean CIBIC+ Global Functioning Total Score at W24 as a Function of APOE e4 Status in Full Population Cohort;
+
+
+________________________________________________________________
+[WARNING] Riga 54 supera TOK_MAX (6641 > 3500) – saltata.
+
+outcome_measurement_title:
+Change From Baseline in RBANS Total Score at Week 12;
+Change From Baseline in Hematology Parameter Mean Corpuscle Volume and Mean Platelet Volume at Week 24;
+Number of Participants With Vital Signs Data of Potential Clinical Concern (PCC) Any Time on Treatment (ATOT);
+Change From Baseline in Clinical Chemistry Parameters Alanine Amino Transferase, Alkaline Phosphatase, Aspartate Amino Transferase, Creatine Kinase, Gamma Glutamyl Transferase and Lactate Dehydrogenase at Week 24;
+Change From Baseline in Hematology Parameters Basophils, Eosinophils, Lymphocytes, Monocytes, Platelet Count, Segmented Neutrophils, Total Neutrophils, White Blood Cell Count at Week 24;
+Change From Baseline in ADAS-Cog Total Score at Week 12;
+Change From Baseline in Clinical Chemistry Parameter Blood Urea Nitrogen /Creatinine Ratio at Week 24;
+CIBIC+ Score at Week 12;
+Number of Participants With Electrocardiogram (ECG) Findings as Assessed by Investigator and Central Cardiologist;
+Number of Participants With Any Adverse Event (Serious and Non-serious) and Serious Adverse Events (SAEs);
+Change From Baseline in Alzheimer's Disease Assessment Scale - Cognitive Subscale (ADAS-Cog) Total Score at Week 24;
+Change From Baseline in Hematology Parameters Hemoglobin and Mean Corpuscle Hemoglobin Concentration at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 10-20) on the CIBIC+ Score at Week 12;
+Change From Baseline in ADCS-ADL-Basic Score; ADCS-ADL: Instrumental Score and ADCS-ADL: Total Independence Score at Weeks 12 and 24;
+Change From Baseline in Clinical Chemistry Parameters Albumin and Total Protein at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 16-26) on the CIBIC+ Score at Week 12;
+Exposure Estimates for SB-742457 Area Under Curve Over the Dosing Interval at Steady State (AUCτss);
+Change From Baseline in Clinical Chemistry Parameters Calcium, CO2 Content/Bicarbonate, Chloride, Glucose, HDL Cholesterol, LDL Cholesterol, Magnesium, Phosphorus, Potassium, Sodium, Triglycerides, Urea/Blood Urea Nitrogen at Week 24;
+Change From Baseline in Clinical Chemistry Parameters Creatinine, Direct Bilirubin and Total Bilirubin at Week 24;
+Change From Baseline in Cornell Scale for Depression in Dementia (CSDD) Total Score at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 10-20) on the Change From Baseline in ADAS-Cog Total Score, the Change From Baseline in RBANS Total Score at Week 12;
+Change From Baseline in Hematology Parameter Hematocrit;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline [MMSE Scores 10-20) on the Change From Baseline in ADAS-Cog Total Score, the Change From Baseline in RBANS Total Score at Week 24;
+Number of Participants With Chemistry Data of PCC ATOT;
+Exposure Estimates for SB-742457 Minimum Concentration at Steady State (Cmin-ss);
+Exposure Estimates for Donepezil Average Concentration at Steady State (Cavgss);
+Number of Participants With Hematology Data of PCC ATOT;
+Clinician's Interview-Based Impression of Change - Plus (CIBIC+) Score at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 10-20) on the CIBIC+ Score at Week 24;
+Change From Baseline in MMSE Total Score at Week 24;
+Change From Baseline in Hematology Parameter Mean Corpuscle Hemoglobin at Week 24;
+Change From Baseline in Hematology Parameter Red Blood Cell Count at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline Mini Mental State Examination [MMSE] Scores 16-26) on the Change From Baseline in ADAS-Cog Total Score, the Change From Baseline in RBANS Total Score at Week 24;
+Change From Baseline in Alzheimer's Disease Cooperative Study - Activities of Daily Living (ADCS-ADL) Total Score at Weeks 12 and 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 16-26) on the Change From Baseline in ADAS-Cog Total Score, the Change From Baseline in RBANS Total Score at Week 12;
+Change From Baseline in Repeatable Battery for the Assessment of Neuropsychological Status (RBANS) Total Score at Week 24;
+Effect of Baseline Severity (Including Subgroup Analyses Based on Baseline MMSE Scores 16-26) on the CIBIC+ Score at Week 24;
+
+
+________________________________________________________________
+[WARNING] Riga 69 supera TOK_MAX (4758 > 3500) – saltata.
+
+outcome_measurement_title:
+All Subjects Improved/Stabilized or Worsened for Mood in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Repetitiveness in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Asphasia in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Mobility at Week 12 LOCF;
+All Subjects Improved/Stabilized or Worsened for Insight in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Pain/Discomfort at Week 12;
+Correlation Between Change From Baseline in Mini-Mental State Examination (MMSE) Score and Change From Baseline in Combined Patient and Caregiver Health Related Quality of Life (Alzheimer's Disease) (HR QoL-AD) Questionnaire Total Score;
+All Subjects Improved/Stabilized or Worsened for Domestic Activities in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Last Observation Carried Forward (LOCF) Change From Baseline in Mini-Mental State Examination (MMSE) Total Scores at Week 12;
+Correlation Between LOCF Change From Baseline in Mini-Mental State Examination (MMSE) Score and LOCF Change From Baseline in Combined Patient and Caregiver Health Related Quality of Life (Alzheimer's Disease) (HR QoL-AD) Questionnaire Total Score;
+All Subjects Improved/Stabilized or Worsened for Delusions in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+LOCF Change From Baseline in Combined Patient and Caregiver Health Related Quality of Life (Alzheimer's Disease) (HR QoL-AD) Questionnaire Total Scores;
+Correlation Analysis: LOCF Change From Baseline in Combined Patient and Caregiver Quality of Life in Alzheimer's Disease (QoL-AD) Questionnaire Total Score Versus the Number of Treatment Emergent Adverse Events (TEAEs);
+Change From Baseline in Subject's Usual Activities at Week 12 LOCF;
+All Subjects Improved/Stabilized or Worsened for Severity in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Remembering in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Telephoning in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Pain/Discomfort at Week 12 LOCF;
+All Subjects Improved/Stabilized or Worsened for Anxiety in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Mini-Mental State Examination (MMSE) Total Scores at Week 12;
+All Subjects Improved/Stabilized or Worsened for Spatial Orientation in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Agitation in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Self-Care at Week 12;
+Change From Baseline in Subject's Mobility at Week 12;
+Change From Baseline in Visual Analog Scale (VAS) of Subject's Overall Health Included in EuroQuality of Life-5 Domains (EQoL-5D)Questionnaire;
+All Subjects Improved/Stabilized or Worsened for Attention in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Self-Care at Week 12 LOCF;
+All Subjects Improved/Stabilized or Worsened for Caregiver in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Dressing in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Usual Activities at Week 12;
+All Subjects Improved/Stabilized or Worsened for Judgment in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Cognitive Activation in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Apathy in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Leisure in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+All Subjects Improved/Stabilized or Worsened for Hygiene in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline Total Score in EuroQuality of Life-5 Domains (EQoL-5D);
+Correlation Analysis: Change From Baseline in Combined Patient and Caregiver Quality of Life in Alzheimer's Disease(QoL-AD) Questionnaire Total Score Versus Number of Treatment Emergent Adverse Events (TEAEs);
+LOCF Change From Baseline in Visual Analog Scale (VAS) of Subject's Overall Health Included in EuroQuality of Life-5 Domains (EQoL-5D) Questionnaire;
+Change From Baseline in Combined Patient and Caregiver Health Related Quality of Life (Alzheimer's Disease) (HR QoL-AD) Questionnaire Total Scores;
+All Subjects Improved/Stabilized or Worsened for Temporal Orientation in Top Symptom Checklist (TOPS) Alzheimer's Disease Assessment;
+Change From Baseline in Subject's Anxiety/Depression at Week 12;
+LOCF Change From Baseline Total Score in EuroQuality of Life-5 Domains (EQoL-5D);
+Change From Baseline in Subject's Anxiety/Depression at Week 12 LOCF;
+
+
+________________________________________________________________
+[WARNING] Riga 122 supera TOK_MAX (4681 > 3500) – saltata.
+
+outcome_measurement_title:
+Change From Baseline in PDQ - Subject - Prospective Memory Domain Score;
+Change From Baseline in Volumetric Brain MRI Measurements in Ventricular Boundary Shift Integral (VBSI);
+Alzheimer's Disease Medication Administration Concerns Questionnaire (AD MACQ);
+Geometric Mean Anti-Aβ IgG Enzyme-linked Immunosorbent Assay (ELISA) Titers;
+Percentage of Participants With a Global CDR Score of Equal to or Greater Than 1 for the First Time;
+Change From Baseline in Mini Mental State Examination (MMSE) Total Score;
+Geometric Mean Anti-Aβ IgM ELISA Titers;
+Change From Baseline in Neuropsychological Test Battery (NTB);
+Change From Baseline in PDQ-R - Relative - Prospective Memory Domain Score;
+Change From Baseline in Volumetric Brain MRI Measurements in HBSI, Left;
+Change From Baseline in PDQ - Subject - Total Score;
+Change From Baseline in PDQ-R - Relative - Retrospective Memory Domain Score;
+Change From Baseline in PDQ - Subject - Planning/Organization Domain Score;
+Change From Baseline in Volumetric Brain MRI Measurements in HBSI, Right;
+Change From Baseline in Cerebrospinal Fluid (CSF) Aβ x-40;
+Change From Baseline in NPI Distress Score (NPI-D);
+Change From Baseline in Volumetric Brain Magnetic Resonance Imaging (MRI) Measurements in Brain Boundary Shift Integral (BBSI);
+Change From Baseline in CSF p-Tau;
+Change From Baseline in PDQ - Subject - Retrospective Memory Domain Score;
+Change From Baseline in PDQ-R - Relative - Planning/Organization Domain Score;
+Change From Baseline in Plasma Aβ x-40;
+Change From Baseline in Volumetric Brain MRI Measurements in Hippocampal Boundary Shift Integral (HBSI), Total;
+Change From Baseline in Brain Fibrillar Beta-Amyloid Protein (Aβ) at Week 104 as Measured by Standard Uptake Value Ratios (SUVRs) Over the Composite Regions of Interest (ROIs);
+Change From Baseline in Perceived Deficits Questionnaire (PDQ) - Subject - Attention/Concentration Domain Score;
+Change From Baseline in PDQ-R - Relative - Attention/Concentration Domain Score;
+Change From Baseline in Resource Utilization in Dementia (RUD) (Abbreviated) (RUD-Lite) - Primary Caregiver;
+Change From Baseline in Neuropsychiatric Inventory (NPI) Total Score;
+Change From Baseline in 13-item Alzheimer's Disease Assessment Scale - Cognitive (ADAS-Cog) Total Score;
+Change From Baseline in RUD (Abbreviated) (RUD-Lite) - Other Caregivers;
+Change From Baseline in CSF Total Tau;
+Change From Baseline in Dependence Scale (DS) Score;
+Change From Baseline in Functional Activities Questionnaire (FAQ) Total Score;
+Change From Baseline in Clinical Dementia Rating Sum of Boxes (CDR-SOB);
+Change From Baseline in PDQ-R - Relative - Total Score;
+Change From Baseline in CSF Aβ x-42;
+
+
+________________________________________________________________
+[WARNING] Riga 157 supera TOK_MAX (4482 > 3500) – saltata.
+
+outcome_measurement_title:
+Number of Participants With the Indicated Response on the mADCS-CGIC Scale Agitation Domain at Day 70 Compared to Their Response at Day 36 (Stage 2 Baseline);
+Number of Participants Using Rescue Medications;
+Number of Participants With the Indicated Categorical Response on the Patient Global Impression of Change (PGI-C) for the Caregiver Domain at Day 36 (Stage 2 Baseline) and Day 70 Compared to Their Response at Day 1 (Stage 1 Baseline);
+Change in the NPI-CDS NPI4D Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Neuropsychiatric Inventory (NPI) Agitation/Aggression Domain Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Mini-Mental State Examination (MMSE) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline), as Analyzed by the Specified SPCD Methodology;
+Change in the Caregiver Strain Index (CSI) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Quality of Life-Alzheimer's Disease (QoL-AD) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Sum of the Agitation/Aggression, Irritability/Lability, Anxiety, and Aberrant Motor Behavior NPI Domain (NPI4A) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Cornell Scale for Depression in Dementia (CSDD) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Number of Participants With the Indicated Response on the Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change Rating (mADCS-CGIC) Scale Agitation Domain at Day 36 and Day 70 Compared to Their Response at Day 1 (Stage 1 Baseline);
+Change in the Individual NPI Domain Scores From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the NPI-CDS for the Agitation/Aggression Domain From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Number of Participants With the Indicated Categorical Response on the PGI-C for the Caregiver Domain at Day 70 Compared to Their Response at Day 1 (Stage 1 Baseline);
+Change in the NPI Agitation/Aggression Domain Score From Day 1 (Stage 1 Baseline) to Day 8 and Day 22 and From Day 36 (Stage 2 Baseline) to Day 43 and Day 57;
+Change in the NPI-CDS NPI4A Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Total NPI Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Total Neuropsychiatric Inventory-Caregiver Distress Score (NPI-CDS) From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Change in the Sum of the Agitation/Aggression, Irritability/Lability, Disinhibition, and Aberrant Motor Behavior NPI Domain (NPI4D) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+Number of Participants With the Indicated Change in the Concomitant Use of Allowed Psychotropic Drugs Compared to Their Baseline Use;
+Number of Participants With the Indicated Type of Adverse Event;
+Change in the Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory (ADCS-ADL) Score From Day 1 (Stage 1 Baseline) to Day 36 (Stage 2 Baseline) and From Day 36 to Day 70;
+
+
+________________________________________________________________
+[WARNING] Riga 218 supera TOK_MAX (5073 > 3500) – saltata.
+
+outcome_measurement_title:
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Standard Deviation (SUV StdDev) From Normal Patients in SUVr Values for Posterior Cingulate Gyrus Region of Brain;
+Neurocognitive Function - QUALID- 6 Months Change From Baseline;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Parietal Region of the Brain Compared to Cerebellum;
+Common Terminology Toxicity Criteria (Version 5.0) - 6 Months;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Standard Deviation (SUV StdDev) From Normal Patients in SUVr Values for Anterior Cingulate Gyrus Region of the Brain;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Standard Deviation (SUV StdDev) From Normal Patients in SUVr Values for Frontal Region of the Brain;
+Common Terminology Toxicity Criteria (Version 5.0) - 12 Months;
+Neurocognitive Function - QUALID- 3 Months Change From Baseline;
+Neurocognitive Function - ADAS-Cog - 3 Months Change From Baseline;
+Neurocognitive Function - QUALID- 6 Weeks Change From Baseline;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Frontal Region of the Brain Compared to Cerebellum;
+Neurocognitive Function - MMSE (Mini Mental Status Exam) 6 Weeks Change From Baseline;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Posterior Cingulate Gyrus Region of the Brain Compared to Cerebellum;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Standard Deviation (SUV StdDev) From Normal Patients in SUVr Values for Parietal Region of the Brain;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Standard Deviation (SUV StdDev) From Normal Patients in SUVr Values for Precuneus Region of the Brain;
+Neurocognitive Function - MMSE (Mini Mental Status Exam) 6 Months Change From Baseline;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Whole Brain Cortex Compared to Cerebellum;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Precuneus Region of the Brain Compared to Cerebellum;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change in "Positive" or "Negative" Determination;
+Neurocognitive Function - MMSE (Mini Mental Status Exam) 3 Months Change From Baseline;
+Common Terminology Toxicity Criteria (CTCAE) Version 5.0 - 3 Months;
+Common Terminology Toxicity Criteria for Adverse Events (CTCAE) Version 5.0 - 6 Weeks;
+Florbetaben F 18 Injection (AMYVID) Positron Emission Tomography (PET) Scan: Change From Baseline to 4 Months in Standardized Uptake Value Ratio (SUVr) for Anterior Cingulate Gyrus Region of the Brain Compared to Cerebellum;
+Neurocognitive Function - QOL-AD - 3 Months Change From Baseline;
+Neurocognitive Function - QOL-AD - 6 Months Change From Baseline;
+Neurocognitive Function - QOL-AD - 6 Weeks Change From Baseline
+
+
+________________________________________________________________
+[WARNING] Riga 222 supera TOK_MAX (4182 > 3500) – saltata.
+
+outcome_measurement_title:
+Stage 1: Resource Utilization in Dementia (RUD): Percentage of Caregiver Who Reported That Their Responsibilities Affected Their Work and Who Visited Health Care Professionals;
+Stage 1 and Stage 2: Patient Global Impression of Change (PGIC) Score at Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the NPI Caregiver Distress Score to Week 6 and Week 12;
+Least Squares Mean Modified Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change (mADCS-CGIC)-Agitation Score at Week 6 and Week 12;
+Stage 2: Resource Utilization in Dementia (RUD): Percentage of Caregiver Who Reported That Their Responsibilities Affected Their Work and Who Visited Health Care Professionals;
+Stage 1 and Stage 2: Change From Baseline in the Alzheimer's Disease Assessment Scale-Cognitive Subscale (ADAS-Cog) Score to Week 6 and Week 12;
+Stage 1 and Stage 2: Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change (ADCS-CGIC) Rating at Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the NPI Total Score to Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the NPI Irritability/Lability Domain Score to Week 6 and Week 12;
+Stage 1: Resource Utilization in Dementia (RUD): Number of Hours Per Day the Caregiver Spent Assisting the Participant;
+Stage 1 and Stage 2: Change From Baseline in the Cohen-Mansfield Agitation Inventory (CMAI) Composite Score to Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the Clinical Global Impression of Severity of Illness (CGIS)-Agitation Domain Score to Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the Neuropsychiatric Inventory (NPI) Agitation/Aggression Domain Score to Week 6 and Week 12;
+Stage 2: Resource Utilization in Dementia (RUD): Number of Hours Per Day the Caregiver Spent Assisting the Participant;
+Stage 1 and Stage 2: Change From Baseline in the NPI Aberrant Motor Behavior Domain Score to Week 6 and Week 12;
+Stage 2: Percentage of Participants With General Medical Health Rating (GMHR) Score;
+12-Week Parallel Group: Resource Utilization in Dementia (RUD) Score: Number of Days the Caregiver Spent Assisting the Participant;
+Stage 1 and Stage 2: Change From Baseline in the Dementia Quality of Life (DEMQOL) Score to Week 6 and Week 12;
+Stage 1: Resource Utilization in Dementia (RUD) Score: Number of Days the Caregiver Spent Assisting the Participant;
+Stage 1 and Stage 2: Change From Baseline in the Cornell Scale for Depression in Dementia (CSDD) Score to Week 6 and Week 12;
+Stage 1 and Stage 2: Change From Baseline in the Zarit Burden Interview (ZBI) Score to Week 6 and Week 12;
+
+
+________________________________________________________________
+[WARNING] Riga 262 supera TOK_MAX (7350 > 3500) – saltata.
+
+outcome_measurement_title:
+Change From Baseline Over Time in ADAS-Cog-14 Number Cancellation Score;
+Change From Baseline Over Time in Neuropsychiatry Inventory (NPI) Total Score;
+Change From Baseline Over Time in University of California's Performance Based Skills Assessment, Brief Version (UPSA-Brief) - Total Score;
+Change From Baseline Over Time in ADCS-CGIC-MCI Behavior Score;
+Change From Baseline Over Time in ADAS-Cog-14 Word Recognition Score;
+Number of Participants With Treatment Emergent Adverse Events (TEAEs);
+AUC0-28/Dose for ABBV-8E12 Over the Dosing Interval After the First and Fourth Doses;
+Area Under the Concentration-Time Curve From Dosing (Time 0) to Day 28 (AUC0-28) for ABBV-8E12 Over the Dosing Interval After the First and Fourth Doses;
+Change From Baseline Over Time in ADCS-CGIC-MCI Functional Abilities Score;
+Change From Baseline Over Time in CDR-SB Score;
+Change From Baseline Over Time in Repeatable Battery for Assessment of Neuropsychological Status (RBANS) - Total Scale Score;
+Change From Baseline Over Time in RBANS - Digit Span Total Score;
+Change From Baseline Over Time in RBANS - Figure Recall Total Score;
+Change From Baseline Over Time in ADAS-Cog-14 Commands Score;
+Change From Baseline Over Time in RBANS - Coding Total Score;
+Change From Baseline Over Time in Alzheimer's Disease Cooperative Study Clinical Global Impression of Change for Mild Cognitive Impairment (ADCS-CGIC-MCI) General Condition Score;
+Change From Baseline Over Time in RBANS - Story Recall Total Score;
+Change From Baseline Over Time in Functional Activities Questionnaire (FAQ) Score;
+Change From Baseline Over Time in RBANS - Figure Copy Total Score;
+Change From Baseline Over Time in RBANS - Story Memory Total Score;
+Change From Baseline Over Time in ADAS-Cog-14 Orientation Score;
+Change From Baseline Over Time in 24-Item Alzheimer's Disease Cooperative Study/Activities of Daily Living Scale Adapted for Patients With Mild Cognitive Impairment (ADCS-MCI-ADL-24) Total Score;
+Change From Baseline Over Time in RBANS - List Recall Total Score;
+Change From Baseline Over Time in RBANS - Semantic Fluency Total Score;
+Change From Baseline Over Time in ADAS-Cog-14 Ideational Praxis Score;
+Change From Baseline Over Time in ADAS-Cog-14 Word Recall - Number of Words Not Recalled Score;
+Change From Baseline Over Time in ADAS-Cog-14 Delayed Word Recall Score;
+Change From Baseline Over Time in RBANS - Picture Naming Total Score;
+Change From Baseline Over Time in ADAS-Cog-14 Constructional Praxis Score;
+Change From Baseline Over Time in Alzheimer's Disease Composite Score (ADCOMS) Score;
+Change From Baseline Over Time in ADAS-Cog-14 Maze Task Score;
+Change From Baseline Over Time in ADCS-CGIC-MCI Cognition Score;
+Change From Baseline Over Time in ADAS-Cog-14 Remember Word Recognition Instructions Score;
+Change From Baseline Over Time in ADAS-Cog-14 Spoken Language Ability Score;
+Change From Baseline Over Time in ADAS-Cog-14 Comprehension of Spoken Language Score;
+Change From Baseline Over Time in Mini-Mental State Examination (MMSE) Total Score;
+Change From Baseline Over Time in ADAS-Cog-14 Word Find Difficulty Spontaneous Speech Score;
+Change From Baseline Over Time in ADAS-Cog-14 Naming Score;
+Change From Baseline Over Time in RBANS - Line Orientation Total Score;
+Change From Baseline Over Time in Alzheimer's Disease Assessment Scale (14-Item) Cognition Portion (ADAS-Cog-14) Total Score;
+Half-Life (T1/2) for ABBV-8E12 Over the Dosing Interval After the First and Fourth Doses;
+Change From Baseline Over Time in RBANS - List Recognition Total Score;
+Change From Baseline Over Time in RBANS - List Learning Total Score;
+
+
+________________________________________________________________
+[WARNING] Riga 369 supera TOK_MAX (4377 > 3500) – saltata.
+
+outcome_measurement_title:
+Part 1: Change From Baseline in Respiratory Rate;
+Part 1: Dose Normalized Area Under the Concentration Time Curve Over a Dosing Interval (AUCtau) of TB006;
+Part 2: Change From Baseline in Temperature;
+Part 2: Change From Baseline in ECG Mean Heart Rate;
+Part 2: Change From Baseline in Respiratory Rate;
+Part 1: Change From Baseline in Electrocardiogram (ECG) Mean Heart Rate;
+Part 1: Number of Participants With Adverse Events (AEs) and Serious Adverse Events (SAEs);
+Part 1: Change From Baseline in Clinical Chemistry Parameters: Albumin and Protein;
+Part 2: Number of Participants With Suicidal Ideation or Suicidal Behavior as Measured Using C-SSRS;
+Part 1: Number of Participants With Anti-TB006 Antibodies (Immunogenicity of TB006);
+Part 1: Change From Baseline in Hematology Parameter: Erythrocyte. Mean Corpuscular Volume (Ery. MCV);
+Part 2: Change From Baseline in Urine Specific Gravity;
+Part 1: Change From Baseline in Heart Rate;
+Part 1: Volume of Distribution (Vd) of TB006;
+Part 1: Change From Baseline in Hematology Parameter: Erythrocyte. Mean Corpuscular Hemoglobin (Ery. MCH);
+Part 2: Change From Baseline in Urobilinogen;
+Part 1: Change From Baseline in Hematology Parameter: Hemoglobin;
+Part 1: Time at Which Maximum Plasma Concentration Occurs (Tmax) of TB006;
+Part 2: Change From Baseline in Clinical Chemistry Parameter: Thyrotropin;
+Part 1: Change From Baseline in Hematology Parameter: Erythrocytes and Reticulocytes;
+Part 2: Change From Baseline in Clinical Chemistry Parameters: Potassium and Sodium;
+Part 2: Percentage of Responders on the Clinical Dementia Rating Scale - Sum of Boxes;
+Part 1: Change From Baseline in Urine Potential of Hydrogen (pH);
+Part 1: Change From Baseline in Clinical Chemistry Parameters: Alanine Aminotransferase (ALT), Alkaline Phosphatase (ALP), Aspartate Aminotransferase (AST) and Creatine Kinase (CK);
+Part 2: Change From Baseline in Hematology Parameter: Ery. MCV;
+Part 2: Change From Baseline in Hematology Parameters: Basophils, Eosinophils, Leukocytes, Lymphocytes, Monocytes, Neutrophils and Platelets;
+Part 2: Change From Baseline in Clinical Chemistry Parameters: Albumin and Protein;
+Part 1: Change From Baseline in Diastolic Blood Pressure (DBP) and Systolic Blood Pressure (SBP);
+Part 1: Change From Baseline in Urine Specific Gravity;
+Part 1: Change From Baseline in Temperature;
+Part 1: Change From Baseline in Urobilinogen;
+Part 2: Change From Baseline in Clinical Chemistry Parameters: ALT, ALP, AST and CK;
+Part 2: Ctrough of TB006;
+Part 2: Change From Baseline Through Day 36 on the Clinical Dementia Rating Scale - Sum of Boxes Total Score;
+Part 2: Change From Baseline in ECG Parameters;
+Part 2: Change From Baseline in Hematology Parameter: Hematocrit;
+Part 1: Change From Baseline in Chemistry Parameters: Calcium, Cholesterol, Creatinine, Direct Bilirubin, Glucose, HDL (High Density Lipoprotein) Cholesterol, LDL (Low Density Lipoprotein) Cholesterol, Total Bilirubin, Triglycerides and Urea Nitrogen;
+Part 1: Dose Normalized Maximum Observed Plasma Concentration (Cmax) of TB006;
+Part 2: Change From Baseline in Hematology Parameter: Erythrocytes and Reticulocytes;
+Part 2: Change From Baseline on Mini-Mental State Examination (MMSE) Score;
+Part 2: Change From Baseline in Clinical Chemistry Parameter: Hemoglobin A1C;
+Part 1: Concentration at the End of a Dosing Interval (Ctrough) of TB006;
+Part 1: Change From Baseline in ECG Parameters;
+Part 2: Change From Baseline in Chemistry Parameters: Calcium, Cholesterol, Creatinine, Direct Bilirubin, Glucose, HDL Cholesterol, LDL Cholesterol, Total Bilirubin, Triglycerides and Urea Nitrogen;
+Part 2: Change From Baseline in Hematology Parameter: Hemoglobin;
+Part 2: t1/2 of TB006;
+Part 1: Change From Baseline in Hematology Parameters: Basophils, Eosinophils, Leukocytes, Lymphocytes, Monocytes, Neutrophils and Platelets;
+Part 1: Terminal Elimination Phase Half-life (t1/2) of TB006;
+Part 1: Total Clearance (CL) of TB006;
+Part 2: Change From Baseline in Urine pH;
+Part 2: Change From Baseline on the Neuropsychiatric Inventory (NPI) Score;
+Part 1: Number of Participants With Suicidal Ideation or Suicidal Behavior as Measured Using Columbia Suicide Severity Rating Scale (C-SSRS);
+Part 2: Number of Participants With AEs and SAEs;
+Part 2: Change From Baseline in DBP and SBP;
+Part 2: Change From Baseline Through Day 104 on the Clinical Dementia Rating Scale - Sum of Boxes Total Score;
+Part 1: Change From Baseline in Clinical Chemistry Parameter: Hemoglobin A1C;
+Part 2: Change From Baseline in Heart Rate;
+Part 2: Change From Baseline in Hematology Parameter: Ery. MCH;
+Part 1: Change From Baseline in Clinical Chemistry Parameters: Potassium and Sodium;
+Part 1: Change From Baseline in Clinical Chemistry Parameter: Thyrotropin;
+Part 1: Change From Baseline in Hematology Parameter: Hematocrit;
+Part 2: Cmax of TB006;
