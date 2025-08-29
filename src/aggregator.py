@@ -1,5 +1,7 @@
 import json
 import torch
+import re
+from collections import defaultdict
 
 def read_json_arrays_to_list(filename):
     """
@@ -22,120 +24,95 @@ def read_json_arrays_to_list(filename):
         print(f"File not found: {e}")
         return []
 
-def call_model(biomarkers, task, model, tokenizer, device):
+def process_name(name):
+    """
+    Process a biomarker name for comparison:
+    - Remove leading/trailing spaces
+    - Remove special characters (_, -, +, etc.)
+    - Convert to uppercase
+    - Remove all numbers
+    """
+    # Remove leading/trailing spaces
+    processed = name.strip()
+    # Remove special characters and replace with empty string
+    processed = re.sub(r'[_\-+\.\(\)\[\]\/\\:;,<>?|`~!@#$%^&*={}]', '', processed)
+    # Remove all spaces (not just leading/trailing)
+    processed = re.sub(r'\s+', '', processed)
+    # Convert to uppercase
+    processed = processed.upper()
+    # Remove all numbers
+    processed = re.sub(r'\d+', '', processed)
+    return processed
+
+def choose_canonical_name(group):
+    """
+    Choose the canonical name for a group.
+    Priority: shortest name, then alphabetical
+    """
+    # Sort by length first, then alphabetically
+    sorted_group = sorted(group, key=lambda x: (len(x), x))
+    return sorted_group[0]
+
+def call_model(biomarkers, task, model, tokenizer, device, biomarker_groups=[]):
     max_retries = 5
     for attempt in range(max_retries):
         try:
             if task == "grouping_biomarkers":
-                system_prompt = """You are an expert biomedical data curator with deep knowledge of Alzheimer's disease pathophysiology and biomarkers. Your primary function is to process lists of biomarker terms, and group them by their underlying biological significance.
+                system_prompt = """You are a biomarker term matcher. Your job is simple: group identical biomarkers that use different names, abbreviations, or spellings.
 
-CRITICAL ACCURACY REQUIREMENTS:
-- You MUST NOT invent, create, or add any biomarkers that are not explicitly provided in the input list
-- You MUST NOT omit, skip, or forget any biomarkers from the input list
-- Every single biomarker term from the input MUST appear exactly once in the "occurrences" arrays
-- If you are uncertain about a biomarker's identity or grouping, you MUST still include it (use "Other" category if needed)
-- DOUBLE-CHECK: Before finalizing your response, verify that every input term appears exactly once in your output
+TASK: Look for synonym groups and output JSON immediately.
+RULES:
+- Include ALL input terms exactly once
+- Group obvious synonyms (e.g., "P-Tau 181" = "pTau181" = "phospho-tau-181")  
+- Use clear canonical names
+- When unsure, keep terms separate
+- Output ONLY valid JSON - no explanations
 
-Rules for Operation:
-Core Task: You will receive lists of raw biomarker strings. You must aggregate synonymous terms, even if they have different spellings, abbreviations, or syntactic structures (e.g., "P-Tau 181", "pTau181", "phosphorylated tau at threonine 181").
-Canonical Naming: For each group of synonyms, you must assign a single, scientifically precise, and human-readable canonical name (e.g., "P-Tau 181").
-Output Format: You will always output a valid JSON object. No other text, explanations, or apologies should precede or follow the JSON code block.
-Handling Uncertainty: If you encounter a highly ambiguous term, group it cautiously and use the "Other" category. It is more important to be accurate than to force a categorization. NEVER omit uncertain terms - include them somewhere.
-Focus: Do not provide commentary, summaries, or analysis beyond the requested JSON structure. Your entire output must be the JSON object.
-
-MANDATORY VERIFICATION STEPS:
-1. Count the total number of input biomarkers
-2. Count the total number of biomarkers in all "occurrences" arrays combined
-3. These numbers MUST be identical
-4. If they don't match, you have made an error and must correct it
-"""
-                user_prompt = f"""Please process the following list of raw Alzheimer's disease biomarker terms. Aggregate synonymous terms, and provide a list of all occurrences and their count.
-
-CRITICAL INSTRUCTIONS - READ CAREFULLY:
-- You MUST include EVERY SINGLE biomarker from the input list in your output
-- You MUST NOT add any biomarkers that are not in the input list
-- If you are unsure about a biomarker, include it anyway (use "Other" category if needed)
-- MANDATORY: Before providing your final answer, mentally count that all input biomarkers appear exactly once in your "occurrences" arrays
-
-Output a JSON object where each key is an object with these exact keys:
-"canonical_biomarker": (string) The standardized name.
-"occurrences": (array of strings) All raw terms grouped under this canonical name.
-
-Example Input:
-["P-Tau 181", "pTau181", "Amyloid Beta 42/40 ratio"]
-
-Expected Output Structure:
+JSON FORMAT:
 [
-    {{
-        "canonical_biomarker": "P-Tau 181",
-        "occurrences": ["P-Tau 181", "pTau181"]
-    }},
-    {{
-        "canonical_biomarker": "Aβ42/40 Ratio",
-        "occurrences": ["Amyloid Beta 42/40 ratio"]
-    }}
-]
+    {
+        "canonical_biomarker": "Standard Name",
+        "occurrences": ["variant1", "variant2"]
+    }
+]"""
 
-INPUT COUNT: {len(biomarkers) if isinstance(biomarkers, list) else "Please count the biomarkers below"}
+                user_prompt = f"""Group these {len(biomarkers) if isinstance(biomarkers, list) else "N"} biomarker terms by synonyms. Output JSON only:
 
-Here is the full list of biomarkers to process:
-
-{biomarkers}
-"""
+{biomarkers}"""
             elif task == "merging_groups":
-                canonical_biomarkers = [marker["canonical_biomarker"] for marker in biomarkers]
-                system_prompt = """You are an expert biomedical data curator specialized in Alzheimer's disease biomarkers. Your task is to identify groups of canonical biomarker names that represent the same biological entity and should be merged together.
+                #canonical_biomarkers = [marker["canonical_biomarker"] for marker in biomarkers]
+                system_prompt = """You are an expert in biomarkers and biomedical nomenclature. Your task is to assign ungrouped biomarkers to existing groups based exclusively on biological and biomedical synonymy.
 
-CRITICAL ACCURACY REQUIREMENTS:
-- You MUST analyze ONLY the canonical biomarker names provided in the input list
-- You MUST NOT invent, add, or reference any biomarker names not in the input
-- You MUST NOT skip or omit any biomarker from your analysis
-- If you are uncertain whether two biomarkers should be merged, err on the side of caution and keep them separate
-- MANDATORY: Every input biomarker must be accounted for in your output (either as a standalone group or part of a merge group)
+FUNDAMENTAL RULES:
+1. Assign a biomarker to a group ONLY if the biomarker is a biological synonym of the group name
+2. Consider synonyms: alternative names of the same protein/molecule, standard abbreviations, different forms of the same compound
+3. When in doubt, always choose NA rather than an uncertain assignment
+4. Each biomarker must be assigned to ONE group or to NA
+5. Maintain maximum scientific precision in assignments
 
-CORE PRINCIPLES:
-- Merge groups only when biomarkers represent the EXACT SAME biological measurement
-- Consider different naming conventions, abbreviations, and synonyms (e.g., "P-Tau 181" and "Phosphorylated Tau 181")
-- Do NOT merge biomarkers that are related but measure different things (e.g., "Aβ40" vs "Aβ42" vs "Aβ42/40 ratio")
-- When in doubt, keep separate rather than incorrectly merging
+OUTPUT FORMAT: Return a list of lists in the format:
+[["biomarker_name", "assigned_group_name"]] or [["biomarker_name", "NA"]]
 
-OUTPUT FORMAT:
-- Return only a valid JSON array
-- Each element represents a group of biomarkers to be merged
-- Use 0-based indices corresponding to the input list positions
-- Single biomarkers that don't need merging should appear as single-element arrays
-- No explanations, comments, or additional text outside the JSON
-
-VERIFICATION REQUIREMENTS:
-- Every index from 0 to (input_length-1) must appear exactly once across all merge groups
-- No index should be duplicated
-- No index should be omitted
+Be extremely conservative: it is better to leave a biomarker unassigned than to assign it incorrectly.
 """
-                user_prompt = f"""Analyze the following list of canonical biomarker names and identify which groups should be merged because they represent the same biological measurement.
+                user_prompt = f"""I have 10 biomarkers to classify and 118 existing groups. I need to assign each biomarker to the appropriate group only if it is a true synonym of the group name.
 
-INSTRUCTIONS:
-1. Examine each biomarker name for synonyms, abbreviations, or alternative naming conventions
-2. Group biomarkers that measure the EXACT SAME biological entity
-3. Return the 0-based indices of biomarkers that should be merged together
-4. Each biomarker must appear in exactly one group (even if it's a group of one)
+**BIOMARKERS TO CLASSIFY:**
+{biomarkers}
 
-INPUT VALIDATION:
-- Total biomarkers to analyze: {len(canonical_biomarkers)}
-- You must account for ALL biomarkers from index 0 to {len(canonical_biomarkers)-1}
+**AVAILABLE GROUPS:**
+{biomarker_groups}
 
-EXPECTED OUTPUT FORMAT:
-[
-[0, 1, 3],     // Indices of biomarkers to merge together
-[2],           // Single biomarker (no merging needed)
-[4, 7],        // Another group to merge
-[5],           // Another standalone biomarker
-[6]            // And so on...
-]
+**INSTRUCTIONS:**
+- Analyze each biomarker and verify if it is a synonym of one of the existing groups
+- Assign the biomarker to a group only if it represents the same molecule/protein/compound
+- If you don't find synonymous correspondence, assign "NA"
+- Consider standard abbreviations, alternative names, ionic/derivative forms of the same molecule
 
-CANONICAL BIOMARKERS TO ANALYZE:
-{canonical_biomarkers}
+**REQUIRED OUTPUT:**
+List of lists in the format: [["biomarker1", "assigned_group"], ["biomarker2", "NA"], ...]
 
-Remember: Return ONLY the JSON array of index groups. No additional text.
+Proceed with the analysis and classification.
 """
             else:
                 return []
@@ -153,6 +130,14 @@ Remember: Return ONLY the JSON array of index groups. No additional text.
                 tokenize=False, 
                 add_generation_prompt=True
             )
+            
+            if full_prompt.count(" medium") > 0:
+                full_prompt = full_prompt.replace("medium", "low", 1)
+                print("\n\nChanged reasoning level to low for better performance.\n")
+            
+
+            #print(full_prompt)
+            #input()
 
             # Tokenizzazione dell'input completo
             # return_tensors="pt": Restituisce tensori PyTorch
@@ -288,12 +273,10 @@ def merge_biomarker_groups(biomarkers, merging_indexes):
     return merged_biomarkers
 
 def aggregation(model, tokenizer, device, evaluated_biomarkers):
-    '''
-    filename = "./results/evaluated_biomarkers.json"
-    evaluated_biomarkers = read_json_arrays_to_list(filename)
-    print(f"Total dictionaries: {len(evaluated_biomarkers)}")
-    print(f"First few items: {evaluated_biomarkers[:5]}")
-    '''    
+    
+    if evaluated_biomarkers == [] or evaluated_biomarkers == None:
+        filename = "./results/evaluated_biomarkers.json"
+        evaluated_biomarkers = read_json_arrays_to_list(filename)
 
     validated_biomarkers = []
     for acronym in evaluated_biomarkers:
@@ -302,16 +285,62 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
 
     print(f"Valid biomarkers: {len(validated_biomarkers)} on {len(evaluated_biomarkers)} total biomarkers extracted.")
 
-    # try to add biomarkers until a max token count of 4000 is reached
+    # PRIMA FASE AGGREGAZIONE: exact matching degli acronimi (togliendo caratteri speciali e numeri)
+    # Dictionary to group items by their processed name
+    groups = defaultdict(list)
+
+    # Process each item and group by processed name
+    for biomarker in validated_biomarkers:
+        clean_biomarker = process_name(biomarker)
+        if clean_biomarker:  # Only add if processed name is not empty
+            # se esiste già 'processed' aggiungo alla lista già esistente, così raggruppo i duplicati
+            # se non esiste creo una nuova lista con il primo elemento
+            groups[clean_biomarker].append(biomarker)
+
+    # Separate groups (duplicates) from single items
+    duplicate_groups = {}
+    remaining_items = []
+    for processed_name, original_names in groups.items():
+        if len(original_names) > 1:  # Group has duplicates
+            duplicate_groups[processed_name] = original_names
+        else:  # Single item
+            remaining_items.extend(original_names)
+
+    # FOR DEBUGGING
+    #print("\n DETAILED GROUPING:")
+    total_grouped_items = 0
+    for processed_name, original_names in duplicate_groups.items():
+        #print(f"Processed name: '{processed_name}' → {original_names}")
+        total_grouped_items += len(original_names)
+    #print(f"\nRemaining items: {remaining_items}")
+    # Verify conservation
+    print(f"\nExact matching finito:")
+    print(f"Initial items: {len(validated_biomarkers)}")
+    print(f"Grouped items: {total_grouped_items}")
+    print(f"Remaining items: {len(remaining_items)}")
+    #print(f"Total: {total_grouped_items + len(remaining_items)}")
+    #print(f"Conservation check: {'✅ OK' if total_grouped_items + len(remaining_items) == len(validated_biomarkers) else '❌ ERROR'}")
+
+    parsed_biomarkers = []
+    for processed_name, original_names in duplicate_groups.items():
+        canonical = choose_canonical_name(original_names)
+        group_entry = {
+            "canonical_biomarker": canonical,
+            "occurrences": sorted(original_names)  # Sort members alphabetically
+        }
+        parsed_biomarkers.append(group_entry)
+
+    # SECONDA FASE AGGREGAZIONE: processiamo i restanti (non aggregati) biomarkers con LLM provando a farli assegnare a qualche gruppo creato
+    '''
     batch = []
     batch_storage = []
     current_token_count = 0
-    max_token_count = 4000
+    max_token_count = 200
     grouped_biomarkers = []
 
-    while validated_biomarkers:
-        batch = validated_biomarkers[:20]      # prendi fino a 20 biomarcatori
-        del validated_biomarkers[:20]
+    while remaining_items:
+        batch = remaining_items[:20]      # prendi fino a 20 biomarcatori
+        del remaining_items[:20]
 
         tokenized = tokenizer(
             batch,
@@ -325,12 +354,12 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         token_count = batch_size * seq_len
 
         if current_token_count + token_count <= max_token_count:
-            batch_storage.append(batch)
+            batch_storage.extend(batch)
             current_token_count += token_count
         else:
             print(f"Processing batch of {len(batch_storage)} biomarkers with total token count {current_token_count}...")
             grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
-            batch_storage = [batch]  # inizia nuovo batch
+            batch_storage = batch  # inizia nuovo batch
             current_token_count = token_count
 
     # Process any remaining batch
@@ -338,16 +367,47 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         print(f"Processing last batch of {len(batch_storage)} biomarkers with total token count {current_token_count}...")
         grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
 
-    merging_indexes = call_model(grouped_biomarkers, "merging_groups", model, tokenizer, device)
+    print("Qua rimangono parsed_biomarkers e grouped_biomarkers:\n")
+    print("parsed_biomarkers:\n")
+    print(type(parsed_biomarkers))
+    print(len(parsed_biomarkers))
+    print("\parsed_biomarkers[0]:\n")
+    print(parsed_biomarkers[0])
+    print("\nGrouped biomarkers:\n")
+    print(type(grouped_biomarkers))
+    print(len(grouped_biomarkers))
+    print("\ngrouped_biomarkers[0]:\n")
+    print(grouped_biomarkers[0])
+    input()
+    '''
+    
+    groups = []
+    for parsed in parsed_biomarkers:
+        groups.append(parsed["canonical_biomarker"])
 
-    final_grouped_biomarkers = merge_biomarker_groups(grouped_biomarkers, merging_indexes)
-    # Aggiungi count
-    count = 0
-    for group in final_grouped_biomarkers:
-        count = len(group["occurrences"])
-        group["count"] = count
-    # Ordina in modo decrescente (dal count maggiore al minore)
-    final_biomarkers_sorted = sorted(final_grouped_biomarkers, key=lambda x: x['count'], reverse=True)
+    # chiediamo all'LLM se i biomarkers che non sono stati assegnati a nessun gruppo durante il exact match parsing, appartengono a uno dei gruppi definiti 
+    # in quanto sinonimi, varianti di acronimi e/o nomenclatura
+    couple_matches = []
+    for i in range(0, len(remaining_items), 10):
+        # assegnamo un gruppo agli elementi singoli oppure "NA" se non esiste un gruppo corrispondente
+        couple_matches.extend(call_model(remaining_items[i:i+10], "merging_groups", model, tokenizer, device, biomarker_groups=groups))
+
+    # aggiungiamo ai gruppi i biomarkers assegnati dall'LLM
+    for biomarker, group in couple_matches:
+        # Skip if group is "NA"
+        if group == "NA":
+            continue
+        # Find matching biomarker in parsed_biomarkers and add group to occurrences
+        for biomarker_dict in parsed_biomarkers:
+            if biomarker_dict.get("canonical_biomarker") == group:                
+                # Add the group to occurrences
+                biomarker_dict["occurrences"].append(biomarker)
+                break  # Found the match, no need to continue searching
+
+    # Aggiungi count e ordina in modo decrescente
+    for group in parsed_biomarkers:
+        group["count"] = len(group["occurrences"])
+    final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: x['count'], reverse=True)
 
     with open("./results/biomarkers.json", "w", encoding="utf-8") as f:
         json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)

@@ -37,7 +37,8 @@ I biomarkers scartati (insieme alle CoT e risposte del modello) si trovano in 'r
 I risultati si trovano in 'results/biomarkers.json'.\n""")
     
     if input("\nVuoi stampare a video i risultati? (Sì/no):   ").lower() in ("sì", "si"):
-        print(biomarkers)
+        for biomarker in biomarkers:
+            print(biomarker)
 
 if __name__ == "__main__":
     main()
