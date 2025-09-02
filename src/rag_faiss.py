@@ -12,7 +12,7 @@ import json
 from sentence_transformers import SentenceTransformer
 
 # ---------- Config ----------
-EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"  # buona qualità
+EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 CHUNK_CHARS = 1500
 CHUNK_OVERLAP = 300
 FAISS_INDEX_PATH = "data/indices/faiss_index.bin"

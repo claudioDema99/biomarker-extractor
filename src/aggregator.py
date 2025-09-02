@@ -331,56 +331,6 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         parsed_biomarkers.append(group_entry)
 
     # SECONDA FASE AGGREGAZIONE: processiamo i restanti (non aggregati) biomarkers con LLM provando a farli assegnare a qualche gruppo creato
-    '''
-    batch = []
-    batch_storage = []
-    current_token_count = 0
-    max_token_count = 200
-    grouped_biomarkers = []
-
-    while remaining_items:
-        batch = remaining_items[:20]      # prendi fino a 20 biomarcatori
-        del remaining_items[:20]
-
-        tokenized = tokenizer(
-            batch,
-            return_tensors="pt",
-            padding=True,
-            truncation=True,
-            max_length=8192
-        ).to(device)
-
-        batch_size, seq_len = tokenized.input_ids.shape
-        token_count = batch_size * seq_len
-
-        if current_token_count + token_count <= max_token_count:
-            batch_storage.extend(batch)
-            current_token_count += token_count
-        else:
-            print(f"Processing batch of {len(batch_storage)} biomarkers with total token count {current_token_count}...")
-            grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
-            batch_storage = batch  # inizia nuovo batch
-            current_token_count = token_count
-
-    # Process any remaining batch
-    if batch:
-        print(f"Processing last batch of {len(batch_storage)} biomarkers with total token count {current_token_count}...")
-        grouped_biomarkers.extend(call_model(batch_storage, "grouping_biomarkers", model, tokenizer, device))
-
-    print("Qua rimangono parsed_biomarkers e grouped_biomarkers:\n")
-    print("parsed_biomarkers:\n")
-    print(type(parsed_biomarkers))
-    print(len(parsed_biomarkers))
-    print("\parsed_biomarkers[0]:\n")
-    print(parsed_biomarkers[0])
-    print("\nGrouped biomarkers:\n")
-    print(type(grouped_biomarkers))
-    print(len(grouped_biomarkers))
-    print("\ngrouped_biomarkers[0]:\n")
-    print(grouped_biomarkers[0])
-    input()
-    '''
-    
     groups = []
     for parsed in parsed_biomarkers:
         groups.append(parsed["canonical_biomarker"])
