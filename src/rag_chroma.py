@@ -8,6 +8,7 @@ from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import Chroma
 import torch
 import json
+from src.prompts import get_prompt
 
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 CHUNK_CHARS = 1500
@@ -44,23 +45,24 @@ def clean_paper_text(text: str) -> str:
     return text.strip()
 
 def call_model(biomarker, records, model, tokenizer, device, max_retries=5):
+    name, _, _ = get_prompt("Alzheimer")
     for attempt in range(max_retries):
         try:
             # Clear memory before each attempt
             if attempt > 0:
                 print(f" Memory cleared for retry {attempt + 1}")
             # Adatto i prompt in base al database
-            system_prompt = """You are an expert in Alzheimer's markers and their standard nomenclature. Your task is to find the correct, most used, and appropriate acronym for the marker I give you. You must:
+            system_prompt = f"""You are an expert in {name}'s markers and their standard nomenclature. Your task is to find the correct, most used, and appropriate acronym for the marker I give you. You must:
 
 1. **ACRONYM IDENTIFICATION**: Provide the most commonly used and standardized acronym/abbreviation for that marker in scientific literature
 2. **STANDARDIZATION**: Use the most widely accepted scientific nomenclature
 
 **Required response format:**
 For each marker, use this JSON structure:
-{
+{{
   "original_name": "name as provided in the list",
   "acronym": "STANDARD_ACRONYM"
-}
+}}
 
 If multiple acronyms exist for the same marker, provide the most commonly used one in current scientific literature. Focus on finding the appropriate acronym rather than validating the marker itself."""
 
@@ -229,6 +231,19 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
     if biomarkers == [] or biomarkers == None:
         with open ("./results/biomarkers_list.txt", "r") as f:
             biomarkers = [line.strip() for line in f if line.strip()]
+        # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
+        # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
+        # DA CHEKCARE!! PER ORA NON FUNZIONA PERCHÈ extraction_logs.json È ANCORA DA AGGIORNARE
+        '''
+        with open("./results/extraction_logs.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+            biomarkers_w_rows = []
+            for d in data:
+                for i in len(d["biomarkers"]):
+                    biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
+        with open("./degub_biomarkers_with_row.json", "w", encoding="utf-8") as f:
+            json.dump(biomarkers_w_rows, f, ensure_ascii=False, indent=2)
+        '''
 
     # Pulisci il file dei logs se necessario
     #save_logs_as_json("", mode="w")
@@ -237,7 +252,10 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
             log_entries = json.load(f)
     else:
         log_entries = []
-
+    '''
+    for couples in biomarkers_w_rows:
+        biomarker, row_id = couples
+    '''
     # Process each biomarker independently
     for biomarker in biomarkers:
         query = f"What's the correct, most used, and appropriate acronym for '{biomarker}'?"
@@ -249,6 +267,7 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
             log_entry = {
                 "original_name": data_json["original_name"],
                 "acronym": data_json["acronym"],
+                #"row_id": row_id,
                 "cot": cot
             }
             log_entries.append(log_entry)

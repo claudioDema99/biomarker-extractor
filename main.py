@@ -7,6 +7,8 @@ import pandas as pd
 
 def main():
 
+    databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
+
     df = pd.read_csv("./data/Alzheimer_1row_Puri.csv")
 
     # Filter out rows where both param_value columns are empty/invalid and keep only end_dates before 2025
@@ -29,20 +31,19 @@ def main():
     print("""\n\nTutto il dataset è stato processato con successo.
 I risultati dei biomarkers estratti si trovano in 'results/biomarkers_list.txt'.
 Le righe non processate sono state salvate in 'results/unprocessed_lines.txt'.
-I logs dell'analisi e estrazione dei biomarkers (con batch_id, rows_ids, CoT e response dell'LLM) sono stati salvati in 'results/extraction_logs.json'.\n""")
+I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/extraction_logs.json'.\n""")
     
     # Seconda parte: validazione dei biomarkers estratti tramite RAG
     evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker_list)
-    print("""\n\nTutti i biomarkers estratti sono stati valutati.
-I risultati completi della valutazione dei singoli biomarkers estratti si trovano in 'results/evaluated_biomarkers.json'.
-I biomarkers scartati (insieme alle CoT e risposte del modello) si trovano in 'results/not_validated_logs.json'.\n""")
+    print("""\n\nTutti i biomarkers estratti sono stati processati.
+I risultati completi (con nome originale, acronimo identificato e relativa CoT dell'LLM) si trovano in 'results/acronyms_logs.json'.\n""")
     
     # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
     biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, evaluated_biomarkers=evaluated_biomarkers)
-    print("""\n\nTutti i biomarkers validati sono stati raggruppati considerando i vari sinonimi, differenze di nomenclatura e acronimi.
-I risultati si trovano in 'results/biomarkers.json'.\n""")
+    print("""\n\nTutti i biomarkers sono stati raggruppati considerando i vari sinonimi, differenze di nomenclatura e acronimi.
+I risultati finali si trovano in 'results/biomarkers.json'.\n""")
     
-    if input("\nVuoi stampare a video i risultati? (Sì/no):   ").lower() in ("sì", "si"):
+    if input("\nVuoi stampare a video i risultati finali? (Sì/no):   ").lower() in ("sì", "si"):
         for biomarker in biomarkers:
             print(biomarker)
 

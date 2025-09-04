@@ -90,7 +90,7 @@ def call_model(biomarkers, task, model, tokenizer, device, biomarker_groups=[]):
     for attempt in range(max_retries):
         try:
             if task == "defining_variants":
-                system_prompt = """You are a biomarker variant grouper. Task: group occurrences by variant type.
+                system_prompt = """You are a marker variant grouper. Task: group occurrences by variant type.
 
 DEFINITION
 - Variant
@@ -112,7 +112,7 @@ OUTPUT FORMAT:
 {"variants": {"key1": ["item1", "item2"], "key2": ["item3"]}}
 
 No text before or after JSON. No long reasoning. Just JSON."""
-                user_prompt = f"""Group these biomarker occurrences by variant. Output JSON only.
+                user_prompt = f"""Group these marker occurrences by variant. Output JSON only.
 Note: It is not certain or mandatory that all groups actually have variants. If all occurrences represent the same variant or no clear variants exist, return them all grouped under a single variant key.
 
 Example of the task:
@@ -154,6 +154,7 @@ Output:"""
 - Consider synonyms, abbreviations, different naming conventions and nomenclature
 - Avoid random or speculative groupings - only group when confident of the relationship
 - Maximum 5 markers per group (groups with >5 members are highly unlikely)
+- No too long reasoning
 
 **Output Format:**
 - Return only a list of lists containing marker indices
@@ -302,6 +303,8 @@ Output: [[2, 4, 5]]
 
         except Exception as e:
             print(f"Tentativo {attempt + 1}/{max_retries} fallito: {e}")
+            # COMMENTA POI NEXT LINE
+            print(response)
             
             if attempt == max_retries - 1:
                 print(f"Tutti i {max_retries} tentativi falliti. Ritorno lista vuota.")
@@ -313,41 +316,39 @@ Output: [[2, 4, 5]]
 
 def merge_biomarker_groups(biomarkers, merging_indexes):
     """
-    Merge biomarker groups based on the indices provided by the LLM.
-    When merging, choose the best canonical name from the group.
-    
-    Args:
-        biomarkers: List of dictionaries, each containing 'canonical_biomarker' and 'occurrences'
-        merging_indexes: List of lists, where each inner list contains indices to merge
-    
-    Returns:
-        List of merged biomarker dictionaries
+    Merge specified biomarker groups and keep unmerged ones.
     """
+    # Track which indices are being merged
+    indices_to_merge = set()
+    for group in merging_indexes:
+        indices_to_merge.update(group)
+    
     merged_biomarkers = []
     
+    # Add merged groups
     for index_group in merging_indexes:
         if len(index_group) == 1:
             # Single biomarker, no merging needed
             merged_biomarkers.append(biomarkers[index_group[0]])
         else:
             # Multiple biomarkers to merge
-            # Choose the best canonical name (you can customize this logic)
             canonical_names = [biomarkers[idx]["canonical_biomarker"] for idx in index_group]
-            
-            # Strategy 1: Choose the shortest name
             best_canonical = min(canonical_names, key=len)
-
-            # Combine all occurrences from the groups
+            
             combined_occurrences = []
             for idx in index_group:
                 combined_occurrences.extend(biomarkers[idx]["occurrences"])
             
-            # Create the merged group
             merged_group = {
                 "canonical_biomarker": best_canonical,
                 "occurrences": combined_occurrences
             }
             merged_biomarkers.append(merged_group)
+    
+    # Add unmerged groups (the ones not involved in any correlation)
+    for idx, biomarker in enumerate(biomarkers):
+        if idx not in indices_to_merge:
+            merged_biomarkers.append(biomarker)
     
     return merged_biomarkers
 
@@ -363,9 +364,11 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         acronyms = read_json_arrays_to_list(filename)
 
     biomarkers = []
+    #biomarkers_w_rows = []
     for acronym in acronyms:
         if acronym["acronym"] != "":
             biomarkers.append(acronym["acronym"])
+            #biomarkers_w_rows.append(())
 
     # PRIMA FASE AGGREGAZIONE: exact matching degli acronimi (togliendo caratteri speciali, numeri e sigle "CSF", "PET", "MRI")
     # Dictionary to group items by their processed name
@@ -412,16 +415,11 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
         }
         parsed_biomarkers.append(group_entry)
     
+    #DEBUG
     with open("./parsed_biomarkers.json", "w", encoding="utf-8") as f:
         json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
 
     # FASE IN CUI PROVO AD AGGREGARE I GRUPPI GIÀ AGGREGATI (QUALCHE GRUPPONE L'HO DIVISO)
-    canonical_biomarkers = [d["canonical_biomarker"] for d in parsed_biomarkers]
-    possible_correlations = call_model(biomarkers=canonical_biomarkers, task="merging_groups", model=model, tokenizer=tokenizer, device=device)
-    if has_duplicates(possible_correlations):
-        print("\n\n\n=== ERROR ===")
-        print("Duplicate indices found!")
-        input("Press Enter to go on.")
     # Chiedo ad LLM: 
     # sono stati identificati ed estratti tanti biomarkers da un dataset enorme, dopodichè questi biomarkers sono stati raggruppati
     # il raggruppamento è stato fatto tramite exact matching e questi sono i nomi canonici identificati per ognuno di questi gruppi
@@ -432,27 +430,51 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
     # per esempio: 
     #
     # output è una lista di liste di indici correlati: [[1,5,7],[4,6],[8,18]]
-    actual_correlations = []
-    for correlation in possible_correlations:
-        if len(correlation) == 1:
-            continue
-        print("\nPossible related groups:")
-        for corr in correlation:
-            print(f" {parsed_biomarkers[int(corr)]['canonical_biomarker']} - {corr}")
-        user_input = input("\nAre they related?\n <yes> for all\n <enter> for none (skip)\n <index1> <index2> ... to specify which groups to merge\n\n -> ").strip().lower()
+    #
+    # Faccio loop che finchè tutti i tentativi di merging sono stati skippati, mi continua a fare richiesta al modello e tentativo di merging
+    try_again_merging_groups = True
+    while try_again_merging_groups:
+        try_again_merging_groups = False
+        canonical_biomarkers = [d["canonical_biomarker"] for d in parsed_biomarkers]
+        print(f"Current parsed_biomarkers length: {len(parsed_biomarkers)}")
+        print(f"Current canonical_biomarkers length: {len(canonical_biomarkers)}")
+        possible_correlations = call_model(biomarkers=canonical_biomarkers, task="merging_groups", model=model, tokenizer=tokenizer, device=device)
+        if has_duplicates(possible_correlations):
+            print("\n\n\n=== ERROR ===")
+            print("Duplicate indices found!")
+            input("Press Enter to go on.")
+        # human check if the correlations detected by the LLM are valid
+        actual_correlations = []
+        print(f"The LLM has detected {len(possible_correlations)} possible related groups: let's check them!")
+        for correlation in possible_correlations:
+            if len(correlation) == 1:
+                continue
+            print("\nPossible related groups:")
+            for corr in correlation:
+                if corr >= (len(parsed_biomarkers) - 1):
+                    print(f"{corr} >= {len(parsed_biomarkers) - 1} (corr >= len(parsed_biomarkers) - 1)")
+                    input()
+                else:
+                    print(f" {parsed_biomarkers[int(corr)]['canonical_biomarker']} - {corr}")
+            user_input = input("\nAre they related?\n <yes> for all\n <enter> for none (skip)\n <index1> <index2> ... to specify which groups to merge\n\n -> ").strip().lower()
 
-        if user_input == "yes":
-            print(f"\n All groups have been merged -> {correlation}\n")
-            actual_correlations.append(correlation)
-        elif user_input and all(c.isdigit() or c.isspace() for c in user_input):
-            # Parse numbers from input like "5 18 23" or "2 7"
-            numbers = [int(x) for x in user_input.split()]
-            print(f"\n Only these group indices have been merged -> {numbers}\n")
-            actual_correlations.append(numbers)
-        else:
-            print("\n Skip\n")
-    # facciamo il merge dei gruppi identificati
-    parsed_biomarkers = merge_groups(parsed_biomarkers, actual_correlations)
+            if user_input == "yes":
+                print(f"\n All groups have been merged -> {correlation}\n")
+                actual_correlations.append(correlation)
+                try_again_merging_groups = True
+            elif user_input and all(c.isdigit() or c.isspace() for c in user_input):
+                # Parse numbers from input like "5 18 23" or "2 7"
+                numbers = [int(x) for x in user_input.split()]
+                print(f"\n Only these group indices have been merged -> {numbers}\n")
+                actual_correlations.append(numbers)
+                try_again_merging_groups = True
+            else:
+                print("\n Skip\n")
+        # facciamo il merge dei gruppi identificati
+        parsed_biomarkers = merge_groups(parsed_biomarkers, actual_correlations)
+        if try_again_merging_groups:
+            print("We try again to find some relations between the groups.\n")
+    #DEBUG
     with open("./parsed_biomarkers_grouped.json", "w", encoding="utf-8") as f:
         json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
 
@@ -463,13 +485,59 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
     # varianti possono essere molecola leggermente diversa, test clinico leggermente diverso, etc.
     # esempio
     # rispondi nel seguente formato
+    #
+    # trip allucinante per passare solamente una volta le occurrences "duplicate" se il numero di occurrences è maggiore di 100
     for group in parsed_biomarkers:
-        #TO_DO
-        response = call_model(biomarkers=group, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
-        if response:
-            group["variants"] = response["variants"]
+        if len(group["occurrences"]) > 20:
+            # Count occurrences of each unique string
+            occurrence_counts = {}
+            for occurrence in group["occurrences"]:
+                occurrence_counts[occurrence] = occurrence_counts.get(occurrence, 0) + 1
+            
+            # Store original data for reconstruction
+            group["_original_occurrences"] = group["occurrences"].copy()
+            group["_occurrence_counts"] = occurrence_counts.copy()
+            
+            # Replace occurrences with unique strings only
+            group["occurrences"] = list(occurrence_counts.keys())
+            group_for_llm = {
+                "canonical_biomarker": group["canonical_biomarker"],
+                "occurrences": group["occurrences"]
+            }
+            
+            response = call_model(biomarkers=group_for_llm, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+            
+            # After LLM responds, reconstruct the original variants
+            if group.get("variants"):
+                reconstructed_variants = {}
+                for variant_key, unique_occurrences in group["variants"].items():
+                    reconstructed_list = []
+                    for unique_occurrence in unique_occurrences:
+                        # Add back the original count for each unique occurrence
+                        count = group["_occurrence_counts"].get(unique_occurrence, 1)
+                        reconstructed_list.extend([unique_occurrence] * count)
+                    reconstructed_variants[variant_key] = reconstructed_list
+                
+                # Replace variants with reconstructed ones
+                group["variants"] = reconstructed_variants
+            
+            # Restore original occurrences
+            group["occurrences"] = group["_original_occurrences"]
+            
+            # Clean up temporary keys
+            del group["_original_occurrences"]
+            del group["_occurrence_counts"]
+            del group_for_llm
             print("variants added!")
             print(group)
+        else:
+            response = call_model(biomarkers=group, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+                print("variants added!")
+                print(group)
 
     
     '''
