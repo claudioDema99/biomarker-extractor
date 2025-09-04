@@ -31,6 +31,7 @@ def process_name(name):
     - Remove special characters (_, -, +, etc.)
     - Convert to uppercase
     - Remove all numbers
+    - Remove specific sequences: "CSF", "PET", "MRI"
     """
     # Remove leading/trailing spaces
     processed = name.strip()
@@ -42,6 +43,8 @@ def process_name(name):
     processed = processed.upper()
     # Remove all numbers
     processed = re.sub(r'\d+', '', processed)
+    # Remove specific sequences: CSF, PET, MRI
+    processed = re.sub(r'CSF|PET|MRI', '', processed)
     return processed
 
 def choose_canonical_name(group):
@@ -53,66 +56,130 @@ def choose_canonical_name(group):
     sorted_group = sorted(group, key=lambda x: (len(x), x))
     return sorted_group[0]
 
+def merge_groups(parsed_biomarkers, actual_correlations):
+    # Crea una copia della lista originale per non modificarla
+    result = parsed_biomarkers.copy()
+    
+    # Ordina gli indici da eliminare in ordine decrescente
+    # così eliminiamo prima quelli con indici più alti
+    indices_to_remove = []
+    
+    for correlation_group in actual_correlations:
+        if len(correlation_group) <= 1:
+            continue  # Skip se c'è solo un elemento o nessuno
+            
+        # Il primo indice sarà quello che manteniamo (target)
+        target_idx = correlation_group[0]
+        
+        # Unisci tutte le occurrences nel dizionario target
+        for idx in correlation_group[1:]:
+            result[target_idx]["occurrences"].extend(result[idx]["occurrences"])
+            indices_to_remove.append(idx)
+    
+    # Rimuovi i duplicati e ordina in ordine decrescente
+    indices_to_remove = sorted(set(indices_to_remove), reverse=True)
+    
+    # Elimina gli elementi partendo dagli indici più alti
+    for idx in indices_to_remove:
+        result.pop(idx)
+    
+    return result
+
 def call_model(biomarkers, task, model, tokenizer, device, biomarker_groups=[]):
     max_retries = 5
     for attempt in range(max_retries):
         try:
-            if task == "grouping_biomarkers":
-                system_prompt = """You are a biomarker term matcher. Your job is simple: group identical biomarkers that use different names, abbreviations, or spellings.
+            if task == "defining_variants":
+                system_prompt = """You are a biomarker variant grouper. Task: group occurrences by variant type.
 
-TASK: Look for synonym groups and output JSON immediately.
+DEFINITION
+- Variant
+  - Molecules: same base marker with a numeric/letter form (e.g., Aβ1-37/1-40/1-42, p-tau181/217, ApoE2/3/4, GFAP-δ).
+  - Tests/scales: same base test with a version/subscale tag (e.g., ADAS-Cog-11/13/14, v2, SF/LF, CDR-SB/SoB)
+
 RULES:
-- Include ALL input terms exactly once
-- Group obvious synonyms (e.g., "P-Tau 181" = "pTau181" = "phospho-tau-181")  
-- Use clear canonical names
-- When unsure, keep terms separate
-- Output ONLY valid JSON - no explanations
+1. Find the base marker name in each occurrence
+2. Group by variant indicators (numbers, letters, versions)
+3. Use first occurrence as group key
+4. Output JSON only - no explanations
 
-JSON FORMAT:
-[
-    {
-        "canonical_biomarker": "Standard Name",
-        "occurrences": ["variant1", "variant2"]
-    }
-]"""
+EXAMPLE OF VARIANT INDICATORS:
+- Numbers: 1-40, 1-42, 181, 217
+- Letters: δ, α, β
+- Versions: v2, -11, -13, SF, LF
 
-                user_prompt = f"""Group these {len(biomarkers) if isinstance(biomarkers, list) else "N"} biomarker terms by synonyms. Output JSON only:
+OUTPUT FORMAT:
+{"variants": {"key1": ["item1", "item2"], "key2": ["item3"]}}
 
-{biomarkers}"""
-            elif task == "merging_groups":
-                #canonical_biomarkers = [marker["canonical_biomarker"] for marker in biomarkers]
-                system_prompt = """You are an expert in biomarkers and biomedical nomenclature. Your task is to assign ungrouped biomarkers to existing groups based exclusively on biological and biomedical synonymy.
+No text before or after JSON. No long reasoning. Just JSON."""
+                user_prompt = f"""Group these biomarker occurrences by variant. Output JSON only.
+Note: It is not certain or mandatory that all groups actually have variants. If all occurrences represent the same variant or no clear variants exist, return them all grouped under a single variant key.
 
-FUNDAMENTAL RULES:
-1. Assign a biomarker to a group ONLY if the biomarker is a biological synonym of the group name
-2. Consider synonyms: alternative names of the same protein/molecule, standard abbreviations, different forms of the same compound
-3. When in doubt, always choose NA rather than an uncertain assignment
-4. Each biomarker must be assigned to ONE group or to NA
-5. Maintain maximum scientific precision in assignments
+Example of the task:
+Input:
+{{
+  "canonical_biomarker": "ABETA",
+  "occurrences": [
+    "ABETA",
+    "ABETA1-40",
+    "ABeta 1-38",
+    "Abeta 1-42",
+    "Abeta-40",
+    "Abeta40",
+    "Abeta42",
+    "Abeta42",
+    "Abeta42"
+  ]
+}}
+Output:
+{{
+  "variants": {{
+    "ABETA": ["ABETA"],
+    "ABETA1-40": ["ABETA1-40", "Abeta-40", "Abeta40"],
+    "ABeta 1-38": ["ABeta 1-38"],
+    "Abeta 1-42": ["Abeta 1-42", "Abeta42", "Abeta42", "Abeta42"]
+  }}
+}}
 
-OUTPUT FORMAT: Return a list of lists in the format:
-[["biomarker_name", "assigned_group_name"]] or [["biomarker_name", "NA"]]
-
-Be extremely conservative: it is better to leave a biomarker unassigned than to assign it incorrectly.
-"""
-                user_prompt = f"""I have 10 biomarkers to classify and 118 existing groups. I need to assign each biomarker to the appropriate group only if it is a true synonym of the group name.
-
-**BIOMARKERS TO CLASSIFY:**
+Here is the input you have to process:
 {biomarkers}
 
-**AVAILABLE GROUPS:**
-{biomarker_groups}
+Output:"""
+            elif task == "merging_groups":
+                #canonical_biomarkers = [marker["canonical_biomarker"] for marker in biomarkers]
+                system_prompt = """You are a data analysis assistant specialized in identifying potential correlations between biological/scientific markers. Your task is to analyze canonical marker names and identify groups that could be semantically related.
 
-**INSTRUCTIONS:**
-- Analyze each biomarker and verify if it is a synonym of one of the existing groups
-- Assign the biomarker to a group only if it represents the same molecule/protein/compound
-- If you don't find synonymous correspondence, assign "NA"
-- Consider standard abbreviations, alternative names, ionic/derivative forms of the same molecule
+**Guidelines:**
+- Use your knowledge of scientific terminology, biological pathways, and semantic relationships
+- Consider synonyms, abbreviations, different naming conventions and nomenclature
+- Avoid random or speculative groupings - only group when confident of the relationship
+- Maximum 5 markers per group (groups with >5 members are highly unlikely)
 
-**REQUIRED OUTPUT:**
-List of lists in the format: [["biomarker1", "assigned_group"], ["biomarker2", "NA"], ...]
+**Output Format:**
+- Return only a list of lists containing marker indices
+- Each inner list represents a group of potentially related markers
+- Use zero-based indexing (0, 1, 2, ...)
+- No explanations, comments, or additional text
+"""
+                user_prompt = f"""The following canonical marker names were identified from grouped datasets using exact matching:
 
-Proceed with the analysis and classification.
+{biomarkers}
+
+Analyze these markers and identify any groups that could be correlated or linked to each other. Return the indices of potentially related marker groups.
+**Important:** Only group markers when you are confident they are related.
+
+**Example:**
+If your marker list is:
+['CDR', 'ADAS-Cog', 'Aβ', 'NPI', 'ABETA', 'Aβ1‑40', ...]
+
+Then indices 2, 4, and 5 should be grouped together as they all refer to amyloid-beta variants:
+- Index 2: 'Aβ' (amyloid-beta)
+- Index 4: 'ABETA' (amyloid-beta, full name)
+- Index 5: 'Aβ1‑40' (amyloid-beta fragment)
+
+Output: [[2, 4, 5]]
+
+**Response:**
 """
             else:
                 return []
@@ -130,10 +197,12 @@ Proceed with the analysis and classification.
                 tokenize=False, 
                 add_generation_prompt=True
             )
-            
+
+            '''
             if full_prompt.count(" medium") > 0:
                 full_prompt = full_prompt.replace("medium", "low", 1)
                 print("\n\nChanged reasoning level to low for better performance.\n")
+            '''
             
 
             #print(full_prompt)
@@ -158,7 +227,7 @@ Proceed with the analysis and classification.
             with torch.no_grad():
                 outputs = model.generate(
                     **inputs,
-                    max_new_tokens=4096,          # Massimo numero di nuovi token da generare
+                    max_new_tokens=8192,          # Massimo numero di nuovi token da generare
                     do_sample=False,              # Usa greedy decoding (deterministic!!!)
                     #temperature=0.7,              # Controllo randomness (se do_sample=True) quindi inutile
                     #top_p=0.9,                    # Nucleus sampling (se do_sample=True) quindi inutile
@@ -204,9 +273,17 @@ Proceed with the analysis and classification.
                 # ritorna l'output completo se non trova i tag
                 print(f"No filtering tags found, returning full output.")
 
-            # Isola la sezione JSON anche se c'è testo extra
-            start = response.find('[')
-            end   = response.rfind(']') + 1   # rfind => ultima graffa
+            if task == "defining_variants":
+                print(response)
+                #input()
+                #output: {"variants":{"CDR":["CDR","CDR","CDR"],"CDR‑SB":["CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR‑SB","CDR-SB","CDR-SB","CDR-SB"]}}
+                # Isola la sezione JSON anche se c'è testo extra
+                start = response.find('{')
+                end   = response.rfind('}') + 1   # rfind => ultima graffa
+            elif task == "merging_groups":
+                # Isola la sezione JSON anche se c'è testo extra
+                start = response.find('[')
+                end   = response.rfind(']') + 1   # rfind => ultima quadra
 
             if start == -1 or end == 0:
                 raise ValueError("JSON array not found in response")
@@ -214,8 +291,10 @@ Proceed with the analysis and classification.
             json_str = response[start:end]
             data = json.loads(json_str)
 
-            if not isinstance(data, list) or len(data) == 0:
+            if (not isinstance(data, list) or len(data) == 0) and task == "merging_groups":
                 raise ValueError("Response is not a valid non-empty list")
+            elif not isinstance(data, dict) and task == "defining_variants":
+                raise ValueError("Response is not a valid dict")
             
             if attempt > 0:
                 print(f"Successo al tentativo {attempt + 1}")
@@ -272,27 +351,30 @@ def merge_biomarker_groups(biomarkers, merging_indexes):
     
     return merged_biomarkers
 
+def has_duplicates(correlations):
+    all_numbers = [num for sublist in correlations for num in sublist]
+    return len(all_numbers) != len(set(all_numbers))
+
 def aggregation(model, tokenizer, device, evaluated_biomarkers):
     
     if evaluated_biomarkers == [] or evaluated_biomarkers == None:
-        filename = "./results/evaluated_biomarkers.json"
-        evaluated_biomarkers = read_json_arrays_to_list(filename)
+        #filename = "./results/evaluated_biomarkers.json"
+        filename = "./results/acronyms_logs.json"
+        acronyms = read_json_arrays_to_list(filename)
 
-    validated_biomarkers = []
-    for acronym in evaluated_biomarkers:
-        if acronym["valid"] == True:
-            validated_biomarkers.append(acronym["acronym"])
+    biomarkers = []
+    for acronym in acronyms:
+        if acronym["acronym"] != "":
+            biomarkers.append(acronym["acronym"])
 
-    print(f"Valid biomarkers: {len(validated_biomarkers)} on {len(evaluated_biomarkers)} total biomarkers extracted.")
-
-    # PRIMA FASE AGGREGAZIONE: exact matching degli acronimi (togliendo caratteri speciali e numeri)
+    # PRIMA FASE AGGREGAZIONE: exact matching degli acronimi (togliendo caratteri speciali, numeri e sigle "CSF", "PET", "MRI")
     # Dictionary to group items by their processed name
     groups = defaultdict(list)
 
     # Process each item and group by processed name
-    for biomarker in validated_biomarkers:
+    for biomarker in biomarkers:
         clean_biomarker = process_name(biomarker)
-        if clean_biomarker:  # Only add if processed name is not empty
+        if clean_biomarker and len(clean_biomarker) > 1:  # Only add if processed name is not empty and of at least two characters
             # se esiste già 'processed' aggiungo alla lista già esistente, così raggruppo i duplicati
             # se non esiste creo una nuova lista con il primo elemento
             groups[clean_biomarker].append(biomarker)
@@ -315,7 +397,7 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
     #print(f"\nRemaining items: {remaining_items}")
     # Verify conservation
     print(f"\nExact matching finito:")
-    print(f"Initial items: {len(validated_biomarkers)}")
+    print(f"Initial items: {len(biomarkers)}")
     print(f"Grouped items: {total_grouped_items}")
     print(f"Remaining items: {len(remaining_items)}")
     #print(f"Total: {total_grouped_items + len(remaining_items)}")
@@ -329,7 +411,68 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
             "occurrences": sorted(original_names)  # Sort members alphabetically
         }
         parsed_biomarkers.append(group_entry)
+    
+    with open("./parsed_biomarkers.json", "w", encoding="utf-8") as f:
+        json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
 
+    # FASE IN CUI PROVO AD AGGREGARE I GRUPPI GIÀ AGGREGATI (QUALCHE GRUPPONE L'HO DIVISO)
+    canonical_biomarkers = [d["canonical_biomarker"] for d in parsed_biomarkers]
+    possible_correlations = call_model(biomarkers=canonical_biomarkers, task="merging_groups", model=model, tokenizer=tokenizer, device=device)
+    if has_duplicates(possible_correlations):
+        print("\n\n\n=== ERROR ===")
+        print("Duplicate indices found!")
+        input("Press Enter to go on.")
+    # Chiedo ad LLM: 
+    # sono stati identificati ed estratti tanti biomarkers da un dataset enorme, dopodichè questi biomarkers sono stati raggruppati
+    # il raggruppamento è stato fatto tramite exact matching e questi sono i nomi canonici identificati per ognuno di questi gruppi
+    # secondo te, ci sono all'interno di questa lista, dei nomi canonici i quali rispettivi gruppi potrebbero essere correlati e legati tra di loro?
+    # Se si, indica gli la coppia (o più) di indici di biomarkers che sono correlati tra loro all'interno della seguente lista.
+    # (considera che il tutto verrà poi visionato da un esperto, dunque se hai dubbi, prova comunque a restituire gli indici di eventuali possibili e 
+    # dubbi gruppi correlati)
+    # per esempio: 
+    #
+    # output è una lista di liste di indici correlati: [[1,5,7],[4,6],[8,18]]
+    actual_correlations = []
+    for correlation in possible_correlations:
+        if len(correlation) == 1:
+            continue
+        print("\nPossible related groups:")
+        for corr in correlation:
+            print(f" {parsed_biomarkers[int(corr)]['canonical_biomarker']} - {corr}")
+        user_input = input("\nAre they related?\n <yes> for all\n <enter> for none (skip)\n <index1> <index2> ... to specify which groups to merge\n\n -> ").strip().lower()
+
+        if user_input == "yes":
+            print(f"\n All groups have been merged -> {correlation}\n")
+            actual_correlations.append(correlation)
+        elif user_input and all(c.isdigit() or c.isspace() for c in user_input):
+            # Parse numbers from input like "5 18 23" or "2 7"
+            numbers = [int(x) for x in user_input.split()]
+            print(f"\n Only these group indices have been merged -> {numbers}\n")
+            actual_correlations.append(numbers)
+        else:
+            print("\n Skip\n")
+    # facciamo il merge dei gruppi identificati
+    parsed_biomarkers = merge_groups(parsed_biomarkers, actual_correlations)
+    with open("./parsed_biomarkers_grouped.json", "w", encoding="utf-8") as f:
+        json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
+
+
+
+    print("\n\n\nFINISH! NOW WE GO ON!!\n\n\n")
+    # chiedo ad LLM (iterando su ciascun gruppo identificato) di identificare le varianti appartenenti allo stesso gruppo:
+    # varianti possono essere molecola leggermente diversa, test clinico leggermente diverso, etc.
+    # esempio
+    # rispondi nel seguente formato
+    for group in parsed_biomarkers:
+        #TO_DO
+        response = call_model(biomarkers=group, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+        if response:
+            group["variants"] = response["variants"]
+            print("variants added!")
+            print(group)
+
+    
+    '''
     # SECONDA FASE AGGREGAZIONE: processiamo i restanti (non aggregati) biomarkers con LLM provando a farli assegnare a qualche gruppo creato
     groups = []
     for parsed in parsed_biomarkers:
@@ -353,10 +496,19 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers):
                 # Add the group to occurrences
                 biomarker_dict["occurrences"].append(biomarker)
                 break  # Found the match, no need to continue searching
+    '''
 
-    # Aggiungi count e ordina in modo decrescente
     for group in parsed_biomarkers:
         group["count"] = len(group["occurrences"])
+        
+        # Check if variants exist and is not empty
+        if group.get("variants"):
+            for variant_key, variant_list in group["variants"].items():
+                # Calculate percentage
+                pct = len(variant_list) / group["count"] * 100
+                # Add percentage as new key
+                group["variants"][f"{variant_key}-pct"] = f"{pct} %"
+
     final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: x['count'], reverse=True)
 
     with open("./results/biomarkers.json", "w", encoding="utf-8") as f:

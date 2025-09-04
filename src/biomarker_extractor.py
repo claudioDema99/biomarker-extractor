@@ -150,9 +150,9 @@ def tokens_of(df_slice, tokenizer):
     return tok_count, records_json
 
 def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
-    all_biomarkers = []
     all_biomarkers_extended = []
     
+    # logs
     log_filepath = "./results/extraction_logs.json"
     if os.path.exists(log_filepath):
         with open(log_filepath, "r", encoding="utf-8") as f:
@@ -160,70 +160,44 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
     else:
         log_entries = []
 
-    # === BATCH SIZE ADATTIVO: Stabilisci threshold di token number (circa la metà della context window del modello), 
-    # Vogliamo passare al modello un batch di righe che abbia un numero di token compreso tra TOK_MIN e TOK_MAX.
-    # dunque aumentiamo il numero di righe da processare in un batch fino a che non raggiungiamo TOK_MIN, ma non superiamo TOK_MAX.
-    TOK_MIN = 2000          # soglia minima
-    TOK_MAX = 3500          # soglia massima
-
+    TOK_MAX = 4000
     i = 0
-    batch_id = 1
 
     while i < len(df_filtered):
-        # inizia con una sola riga
-        rows_in_batch = 1
-        batch_df      = df_filtered.iloc[i : i + rows_in_batch]
-        batch_tokens, records = tokens_of(batch_df, tokenizer)
+        # I need to do [i:i+1] because I want a class DataFrame (otherwise Pandas gives me a Series)
+        # preprocessing row and token count
+        batch_tokens, record = tokens_of(df_filtered.iloc[i:i+1], tokenizer)
 
-        # --- controllo iniziale --- (c'è una cella con più di 6000 token filtrati.. per ora le scartiamo)
+        # DA TESTARE record[0]['outcome_measurement_title] MA NON CREDO SIA ERRORE
+        # tokens size check
         if batch_tokens > TOK_MAX + 500:
             print(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
             with open("./results/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
-                f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
+                f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
 
-        # espandi finché restiamo < TOK_MIN ma non superiamo TOK_MAX
-        while batch_tokens < TOK_MIN and (i + rows_in_batch) < len(df_filtered):
-            next_row_df = df_filtered.iloc[i + rows_in_batch : i + rows_in_batch + 1]
-
-            tentative_df      = pd.concat([batch_df, next_row_df], ignore_index=True)
-            tentative_tokens, tentative_records = tokens_of(tentative_df, tokenizer)
-
-            if tentative_tokens <= TOK_MAX:
-                batch_df      = tentative_df
-                batch_tokens  = tentative_tokens
-                records       = tentative_records
-                rows_in_batch += 1
-            else:
-                break  # aggiungere la riga supererebbe TOK_MAX
-
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
-        if rows_in_batch == 1:
-            print(f"Batch {batch_id}: {rows_in_batch} riga – Indice {i}")
-        else:
-            print(f"Batch {batch_id}: {rows_in_batch} righe – Indici {i} - {i + rows_in_batch - 1}")
-        print(f"{batch_tokens} tokens => {batch_tokens + 3492} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
-
-        biomarkers, cot, response = call_model(records, dataset_type, model, tokenizer, device)
+        # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
+        print(f"Riga {i}: {batch_tokens} tokens => {batch_tokens + 3492} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
+        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device)
 
         if biomarkers is None or biomarkers == "":
             with open("./results/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"Riga {i} Nessun biomarker trovato per il batch {batch_id} – saltata.\n\n")
-                f.write(f"outcome_measurement_title:\n{records[0]['outcome_measurement_title']}\n")
+                f.write(f"Nessun biomarker trovato per la riga {i} – saltata.\n\n")
+                f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
             print(f"Biomarkers trovati: {biomarkers}")
-            all_biomarkers.append(biomarkers)
             all_biomarkers_extended.extend(biomarkers)
 
         log_entry = {
-            "batch_id": batch_id,
-            "rows_ids": list(range(i, i + rows_in_batch)),
+            "biomarkers": biomarkers if isinstance(biomarkers, list) else [],
+            "row_id": i,
             "cot": cot,
             "response": response
         }
@@ -232,27 +206,11 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
         save_logs_as_json(log_entries, log_filepath)
 
         # avanza l’indice
-        i += rows_in_batch
-        batch_id += 1
+        i += 1
 
         print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
-        if i == len(df_filtered) // 4:
-            with open("./results/biomarkers_list.txt", "w") as f:
-                f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
-                for biomarker in all_biomarkers:
-                    f.write(f"{biomarker}\n")
-        if i == len(df_filtered) // 2:
-            with open("./results/biomarkers_list.txt", "w") as f:
-                f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
-                for biomarker in all_biomarkers:
-                    f.write(f"{biomarker}\n")
-        if i == len(df_filtered) * 3 // 4:
-            with open("./results/biomarkers_list.txt", "w") as f:
-                f.write(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
-                for biomarker in all_biomarkers:
-                    f.write(f"{biomarker}\n")
     with open("./results/biomarkers_list.txt", "w") as f:
         for biomarker in all_biomarkers_extended:
             f.write(f"{biomarker}\n")
-    return all_biomarkers, all_biomarkers_extended
+    return all_biomarkers_extended

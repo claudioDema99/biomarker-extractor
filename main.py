@@ -1,25 +1,31 @@
 from src.biomarker_extractor import extraction
 from src.models import load_model_and_tokenizer
-from src.rag_faiss import validation
+#from src.rag_faiss import validation
+from src.rag_chroma import validation
 from src.aggregator import aggregation
 import pandas as pd
 
 def main():
-    # Caricamento dataset e selezione colonne
+
     df = pd.read_csv("./data/Alzheimer_1row_Puri.csv")
+
+    # Filter out rows where both param_value columns are empty/invalid and keep only end_dates before 2025
+    df_filtered = df[
+        (df['param_value'].notna() | df['param_value_decimal'].notna()) &
+        (pd.to_datetime(df['end_date'], errors='coerce') < '2025-01-01')
+    ].copy()
+
+    # keep only the cols selected and removes rows where all columns in the DataFrame are NaN/null
     cols_to_keep = [
-        #"study_type-intervention_type",
-        "brief_summary",
-        "detailed_description",
         "outcome_measurement_title",
         "outcome_measurement_description"
     ]
-    df_filtered = df[cols_to_keep].dropna(how="all")
+    df_filtered = df_filtered[cols_to_keep].dropna(how="all")
 
     model, tokenizer, device = load_model_and_tokenizer()
 
     # Prima parte: biomarkers extraction
-    _, biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, df_filtered=df_filtered, dataset_type="Alzheimer")
+    biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, df_filtered=df_filtered, dataset_type="Alzheimer")
     print("""\n\nTutto il dataset è stato processato con successo.
 I risultati dei biomarkers estratti si trovano in 'results/biomarkers_list.txt'.
 Le righe non processate sono state salvate in 'results/unprocessed_lines.txt'.
