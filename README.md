@@ -1,4 +1,5 @@
 # Biomarker Extractor
+# TO UPDATE
 
 ## Setup:
 
@@ -12,7 +13,7 @@ source venv/bin/activate
 #### Se utilizzi una GPU AMD con ROCm
 
 ```bash
-venv/bin/python -m pip install -r requirements.txt
+venv/bin/python -m pip install -r requirements
 venv/bin/python -m pip install torch --index-url https://download.pytorch.org/whl/rocm5.7
 ```
 
@@ -22,7 +23,7 @@ venv/bin/python -m pip install torch --index-url https://download.pytorch.org/wh
 2. Installa le dipendenze:
 
 ```bash
-venv/bin/python -m pip install -r requirements.txt
+venv/bin/python -m pip install -r requirements
 ```
 
 ## Utilizzo:

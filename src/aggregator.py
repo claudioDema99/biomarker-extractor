@@ -599,6 +599,92 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers, total_len, datas
         json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
     return final_biomarkers_sorted
 
+def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
+    print(f"Resuming the final analysis: loading 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
+    with open(f"./parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
+        parsed_biomarkers = json.load(f)
+    with open(f"./acronyms_w_rows_{dataset_type}.json", "r", encoding="utf-8") as f:
+        acronyms_w_rows = json.load(f)
+
+    # TERZA FASE: chiedo a LLM di identificare varianti tra le componenti di uno stesso gruppo (non passo tutte le 'occurrences' ma solo quelle diverse tra di loro)
+    for group in parsed_biomarkers:
+        if len(group["occurrences"]) > 20:
+            # Count occurrences of each unique string
+            occurrence_counts = {}
+            for occurrence in group["occurrences"]:
+                occurrence_counts[occurrence] = occurrence_counts.get(occurrence, 0) + 1
+            
+            # Store original data for reconstruction
+            group["_original_occurrences"] = group["occurrences"].copy()
+            group["_occurrence_counts"] = occurrence_counts.copy()
+            
+            # Replace occurrences with unique strings only
+            group["occurrences"] = list(occurrence_counts.keys())
+            group_for_llm = {
+                "canonical_biomarker": group["canonical_biomarker"],
+                "occurrences": group["occurrences"]
+            }
+            
+            response = call_model(biomarkers=group_for_llm, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+            
+            # After LLM responds, reconstruct the original variants
+            if group.get("variants"):
+                reconstructed_variants = {}
+                for variant_key, unique_occurrences in group["variants"].items():
+                    reconstructed_list = []
+                    for unique_occurrence in unique_occurrences:
+                        # Add back the original count for each unique occurrence
+                        count = group["_occurrence_counts"].get(unique_occurrence, 1)
+                        reconstructed_list.extend([unique_occurrence] * count)
+                    reconstructed_variants[variant_key] = reconstructed_list
+                
+                # Replace variants with reconstructed ones
+                group["variants"] = reconstructed_variants
+            
+            # Restore original occurrences
+            group["occurrences"] = group["_original_occurrences"]
+            
+            # Clean up temporary keys
+            del group["_original_occurrences"]
+            del group["_occurrence_counts"]
+            del group_for_llm
+            print("Variants added!")
+            print(group)
+        else:
+            response = call_model(biomarkers=group, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+                print("Variants added!")
+                print(group)
+
+    # conteggi finali e salvataggio
+    for group in parsed_biomarkers:
+        group["total_count"] = f"{len(group['occurrences'])} / {total_len}"
+        total_pct = len(group["occurrences"]) / total_len * 100
+        group["total_percentage"] = f"{total_pct:.2f} %"
+        
+        # Check if variants exist and is not empty
+        if group.get("variants"):
+            # Initialize the dictionary of variant percentages
+            group["variant_percentages"] = {}  
+            # Create a copy of items to iterate over
+            for variant_key, variant_list in list(group["variants"].items()):
+                # Calculate percentage
+                pct = len(variant_list) / len(group['occurrences']) * 100
+                # Add percentage as new key
+                group["variant_percentages"][variant_key] = f"{pct:.2f} %"
+    
+    # Find the rows of the dataset from which each biomarker was extracted (using acronyms_w_rows, which pairs each biomarker with the row it was extracted from)
+    parsed_biomarkers = find_rows_from_biomarkers(parsed_biomarkers, acronyms_w_rows)
+
+    final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: x['total_count'], reverse=True)
+
+    with open(f"./results/{dataset_type}/biomarkers.json", "w", encoding="utf-8") as f:
+        json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
+    return final_biomarkers_sorted
+
     '''
     # SECONDA FASE AGGREGAZIONE: processiamo i restanti (non aggregati) biomarkers con LLM provando a farli assegnare a qualche gruppo creato
     groups = []

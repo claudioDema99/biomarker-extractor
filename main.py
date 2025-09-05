@@ -1,21 +1,19 @@
 from src.biomarker_extractor import extraction
 from src.models import load_model_and_tokenizer
 from src.rag_chroma import validation
-from src.aggregator import aggregation
+from src.aggregator import aggregation, aggregation_resume
 import pandas as pd
 import sys
 import os
 import shutil
 
 def main():
-    if sys.argv[1]:
-        if sys.argv[1] == "resume":
-            pass
 
     all_databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
     #databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
-    # FOR TESTING
-    databases = ["BPD"]
+    databases = ["Alzheimer", "BPD"]
+
+    model, tokenizer, device = load_model_and_tokenizer()
 
     for database in databases:
 
@@ -58,23 +56,31 @@ def main():
         ]
         df_filtered = df_filtered[cols_to_keep].dropna(how="all")
 
-        model, tokenizer, device = load_model_and_tokenizer()
+        if sys.argv[1]:
+            if sys.argv[1] == "resume":
+                if os.path.exists(f"./parsed_biomarkers_{database}.json") and os.path.exists(f"./acronyms_w_rows_{database}.json"):
+                    _ = aggregation_resume(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
+I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
+                else:
+                    print(f"File parsed_biomarkers_{database}.json or acronyms_w_rows_{database}.json not present. Skip.")
 
-        # Prima parte: biomarkers extraction
-        biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
-        print(f"""\n\nTutto il dataset è stato processato con successo.
+        else:
+            # Prima parte: biomarkers extraction
+            biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
+            print(f"""\n\nTutto il dataset è stato processato con successo.
 La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
 Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines.txt' (se il file non esiste, tutte le righe son state processate).
 I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
-        
-        # Seconda parte: validazione dei biomarkers estratti tramite RAG
-        evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker_list, create_chroma_db=True, dataset_type=database)
-        print(f"""\n\nTutti i biomarkers estratti sono stati processati.
+            
+            # Seconda parte: validazione dei biomarkers estratti tramite RAG
+            evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker_list, create_chroma_db=True, dataset_type=database)
+            print(f"""\n\nTutti i biomarkers estratti sono stati processati.
 I risultati completi (con nome originale, acronimo identificato, row_id, e relativa CoT dell'LLM) si trovano in 'results/{database}/acronyms_logs.json'.\n""")
-        
-        # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
-        biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, evaluated_biomarkers=evaluated_biomarkers, total_len=len(rows_id), dataset_type=database)
-        print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
+           
+            # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
+            biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, evaluated_biomarkers=evaluated_biomarkers, total_len=len(rows_id), dataset_type=database)
+            print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
         
         '''
