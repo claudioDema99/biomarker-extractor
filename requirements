@@ -2,6 +2,9 @@ pandas
 transformers
 accelerate
 PyMuPDF
-faiss-cpu   # oppure faiss-gpu
+chromadb
 sentence-transformers
+langchain
+langchain-community
+inputimeout
 # torch

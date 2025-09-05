@@ -149,18 +149,18 @@ def tokens_of(df_slice, tokenizer):
     tok_count = get_token_count(records_json, tokenizer)
     return tok_count, records_json
 
-def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
+def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers_extended = []
     
     # logs
-    log_filepath = "./results/extraction_logs.json"
+    log_filepath = f"./results/{dataset_type}/extraction_logs.json"
     if os.path.exists(log_filepath):
         with open(log_filepath, "r", encoding="utf-8") as f:
             log_entries = json.load(f)
     else:
         log_entries = []
 
-    TOK_MAX = 4000
+    TOK_MAX = 1700
     i = 0
 
     while i < len(df_filtered):
@@ -171,10 +171,10 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
         # DA TESTARE record[0]['outcome_measurement_title] MA NON CREDO SIA ERRORE
         # tokens size check
         if batch_tokens > TOK_MAX + 500:
-            print(f"[WARNING] Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
-            with open("./results/unprocessed_lines.txt", "a") as f:
+            print(f"[WARNING] Riga {rows_id[i]} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
+            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"Riga {i} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
+                f.write(f"Riga {rows_id[i]} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
                 f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
@@ -182,13 +182,13 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
-        print(f"Riga {i}: {batch_tokens} tokens => {batch_tokens + 3492} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
+        print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + 6281} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
         biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device)
 
         if biomarkers is None or biomarkers == "":
-            with open("./results/unprocessed_lines.txt", "a") as f:
+            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"Nessun biomarker trovato per la riga {i} – saltata.\n\n")
+                f.write(f"Nessun biomarker trovato per la riga {rows_id[i]} – saltata.\n\n")
                 f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
@@ -197,7 +197,7 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
 
         log_entry = {
             "biomarkers": biomarkers if isinstance(biomarkers, list) else [],
-            "row_id": i,
+            "row_id": rows_id[i],
             "cot": cot,
             "response": response
         }
@@ -210,7 +210,7 @@ def extraction(model, tokenizer, device, df_filtered: pd.DataFrame, dataset_type
 
         print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
-    with open("./results/biomarkers_list.txt", "w") as f:
+    with open(f"./results/{dataset_type}/biomarkers_list.txt", "w") as f:
         for biomarker in all_biomarkers_extended:
             f.write(f"{biomarker}\n")
     return all_biomarkers_extended

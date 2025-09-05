@@ -74,9 +74,12 @@ def call_model(records, dataset_type, model, tokenizer, device, max_retries=5):
                 print(f" Memory cleared for retry {attempt + 1}")
             # Adatto i prompt in base al database
             name, examples, shots = get_prompt(dataset_type)
-            system_prompt = f"""You are an expert clinical data analyst specialized in identifying biomarkers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY biomarkers explicitly present in the text. Do NOT invent biomarkers not present in the records.
 
-BIOMARKER DEFINITION: A biomarker is a quantifiable characteristic of the body that serves as an objective indicator of biological processes or pathological conditions in {name}'s disease.
+            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials.
+
+MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.
+
+Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records. Do NOT include techniques or modalities, but you can include quantities extracted from them (example: MRI is a technique, then do not include it; hippocampal volume derived from MRI is a quantity, then include it). 
 
 MANDATORY OUTPUT RULES (must be followed exactly):
 1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:

@@ -13,7 +13,6 @@ from src.prompts import get_prompt
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 CHUNK_CHARS = 1500
 CHUNK_OVERLAP = 300
-LOG_PATH = "./results/acronyms_logs.json"
 MAX_BATCH_SIZE = 2
 
 def clear_gpu_memory():
@@ -22,7 +21,7 @@ def clear_gpu_memory():
         torch.cuda.empty_cache()
     gc.collect()
 
-def save_logs_as_json(log_entries, filepath=LOG_PATH, mode="w"):
+def save_logs_as_json(log_entries, filepath, mode="w"):
     """Save log entries as pretty-formatted JSON"""
     with open(filepath, mode, encoding="utf-8") as f:
         json.dump(log_entries, f, ensure_ascii=False, indent=2)
@@ -182,12 +181,12 @@ Provide the answer in the JSON format specified in the system instructions. Focu
 
     return {}, "", ""
 
-def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
+def validation(model, tokenizer, device, biomarkers, create_chroma_db=False, dataset_type: str="Alzheimer"):
     
     # create chroma db (just first time)
     if create_chroma_db:
         # load and clean all PDFs
-        pdf_folder = "./docs"  # path to your 14 PDFs
+        pdf_folder = f"./docs/{dataset_type}"  # path to your 14 PDFs
         all_cleaned_docs = []
         for pdf_file in os.listdir(pdf_folder):
             if pdf_file.endswith(".pdf"):
@@ -212,52 +211,51 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
         vectorstore = Chroma.from_documents(
             documents=docs,
             embedding=embedding_model,
-            persist_directory="chroma_db_alzheimer"
+            persist_directory=f"./db/chroma_db_{dataset_type}"
         )
         vectorstore.persist()
-        print(f"Chroma collection {vectorstore.persist_directory} created and persisted")
+        print(f"Chroma collection {vectorstore._persist_directory} created and persisted")
+    else:
+        # Load persisted collection
+        vectorstore = Chroma(
+            persist_directory=f"./db/chroma_db_{dataset_type}",
+            embedding_function=embedding_model
+        )
+        print(f"Chroma collection {vectorstore._persist_directory} loaded")
 
     # Re-use the same embedding model you used when building the DB
     embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
-    # Load persisted collection
-    vectorstore = Chroma(
-        persist_directory="chroma_db_alzheimer",
-        embedding_function=embedding_model
-    )
+
     # Turn into a retriever
     retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
     # for testing
     if biomarkers == [] or biomarkers == None:
-        with open ("./results/biomarkers_list.txt", "r") as f:
+        with open (f"./results/{dataset_type}/biomarkers_list.txt", "r") as f:
             biomarkers = [line.strip() for line in f if line.strip()]
         # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
         # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
         # DA CHEKCARE!! PER ORA NON FUNZIONA PERCHÈ extraction_logs.json È ANCORA DA AGGIORNARE
-        '''
-        with open("./results/extraction_logs.json", "r", encoding="utf-8") as f:
-            data = json.load(f)
-            biomarkers_w_rows = []
-            for d in data:
-                for i in len(d["biomarkers"]):
-                    biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
-        with open("./degub_biomarkers_with_row.json", "w", encoding="utf-8") as f:
-            json.dump(biomarkers_w_rows, f, ensure_ascii=False, indent=2)
-        '''
+    with open(f"./results/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+        biomarkers_w_rows = []
+        for d in data:
+            for i in range(len(d["biomarkers"])):
+                biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
+    # FOR DEBUGGING
+    with open("./degub_biomarkers_with_row.json", "w", encoding="utf-8") as f:
+        json.dump(biomarkers_w_rows, f, ensure_ascii=False, indent=2)
 
-    # Pulisci il file dei logs se necessario
-    #save_logs_as_json("", mode="w")
+    LOG_PATH = f"./results/{dataset_type}/acronyms_logs.json"
     if os.path.exists(LOG_PATH):
         with open(LOG_PATH, "r", encoding="utf-8") as f:
             log_entries = json.load(f)
     else:
         log_entries = []
-    '''
+    
+    # process each biomarkers independently, with the row_ids
     for couples in biomarkers_w_rows:
         biomarker, row_id = couples
-    '''
-    # Process each biomarker independently
-    for biomarker in biomarkers:
         query = f"What's the correct, most used, and appropriate acronym for '{biomarker}'?"
         results = retriever.get_relevant_documents(query)
         cleaned_results = " - ".join([result.page_content for result in results])
@@ -267,31 +265,12 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False):
             log_entry = {
                 "original_name": data_json["original_name"],
                 "acronym": data_json["acronym"],
-                #"row_id": row_id,
+                "row_id": row_id,
                 "cot": cot
             }
             log_entries.append(log_entry)
-            save_logs_as_json(log_entries)
+            save_logs_as_json(log_entries, LOG_PATH)
             print(f"Biomarker -> {biomarker}")
             print(f"Response:\n{response}")
         else:
             print(f"{biomarker} not processed: skipping.")
-    '''
-    # Process in batches for memory efficiency
-    for i in range(0, len(biomarkers), MAX_BATCH_SIZE):
-        batch = biomarkers[i:i+MAX_BATCH_SIZE]
-        results = []
-        for biomarker in batch:
-            try:
-                query = f"What's the correct, most used, and appropriate acronym for '{biomarker}'?"
-                result = retriever.get_relevant_documents(query)
-                cleaned_result = " - ".join([r.page_content for r in result])
-                results.append(re.sub(f"\n", "", cleaned_result))
-            except Exception as e:
-                print("I don't know what to do here")
-        data_json, cot, response = call_model(biomarker=batch, records="\n --- \n".join(results), model=model, tokenizer=tokenizer, device=device)
-        acronyms.append(data_json)
-        save_logs_as_json(acronyms)
-        print(f"Biomarkers -> {batch}")
-        print(f"Response:\n{response}")
-    '''
