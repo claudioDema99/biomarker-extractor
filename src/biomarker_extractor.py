@@ -3,7 +3,7 @@ import re
 from typing import List, Dict, Any
 import json
 import os
-from src.models import call_model, get_token_count
+from src.models import call_model, get_token_count, calculate_prompt_tokens
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:
     """
@@ -160,7 +160,11 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
     else:
         log_entries = []
 
-    TOK_MAX = 1700
+    # questo TOK_MAX dipende da quanto è lungo system_prompt e user_prompt (fissi) + examples e shots (variano tra dataset types)
+    # chiamo funzione in models che me lo calcola e restituisce
+    prompt_tokens = calculate_prompt_tokens(tokenizer, dataset_type)
+    TOK_MAX = 8000 - prompt_tokens
+    print(f"Tokens of the prompt = {prompt_tokens}: TOK_MAX of the rows set to {TOK_MAX}")
     i = 0
 
     while i < len(df_filtered):
@@ -182,7 +186,7 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
-        print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + 6281} tokens totali") # 3492 è il numero di tokens del system + user prompts senza righe del dataset
+        print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
         biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device)
 
         if biomarkers is None or biomarkers == "":

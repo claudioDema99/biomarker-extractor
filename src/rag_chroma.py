@@ -242,9 +242,6 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False, dat
         for d in data:
             for i in range(len(d["biomarkers"])):
                 biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
-    # FOR DEBUGGING
-    with open("./degub_biomarkers_with_row.json", "w", encoding="utf-8") as f:
-        json.dump(biomarkers_w_rows, f, ensure_ascii=False, indent=2)
 
     LOG_PATH = f"./results/{dataset_type}/acronyms_logs.json"
     if os.path.exists(LOG_PATH):

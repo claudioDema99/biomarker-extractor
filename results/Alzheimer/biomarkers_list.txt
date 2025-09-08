@@ -1,0 +1,1210 @@
+ADAS-cog: Alzheimer's Disease Assessment Scale-cognitive Subtest
+ADCS-CGIC: ADCS-Clinical Global Impression of Change
+NPI: Neuropsychiatric Inventory
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+CDR-SOB: Clinical Dementia Rating Sum of Boxes
+CMAI: Cohen-Mansfield Agitation Inventory
+RMBPC: Revised Memory and Behavior Problems Checklist
+MMSE: Mini-Mental State Examination
+ADCS-ADLsev-abv: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory Modified for Severe Dementia Abbreviated Version
+BEHAVE-AD-FW: Behavioral Pathology in Alzheimer's Disease Frequency Weighted Severity Scale
+CIBIC-Plus: Clinician Interview-Based Assessment of Change Plus Caregiver Input
+FAST-DS: Functional Assessment Staging Disability Score
+SIB: Severe Impairment Battery
+NPI: Neuropsychiatric Inventory total score
+CGIC: Clinical Global Impression of Change
+BPRS: Brief Psychiatric Rating Scale total score
+BAV: Number of Behavioral Assessment Visits Completed
+CAS: Caregiver Activity Survey
+Dependence Scale: Dependence Scale
+NPI: Neuropsychiatric Inventory
+ADCS-ADL: Alzheimer's Disease Cooperative Study/Activities of Daily Living Inventory
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive
+MMSE: Mini-Mental State Examination
+NAA/Cr Ratio: hippocampal n‑acetyl aspartate to creatine ratio measured by MRS
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+Hippocampal Volume: MRI volumetric measure of hippocampal volume
+UNMET_NEED_VET: Unmet Need
+EMBARRASSMENT: Embarrassment about memory problems
+ISOLATION: Isolation
+RELATIONSHIP_STRAIN_VET: Relationship strain
+DEPRESS_VET: Depression
+UNMET_NEED_CG: Unmet Need
+ROLE_CAPTAWN: Role captivity
+PHYS_HEALTH_STRAIN: Physical health strain
+RELATIONSHIP_STRAIN_CG: Relationship strain
+DEPRESS_CG: Depression
+CARE_SUP_SERV_USE: Caregiver support service use
+INFORMAL_HELPERS: Number of informal helpers
+SIB: Severe Impairment Battery
+ADCS-ADL19: 19‑Item Alzheimer's Disease Cooperative Study-Activities of Daily Living
+CIBIC-PLUS: Clinician's Interview-Based Impression of Change With Caregiver Input
+CIBIC-Plus: Clinicians Interview Based Impression of Change
+ADAS-COG: Alzheimer's Disease Assessment Scale - Cognition Subscale
+DAD: Disability Assessment for Dementia
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Scale
+NPI: Neuropsychiatric Inventory
+CDR-G: Clinical Dementia Rating Global Rating
+CERAD-K: Korean Version of Consortium to Establish a Registry for Alzheimer's Disease
+NPI: Neuropsychiatric Inventory
+GDS-K: Geriatric Depression Scale-Korean
+MMSE-K: Mini-Mental State Examination Korean version
+BNT: Boston Naming Test
+VERBAL FLUENCY: Verbal Fluency test
+WLM: Word List Memory
+CP: Construction Praxis
+WLR: Word List Recall
+WLRG: Word List Recognition
+CR: Construction Recall
+TMT-A: Trail Making Test A
+TMT-B: Trail Making Test B
+ZARIT: Zarit Short Burden Scale
+MED-ADH: Medication adherence rating scale
+NRSC: Negative Reactions Scale from Revised Memory and Behavior Problem Checklist
+FPBC: Frequency of Problematic Behaviors on Revised Memory and Behavior Problem Checklist
+BDI: Beck Depression Inventory
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+CNTB: Computerized Neuropsychological Test Battery Short Summary Score
+CSS: Cognition Summary Score
+MMSE: Mini-Mental State Examination
+DAD: Disability Assessment for Dementia
+ModCrichton: Modified Crichton Scale
+CIBIC Plus-J: Clinician's Interview-Based Impression of Change Plus - Japan
+Behave-AD: Behavioral Pathology in Alzheimer's Disease Rating Scale
+MENFIS: Mental Function Impairment Scale
+ADAS-J Cog: Alzheimer's Disease Assessment Scale - Japan Cognitive Subscale
+CGIC: Clinical Global Impression of Change
+MMSE: Mini Mental State Exam
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+NPI-10: Neuropsychiatric Inventory - 10 Item
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+CDR-SOB: Clinical Dementia Rating Sum of Boxes
+NPI: Neuropsychiatric Inventory
+ADAS-Cog 11: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+RBC: Risky Behavior Checklist
+CCSE: Caregiver Self‑Efficacy
+MBRC: MBRC Caregiver Strain Index
+BAI: Beck Anxiety Inventory
+IES: Impact of Events Scale
+CES-D: Center for Epidemiological Studies-Depression Scale
+GMT-Aβ1-40: Geometric Mean Titer of Amyloid Beta 1-40 Specific Antibodies
+FoldChange-GMT-Aβ1-40: Mean Fold Change From Baseline in GMT of Amyloid Beta 1-40 Specific Antibodies
+FLCI: Functional Linguistic Communication Inventory total score
+ASHA FACS: American Speech‑Language‑Hearing Association Functional Assessment of Communication Skills for Adults total score of Social Communication and Communication of Basic Needs subdomains
+MMSE: Mini-Mental Status Exam
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+TMT-A: Trail Making Test Part A
+TMT-B: Trail Making Test Part B
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MMSE: Mini Mental Status Exam
+FOME: Fuld Object Memory Evaluation
+UFOV: Useful Field of View
+MFPVT-VCS: Motor Free Visual Perception Test - Visual Closure Subtest
+RCFT: Rey Complex Figure Test
+DORT: DriveABLE On-Road Test
+CDR: Cognitive Dementia Rating Scale
+ADAS-cog: Alzheimer's Disease Assessment Scale - Cognitive Scale
+MMSE: Mini-Mental State Examination
+HCI: Hippocampus Connectivity Index
+IADL: Instrumental Activities of Daily Living
+NPI: Neuropsychiatric Inventory
+IgG: Anti-A-beta Immunoglobulin G
+IgM: Anti-A-beta Immunoglobulin M
+HS-CRP: Serum high-sensitivity C-reactive protein
+HVLT-DLR: Hopkins Verbal Learning Test Delayed Recall
+PCC-rCBF: Regional cerebral blood flow in posterior cingulate cortex
+IgM: Immunoglobulin M
+IgG: Immunoglobulin G
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+ADCS-IADL: Alzheimer's Disease Cooperative Study Instrumental Activities of Daily Living Subscale
+TMT-A: Trail Making Test Part A
+TMT-B: Trail Making Test Part B
+NPI-10: Neuropsychiatric Inventory 10-domain Total Score
+MMSE: Mini Mental State Examination
+NAA: N-acetylaspartate
+mI: Myo-inositol
+Cr: Creatine
+Cho: Choline
+NAA/Cr: N-acetylaspartate to Creatine ratio
+mI/Cr: Myo-inositol to Creatine ratio
+Cho/Cr: Choline to Creatine ratio
+NAA/Cho: N-acetylaspartate to Choline ratio
+NAA/mI: N-acetylaspartate to Myo-inositol ratio
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living Score
+MMSE: Mini-Mental State Examination
+ADCS-CGIC: Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change
+Mini-Zarit: Mini-Zarit Inventory of Caregiver Burden
+Trail-making Test Part A: Trail-making Test Part A Score
+NTB: Neuropsychological Test Battery
+ADCS-ADL: Alzheimer’s Disease Cooperative Study Activities of Daily Living Score
+NPI: Neuropsychiatric Inventory
+ADAS-Cog: Alzheimer’s Disease Assessment Scale – Cognitive Subscale
+CDR-SB: Clinical Dementia Rating – Sum of Boxes
+fMRI-HIPPOACT: fMRI Measure of Hippocampal Activation (percentage active voxels of total hippocampal volume of interest)
+GLOBAL-Z: Global Cognition Z-Score (standardized z-score averaging performance across cognitive tests)
+WMS-R LM I: Wechsler Memory Scale Revised Logical Memory I
+WMS-R LM II: Wechsler Memory Scale Revised Logical Memory II
+WAIS: Wechsler Adult Intelligence Scale
+TRAIL MAKING A: Trail Making A test
+TRAIL MAKING B: Trail Making B test
+BLOCK DESIGN: WAIS Block Design
+MMSE: Mini-Mental State Examination
+SMT: Successful Memory Tasks Completed
+MMSE: Mini-Mental State Examination
+4-IADL: 4-item Instrumental Activities of Daily Living
+Mini-Zarit: Mini-Zarit Inventory
+CGI-C: Clinical Global Impression of Change
+TE4D: Test for the Early Detection of Dementia With Discrimination From Depression
+ADCS-ADL19: Modified Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory
+MMSE: Mini-Mental State Examination
+NOSGER: Nurses' Observation Scale for Geriatric Patients
+VAS: Visual Analogue Scale
+MMSE: Mini-Mental State Examination
+DAD: Disability Assessment in Dementia
+APAS-CarB: Assessment of Subject Accommodation Status and Caregiver Burden
+ADCS-ADL: Alzheimer’s Disease Cooperative Study Activities of Daily Living Score
+NPI: Neuropsychiatric Inventory
+CDR-Sb: Clinical Dementia Rating Scale Sum of Boxes
+ADCS-CGIC: Alzheimer’s Disease Cooperative Study Clinical Global Impression of Change
+Hippocampal Volume: hippocampal volume measured by MRI
+Perfusion SPECT: brain perfusion change measured by SPECT
+Aβ42-Plasma: Amyloid Beta 1-42 in Plasma
+Aβ40-Plasma: Amyloid Beta 1-40 in Plasma
+Aβ42-CSF: Amyloid Beta 1-42 in Cerebrospinal Fluid
+Tau-CSF: Tau in Cerebrospinal Fluid
+P-Tau-CSF: Phosphorylated-Tau in Cerebrospinal Fluid
+MMSE: Mini Mental State Examination
+ADAS-Cog: Alzheimer’s Disease Assessment Scale-Cognitive Subscale
+SDMT: Symbol Digit Modalities Test
+SVF: Semantic Verbal Fluency Test
+PVF: Phonetic Verbal Fluency Test
+BNT: Boston Naming Test
+RAVLT: Rey Auditory Verbal Learning Test
+CSDD: Cornell Scale for Depression in Dementia
+NPI: Neuropsychiatric Inventory
+CPAL: Continuous Paired Associate Learning (CogState Task)
+ADAS-Cog 70: Alzheimer's Disease Assessment Scale-Cognitive Subscale 70
+ADAS-Cog 75: Alzheimer's Disease Assessment Scale-Cognitive Subscale 75
+CGI-I: Clinical Global Impression – Improvement Score
+One Back Working Memory: CogState Task
+Detection: CogState Task
+Identification: CogState Task
+Visual Learning: CogState Task
+BAPL: Beta-Amyloid Plaque Load score
+SUVR: Standard Uptake Value Ratio for florbetaben signal
+Anti-a-beta IgM: Anti-Amyloid Beta IgM Titer
+Anti-a-beta IgG: Anti-Amyloid Beta IgG Titer
+NTB: Neuropsychological Test Battery z‑score
+MMSE: Mini‑Mental State Examination score
+ADAS-Cog: Alzheimer’s Disease Assessment Scale‑Cognitive Behavior score
+DAD: Disability Assessment for Dementia score
+NE-Abn: Neurological Examination Abnormality Count
+MRI-Abn: Brain MRI Abnormality Count
+AE: Treatment‑Emergent Adverse Event Incidence by Severity
+RMBC: Revised Memory and Behavior Problems Checklist
+CES-D: Center for Epidemiologic Studies Depression Scale
+MOSS: Multidimensional Observation Scale for Elderly Subject
+CogState Composite Score: CogState Composite Score
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+Behave-AD: Behavioral Pathology in Alzheimer's Disease Rating Scale
+MENFIS: Mental Function Impairment Scale
+DAD: Disability Assessment for Dementia
+CIBIC Plus-J: Clinician's Interview-Based Impression of Change Plus - Japan
+ADAS-J Cog: Alzheimer's Disease Assessment Scale - Japan Cognitive Subscale
+Systolic BP: Systolic blood pressure
+Diastolic BP: Diastolic blood pressure
+Heart Rate: Heart rate
+PR Interval: PR interval
+QRS Interval: QRS interval
+QT Interval: QT interval
+QTcF: QT interval corrected using Fridericia's formula
+Urine glucose: Glucose detected in urine
+Urine ketones: Ketones detected in urine
+Urine protein: Protein detected in urine
+Urine blood: Blood detected in urine
+Urine pH: Urine pH
+Urine Specific Gravity: Urine specific gravity
+SUVR FC/Cb: Standard Uptake Value Ratio of Frontal Cortex to Cerebellum
+SUVR WB/Cb: Standard Uptake Value Ratio of Whole Brain to Cerebellum
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory
+CIBIC-plus: Clinician's Interview-Based Impression of Change-Plus
+SIB: Severe Impairment Battery
+NPI: Neuropsychiatric Inventory
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory
+SIB: Severe Impairment Battery
+CIBIC-plus: Clinician's Interview-Based Impression of Change-Plus
+NPI: Neuropsychiatric Inventory
+CMAI: Cohen-Mansfield Agitation Inventory
+COWAT: Controlled Oral Word Association Test
+BBSI: Brain Boundary Shift Integral
+HCV: Hippocampal Volume
+MMSE: Mini Mental State Examination
+FCI: Financial Capacity Instrument Score
+CGIC: Modified Alzheimer's Disease Cooperative Study- Clinical Global Impression of Change in agitation
+CMAI: Cohen-Mansfield Agitation Inventory
+NPI: Neuropsychiatric Inventory agitation subscore
+NBRS-A: NeuroBehavior Rating Scale – Agitation
+ADAS-COG+: Alzheimer's Disease Assessment Scale Cognitive Subpart (Extended Version)
+MRI: Clinically significant MRI findings consistent with Alzheimer’s disease diagnosis
+NAA/Cr: N-acetylaspartate to Creatine ratio
+T-tau: Total Tau in CSF
+P-tau: Phosphorylated Tau in CSF
+sAPP-alpha: Soluble Alpha Precursor Protein in CSF
+sAPP-beta: Soluble Beta Precursor Protein in CSF
+Aβ42: Beta‑Amyloid 42 in CSF
+Aβ40: Beta‑Amyloid 40 in CSF
+ADCS-CGIC: Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change
+NPI-12: Neuropsychiatric Inventory 12-domain
+ADCS-ADL-SIV: Alzheimer's Disease Cooperative Study-Activities of Daily Living-Severe Impairment Version
+SIB: Severity Impairment Battery
+Cortical SUVR: Mean cortical Standard Uptake Value Ratio of [18F]MK-3328
+Posterior Cingulate SUVR: Standard Uptake Value Ratio of [18F]MK-3328 in posterior cingulate gyrus
+GMT-Aβ-IgG: Geometric Mean Titers of Anti-Aβ Immunoglobulin G
+NTB: Neuropsychological Test Battery composite score
+MMSE: Mini-Mental State Examination score
+Aβ-IgM: Anti-Amyloid Beta IgM titer
+Aβ-IgG: Anti-Amyloid Beta IgG titer
+MRI-Abnorm: Brain MRI Abnormalities count
+NE-Abnorm: Neurological Examination Abnormalities count
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale score
+DAD: Disability Assessment for Dementia score
+GMT-Aβ-IgG: Geometric Mean Titers of Anti-Aβ Immunoglobulin G
+PR: PR interval
+QRS: QRS interval
+QTcF: QT corrected using Fridericia's formula
+SBP: Systolic blood pressure
+DBP: Diastolic blood pressure
+HR: Heart rate
+HGB: Hemoglobin
+HCT: Hematocrit
+RBC: Red blood cell count
+PLT: Platelet count
+WBC: White blood cell count
+LYM: Lymphocyte count
+NEU: Neutrophil count
+BASO: Basophil count
+EOS: Eosinophil count
+MONO: Monocyte count
+TBIL: Total bilirubin
+AST: Aspartate aminotransferase
+ALT: Alanine aminotransferase
+ALP: Alkaline phosphatase
+CRN: Creatinine
+BUN: Blood urea nitrogen
+GLU: Glucose
+UA: Uric acid
+Na: Sodium
+K: Potassium
+Ca: Calcium
+Cl: Chloride
+HCO3: Bicarbonate
+ALB: Albumin
+TP: Total protein
+UA: Urine analysis
+AUCtau_Donepezil: Area under the curve tau of donepezil
+AUCtau_PF04447943: Area under the curve tau of PF-04447943
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+DAD: Disability Assessment for Dementia
+MMSE: Mini-Mental State Examination
+NPI: Neuropsychiatric Inventory
+EXIT-SEEK: Number of Exit Seeking (Door Approach) Behaviors
+EXIT-PASS: Number of Exit Door Pass Through Behaviors
+DAD: Disability Assessment for Dementia
+ADAS-Cog/11: Alzheimer’s Disease Assessment Scale-Cognitive Subscale (11 items)
+NPI: Neuropsychiatric Inventory
+MMSE: Mini-Mental State Examination
+SUVR: Standard Uptake Value Ratio
+β-Amyloid: Presence/Absence of β‑amyloid plaques
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+CRT: Choice Reaction Time
+S-IADL: Seoul-Instrumental Activities of Daily Living
+DAD-K: Korean Version of Disability Assessment for Demential Scale
+SRT: Simple Reaction Time
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Scale
+ADAS-cog: Alzheimer's Disease Assessment Scale - Cognitive Subscale
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MMSE: Mini Mental Status Examination
+CIBIC-PLUS: Clinician's Interview-Based Impression of Change Plus
+GDS: Geriatric Depression Scale
+IADL: Instrumental Activities of Daily Living
+PSMS: Physical Self-Maintenance Scale
+GD: Global Deterioration Scale
+ADAS-NonCog: Alzheimer's Disease Assessment Scale-Noncognitive Subscale
+APPsα-CSF: Soluble Alpha-cleaved Amyloid Precursor Protein in CSF
+ASL Perfusion: Arterial Spin Label Perfusion Rate
+Posterior Cingulate Cortex Perfusion: ASL-derived Perfusion Rate
+CPAL: Continuous Paired Associate Learning Errors
+CogState Detection: Simple Reaction Time
+CogState Identification: Choice Reaction Time
+CogState Test Battery: Composite Cognitive Performance
+RAVLT IR: Immediate Recall Score
+RAVLT DR: Delayed Recall Score
+CAI: Caregiver's Assessment Improvement
+QoL-AD: Quality of Life for Alzheimer's Dementia Score
+Physician Tolerance: Physician-rated tolerance to ARICEPT
+CGI-I: Clinical Global Impressions of Improvement
+ARICEPT Dosing: ARICEPT dose escalation timing
+ADCS-CGIC: Alzheimer's Disease Cooperative Study- Clinical Global Impression of Change
+Digit Span: Digit Span test
+Electrolytes: Serum electrolytes
+Vital Status: Vital status (death)
+NPI-Apathy: Neuropsychiatric Inventory Apathy Subscale
+MMSE: Mini-Mental State Examination
+ECG: Electrocardiogram
+AES: Apathy Evaluation Scale
+ADAS-cog+: Alzheimer's disease Assessment Scale, Cognitive Subscale
+DAYS-IN-STUDY: Number of days participants remained in the double blind phase
+BPRS: Brief Psychiatric Rating Scale Total Score
+CGI-C: Clinical Global Impression of Change
+NPI: Neuropsychiatric Inventory Score
+MEMORY: Memory Composite
+EXECFUNC: Executive Function Composite
+DISABILITY: Disability Assessment for Dementia
+CORNELL: Cornell Scale for Depression in Dementia
+Reasoning: Reasoning latent derived variable
+Verbal Memory: Verbal Memory latent derived variable
+Physical Performance Test: Physical Performance Test
+VO2max: Maximal Oxygen Consumption
+Set Maintenance and Switching: Set Maintenance and Switching latent derived variable
+Simple Attention: Simple Attention latent derived variable
+Visuospatial Processing: Visuospatial Processing latent derived variable
+Aβ-CSF: Amyloid Beta 1-40 in CSF
+Aβ-Plasma: Amyloid Beta 1-40 in Plasma
+SUVR: Standard Uptake Value Ratio for Florbetaben
+BAPL: Brain Amyloid Plaque Load score
+P-Tau-CSF: Phosphorylated-Tau 181 in CSF
+Tau-CSF: Total Tau in CSF
+Aβ-CSF: Amyloid Beta 1-42 in CSF
+DAFS: Direct Assessment of Functional Status Scale
+APPTY: Apathy
+ZBI: Zarit Burden Inventory
+LB-ADL: Lawton Brody Activities of Daily Living Questionnaire
+FSBS: Frontal Systems Behavior Scale
+Z-score: Visual Learning and Memory Test Z-score
+SUVR: Standardized Uptake Value Ratio on 18F‑Flutemetamol Scan
+LY2886721-AUC: Area Under the Concentration vs Time Curve of LY2886721
+CSF Aβ 1-40: Cerebrospinal Fluid Amyloid Beta 1-40 Concentration
+Plasma Aβ 1-40: Plasma Amyloid Beta 1-40 Concentration
+C_nadir: Minimum Concentration
+Anti-Abeta IgG: Anti-A-beta Immunoglobulin G titer
+Neurologic Exam Abnormality: Number of participants with abnormalities in neurological examination
+CHF5074: Trough plasma concentration of CHF 5074
+sCD40L: Change in soluble CD40 ligand levels
+ORM-12741: ORM-12741 plasma trough concentration
+Caregiver Distress Score: Caregiver distress score from Neuropsychiatric Inventory
+NPI Total Score: Neuropsychiatric Inventory total score
+Speed of Memory: Speed of Memory measure from CDR battery
+Quality of Working Memory: Quality of Working Memory measure from CDR battery
+Quality of Memory: Quality of Memory measure from CDR battery
+Power of Attention: Power of Attention measure from CDR battery
+Continuity of Attention: Continuity of Attention measure from CDR battery
+Quality of Episodic Memory: Quality of Episodic Memory measure from CDR battery
+CSF-ABO: Amyloid-beta Oligomer in Cerebrospinal Fluid
+HVLT: Hopkins Verbal Learning Test
+HABC-Monitor: Healthy Aging Brain Care Monitor
+NPI: Neuropsychiatric Inventory
+DISCONTINUATION RATE: Discontinuation Rate
+FDG-PET SUVR: Standardized Uptake Value Ratio from FDG-PET
+CMGR: Cerebral Metabolic Glucose Rate
+HMW-Adiponectin: High Molecular Weight Adiponectin
+EFS: Executive Function Scale
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+GCFT: Global Cognitive Function Tests
+PSS: Perceived Stress Scale
+PQoL: Perceived Quality of Life
+RMBC: Revised Memory and Behavior Problems Checklist
+ADCS-CGIC: Alzheimer's Disease Assessment Scale Clinical Global Impression of Change
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive
+NPI: Neuropsychiatric Inventory
+NPI-D: Neuropsychiatric Inventory Distress Scale
+NPI-12: Neuropsychiatric Inventory 12-domain Total Score
+NPI-10: Neuropsychiatric Inventory 10-domain Total Score
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+MMSE: Mini-Mental State Examination
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+FDG-PET: Regional Cerebral Glucose Uptake Change measured by FDG PET
+Fazekas: Fazekas Scale
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MMSE Korean Version of CERAD: Mini-Mental State Examination
+ADAS-Cog13: Alzheimer’s Disease Assessment Scale - Cognitive Subscale
+ADCS-ADL: Alzheimer’s Disease Cooperative Study - Activities of Daily Living Inventory
+MMSE: Mini Mental State Examination
+TMT-A: Trail Making Test - Part A
+CDR-SB: Clinical Dementia Rating Scale - Sum of Boxes
+TRAILS-B-E: Trails B Errors
+TRAILS-B-S: Trails B Seconds
+RBANS-LL: RBANS List Learning
+RBANS-SM: RBANS Story Memory
+RBANS-FC: RBANS Figure Copy
+RBANS-LO: RBANS Line Orientation
+RBANS-SF: RBANS Semantic Fluency
+RBANS-LR: RBANS List Recall
+RBANS-LRec: RBANS List Recognition
+RBANS-StoryR: RBANS Story Recall
+RBANS-FR: RBANS Figure Recall
+DSF: Digit Span Forward
+DSB: Digit Span Backward
+BN: Boston Naming
+SMT: Sniff Magnitude Test
+ADAS-COG: Alzheimer's Disease Assessment Scale: Cognitive Subscale
+CIBIC Plus: Clinical Interview Based Impression of Change + Caregiver Input
+MMSE: Mini Mental State Examination
+CDR: Clinical Dementia Rating Scale
+CBF: Cerebral Blood Flow
+CAST: Cognitive Assessment Screening Test
+FBP-PET: Florbetapir PET amyloid positivity
+CERAD: Consortium to Establish a Registry for AD plaque density
+IHC: Immunohistochemistry amyloid plaque density
+CIBIC-plus: Clinician's Interview-Based Impression of Change Plus
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+NPI: Neuropsychiatric Inventory
+FA-DTI: Diffusion Tensor Imaging Fractional Anisotropy
+MD-DTI: Diffusion Tensor Imaging Mean Diffusivity
+Florbetapir-PET: Florbetapir Positron Emission Tomography Amyloid Load
+CDR: Clinical Dementia Rating Total Score
+vMRI-HV: Volumetric MRI Hippocampal Volume Percent Change
+BBSI: Brain Boundary Shift Integral
+VBSI: Ventricular Boundary Shift Integral
+rsfMRI: Resting State Functional Magnetic Resonance Imaging
+ADAS-Cog14: Alzheimer's Disease Assessment Scale Extended Cognitive Subscale
+MMSE: Mini Mental State Examination
+CSF-ABETA40: Cerebrospinal fluid amyloid beta 40 concentration
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+MRI-VOL: Volumetric Magnetic Resonance Imaging whole brain volume
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+CGIC: Clinical Global Impression of Change
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory
+ADCS-CGIC: ADCS-Clinical Global Impression of Change
+ADCS-ADL: ADCS-Activities of Daily Living
+NPI: Neuropsychiatric Inventory
+QOL-AD: Logsdon Quality of Life in Alzheimer’s Disease
+ADAS-Cog: Alzheimer’s Disease Assessment Scale-Cognitive Subscale
+IADCQ: Impact of Alzheimer’s Disease on Caregiver Questionnaire
+AE Count: Number of adverse events reported
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MMSE: Mini-Mental State Examination
+PL-Aβ1-40: Plasma Amyloid Beta 1-40 concentration
+PL-Aβ1-42: Plasma Amyloid Beta 1-42 concentration
+CSF-Aβ1-40: Cerebrospinal Fluid Amyloid Beta 1-40 concentration
+CSF-Aβ1-42: Cerebrospinal Fluid Amyloid Beta 1-42 concentration
+CSF-Tau: Cerebrospinal Fluid Tau concentration
+CSF-pTau-181: Cerebrospinal Fluid Phosphorylated Tau 181 concentration
+CORTICAL_SUVR: Standardized Uptake Value Ratio of cortical regions to cerebellum
+PRECUNEUS_SUVR: Standardized Uptake Value Ratio of precuneus to cerebellum
+FBP-PET: Florbetapir PET scan quality
+SUVR: Standardized Uptake Value Ratio
+Cortical-to-Cerebellum SUVR: Standardized Uptake Value ratio of tracer uptake in cortical regions relative to whole cerebellum
+Amyloid PET: Amyloid deposition measured by PET scan
+Florbetapir PET: Florbetapir positron emission tomography amyloid imaging
+Amyloid PET: Amyloid positron emission tomography positivity
+ADAS-Cog: Alzheimer Disease Assessment Scale-Cognitive Subscale
+MMSE: Mini-Mental Status Examination
+C11 PiB: Pittsburgh Compound B uptake
+F18 Flutemetamol: Flutemetamol uptake
+SUVR: Standard Uptake Value Ratio
+ADAS-Cog 13: Alzheimer's Disease Assessment Scale - Cognitive subscale
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+J-CGIC: Japanese Clinical Global Impression of Change
+MMSE: Mini-Mental State Examination
+ADAS-J Cog: Alzheimer’s Disease Assessment Scale – Japan Cognitive Subscale
+NAA: N-acetylaspartate
+NPI: Neuropsychiatric Inventory
+GLU: Glutamate
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+ADAScog: Alzheimer's Disease Assessment Scale Cognitive Subscale
+FDG-PET SUVR: Fluorodeoxyglucose positron emission tomography Standard Uptake Value Ratio
+ADAS-cog 11: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+Florbetapir PET: Amyloid PET imaging with florbetapir (18F)
+ARIA-E: Amyloid‑Related Imaging Abnormalities Edema/Effusions
+ARIA-H: Amyloid‑Related Imaging Abnormalities Hemorrhage
+ATA: Human Anti‑Therapeutic Antibody formation
+MBs: Cerebral Micro‑Bleeds
+CSF-Aβ42: Cerebrospinal fluid amyloid-beta 1-42 levels
+CSF-Clusterin: Cerebrospinal fluid clusterin levels
+CSF-p181-tau: Cerebrospinal fluid p181-tau levels
+FCSRT: Free & Cued Selective Reminding Test- delayed free recall
+AQS: Attention Questionnaire Scores
+MMSE: Mini Mental State Exam
+BI: Burden Interview
+NPI-C A+A: Neuropsychiatric Inventory – Clinician Combined Agitation and Aggression Subscores
+MMSE: Mini-Mental State Examination
+Modified-ADCS-CGIC: Modified Alzheimer's Disease Cooperative Study Clinical Global Impression of Change (agitation)
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+NPI: Neuropsychiatric Inventory Total Scores
+CMAX: Maximum Concentration of LY3002813
+AUC(0-∞): Area Under the Concentration Versus Time Curve From Time Zero to Infinity of LY3002813
+CCS-3D: Composite Cognition Score-3 Domain
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MoCA: Montreal Cognitive Assessment
+ADAS-cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+MMSE: Mini-Mental State Examination
+NPI: Neuropsychiatric Inventory
+CBI: Caregiver Burden Inventory
+18F-AV-1451 SUVR: Standard uptake value ratio of 18F-AV-1451 for tau imaging
+Flortaucipir SUVR: Standard uptake value ratio of flortaucipir for tau imaging
+WBV: Whole Brain Volume
+AB: Amyloid Burden
+EF: Executive Function
+MMSE: Mini-Mental State Examination
+PFAQ: Pfeffer Functional Activities Questionnaire
+CDR: Clinical Dementia Rating
+FLORTAUCI SUVr: Flortaucipir Standardized Uptake Value Ratio
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+TAU-ADV: Advanced AD tau status determined by flortaucipir scan
+CT: Cortical Thickness
+Centiloid: Centiloid scale measurement of amyloid PET SUVR
+WBV: Whole Brain Volume
+HV: Hippocampal Volume
+VV: Ventricular Volume
+ADA: Anti-Drug Antibody
+Flortaucipir SUVr: Flortaucipir standardized uptake value ratio
+OCL: One-card Learning
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+MMSE: Mini Mental State Examination
+ADCS-ADL23: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory
+ADCS-CGIC: Alzheimer's Disease Cooperative Study Clinical Global Impression of Change
+NPI: Neuropsychiatric Inventory
+MMSE: Mini-Mental State Examination
+NPI-Q: Neuropsychiatric Inventory Questionnaire
+FBP-PET: Florbetapir (18F) PET scan interpretation
+CoV-PET: Coefficient of Variation of PET Images
+SUVr-11C-PiB: Standard Uptake Value Ratio of 11C-PiB
+SUVr-Florbetapir: Standard Uptake Value Ratio of Florbetapir (18F)
+Centiloid: Centiloid units derived from PET SUVR
+ADAS-cog11: Alzheimer Disease Assessment Scale - Cognitive 11
+MMSE: Mini-Mental State Examination
+ADCS-ADL: Alzheimer Disease Cooperative Study Activities of Daily Living Inventory
+CDR-SO: Clinical Dementia Rating Sum of Boxes
+Total Tau: Total Tau in CSF
+P-Tau: Phospho-tau (p-Tau) in CSF
+Aβ1-42: Amyloid-beta 1-42 in CSF
+Brain Volume: Brain volume change
+FDG-PET: Brain glucose uptake via 18F-FDG PET
+ApoE Genotype: Apolipoprotein E genotype
+DPC: Donepezil plasma concentration
+MTD: Donepezil maximum tolerated dose
+HVLT-R: Hopkins Verbal Learning Test-Revised delayed recall
+RBANS FR: Repeatable Battery of Assessments for Neuropsychological Status figure recall
+DSC: Digit Symbol Coding
+CDR-SB: Clinical Dementia Rating- Sum of Boxes
+MMSE-2: Mini Mental State Exam version 2
+Cmax: Maximum plasma concentration
+Tmax: Time to maximum plasma concentration
+AUClast: Area under the concentration-time curve to last measurable concentration
+TC: Total Cholesterol
+DBP: Diastolic Blood Pressure
+MMEE: Mini-mental State Examination
+TG: Triglycerides
+SBP: Systolic Blood Pressure
+GLY: Glycemia
+CDR: Clinical Dementia Rating
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+ADAS-cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale (11 items)
+NTB Z-score: Neuropsychological Test Battery total Z-score
+ADCS-MCI-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living for Patients With Mild Cognitive Impairment
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+Flortaucipir-Q: Qualitative flortaucipir uptake
+Flortaucipir-SUVr: Standard Uptake Value Ratio of flortaucipir activity
+BGU: Brain Glucose Utilization
+CDR: Clinical Dementia Rating Score
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale Score
+SRT: Buschke Selective Reminding Test Score
+NPI: Neuropsychiatric Inventory Score
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living Score
+TIRU: Total Integrated Radioactivity Excreted in Urine
+NTB: Neuropsychological Test Battery total Z-score
+ADCS-ADL: Alzheimer's Disease Cooperative Study/Activities of Daily Living
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+ADAS-cog11: Alzheimer's Disease Assessment Scale-cognitive Subscale
+NPI: Neuropsychiatric Inventory
+CGIC: Clinical Global Impression of Change
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Whole Cortical Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Occipital Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Parietal Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Limbic Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Cingulate Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Frontal Composite Region)
+FLORTAUCI SUVr: Flortaucipir Standard Uptake Value Ratio (Temporal Composite Region)
+AT8: AT8 Antibody Immunohistology for Tau Pathology
+COWAT: Controlled Oral Word Association Test
+NPI: Neuropsychiatric Inventory
+FDG-PET SUVR: Standard Uptake Value Ratio measured by FDG-PET
+QoL-AD: Quality of Life - Alzheimer's Disease Scale
+ADAS-Cog 11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11
+Digit Span: Digit Span test
+MMSE: Mini Mental Status Examination
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living
+VX-745 CSF: Maximal CSF VX‑745 Concentration
+IL-8-CSF: CSF Interleukin‑8 Level
+HVLT: Hopkins Verbal Learning Test Total Recall
+SIB: Severe Impairment Battery
+ADCS-ADL-SEV: Alzheimer Disease Cooperative Study Activities of Daily Living Inventory-Severe Impairment Version
+MMSE-2: Modified Mini-Mental State Examination
+NPI: Neuropsychiatric Inventory
+CGI-I: Clinical Global Impression of Improvement
+Barthel Index: Barthel Index for Activities of Daily Living
+Kg FFM: Kilograms of Fat Free Mass
+Glucose: Blood Glucose Level
+DBP: Diastolic Blood Pressure
+DEE: Daily Energy Expenditure
+NPI: Neuropsychiatric Inventory
+LDL-Chol: Low-Density Lipoprotein Cholesterol
+MMSE: Mini-Mental State Examination
+SBP: Systolic Blood Pressure
+Salivary Cortisol: Salivary Cortisol Level
+HDL-Chol: High-Density Lipoprotein Cholesterol
+TGF-α: Transforming Growth Factor Alpha
+IL-8: Interleukin-8
+IL-9: Interleukin-9
+MCP-1: Monocyte Chemoattractant Protein 1
+TNF-α: Tumor Necrosis Factor Alpha
+ACE-1: Angiotensin Converting Enzyme 1
+IL-10: Interleukin-10
+MDC-1: Macrophage Derived Protein 1
+sPDGFRβ: Soluble Platelet-Derived Growth Factor Receptor Beta
+Aβ2: Amyloid Beta 2
+ACE-2: Angiotensin Converting Enzyme 2
+IL-6: Interleukin-6
+T-tau: Total Tau
+P-tau: Phosphorylated Tau
+IL-7: Interleukin-7
+Aβ0: Amyloid Beta 0
+ICAM-1: Intercellular Adhesion Molecule 1
+VCAM-1: Vascular Cell Adhesion Molecule 1
+ADCS-ADL-MCI: Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory (Mild Cognitive Impairment Version)
+CDR-SB: Clinical Dementia Rating Sum of Boxes
+ADAS-Cog13: Alzheimer's Disease Assessment Scale-Cognitive Subscale (13 Items)
+MMSE: Mini-Mental State Examination
+MMSE: Mini Mental State Examination
+CDR-SB: Clinical Dementia Rating Scale – Sum of Boxes
+ADCS-ADL-MCI: Alzheimer’s Disease Cooperative Study‑Activities of Daily Living Inventory (Mild Cognitive Impairment Version)
+ADAS-Cog13: Alzheimer’s Disease Assessment Scale‑Cognitive Subscale (13 Items)
+PSS: Perceived Stress Scale
+RMBPC: Revised Memory and Behavior Problems Checklist
+NFT: Neurofibrillary Tangle Score
+NFT B Score: Braak Stage B0–B3 Grading
+NIA-AA: National Institute on Aging‑Alzheimer’s Association Autopsy Diagnosis
+ADNC: Alzheimer’s Disease Neuropathologic Change Category
+Flortaucipir PET: Flortaucipir Positron Emission Tomography Imaging
+ARIA: Amyloid-Related Imaging Abnormalities
+ADCS-CGIC: Alzheimer's Disease Cooperative Study - Clinical Global Impression of Change
+DSST: Digit Symbol Substitution Test score
+ADAS-Cog 11: Alzheimer’s Disease Assessment Scale‑Cognitive Subscale total score
+BOLD-fMRI: Resting‑state Blood Oxygen Level Dependent signal change
+ΔsROI: Change in Standardized Regional Glucose Metabolism Index
+ADAS-Cog 11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory Score
+MMSE: Mini-Mental State Examination
+NPI: Neuropsychiatric Inventory
+ADAS-Cog-13: Alzheimer's Disease Assessment Scale-Cognitive Subscale 13 items
+ADAS-Cog-11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11 items
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+DS: Dependence Scale
+CIBIC+: Clinical Global Impression of Change plus Caregiver Interview
+NPI: Neuropsychiatric Inventory
+RVT-101: RVT-101 (Intepirdine) concentration in plasma
+OOA Plasma: Plasma concentration of OOA
+DLT Events: Dose Limiting Toxicity Events
+CGIC: Global Impression of Change
+ADCS-MCI-ADL: Alzheimer's Disease Cooperative Study/Activities of Daily Living Scale Adapted for MCI Patients
+PSQI: Pittsburgh Sleep Quality Index
+BC: Blood Chemistry
+HR: Heart Rate
+HEM: Hematology
+cNTB: Computerized Neuropsychological Test Battery Z-Scores
+BP: Blood Pressure
+QTcF: QT interval corrected for heart rate by Fridericia's formula
+NPI: NeuroPsychiatric Inventory
+ADAS-cog14: Alzheimer's Disease Assessment Scale Cognitive Subscale 14
+AE: Adverse Event
+BPND: Non-displaceable Binding Potential
+ED: Effective Dose
+T-RT: Test‑Retest Variability
+MK-6884: [11C]MK-6884
+Organ ED: Organ Effective Dose
+AUCtau: Area Under the Concentration Curve Versus Time at a Dosing Interval
+Cmax-SS: Maximum Serum Concentration at Steady State
+TE-ADA: Treatment‑Emergent Anti‑Drug Antibody percentage
+Florbetapir SUVr: Florbetapir PET Standard Uptake Value Ratio
+Cmax-Day1: Maximum Serum Concentration at Day 1
+AUC(0-tlast): Area Under the Curve from Time Zero to Last Quantifiable Concentration
+AUCtau-ss: Area Under the Concentration Curve Versus Time at a Dosing Interval at Steady State
+FBB PET: Amyloid PET scan result
+BGU: Brain Glucose Uptake
+BAU: Brain Acetoacetate Uptake
+ADCS-PACC: Alzheimer’s Disease Cooperative Study Preclinical Alzheimer's Cognitive Composite
+CSF β-Amyloid-42: CSF beta-amyloid-42
+CSF Total Tau: CSF total tau
+CSF p-Tau-181: CSF phosphorylated tau-181
+rCBF-ASL: Regional Cerebral Blood Flow via Arterial Spin Labeling MRI
+CDR-SOB: Clinical Dementia Rating Scale – Sum of Boxes
+ADCOMs: AD Composite Scores (weighted linear combination of ADAS-Cog v14, CDR-SOB, MMSE)
+RAVLT: Rey Auditory Verbal Learning Test
+MMSE: Mini-Mental State Examination
+ADAS-Cog v14: Alzheimer's Disease Assessment Scale – Cognitive Subscale version 14
+NTB Executive Domain: Neuropsychological Test Battery – Executive Domain (sum of COWAT and CFT)
+COWAT: Controlled Oral Word Association Test
+CFT: Total Correct Response
+NPI: Neuropsychiatric Inventory
+AUC[0-∞]: Area Under the Concentration Versus Time Curve From Time 0 to Infinity of LY3303560
+QTc: QT Corrected Interval
+SAE: Serious Adverse Event
+Cmax: Maximum Drug Concentration of LY3303560
+HVLT-R: Hopkins Verbal Learning Test-Revised
+MMSE: Mini-Mental State Exam
+GAD-7: General Anxiety Disorder-7
+ECog: Everyday Cognition
+QOL-AD: Quality of Life in Alzheimer's Disease
+Brief Visuospatial Memory Test-revised: Brief Visuospatial Memory Test-revised
+CTCAE: Common Terminology Criteria for Adverse Events
+PHQ-9: Patient Health Questionnaire-9
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+APOE: Apolipoprotein E genotype
+MMSE: Mini-Mental State Examination
+CIBIC+: Clinician's Interview-Based Impression of Change
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11 Item
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+MMSE: Mini Mental State Examination
+ARIA: Amyloid‑related imaging abnormalities
+iADRS: Integrated Alzheimer's Disease Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+ADCS-iADL: Alzheimer's Disease Cooperative Study Instrumental Activities of Daily Living Inventory
+AUC[T,SS]: Area Under the Plasma Concentration‑Time Curve at Steady State
+Aβ1-40 Plasma: Amyloid Beta 1‑40 in Plasma
+Aβ1-42 Plasma: Amyloid Beta 1‑42 in Plasma
+Aβ1-x Plasma: Amyloid Beta 1‑x in Plasma
+ADAS-Cog13: Alzheimer's Disease Assessment Scale‑Cognitive Subscale 13 items
+18F-AV-1451 PET SUVr: Standard Uptake Value Ratio of 18F‑AV‑1451 PET
+AE Count: Number of Participants With Adverse Events
+PAS: Pittsburgh Agitation Scale
+NPI-C: Neuropsychiatric Inventory Clinician Version
+SUVr: flortaucipir standardized uptake value ratio
+CSF Biomarkers: Cerebral spinal fluid protein analysis
+11C-PBR28 Binding: Radioligand binding to TSPO expression on microglia
+18F-Florbetaben Binding: Radioligand binding to Amyloid-Beta protein
+MVFT: Modified Verbal Fluency Test
+MoCA: Montreal Cognitive Assessment Scale
+FOE: Fuld Object Memory Evaluation
+MAI: Medication Appropriateness Index
+MoCA: Montreal Cognitive Assessment
+TMT-B: Trail Making Test Part B
+CVLT: California Verbal Learning Test
+SF-36: Short Form Health Survey
+Perceived Health Status: Perceived Health Status
+18F-THK-5351 SUVr: Standardized Uptake Value Ratio of 18F-THK-5351 PET in posterior cingulate gyrus relative to cerebellar gray matter
+MMSE: Mini-Mental State Examination
+ADCS-ADL SIV: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory – Severe Impairment Version
+CMAI: Cohen‑Mansfield Agitation Inventory
+ZBI: Zarit Burden Interview
+SAE: Serious Adverse Events
+CMAX: Maximum Serum Concentration
+AUC0-TAU: Area Under the Serum Concentration Time Curve During the Dosing Interval
+Pearlin Mastery, Loss, and Competence - Caregiving Competence Subscale Score: Caregiver competence score
+PSS: Perceived Stress Scale
+CESD-R: Center for Epidemiological Studies Depression Scale - Revised
+ZBI: Zarit Burden Inventory
+RMBPC: Revised Memory and Behavior Problem Checklist
+STAI: State‑Trait Anxiety Inventory
+Pearlin Mastery, Loss, and Competence - Management of Situation Subscale Score: Caregiver situation management score
+HCC: Health Care Cost
+ERV: Emergency Room Visits
+BI: Barthel Index
+MPAM: Moderate Physical Activity Minutes
+PCS: Preparedness for Caregiving Scale
+MCSI: Modified Caregiver Strain Index
+CAM-SF: Confusion Assessment Method Short Form
+ZBI: Short Form Zarit Burden Interview
+bNPI: Brief Neuropsychiatric Inventory
+HADS: Hospital Anxiety and Depression subscale
+CSDD: Cornell Scale for Depression in Dementia
+Hosp: Hospitalizations
+Falls: Falls
+MoCA: Montreal Cognitive Assessment
+CBC: Complete Blood Count
+LFT: Liver Function Test
+BMP: Basic Metabolic Panel
+L-serine Tolerability: Self-reported L-serine tolerability score
+IADL: Instrumental Activities of Daily Living score
+COT: Covert Orienting Task response time
+MMSE: Mini Mental Status Examination score
+D-KEFS: D‑KEFS Trail Number‑Letter Switching Scaled Score
+HVLT-R: Hopkins Verbal Learning Test‑Revised recall
+DSF: Digit Span Forward longest length
+DSB: Digit Span Backward longest length
+ABT: Attentional Blink Task stimulus onset asynchrony
+CF: Category Fluency Test score
+NPI: Neuropsychiatric Inventory score
+FET: Foreperiod Effect Task processing speed/variability
+LF: Letter Fluency Test score
+VFD: Visual Form Discrimination score
+ADAS-Cog: Alzheimer’s Disease Assessment Scale‑Cognitive subscale
+DRS: Dementia Rating Scale
+Stroop Word Test: Stroop Word Test
+Stroop Interference Test: Stroop Interference Test
+Stroop Color Test Score: Stroop Color Test Score
+ADASCog-11: Alzheimer's Disease Assessment Scale-Cognitive Portion
+LMT1: Logical Memory Test 1 Immediate Recall
+LMT2: Logical Memory Test 2 Delayed Recall
+MoCA: Montreal Cognitive Assessment
+COX: Cytochrome Oxidase activity
+CS: Citrate Synthase activity
+COX/CS: COX/Citrate Synthase activity ratio
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+GDS: Geriatric Depression Scale
+TRAE: Treatment Related Adverse Events
+NPI: Neuropsychiatric Inventory
+MMSE: Mini-Mental Status Examination
+CDR-SOB: Clinical Dementia Rating-Sum of Boxes
+C-SSRS: Columbia Suicide Severity Rating Scale
+ADAS-Cog: Alzheimer's Disease Assessment Scale-cognitive Subscale
+CMAI: Cohen‑Mansfield Agitation Inventory
+RBANS: Repeatable Battery for Assessment of Neuropsychological Status
+Other MRI Findings: Other abnormal MRI findings
+Amsterdam iADL: Amsterdam Instrumental Activity of Daily Living Questionnaire
+CDR-SB: Clinical Dementia Rating-Sum of Boxes
+ADAS-Cog-13: Alzheimer's Disease Assessment Scale-Cognitive Subscale 13
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Activities of Daily Living Inventory
+Semorinemab Serum Concentration: Serum concentrations of Semorinemab
+ADA: Anti-drug Antibody
+C-SSRS: Columbia Suicide Severity Rating Scale
+ADAS-Cog: Alzheimer’s Disease Assessment Scale-Cognitive Subscale
+Amyloid SUVR: Standard Uptake Value Ratio for amyloid PET
+EEG Gamma Band Power Density: Gamma‑band spectral power (µV²/Hz)
+PHQ-9: Patient Health Questionnaire-9
+Revised Scale for Caregiving Self Efficacy: Revised Scale for Caregiving Self Efficacy
+SF-36: Short Form Health Survey
+GAD-7: Generalized Anxiety Disorder Scale
+Preparedness for Caregiving Scale: Preparedness for Caregiving Scale
+SUVr: Flortaucipir Standardized Uptake Value Ratio
+Flortaucipir Visual Read: Flortaucipir Visual Read Categories
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+MK-6240: 18F-labeled MK-6240 PET tracer binding
+SUVr: Standardized Uptake Value Ratio
+CSF markers: CSF markers of neurodegeneration and inflammation
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+PET-MICROGLIA: PET Microglia Activation
+ASL: Arterial Spin Labeling Perfusion
+AMY-PET: PET Amyloid Burden
+TAU-PET: PET Tau Deposition
+DS: Depressive Symptoms
+DPM: Dispensing of Psychotropic Medications
+RC: Rejection of Care
+PRU: Physical Restraints Use
+BS: Behavioral Symptoms
+UW: Unintended Weight Loss
+F: Falls
+W: Wandering
+FLORTAUCI: Flortaucipir PET Visual Read Category
+FLORTAUCI-SUVr: Flortaucipir PET Standardized Uptake Value Ratio
+MMSE: Mini-Mental State Examination
+ADCS-ADL23: Alzheimer's Disease Cooperative Study Activities of Daily Living 23-item score
+ADCS-CGIC: Alzheimer's Disease Cooperative Study Clinical Global Impression of Change
+CDR-SOB: Clinical Dementia Rating Scale Sum of Boxes
+NPI-Q: Neuropsychiatric Inventory Questionnaire
+ADASCog/11: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+Aβ-Ab: Anti‑Aβ antibody
+MMSE: Mini‑Mental State Examination
+ADAS-Cog: Alzheimer’s Disease Assessment Scale‑Cognitive Subscale
+CDR-SB: Clinical Dementia Rating – Sum of Boxes
+FAQ: Functional Activities Questionnaire
+MoCA: Montreal Cognitive Assessment
+NPI: Neuropsychiatric Inventory
+ADAS-Cog: Alzheimer's Disease Assessment Scale - Cognitive Subscale
+DSRS: Dementia Severity Rating Scale
+GST: Global Statistical Test (combining MADCOMS, FAQ, hippocampal volume)
+MADCOMS: Mild/Moderate Alzheimer's Disease Composite Score
+Hippocampal Volume: hippocampal volume measured by volumetric MRI
+DeviceUseAdherence: Percentage of Adherence to Daily Device Use
+MaxToleranceStimulation: Percentage of Maximum Tolerated Stimulation
+SIB: Severe Impairment Battery Total Score
+MMSE-2: Mini Mental State Exam version 2
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Score
+NPI: Neuropsychiatric Inventory
+CDR-SB: Clinical Dementia Rating Sum of Boxes
+Hippocampal Volume: Hippocampal volume derived from MRI
+MMSE: Mini-Mental State Examination
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+APOE4: Apolipoprotein E epsilon 4 allele
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+CMAI: Cohen‑Manfield Agitation Inventory
+PA: Minutes spent exercising per week
+PF: SF‑36 Physical Functioning subscale
+QOL-AD: Quality of Life in Alzheimer’s Disease
+mNTB: Modified Neuropsychological Test Battery Global Score
+CASI: Cognitive Abilities Screening Instrument Score
+PROMIS-GH: PROMIS Global Health Score
+Risk Factor Z-Score: Composite Z-Score for Risk Factors
+RAPA: Rapid Assessment of Physical Activity for Older Adults
+SPD: Steps Per Day
+BP: Blood Pressure Measures
+PSQI: Pittsburgh Sleep Quality Index
+PMU: Potentially Harmful Prescription Medication Use
+CES-D: Center for Epidemiologic Studies - Depression Scale
+HbA1c: Hemoglobin A1c
+PROMIS-SA: PROMIS Satisfaction with Social Activities
+SMK: Smoking Status
+NPI: Neuropsychiatric Inventory
+NPI-NH: Neuropsychiatry Inventory Nursing Home Version
+ADCS-CGIC-A: ADCS Clinical Global Impression of Change in Agitation
+ADCS-ADL-Severe: ADCS Activities of Daily Living Severe
+Lorazepam Dose: cumulative mg of Lorazepam administered
+CMAI: Cohen-Mansfield Agitation Inventory
+CGI-I: Clinical Global Impression of Improvement
+CGI-S: Clinical Global Impression of Severity
+11C-ER176 SUVr: Standardized Uptake Value Ratio from 11C-ER176 PET
+11C-ER176 TV: Total Distribution Volume from 11C-ER176 PET
+PTI-125 Cmax: Peak plasma concentration of PTI-125
+PTI-125 Tmax: Time to maximum plasma concentration of PTI-125
+PTI-125 T1/2: Plasma half‑life of PTI-125
+PTI-125 Tlast: Time to last quantifiable plasma concentration of PTI-125
+PTI-125 Clast: Last quantifiable plasma concentration of PTI-125
+PTI-125 AUClast: Area under the curve of PTI-125 plasma concentration
+Aβ42-CSF: Amyloid beta 1‑42 in cerebrospinal fluid
+TAU-CSF: Tau protein in cerebrospinal fluid
+YKL40-CSF: YKL‑40 in cerebrospinal fluid
+SavaDx: SavaDx biomarker
+ADCS-CGIC: Alzheimer's Disease Cooperative Study - Clinical Global Impression of Change Plus Caregiver Input
+NPI-NH: Neuropsychiatric Inventory Nursing Home
+NPI: Neuropsychiatric Inventory
+SIB: Severe Impairment Battery
+MMSE: Mini-Mental State Examination
+ADCS-ADL-Severe: Alzheimer's Disease Cooperative Study Group Activities of Daily Living Inventory for Severe Alzheimer's Disease
+NAA/Crea: Ratio of Cerebral N Acetyl‑Aspartate to Cerebral Creatine
+LPI: Lumosity Performance Index
+CLPI: Cognitive Lumosity Performance Index
+Lumosity Score: Lumosity game performance score
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+RBANS Total Score: Repeatable Battery for the Assessment of Neurological Status Total Scale
+RBANS DMI: Repeatable Battery for the Assessment of Neurological Status Delayed Memory Index
+CGI-I: Clinical Global Impression – Improvement Score
+CDR-SB: Clinical Dementia Rating Sum of Boxes Score
+MMSE: Mini‑Mental State Examination Total Score
+ADCS-ADL: Alzheimer’s Disease Cooperative Study Activities of Daily Living Inventory Total Score
+ADAS-Cog 11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11
+PD: Periodontal Pocket Depth
+WBV: Bilateral Whole Brain Volume
+PG-IgG: Anti-P. gingivalis Immunoglobulin G in Serum
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living Inventory Score
+CDR-SB: Clinical Dementia Rating-Sum of Boxes
+NPI: Neuropsychiatric Inventory
+MMSE: Mini-Mental State Examination
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Daily Living Inventory
+CDR-SB: Clinical Dementia Rating-Sum of Boxes
+ADAS-Cog11: Alzheimer's Disease Assessment Scale, Cognitive Subscale, 11-Item Version
+MMSE: Mini Mental State Examination
+IL-1B: Interleukin 1B
+IL-6: Interleukin 6
+IL-5: Interleukin 5
+IL-13: Interleukin 13
+IL-8: Interleukin 8
+IL-2: Interleukin 2
+TNFα: Tumor Necrosis Factor alpha
+IL-4: Interleukin 4
+IL-10: Interleukin 10
+GFAP: Glial Fibrillary Acidic Protein
+PTau: Phosphorylated Tau
+Tau: Total Tau
+NFL: Neurofilament Light
+Ammonia: Serum Ammonia Level
+MMSE: Mini-Mental State Examination
+ADAS-Cog 11: Alzheimer’s Disease Assessment Scale-Cognitive Subscale 11
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+MMSE: Mini-Mental State Examination
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+FAQ: Pfeffer's Functional Activities Questionnaire
+CDR Global: Clinical Dementia Rating Global Score
+ARC Tau Burden: Annualized Rate of Change in Tau Burden
+TAU PET SUVR: Standardized Uptake Value Ratio of [18F]GTP1 Tau PET in the entorhinal cortex
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+ADAS-cog14: Alzheimer's Disease Assessment Scale-Cognitive Subscale 14 Item
+Amsterdam-IADL: Amsterdam Instrumental Activities of Daily Living
+FAQ: Functional Activities Questionnaire
+MMSE: Mini Mental State Exam
+CSF-tau: CSF tau protein
+P-Tau181: Phospho tau 181 in CSF
+NIHTB-CB: NIH Toolbox Cognition Battery fluid composite score
+NPI-Q: Neuropsychiatric Inventory Questionnaire score
+Aβ42-CSF: Amyloid beta 42 concentration in CSF
+PT/INR: Prothrombin time / International Normalized Ratio
+CDR: Clinical Dementia Rating score
+LAMBDAZ: Terminal Rate Constant (Lambda z) of RO7126209
+VSS: Volume of Distribution at Steady-State of RO7126209
+CSF-CONC: Cerebrospinal Fluid Concentration of RO7126209
+CEND: Concentration at the End of Infusion of RO7126209
+AUC0-168H: Area Under the Plasma Concentration Versus Time Curve From Zero to 168h Postdose of RO7126209
+AUC0-LAST: Area Under the Plasma Concentration Versus Time Curve From Zero to the Last Measurable Concentration of RO7126209
+T1/2: Apparent Terminal Half-Life of RO7126209
+AUC0-24H: Area Under the Plasma Concentration Versus Time Curve From Zero to 24 h Postdose of RO7126209
+ADAs: Anti-RO7126209 Antibodies (Anti-Drug Antibodies)
+CL: Total Body Clearance Calculated as Dose/AUC of RO7126209
+AUC0-INF: Area Under the Plasma Concentration Versus Time Curve Extrapolated to Infinity of RO7126209
+MARI: Microglial Activation Reserve Index
+MOCA: Montreal Cognitive Assessment
+VT: Volume of Distribution
+Q: Quercetin CNS Concentration
+D: Dasatinib CNS Concentration
+Tau-CSF: Tau protein in CSF
+Aβ-CSF: Amyloid Beta in CSF
+IL-6-CSF: Interleukin‑6 in CSF
+MoCA: Montreal Cognitive Assessment
+ADCOMS: Alzheimer’s Disease Composite Score
+ADAS-cog/11: Alzheimer’s Disease Assessment Scale-Cognitive Subscale 11
+MMSE: Mini-Mental State Examination
+ADAS-cog/12: Alzheimer’s Disease Assessment Scale-Cognitive Subscale 12
+CDR-SB: Clinical Dementia Rating Scale Sum of Boxes
+P-tau181: Plasma Phospho-tau 181
+YKL-40: CSF YKL-40
+NfL: Neurofilament Light Chain
+IL-6: Interleukin-6
+sTREM2: Soluble Triggering Receptor Expressed on Myeloid Cells 2
+HMGB1: High Mobility Group Box 1
+ALB: Albumin
+IGG: Immunoglobulin G
+TT: Total Tau
+NR: Neurogranin
+FLNA: Filamin A linkages to alpha7 nicotinic acetylcholine receptor and Toll-like receptor 4
+SAVADX: SavaDx novel plasma biomarker
+ABETA42: Amyloid beta 1-42
+GAD-7: Generalized Anxiety Disorder-7
+PHQ-9: Patient Health Questionnaire-9
+Amyloid PET SUVr: Amyloid PET Standardized Uptake Value Ratio
+MMSE: Mini-Mental State Examination
+Safety Events BBB: Safety events related to blood‑brain barrier opening
+Successful BBB Opening Count: Number of individuals with successful BBB opening
+BBB Opening Volume: Blood‑Brain Barrier opening volume measured in mm^3
+BBB Opening Area: Hyper‑intense or hypo‑intense area in T2/SWI scans
+ARIA-E: Amyloid-Related Imaging Abnormality Edema
+ARIA-H: Amyloid-Related Imaging Abnormality Hemorrhage or Superficial Siderosis
+ADAs: Antidrug Antibodies in Serum
+ZBI: Zarit Burden Inventory
+RMBC: Revised Memory and Behavior Problem Checklist
+PSS: Perceived Stress Scale
+SLUMS: Saint Louis University Mental Status test
+ADAS-Cog-11: Alzheimer’s Disease Assessment Scale-Cognitive Subscale 11-item
+Tau-CSF: Tau protein concentration in cerebrospinal fluid
+GFAP-CSF: Glial Fibrillary Acidic Protein concentration in cerebrospinal fluid
+NfL-CSF: Neurofilament Light Chain protein concentration in cerebrospinal fluid
+TREM2-CSF: Triggering Receptor Expressed on Myeloid Cells 2 concentration in cerebrospinal fluid
+Neurogranin-CSF: Neurogranin concentration in cerebrospinal fluid
+MIRD: Medical Internal Radiation Dose (methodology)
+AE: Adverse Event
+VOI: Volume of Interest
+ID: Injected Dose
+ICRP: International Commission on Radiological Protection
+GTP1 Time-Activity: Decay corrected [18F]GTP1 time-activity in source organs expressed as %Injected Dose
+Residence Time: Source organ residence time (total number of disintegrations)
+Total Source Organ Counts: Total source organ counts based on individualized organ volumes of interest
+Mean Radiation Absorbed Dose: Mean radiation absorbed dose estimates in target organs and whole body based on MIRD methodology
+FLORTAUCI: Flortaucipir Standard Uptake Value Ratio
+DSST: Digit Symbol Substitution Test score
+ADAS-Cog: Alzheimer's Disease Assessment Scale-Cognitive subscale score
+MMSE: Mini-Mental State Examination score
+ADCS-ADL23: Alzheimer's Disease Cooperative Study Activities of Daily Living 23-Item Version
+GST: Global Statistical Test score
+NfL: Neurofilament Light Chain concentration in plasma
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11
+PSS: Perceived Stress Scale
+RMBPC: Revised Memory and Behavior Problems Checklist
+CES-D: Center for Epidemiological Studies Depression Scale
+ERP: Event‑related potential P300 latency
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale (11 items)
+RMBC: Revised Memory and Behavior Problems Checklist
+PSS: Perceived Stress Scale
+CES-D: Center for Epidemiological Studies Depression Scale
+SIB: Severe Impairment Battery Total Score
+MMSE-2: Mini Mental State Exam Version 2
+NPI-Q: Neuropsychiatric Inventory Questionnaire
+COPM: Canadian Occupational Performance Measure
+CT1812-PC: CT1812 Plasma Concentration
+GRTP: Global Relative Theta Power
+AUC24h: Area Under the Curve from 0 to 24 hours
+Cmax: Maximum Plasma Concentration
+Tmax: Time to Maximum Concentration
+mGluR5 RO: Metabotropic glutamate receptor subtype 5 Receptor Occupancy
+IC50: Concentration producing 50% of maximal receptor occupancy
+IC80: Concentration producing 80% of maximal receptor occupancy
+ClinSigSafety: Count of Clinically Significant Changes in Safety Assessments
+LabAbnorm: Count of Laboratory Abnormalities
+TEAE: Count of Treatment Emergent Adverse Events
+MoCA: Montreal Cognitive Assessment
+NPI-Q: Neuropsychiatric Inventory Questionnaire
+GDS: Geriatric Depression Scale
+GCS: Glasgow Coma Scale
+Total MTBR-tau: Total microtubule binding region tau in CSF
+P-tau181: Phosphorylated Tau at residue 181 in CSF
+P-tau205: Phosphorylated Tau at residue 205 in CSF
+P-tau217: Phosphorylated Tau at residue 217 in CSF
+E2814-AUC-serum: Area under the serum concentration-time curve for E2814
+E2814-Cmax-serum: Maximum observed serum concentration for E2814
+E2814-AUC-plasma: Area under the plasma concentration-time curve for E2814
+E2814-Tmax-plasma: Time to reach maximum plasma concentration for E2814
+E2814-Cmax-plasma: Maximum observed plasma concentration for E2814
+E2814-CSF: Concentration of E2814 in cerebrospinal fluid
+Anti-E2814-Ab-plasma: Plasma anti‑E2814 antibody
+Anti-E2814-Ab-serum: Serum anti‑E2814 antibody
+Free MTBR-tau: Free microtubule binding region tau in CSF
+Bound MTBR-tau: Bound microtubule binding region tau in CSF
+pTau/npTau-ratio: Ratio of phosphorylated to non‑phosphorylated tau in CSF
+Tau-PET-SUVR: Standardized uptake value ratio of tau PET by region
+ZBI: Zarit Burden Interview
+NPI: Neuropsychiatric Inventory
+PTau217: Phospho-tau217
+GFAP: Glial Fibrillary Acidic Protein
+NfL: Neurofilament Light Chain
+Ttau: Total Tau
+iADRS: Integrated Alzheimer's Disease Rating Scale
+MMSE: Mini-Mental State Examination
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+CDR-SB: Clinical Dementia Rating Sum of Boxes
+ADAS-Cog12: Alzheimer's Disease Assessment Scale-Cognitive Subscale
+CBF-GLOBAL: Cerebral Blood Flow Global
+CBF-CHANGE: Cerebral Blood Flow Change Scores
+MMSE: Mini-Mental State Examination
+ADAS-Cog: Alzheimer’s Disease Assessment Scale-Cognitive Subscale
+MoCA: Montreal Cognitive Assessment
+QDRS: Quick Dementia Rating Scale
+CDR: Clinical Dementia Rating
+SDI: Sleep Disorder Inventory
+NPI-C: Neuropsychiatric Inventory Clinician Version
+NPI-C A+A: NPI Clinician Agitation and Aggression Domain Score
+CMAI-C: Cohen‑Mansfield Agitation Inventory‑Community Version
+NPI-12: Neuropsychiatric Inventory 12‑Domain
+Plasma Seltorexant: Observed Plasma Concentration of Seltorexant
+Plasma M12: Observed Plasma Concentration of Metabolite M12
+CPSS: Cohen's Perceived Stress Scale
+PROMIS-D: Patient-Reported Outcomes Measurement Information System Depression
+ZBI: Zarit Burden Interview
+CM-SUB: Caregiving Mastery Subscale of the Caregiving Appraisal Measure
+PACS: Positive Aspects of Caregiving Scale
+NA-DES: Negative Affect in Differential Emotions Scale
+PROMIS-MP: Patient-Reported Outcomes Measurement Information System Meaning and Purpose
+PA-DES: Positive Affect in Differential Emotions Scale
+SAGE-LEAF-Adh: Percentage of Skill Pages in SAGE-LEAF Accessed by a Participant
+PROMIS-SD: Patient-Reported Outcomes Measurement Information System Sleep Disturbance
+Oberst-BDS-D: Oberst Caregiving Burden Scale Difficulty
+PROMIS-SI: Patient-Reported Outcomes Measurement Information System Social Isolation
+SAGE-LEAF-WR: Willingness to Recommend SAGE-LEAF to Other AD Caregivers
+O-CRA: Overload Sub-scale of Caregiver Reaction Assessment
+PROMIS-A: Patient-Reported Outcomes Measurement Information System Anxiety
+Oberst-BDS-T: Oberst Caregiving Burden Scale Time
+SUS: System Usability Scale
+RC-CRA: Role Captivity Sub-scale of Caregiver Reaction Assessment
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-11-item Cognitive Subscale
+ADCS-CGIC: Alzheimer's Disease Cooperative Study Clinical Global Impression of Change
+ADCS-ADL: Alzheimer's Disease Cooperative Study Activities of Daily Living
+ADCS-CGIC: Alzheimer's Disease Cooperative Study-Clinical Global Impression of Change
+ADAS-Cog11: Alzheimer's Disease Assessment Scale-Cognitive Subscale 11
+ADCS-ADL: Alzheimer's Disease Cooperative Study-Instrumental Activities of Daily Living Scale
+GFAP: Glial Fibrillary Acidic Protein
+NFL: Neurofilament Light
+TDP43: TAR DNA-Binding Protein 43

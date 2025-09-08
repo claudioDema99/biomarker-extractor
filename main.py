@@ -56,7 +56,7 @@ def main():
         ]
         df_filtered = df_filtered[cols_to_keep].dropna(how="all")
 
-        if sys.argv[1]:
+        if len(sys.argv) > 1:
             if sys.argv[1] == "resume":
                 if os.path.exists(f"./parsed_biomarkers_{database}.json") and os.path.exists(f"./acronyms_w_rows_{database}.json"):
                     _ = aggregation_resume(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
