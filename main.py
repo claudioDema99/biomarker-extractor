@@ -11,7 +11,7 @@ def main():
 
     all_databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
     #databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
-    databases = ["Alzheimer", "BPD"]
+    databases = ["Alzheimer", "BPD", "Schizophrenia", "Depression", "Bipolar"]
 
     model, tokenizer, device = load_model_and_tokenizer()
 
@@ -58,12 +58,12 @@ def main():
 
         if len(sys.argv) > 1:
             if sys.argv[1] == "resume":
-                if os.path.exists(f"./parsed_biomarkers_{database}.json") and os.path.exists(f"./acronyms_w_rows_{database}.json"):
+                if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
                     _ = aggregation_resume(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
                     print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 else:
-                    print(f"File parsed_biomarkers_{database}.json or acronyms_w_rows_{database}.json not present. Skip.")
+                    print(f"File parsed_biomarkers_{database}.json or acronyms_w_rows_{database}.json not present in the /checkpoints folder. Skip.")
 
         else:
             # Prima parte: biomarkers extraction

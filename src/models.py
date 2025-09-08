@@ -75,11 +75,11 @@ def call_model(records, dataset_type, model, tokenizer, device, max_retries=5):
             # Adatto i prompt in base al database
             name, examples, shots = get_prompt(dataset_type)
 
-            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials.
-
-MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.
-
-Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records. Do NOT include techniques or modalities, but you can include quantities extracted from them (example: MRI is a technique, then do not include it; hippocampal volume derived from MRI is a quantity, then include it). 
+            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials. 
+            
+MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological, genetical) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.            
+            
+Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records. You have to include techniques or modalities, but only if a marker extracted from these techniques is explicitly present in the text. Example: Magnetic resonance imaging (MRI) is a technique, include it if hippocampal volume (or another quantity extracted from MRI) is present as a marker; Electromiography (EMG) is a technique, include it if affect-modulated startle (AMS) or startle eye-blink is present in the text as a marker. 
 
 MANDATORY OUTPUT RULES (must be followed exactly):
 1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:

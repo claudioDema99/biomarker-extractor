@@ -172,7 +172,6 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
         # preprocessing row and token count
         batch_tokens, record = tokens_of(df_filtered.iloc[i:i+1], tokenizer)
 
-        # DA TESTARE record[0]['outcome_measurement_title] MA NON CREDO SIA ERRORE
         # tokens size check
         if batch_tokens > TOK_MAX + 500:
             print(f"[WARNING] Riga {rows_id[i]} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")

@@ -516,10 +516,10 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers, total_len, datas
         if try_again_merging_groups:
             print("We try again to find some relations between the groups.\n")
     if timer_exit:
-        print(f"L'utente non è disponibile per la convalida dei possibili gruppi da unire.\nSi salva dunque 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
-        with open(f"./parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
+        print(f"L'utente non è disponibile per la convalida dei possibili gruppi da unire.\nSi salva dunque 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json' all'interno della cartella /checkpoints")
+        with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
             json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
-        with open(f"./acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
+        with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
             json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
         timer_exit = False
 
@@ -603,10 +603,10 @@ def aggregation(model, tokenizer, device, evaluated_biomarkers, total_len, datas
     return final_biomarkers_sorted
 
 def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
-    print(f"Resuming the final analysis: loading 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
-    with open(f"./parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
+    print(f"Resuming the final analysis: loading '/checkpoints/parsed_biomarkers_{dataset_type}.json' and '/checkpoints/acronyms_w_rows_{dataset_type}.json'.")
+    with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
         parsed_biomarkers = json.load(f)
-    with open(f"./acronyms_w_rows_{dataset_type}.json", "r", encoding="utf-8") as f:
+    with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "r", encoding="utf-8") as f:
         acronyms_w_rows = json.load(f)
 
     # SECONDA FASE: chiediamo a LLM di trovare dei gruppi che potrebbero essere aggregati tra quelli già definiti dall'exact matching
