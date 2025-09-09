@@ -87,12 +87,10 @@ Provide the answer in the JSON format specified in the system instructions. Focu
                 add_generation_prompt=True
             )
 
-            '''
             # se vuoi impostare il reasoning su low invece che medium
             if full_prompt.count(" medium") > 0:
                 full_prompt = full_prompt.replace("medium", "low", 1)
                 print("\n\nChanged reasoning level to low for better performance.\n")
-            '''
 
             inputs = tokenizer(
                 full_prompt, 
@@ -181,7 +179,7 @@ Provide the answer in the JSON format specified in the system instructions. Focu
 
     return {}, "", ""
 
-def validation(model, tokenizer, device, biomarkers, create_chroma_db=False, dataset_type: str="Alzheimer"):
+def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: str="Alzheimer"):
     
     # create chroma db (just first time)
     if create_chroma_db:
@@ -229,13 +227,8 @@ def validation(model, tokenizer, device, biomarkers, create_chroma_db=False, dat
     # Turn into a retriever
     retriever = vectorstore.as_retriever(search_kwargs={"k": 4})
 
-    # for testing
-    if biomarkers == [] or biomarkers == None:
-        with open (f"./results/{dataset_type}/biomarkers_list.txt", "r") as f:
-            biomarkers = [line.strip() for line in f if line.strip()]
-        # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
-        # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
-        # DA CHEKCARE!! PER ORA NON FUNZIONA PERCHÈ extraction_logs.json È ANCORA DA AGGIORNARE
+    # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
+    # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
     with open(f"./results/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
         data = json.load(f)
         biomarkers_w_rows = []

@@ -165,7 +165,7 @@ Output:"""
                 system_prompt = """You are a data analysis assistant specialized in identifying potential correlations between biological/scientific markers. Your task is to analyze canonical marker names and identify groups that could be semantically related.
 
 **Guidelines:**
-- **CRITICAL: Actively look for synonyms, shared roots, and partial matches** - these are the primary indicators of related biomarkers
+- **CRITICAL: Actively look for synonyms, shared roots, and partial matches** - these are the primary indicators of related markers
 - Use your knowledge of scientific terminology, biological pathways, and semantic relationships
 - **Pay special attention to:**
   - Common roots/stems (e.g., "tau", "amyloid", "GFAP")
@@ -413,7 +413,7 @@ def find_rows_from_biomarkers(dict_list, couples):
     
     return dict_list
 
-def aggregation(model, tokenizer, device, evaluated_biomarkers, total_len, dataset_type: str="Alzheimer"):
+def aggregation(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
 
     with open(f"./results/{dataset_type}/acronyms_logs.json", "r", encoding="utf-8") as f:
         data = json.load(f)

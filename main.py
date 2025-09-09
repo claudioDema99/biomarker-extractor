@@ -1,4 +1,4 @@
-from src.biomarker_extractor import extraction
+from src.biomarker_extractor import extraction, extraction_unprocessed_lines
 from src.models import load_model_and_tokenizer
 from src.rag_chroma import validation
 from src.aggregator import aggregation, aggregation_resume
@@ -23,17 +23,20 @@ def main():
             os.makedirs(path_cartella)
             print(f"Cartella '{path_cartella}' creata.")
         else:
-            # Se esiste → rimuovo tutti i file e sottocartelle dentro
-            for filename in os.listdir(path_cartella):
-                file_path = os.path.join(path_cartella, filename)
-                try:
-                    if os.path.isfile(file_path) or os.path.islink(file_path):
-                        os.unlink(file_path)  # elimina file o link
-                    elif os.path.isdir(file_path):
-                        shutil.rmtree(file_path)  # elimina cartella ricorsivamente
-                except Exception as e:
-                    print(f"Errore eliminando {file_path}: {e}")
-            print(f"Cartella '{path_cartella}' pulita.")
+            if "clean" in sys.argv:
+                # Se esiste → rimuovo tutti i file e sottocartelle dentro
+                for filename in os.listdir(path_cartella):
+                    file_path = os.path.join(path_cartella, filename)
+                    try:
+                        if os.path.isfile(file_path) or os.path.islink(file_path):
+                            os.unlink(file_path)  # elimina file o link
+                        elif os.path.isdir(file_path):
+                            shutil.rmtree(file_path)  # elimina cartella ricorsivamente
+                    except Exception as e:
+                        print(f"Errore eliminando {file_path}: {e}")
+                print(f"Cartella '{path_cartella}' pulita.")
+            else:
+                print(f"Cartella '{path_cartella}' già esistente (non pulita).")
             
         if database == "BPD":
             df = pd.read_excel(f"./data/{database}_puro.xlsx")
@@ -51,43 +54,80 @@ def main():
 
         # keep only the cols selected and removes rows where all columns in the DataFrame are NaN/null
         cols_to_keep = [
-            "outcome_measurement_title",
             "outcome_measurement_description"
         ]
         df_filtered = df_filtered[cols_to_keep].dropna(how="all")
 
+        # A seconda dell'argomento passato, vengono eseguite diverse sotto parti della pipeline:
+        # - 'extraction': solamente la parte di estrazione dei biomarkers
+        # - 'validation': solamente la parte di assegnazione di acronimi con RAG (se seguito da un secondo argomento, esegue anche la parte successiva di aggregazione)
+        # - 'aggregation': solamente la parte aggregazione dei biomarkers
+        # - 'resume': riprende dalla fase di aggregation nella quale vi è la supervisione umana sul merging di gruppi identificati dall'LLM
+        # - se nessun dei precedenti argomenti viene passato, si esegue l'intera pipeline
+        # - 'clean': cancella tutti i file presenti all'interno della cartella /results per ogni dataset analizzato
         if len(sys.argv) > 1:
-            if sys.argv[1] == "resume":
+            go_on = False
+            arg = sys.argv[1].strip()
+            if len(sys.argv) > 2:
+                go_on = True
+
+            if arg == "extraction":
+                # Prima parte: biomarkers extraction
+                _ = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
+                if os.path.exists(f"./results/{database}/unprocessed_lines.txt"):
+                    extraction_unprocessed_lines(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
+                print(f"""\n\nTutto il dataset è stato processato con successo.
+La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
+Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines.txt' (se il file non esiste, tutte le righe son state processate).
+I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
+
+            elif arg == "validation":
+                # Seconda parte: validazione dei biomarkers estratti tramite RAG
+                _ = validation(model=model, tokenizer=tokenizer, device=device, create_chroma_db=True, dataset_type=database)
+                print(f"""\n\nTutti i biomarkers estratti sono stati processati.
+I risultati completi (con nome originale, acronimo identificato, row_id, e relativa CoT dell'LLM) si trovano in 'results/{database}/acronyms_logs.json'.\n""")
+                if go_on:
+                    # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
+                    _ = aggregation(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
+I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
+            
+            elif arg == "aggregation":
+                # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
+                _ = aggregation(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
+I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
+                
+            elif arg == "resume":
                 if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
                     _ = aggregation_resume(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
                     print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 else:
                     print(f"File parsed_biomarkers_{database}.json or acronyms_w_rows_{database}.json not present in the /checkpoints folder. Skip.")
+            
+            else:
+                print("L'argomento passato non è corretto.\nGli argomenti accettati sono: 'extraction', 'validation', 'aggregation' e 'resume'. Skip.")
 
         else:
             # Prima parte: biomarkers extraction
             biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
+            if os.path.exists(f"./results/{database}/unprocessed_lines.txt"):
+                extraction_unprocessed_lines(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
             print(f"""\n\nTutto il dataset è stato processato con successo.
 La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
 Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines.txt' (se il file non esiste, tutte le righe son state processate).
 I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
             
             # Seconda parte: validazione dei biomarkers estratti tramite RAG
-            evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker_list, create_chroma_db=True, dataset_type=database)
+            evaluated_biomarkers = validation(model=model, tokenizer=tokenizer, device=device, create_chroma_db=True, dataset_type=database)
             print(f"""\n\nTutti i biomarkers estratti sono stati processati.
 I risultati completi (con nome originale, acronimo identificato, row_id, e relativa CoT dell'LLM) si trovano in 'results/{database}/acronyms_logs.json'.\n""")
            
             # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
-            biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, evaluated_biomarkers=evaluated_biomarkers, total_len=len(rows_id), dataset_type=database)
+            biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
             print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
-        
-        '''
-        if input("\nVuoi stampare a video i risultati finali? (Sì/no):   ").lower() in ("sì", "si"):
-            for biomarker in biomarkers:
-                print(biomarker)
-        '''
 
 if __name__ == "__main__":
     main()

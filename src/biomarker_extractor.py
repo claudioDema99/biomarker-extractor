@@ -149,6 +149,42 @@ def tokens_of(df_slice, tokenizer):
     tok_count = get_token_count(records_json, tokenizer)
     return tok_count, records_json
 
+def extract_row_from_unprocessed_lines(dataset_type: str):
+    """
+    Legge un file txt e estrae i numeri dalle righe che iniziano con "Riga $NUMERO$:"
+    
+    Args:
+        file_path (str): Percorso del file da leggere
+        
+    Returns:
+        list: Lista di numeri estratti (come interi)
+    """
+    row_numbers = []
+    file_path = f"./results/{dataset_type}/unprocessed_lines.txt"
+    
+    try:
+        with open(file_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                # Rimuove spazi all'inizio e alla fine
+                line = line.strip()
+                
+                # Controlla se la riga inizia con "Riga $" e contiene il pattern
+                if line.startswith("Riga $"):
+                    # Usa regex per estrarre il numero tra i dollari
+                    match = re.search(r'Riga \$(\d+)\$:', line)
+                    if match:
+                        number = int(match.group(1))
+                        row_numbers.append(number)
+    
+    except FileNotFoundError:
+        print(f"Errore: File '{file_path}' non trovato")
+        return []
+    except Exception as e:
+        print(f"Errore durante la lettura del file: {e}")
+        return []
+    
+    return row_numbers
+
 def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
     all_biomarkers_extended = []
     
@@ -174,11 +210,11 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
 
         # tokens size check
         if batch_tokens > TOK_MAX + 500:
-            print(f"[WARNING] Riga {rows_id[i]} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
+            print(f"[WARNING] Riga {rows_id[i]}: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
             with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"Riga {rows_id[i]} supera TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
-                f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+                f.write(f"Riga ${rows_id[i]}$: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
+                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
 
@@ -188,11 +224,13 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
         print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
         biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device)
 
-        if biomarkers is None or biomarkers == "":
+        if biomarkers is None or biomarkers == "" or biomarkers == []:
+            biomarker_value = biomarkers if biomarkers is not None else "None"
+            print(f"[WARNING] Riga {rows_id[i]}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
             with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
-                f.write(f"Nessun biomarker trovato per la riga {rows_id[i]} – saltata.\n\n")
-                f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+                f.write(f"Riga ${rows_id[i]}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
+                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         else:
             print(f"Biomarkers trovati: {biomarkers}")
@@ -217,3 +255,74 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
         for biomarker in all_biomarkers_extended:
             f.write(f"{biomarker}\n")
     return all_biomarkers_extended
+
+def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
+    """
+    Funzione che prova ri-processare (estrarre) le righe che non sono state processate la prima volta con la funzione 'extraction'
+    """
+
+    # logs
+    log_filepath = f"./results/{dataset_type}/extraction_logs.json"
+    if os.path.exists(log_filepath):
+        with open(log_filepath, "r", encoding="utf-8") as f:
+            log_entries = json.load(f)
+    else:
+        log_entries = []
+
+    # Estrai le righe saltate dal file
+    unprocessed_rows = extract_row_from_unprocessed_lines("Alzheimer")
+    unprocessed_indices = []
+    # Risultato: [6, 9, 13, 14, 23, 37]
+
+    # Trova gli indici corrispondenti
+    for row in unprocessed_rows:
+        if row in rows_id:
+            unprocessed_indices.append(rows_id.index(row))
+
+    # questo TOK_MAX dipende da quanto è lungo system_prompt e user_prompt (fissi) + examples e shots (variano tra dataset types)
+    # chiamo funzione in models che me lo calcola e restituisce
+    prompt_tokens = calculate_prompt_tokens(tokenizer, dataset_type)
+    TOK_MAX = 8000 - prompt_tokens
+    print(f"Tokens of the prompt = {prompt_tokens}: TOK_MAX of the rows set to {TOK_MAX}")
+
+    for index, row in zip(unprocessed_indices, unprocessed_rows): 
+        # I need to do [i:i+1] because I want a class DataFrame (otherwise Pandas gives me a Series)
+        # preprocessing row and token count
+        batch_tokens, record = tokens_of(df_filtered.iloc[index:index+1], tokenizer)
+
+        # tokens size check
+        if batch_tokens > TOK_MAX + 500:
+            print(f"[WARNING] Riga {row}: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
+            with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
+                f.write("\n\n________________________________________________________________\n")
+                f.write(f"Riga ${row}$: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
+                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+            continue
+
+        # log e chiamata modello
+        print("\n_______________________________________________________________________________________")
+        # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
+        print(f"Riga {row}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
+        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, low_reasoning=True)
+
+        if biomarkers is None or biomarkers == "" or biomarkers == []:
+            biomarker_value = biomarkers if biomarkers is not None else "None"
+            print(f"[WARNING] Riga {row}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
+            with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
+                f.write("\n\n________________________________________________________________\n")
+                f.write(f"Riga ${row}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
+                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+        else:
+            print(f"Biomarkers trovati: {biomarkers}")
+
+        log_entry = {
+            "biomarkers": biomarkers if isinstance(biomarkers, list) else [],
+            "row_id": row,
+            "cot": cot,
+            "response": response
+        }
+        log_entries.append(log_entry)
+        # Save after each batch
+        save_logs_as_json(log_entries, log_filepath)
+
+        return

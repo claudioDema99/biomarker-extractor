@@ -65,7 +65,7 @@ def load_model_and_tokenizer():
 def get_token_count(records_json, tokenizer):
     return len(tokenizer.encode(json.dumps(records_json)))
 
-def call_model(records, dataset_type, model, tokenizer, device, max_retries=5):
+def call_model(records, dataset_type, model, tokenizer, device, max_retries=5, low_reasoning=False):
     for attempt in range(max_retries):
         try:
             # Clear memory before each attempt
@@ -83,25 +83,25 @@ Your task: analyze the provided records and extract ONLY markers explicitly pres
 
 MANDATORY OUTPUT RULES (must be followed exactly):
 1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:
-{{"analysis": "<4-5 concise sentences>", "biomarkers": [list of biomarker with required syntax]}}
+{{"analysis": "<4-5 concise sentences>", "markers": [list of marker with required syntax]}}
 2. "analysis" must be a single string of 4–5 sentences that reference the evidence in the records.
-3. "biomarkers" must be a JSON array. Each element in the array MUST follow this exact syntax:
+3. "markers" must be a JSON array. Each element in the array MUST follow this exact syntax:
 "ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
 **CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
 Examples:{examples}
-4. Collapse duplicates (each biomarker appears once).
+4. Collapse duplicates (each marker appears once).
 5. If you cannot follow these rules, output exactly:
-{{"analysis":"", "biomarkers":[]}}
+{{"analysis":"", "markers":[]}}
 Always reason with clinical rigor and refer only to evidence in the records.
 """
 
-            user_prompt = f"""You are an expert clinical data analyst specialized in identifying biomarkers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY biomarkers explicitly present in the text. Do NOT invent biomarkers not present in the records.
+            user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records.
 Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
 
 Examples:
 {shots}   
 
-Task: Identify all biomarkers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
+Task: Identify all markers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
 
 Input records:
 {json.dumps(records)}
@@ -124,11 +124,10 @@ Output:
             )
 
             # se vuoi impostare il reasoning su low invece che medium
-            '''
-            if full_prompt.count(" medium") > 0:
-                full_prompt = full_prompt.replace("medium", "low", 1)
-                print("\n\nChanged reasoning level to low for better performance.\n")
-            '''
+            if low_reasoning:
+                if full_prompt.count(" medium") > 0:
+                    full_prompt = full_prompt.replace("medium", "low", 1)
+                    print("\n\nChanged reasoning level to low for better performance.\n")
 
             # Tokenizzazione dell'input completo
             # return_tensors="pt": Restituisce tensori PyTorch
@@ -205,7 +204,7 @@ Output:
             data = json.loads(json_str)
 
             # Estrai la lista biomarkers, se esiste
-            biomarkers = data.get("biomarkers", [])
+            biomarkers = data.get("markers", [])
 
             if not isinstance(biomarkers, list):
                 raise ValueError("Biomarkers is not a list")
@@ -252,25 +251,25 @@ Your task: analyze the provided records and extract ONLY markers explicitly pres
 
 MANDATORY OUTPUT RULES (must be followed exactly):
 1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:
-{{"analysis": "<4-5 concise sentences>", "biomarkers": [list of biomarker with required syntax]}}
+{{"analysis": "<4-5 concise sentences>", "markers": [list of marker with required syntax]}}
 2. "analysis" must be a single string of 4–5 sentences that reference the evidence in the records.
-3. "biomarkers" must be a JSON array. Each element in the array MUST follow this exact syntax:
+3. "markers" must be a JSON array. Each element in the array MUST follow this exact syntax:
 "ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
 **CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
 Examples:{examples}
-4. Collapse duplicates (each biomarker appears once).
+4. Collapse duplicates (each marker appears once).
 5. If you cannot follow these rules, output exactly:
-{{"analysis":"", "biomarkers":[]}}
+{{"analysis":"", "markers":[]}}
 Always reason with clinical rigor and refer only to evidence in the records.
 """
 
-    user_prompt = f"""You are an expert clinical data analyst specialized in identifying biomarkers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY biomarkers explicitly present in the text. Do NOT invent biomarkers not present in the records.
+    user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records.
 Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
 
 Examples:
 {shots}   
 
-Task: Identify all biomarkers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
+Task: Identify all markers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
 
 Input records:
 
