@@ -1,5 +1,4 @@
 # Biomarker Extractor
-# TO UPDATE
 
 ## Setup:
 
