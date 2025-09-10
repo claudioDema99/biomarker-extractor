@@ -1,7 +1,7 @@
 from src.biomarker_extractor import extraction, extraction_unprocessed_lines
 from src.models import load_model_and_tokenizer
 from src.rag_chroma import validation
-from src.aggregator import aggregation, aggregation_resume
+from src.aggregator import aggregation, aggregation_resume, aggregation_resume_part1, aggregation_resume_part2
 import pandas as pd
 import sys
 import os
@@ -104,7 +104,7 @@ I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 
             elif arg == "resume":
                 if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
-                    _ = aggregation_resume(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    _ = aggregation_resume_part1(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
                     print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 else:
@@ -136,6 +136,13 @@ I risultati completi (con nome originale, acronimo identificato, row_id, e relat
             biomarkers = aggregation(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
             print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
+    
+    # Ho diviso la terza fase in due per questioni di praticità, così l'utente esperto può aggregare i gruppi di tutti i dataset uno dietro l'altro
+    # altrimenti tra un dataset e l'altro avrebbe dovuto aspettare che l'LLM trovasse le varianti di ciascun gruppo, per poi tronare a raggruppare il dataset successivo
+    # Invece prima faccio a raggruppamenti "manuali" di tutti i dataset, poi faccio fare all'LLM l'ultima fase (identificazione delle varianti) di tutti i dataset che son giaà stati raggruppati
+    if arg == "resume":
+        if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
+            _ = aggregation_resume_part2(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
 
 if __name__ == "__main__":
     main()

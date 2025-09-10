@@ -105,7 +105,7 @@ def call_model(biomarkers, task, model, tokenizer, device, biomarker_groups=[]):
     for attempt in range(max_retries):
         try:
             if task == "defining_variants":
-                system_prompt = """You are a marker variant grouper. Task: group occurrences by variant type.
+                system_prompt = f"""You are a marker variant grouper. Task: group occurrences by variant type.
 
 DEFINITION
 - Variant: Different forms of the same base biomarker, distinguished by:
@@ -127,7 +127,7 @@ COMMON VARIANT PATTERNS:
 - Measurement contexts: total, free, bound, phosphorylated (p-), etc.
 
 OUTPUT FORMAT:
-{"variants": {"key1": ["item1", "item2"], "key2": ["item3"]}}
+{{"variants": {{"key1": ["item1", "item2"], "key2": ["item3"]}}}}
 
 No text before or after JSON. No long reasoning. Just JSON."""
                 user_prompt = f"""Group these marker occurrences by variant. Output JSON only.
@@ -633,9 +633,9 @@ def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="A
                 continue
             print("\nPossible related groups:")
             for corr in correlation:
-                if corr >= (len(parsed_biomarkers) - 1):
+                if corr >= (len(parsed_biomarkers)):
                     print("\n\n\n=== ERROR ===")
-                    print(f"{corr} >= {len(parsed_biomarkers) - 1} (corr >= len(parsed_biomarkers) - 1)")
+                    print(f"{corr} >= {len(parsed_biomarkers)} (corr >= len(parsed_biomarkers))")
                     #input()
                 else:
                     print(f" {parsed_biomarkers[int(corr)]['canonical_biomarker']} - {corr}")
@@ -671,6 +671,160 @@ def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="A
         with open(f"./acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
             json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
         timer_exit = False
+
+    # TERZA FASE: chiedo a LLM di identificare varianti tra le componenti di uno stesso gruppo (non passo tutte le 'occurrences' ma solo quelle diverse tra di loro)
+    for group in parsed_biomarkers:
+        if len(group["occurrences"]) > 20:
+            # Count occurrences of each unique string
+            occurrence_counts = {}
+            for occurrence in group["occurrences"]:
+                occurrence_counts[occurrence] = occurrence_counts.get(occurrence, 0) + 1
+            
+            # Store original data for reconstruction
+            group["_original_occurrences"] = group["occurrences"].copy()
+            group["_occurrence_counts"] = occurrence_counts.copy()
+            
+            # Replace occurrences with unique strings only
+            group["occurrences"] = list(occurrence_counts.keys())
+            group_for_llm = {
+                "canonical_biomarker": group["canonical_biomarker"],
+                "occurrences": group["occurrences"]
+            }
+            
+            response = call_model(biomarkers=group_for_llm, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+            
+            # After LLM responds, reconstruct the original variants
+            if group.get("variants"):
+                reconstructed_variants = {}
+                for variant_key, unique_occurrences in group["variants"].items():
+                    reconstructed_list = []
+                    for unique_occurrence in unique_occurrences:
+                        # Add back the original count for each unique occurrence
+                        count = group["_occurrence_counts"].get(unique_occurrence, 1)
+                        reconstructed_list.extend([unique_occurrence] * count)
+                    reconstructed_variants[variant_key] = reconstructed_list
+                
+                # Replace variants with reconstructed ones
+                group["variants"] = reconstructed_variants
+            
+            # Restore original occurrences
+            group["occurrences"] = group["_original_occurrences"]
+            
+            # Clean up temporary keys
+            del group["_original_occurrences"]
+            del group["_occurrence_counts"]
+            del group_for_llm
+            print("Variants added!")
+            print(group)
+        else:
+            response = call_model(biomarkers=group, task="defining_variants", model=model, tokenizer=tokenizer, device=device)
+            if response:
+                group["variants"] = response["variants"]
+                print("Variants added!")
+                print(group)
+
+    # conteggi finali e salvataggio
+    for group in parsed_biomarkers:
+        group["total_count"] = f"{len(group['occurrences'])} / {total_len}"
+        total_pct = len(group["occurrences"]) / total_len * 100
+        group["total_percentage"] = f"{total_pct:.2f} %"
+        
+        # Check if variants exist and is not empty
+        if group.get("variants"):
+            # Initialize the dictionary of variant percentages
+            group["variant_percentages"] = {}  
+            # Create a copy of items to iterate over
+            for variant_key, variant_list in list(group["variants"].items()):
+                # Calculate percentage
+                pct = len(variant_list) / len(group['occurrences']) * 100
+                # Add percentage as new key
+                group["variant_percentages"][variant_key] = f"{pct:.2f} %"
+    
+    # Find the rows of the dataset from which each biomarker was extracted (using acronyms_w_rows, which pairs each biomarker with the row it was extracted from)
+    parsed_biomarkers = find_rows_from_biomarkers(parsed_biomarkers, acronyms_w_rows)
+
+    final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: len(x['occurrences']), reverse=True)
+
+    with open(f"./results/{dataset_type}/biomarkers.json", "w", encoding="utf-8") as f:
+        json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
+    return final_biomarkers_sorted
+
+def aggregation_resume_part1(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
+    print(f"Resuming the final analysis: loading '/checkpoints/parsed_biomarkers_{dataset_type}.json' and '/checkpoints/acronyms_w_rows_{dataset_type}.json'.")
+    with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
+        parsed_biomarkers = json.load(f)
+    with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "r", encoding="utf-8") as f:
+        acronyms_w_rows = json.load(f)
+
+    # SECONDA FASE: chiediamo a LLM di trovare dei gruppi che potrebbero essere aggregati tra quelli già definiti dall'exact matching
+    # Successsivamente iteriamo sulle proposte dell'LLM e possiamo confermare (quindi fare il merge), rifiutare (skip), 
+    # o selezionare un sottoinsieme dei gruppi proposti da unire
+    # Continuo a iterare finchè tutti i tentativi di merging sono stati skippati da parte dell'utente
+    try_again_merging_groups = True
+    timer_exit = False
+    while try_again_merging_groups:
+        try_again_merging_groups = False
+        canonical_biomarkers = [d["canonical_biomarker"] for d in parsed_biomarkers]
+        possible_correlations = call_model(biomarkers=canonical_biomarkers, task="merging_groups", model=model, tokenizer=tokenizer, device=device)
+        if has_duplicates(possible_correlations):
+            print("\n\n\n=== ERROR ===")
+            print("Duplicate indices found!")
+        # human check if the correlations detected by the LLM are valid
+        actual_correlations = []
+        print(f"The LLM has detected {len(possible_correlations)} possible related groups: let's check them!")
+        for correlation in possible_correlations:
+            if len(correlation) == 1:
+                continue
+            print("\nPossible related groups:")
+            for corr in correlation:
+                if corr >= (len(parsed_biomarkers)):
+                    print("\n\n\n=== ERROR ===")
+                    print(f"{corr} >= {len(parsed_biomarkers)} (corr >= len(parsed_biomarkers))")
+                    #input()
+                else:
+                    print(f" {parsed_biomarkers[int(corr)]['canonical_biomarker']} - {corr}")
+            str_user_input = "\nAre they related?\n <yes> for all\n <enter> for none (skip)\n <index1> <index2> ... to specify which groups to merge\n\n -> "
+            # Imposto il timer a 5 minuti (300 secondi)
+            # Se dopo 5 minuti non è ancora stato inviato alcun input, salvo attuali variabili e vado avanti
+            user_input = input_con_timer(str_user_input, 300)
+            if user_input == "-1":
+                timer_exit = True
+                break
+            elif user_input == "yes":
+                print(f"\n All groups have been merged -> {correlation}\n")
+                actual_correlations.append(correlation)
+                try_again_merging_groups = True
+            elif user_input and all(c.isdigit() or c.isspace() for c in user_input):
+                # Parse numbers from input like "5 18 23" or "2 7"
+                numbers = [int(x) for x in user_input.split()]
+                print(f"\n Only these group indices have been merged -> {numbers}\n")
+                actual_correlations.append(numbers)
+                try_again_merging_groups = True
+            else:
+                print("\n Skip\n")
+        if timer_exit:
+            break
+        # facciamo il merge dei gruppi identificati
+        parsed_biomarkers = merge_groups(parsed_biomarkers, actual_correlations)
+        if try_again_merging_groups:
+            print("We try again to find some relations between the groups.\n")
+    if timer_exit:
+        print(f"L'utente non è disponibile per la convalida dei possibili gruppi da unire.\nSi salva dunque 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
+    with open(f"./parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
+        json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
+    with open(f"./acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
+        json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
+
+    return parsed_biomarkers
+
+def aggregation_resume_part2(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
+    print(f"Resuming the final analysis: loading '/checkpoints/parsed_biomarkers_{dataset_type}.json' and '/checkpoints/acronyms_w_rows_{dataset_type}.json'.")
+    with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
+        parsed_biomarkers = json.load(f)
+    with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "r", encoding="utf-8") as f:
+        acronyms_w_rows = json.load(f)
 
     # TERZA FASE: chiedo a LLM di identificare varianti tra le componenti di uno stesso gruppo (non passo tutte le 'occurrences' ma solo quelle diverse tra di loro)
     for group in parsed_biomarkers:
