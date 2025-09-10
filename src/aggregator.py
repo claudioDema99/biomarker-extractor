@@ -108,9 +108,10 @@ def call_model(biomarkers, task, model, tokenizer, device, biomarker_groups=[]):
                 system_prompt = """You are a marker variant grouper. Task: group occurrences by variant type.
 
 DEFINITION
-- Variant
-  - Molecules: same base marker with a numeric/letter form (e.g., Aβ1-37/1-40/1-42, p-tau181/217, ApoE2/3/4, GFAP-δ).
-  - Tests/scales: same base test with a version/subscale tag (e.g., ADAS-Cog-11/13/14, v2, SF/LF, CDR-SB/SoB)
+- Variant: Different forms of the same base biomarker, distinguished by:
+  - Molecular forms: numeric/letter suffixes indicating isoforms, fragments, or modifications
+  - Assessment versions: version numbers, subscales, or form indicators
+  - Measurement types: different quantification methods of the same underlying marker
 
 RULES:
 1. Find the base marker name in each occurrence
@@ -118,10 +119,12 @@ RULES:
 3. Use first occurrence as group key
 4. Output JSON only - no explanations
 
-EXAMPLE OF VARIANT INDICATORS:
-- Numbers: 1-40, 1-42, 181, 217
-- Letters: δ, α, β
-- Versions: v2, -11, -13, SF, LF
+COMMON VARIANT PATTERNS:
+- Numeric suffixes: -1, -2, 1-40, 1-42, 181, 217
+- Greek letters: α, β, γ, δ
+- Version indicators: v1, v2, -11, -13, -R, -SR
+- Form types: SF (short form), LF (long form), A/B forms
+- Measurement contexts: total, free, bound, phosphorylated (p-), etc.
 
 OUTPUT FORMAT:
 {"variants": {"key1": ["item1", "item2"], "key2": ["item3"]}}
@@ -133,26 +136,26 @@ Note: It is not certain or mandatory that all groups actually have variants. If 
 Example of the task:
 Input:
 {{
-  "canonical_biomarker": "ABETA",
+  "canonical_biomarker": "BDNF",
   "occurrences": [
-    "ABETA",
-    "ABETA1-40",
-    "ABeta 1-38",
-    "Abeta 1-42",
-    "Abeta-40",
-    "Abeta40",
-    "Abeta42",
-    "Abeta42",
-    "Abeta42"
+    "BDNF",
+    "BDNF Val66Met",
+    "BDNF rs6265",
+    "BDNF Val/Val",
+    "BDNF Val/Met",
+    "Bdnf-Val66Met",
+    "BDNF rs6265",
+    "bdnf"
   ]
 }}
 Output:
 {{
   "variants": {{
-    "ABETA": ["ABETA"],
-    "ABETA1-40": ["ABETA1-40", "Abeta-40", "Abeta40"],
-    "ABeta 1-38": ["ABeta 1-38"],
-    "Abeta 1-42": ["Abeta 1-42", "Abeta42", "Abeta42", "Abeta42"]
+    "BDNF": ["BDNF", "bdnf"],
+    "BDNF Val66Met": ["BDNF Val66Met", "Bdnf-Val66Met"],
+    "BDNF rs6265": ["BDNF rs6265", "BDNF rs6265"],
+    "BDNF Val/Val": ["BDNF Val/Val"],
+    "BDNF Val/Met": ["BDNF Val/Met"]
   }}
 }}
 
@@ -168,10 +171,10 @@ Output:"""
 - **CRITICAL: Actively look for synonyms, shared roots, and partial matches** - these are the primary indicators of related markers
 - Use your knowledge of scientific terminology, biological pathways, and semantic relationships
 - **Pay special attention to:**
-  - Common roots/stems (e.g., "tau", "amyloid", "GFAP")
-  - Abbreviations vs full names (e.g., "AB" vs "amyloid-beta")
-  - Different naming conventions (e.g., "p-tau" vs "phospho-tau" vs "tau-P")
-  - Alternative spellings/formats (e.g., "Aβ" vs "A-beta" vs "abeta")
+  - Common roots/stems
+  - Abbreviations vs full names
+  - Different naming conventions
+  - Alternative spellings/formats
   - Avoid random or speculative groupings - only group when confident of the relationship
 - Maximum 5 markers per group (groups with >5 members are highly unlikely)
 - No too long reasoning
@@ -191,9 +194,9 @@ Analyze these markers and identify any groups that could be correlated or linked
 
 **Example:**
 If your marker list is:
-['CDR', 'ADAS-Cog', 'Aβ', 'NPI', 'ABETA', 'Aβ1‑40', ...]
+['marker-A', 'marker-B', 'marker-C', 'marker-D', 'marker-C-1', 'marker-C-2', ...]
 
-Then indices 2, 4, and 5 should be grouped together as they all refer to amyloid-beta variants:
+Then indices 2, 4, and 5 should be grouped together as they all refer to marker-C variants:
 
 Output: [[2, 4, 5]]
 

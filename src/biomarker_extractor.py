@@ -3,7 +3,7 @@ import re
 from typing import List, Dict, Any
 import json
 import os
-from src.models import call_model, get_token_count, calculate_prompt_tokens
+from src.models import call_model, call_model_for_unprocessed_lines, get_token_count, calculate_prompt_tokens
 
 def remove_duplicate_lines_in_cell(cell_content: str) -> str:
     """
@@ -210,6 +210,8 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
 
         # tokens size check
         if batch_tokens > TOK_MAX + 500:
+            half_shots = True
+            '''
             print(f"[WARNING] Riga {rows_id[i]}: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
             with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
@@ -217,21 +219,27 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
                 #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
             continue                # ricomincia il while
+            '''
+        else:
+            half_shots = False
 
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
         print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
-        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device)
+        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, half_shots=half_shots)
 
-        if biomarkers is None or biomarkers == "" or biomarkers == []:
+        if biomarkers is None or biomarkers == "":
             biomarker_value = biomarkers if biomarkers is not None else "None"
             print(f"[WARNING] Riga {rows_id[i]}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
             with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Riga ${rows_id[i]}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
+                f.write(f"{response}\n\n")
                 #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
+        elif biomarkers == []:
+            print(f"Empty list of biomarkers, reason: {cot}")
         else:
             print(f"Biomarkers trovati: {biomarkers}")
             all_biomarkers_extended.extend(biomarkers)
@@ -271,6 +279,8 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
 
     # Estrai le righe saltate dal file
     unprocessed_rows = extract_row_from_unprocessed_lines("Alzheimer")
+    unprocessed_rows_before = len(unprocessed_rows)
+    unprocessed_rows_after = 0
     unprocessed_indices = []
     # Risultato: [6, 9, 13, 14, 23, 37]
 
@@ -292,26 +302,56 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
 
         # tokens size check
         if batch_tokens > TOK_MAX + 500:
-            print(f"[WARNING] Riga {row}: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.")
-            with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
-                f.write("\n\n________________________________________________________________\n")
-                f.write(f"Riga ${row}$: superata TOK_MAX ({batch_tokens} > {TOK_MAX}) – saltata.\n\n")
-                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
-            continue
+            half_shots = True
+        else:
+            half_shots = True
 
         # log e chiamata modello
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
         print(f"Riga {row}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
-        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, low_reasoning=True)
+        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, low_reasoning=True, half_shots=half_shots)
 
-        if biomarkers is None or biomarkers == "" or biomarkers == []:
-            biomarker_value = biomarkers if biomarkers is not None else "None"
-            print(f"[WARNING] Riga {row}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
-            with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
-                f.write("\n\n________________________________________________________________\n")
-                f.write(f"Riga ${row}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
-                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+        if biomarkers is None or biomarkers == "":
+            # Definisci le stringhe di delimitazione
+            start_string = "<|channel|>analysis<|message|>"
+            end_string = "<|return|>"
+
+            # Trova la posizione della stringa iniziale
+            start_pos = response.find(start_string)
+            if start_pos != -1:
+                # Calcola la posizione dopo la stringa iniziale
+                content_start = start_pos + len(start_string)
+                
+                # Trova la posizione della stringa finale partendo dalla posizione dopo quella iniziale
+                end_pos = response.find(end_string, content_start)
+                if end_pos != -1:
+                    # Estrae il contenuto tra le due stringhe
+                    analysis = response[content_start:end_pos]
+                    
+                else:
+                    print("Stringa finale '<|return|>' non trovata")
+                    analysis = None
+                    
+            else:
+                print("Stringa iniziale '<|channel|>analysis<|message|>' non trovata")
+                analysis = None
+
+            # Se vuoi utilizzare il contenuto estratto più avanti nello script
+            if analysis is not None:
+                biomarkers, cot, response = call_model_for_unprocessed_lines(analysis=analysis, dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, low_reasoning=True, half_shots=half_shots)
+            if biomarkers is None or biomarkers == "":
+                biomarker_value = biomarkers if biomarkers is not None else "None"
+                print(f"[WARNING] Riga {row}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
+                with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
+                    f.write("\n\n________________________________________________________________\n")
+                    f.write(f"Riga ${row}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
+                    #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
+                unprocessed_rows_after += 1
+            else:
+                print(f"Biomarkers trovati: {biomarkers}")
+        elif biomarkers == []:
+            print(f"Empty list of biomarkers, reason: {cot}")
         else:
             print(f"Biomarkers trovati: {biomarkers}")
 
@@ -324,5 +364,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
         log_entries.append(log_entry)
         # Save after each batch
         save_logs_as_json(log_entries, log_filepath)
+    
+    print(f"Numero di unprocessed_rows prima del secondo tentativo: {unprocessed_rows_before}\nNumero di unprocessed_rows dopo il secondo tentativo: {unprocessed_rows_after}")
 
-        return
+    return

@@ -78,3 +78,4 @@ for dataset_type in dataset_types:
     with open(f"/home/cdemaria/Documents/biomarker-extractor/results/{dataset_type}/biomarkers.json", "w", encoding="utf-8") as f:
         json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
 
+    

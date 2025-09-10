@@ -76,9 +76,13 @@ def main():
                 _ = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
                 if os.path.exists(f"./results/{database}/unprocessed_lines.txt"):
                     extraction_unprocessed_lines(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
-                print(f"""\n\nTutto il dataset è stato processato con successo.
+                    print(f"""\n\nTutto il dataset è stato processato con successo.
 La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
-Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines.txt' (se il file non esiste, tutte le righe son state processate).
+Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines_2.txt' (se il file non esiste, tutte le righe son state processate).
+I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
+                else:
+                    print(f"""\n\nTutto il dataset è stato processato con successo.
+La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
 I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
 
             elif arg == "validation":
@@ -114,9 +118,13 @@ I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
             biomarker_list = extraction(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
             if os.path.exists(f"./results/{database}/unprocessed_lines.txt"):
                 extraction_unprocessed_lines(model=model, tokenizer=tokenizer, device=device, rows_id=rows_id, df_filtered=df_filtered, dataset_type=database)
-            print(f"""\n\nTutto il dataset è stato processato con successo.
+                print(f"""\n\nTutto il dataset è stato processato con successo.
 La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
-Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines.txt' (se il file non esiste, tutte le righe son state processate).
+Le righe non processate sono state salvate in 'results/{database}/unprocessed_lines_2.txt' (se il file non esiste, tutte le righe son state processate).
+I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
+            else:
+                print(f"""\n\nTutto il dataset è stato processato con successo.
+La lista dei biomarkers estratti si trovano in 'results/{database}/biomarkers_list.txt'.
 I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id, CoT e response dell'LLM) sono stati salvati in 'results/{database}/extraction_logs.json'.\n""")
             
             # Seconda parte: validazione dei biomarkers estratti tramite RAG
