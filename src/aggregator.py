@@ -666,9 +666,9 @@ def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="A
             print("We try again to find some relations between the groups.\n")
     if timer_exit:
         print(f"L'utente non è disponibile per la convalida dei possibili gruppi da unire.\nSi salva dunque 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
-        with open(f"./parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
+        with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
             json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
-        with open(f"./acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
+        with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
             json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
         timer_exit = False
 
@@ -751,7 +751,63 @@ def aggregation_resume(model, tokenizer, device, total_len, dataset_type: str="A
         json.dump(final_biomarkers_sorted, f, ensure_ascii=False, indent=2)
     return final_biomarkers_sorted
 
-def aggregation_resume_part1(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
+def aggregation_resume_part1(dataset_type: str="Alzheimer"):
+
+    with open(f"./results/{dataset_type}/acronyms_logs.json", "r", encoding="utf-8") as f:
+        data = json.load(f)
+        acronyms_w_rows = []
+        for d in data:
+            acronyms_w_rows.append((d["acronym"], d["row_id"]))
+
+    # PRIMA FASE: exact matching degli acronimi (togliendo caratteri speciali, numeri e sigle "CSF", "PET", "MRI")
+    # Dictionary to group items by their processed name
+    groups = defaultdict(list)
+
+    # Process each item and group by processed name
+    for biomarker, _ in acronyms_w_rows:
+        clean_biomarker = process_name(biomarker)
+        if clean_biomarker and len(clean_biomarker) > 1:  # Only add if processed name is not empty and of at least two characters
+            # se esiste già 'processed' aggiungo alla lista già esistente, così raggruppo i duplicati
+            # se non esiste creo una nuova lista con il primo elemento
+            groups[clean_biomarker].append(biomarker)
+
+    # Separate groups (duplicates) from single items
+    duplicate_groups = {}
+    remaining_items = []
+    for processed_name, original_names in groups.items():
+        if len(original_names) > 1:  # Group has duplicates
+            duplicate_groups[processed_name] = original_names
+        else:  # Single item
+            remaining_items.extend(original_names)
+
+    # Printing the exact matching results
+    total_grouped_items = 0
+    for processed_name, original_names in duplicate_groups.items():
+        total_grouped_items += len(original_names)
+    print(f"\nExact matching finito:")
+    print(f"Initial items: {len(acronyms_w_rows)}")
+    print(f"Grouped items: {total_grouped_items}")
+    print(f"Remaining items: {len(remaining_items)}")
+    with open(f"./results/{dataset_type}/remaining_biomarkers.txt", "w") as f:
+        for biomarker in remaining_items:
+            f.write(f"{biomarker}\n")
+
+    parsed_biomarkers = []
+    for processed_name, original_names in duplicate_groups.items():
+        canonical = choose_canonical_name(original_names)
+        group_entry = {
+            "canonical_biomarker": canonical,
+            "occurrences": sorted(original_names)  # Sort members alphabetically
+        }
+        parsed_biomarkers.append(group_entry)
+    with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
+        json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
+    with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
+        json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
+    
+    return parsed_biomarkers
+
+def aggregation_resume_part2(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
     print(f"Resuming the final analysis: loading '/checkpoints/parsed_biomarkers_{dataset_type}.json' and '/checkpoints/acronyms_w_rows_{dataset_type}.json'.")
     with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
         parsed_biomarkers = json.load(f)
@@ -812,14 +868,14 @@ def aggregation_resume_part1(model, tokenizer, device, total_len, dataset_type: 
             print("We try again to find some relations between the groups.\n")
     if timer_exit:
         print(f"L'utente non è disponibile per la convalida dei possibili gruppi da unire.\nSi salva dunque 'parsed_biomarkers_{dataset_type}.json' e 'acronyms_w_rows_{dataset_type}.json'.")
-    with open(f"./parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
+    with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "w", encoding="utf-8") as f:
         json.dump(parsed_biomarkers, f, ensure_ascii=False, indent=2)
-    with open(f"./acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
+    with open(f"./checkpoints/acronyms_w_rows_{dataset_type}.json", "w", encoding="utf-8") as f:
         json.dump(acronyms_w_rows, f, ensure_ascii=False, indent=2)
 
     return parsed_biomarkers
 
-def aggregation_resume_part2(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
+def aggregation_resume_part3(model, tokenizer, device, total_len, dataset_type: str="Alzheimer"):
     print(f"Resuming the final analysis: loading '/checkpoints/parsed_biomarkers_{dataset_type}.json' and '/checkpoints/acronyms_w_rows_{dataset_type}.json'.")
     with open(f"./checkpoints/parsed_biomarkers_{dataset_type}.json", "r", encoding="utf-8") as f:
         parsed_biomarkers = json.load(f)

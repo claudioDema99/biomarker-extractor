@@ -1,7 +1,7 @@
 from src.biomarker_extractor import extraction, extraction_unprocessed_lines
 from src.models import load_model_and_tokenizer
 from src.rag_chroma import validation
-from src.aggregator import aggregation, aggregation_resume, aggregation_resume_part1, aggregation_resume_part2
+from src.aggregator import aggregation, aggregation_resume, aggregation_resume_part1, aggregation_resume_part2, aggregation_resume_part3
 import pandas as pd
 import sys
 import os
@@ -92,7 +92,8 @@ I logs dell'analisi e estrazione dei biomarkers (con biomarkers estratti, row_id
 I risultati completi (con nome originale, acronimo identificato, row_id, e relativa CoT dell'LLM) si trovano in 'results/{database}/acronyms_logs.json'.\n""")
                 if go_on:
                     # Terza parte: raggruppamento dei biomarkers ripetuti tenendo conto di sinonimi, differenze di nomenclatura e acronimi
-                    _ = aggregation(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    # per ora faccio solo exact matching
+                    _ = aggregation_resume_part1(dataset_type=database)
                     print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
             
@@ -104,7 +105,7 @@ I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 
             elif arg == "resume":
                 if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
-                    _ = aggregation_resume_part1(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    _ = aggregation_resume_part2(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
                     print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
                 else:
@@ -142,7 +143,7 @@ I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
     # Invece prima faccio a raggruppamenti "manuali" di tutti i dataset, poi faccio fare all'LLM l'ultima fase (identificazione delle varianti) di tutti i dataset che son giaà stati raggruppati
     if arg == "resume":
         if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
-            _ = aggregation_resume_part2(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+            _ = aggregation_resume_part3(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
 
 if __name__ == "__main__":
     main()
