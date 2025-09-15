@@ -358,38 +358,25 @@ Here is the input you have to process:
 
 Output:"""
     elif task == "groups":
-        system = f"""You are a data analysis assistant specialized in identifying potential correlations between biological/scientific markers. Your task is to analyze canonical marker names and identify groups that could be semantically related.
+        system = f"""You are a data analysis assistant that identifies related biological/scientific markers. Analyze marker names and group semantically related ones.
 
-**Guidelines:**
-- **CRITICAL: Actively look for synonyms, shared roots, and partial matches** - these are the primary indicators of related markers
-- Use your knowledge of scientific terminology, biological pathways, and semantic relationships
-- **Pay special attention to:**
-  - Common roots/stems
-  - Abbreviations vs full names
-  - Different naming conventions
-  - Alternative spellings/formats
-  - Avoid random or speculative groupings - only group when confident of the relationship
-- Maximum 5 markers per group (groups with >5 members are highly unlikely)
-- No too long reasoning
+**Key Rules:**
+- Look for synonyms, shared roots, abbreviations vs full names, alternative spellings
+- Only group when confident of relationship
+- Max 5 markers per group
+- Use zero-based indexing
+- Return only lists of indices, no explanations
 
-**Output Format:**
-- Return only a list of lists containing marker indices
-- Each inner list represents a group of potentially related markers
-- Use zero-based indexing (0, 1, 2, ...)
-- No explanations, comments, or additional text"""
-        user = f"""The following canonical marker names were identified from grouped datasets using exact matching:
+**Output:** List of lists containing related marker indices"""
+        user = f"""Analyze these canonical marker names and group related ones by returning their indices:
 
 {biomarkers}
 
-Analyze these markers and identify any groups that could be correlated or linked to each other. Return the indices of potentially related marker groups.
-**Important:** Only group markers when you are confident they are related.
+Only group markers when confident they are related.
 
-**Example:**
-If your marker list is:
-['marker-A', 'marker-B', 'marker-C', 'marker-D', 'marker-C-1', 'marker-C-2', ...]
-
-Then indices 2, 4, and 5 should be grouped together as they all refer to marker-C variants:
-
+**Example:** 
+Markers: ['marker-A', 'marker-B', 'marker-C', 'marker-D', 'marker-C-1', 'marker-C-2']
+Related markers at indices 2, 4, 5 (all marker-C variants)
 Output: [[2, 4, 5]]
 
 **Response:**"""

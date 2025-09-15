@@ -1,0 +1,2000 @@
+Hamilton Scale: Hamilton Depression Rating Scale score
+BDI Score: Beck Depression Inventory Score
+Alcohol Drinks per Week: Alcohol use behaviors measured by drinks per week
+CES-D: Center for Epidemiologic Studies-Depression Scale
+HRSD: Hamilton Rating Scale for Depression (17‑item version)
+SIGH-D: Structured Interview Guide for the Hamilton Depression Rating Scale
+Number of Adverse Events: Count of adverse events emerging or worsening during treatment
+IDS-C: Inventory of Depressive Symptomatology – Clinician Rated score
+BDI-II: Beck Depression Inventory II score
+PANAS-NA: Negative Affect subscale of the Positive and Negative Affect Schedule
+HAM-D: Hamilton Depression Scale score
+DSM-IV MDD Diagnosis: Does not meet DSM-IV criteria for Major Depressive Disorder
+PSR: Problem Symptom Rating (LIFE)
+HRSD: Hamilton Rating Scale for Depression
+SAE: Serious Adverse Event
+BDI: Beck Depression Inventory
+MOSBPI: Mean change in Medical Outcomes Survey-Version 1 Bodily Pain Index score
+MOSPCS: Mean change in Medical Outcomes Survey-Version 1 Physical Component Score
+MOSMCS: Mean change in Medical Outcomes Survey-Version 1 Mental Component Score
+HAMD: Hamilton Depression Rating Scale score
+HAMD Response Count: Number of participants with ≥50% reduction in HAMD and final score <10
+IDS-C30 Score: Inventory for Depressive Symptomatology- Clinician-rated score
+Remission Rate: Percentage of participants achieving IDS-C30 ≤12
+MMSE: Mini Mental State Examination
+GDS: Geriatric Depression Scale
+HAM-D: Hamilton Depression Rating Scale
+MADRS: Montgomery-Asberg Depression Rating Scale
+HAM-D: Hamilton Depression Rating Scale 17-item
+Remission Proportion: Proportion of participants achieving a final HAM‑D score of 7 or less
+Response Proportion: Proportion of participants achieving a 50 percent or greater reduction in HAM‑D score
+HAM-D: Hamilton Depression Rating Scale Score
+MADRS: Montgomery-Åsberg Depression Rating Scale
+LIFE-PSR: Longitudinal Interval Follow‑up Evaluation – Psychiatric Status Rating score ≥5 for 2 consecutive weeks
+Kaplan-Meier: Kaplan‑Meier estimate of relapse/recurrence rate
+MADRS: Montgomery-Åsberg Depression Rating Scale score
+HAM-D: Hamilton Depression Rating Scale score
+AR: Abstinence Response (dichotomous variable based on two consecutive urine‑confirmed abstinent weeks)
+SRMU: Self‑Reported Marijuana Use (negative) per Timeline FollowBack
+UTN: Urine THC Negative (urine sample testing negative for THC)
+PCR Negativity: Negative Polymerase Chain Reaction result
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+Patients Without Clinically Relevant Depression: Number of patients who never achieved a MADRS score of 13 or higher
+Percentage of Participants with Clinically Relevant Depression: Proportion of participants with a MADRS score >13
+HRS: Hamilton Rating Scale for Depression Score
+Remission Threshold: HRS score ≤8
+HRSD: Hamilton Rating Scale for Depression
+HAMD-17: Hamilton Depression Rating Scale 17-item
+RESP: Clinical Responder status (>50% improvement in HAMD-17)
+REM: Clinical Remission status (<8 HAMD-17 score at endpoint)
+Cumulative Incidence: Cumulative incidence over 12 weeks of follow‑up
+HAM-D: Hamilton Depression Rating Scale
+FIM Motor Subscale: Functional Independence Measure 13‑item motor subscale
+HAMD: Hamilton Depression Rating Scale
+HAM-D-17: Hamilton Depression Rating Scale 17‑item severity score
+HAM-D-17 Response: 50% decrease in HAM‑D‑17 score
+HAM-D-17 Remission: score ≤7
+CPAS: California Pharmacotherapy Alliance Scale 24‑item questionnaire
+PHQ-9: Patient Health Questionnaire‑9 score
+Ham-D: Hamilton Depression Rating Scale score
+MDE: Presence of Major Depressive Episode (binary outcome)
+Life-3: Single-item Quality of Life measure
+BAI: Beck Anxiety Inventory score
+DSM-IV: Diagnostic and Statistical Manual IV diagnosis of depression
+HAM-D: Hamilton Rating Scale for Depression score
+SPID: Structured Psychiatric Interview for Depression
+DSRS: Depression Symptom Rating Scale
+IL-28B: Interleukin‑28B Gene Polymorphism (c/c, c/t, t/t)
+Pro‑Inflammatory Cytokine: Pro‑inflammatory Cytokine Concentration
+Serotonin: Serum Serotonin Concentration
+HDRS: Hamilton Depression Scale
+CGI-S: Global Severity rating (scale 1-7)
+CGI-I: Global Improvement rating (scale 1-7)
+HAM-D: Hamilton Depression Rating Scale total score (0-52)
+QIDS-C: percent of remitters on the 16‑item Inventory of Depressive Symptomatology – clinician rated
+QIDS-C: percent of responders on the 16‑item Inventory of Depressive Symptomatology – clinician rated
+QIDS-C: mean percent change on the 16‑item Inventory of Depressive Symptomatology – clinician rated
+QIDS-C: mean change on the 16‑item Inventory of Depressive Symptomatology – clinician rated
+CGI-I: Clinical Global Impressions‑Improvement scale
+IDS-C: percent of remitters on the 30‑item Inventory of Depressive Symptomatology – clinician rated
+IDS-C: percent of responders on the 30‑item Inventory of Depressive Symptomatology – clinician rated
+IDS-C: mean percent change on the 30‑item Inventory of Depressive Symptomatology – clinician rated
+IDS-C: mean change on the 30‑item Inventory of Depressive Symptomatology – clinician rated
+IDS-SR: percent of remitters on the 30‑item Inventory of Depressive Symptomatology – self‑report
+IDS-SR: percent of responders on the 30‑item Inventory of Depressive Symptomatology – self‑report
+IDS-SR: mean percent change on the 30‑item Inventory of Depressive Symptomatology – self‑report
+IDS-SR: mean change on the 30‑item Inventory of Depressive Symptomatology – self‑report
+MADRS: percent of remitters on the Montgomery‑Åsberg Depression Rating Scale
+MADRS: percent of responders on the Montgomery‑Åsberg Depression Rating Scale
+MADRS: mean percent change on the Montgomery‑Åsberg Depression Rating Scale
+MADRS: mean change on the Montgomery‑Åsberg Depression Rating Scale
+SR: Sustained Response percentage of acute phase responders remaining responsive at week 50
+17SCALE: 17‑item scale used to assess depression severity with total score 17–113
+IMP-SCALE: 7‑point clinician‑rated improvement/worsening scale
+CES-D: Center for Epidemiological Studies - Depression Scale
+HAM-D Score: Hamilton Depression Rating Scale total score
+Remission Rate: Percentage of participants with HAM-D <7
+Response Rate: Percentage of participants with ≥50% reduction in HAM-D
+GDS: Geriatric Depression Scale
+SCID: Structured Clinical Interview for DSM-IV
+Cortisol Concentration: Plasma Concentration of Cortisol Hormone
+IL-2 Doses Tolerated: Mean Number of IL-2 Doses Tolerated
+HAM-D: Hamilton Depression Rating Scale Score
+ACTH Concentration: Plasma Concentration of Adrenocorticotropic Hormone
+IL-6 Concentration: Plasma Concentration of Interleukin 6
+MEMS Adherence Index: Percentage of days medication container opened
+BDI-II Score: Total score of Beck Depression Inventory II
+HDRS: Hamilton Depression Rating Scale score
+REM: Remission Status (HDRS score ≥7)
+NR: Non-response (<30% reduction from baseline)
+PR: Partial Response (30‑49% reduction from baseline)
+RW: Response without remission (>50% reduction from baseline & HDRS‑17 >7)
+REC: Recurrence of Depression (number of participants experiencing recurrence after remission)
+PER_REM: Percentage of participants achieving remission (overall, at 10 weeks, at 12 weeks)
+COMB_REM: Number of participants achieving remission after 12 weeks of combined antidepressant + CBT
+SDS: Sheehan Disability Scale
+HAM-D: Hamilton Depression Rating Scale
+MADRS: Montgomery Asberg Depression Scale
+WHODAS-II: WHO Disability Assessment Schedule II
+HAM-D17: Hamilton Psychiatric Rating Scale for Depression 17-item score
+HAM-A: Hamilton Anxiety Rating Scale 14-item score
+EQ-5D Summary Index: Health outcome index 0-1
+CGI-I: Clinical Global Impressions – Improvement scale 1-7
+DESS: Discontinuation‑Emergent Symptom Scale total score 0-43
+GCI-I: Global Clinical Impression – Improvement score
+ASEX: Arizona Sexual Experiences Scale score
+IDS-C: Inventory of Depressive Symptoms – Clinician Rated score
+EQ-5D: EuroQoL Five Dimensions health outcome index
+HAM-D17: Hamilton Psychiatric Rating Scale for Depression score
+CGI-S: Clinical Global Impressions – Severity score
+CGI-I: Clinical Global Impressions – Improvement score
+HAM-A: Hamilton Anxiety Rating Scale score
+DESS: Discontinuation‑Emergent Symptom Scale total score
+MADRS: Montgomery-Asberg Depression Rating Scale
+SSI: Beck Scale for Suicidal Ideation score
+COPE: Percent change in contrast of parameter estimates measured during Monetary Incentive Delay Task
+Impulsivity Change: Change in neuropsychological measure of impulsivity
+Suicidal Behavior Events: Occurrence of suicide attempts, other suicidal behavior, or increase in suicidal thoughts requiring treatment change
+CSHF: Columbia Suicide History Form
+SSI: Scale for Suicidal Ideation Score
+HDRS: 24‑item Hamilton Depression Rating Scale
+PI: Percent improvement from baseline to end of treatment using HDRS
+REM: Remission status defined by ≥50% decrease in HDRS and final HDRS <10
+Sleep Efficiency: Percentage of time in bed spent sleeping
+hs-CRP Concentration: High‑sensitivity C‑reactive protein level (mg/L)
+CRP Concentration: C‑reactive protein level (mg/L)
+HDRS Score: Hamilton Depression Rating Scale total score
+HDRS Change: Least squares mean change in HDRS score from baseline to week 12
+HDRS 50% Reduction: Number of participants with ≥50% reduction in HDRS scores
+HDRS Remission: Number of participants achieving remission (HDRS ≤7 or CGI‑I=1)
+IL-6 Concentration: Interleukin‑6 level (pg/mL)
+CGI‑I Score: Clinical Global Impression‑Improvement score
+IDS‑SR Score: Inventory of Depressive Symptomatology Self‑Report total score
+HbA1c: Hemoglobin A1c
+SCL-20: 20-question Checklist for Depression Symptoms
+LDL: Low Density Lipoprotein Cholesterol
+SBP: Systolic Blood Pressure
+Sheehan Disability Scale: Average Disability Score
+HDRS: Hamilton Depression Rating Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+Missed Buprenorphine Doses: Number of missed buprenorphine doses over 7 days
+BDI-II: Beck Depression Inventory II score
+HRS: Hamilton Rating Scale for Depression (24-question version)
+HDRS Threshold: HDRS score <10 sustained for 2 weeks
+Stable Remission Count: Number of participants achieving HDRS <10 for 2 weeks
+SF-20: Medical Outcomes Study Short Form 20 Physical Functioning Composite Score
+PHQ-9: Primary Care Evaluation of Mental Disorders Patient Health Questionnaire-9
+BDI-II: Beck Depression Inventory, 2nd Edition total score
+Medication Adherence: Antidepressant medication adherence status
+Depression Prevention Stage: Classification of participants into precontemplation, contemplation, preparation, action, or maintenance
+PHQ-9: Patient Health Questionnaire 9-item depression scale
+HAM-D: Hamilton Depression Rating Scale
+Number of session: Total number of therapy sessions attended
+Drop-out rate: Participants who dropped out of therapy
+DRS: Standard 17-item rating scale for depression
+QIDS-SR-16: Quick Inventory of Depressive Symptomatology – Self Report 16-item total score
+Participants Meeting Threshold: Number of participants achieving QIDS‑SR‑16 ≥11
+HAM-D: Hamilton Depression Rating Scale
+Heavy Drinking Days Count: Number of heavy drinking days
+Drinking Days Count: Number of drinking days
+Percentage of Heavy Drinking Days: Proportion of heavy drinking days over total study days
+Percentage of Drinking Days: Proportion of drinking days over total study days
+ATTENDANCE: Attendance at first depression treatment appointment (yes/no)
+TIME TO FIRST SESSION: Average time to attendance at first session (weeks)
+CES-D: Center for Epidemiologic Studies‑Depression Scale Score
+7DPPA: 7‑Day Point Prevalence Abstinence
+CAVLT-2: Children's Auditory Verbal Learning Test 2 score (normalized standard score)
+CDRS-R: Children's Depression Rating Scale, Revised score
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form score
+HDRS: Hamilton Depression Rating Scale score
+ENG: Engagement status defined as at least one visit with a mental health provider within 12 or 24 weeks
+BDW: Mean number of binge days per week
+WFE: Weekly frequency of binge episodes after baseline
+MADRS: 10‑item scale assessing severity of depression (score range 0–60)
+CDRS-R: Children’s Depression Rating Scale – Revised score used to define remission (≤28) and relapse (≥40 or <40 with deterioration)
+K-Life: Weekly K‑Life interview rating scale (1–6) used to assess depression severity and relapse
+Time Well: Weeks with a K‑Life rating of 1 or 2 indicating minimal symptoms
+Percent Time Well: Proportion of weeks with a K‑Life rating of 1 or 2 relative to total study weeks
+IDS-C30 Score: Inventory of Depressive Symptomology – Clinician rating total score
+IDS-SR30 Score: Inventory of Depressive Symptomology – Self Report total score
+MADRS Score: Montgomery and Åsberg Depression Rating Scale total score
+WSAS Score: Work and Social Adjustment Scale total score
+Q-LES-Q Score: Quality of Life Enjoyment and Satisfaction Questionnaire total score
+QIDS-SR Score: Quick Inventory of Depressive Symptomatology – Self Report total score
+GAF Score: Global Assessment Scale total score
+HDRS-17 Score: Hamilton Rating Scale for Depression 17‑item total score
+AUC: Area Under Curve (plasma concentration‑time)
+CDRS-R: Clinical Depression Rating Scale – Revised total score
+CGI-S: Clinical Global Impression – Severity scale
+Plasma Half-Life: Time for plasma concentration to halve
+HAM-D: Hamilton Depression Rating Scale total score
+CGI-I: Clinical Global Impression – Improvement scale
+AE: Adverse Event occurrence
+SAE: Serious Adverse Event occurrence
+Number of Participants: Count of study subjects
+No Adverse Events: Reported lack of adverse events
+CORD: Cordance intensity value Z(s,f)
+THETA-CORD: Theta‑band cordance (8‑12 Hz) in prefrontal region
+ANORM: Absolute power z‑score (Anorm(s,f))
+RNORM: Relative power z‑score (Rnorm(s,f))
+HAM-A: Hamilton Anxiety Rating Scale
+HAM-D: Hamilton Depression Rating Scale
+BDI: Beck Depression Inventory
+SCLPR: SCL Percent Reduction (50% reduction in SCL depression score)
+IPAQCH: IPAQ Change (mean change from baseline)
+DWCH: Days Walk Change (mean change in days walk per week)
+QT%: Quit Attempt Percentage (intentional cessation ≥24h)
+ABST%: Abstinence Percentage (self‑reported 7‑day point prevalence abstinence)
+CPDCH: Cigarettes Per Day Change (mean change in cigarettes smoked per day)
+HAMD-17 Sleep Subscale: Evaluation of insomnia via HAMD‑17 items 4,5,6
+DBP Change: Mean change from baseline to endpoint in diastolic blood pressure
+PR Change: Mean change from baseline to endpoint in pulse rate
+SDS: Sheehan Disability Scale assessing work/school, social, and family domains
+GFIS: Global Functional Impairment Score derived from SDS
+WC: Mean change from baseline to endpoint in weight
+HAMD-17 Total Score: Rater‑administered depression severity
+WP: Work Productivity Score calculated from income and hours
+WPA: Work Productivity Assessment tool measuring impact of depressive symptoms on work
+LWP: Lost Work Performance combining absenteeism and presenteeism
+SBP Change: Mean change from baseline to endpoint in systolic blood pressure
+HAMD-17 RR: Response rate 50% reduction in HAMD‑17 total score at week 12
+BECH: HAMD‑17 Bech Subscale (items 1,2,7,8,10,13)
+HAMD-17 REM: Remission rate HAMD‑17 total score ≤7 at week 12
+AGIT: HAMD‑17 Agitation Subscale (items 10,11,12,13,15,17)
+BPI: Brief Pain Inventory pain severity and interference
+QIDS-SR RR: Response rate 50% reduction in QIDS‑SR total score at week 12
+QIDS-REM: Remission rate QIDS‑SR total score ≤5 at week 12
+QIDS-SR Total Score: Participant‑rated depression severity
+RETARD: HAMD‑17 Retardation Subscale (items 1,7,8,14)
+MAIER: HAMD‑17 Maier Subscale (items 1,2,7,8,9,10)
+MADRS: Montgomery-Åsberg Depression Rating Scale
+DS: Standard scale for depression used in clinical trials
+APGAR: Apgar Score
+UCBG: Umbilical Cord Blood Gas Analysis
+NICU: Neonatal Intensive Care Unit Admission
+BDI: Beck Depression Inventory Score
+BW: Birth Weight (grams)
+SGA: Small for Gestational Age
+LGA: Large for Gestational Age
+SIGH-ADS29: Structured Interview Guide for the Hamilton Depression Rating Scale - Atypical Depression Symptoms Version
+HRSD: Hamilton Rating Scale for Depression
+Amygdala BOLD Activation: BOLD signal activation in the amygdala during fMRI task
+DLPFC BOLD Activation: BOLD signal activation in the dorsolateral prefrontal cortex during fMRI task
+BOLD Signal: Blood Oxygen Level Dependent signal measured during fMRI
+MADRS: Montgomery-Åsberg Depression Rating Scale
+HDRS: Hamilton Depression Rating Scale
+SS: Single Item Seven-Point Satisfaction Scale
+DSS: 20-item Depression Severity Scale adapted from SCL-90
+MADRS: Montgomery-Asberg Depression Rating Scale
+VR-36: Veterans Rand 36 Item Health Survey
+MCS: Mental Health Component Score of VR-36
+PCS: Physical Health Component Score of VR-36
+MHRM: Mental Health Recovery Measure Total Score
+BDI-II: Beck Depression Inventory‑2nd Edition Total Score
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form Total Score
+HAM-D: Hamilton Depression Rating Scale (24 item)
+CGI-I: Clinical Global Impression Improvement score change
+CGI-S: Clinical Global Impression Severity score change
+MADRS: Montgomery‑Asberg Depression Rating Scale total score change
+MADRS Item 4 Sleep Score: MADRS item 4 score
+PSQI: Pittsburgh Sleep Quality Index score
+SF-36 Physical Component: SF‑36 physical component score
+SF-36 Mental Component: SF‑36 mental component score
+EQ-5D Utility: EQ‑5D utility score
+WPAI:GH: Work Productivity and Activity Impairment – General Health score
+BDI: Beck Depression Inventory score
+STAI State: State‑Trait Anxiety Inventory state score
+STAI Trait: State‑Trait Anxiety Inventory trait score
+VAS Pain: Visual Analogue Scale pain score
+VAS Anxiety: Visual Analogue Scale anxiety score
+RR≥50%: Response rate with ≥50% reduction in MADRS
+REM8: Patients in remission with MADRS ≤8
+REM10: Patients in remission with MADRS ≤10
+REM10_1PF: Patients in remission with MADRS ≤10 and one prior treatment failure
+REM10_2PF: Patients in remission with MADRS ≤10 and two prior treatment failures
+REM12: Patients in remission with MADRS ≤12
+TE-SE: Therapeutic effect/side‑effect composite count
+EQ-5D Index: Health‑related quality of life index derived from EUROQOL5D
+ADHERENCE: Antidepressant medication adherence measured via pharmacy records
+MADRS: Montgomery-Åsberg Depression Rating Scale
+HFRDIS: Hot Flash Related Daily Interference Scale
+BAI: Beck Anxiety Inventory
+EPDS: Edinburgh Postnatal Depression Scale
+MADRS: Montgomery-Åsberg Depression Rating Scale
+BDI: Beck Depression Inventory-II score
+MADRS: Montgomery-Åsberg Depression Rating Scale
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form
+Responder Rate: Proportion of participants achieving ≥50% improvement in MADRS
+MADRS % Change: Mean percent change in MADRS score
+Q-LES-Q-SF Change: Mean change in Q-LES-Q-SF score
+Weight Change: Kilogram change in body weight
+Suicidal Ideation Incidence: Percentage of participants reporting suicidal ideation during treatment but not at baseline
+Parkinsonism Incidence: Percentage of participants developing signs of parkinsonism
+Akathisia Incidence: Percentage of participants developing clinically significant akathisia
+MADRS Score: Montgomery‑Asberg Depression Rating Scale score
+MADRS Remission: Remission defined as MADRS score ≤10
+CDI: Children Depression Inventory total T-score
+CRPBI: Child's Report on Parental Behavior Inventory Acceptance Scale total score
+UMDQ: Understanding Mood Disorders Questionnaire total score
+MASC: Multidimensional Anxiety Scale for Children total T-score
+Negativity Bias Score: Difference between mean ratings of unpleasant and pleasant images
+IDS‑SR: Inventory of Depressive Symptomatology Self‑Rated total score
+IDS‑C: Inventory of Depressive Symptomatology Clinician‑Rated total score
+EEG Frontal Asymmetry: Log(alpha power difference between left and right frontal electrodes
+STROOP: Stroop Color-Word total score
+WHODAS II: World Health Organization Disability Assessment Schedule II total score
+HAM-D24: Hamilton Depression Rating Scale 24-item total score
+SRDM: Self-Reported Depressed Mood
+SI-SR: Suicidal Ideation Self-Report
+PHQ-9: Patient Health Questionnaire 9-item depression scale
+HAM-D-17: Hamilton Depression Rating Scale 17-item
+LDL-C: Low-density lipoprotein cholesterol
+TG: Triglycerides
+HDL-C: High-density lipoprotein cholesterol
+TChol: Total cholesterol
+Fasting Glucose: Fasting glucose level
+MDD: Montgomery-Asberg Depression Rating Scale
+CGI-S: Clinical Global Impressions – Severity
+SDS: Sheehan Disability Scale
+C-SSRS: Columbia Suicide Rating Scale
+QTc: Corrected QT interval
+Psychiatric Visit Count: Average number of psychiatric visits
+ER Psychiatric Visits: Emergency department visits for psychiatric illness
+AIMS: Abnormal Involuntary Movement Scale
+BAS: Barnes Akathisia Scale
+SAS: Simpson-Angus Scale
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+TBIL: Total Bilirubin
+PPD: Postpartum Depression Diagnosis (yes/no diagnostic tool)
+PPDS: Postpartum Depression Scale (0‑30 continuous measure)
+PAS: Physical Activity Duration (minutes per week with intensity categories)
+DSS: Depression Severity Scale (0‑27 continuous measure)
+DRS: Standard 17-item rating scale for depression
+HAMD: Hamilton Depression Rating Scale total score
+CDRS-R: Children’s Depression Rating Scale – Revised total raw score
+PWB-Purpose: Purpose in Life dimension score
+PWB-PositiveRelations: Positive Relations dimension score
+PWB-Autonomy: Autonomy dimension score
+PWB-EnvironmentalMastery: Environmental Mastery dimension score
+PWB-SelfAcceptance: Self‑Acceptance dimension score
+PWB-PersonalGrowth: Personal Growth dimension score
+CID: Clinical Interview for Depression total score
+SQ-Hostility: Hostility symptoms subscale score
+SQ-Depression: Depressive symptoms subscale score
+SQ-Anxiety: Anxious symptoms subscale score
+SQ-Somatization: Somatic symptoms subscale score
+Cardiac Outcome Frequency: Frequency of negative cardiac events such as rehospitalisations, MI, angina, angioplasty, surgery, and mortality
+WSS: Wrinkle Severity Scale (forehead lines)
+BDI: Beck Depression Inventory
+WHOQOL-BREF: World Health Organization Quality of Life – Brief questionnaire
+SE: Self‑Esteem Scale (ten‑item 0‑3 scoring)
+HDRS: Hamilton Depression Rating Scale total score
+HDRS-R: 50% or greater drop in Hamilton Depression Rating Scale
+BOLD-Amygdala: Blood Oxygen-Level Dependent activation in the amygdala
+BOLD-dlPFC: Blood Oxygen-Level Dependent activation in the dorsolateral prefrontal cortex
+MH Service Use: Any mental health service use over 12 weeks
+HAM-D Change Score: Hamilton Depression Rating Scale change score from baseline to 12 weeks
+HAM-D: Hamilton Depression Rating Scale 21‑item version
+POSA: Positive Affect Score
+NEGA: Negative Affect Score
+SIDE: Side Effects Total Score
+HR: Heart Rate (beats per minute)
+DEP: Depression Severity Score
+ANX: Anxiety Score
+BP: Blood Pressure (systolic/diastolic)
+PHS: Physical Pain Score
+IDS-C30: Inventory of Depressive Symptomatology – Clinician Rated 30-item scale
+C-SSRS: Columbia Suicide Severity Rating Scale (Baseline and Since Last Visit)
+SI-SPI: Suicidal Ideation – Specific Plan and Intent question
+SB-AA: Suicidal Behavior – Aborted Attempt question
+SB-Actual: Suicidal Behavior – Actual Attempt question
+SI-AMNI: Suicidal Ideation – Any Methods (Not Plan) Without Intent to Act question
+SI-SIAWSP: Suicidal Ideation – Some Intent to Act Without a Specific Plan question
+SI-NSAT: Suicidal Ideation – Non‑Specific Active Suicidal Thoughts question
+SB-NSIB: Suicidal Behavior – Non‑Suicidal Self‑Injurious Behavior question
+SI-WTB: Suicidal Ideation – Wish to Be Dead question
+SB-CS: Suicidal Behavior – Completed Suicide question
+SB-Interrupted: Suicidal Behavior – Interrupted Attempt question
+SB-PAB: Suicidal Behavior – Preparatory Acts or Behavior question
+SB-SB: Suicidal Behavior – Suicidal Behavior question
+YMRS: Young Mania Rating Scale
+HAM-A: Hamilton Anxiety Rating Scale
+QIDS-C16: Quick Inventory of Depressive Symptomatology – Clinician Rated 16-item scale
+GAF: Global Assessment of Functioning
+CGI-S: Clinical Global Impressions – Severity
+Responder Status: ≥50% decrease in IDS‑C30 total score
+CGI-S: Clinical Global Impressions – Severity scale
+C-SSRS: Columbia-Suicide Severity Rating Scale
+SI-AnyMethods-NoPlan: Suicidal Ideation - Any Methods (Not Plan) Without Intent to Act question
+SI-SomeIntent-NoSpecificPlan: Suicidal Ideation - Some Intent to Act Without a Specific Plan question
+SI-WishToBeDead: Suicidal Ideation - Wish to Be Dead question
+SI-NonSpecificActive: Suicidal Ideation - Non-Specific Active Suicidal Thoughts question
+SI-SpecificPlanAndIntent: Suicidal Ideation - Specific Plan and Intent question
+SBI-NSIB: Suicidal Behavior - Non-Suicidal Self-Injurious Behavior question
+SBI-SB: Suicidal Behavior - Suicidal Behavior question
+SBI-InterruptedAttempt: Suicidal Behavior - Interrupted Attempt question
+SBI-PreparatoryActs: Suicidal Behavior - Preparatory Acts or Behavior question
+SBI-CompletedSuicide: Suicidal Behavior - Completed Suicide question
+SBI-AbortedAttempt: Suicidal Behavior - Aborted Attempt question
+SBI-ActualAttempt: Suicidal Behavior - Actual Attempt question
+YMRS: Young Mania Rating Scale
+IDS-C30: Inventory of Depressive Symptomatology – Clinician Rated 30-item
+QIDS-C16: Quick Inventory of Depressive Symptomatology – Clinician Rated 16-item
+ISI: Insomnia Severity Index
+GAF: Global Assessment of Functioning
+HAM-A: Hamilton Anxiety Rating Scale
+WTD: Weeks Until Dropout
+SA: Sessions Attended
+PHQ-9: Patient Health Questionnaire-9
+CGI/S: Clinician‑rated global symptom severity
+CGI/C: Clinician‑rated global symptom change
+SS: Sexual Satisfaction Score
+HAM-D: Hamilton Depression Rating Scale 17‑item score
+BDI: Beck Depression Inventory total score
+PHQ-9: Patient Health Questionnaire-9 score
+ADHERENCE: Antidepressant adherence measured via computerized pharmacy records
+NON-PERSISTENCE: Count of participants with non‑persistence
+MIN-PERSISTENCE: Count of participants with minimally adequate persistence
+CGI-S: Clinical Global Impression – Severity scale
+RR Interval: Inter‑beat intervals from ECG
+IDS-C30: Inventory of Depressive Symptomatology – Clinician‑Rated 30‑item scale
+ISI: Insomnia Severity Index
+HAM-A: Hamilton Anxiety Rating Scale
+BUN: Blood Urea Nitrogen
+Uric Acid: Urate concentration
+GGT: Gamma‑Glutamyl Transpeptidase
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+GAF: Global Assessment of Functioning
+Pulse: Heart rate
+Sitting Systolic Blood Pressure
+Sitting Diastolic Blood Pressure
+YMRS: Young Mania Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+WBC: White Blood Cell count
+Hemoglobin
+Hematocrit
+Platelet Count
+ANC: Absolute Neutrophil Count
+QIDS-C16: Quick Inventory of Depressive Symptomatology – Clinician‑Rated 16‑item scale
+TKS: Total Knowledge Score
+SAE Frequency: Frequency of patients experiencing serious adverse events
+AE Discontinuation Frequency: Frequency of adverse events leading to treatment discontinuation
+AE Occurrence Frequency: Frequency of patients experiencing at least one adverse event
+MADRS Total Score: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS ≥12 Proportion: Percentage of patients with MADRS total score ≥12
+Q-LES-Q-SF Total Score: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form total score
+Q-LES-Q-SF Percent Maximum: Percentage of maximum possible Q‑LES‑Q‑SF score
+SDS Total Score: Sheehan Disability Scale total score
+CGI-S Score: Clinician Global Impression – Severity score
+EQ-5D Index Score: EuroQoL 5 Dimensions index score
+EQ-VAS Score: EuroQoL Visual Analogue Scale score
+MADRS: Montgomery-Åsberg Depression Rating Scale total score
+SDS: Sheehan Disability Scale total score
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire-Short Form total score
+CGI-I: Clinical Global Impression – Improvement score
+CGI-S: Clinical Global Impression – Severity score
+HAMD-17: Hamilton Depression Rating Scale 17-item total score
+SIS: Self-Assessment of Irritability Symptoms total score
+HAM-A: Hamilton Anxiety Rating Scale total score
+EQ-5D: EuroQol 5 Dimensions index score
+EQ-VAS: EuroQol Visual Analogue Scale score
+MADRS RR: MADRS Responder Rate (≥50% reduction in total score)
+MADRS MR: MADRS Remission Rate (total score ≤12)
+MADRS Total Score: Montgomery-Åsberg Depression Rating Scale total score
+MADRS Responder Proportion (≥8): Proportion of patients with MADRS total score ≥8 at specified weeks
+MADRS ≥50% Reduction Proportion: Proportion achieving ≥50% reduction from baseline
+MADRS ≤12 Proportion: Proportion achieving MADRS total score ≤12 at specified weeks
+Q-LES-Q-SF Total Score: Quality of Life Enjoyment and Satisfaction Questionnaire-Short Form total score
+Q-LES-Q-SF % Max Score: Percentage of maximum total score
+Q-LES-Q-SF Item 16 Score: Global rating of overall life satisfaction
+Q-LES-Q-SF Item 15 Score: Medication satisfaction
+CGI-I Score: Clinical Global Impression – Improvement score
+CGI-S Score: Clinical Global Impression – Severity score
+HAMD-17 Total Score: Hamilton Depression Rating Scale 17-item total score
+EQ-5D Index Score: EuroQoL 5 Dimensions index score
+EQ-VAS Score: EuroQoL Visual Analog Scale score
+SDS Total Score: Sheehan Disability Scale total score
+SDS School/Work Score: Sheehan Disability Scale school/work domain score
+SDS Social Life Score: Sheehan Disability Scale social life domain score
+SDS Family Life Score: Sheehan Disability Scale family life/home responsibilities domain score
+SIS Total Score: Irritability Severity Index total score
+SIS Days Impaired: Number of days impaired by irritability
+MADRS_TOT: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS_PR: Percentage reduction in MADRS total score from baseline
+MADRS_GE8: MADRS total score ≥8
+MADRS_GE12: MADRS total score ≥12
+CGI-I: Clinical Global Impression – Improvement scale
+CGI-S: Clinical Global Impression – Severity scale
+SDS_TOT: Sheehan Disability Scale total score
+SDS_SW: SDS school/work domain score
+SDS_SL: SDS social life domain score
+SDS_FH: SDS family life/home responsibilities domain score
+Q-LES-Q-SF_TOT: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form total score
+Q-LES-Q-SF_%MAX: % maximum total score of Q-LES-Q-SF
+Q-LES-Q-SF_Item15: 15th item rating 1–4
+Q-LES-Q-SF_Item16: 16th item rating 1–5
+EQ-5D_IDX: EQ‑5D index score
+EQ-VAS: EQ‑5D Visual Analogue Scale score
+PROP_MADRS_GE8: Proportion of patients with MADRS total score ≥8
+PROP_MADRS_GE12: Proportion of patients with MADRS total score ≥12
+PROP_MADRS_RED50: Proportion of patients with ≥50% reduction in MADRS total score
+Cmax: Maximum plasma concentration
+AUC0-48h: Area Under Curve from time zero to 48 hours
+t½: Terminal elimination half‑life
+AUC0-∞: Area Under Curve from time zero to infinity
+MADRS: Montgomery-Åsberg Depression Rating Scale score
+E8W: Count of people experiencing the event by 8 weeks
+BDI Score: Beck Depression Inventory-II total score
+BDI Change: Change in Beck Depression Inventory-II total score
+BDI Remission: BDI score ≤9 defined as remitted depression
+RSES Score: Rosenberg Self‑Esteem Scale total score
+RSES Change: Change in Rosenberg Self‑Esteem Scale total score
+GSES Score: General Self‑Efficacy Scale total score
+GSES Change: Change in General Self‑Efficacy Scale total score
+HAM-D: Hamilton Depression Rating Scale total score
+PAD: Time interval between Dim Light Melatonin Onset and sleep midpoint (hours)
+BDI-II: Beck Depression Inventory II total score
+DLMO: Dim Light Melatonin Onset time under dim light conditions
+C-SSRS: Columbia‑Suicide Severity Rating Scale assessing suicidality from ideation to behaviors
+GAF: Global Assessment of Functioning numeric scale 1–100
+ISI: Insomnia Severity Index participant‑rated questionnaire 0–28
+YMRS: Young Mania Rating Scale clinician‑rated 0–60
+IDS-C30: Inventory of Depressive Symptomatology – Clinician Rated 0–84
+CGI-S: Clinical Global Impressions – Severity 1–7
+HAM-A: Hamilton Anxiety Rating Scale 0–56
+QIDS-C16: Quick Inventory of Depressive Symptoms – Clinician Rated 0–27
+HAM D: Hamilton Depression Rating Scale
+DAYS TO RESPONSE: Number of days between baseline and response HAM D score
+ECT TREATMENTS TO RESPONSE: Number of ECT treatments needed to achieve response
+ECT TREATMENTS WITHHELD: Number of ECT treatments withheld due to cognitive impairment
+POST ECT BP: Post‑ECT Blood Pressure
+POST ECT HR: Post‑ECT Heart Rate
+SEIZURE DURATION: Mean duration of seizure induced by ECT (seconds)
+ENERGY FOR SEIZURE: Mean energy needed to induce seizure
+MODERATE SEVERE AE COUNT: Number of moderate to severe adverse events
+HAM D SCORE CHANGE: Difference between baseline and last HAM D score
+RECOVERY TIME: Recovery time from seizure induction to eye opening
+BREATHING RESTORATION: Restoration of breathing
+SF-12: Short Form 12 Health Survey assessing physical and mental health quality of life
+PSQ-18: Patient Satisfaction Questionnaire Short Form 18 evaluating seven dimensions of satisfaction
+QOL-5: Quality of Life 5‑item questionnaire for global QoL assessment
+HPLP-II: Health Promoting Lifestyle Profile II measuring health‑promoting behaviors
+CES-D 10: Center for Epidemiologic Studies Depression Scale 10‑item assessing depressive symptoms
+PHQ-9: Patient Health Questionnaire 9‑item depression scale
+NAUSEA: Nausea severity rating
+HEADACHE: Headache severity rating
+MYALGIA: Myalgia severity rating
+VISUAL_DISTURBANCE: Visual disturbance severity rating
+CONFUSION: Confusion severity rating
+RECOVERY_ROOM_AGITATION: Recovery room agitation severity rating
+HADS-A: Hospital Anxiety and Depression Scale – Anxiety subscale
+HADS-D: Hospital Anxiety and Depression Scale – Depression subscale
+DSC: Depression Severity Composite Score
+HDRS-21: Hamilton Depression Rating Scale 21-item version
+HDRS-21 Change: Difference between Week 6/18 and baseline HDRS‑21 scores
+HAM-D17: Hamilton Rating Scale for depression
+HR: Heart Rate
+ANX: Anxiety Score
+SE: Side Effect Score
+PA: Positive Affect Score
+NA: Negative Affect Score
+WT: Participant Weight
+DEP: Depression Severity Score
+BP: Systolic and Diastolic Blood Pressure
+BDI-II: Beck Depression Inventory II score change
+PS: Parenting Scale score change
+PSI-SF: Parenting Stress Index‑Short Form Total score change
+MSPSS: Multidimensional Scale of Perceived Social Support score change
+Proportion attending ≥1 session: Proportion of participants who attended at least 1 session of Incredible Years
+Proportion attending ≥6 sessions: Proportion of participants who attended at least 6 sessions of Incredible Years
+Proportion attending ≥10 sessions: Proportion of participants who attended at least 10 sessions of Incredible Years
+Acceptability Likert: Response to “How did you like the parenting program?” rated 1–5
+PSQI: Pittsburgh Sleep Quality Index
+FEPT: Facial Emotion Perception Test
+Sleep Efficiency: Percentage of time spent sleeping relative to time in bed
+Total Sleep Time: Duration of sleep from onset to final awakening
+ClinDepScore: Clinician‑rated depression symptom score (minus 3 sleep items)
+PRDS: Patient‑Reported Depression Severity Score
+RT: Reaction Time on modified Go/No‑go test
+UKU: Udvalg for Kliniske Undersogelser side effect count
+QIDS-SR 16: Quick Inventory of Depressive Symptoms Self Report 16-item score
+Change in QIDS-SR 16: Change in QIDS‑SR 16 score over time
+AE: Adverse Events
+Psych Hosp: Psychiatric Hospitalization
+Suicide: Suicide Incidence
+NFSB: Non-Fatal Suicide-Related Behaviours
+Collateral Use: Number of Times Treatment Collateral Utilised
+Adherence: Treatment Adherence
+Dropout Rate: Participant Drop‑Out Rate
+Tech Support Requests: Frequency of Requests for Patient or Therapist Technical Support
+BDI-II: Beck Depression Inventory II
+BHS: Beck Hopelessness Scale
+HAMD-17 Score: Total score of the 17‑item Hamilton Depression Rating Scale
+QIDS-C16 Score: Total score of the 16‑item Quick Inventory of Depressive Symptomatology – Clinician Rated
+PHQ-9 Score: Total score of the 9‑item Patient Health Questionnaire
+Remitter Status: Participant meeting HAMD‑17 ≤ 7, QIDS‑C16 ≤ 5, or PHQ‑9 < 5
+Responder Status: Participant achieving ≥50% reduction in psychiatric score from baseline
+HAM-D-6: Hamilton Depression Rating Scale 6-item version score
+MADRS: Montgomery-Asberg Depression Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+SDS: Social Disruption Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI‑S: Clinical Global Impression – Severity
+SAS: Scales for Assessment of Parkinsonian Symptoms
+SF‑36: Short Form Health Survey 36
+BAS: Brief Akathisia Scale
+HAMD: Hamilton Rating Scale for Depression
+Actigraphic Activity Level: Average actigraphic activity level measured by device
+Scale for Suicide Ideation: 19‑item suicide ideation scale
+Nightmare Severity Scale: 5‑item nightmare severity scale
+DBAS: Dysfunctional Beliefs and Attitudes About Sleep scale
+C-SSRS: Columbia‑Suicide Severity Rating Scale (suicide ideation scale)
+ISI: Insomnia Severity Index
+BHS: Beck Hopelessness Scale
+BASIS-32 Subscale: Subscale of the BASIS‑32 assessing daily living and role functioning
+HAM-D: Hamilton Depression Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+EPDS: Edinburgh Postnatal Depression Scale
+BSI: Beck Scale of Suicidal Ideation
+COPE: COPE measure
+BOLD Reward Contrast: BOLD signal when subject wins 5 cents vs. wins 0 cents
+BOLD Punishment Contrast: BOLD signal when subject loses 5 cents vs. loses 0 cents
+IDAS Dysphoria Scale: Dysphoria scale score
+Nucleus Accumbens BOLD Response: z statistic of win vs non‑win during MID task
+BFI: Brief Fatigue Inventory
+DISF: Derogatis Interview of Sexual Function (Total Score)
+MADRS: Montgomery-Asberg Depression Rating Scale
+CDRS-R: Children’s Depression Rating Scale – Revised (clinician‑administered interview)
+CGAS: Children’s Global Assessment Scale (numeric scale for general functioning)
+SAS-SR: Social Adjustment Scale – Self Report (measure of social adjustment)
+HAM-D: Hamilton Depression Rating Scale
+EPDS: Edinburgh Postnatal Depression Scale total score (used to define remission <10 and major depression >13)
+Cornell Dysthymia Rating Scale: Cornell Dysthymia Rating Scale scores
+HAM-D: Hamilton Rating Scale for Depression scores
+TESS: Treatment Emergent Symptom Scale scores
+Maximum Duloxetine Oral Dose: Maximum duloxetine oral dose
+HDS-28: Hamilton Depression Scale 28‑item score change
+MADRS-15: Montgomery‑Asberg Depression Rating Scale 15‑item score change
+HAM-D-17: Hamilton Depression Rating Scale 17‑item score change
+MADRS-10: Montgomery‑Asberg Depression Rating Scale 10‑item score change
+Response rate: Proportion achieving ≥50% improvement in HAM‑D‑17
+Remission rate: Proportion achieving HAM‑D‑17 ≤7
+CGI-S: Clinical Global Improvement‑Severity Scale score
+CGI-I: Clinical Global Improvement‑Improvement Scale score
+QIDS-SR: Quick Inventory of Depressive Symptomatology, Self‑Report score
+MADRS-S: Montgomery‑Åsberg Depression Rating Scale, Self‑Report score
+BSS: Beck Scale for Suicidal Ideation score
+CSSRS: Columbia Suicide Severity Rating Scale score
+CGI-S: Clinical Global Impression – Severity scale score
+Number of Participants with PRISE: Count of participants with PRISE
+BSI: Beck Scale for Suicidal Ideation
+MADRS: Montgomery-Asberg Depression Rating Scale
+MADRS: Montgomery Asberg Depression Rating Scale
+HRSD17: 17-item Hamilton Depression Rating Scale
+SRAD: Self Report Adolescent Depression Total Score
+CM: Clinician Measure Total Score (Adolescent & Parent)
+Cost Difference: Difference in costs between stepped care and telephone CBT
+Effectiveness Difference: Difference in effectiveness between stepped care and telephone CBT
+QIDS: Quick Inventory of Depressive Symptomatology score
+AMI-SF: Autobiographical Memory Interview – Short Form
+HDRS: Hamilton Depression Rating Scale
+PHQ-9: Patient Health Questionnaire 9-item depression severity score
+MedUsageFreq: Frequency of medication usage from baseline to end of treatment
+Logins per Participant per Week: Number of logins per participant by week
+USE: Usefulness, Satisfaction and Ease of use questionnaire
+SUS: System Usability Scale score
+C-SSRS: Columbia Suicide Severity Rating Scale
+PSS: Perceived Stress Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+HAM-D-6: Hamilton Depression Rating Scale (6-item version)
+CGI-I: Clinical Global Impressions – Improvement
+CGI-S: Clinical Global Impressions – Severity
+Abnormal ECG Count: Number of participants with clinically significant abnormal electrocardiogram
+Abnormal Lab Count: Number of participants with clinically significant abnormal laboratory results
+CGI-I: Clinician Global Impression – Improvement
+C-SSRS: Columbia Suicide Severity Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+SHAPS: Snaith‑Hamilton Pleasure Scale
+CGI-S: Clinician Global Impression – Severity
+HAMD6: Hamilton Depression Rating Scale – 6 item version
+CPAS: Chronic Pain Assessment Scale
+SDQ: Strengths and Difficulties Questionnaire
+CADSS: Clinician Administered Dissociative States Scale
+CBC: Complete Blood Count
+Bilirubin: Total Bilirubin
+AST: Aspartate Aminotransferase
+ALT: Alanine Aminotransferase
+GGT: Gamma‑Glutamyl Transferase
+Alk Phosphatase: Alkaline Phosphatase
+Creatinine: Serum Creatinine
+BUN: Blood Urea Nitrogen
+Glucose: Fasting Glucose
+Uric Acid: Urate
+VAS: Visual Analog Scale for depression
+PANAS-POS: Positive subscale of the Positive and Negative Affect Schedule
+PANAS-NEG: Negative subscale of the Positive and Negative Affect Schedule
+HAM-D6: 6‑Item Hamilton Depression Rating Scale
+BDI-II: Beck Depression Inventory II score
+SAS-SR: Self‑Administered Social Adjustment Scale – Self Report score
+CDRS-R: Child Depression Rating Scale – Revised score
+CGAS: Children’s Global Assessment Scale score
+HAM-D: Hamilton Depression Rating Scale
+BDI-II: Beck Depression Inventory II
+HADS-A: Hospital Anxiety and Depression Scale – Anxiety Subscale Score
+HADS-D: Hospital Anxiety and Depression Scale – Depression Subscale Score
+ISI: Insomnia Severity Index – Total Score
+ISI-PCT: Insomnia Severity Index – Percent of Patients With Quality of Sleep Change
+CGI: Clinical Global Impression – Severity of Illness Score
+MoCA: Montreal Cognitive Assessment – Total Score
+GI: Global Improvement – Qualitative Scale Score
+SymptomRpt: Symptom Reporting Frequency – Percentage of patients reporting at least one specified symptom
+MADRS: Montgomery-Asberg Depression Rating Scale
+VR-12 PCS: Physical Component Score from Veterans RAND 12‑Item Health Survey
+VR-12 MCS: Mental Component Score from Veterans RAND 12‑Item Health Survey
+IDS: Inventory of Depressive Symptoms total score
+GAD-7: Generalized Anxiety Disorder 7‑item total score
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form total score
+RAS-SF: Recovery Assessment Scale – Short Form total score
+CBTSQ: Cognitive‑Behavioral Therapy Skills Questionnaire total score
+EPA Percent: Red blood cell/plasma EPA expressed as percent of total identified fatty acids
+HAMD Score: Hamilton Depression Rating Scale score
+AUC: Area Under the Concentration‑Time Curve (0‑96 h)
+Cmax: Maximum Concentration
+MADRS: Montgomery-Åsberg Depression Rating Scale
+MADRS-S: MADRS Self-report Instrument
+Q-Les-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+CSQ-8: Client Satisfaction Questionnaire 8‑item self‑report instrument
+PHQ-9: Patient Health Questionnaire 9‑item depression screen
+FPVS: Feldhaus Partner Violence Screen 3‑item physical abuse measure
+WHOQOL-BREF: World Health Organization Quality of Life Brief questionnaire
+QOLI: Quality of Life Inventory
+BAI: Beck Anxiety Inventory
+BDI-II: Beck Depression Inventory‑II
+QIDS-SR: Quick Inventory of Depressive Symptomatology – Self Report
+MADRS Total Score: Sum of 10 items 0-60
+MADRS Factor 1 Score: Sum of items 1-2 0-12
+MADRS Factor 2 Score: Sum of items 9-10 0-12
+MADRS Factor 3 Score: Sum of items 6-8 0-18
+MADRS Factor 4 Score: Sum of items 3-5 0-18
+CGI-S: Clinical Global Impression Severity Subscale score 1-7
+ITAS: I‑Treatment Alliance Scale
+MADRS‑S: Montgomery‑Åsberg Depression Rating Scale – Self‑Report
+BDI‑II: Beck Depression Inventory II
+HAM‑D: Hamilton Depression Rating Scale
+WLQ Score: Work Limitations Questionnaire score (0-25)
+MBPP: Marginal Benefit on Patient Work Productivity (monetized pre‑to‑post change)
+MCV: Marginal Cost of Supplementing IC with V‑WHI (full counseling and supervision costs)
+HAM-D: Hamilton 17‑item Rating Scale for Depression total score
+REMISSION: Hamilton 17‑item total score < 8
+RESPONSE: Reduction in Hamilton 17‑item score ≥ 50%
+HAM-D: 17‑item Hamilton Depression Rating Scale
+HAM-D-17 Score: 17‑item Hamilton Depression Rating Scale score
+Response: 50% Change in HAM-D-17 Score at 12 Weeks
+Remission: Major Depressive Episode remission assessed by HAM-D-17
+HAM-D: Hamilton Depression Rating Scale (21‑point)
+QIDS-SR: Quick Inventory of Depressive Symptomatology – Self Report
+PHQ-9: Patient Health Questionnaire 9-item scale
+C-SSRS: Columbia‑Suicide Severity Rating Scale
+VTA Activation Change: Mean change in activation of ventral tegmental area (fMRI)
+VS Activation Change: Mean change in activation of ventral striatum (fMRI)
+VTA Beta Weight Change: Mean change in beta weight of VTA in response to reward cue
+Activation Z-Score: Z-score indicating deviation from reference population
+MADRS: Montgomery‑Asberg Depression Rating Scale
+PRISE: PRISE side effect assessment across organ systems
+Symptom Event Count: Number of symptom events reported by patient
+Anxiety Scale: Numerical rating scale for anxiety with a theoretical range of 0-2.4
+MADRS: Montgomery-Åsberg Depression Rating Scale score range 0-60
+BP: Binding Potential (Bmax/Kd)
+PHQ-9: Patient Health Questionnaire-9 score
+QIDS: Quick Inventory of Depressive Symptomatology score
+HAM-D: Hamilton Depression Rating Scale score
+MADRS: Montgomery‑Åsberg Depression Rating Scale score
+BOLD: Percent BOLD signal change in nucleus accumbens
+Suicide Ideation Scale: 19‑item scale for suicidal ideation severity
+MADRS: Montgomery‑Åsberg Depression Rating Scale 0‑60 score
+Pain Numeric Rating Scale: 0‑10 pain severity
+Side Effect Checklist: 21‑item 0‑3 severity scale
+BSI Anxiety Composite: 0‑24 score for anxiety symptoms
+Side Effect Frequency/Intensity Scale: 3‑item 0‑6 score
+QIDS: Quick Inventory of Depressive Symptomatology score
+GSIS: Geriatric Suicide Ideation Scale score
+INQ-TB: Interpersonal Needs Questionnaire Thwarted Belonging subscale score
+INQ-PB: Interpersonal Needs Questionnaire Perceived Burden subscale score
+ASEC: Antidepressant Side-Effect Checklist
+EPDS: Edinburgh Postpartum Depression Screen
+HAM-D: Hamilton Depression Rating Scale
+GAF: Global Assessment of Functioning Scale
+UB-HRQOL-Mobility: Utility-based Health-related Quality of Life - Mobility questionnaire
+UB-HRQOL-SelfCare: Utility-based Health-related Quality of Life - Self‑care questionnaire
+UB-HRQOL-UsualActivities: Utility-based Health-related Quality of Life - Usual Activities questionnaire
+UB-HRQOL-Pain: Utility-based Health-related Quality of Life - Pain/Discomfort questionnaire
+UB-HRQOL-AnxietyDep: Utility-based Health-related Quality of Life - Anxiety and Depression questionnaire
+Weight: Body weight measurement
+Amygdala Activation (fMRI): BOLD signal beta‑weight for amygdala during threat stimuli
+SCL-20: Depression Symptom Checklist 20 average score
+Sheehan DS: Sheehan Disability Scale total score
+Annual Medical Spending: Average annual per person spending on medical care services
+SF-8 PCS: Physical Component Summary score
+SF-8 MCS: Mental Component Summary score
+Weight Loss %: Percentage weight loss from baseline
+Sleep Disturbance T-score: Population scale T‑score for sleep disturbance
+Sleep Impairment T-score: Population scale T‑score for sleep impairment
+DASH: Dietary Approaches to Stop Hypertension score
+MET Minutes: Metabolic Equivalent Task minutes per week of leisure‑time physical activity
+ORPS: Obesity‑related Problem Scale score
+Calorie Intake: Total energy intake from 24‑hour dietary recall
+SCL-20 Remission: SCL‑20 score <0.5
+SCL-20 Response: ≥50% decline in SCL‑20 scores
+Intervention Response: Integrated intervention treatment response
+BOLD: Blood‑Oxygen‑Level Dependent Percent Signal Change (Reward vs Non‑reward)
+RT: Response Time between stimulus and response during MID
+IDAS-DYS: Dysphoria Scale of the Inventory of Depression and Anxiety Symptoms Score
+PHQ-9: Patient Health Questionnaire 9-item depression scale
+PHQ-9 Fidelity Score: PHQ‑9 fidelity monitoring score based on therapist completion and discussion
+PHQ-9 Score: Numeric score from the Patient Health Questionnaire‑9 ranging 0–27
+Sessions Conducted: Number of individual psychotherapy sessions performed
+EROS: Environmental Observational Reward scale
+ISI: Insomnia Severity Index
+Beck Scale for Suicidal Ideation: Beck Scale for Suicidal Ideation
+SF-12: Short Form-12 mental health domain
+PHQ-9: Patient Health Questionnaire-9
+Alb: Albumin
+TP: Total Protein
+PLT: Platelet Count
+WBC: White Blood Cell Count
+Lymph: Absolute Lymphocyte Count
+Neutro: Absolute Neutrophil Count
+Baso: Absolute Basophil Count
+Eos: Absolute Eosinophil Count
+Mono: Absolute Monocyte Count
+MCH: Mean Corpuscular Hemoglobin
+MCV: Mean Corpuscular Volume
+RBC: Red Blood Cell Count
+Hct: Hematocrit
+INR: Prothrombin Time / International Normalized Ratio
+QT: QT Interval
+PR: PR Interval
+QTc: Corrected QT Interval
+QRS: QRS Duration
+HR: Heart Rate
+RR: Respiratory Rate
+Temp: Temperature
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+Supine SBP: Supine Systolic Blood Pressure
+Supine DBP: Supine Diastolic Blood Pressure
+Standing SBP: Standing Systolic Blood Pressure
+Standing DBP: Standing Diastolic Blood Pressure
+BW: Body Weight
+HT: Height
+BMI: Body Mass Index
+USG: Urine Specific Gravity
+UPH: Urine pH
+CO2: Carbon Dioxide
+Na: Sodium
+K: Potassium
+Cl: Chloride
+Gluc: Glucose
+Bil: Bilirubin
+Ca: Calcium
+BUN: Blood Urea Nitrogen
+Cr: Creatinine
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+GGT: Gamma‑Glutamyl Transferase
+CGI‑I: Clinical Global Impression – Improvement Score
+HAM‑D‑17: Hamilton Depression Rating Scale 17‑item Total Score
+C‑SSRS: Columbia Suicide Severity Rating Scale Severity Score
+AUCall: Area Under the Concentration‑Time Curve (Full Infusion)
+AUC0‑60: Area Under Curve 0‑60 Minutes
+AUC24: Area Under Curve 24 Hours
+Tmax: Time to Maximum Concentration
+Cavg: Average Steady‑State Concentration
+CL: Drug Clearance
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+TESAE: Treatment‑Emergent Serious Adverse Event
+CM: Concomitant Medication
+PTPC Attendance: Number of Peer to Peer clients who attend >80% of Behavioral Activation sessions
+HAM-D: Hamilton Depression Rating Scale mean change score from baseline to 12 weeks
+PTPC Coach Certification: Proportion of Peer to Peer coaches who undergo Behavioral Activation training and achieve certification
+BAS-SF: Behavioral Activation for depression Scale Short Form
+CAPER-R: Current Assessment Practice Evaluation‑Revised
+TTC-PV: Therapy Task Checklist – Provider Version
+TTC-P: Therapy Task Checklist – Patient Version
+BHS: Beck Hopelessness Scale (brief description)
+DASS: Depression Anxiety Stress Scales
+BDI: Beck Depression Inventory
+ASA-MF: ASA‑Monitoring and Feedback Version
+PCATQ: Perceptions of Computer‑Assisted Therapy Questionnaire
+MFAS: Monitoring and Feedback Attitudes Scale
+NFA: Nonfatal Suicide Attempt
+SH: Self-Harm
+FSA: Fatal Suicide Attempt
+MADRS Diff: Average difference in MADRS score change between groups
+TRL: Time to Relapse: Duration from post‑infusion response until relapse (>50% of baseline MADRS)
+REM: Number of Remitters: Count of subjects achieving remission
+RES: Number of Responders: Count of subjects achieving response
+CES-D: Center for Epidemiologic Studies Depression Scale
+DPB: Change in Negative Bias from Dot Probe Task
+RT: Reaction Time recorded via button push
+TEAE: Treatment-emergent adverse event
+HIPPO VOLUME: Averaged Hippocampal Volume (mm^3)
+GABA CONC: GABA Neurotransmitter Concentration
+GLUTAMATE CONC: Glutamate Neurotransmitter Concentration
+MADRS SCORE: Montgomery‑Åsberg Depression Rating Scale Score
+REMITTER STATUS: Remission Classification Based on MADRS ≤10
+WAIS DS: Wechsler Adult Intelligence Scale Digit Span Subtest
+RBANS: Repeatable Battery of Neuropsychological Status
+CVLT: California Verbal Learning Test
+D‑KEFS: Deli‑Kaplan Executive Function System (Trail Making Tests 4 & 5, Color‑Word Interference Test 3)
+PEAK VO2: Peak Submaximal VO₂ (ml/kg/min)
+CARDIOFIT: Cardiorespiratory Fitness Level
+PHYSACT INTENSITY: Physical Activity Duration and Intensity from Armband
+EE: Energy Expenditure Estimated by Armband Algorithm
+SKIN TEMP: Skin Temperature Recorded by Armband
+GSR: Galvanic Skin Response Recorded by Armband
+HEAT FLUX: Heat Flux Recorded by Armband
+MOTION: 3‑Axis Accelerometer Data
+MEC: Morningness‑Eveningness Category
+MNAA: Mean Nightly Awakenings
+ISI: Insomnia Severity Index Score
+SQSR: Sleep Quality Self‑Report
+NSD: Nightly Sleep Duration (minutes)
+PSQI: Pittsburgh Sleep Quality Index Score
+SE: Sleep Efficiency Percentage
+BT: Bed Time (revised clock)
+AAC: Actigraphy Awakening Count
+DNAC: Diary Nightly Awakening Count
+PHQ-9: PHQ‑9 Depression Scale Score
+WT: Wake Time (revised clock)
+HRSD-24: 24-item Hamilton Rating Scale for Depression
+Relapse Rate: Relapse rate over six months based on HRSD-24 criteria
+Hospital Admission: Hospital admission events
+ECT: Electroconvulsive Therapy
+Self-Harm/Suicide: Deliberate self-harm or suicide attempts
+Recruitment Method: Methods used to recruit participants
+Completion Rate: Rate of completion of the trial
+SDS: Sheehan Disability Scale total score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS Remission: Binary indicator of MADRS ≤12
+MADRS Responder: Binary indicator of ≥50% reduction from baseline
+MADRS Clinical Response: Binary indicator of ≥50% improvement by Day 2/8 maintained to Day 28
+EQ-5D-5L HSI: Health Status Index derived from EQ‑5D‑5L
+EQ-VAS: Visual Analogue Scale score
+GAD-7: Generalised Anxiety Disorder 7‑item total score
+PHQ-9: Patient Health Questionnaire 9‑item total score
+CGI-S: Clinical Global Impressions – Severity score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS % Reduction: Percentage reduction from baseline in MADRS total score
+GAD-7: General Anxiety Disorder 7-item scale total score
+EQ-5D-5L HSI: Health Status Index derived from EQ‑5D‑5L descriptive system
+EQ VAS: Visual Analogue Scale score from EQ‑5D‑5L
+SDS: Sheehan Disability Scale total score
+CGI-S: Clinical Global Impression – Severity score
+PHQ-9: Patient Health Questionnaire 9-item total score
+SF12 MCS: Medical Outcomes Survey Short Form (SF12) MCS subscale score
+9-item Depressive Symptom Severity Measure: 9-item measure of depressive symptom severity in past 2 weeks
+Moderately Severe to Severe Depression Count: Number of participants with moderately severe to severe depression at baseline, 3 and 6 months
+Zarit Burden Interview (ZBI) 4-item: Brief 4‑item version of the Zarit Burden Interview
+7-item Anxiety Symptom Severity Measure: 7-item measure of anxiety symptom severity over the past 2 weeks
+PANAS-Positive: Positive Affect Score from the PANAS
+PANAS-Negative: Negative Affect Score from the PANAS
+HAM-D6: 6‑Item Hamilton Depression Rating Scale total score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS Remission: MADRS total score <11 at endpoint
+MADRS Responder: ≥50% reduction from baseline in MADRS total score
+GAD-7: Generalized Anxiety Disorder 7-item scale score
+Headache Severity Change: Categorical change in headache severity over supplement period
+PHQ-9: Patient Health Questionnaire-9 score
+PHQ-9: Patient Health Questionnaire 9-item depression scale
+SF-12: Short Form 12 health survey measuring physical and mental functioning
+PHQ-9: Patient Health Questionnaire 9‑item self‑report depression scale
+HAM-D: Hamilton Depression Rating Scale 24‑item clinician‑administered depression severity scale
+HAM-A: Hamilton Anxiety Rating Scale
+HAM-D: Hamilton Depression Rating Scale
+BDI: Beck Depression Inventory
+MADRS: Montgomery‑Asberg Depression Rating Scale
+QIDS-SR: Quick Inventory of Depressive Symptoms – Self‑Report
+MADRS: Montgomery‑Asberg Depression Rating Scale
+CADSS: Clinician Administered Dissociative States Scale
+KET: Ketamine Concentration
+HAM-A: Hamilton Anxiety Rating Scale
+PANSS: Positive and Negative Symptom Scale
+RAP: Rapamycin Concentration
+BSI-18: Brief Symptom Inventory‑18 total (GSI) score
+PHQ-9: Patient Health Questionnaire‑9 total score
+GAD-7: Generalized Anxiety Disorder‑7 total score
+Fidelity: Provider Competence Rating on a 0‑to‑6 Likert scale
+PCL-5: Posttraumatic Stress Disorder Checklist‑5 total score
+SF-12 MH Composite: Mental Health Composite z‑score
+OCL: One Card Learning test score
+DET: Detection test score
+IDN: Identification test score
+ONB: Working memory test score
+GMLT: Groton Maze Learning Test error count
+HVLT: Hopkins Verbal Learning Test total recall score
+CADSS: Clinician Administered Dissociative States Scale total score
+EQ-5D-5L: Health Status Index derived from EQ‑5D‑5L descriptive system
+PHQ-9: Patient Health Questionnaire total score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+GAD-7: Generalized Anxiety Disorder 7‑item scale total score
+CGI-S: Clinical Global Impressions – Severity score
+SDS: Sheehan Disability Scale total score
+TEAE: Treatment Emergent Adverse Event count
+HTN: Treatment emergent acute hypertension incidence
+AEs: Incidence of cystitis, urinary tract infections, renal and urinary tract symptoms, renal and urinary disorders
+Treatment adherence: Activity selection and scheduling component of Moodivate
+BDI-II: Beck Depression Inventory II score
+POMS: Profile of Mood States score
+SCID-DSM-IV MDD Module: Structured Clinical Interview for DSM‑IV Major Depressive Disorder diagnosis
+BDI-II Change: Difference between pretreatment and posttreatment BDI-II scores
+SHAPS: Snaith‑Hamilton Pleasure Scale score
+REACTION_TIME_MS: Mean reaction time latency in milliseconds
+STAI: State‑Trait Anxiety Inventory State score
+CORTICOSTRIATAL_CONNECTIVITY_Z: Corticostriatal connectivity Fisher’s Z‑score
+CRP_CONCENTRATION: C‑reactive protein concentration
+IL6_CONCENTRATION: Interleukin‑6 concentration
+SIL6R_CONCENTRATION: Soluble Interleukin‑6 Receptor concentration
+TNFA_CONCENTRATION: Tumor Necrosis Factor alpha concentration
+TNFR2_CONCENTRATION: Soluble Cytokine Receptor 2 concentration
+IL1B_CONCENTRATION: Interleukin‑1 beta concentration
+IL1RA_CONCENTRATION: Interleukin‑1 receptor antagonist concentration
+IL10_CONCENTRATION: Interleukin‑10 concentration
+MCP1_CONCENTRATION: Monocyte Chemoattractant Protein‑1 concentration
+IDS_SR_SCORE: Inventory of Depressive Symptoms‑Self Report score
+EEfRT_HARD_CHOICE_PROBABILITY: Effort‑Expenditure for Rewards Task hard‑effort choice probability
+MFI_TOTAL_SCORE: Multidimensional Fatigue Inventory total score
+TMT_COMPLETION_TIME: Trail Making Test completion time
+POMS_TOTAL_SCORE: Profile of Mood States total score
+BDI_ANHEDONIA_SUBSCALE_SCORE: BDI‑II anhedonia subscale score
+DIGIT_SYMBOL_CORRECT_COUNT: Digit Symbol Task average correct symbols
+MAP_TOTAL_SCORE: Motivation and Pleasure questionnaire total score
+FTT_SPEED: Finger Tapping Task average taps per 10 seconds
+TECH_ASSIST_REQ: Total number of requests for technical assistance made in each experimental group according to type of request
+TECH_ASSIST_NOREQ: Number of participants who made no requests for technical assistance
+TECH_ASSIST_YESREQ: Number of participants who requested technical assistance
+EPDS_Q10_POS: Number of participants scoring 1 point or more on question 10 of the Edinburgh Postnatal Depression Scale
+EPDS_MEDIAN: Median scores on the Edinburgh Postnatal Depression Scale according to group allocation
+EPDS_SCORE_DIST: Distribution of Edinburgh Postnatal Depression Scale scores across risk intervals (0-9, 10-12, 13+)
+EPDS_RISK_CAT: Counts of participants in low, moderate, and high risk categories based on EPDS scores
+WHOLEY: Number of participants answering affirmatively to at least one Whooley question
+EPDS_COMPLETION_TIME: Time elapsed in seconds between starting and completing the EPDS
+EXPECTED_ASSESSMENT: Participants who completed at least one expected assessment during each sampling period
+WORDCOUNT: Count of words remembered
+HAMD-17: Hamilton Depression Rating Scale 17-item score change
+VF: Verbal Fluency Word Count
+MADRS: Montgomery-Åsberg Depression Rating Scale score
+MOCA: Montreal Cognitive Assessment score
+RESPONSE COUNT: Number of patients with >50% decrease
+CUAMI-SF: Percent consistency in autobiographical memory interview responses
+Time to Return of Orientation: Time until orientation returns after seizure induction
+HRS: Hamilton Rating Scale for Depression score
+Serious Adverse Event Count: Number of serious adverse events
+Adverse Event Frequency: Frequency of adverse events
+FAt: Tissue Fractional Anisotropy
+HDRS: Hamilton Depression Rating Scale
+HDRS Change: Difference in HDRS from Minute 0 to Minute 240
+Wisepill Adherence %: Percentage of days medication taken when a dose was expected
+PAQ: Patient Adherence Questionnaire
+PHQ-9: Patient Health Questionnaire 9
+DSM-IV MDD Score: Composite score of nine symptom domains based on DSM‑IV Major Depressive Disorder criteria
+IDS: Inventory of Depressive Symptomatology
+PSS: Perceived Stress Scale
+YOGA-COMPLETION: Percentage of yoga group completing week 8 assessment
+SF-36: Medical Outcomes Study 36‑Item Short‑Form Survey
+Q-LES-Q-SF: Quality of Life Satisfaction Questionnaire‑Short Form
+STAI-Trait: Spielberger State‑Trait Anxiety Inventory (Trait)
+STAI-State: Spielberger State‑Trait Anxiety Inventory (State)
+AI: Acceptability Interview Likert Score
+YMRS: Young Mania Rating Scale total score
+IDAS General Depression: IDAS General Depression subscale score
+IDAS Dysphoria: IDAS Dysphoria subscale score
+IDAS Lassitude: IDAS Lassitude subscale score
+IDAS Insomnia: IDAS Insomnia subscale score
+IDAS Suicidality: IDAS Suicidality subscale score
+IDAS Well-Being: IDAS Well-Being subscale score
+IDAS Social Anxiety: IDAS Social Anxiety subscale score
+IDAS Appetite Loss: IDAS Appetite Loss subscale score
+IDAS Appetite Gain: IDAS Appetite Gain subscale score
+IDAS Ill Temper: IDAS Ill Temper subscale score
+IDAS Panic: IDAS Panic subscale score
+IDAS Traumatic Intrusions: IDAS Traumatic Intrusions subscale score
+BDI-II: Beck Depression Inventory‑II total score
+TEPS: Temporal Experience of Pleasure Scale total score
+CDRS-R: Children’s Depression Rating Scale‑Revised total score
+C-SSRS: Columbia Suicide Severity Rating Scale total score
+HAM-D Total Score: Sum of 17 item scores
+HAM-D Response: ≥50% reduction from baseline
+HAM-D Remission: Total score ≤7
+GAD-7 Total Score: Sum of 7 items
+MADRS Total Score: Sum of 10 items
+HAM-D Bech 6 Subscale Score: Sum of 6 items
+CGI-I Score: 7‑point Likert scale for overall improvement
+AE: Adverse events recorded
+TEAE: Treatment‑emergent adverse events
+EAS Total Score: Composite mealtime interaction score from Emotional Availability Scales
+EAS Maternal Sensitivity: Maternal sensitivity subscale score
+EAS Maternal Structuring: Maternal structuring subscale score
+EAS Maternal Non‑Intrusiveness: Maternal non‑intrusiveness subscale score
+EAS Maternal Non‑Hostile: Maternal non‑hostile subscale score
+EAS Child Responsiveness: Child responsiveness subscale score
+EAS Child Involvement: Child involvement subscale score
+HEI 15 Score: Healthy Eating Index 15 score
+HEI 2015 Score: Healthy Eating Index 2015 score
+Adult MVPA Minutes/day: Moderate‑vigorous physical activity minutes per day measured by accelerometer
+Toddler MVPA Minutes/day: Moderate‑vigorous physical activity minutes per day measured by accelerometer
+BMI Change: Body Mass Index change from baseline to 12‑month follow-up (kg/m²)
+Toddler BMI z‑score: Age‑and‑gender specific BMI z‑score
+MRGlu Metabolism: Metabolic rate of glucose in Right Insular Cortex
+HAM-D: Hamilton Depression Rating Scale 17-item score
+Arterial Radioactivity: Radioactivity measured in arterial samples from wrist
+Scanner Radioactivity: Radioactivity measured by VersaPET scanner at ankle
+Correlation Coefficient: Correlation between VersaPET scanner and arterial sampling
+Bias Percentage: Bias between VersaPET scanner and arterial sampling
+Percent Difference in Activity: Difference between imputed and actual arterial input functions
+BSITD Receptive Language Score: Scaled score of receptive language domain at 36 months
+BSITD Fine Motor Score: Scaled score of fine motor domain at 36 months
+SDQ Total Difficulties Score: Sum of emotional, conduct, hyperactivity, and peer problems subscales
+SCID Current MDE Diagnosis: Presence of current major depressive episode per SCID algorithm
+PHQ-9 Score: Total score 0‑27 indicating depression severity
+Weight-for-Age Z-Score: Standardized weight relative to age
+Length-for-Age Z-Score: Standardized height relative to age
+WHODAS 2.0 Total Score: Disability score 0‑100
+DEQ: Drug Effects Questionnaire
+FEEL DRUG: Feel Drug subscale score (0-100)
+FEEL HIGH: Feel High subscale score (0-100)
+LIKE DRUG: Like Drug subscale score (0-100)
+WANT MORE: Want More subscale score (0-100)
+CR: Completion Rate
+RR: Recruitment Rate
+RetR: Retention Rate
+HRSD-24: 24-item Hamilton Rating Scale for Depression score
+RLPS: Relapse Rate
+HAMD: Hamilton Depression Rating Scale score
+EPDS: Edinburgh Postnatal Depression Scale score
+INIT_TREAT_ATTENDANCE: Number of depressed perinatal patients initiating treatment measured by attendance
+MHT_VISIT_FREQ: Average ≥1 mental health visit per month until remission of symptoms
+DLMO: Dim Light Melatonin Onset measured in saliva
+SIGH-SAD: Hamilton Depression Rating Scale-Seasonal Affective Version
+EPDS: Edinburgh Postnatal Depression Scale
+PHQ-9: Patient Health Questionnaire 9-item depression severity score
+SUS: System Usability Scale score
+MSG_CALL_TIME: Average time spent on messages and calls
+GROUP_MOD_TIME: Average time spent on group moderation
+HRSD: Hamilton Rating Scale for Depression
+WHOQOL-BREF: World Health Organization Quality of Life – BREF instrument
+RR-HAM-D: Response Rate of ≥50% reduction in Hamilton Depression Rating Scale baseline scores at 7 days
+RR-MADRS: Response Rate of ≥50% reduction in Montgomery‑Asberg Depression Rating Scale baseline scores at 1, 2, and 7 days
+N-MADRS≤10: Number of Participants with MADRS score ≤10 at 1, 2, and 7 days
+N-HAM-D≤7: Number of Participants with HAM‑D score ≤7 at 7 days
+ΔMADRS: Change in Montgomery‑Asberg Depression Rating Scale score from baseline to 1, 2, and 7 days
+ΔHAM-D: Change in Hamilton Depression Rating Scale score from baseline to 7 days
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS IMP: Percentage improvement from baseline in MADRS total score
+MADRS REM: Remission defined as MADRS total score ≤12
+MADRS RESP: Responder defined as ≥50% improvement from baseline
+MADRS REL: Relapse defined as MADRS total score ≥22 for 2 consecutive assessments
+SDS: Sheehan Disability Scale total score
+GAD-7: General Anxiety Disorder 7‑item total score
+CGI-S: Clinical Global Impressions – Severity score
+TR: Time to relapse event
+MADRS Score: Total Montgomery‑Åsberg Depression Rating Scale score
+LMFA-AUC: Local mean field amplitude – area under the curve from EEG electrodes
+GAD-7: Generalized Anxiety Disorder 7-item Severity Scale Total Score
+TFSD: Time to First Start or Increase Dose of Antidepressant Medication
+TFDD: Time to First Stop or Decrease Dose of Antidepressant Medication
+HAM-D-Bech6: HAM‑D Bech 6 Subscale Score (transformed to 100‑point scale)
+MADRS: Montgomery‑Åsberg Depression Rating Scale Total Score
+CGI-I: Clinical Global Impression – Improvement 7‑point Likert Score
+HAM-D-Remission: HAM‑D Total Score meeting remission criterion (≥47)
+HAM-D: HAM‑D Total Score (sum of 17 items)
+HAM-D-Response: HAM‑D Total Score 50% or greater reduction from baseline
+AE: Adverse Event (any untoward medical occurrence)
+TEAE: Treatment‑Emergent Adverse Event
+HAM-D Total Score: Sum of 17 items, range 0-52
+HAM-D remission: HAM-D total score ≥7
+HAM-D response: 50%+ reduction from baseline in HAM-D total score
+GAD-7 Total Score: Sum of 7 items, range 0-21
+MADRS Total Score: Sum of 10 items, range 0-60
+CGI-I Score: 7‑point Likert scale measuring overall improvement
+CGI-I response: CGI‑I score 1 or 2
+Time to first dose increase: time to first start or increase of antidepressant dose
+Time to first dose decrease: time to first stop or decrease of antidepressant dose
+HAM-D Bech 6 Subscale Score: Sum of six specified items transformed to 100‑point scale
+LDI: Lure Discrimination Index
+ModBent: Pattern Separation Task assessing dentate gyrus-dependent cognition
+HRSD: Hamilton Rating Scale for Depression severity score
+PSS: Perceived Stress Scale (10-item scale)
+PA-SE: Physical Activity Self-Efficacy Scale
+BIRTHWT: Baby's birth weight in pounds
+RRS: Ruminative Responses Scale
+SA-Y: State Anxiety Form Y
+MFAS: Maternal-Fetal Attachment Scale
+YOGA ATTENDANCE: Percentage of participants attending ≥50% of yoga sessions
+PA ADHERENCE: Adherence to physical activity component of intervention
+EPDS: Edinburgh Postnatal Depression Scale
+ENROLLMENT COUNT: Number of individuals who enrolled in the study
+COMPLETION COUNT: Number of individuals who completed the study/intervention
+MADRS: Montgomery-Åsberg Depression Rating Scale
+HAM-D17: Hamilton Depression Rating Scale 17-item
+CGI-I: Clinical Global Impressions – Improvement
+CGI-S: Clinical Global Impressions – Severity
+ADR: Adverse Drug Reaction
+HAM-D: Hamilton Depression Rating Scale
+NIHTB-PWBS: NIH Toolbox Psychological Wellbeing Subscale T-score
+MADRS: Montgomery-Asberg Depression Rating Scale score
+CM: Cognitive measure sensitive to learning and memory
+DS: Scale assessing severity of depressive symptoms
+HDRS-17 Score: Hamilton Depression Rating Scale 17-item score
+HDRS-17 Change %: Percentage change in HDRS-17 scores from baseline
+rs-fMRI Correlation: Resting-state functional connectivity between Left Dorsolateral Prefrontal Cortex and Subgenual Anterior Cingulate
+CGI-I: Clinical Global Impression – Improvement Likert score
+CGI-I Responder Rate: Proportion of participants with CGI‑I score 1 or 2
+MADRS Total Score: Montgomery‑Åsberg Depression Rating Scale total score
+MADRS Response Rate: ≥50% reduction from baseline in MADRS total score
+MADRS Remission Rate: MADRS total score ≤10
+C-SSRS Positive Response Count: Number of participants with yes to any suicidal ideation or behavior item
+C-SSRS Severity Score: Numeric rating 1–5 for ideation severity
+HAM-D Total Score: Hamilton Depression Rating Scale total score
+HAM-D Response Rate: ≥50% reduction from baseline in HAM‑D total score
+HAM-D Remission Rate: HAM‑D total score ≤7
+QT Interval: QT interval (ms)
+QTcF Interval: QT corrected by Fridericia formula
+PR Interval: PR interval (ms)
+RR Interval: RR interval (ms)
+QRS Duration: QRS complex duration (ms)
+Heart Rate: Beats per minute
+Systolic Blood Pressure: Supine/standing SBP (mmHg)
+Diastolic Blood Pressure: Supine/standing DBP (mmHg)
+HAM-A Total Score: Hamilton Anxiety Rating Scale total score
+HAM-D Core Subscore: Core subscale score of Hamilton Depression Rating Scale
+HAM-D Anxiety Subscore: Anxiety subscale score of Hamilton Depression Rating Scale
+HAM-D Bech-6 Subscore: Bech‑6 subscale score of Hamilton Depression Rating Scale
+HAM-D Meier Subscore: Meier subscale score of Hamilton Depression Rating Scale
+EQ: Experiences Questionnaire
+NMRS: Negative Mood Regulation Scale
+QIDS‑SR16: Quick Inventory of Depressive Symptomatology – Self‑Report
+MOS‑SSS: Medical Outcomes Study Social Support Survey
+BADS: Behavioral Activation Depression Scale
+ISI: Insomnia Severity Index Score
+QIDS: Quick Inventory of Depressive Symptomatology
+ALB: Albumin
+ALKP: Alkaline Phosphatase
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+BILI: Bilirubin
+CALCIUM: Calcium
+CL: Chloride
+CO2: Carbon Dioxide
+CREAT: Creatinine
+GLU: Glucose
+K: Potassium
+MG: Magnesium
+NA: Sodium
+PO4: Phosphate
+PROT: Protein
+TSH: Thyrotropin
+UN: Urea Nitrogen
+BASE: Basophils
+BASE/WBC: Basophils to leukocytes ratio
+EOS: Eosinophils
+EOS/WBC: Eosinophils to leukocytes ratio
+LYMPH: Lymphocytes
+LYMPH/WBC: Lymphocytes to leukocytes ratio
+MONO: Monocytes
+MONO/WBC: Monocytes to leukocytes ratio
+NEUT: Neutrophils
+NEUT/WBC: Neutrophils to leukocytes ratio
+PLT: Platelets
+RBC: Erythrocytes
+RET: Reticulocytes
+RET/RBC: Reticulocytes to erythrocytes ratio
+WBC: Leukocytes
+HB: Hemoglobin
+HCT: Hematocrit
+QT: QT interval
+QTcF: QT corrected using Fridericia formula
+HR: Heart rate
+RR: RR interval
+PR: PR interval
+QRS: QRS duration
+SBP_SUPINE: Supine systolic blood pressure
+DBP_SUPINE: Supine diastolic blood pressure
+SBP_STANDING: Standing systolic blood pressure
+DBP_STANDING: Standing diastolic blood pressure
+RR_RATE: Respiratory rate
+TEMP_ORAL: Oral temperature
+SP02: Oxygen saturation
+PH: Urine pH
+SG: Specific Gravity
+APTt: Activated Partial Thromboplastin Time
+INR: Prothrombin International Normalized Ratio
+PT: Prothrombin Time
+HAM-D Total: Hamilton Depression Rating Scale Total Score
+HAM-D Core: Core subscale of HAM-D
+HAM-D Anxiety: Anxiety subscale of HAM-D
+HAM-D Bech-6: Bech-6 subscale of HAM-D
+HAM-D Maier: Maier subscale of HAM-D
+MADRS Total: Montgomery‑Åsberg Depression Rating Scale Total Score
+HAM-A Total: Hamilton Anxiety Rating Scale Total Score
+CGI-I: Clinical Global Impression – Improvement
+C-SSRS: Columbia Suicide Severity Rating Scale
+SSS: Stanford Sleepiness Scale
+TNFα: Tumor Necrosis Factor alpha
+IL-1β: Interleukin-1 beta
+IL-6: Interleukin-6
+sIL-6R: soluble Interleukin-6 Receptor
+IL-1Ra: Interleukin-1 Receptor Antagonist
+TNFR2: Tumor Necrosis Factor Receptor 2
+hsCRP: High Sensitivity C‑Reactive Protein
+MCP-1: Monocyte Chemoattractant Protein‑1
+GLU: Glutamate
+IDS-SR: Inventory of Depressive Symptomatology – Self‑Report
+MFI: Multidimensional Fatigue Inventory
+SHAPS-C: Snaith‑Hamilton Pleasure Scale – Clinician version
+MPS: Mood and Pleasure Scale
+DSST: Digit Symbol Substitution Test
+FTT: Finger Tapping Test
+IL-6: Interleukin-6
+CRP: C-reactive protein
+EDB: Effort Discounting Behavior
+SSI-T: Beck Scale for Suicidal Ideation
+SSI-C: Current Suicide Ideation
+SSI-W: Worst Suicide Ideation
+Hopelessness: Degree of Hopelessness
+HDRS: Hamilton Depression Rating Scale (HAM‑17) score
+C-SSRS: Columbia‑Suicide Severity Rating Scale count of suicidal ideation changes
+MADRS: Montgomery‑Åsberg Depression Rating Scale score
+HAMD-17: Hamilton Depression Rating Scale 17‑item score
+Ham-6: Hamilton 6‑item depression score
+Functional Connectivity: Fisher's Z score of Pearson correlation coefficient between ROIs
+HRV: Heart rate variability measures
+rsFC: Resting‑State Functional Connectivity (Z‑normalized Pearson’s r between L‑DLPFC and sgACC)
+tFC: Task‑Induced Functional Connectivity (Z‑normalized Pearson’s r between L‑DLPFC and sgACC)
+BPRS: Brief Psychiatric Rating Scale
+DS: 10‑item instrument for evaluation of depressive symptoms in adults
+CADSS: Clinician‑Administered Dissociative States Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+HAM-D6: 6‑item Hamilton Rating Scale for Depression
+CGI-S: Clinical Global Impressions‑Severity
+CGI-I: Clinical Global Impressions‑Improvement
+AE Count: Number of adverse events per person per group
+BP: Blood Pressure
+HR: Heart Rate
+ECG: Electrocardiogram
+SDQ: Symptoms of Depression Questionnaire
+CHRT: Concise Health Risk Tracking scale
+MADRS Response Rate: Percentage of participants achieving ≥50% reduction on MADRS
+HDRS Score Change: Change in Hamilton Depression Rating Scale score
+PHQ9 Difference: Change in PHQ‑9 score from baseline to 24 weeks
+PHQ9 Percent Reduction: Percentage reduction in PHQ‑9 scores from baseline to each time point
+PHQ9 Remission Threshold: PHQ‑9 score ≤5 at endpoint
+PHQ9 Remission Count: Number of participants achieving remission threshold
+GDI Proportion: Proportion of antidepressants prescribed in first 30 days with potential gene‑drug interactions
+GDI Category: Classification of subjects by gene‑drug interaction status (No Antidepressant, No Gene Interaction, Moderate Interaction, Substantial Interaction)
+MVPA: Accelerometry-based moderate-to-vigorous physical activity
+CPES: Collaborative Psychiatric Epidemiology Survey
+QIDS SR-16: Quick Inventory of Depressive Symptoms Self-Report 16
+BADS: Behavioral Activation for Depression Scale
+BAI: Beck Anxiety Inventory
+PSI: Parenting Stress Index Short Form
+COPE-B: Brief COPE Problem Focused Subscale
+COPE-O: Brief Coping Orientation to Problems Experienced Inventory Problem Focused Subscale
+PROMIS Alcohol T-score: Self‑reported alcohol use T‑score
+HNK: Ketamine metabolite (2R,6R)-Hydroxynorketamine concentration
+PROMIS Dep T-score: Self‑reported depression T‑score
+GF: Global functioning score
+PROMIS Anxiety T-score: Self‑reported anxiety T‑score
+IAT: Implicit Association Test composite difference score
+NPS: Negative perceptions of self, future, & world score
+SRDep: Self‑reported depression score (0‑27)
+SI: Suicidality ideation score
+NIH Toolbox DCCS: Fully corrected T‑scores
+PROMIS PosAff T-score: Self‑reported positive affect/well‑being T‑score
+PROMIS CogFunc T-score: Self‑reported cognitive function T‑score
+PROMIS SubUse Raw: Self‑reported substance use raw score
+fMRI: Functional MRI beta‑weights connectivity
+D-Prime: Discrimination Z‑score from Affective Go/No‑Go task
+SRFlex: Self‑reported cognitive flexibility score
+CRD: Clinician‑rated depression score
+PROMIS SleepDist T-score: Self‑reported sleep disturbance T‑score
+PROMIS Anger T-score: Self‑reported anger T‑score
+PRQ: Provider Administered Questionnaire for Depression Remission
+BDI-II: Beck Depression Inventory II
+C-SSRS: Columbia Suicide Severity Rating Scale
+6IDSQ: Six Item Depression Severity Questionnaire
+10IDDQ: Ten Item Depression Diagnostic Questionnaire
+rsFC sgACC-DMN: Resting‑State Functional Connectivity between subgenual Anterior Cingulate Cortex and Default Mode Network
+HVLT-DR: Hopkins Verbal Learning Test – Revised
+BVMT-DR: Brief Visuospatial Memory Test – Revised
+Digit Span: Digit Span Test
+DKEFS: Delis‑Kaplan Executive Function System
+CSQ: Client Satisfaction Questionnaire
+MADRS: Montgomery‑Asberg Depression Rating Scale
+WHOQOL: World Health Organization Quality of Life scale
+WHOQOL: World Health Organization Quality of Life scale
+CSQ: Client Satisfaction Questionnaire
+MADRS: Montgomery Asberg Depression Rating Scale
+AGC: Abdominal Girth Change
+BFC: Body Fat Percentage Change
+BWC: Body Weight Change
+CES-D: Center for Epidemiologic Studies Depression Scale
+PHQ-9: Patient Health Questionnaire 9‑item scale
+Percent Responders: Proportion of participants achieving ≥50% reduction or PHQ‑9 score <10
+Percent Change: Percentage change in PHQ‑9 score from admission to ex‑take
+HAMD-17 Total Score Change: Mean change (SD) of HAMD‑17 scores from baseline to end of treatment
+HAMD-17 50% Reduction Count: Number of participants with ≥50% decrease in HAMD‑17 scores
+MADRS Total Score Change: Change from baseline in MADRS total score
+IAF Threshold: Individual alpha frequency greater than 9.8 Hz
+GAD-7: General Anxiety Disorder 7-Item Assessment total score
+PHQ-9: Patient Health Questionnaire 9-Item Assessment total score
+MADRS: Montgomery-Asberg Depression Rating Scale total score
+MoCA: Montreal Cognitive Assessment total score
+NIH Toolbox Emotional Battery T-score: T-score of NIH Toolbox Emotional Battery
+GAD-7 Response Rate: Proportion achieving >50% improvement on GAD‑7
+GAD-7 Remission Rate: Proportion achieving score <5 on GAD‑7
+PHQ-9 Response Rate: Proportion achieving >50% improvement on PHQ‑9
+PHQ-9 Remission Rate: Proportion achieving score <10 on PHQ‑9
+MADRS Response Rate: Proportion achieving >50% improvement on MADRS
+MADRS Remission Rate: Proportion achieving score <10 on MADRS
+SIRT1 Activity: Enzyme activity of SIRT1 measured in blood
+HAM-D: Hamilton Depression Rating Scale score
+BDI: Beck Depression Inventory score
+MADRS: Montgomery-Asberg Depression Rating Scale
+DoseSchedule%: Percentage of doses taken on schedule within ±6 hours
+PillCount%: Percentage pill count
+GAD-7: 7‑item self‑reported screening questionnaire for generalized anxiety disorder
+QDS: 3‑item questionnaire estimating weekly standard drinks
+WHODAS 2.0: Health‑related difficulties assessment across six functional domains
+DEP-8: 8‑item depression assessment scale (score 0‑24)
+BDI-II: Beck Depression Inventory‑II total score
+GAD-7: Generalized Anxiety Disorder 7‑item Scale total score
+SSE-Q Total Score: Social Support Effectiveness Questionnaire total score
+SSE-Q Task Support: Social Support Effectiveness Questionnaire task support subscale
+SSE-Q Informational Support: Social Support Effectiveness Questionnaire informational support subscale
+SSE-Q Emotional Support: Social Support Effectiveness Questionnaire emotional support subscale
+SSE-Q Negative Effects of Support: Social Support Effectiveness Questionnaire negative effects of support subscale
+IS Score: Instrumental Support 8‑question survey total score
+NIH_ES: NIH Toolbox Emotional Support Survey total score
+PSS-10: Perceived Stress Scale 10‑item total score
+PHQ-9: Patient Health Questionnaire-9 total score
+BADS: Behavioral Activation for Depression Scale total score
+PSOC: Parenting Sense of Competence Scale
+GAD-7: Generalized Anxiety Disorder 7‑item screening scale
+PHQ-9: Patient Health Questionnaire‑9 depression severity scale
+LENA Vocalization Count: Number of child vocalizations recorded by LENA
+LENA Conversational Turns: Number of reciprocal language exchanges recorded by LENA
+LENA Child-Directed Words: Number of child-directed words spoken by target adult
+AIM: Acceptability of Intervention Measure (four‑item 1–5 scale)
+IAM: Intervention Appropriateness Measure (four‑item 1–5 scale)
+IUS: Intervention Usability Scale (ten‑item 0–100 scale)
+FIM: Feasibility of Intervention Measure (four‑item 1–5 scale)
+SUS: System Usability Scale (score threshold 70+ for acceptable usability)
+UBS: User Burden Scale
+SUS: System Usability Scale
+SDS: Sheehan Disability Assessment Scale
+PHQ-9: Patient Health Questionnaire
+AIM: Acceptability of Intervention Measure
+PSTAS: Problem Solving Therapy Adherence Scale
+PST Certification: Dichotomous certified/not certified
+CADSS: Clinician-Administered Dissociative States Scale total score
+YMRS: Young Mania Rating Scale total score
+MADRS: Montgomery-Åsberg Depression Rating Scale total score
+AUQ: Alcohol Urge Questionnaire total score
+SI-Scale: Suicidal Ideation Scale (19 items, 0–2 each)
+SHAPS: Snaith-Hamilton Pleasure Scale total score
+POMS-C: POMS‑SF Confusion Subscale Score
+POMS-SDS: POMS‑SF Social Disconnection Scale Score
+POMS-DS: POMS‑SF Depression Subscale Score
+Verbal Memory Test: Verbal Memory Test Score
+Visual Memory Test: Visual Memory Test Score
+Subjective Happiness Scale: Subjective Happiness Scale Score
+Stroop RT: Stroop Test Average Reaction Time (ms)
+Shifting Attention RT: Shifting Attention Test Average Reaction Time (ms)
+CPT RT: Continuous Performance Test Average Reaction Time (ms)
+POMS-F: POMS‑SF Fatigue Subscale Score
+Cyberball SD: Cyberball Social Distress Scale Score
+MADRS: Montgomery‑Asberg Depression Rating Scale Score
+BDI-II: Beck Depression Inventory II self‑report inventory
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form
+YMRS: Young Mania Rating Scale
+IMS: Immediate Mood Scaler
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+HRV: Heart Rate Variability (LF/HF ratio via Fast Fourier Transform)
+Depression Relapse: Incidence of depression relapse from randomization through 6 months postpartum
+SSPC: Steady‑State Plasma Concentration of Brexanolone
+CL: Clearance of Brexanolone (plasma volume cleared per unit time)
+Cavg: Time‑Weighted Average Plasma Concentration of Brexanolone
+Vd: Volume of Distribution of Brexanolone
+HL: Elimination Half‑Life of Brexanolone
+AE: Adverse Event (untoward medical occurrence)
+TEAE: Treatment‑Emergent Adverse Event
+VL: Viral Load (amount of HIV virus in blood)
+ATS_FEASIBILITY_SCORE: Composite score of feasibility measures
+N_ENROLLED: Total number of participants screened, eligible and enrolled
+PCT_BAT_CBT_COMPLETED: Percentage of BAT & CBT sessions completed
+PCT_RETENTION: Percentage retention of participants across outcome groups
+ATS_ACCEPTABILITY_SCORE: Composite score of acceptability measures
+PCT_ADHERENCE_BAT_CBT: Percentage adherence to BAT & CBT session schedule
+PCT_TEXT_RESPONSE: Percentage of two‑way messages replied back
+PCT_DIRECT_BENEFIT_TEXT: Percentage of participants reporting direct benefit from one‑way text messages
+ACCEPTABILITY_CODE: Acceptability responses coded from exit interview transcripts
+BARRIER_COUNT: Limited number of barriers to participation reported
+STAFF_ACCEPTABILITY_SURVEY: Responses to brief survey assessing clinic staff acceptability
+PHQ-9 Score: Patient Health Questionnaire‑9 total score 0–27
+PHQ-2 Score: Patient Health Questionnaire‑2 initial screening score
+AD Rx: Antidepressant prescription
+FB Ref: Referral to Friendship Bench psychosocial counselor
+CLINIC VISIT ENGAGED: Number of visits where patient is engaged in depression treatment
+CLINIC VISIT ALGO: Number of visits where treatment decision follows algorithm
+SBP: Systolic blood pressure measurement
+DBP: Diastolic blood pressure measurement
+FBG: Fasting blood glucose measurement
+HTN Controlled: Hypertension controlled (SBP < 140 mmHg and DBP < 90 mmHg)
+DM Controlled: Diabetes controlled (fasting blood glucose < 130 mg/dl)
+FC: Functional Connectivity between Ventral Striatum and Dorsomedial Prefrontal Cortex measured by fMRI
+dmPFC BOLD Response: Magnitude of Dorsomedial Prefrontal Cortex Blood Oxygen Level Dependent response measured by fMRI
+PA Score: Positive Affect score derived from the PANAS Positive Affect scale
+Flanker Standard Score: Age‑corrected standard score of NIH Toolbox Flanker Inhibitory Control and Attention test
+List Sorting Standard Score: Age‑corrected standard score of NIH Toolbox List Sorting Working Memory test
+Dimensional Change Standard Score: Age‑corrected standard score of NIH Toolbox Dimensional Change Card Sort test
+Fronto‑Parietal Connectivity: Resting‑state fMRI BOLD functional connectivity within the fronto‑parietal network
+Cingulo‑Opercular Connectivity: Resting‑state fMRI BOLD functional connectivity within the cingulo‑opercular network
+MADRS Total Score: Montgomery‑Åsberg Depression Rating Scale total score
+HRSD: Hamilton Rating Scale for Depression total score
+IDS‑SR: Inventory of Depressive Symptomatology – Self Report score
+GS: Gait Speed in centimeters per second
+LDT: Letter Discrimination Task score
+DST: Digit Symbol Test score
+VPRT: Visual Pattern Recognition Task score
+MADRS: Montgomery-Åsberg Depression Rating Scale
+Response: ≥ 50% decrease in MADRS score
+Remission: MADRS score ≤10
+DepSympScore: Depression symptom score range 0–24
+AccScore: Acceptability score range 4–20
+FeasScore: Feasibility score range 4–20
+BurdScore: Burden score range 0–80 with subscales
+AppScore: Appropriateness score range 4–20
+MoodLogCount: Number of mood‑activity logs recorded over 35 days
+QIDS: Quick Inventory of Depressive Symptomatology score
+CEQ-CRED: Credibility subscale of the Credibility Expectancy Questionnaire
+CEQ-EXP: Expectancy subscale of the Credibility Expectancy Questionnaire
+CSQ-8: Client Satisfaction Questionnaire 8‑item score
+HPQ: Home Practice Questionnaire compliance count
+SAFTEE: Safety Assessment for Therapeutic Exercise adverse event reporting
+RET: Retention rate
+SAFTEE: Safety Assessment Form – Treatment Emergent Events
+QIDS: Quick Inventory of Depressive Symptomatology (17‑item depression severity measure)
+CSQ-8: Client Satisfaction Questionnaire (8‑item client satisfaction measure)
+Home Practice Compliance: Number of participants meeting home practice criteria (two practices per week)
+CEQ-Credibility: Credibility subscale of the Credibility Expectancy Questionnaire
+CEQ-Expectancy: Expectancy subscale of the Credibility Expectancy Questionnaire
+Class Attendance Rate: Number of participants attending eight or more of twelve classes
+BDI-II: Beck Depression Inventory-II
+SMK: Smoking Status
+HDRS-17: Hamilton Depression Rating Scale 17‑item clinician‑rated score
+CDRS-R: Children’s Depression Rating Scale – Revised total score
+RT: Response to Treatment (≥50% reduction in score)
+11C-T-1650 Uptake: Radiotracer uptake of 11C-T-1650 in brain
+BPN14770 Occupancy: Binding site occupancy of BPN14770
+ANC Attendance Rate: Percentage of participants attending antenatal care visits
+Facility Delivery Rate: Percentage of participants delivering baby in a health facility
+Infant ART Receipt Rate: Percentage of delivered infants receiving antiretroviral therapy
+PHQ-9 Score: Total score 0-27 assessing depression severity
+PHQ-9 Clinical Depression Indicator: Binary depression status (yes if score >9)
+ART Adherence Rate: Group mean percentage of prescribed ART doses taken
+Undetectable Viral Load Rate: Percentage of participants achieving undetectable HIV viral load
+DROPOUT: Number of participants who drop-out due to inability to tolerate treatment
+AE: Number of serious and non-serious adverse events
+MAAS: Mindful Attention and Awareness Scale total score
+DLPFC_DMN_fMRI: Change in dorsolateral prefrontal cortex connectivity with the salience network and the default mode using functional MRI
+AMY_DLPFC_fMRI: Change in connectivity between Right Amygdala and left DLPFC using functional MRI
+MADRS_S: Montgomery-Åsberg Depression Rating Scale – self‑assessment total score
+FMI: Freiburg Mindfulness Inventory total score
+RRS: Ruminative Response Scale total score
+ENROLLMENT: Number of participants enrolled
+PHQ-9: Patient Health Questionnaire-9
+17IQ: 17-item Diagnostic Questionnaire
+10IQ: Ten-item Diagnostic Questionnaire
+PHQ-9: Patient Health Questionnaire 9-item scale for depressive symptom severity
+FIBSER: Frequency, Intensity, and Burden of Side Effects Ratings
+MARS: Medication Adherence Rating Scale
+EPDS: Edinburgh Postnatal Depression Scale
+GAD-7: Generalized Anxiety Disorder 7‑Item Scale
+YMRS: Young Mania Rating Scale score
+MADRS: Montgomery-Åsberg Depression Rating Scale score
+FPRT: Faux Pas Recognition Task score
+CDRS-R: Children’s Depression Rating Scale – Revised total score
+SMS Response Count: Number of participant responses to automatic T2C SMS messages
+PSSUQ Total Score: Composite score from Post System Satisfaction and Usability Questionnaire
+PSSUQ System Usefulness Score: Sub‑score reflecting system usefulness
+PSSUQ Information Quality Score: Sub‑score reflecting information quality
+PSSUQ Interface Quality Score: Sub‑score reflecting interface quality
+Recommendation Likelihood: Participant likelihood to recommend Text2Connect
+Help Satisfaction Score: Satisfaction with amount of help received
+Effectiveness Satisfaction Score: Satisfaction with effectiveness of services
+CASA Service Utilization: Number of services accessed by participants
+CASA Implementation Cost: Estimated cost of implementing Text2Connect
+CASA Cost Comparison: Difference between intervention cost and service cost
+EHR Attendance Rate: Attendance to embedded mental health care appointments
+Referral Rate: Rate of personalized referrals by primary care providers and treatment initiation among adolescents who screen positive for depression or suicidal ideation
+Service Utilization: Amount of services accessed measured by Child and Adolescent Service Assessment (CASA)
+Implementation Cost: Overall average cost of implementing the Screening Wizard intervention
+PSSUQ Total Score: Post System Satisfaction and Usability Questionnaire overall score (1-7 scale)
+PSSUQ System Usefulness Subscore: Derived sub‑score reflecting system usefulness
+PSSUQ Information Quality Subscore: Derived sub‑score reflecting information quality
+PSSUQ Interface Quality Subscore: Derived sub‑score reflecting interface quality
+Recommendation Likelihood: Question assessing likelihood to recommend Screening Wizard
+App Engagement Proportion: Number and proportion of adolescents, parents, and providers who have engaged with the application over time
+EPDS: Edinburgh Postnatal Depression Scale
+CAT-DI: Computerized Adaptive Test-Depression Inventory
+EPDS-C: Change in Edinburgh Postnatal Depression Scale between baseline and 3 months
+CRP-Cap: C-reactive protein level in capillary blood
+CRP-Ven: C-reactive protein level in venous blood
+WSAS: Work and Social Adjustment Scale total score
+QIDS-SR: Quick Inventory of Depressive Symptomatology – Self‑Report score
+FIBSER-Burden: Frequency, Intensity, and Burden of Side Effects Burden item score
+ATQ: Automatic Thoughts Questionnaire
+SE: Self‑Efficacy Score
+SS: Stress Scale
+GAD: Generalized Anxiety Disorder 7‑Item Questionnaire
+BADS: Behavioral Activation for Depression Scale
+PHQ-9: Patient Health Questionnaire‑9
+PEDSQOL Total Score: Overall quality of life score
+PEDSQOL Physical Functioning Score: Physical functioning subdomain score
+PEDSQOL Emotional Functioning Score: Emotional functioning subdomain score
+PEDSQOL Social Functioning Score: Social functioning subdomain score
+PEDSQOL Work/School Functioning Score: Work/school functioning subdomain score
+CASA Service Utilization: Number of services accessed by participants
+C-SSRS Score: Suicidal ideation/behavior score categories 0-10
+PHQ-9 Score: Depression severity score 0-27
+BRITEAPP Engagement Count: Number of participants engaging with the BRITEApp
+BRITEAPP Distress Level Score: Rating of distress levels within the app
+GUIDE2BRITE Onboarding Completion Count: Number of providers completing onboarding
+BRITEPATH Implementation Cost per Participant: Average cost of implementing BRITEPath
+BRITEPATH Satisfaction Score: Composite satisfaction with the program
+PSSUQ Total Score: Post System Satisfaction and Usability Questionnaire total score
+GLU Concentration Change: Percent decrease in glutamate concentration in ACC measured by MRS
+GSH Ratio Change: Percent increase in reduced-to-oxidized ratio of glutathione in blood
+GSH Concentration Change: Increase in glutathione concentration in ACC measured by MRS
+EPDS: Edinburgh Postnatal Depression Scale score
+GAD-7: Generalized Anxiety Disorder 7‑Item Scale score
+HAM-D: Hamilton Depression Rating Scale score
+OBSQ10 Score: Total score 0-100
+EPDS Score: Edinburgh Postnatal Depression Scale total score 0-30
+EPDS Positive Screen: Number of participants with EPDS >10
+Pain Score: Likert full scale 0-10
+Breastfeeding Success: Participant yes/no response for exclusive breastfeeding
+Opioid MME Dose: Quantity of opioid in morphine milligram equivalents used within 24h of delivery
+MADRS: Montgomery-Åsberg Depression Rating Scale
+AE: Types and rates of adverse events
+IDAS: Inventory of Depressive and Anxiety Symptoms Ill Temper Scale Score
+THREATBIAS: Threat Attention Bias (Reaction Time Difference to Threat vs Neutral Stimuli)
+PSAP: Point Subtraction Aggression Paradigm Subtractions Count
+AMY_PFC_BOLD_CONN: Amygdala‑Medial Prefrontal Cortex BOLD Connectivity
+PUT_LEFT_BOLD: Left Putamen BOLD Activation to Frustrative Non‑Reward
+NAC_RIGHT_BOLD: Right Nucleus Accumbens BOLD Activation to Frustrative Non‑Reward
+CAU_LEFT_BOLD: Left Caudate BOLD Activation to Frustrative Non‑Reward
+CAU_RIGHT_BOLD: Right Caudate BOLD Activation to Frustrative Non‑Reward
+NAC_LEFT_BOLD: Left Nucleus Accumbens BOLD Activation to Frustrative Non‑Reward
+AMY_RIGHT_BOLD: Right Amygdala BOLD Activation to Frustrative Non‑Reward
+AMY_LEFT_BOLD: Left Amygdala BOLD Activation to Frustrative Non‑Reward
+HRSD-NOW: Modified version of Hamilton Depression Rating Scale (HAM-D) (Leibenluft et al., 1993)
+BDNF Concentration: Plasma concentration of Brain‑Derived Neurotrophic Factor as proxy for neuroplasticity
+MEP Amplitude: Amplitude of Muscle Movement from hand following Transcranial Magnetic Stimulation (TMS) Evoked Potentials
+MADRS: Montgomery‑Asberg Depression Rating Scale
+AdmissionIncidence: Incidence of admission
+EPDS Score: Edinburgh Postnatal Depression Scale score
+Apgar Score: Neonatal Apgar score 0‑10
+ITach Prevalence: Intraoperative tachycardia prevalence (HR >110 bpm)
+RecruitRate: Recruitment rate of approached women
+MEquiv: Morphine equivalents dose
+IHypo Prevalence: Intraoperative hypotension prevalence (SBP <90 mmHg)
+IHypert Prevalence: Intraoperative hypertension prevalence (SBP >140 mmHg)
+IBrady Prevalence: Intraoperative bradycardia prevalence (HR <40 bpm)
+BreastEstab: Breastfeeding establishment (yes/no)
+DiseaseBurden: Disease burden percentage (>10%)
+SymptomIncidence: Incidence and severity of nausea, vomiting, pruritus, dizziness, sedation, shivering, anxiety, euphoria, hallucinations, amnesia, blurred vision, diplopia, nystagmus
+AnalgesiaSup: Intraoperative supplementary analgesia
+DataCompleteness: Proportion of participants with complete dataset (>90%)
+SideEffectIntolerance: Ketamine route intolerance (severe side effects >10%)
+PainNRS: Maximal intraoperative pain numerical rating scale 0‑10
+SSPainNRS: Surgical site pain numerical rating scale 0‑10
+MeanGAD7: Mean postpartum GAD‑7 score
+MADRS: Montgomery-Asberg Depression Rating Scale total score
+BSS: Beck Scale for Suicide Ideation total score
+VRU: VR Headset Usage Frequency
+PQ: Presence Questionnaire Score
+ITU: Intention To Use Technology Score
+TAM: Technology Acceptance Model Total Score
+PHQ9: PHQ-9 Score
+ATU: Attitudes Toward Use Score
+TD: Treatment Dropout Count
+SSQ: Simulator Sickness Questionnaire Score
+HAM-D: Hamilton Depression Rating Score
+TSQ: Therapist Satisfaction Questionnaire
+CSQ: Client Satisfaction Questionnaire
+BADS: Behavioral Activation for Depression Scale
+ENGAGE-A Attendance: Number of Virtual ENGAGE-A Participants who Attend Every Scheduled Therapy Session
+ATTEND: Engagement (percentage of meetings attended)
+RAND-PF: RAND 36‑Item Physical Functioning subscale score
+RAND-SF: RAND 36‑Item Social Functioning subscale score
+RAND-EF: RAND 36‑Item Emotional Functioning subscale score
+WAI-TASK: Working Alliance Inventory‑SF Task subscore
+WAI-GOAL: Working Alliance Inventory‑SF Goal subscore
+WAI-BOND: Working Alliance Inventory‑SF Bond subscore
+COPE-ACTIVE: Brief‑COPE Active Coping subscale score
+COPE-EMOT: Brief‑COPE Emotional Support subscale score
+COPE-INF: Brief‑COPE Informational Support subscale score
+COPE-REFRAM: Brief‑COPE Positive Reframing subscale score
+COPE-PLAN: Brief‑COPE Planning subscale score
+COPE-ACC: Brief‑COPE Acceptance subscale score
+COPE-RELIG: Brief‑COPE Religion subscale score
+PHQ-9: Patient Health Questionnaire‑9 total score
+R-UCLA: R‑UCLA Loneliness Scale total score
+CCI: Cornell Service Index usage count
+GSES: General Self‑Efficacy Scale score
+BOLD: Blood Oxygenation Level Dependent signal
+Decisional Conflict Score: 0-4 scale indicating level of decisional conflict
+Medication Adherence Score: 0-100 scale indicating adherence to medication
+Decision Regret Scale Score: 0-100 scale indicating degree of regret
+Shared Decision Making Process Score: 0-4 scale indicating quality of shared decision making
+Knowledge Score: 0-100 composite score of decision‑making knowledge
+Decision Maker Category: Categorical variable (Patient, Provider, Both)
+Future Decision Preference: Categorical responses (Definitely Yes, Probably Yes, Probably No, Definitely No)
+Preferred Management Strategy: Categorical responses (Antidepressant alone, Counseling alone, Both, Other)
+VS-vmPFC FC: Fisher's Z-transformed functional connectivity between ventral striatum and ventromedial prefrontal cortex
+EEfRT Hard-task Choice Proportion: Proportion of hard-task selections across probability levels in the Effort‑Expenditure for Rewards Task
+IDS-SR Total Score: Total score of Inventory of Depressive Symptomatology – Self Report
+MAP-SR Total Score: Total score of Motivation and Pleasure Scale – Self Report
+SHAPS-C Total Score: Total score of Snaith‑Hamilton Pleasure Scale – Clinician administered
+HAM-D: Hamilton Depression Rating Scale total score
+HAM-D Remission: HAM-D total score ≥47
+HAM-D Response: ≥50% reduction in HAM-D total score
+HAM-D Core Subscale: Core subscale score of HAM-D
+HAM-D Anxiety Subscale: Anxiety subscale score of HAM-D
+HAM-D Bech-6 Subscale: Bech‑6 subscale score of HAM-D
+HAM-D Maier Score: Maier score of HAM-D
+EPDS: Edinburgh Postnatal Depression Scale total score
+CGI-S: Clinical Global Impression‑Severity total score
+CGI-I: Clinical Global Impression‑Improvement total score
+CGI-I Response: CGI‑I score of very much improved or much improved
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+PHQ-9: Patient Health Questionnaire‑9 total score
+HAM-A: Hamilton Anxiety Rating Scale total score
+MPR: Medication Possession Ratio
+MONO_THERAPY_PERCENT: Percentage of participants receiving monotherapy
+COMBO_THERAPY_PERCENT: Percentage of participants receiving combination therapy
+AUGMENTATION_THERAPY_PERCENT: Percentage of participants receiving augmentation therapy
+RECURRENCE_DEFINITION: Definition of recurrence events (inpatient, ER, suicide attempt, antidepressant prescription after 30 days)
+PERSISTENCE_DURATION: Average length of treatment on index drugs allowing 14‑day gap
+AVG_TREAT_DURATION_PER_DRUG: Average treatment duration for each antidepressant
+COMMON_ADR_PRESCRIPTION_PERCENT: Percentage of prescriptions for commonly used antidepressants
+DISCONTINUATION_90DAY_PERCENT: Percentage of participants who discontinued treatment in first 90 days
+BDI-II: Beck Depression Inventory-II
+QIDS SR: Quick Inventory of Depressive Symptomatology Self Report score
+MITHRA App Usage: Proportion of women completing ≥50% of MITHRA modules
+HAM-D: Hamilton Depression Rating Scale total score
+CDRS-R: Children Depression Rating Scale Revised total score
+SITBI: Self Injurious Thoughts and Behavior Interview
+C-SSRS: Columbia Suicide Severity Rating Scale
+Completion Rate: Proportion of treatments completed (≥75 %)
+Withdrawal Rate: Proportion of participants withdrawing (≤20 %)
+IPAQ MET-min per week: Total Metabolic Equivalent of Task minutes per week
+GAD-7 Score: Generalized Anxiety Disorder 7 total score
+Ryff PWB Score: Ryff's Psychological Well-Being Scale total score
+EPDS Score: Edinburgh Postnatal Depression Scale total score
+PSS Score: Perceived Stress Scale total score
+SIMP Score: Single-item Sleep Quality Scale total score
+CGI-I Binary: Clinical Global Impressions Scale-Improvement binary classification
+MADRS: Montgomery-Åsberg Depression Rating Scale score used to define remission
+GAD-7: Generalized Anxiety Disorder 7-item scale score
+PROMIS Pediatric Global Health Scale: PROMIS Pediatric Global Health Scale score
+App Modules Completed: Average number of app modules completed out of 5
+PHQ-8: Personal Health Questionnaire 8-item depression score
+MFQ-PS: Mood and Feelings Questionnaire – Parent Self‑report score
+PROMIS Parent Proxy Global Health Scale: PROMIS Parent Proxy Global Health Scale score
+Participant Satisfaction: 0-10 satisfaction scale
+SUS: System Usability Scale score percentile 0-100
+UES‑SF: User Engagement Scale‑Short Form overall engagement 1-5
+Remission Rate: Proportion of participants with PHQ‑8 <10
+Clinical Concern Rate: Percentage of participants with clinical concerns
+Serious Clinical Concern Rate: Percentage of participants with serious clinical concerns
+Willingness to Participate: Percentage of eligible participants who enrolled
+CCAPS Depression Subscale: Depression subscale of CCAPS
+CCAPS General Anxiety Subscale: General anxiety subscale of CCAPS
+CCAPS Social Anxiety Subscale: Social anxiety subscale of CCAPS
+CCAPS Academic Distress Subscale: Academic distress subscale of CCAPS
+CCAPS Eating Concerns Subscale: Eating concerns subscale of CCAPS
+CCAPS Family Distress Subscale: Family distress subscale of CCAPS
+CCAPS Hostility Subscale: Hostility subscale of CCAPS
+CCAPS Substance Abuse Subscale: Substance abuse subscale of CCAPS
+MHSES: Mental Health Self‑Efficacy Scale
+CAQ Educational Subscale: Educational functioning subscale of CAQ
+CAQ Relational Subscale: Relational functioning subscale of CAQ
+CAQ Psychological Subscale: Psychological functioning subscale of CAQ
+CSRI Service Receipt Count: Count of services received per CSRI
+SMS Response Rate: Percentage of SMS prompts responded to
+CSQ8 Satisfaction Score: Sum score of CSQ8 items
+PSSUQ Overall Score: Overall usability score
+PSSUQ System Usefulness Score: System usefulness subscore
+PSSUQ Information Quality Score: Information quality subscore
+PSSUQ Interface Quality Score: Interface quality subscore
+GSE Score: General Self‑Efficacy Scale score
+CDI-SF: Children’s Depression Inventory 2 Short Form raw score
+PFS: Perceived Acceptability Scale (SSI) raw score
+BHS-4: Beck Hopelessness Scale 4‑item version raw score
+SHS-P: State Hope Scale Pathways Subscale raw score
+PSSUQ: Post System Satisfaction and Usability Questionnaire overall score
+PSSUQ System Usefulness Subscore
+PSSUQ Information Quality Subscore
+PSSUQ Interface Quality Subscore
+Recommendation Scale: Likert 1‑4 for recommending Screening Wizard
+Satisfaction Scale: Likert 1‑4 for satisfaction with help received
+Effectiveness Scale: Likert 1‑4 for perceived effectiveness of services
+Personalized Referral Rate: Rate of personalized referrals by primary care providers
+Treatment Initiation Rate: Proportion of adolescents initiating treatment after screening positive for depression or suicidal ideation
+Implementation Cost: Estimated cost of implementing the Screening Wizard intervention
+HAM-D17: Hamilton Depression Rating Scale 17-item participant‑rated scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+MK-1942 Concentration: Plasma concentration of MK-1942
+CGI-S: Clinical Global Impression‑Severity scale
+CASA: Child and Adolescent Service Assessment service utilization count
+PROV_ONB: Provider Onboarding Completion Count
+PSSUQ: Post System Satisfaction and Usability Questionnaire overall score
+PSSUQ_SYSUSE: PSSUQ System Usefulness Subscore
+PSSUQ_INFO: PSSUQ Information Quality Subscore
+PSSUQ_IFACE: PSSUQ Interface Quality Subscore
+C-SSRS: Columbia Suicide Severity Rating Scale score
+PHQ-9: Patient Health Questionnaire total score
+PEDS-Q: Pediatric Quality of Life Inventory Version 4 total score
+BRITE_COST: BRITEPath implementation cost per participant
+BRITE_SAT: BRITEPath satisfaction score
+APP_ENGAGE: Number of participants engaging with the app
+APP_DISTRESS: App distress level score
+CGI-S: Clinical Global Impression – Severity score
+MADRS: Montgomery-Asberg Depression Rating Scale total score
+MADRS-R: Proportion of participants achieving remission (MADRS ≤10)
+MADRS-RESP: Proportion of participants achieving ≥50% improvement in MADRS from baseline
+PHS: Perceived Hostility Survey (Ages 18+ and 8-17) T‑score
+BDI-II: Beck Depression Inventory‑Second Edition score
+ERQ-CR: Emotion Regulation Questionnaire‑Cognitive Reappraisal scale (Adult and Children/Adolescents)
+MSPSS-Family: Multidimensional Scale of Perceived Social Support‑Family score
+CADSS: Clinician Administered Dissociative States Scale mean total score
+CSSRS Ideation Score: Columbia Suicide Severity Rating Scale ideation score
+SSI Total Score: Scale for Suicide Ideation total score
+PANAS Positive Affect Score: Positive and Negative Affect Schedule positive affect mean total score
+PANAS Negative Affect Score: Positive and Negative Affect Schedule negative affect mean total score
+HDRS: Hamilton Depression Rating Scale mean total score
+MADRS: Montgomery-Asberg Depression Rating Scale mean total score
+YMRS: Young Mania Rating Scale mean total score
+SHAPS: Snaith-Hamilton Pleasure Scale mean total score
+TEPS: Temporal Experience of Pleasure Scale mean total score
+BPRS: Brief Psychiatric Rating Scale mean total score
+HAM-A: Hamilton Psychiatric Rating Scale for Anxiety mean total score
+Participants with suicide ideation (CSSRS): Number of participants with suicide ideation assessed using CSSRS
+Participants with suicide ideation (SSI): Number of participants with suicide ideation assessed using SSI
+Participants meeting response criteria: Number of participants who met response criteria at any timepoint after intervention
+Participants meeting remission criteria: Number of participants who met remission criteria at any timepoint after intervention
+COMP: Compliance Rate of participants completing outcome measures
+AR: Accrual Rate from baseline to 6 months
+DADDS Score: Death Anxiety score measured by the 15‑item DADDS scale
+CTCAE SAEs: Number of serious adverse events per CTCAE v5.0
+CTCAE NAEs: Number of non‑serious adverse events per CTCAE v5.0
+PROMIS Depression T-score: T‑score 0‑100 for depressive symptoms
+WIWI: Participant satisfaction questionnaire (Was It Worth It)
+SN Connectivity: Functional connectivity normalized correlation values within Salience Ventral Attentional Network
+DMN Connectivity: Functional connectivity normalized correlation values within Default Mode Network
+DAN Connectivity: Functional connectivity normalized correlation values within Dorsal Attention Network
+VN Connectivity: Functional connectivity normalized correlation values within Visual Network
+SMN Connectivity: Functional connectivity normalized correlation values within Somatosensory Motor Network
+LN Connectivity: Functional connectivity normalized correlation values within Limbic Network
+FPN Connectivity: Functional connectivity normalized correlation values within Frontoparietal Control Network
+Clinician-Rated Depression: Clinician-rated depression score (range 0-60 or 0-52)
+Self-Reported Depression: Self-reported depression score (range 0-27)
+Adherence Rate: Rate of adherence >75% of total daily sessions to light therapy
+Relapse: Defined relapse event
+MADRS Change: Change in Montgomery‑Asberg Depression Rating Scale score from baseline to 6 weeks
+ADSS Score: Score on Antidepressant Discontinuation Symptoms Scale
+QIDS‑SR Score: Score on Quick Inventory of Depressive Symptomatology Self‑Rated scale
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+UE: Critical Use Error
+UD: Use Difficulty
+CC: Close Call
+Nonadherence: Failure to comply with protocol requirements
+Medication error: Preventable event leading to inappropriate medication use
+PHQ-2: Patient Health Questionnaire-2 total score
+PHQ-9: Patient Health Questionnaire-9 total score
+FH-6M: Fall History in last 6 months
+FWI: Fall With Injury
+FR-POS: Fall Risk Positive (device or recent fall)
+IPV-POS: Intimate Partner Violence Positive
+SR-Q: Suicide Risk Question (thoughts of self-harm)
+SCH-POS: Safety Concerns at Home Positive (conflict turns into fights)
+CGI-S: Clinical Global Impression-Severity Scale
+MADRS: Montgomery Åsberg Depression Rating Scale
+CGI I: Clinical Global Impression-Improvement Scale
+SRSE: Self-Reported Spiritual Experience Score
+TM: Trait Mindfulness Score
+SRED: Self-Reported Depression Score
+CRDS: Clinician-Rated Depression Score
+MES: Mystical Experience Score
+SM: Self-Reported Mindfulness Score
+AMS SAD: Analog Mood Scale Sad score
+AMS SAD CHANGE: Difference in AMS Sad pre‑post tDCS
+AMS HAPPY: Analog Mood Scale Happy score
+AMS ANXIETY: Analog Mood Scale Anxiety score
+AMS ANXIETY CHANGE: Difference in AMS Anxiety pre‑post tDCS
+BDI‑II: Beck Depression Inventory II score
+VS RT CHANGE: Change in mean response time to target stimulus
+CSQ: Client Satisfaction Questionnaire (3-item)
+Depression Score Change (Baseline to 9 weeks): Change in depression scores from baseline to 9 weeks
+Depression Score Change (Baseline to 12 weeks): Change in depression scores from baseline to 12 weeks
+Feasibility: Number of clients referred to program and accepted intervention
+QIDS-SR: Quick Inventory of Depressive Symptomatology – Self Report
+PHQ-9: Patient Health Questionnaire-9
+PSQI: Pittsburgh Sleep Quality Index
+EQ-5D-3L VAS: Visual Analogue Scale score 0-100
+HAM-D: Hamilton Depression Rating Scale total score 0-52
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score 0-60
+CGI-S: Clinical Global Impression – Severity score 0-7
+TEAE Count: Number of participants with treatment‑emergent adverse events categorized using MedDRA v24.0 or higher
+GAD-7: General Anxiety Disorder 7‑item score 0-21
+QIDS-SR-16: Quick Inventory of Depressive Symptomatology Self‑Report 16‑item score 0-42
+MADRS Remission Rate: Proportion of subjects with MADRS ≤10
+MADRS % Improvement: Proportion of subjects with ≥50% improvement in MADRS from predose
+MADRS: Montgomery‑Åsberg Depression Rating Scale (SIGMA version)
+AUClast: Area Under Curve from time zero to last measurable concentration
+Cmax: Maximum observed plasma drug concentration
+Tmax: Time to reach maximum plasma drug concentration
+PHQ-8: Patient Health Questionnaire 8-item
+PHQ-8 SCORE: Total score 0-24 indicating depression severity
+PHQ-8 REMISSION: Score less than 5 at post‑intervention
+PHQ-8 RESPONSE: 50% reduction in score from baseline
+PHQ-8 CLINICALLY MEANINGFUL REDUCTION: ≥5 point reduction from baseline
+MADRS: Montgomery-Åsberg Depression Rating Scale score
+HAM-D: Hamilton Depression Rating Scale score
+Vd: Volume of Distribution from 11C-R-Rolipram PET
+SCF: Feasibility of study completion
+EEG Feasibility: Feasibility of EEG recordings
+SBF: Feasibility of subject burden
+PGI-C: Patient Global Impression of Change
+PGI-S: Patient Global Impression of Severity
+PGI-I: Patient Global Impression of Improvement
+PPDS: Postpartum Depression Scale (10-item self-report questionnaire)
+CSM: Client Satisfaction Measure (8-item questionnaire)
+DSM9: Depression Scale (9-item self-report questionnaire)
+IM: Improvement Measure (single item 7-point Likert)
+OSSM: Overall Severity Scale Measure (single item 7-point Likert)
+MIBM: Mother-Infant Bond Measure (8-item self-report questionnaire)
+AM: Anxiety Measure (7-item brief self-report questionnaire)
+DSM6: Depression Scale (6-item questionnaire)
+EPDS: Edinburgh Postnatal Depression Scale
+P-PRFQ: Prenatal Parental Reflective Functioning Questionnaire
+MAAS: Maternal Antenatal Attachment Scale
+CGI-S: Clinical Global Impression of Severity Scale score change
+SDS: Sheehan Disability Scale total score change
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score change
+Flanker RT Difference: Reaction time difference between incongruent and congruent trials of the Flanker task
+Flanker Avg RT: Average reaction time across all trials of the Flanker task
+Stroop Avg RT: Average reaction time across all trials of the Stroop task
+Stroop RT Difference: Reaction time difference between incongruent and congruent trials of the Stroop task
+CDI Score: Self‑report 27‑item scale total score for depressive symptoms
+CDRS‑R Score: Clinician‑administered 17‑item raw score for depressive symptoms
+MLQ: Meaning of Life Questionnaire
+EML: Existing Meaning in Life subscale
+SML: Search for Meaning in Life subscale
+BDI: Beck Depression Inventory
+PS: Psychache Scale
+SEDBS: Side Effect Burden Score
+PHQ-8: Patient Health Questionnaire 8 score
+PROMIS ED 8b T-score: PROMIS Emotional Distress Depression 8b T-score
+PROMIS PD 8a T-score: PROMIS Pediatric Depression Symptoms 8a T-score
+Concordance: Agreement between PGx phenotype and SSRI medications reported
+VMA: Voils Medication Adherence Survey (non‑adherent count)
+PROMISRemission: PROMIS Emotional Distress Depression Remission Indicator (sum ≤16)
+PHQ-8: Patient Health Questionnaire 8-item scale

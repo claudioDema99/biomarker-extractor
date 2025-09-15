@@ -1,105 +1,102 @@
-BMET: Brain Metabolism
+PET: Positron Emission Tomography scan
 DERS: Difficulties in Emotion Regulation Scale
-Amygdala Activity: amygdala activity
-SA: Suicide Attempt Count
-DROPOUT: Did not finish one year of treatment.
-BEST: Borderline Evaluation of Severity Over Time
-ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
-MADRS: Montgomery-Åsberg Depression Rating Scale
-BIS: Barratt Impulsiveness Scale
-YMS: Young Mania Rating Scale
-SCL-90-R: Symptom Checklist -90-Revised
+AMY: Amygdala activity
+SA Count: Suicide Attempt Count
+YMRS: Young Mania Rating Scale
+SCL-90-R: Symptom Checklist-90-Revised
 SDS: Sheehan Disability Scale
-OAS-M: Overt Aggression Scale - Modified
+MOAS: Overt Aggression Scale - Modified
 GAF: Global Assessment of Functioning Scale
-MOAS: Modified Overt Aggression Scale
 SCL-90-R: Symptom Checklist-90-Revised
 BPDSI: Borderline Personality Disorder Severity Index
 MAS-A: Metacognition Assessment Scale- Abbreviated
-CGI-I: Clinical Global Impressions Improvement
+CGI-I: Clinical Global Impressions - Improvement
 BPRS: Brief Psychiatric Rating Scale
-BPD Checklist: Borderline Personality Checklist
-Cortisol: Cortisol level
-TEAEs: Number of Treatment-emergent Adverse Events
-MADRS: Montgomery‑Asberg Depression Scale
-ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
-C-SSRS: Columbia Suicide Severity Rating Scale
+BPD-Checklist: 47-item Borderline Personality Checklist
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+BPD-Symptom Measure: Dimensional self‑report measure of BPD symptoms
+SR: Suicide Rating Scale
 BDI: Beck Depression Inventory
 BAI: Beck Anxiety Inventory
-SAS-SR: Social Adjustment Scale Self Report Short Version
-CADSS: Clinician‑Administered Dissociative States Scale
-AE: Adverse Events
-RMET: Reading the Mind in the Eyes Test
-QIDS: Quick Inventory of Depressive Symptomatology
-TG-Coop: Behavior in the Economic Trust Game – Cooperation
-BPI-Intensity: Brief Pain Inventory Intensity
-BPI-Interference: Brief Pain Inventory Interference
-BPRS: Brief Psychiatric Rating Scale
-SDP: Stop‑Distance Paradigm
-BSS: Beck Suicide Scale
-MEAQ-DA: Multidimensional Experiential Avoidance Questionnaire - Distress Aversion subscale
-ZAN-BPD: Zanarini Rating Scale for BPD
-ZAN-RS: Zanarini Rating Scale for Borderline Personality Disorder
+RFQ: Role Functioning Questionnaire
+MEAQ-DA: Multidimensional Experiential Avoidance Questionnaire – Distress Aversion subscale
+ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
+BPDSS: Borderline Personality Disorder Severity Scale
 BIS: Barratt Impulsiveness Scale
-HAM-A: Hamilton Anxiety Rating Scale
-HAM-D: Hamilton Depression Rating Scale
-BEST: Borderline Evaluation of Severity Over Time
+ANX: Anxiety Severity Scale
+DEP: Depression Severity Scale
+SCS: Severity Change Scale
 SDS: Sheehan Disability Scale
-CSSRS: Columbia Suicide Severity Rating Scale
-QOLI: Quality of Life Inventory
-MINI: MINI International Neuropsychiatric Interview
-SCL-90-R: Symptom Checklist-90 Revised
-SAS: Simpson-Angus Scale
+SS: Suicide Scale
+BPS: Borderline Personality Scale
+QOL: Quality of Life Scale
+DCMI: DSM-5 Comorbidity Interview
+PI: Psychopathology Inventory
+SAS: Parkinsonism Symptom Assessment Scale
 BMI: Body Mass Index
-BARS: Barnes Akathisia Rating Scale
-C-SSRS: Columbia-Suicide Severity Rating Scale
-PGI-S: Patient's Global Impression of Severity
-CGI-I: Clinical Global Impression - Improvement
-CGI-S: Clinical Global Impressions - Severity
-AIMS: Abnormal Involuntary Movement Scale
-ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
-PGI-C: Patient's Global Impression of Change
-TEAEs: Treatment Emergent Adverse Events
-VSA: Vital Signs Abnormalities
-LT: Laboratory Test Values
+BARS: Akathisia Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+PGI-S: Patient Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+OH: Orthostatic Hypotension
+HR: Heart Rate
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+WT: Weight
 PRL: Prolactin
-ECG-A: Electrocardiogram Abnormalities
-ECG: Electrocardiogram abnormalities
-SAS: Simpson‑Angus Scale
-BARS: Barnes Akathisia Rating Scale
-C-SSRS: Columbia‑Suicide Severity Rating Scale
-TEAEs: Treatment‑Emergent Adverse Events
 AIMS: Abnormal Involuntary Movement Scale
-Lab-Abnorm: Potentially Clinically Significant Laboratory Abnormalities
-VitalSignAbnorm: Potentially Clinically Significant Vital Sign Abnormalities
-Brady: Bradycardia
-SinusBrady: Sinus Bradycardia
-VPPB: Ventricular Premature Beat
-SymTWaveInv: Symmetrical T‑wave Inversion
-Prolactin: Prolactin > Upper Limit of Normal
-Glucose: Fasting Glucose <=100 mg/dl
-HDL: High‑Density Lipoprotein Cholesterol <40/50 mg/dl
-LDL: Low‑Density Lipoprotein Cholesterol >=160 mg/dl
-Chol: Total Cholesterol >=240 mg/dl
-Trig: Triglycerides >=150 mg/dl
-CPK: Creatine Phosphokinase >3x ULN
-Creatinine: Creatinine >=2.0 mg/dl
-UreaNitrogen: Urea Nitrogen >=30 mg/dl
-HRLow: Heart Rate Standing <50 bpm
-HRHigh: Heart Rate Standing >120 bpm
-WeightLoss: Weight Decrease >=7%
-WeightGain: Weight Increase >=7%
-PGI-S: Patient Global Impression Severity Scale
+Hem: Hematology
+Che: Serum Chemistry
+Uri: Urinalysis
+ALP: Alkaline Phosphatase
+AST: Aspartate Aminotransferase
+TBIL: Bilirubin
+CHO: Cholesterol
+CK: Creatine Kinase
+CREAT: Creatinine
+GLU: Glucose
+HDL: High Density Lipoprotein
+Bradycardia: Rate <=50 bpm
+VentricularPrematureBeat: Presence post baseline
+SymmetricalTWaveInversion: Post baseline
+SAS: Simpson‑Angus Scale
+SASTotalScore: Sum of 10 items (0-40)
+BARS: Barnes Akathisia Rating Scale
+BARSGlobalClinicalEvaluation: 6‑point scale (0-5)
+C-SSRS: Columbia Suicide Severity Rating Scale
+C-SSRSSuicidalIdeationScore: 1-5
+C-SSRSSuicidalBehaviorScore: 0-4
+Prolactin: Serum prolactin > ULN
+FastingGlucose: <100 mg/dl
+HDLCholesterol: <40 men / <50 women mg/dl
+LDLCholesterol: <=160 mg/dl
+TotalCholesterol: <=240 mg/dl
+Triglycerides: <=150 mg/dl
+CreatinePhosphokinase: >3x ULN
+Creatinine: <=2.0 mg/dl
+UreaNitrogen: <=30 mg/dl
+AE: Adverse Event
+TEAE: Treatment Emergent Adverse Event
+AESeverityGrade: 1-Mild, 2-Moderate, 3-Severe
+AIMS: Abnormal Involuntary Movement Scale
+AIMSTotalScore: 0-28
+HeartRateStanding: <50 bpm or >120 bpm
+WeightChange: >=7%
+PGI-S: Patient Global Impression – Severity
 ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
-ZAN-BPD RESPONSE: ≥30% reduction in ZAN‑BPD score
-CGI-S: Clinical Global Impression Severity Scale
-DERS-16: Difficulties in Emotion Regulation Scale (16‑item)
+CGI-S: Clinical Global Impressions – Severity
+DERS: Difficulties in Emotion Regulation Scale
 STAI-S: State‑Trait Anxiety Inventory – State version
 PHQ-9: Patient Health Questionnaire‑9
-STAXI: State‑Trait Anxiety Inventory
+SC: Skin Conductance
+DBT-WCCL: DBT‑Ways of Coping Checklist
+PANAS: Positive and Negative Affect Schedule
+BSL23: Abbreviated Borderline Symptom List
+DERS: Difficulties in Emotion Regulation Scale
+HRV: High Frequency Heart Rate Variability
+STARTLE: Eyeblink Startle Amplitude
 ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder
 ALS: Affective Lability Scale
 PSS: Perceived Stress Scale
 DERS: Difficulties in Emotion Regulation Scale
-PINES: PINES Network Activity
-BDI: Beck Depression Inventory

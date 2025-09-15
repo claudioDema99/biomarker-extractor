@@ -20,15 +20,6 @@ def input_con_timer(input: str, time: int):
     except TimeoutOccurred:
         return "-1"
 
-def clean_llm_json(json_str):
-    """Clean common LLM JSON issues"""
-    # Fix common escape sequence issues
-    json_str = re.sub(r'\\xa0\d*', ' ', json_str)
-    json_str = re.sub(r'\\x[0-9a-fA-F]{2}', ' ', json_str)
-    # Fix other common LLM issues
-    json_str = re.sub(r'\\n', '\\n', json_str)  # Ensure proper newline escaping
-    return json_str
-
 def read_json_arrays_to_list(filename):
     """
     Read a JSON file containing an array and return it as a list of dictionaries.
@@ -282,7 +273,7 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
     
     # ============ PHASE 1: EXACT MATCHING ============
     if start_phase <= 1 <= end_phase:
-        print("=== PHASE 1: EXACT MATCHING ===")
+        print("=== EXACT MATCHING ===")
         
         if resume_from_checkpoint and os.path.exists(f"./checkpoints/parsed_biomarkers_{dataset_type}.json"):
             print(f"Loading phase 1 checkpoint...")
@@ -343,9 +334,9 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
             # Save checkpoint
             _save_checkpoint(parsed_biomarkers, acronyms_w_rows, dataset_type)
     
-    # ============ PHASE 2: LLM-BASED GROUPING ============
+    # ============ PHASE 2: DETERMINISTIC and LLM-BASED GROUPING ============
     if start_phase <= 2 <= end_phase:
-        print("=== PHASE 2: DETERMINISTIC and LLM-BASED GROUPING ===")
+        print("=== DETERMINISTIC and LLM-BASED GROUPING ===")
         
         # Load from checkpoint if needed
         if parsed_biomarkers is None:
@@ -366,7 +357,7 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
     
     # ============ PHASE 3: VARIANT IDENTIFICATION ============
     if start_phase <= 3 <= end_phase:
-        print("=== PHASE 3: VARIANT IDENTIFICATION ===")
+        print("=== VARIANT IDENTIFICATION ===")
         
         # Load from checkpoint if needed
         if parsed_biomarkers is None:
@@ -458,7 +449,7 @@ def _run_merging_loop(parsed_biomarkers, model, tokenizer, device, dataset_type,
         try:
             possible_correlations, _, _ = call_model(task="groups", dataset_type=dataset_type, 
                                              model=model, tokenizer=tokenizer, device=device, 
-                                             biomarkers=canonical_biomarkers)
+                                             biomarkers=canonical_biomarkers, low_reasoning=True)
         except Exception as e:
             print(f"Model call failed: {e}")
             possible_correlations = []

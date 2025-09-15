@@ -1,4 +1,5 @@
 import json
+import re
 import torch
 import gc
 from transformers import AutoTokenizer, AutoModelForCausalLM
@@ -11,6 +12,15 @@ def clear_gpu_memory():
     if torch.cuda.is_available():
         torch.cuda.empty_cache()
     gc.collect()
+
+def clean_llm_json(json_str):
+    """Clean common LLM JSON issues"""
+    # Fix common escape sequence issues
+    json_str = re.sub(r'\\xa0\d*', ' ', json_str)
+    json_str = re.sub(r'\\x[0-9a-fA-F]{2}', ' ', json_str)
+    # Fix other common LLM issues
+    json_str = re.sub(r'\\n', '\\n', json_str)  # Ensure proper newline escaping
+    return json_str
 
 def load_model_and_tokenizer():
 
@@ -179,6 +189,7 @@ def call_model(task: str, dataset_type: str, model: AutoModelForCausalLM, tokeni
                 raise ValueError("JSON structure not found in response")
 
             json_str = response[start:end]
+            json_str = clean_llm_json(json_str)
             data = json.loads(json_str)
             
             if not cot and not response:

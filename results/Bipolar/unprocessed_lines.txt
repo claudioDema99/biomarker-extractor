@@ -1,0 +1,21 @@
+
+
+________________________________________________________________
+Riga $13$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+
+
+
+
+________________________________________________________________
+Riga $242$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several assessment tools and numeric scales used to quantify psychiatric symptoms, interview confidence, employment outcomes, and social‑skills performance. It reports the Brief Psychiatric Rating Scale (BPRS) for symptom severity, a nine‑item self‑confidence survey, a phone‑based employment‑days questionnaire, employment rates at 9 months, the Social Skills Performance Assessment (SSPA) role‑play ratings, the Mock Interview Rating Scale, and a modified Personal Report of Public Speaking Apprehension (PRSPA) for interview anxiety. No biological or genetic biomarkers are described. All markers are purely psychometric instruments or outcome counts.<|return|>
+
+
+
+________________________________________________________________
+Riga $282$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+{"analysis":"The record lists numerous quantitative assessments across safety, efficacy, and biomarker domains. Safety markers include serum chemistry enzymes (AST, ALT, bilirubin, alk phos), male hormone panels (SHBG, free/high‑sensitity/low‑sensitity testosterone, LH, inhibin B, prolactin), complete blood work, urinalysis, ECG intervals, and vital‑sign thresholds. Efficacy markers comprise several validated rating scales—SHAPS, MADRS, CGI‑S, GAD‑7, YMRS, PHQ‑9, PROMIS APS, and C‑SSRS—as well as remission (MADRS ≤12) and response (≥50% MADRS drop) definitions. Biomarker subgroups feature inflammatory cytokines (CRP >3 mg/L, sIL‑6R >25 µg/mL, TNF >4 ng/L), P2RX7 gain‑of‑function SNP status, and elevated mRNA transcripts of P2RX7 and IL‑1β. Finally, the record reports participant counts for abnormal labs, TEAEs, ECG/vital‑sign abnormalities, remission, and response outcomes.","markers":["AST: Aspartate Aminotransferase","ALT: Alanine Aminotransferase","Bilirubin: Bilirubin","Alk Phos: Alkaline Ph
+

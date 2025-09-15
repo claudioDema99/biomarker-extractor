@@ -9,9 +9,14 @@ import shutil
 
 def main():
 
+    clean = False
+    if "clean" in sys.argv:
+        sys.argv.remove("clean")
+        clean = True
+
     all_databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
     #databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
-    databases = ["BPD"]
+    databases = ["Bipolar", "Depression", "Schizophrenia"]
 
     model, tokenizer, device = load_model_and_tokenizer()
 
@@ -23,8 +28,8 @@ def main():
             os.makedirs(path_cartella)
             print(f"Cartella '{path_cartella}' creata.")
         else:
-            if "clean" in sys.argv:
-                # Se esiste → rimuovo tutti i file e sottocartelle dentro
+            if clean:
+                # Se passo "clean" come argomento: rimuovo tutti i file e sottocartelle dentro
                 for filename in os.listdir(path_cartella):
                     file_path = os.path.join(path_cartella, filename)
                     try:
@@ -141,9 +146,10 @@ I risultati finali si trovano in 'results/{database}/biomarkers.json'.\n""")
     # Ho diviso la terza fase in due per questioni di praticità, così l'utente esperto può aggregare i gruppi di tutti i dataset uno dietro l'altro
     # altrimenti tra un dataset e l'altro avrebbe dovuto aspettare che l'LLM trovasse le varianti di ciascun gruppo, per poi tronare a raggruppare il dataset successivo
     # Invece prima faccio a raggruppamenti "manuali" di tutti i dataset, poi faccio fare all'LLM l'ultima fase (identificazione delle varianti) di tutti i dataset che son giaà stati raggruppati
-    if arg == "resume":
-        if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
-            _ = aggregation_resume_part3(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+    if len(sys.argv) > 1:
+        if arg == "resume":
+            if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
+                _ = aggregation_resume_part3(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
 
 if __name__ == "__main__":
     main()

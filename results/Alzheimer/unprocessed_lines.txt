@@ -1,59 +1,112 @@
 
 
 ________________________________________________________________
-Riga $6$: superata TOK_MAX (2592 > 1700) – saltata.
+Riga $35$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record describes analytical limits for immunoglobulin assays and definitions of adverse event categories. It specifies the lower limit of quantification (LLOQ) values for IgG (100 U/mL) and IgM (50 U/mL) and how values below LLOQ are handled. It also defines key safety markers: adverse events (AE), treatment‑emergent adverse events (TEAE), and serious adverse events (SAE). No clinical or biomarker measurements beyond these are mentioned. Therefore the relevant markers are the LLOQ thresholds for IgG and IgM and the AE classifications.<|return|>
 
 
 
 ________________________________________________________________
-Riga $9$: superata TOK_MAX (3538 > 1700) – saltata.
+Riga $55$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several explicit assessment tools and numeric outcomes. It includes the Mini‑Mental State Examination (MMSE) with its scoring ranges, the Disability Assessment for Dementia (DAD) with item‑specific maximum scores, and the APAS‑CarB caregiver burden metric. Additionally, it reports counts of caregiving days, percentages of home accommodation, and institutionalization status. These constitute the only markers described in the text.<|return|>
 
 
 
 ________________________________________________________________
-Riga $13$: nessun biomarker trovato (biomarker = '') – saltata.
+Riga $64$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+{"analysis":"The record enumerates a comprehensive set of Alzheimer’s disease markers spanning clinical scales, cerebrospinal fluid and plasma biomarkers, and neuroimaging readouts. Key clinical instruments include the EQ‑5D, VAS, ADAS‑Cog series (11, 12, 14), ADCS‑ADL, NPI, CDR‑SB, MMSE, and a quality‑of‑life questionnaire (QoL‑AD). Biomarker concentrations of amyloid‑beta 1‑42 in plasma and spinal fluid, phosphorylated tau and total tau in spinal fluid are explicitly reported. Imaging markers comprise PET SUVR values for amyloid ([18F]‑AV‑45) and glucose metabolism (18F‑FDG) as well as volumetric hippocampal measurements by vMRI.","markers":["EQ-5D: EuroQol Five Dimensions","VAS: Visual Analog Scale","Aβ-P: Amyloid Beta 1-42 in Plasma","Aβ-SF: Amyloid Beta 1-42 in Spinal Fluid","ADAS-Cog12: Alzheimer's Disease Assessment Scale-Cognitive Subscale 12","ADAS-Cog11: Alzheimer's Disease Assessment Scale-C
 
 
 
 ________________________________________________________________
-Riga $14$: superata TOK_MAX (2957 > 1700) – saltata.
+Riga $116$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record describes PET‑based amyloid imaging quantified as standardized uptake value ratios (SUVRs) at baseline, 12 months and 24 months.  It uses a BAPL scoring system (1 = normal/negative, 2–3 = abnormal/positive) to classify scans and compares these scores to clinical diagnoses of Alzheimer’s disease.  Sensitivity, specificity, PPV and NPV are calculated from the BAPL classifications versus the eventual AD diagnosis.  The markers explicitly listed are the SUVR values, the BAPL score, and the diagnostic performance metrics (sensitivity, specificity, PPV, NPV).<|return|>
 
 
 
 ________________________________________________________________
-Riga $23$: nessun biomarker trovato (biomarker = 'None') – saltata.
+Riga $118$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several explicit assessment tools and scoring systems used as markers. These include the Frontal Systems Behavior Scale (converted to T‑scores), the Measure of Caregiver Burden (0‑4 scale), and a caregiver‑reported daily living independence score (maximum 28). Each tool’s scoring rubric is described, providing quantitative values that can be tracked over time. No other biomarkers or imaging modalities are mentioned.<|return|>
 
 
 
 ________________________________________________________________
-Riga $37$: superata TOK_MAX (2345 > 1700) – saltata.
+Riga $141$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several explicit quantitative assessments. It includes the Alzheimer’s Disease Assessment Scale‑Cognitive Subscale (ADAS‑COG), the Clinical Interview Based Impression of Change plus Caregiver Input (CIBIC Plus), the Mini‑Mental State Examination (MMSE), the Clinical Dementia Rating Scale (CDR), regional cerebral blood flow measured by MRI, and the Cognitive Assessment Screening Test (CAST). All of these are described with ranges or scoring systems, confirming their role as measurable markers. No additional markers are implied beyond those listed.<|return|>
 
 
 
 ________________________________________________________________
-Riga $69$: superata TOK_MAX (2592 > 1700) – saltata.
+Riga $173$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists five distinct assessment tools that provide quantitative scores. These include the NPI‑C, MMSE, ADCS‑CGIC, ADCS‑ADL, and the original NPI. Each tool’s scoring range is specified, confirming their role as measurable markers of neuropsychiatric, cognitive, global impression, functional, and behavioral status in Alzheimer’s disease. No additional biomarkers or imaging methods are described.<|return|>
 
 
 
 ________________________________________________________________
-Riga $98$: superata TOK_MAX (3538 > 1700) – saltata.
+Riga $194$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several quantitative imaging and biochemical measurements. Imaging markers include cortical thickness, whole‑brain volume, hippocampal volumes (right and left), ventricular volume, and amyloid PET SUVR mapped to the centiloid scale. Biochemical markers involve anti‑drug antibodies (ADA) positivity and the presence of treatment‑emergent ADAs. Safety markers such as adverse events and serious adverse events are also described. These are the only markers explicitly named in the text.<|return|>
 
 
 
 ________________________________________________________________
-Riga $139$: nessun biomarker trovato (biomarker = '') – saltata.
+Riga $227$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists numerous CSF‑based biomarkers, both inflammatory cytokines and classic Alzheimer’s proteins. It includes interleukins (IL‑6, IL‑7, IL‑8, IL‑9, IL‑10), chemokine MCP‑1, TNF‑α, ICAM‑1, VCAM‑1, macrophage‑derived protein‑1, soluble PDGFRβ, and the renin‑angiotensin system components ACE‑1 and ACE‑2. Classic AD markers measured are amyloid‑β 42 and β‑40, total tau (T‑tau), phosphorylated tau (P‑tau), and the sPDGFRβ BBB integrity marker. All markers are explicitly named in the text.<|return|>
 
 
 
 ________________________________________________________________
-Riga $144$: superata TOK_MAX (2957 > 1700) – saltata.
+Riga $254$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several validated questionnaires and a toxicity grading scale used as outcome measures. These include the Hopkins Verbal Learning Test‑Revised (HVLT‑R), Mini‑Mental State Exam (MMSE), General Anxiety Disorder‑7 (GAD‑7), Everyday Cognition (ECog), Quality of Life in Alzheimer’s Disease (QOL‑AD), Brief Visuospatial Memory Test‑revised (BVMT‑R), Common Terminology Criteria for Adverse Events (CTCAE) for radiation toxicity, and Patient Health Questionnaire‑9 (PHQ‑9). All are explicitly named and described with scoring ranges, qualifying them as measurable markers in the trial.<|return|>
 
 
 
 ________________________________________________________________
-Riga $232$: nessun biomarker trovato (biomarker = 'None') – saltata.
+Riga $264$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+
 
 
 
 ________________________________________________________________
-Riga $379$: superata TOK_MAX (2345 > 1700) – saltata.
+Riga $273$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several explicit outcome measures. These include functional scales (Barthel Index, Preparedness for Caregiving Scale, Modified Caregiver Strain Index, Confusion Assessment Method‑Short Form, Short‑Form Zarit Burden Interview, Brief Neuropsychiatric Inventory, Hospital Anxiety and Depression subscale, Cornell Scale for Depression in Dementia), actigraphy metrics (minutes of moderate activity), and event counts (ER visits, hospitalizations, falls). All markers are named with their full titles and scoring ranges, providing clear quantitative indicators for clinical evaluation. No additional markers are implied beyond those listed.<|return|>
+
+
+
+________________________________________________________________
+Riga $306$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record describes several clinical rating scales used to quantify agitation and overall illness severity. The primary marker is the Cohen‑Mansfield Agitation Inventory (CMAI) with its total score and four subscale scores. Additional markers are the Clinician’s Global Impression – Improvement (CGI‑I) and the Clinician’s Global Impression – Severity (CGI‑S), both 7‑point ordinal scales. All markers are explicitly named and described in the text. No other biomarkers or imaging modalities are mentioned.<|return|>
+
+
+
+________________________________________________________________
+Riga $313$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several validated questionnaires and scales used to quantify psychosocial outcomes in people with mild‑to‑moderate dementia. These instruments provide numeric scores that can serve as clinical markers of quality of life, depression, caregiver burden, self‑efficacy, and interaction quality. The EQ‑5D‑5L VAS, QOL‑AD, CES‑D, GDS‑SF, ZBI, and the Fortinsky caregiver self‑efficacy scale are explicitly named and described. Community‑based service utilisation is recorded qualitatively through a checklist of HCBS items. No biological or imaging markers are mentioned.<|return|>
+
+
+
+________________________________________________________________
+Riga $362$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several explicit measurement markers. For suicidality it specifies the Columbia‑Suicide Severity Rating Scale (C‑SSRS) with numeric severity ranges for ideation and behavior. Vital‑sign thresholds are detailed for systolic and diastolic pressures in supine and standing positions, defining orthostatic changes. Electrocardiogram markers include QTcF interval ranges and increases from baseline. Laboratory markers are listed for hematocrit, hemoglobin, glucose, potassium, and blood urea nitrogen. All of these are directly quoted in the text and represent distinct quantitative markers used in the study.<|return|>
+
+
+
+________________________________________________________________
+Riga $372$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record lists several quantitative outcomes relevant to medication management and health service utilization. These include inpatient mortality, dose‑reduction percentage, polypharmacy count, emergency department visits, ambulatory encounters, hospitalizations, and non‑acute institutional admissions. All of these metrics are explicitly described as measurable markers within the study protocol. No additional biomarkers or imaging findings are referenced.<|return|>
+

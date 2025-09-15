@@ -1,0 +1,1568 @@
+MADRS: Montgomery-Asberg Depression Rating Scale Score
+MSF-C/A: Modified Side Effects Form for Children and Adolescents
+CGI-BP: Clinical Global Impressions-Bipolar
+KMRS: K‑SADS Mania Rating Scale
+MADRS: Montgomery Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+GAS: Global Assessment Scale
+YMRS: Young Mania Rating Scale total score change
+PANSS: Positive and Negative Syndrome Scale total score change
+SAE: Serious Adverse Events Incidence
+OBI: Overall Bipolarity Index
+HDRS: Hamilton Depression Scale
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression – Bipolar version
+GBI: Global Behavior Inventory
+CDRS-R: Children’s Depression Rating Scale – Revised
+Y-MRS: Young Mania Rating Scale
+CGAS: Children’s Global Assessment Scale
+ADHD-RS-IV: Attention Deficit Hyperactivity Disorder Rating Scale – IV
+MACS: Mania Acute Change Scale
+YMRS: Young Mania Rating Scale
+DIEPSS: Drug Induced Extra-Pyramidal Symptoms Scale
+YMRS: Young Mania Rating Scale
+HAMD-17: 17-item Hamilton Depression Rating Scale
+Response Rate: Percentage of patients meeting response criterion for manic symptoms
+Remission Rate: Percentage of patients meeting remission criteria
+POS: Positive Scale
+GRS: Global Rating Scale for Bipolar Disorder
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-S: Clinical Global Impression – Severity
+SA: Sessions Attended
+PD: Program Days
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+HAM-D 17: Hamilton Depression Rating Scale 17-item
+HAM-D 25: Hamilton Depression Rating Scale 25-item
+HAM-A: Hamilton Anxiety Rating Scale
+YMRS: Young Mania Rating Scale
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+GAF: Global Assessment of Functioning
+SDS: Sheehan Disability Scale
+Q-LES-Q: Quality of Life Enjoyment and Satisfaction Questionnaire
+HAM-D 17 AS: Anxiety/Somatization Subscale of Hamilton Depression Rating Scale
+HAM-D 17 SD: Sleep Disturbance Subscale of Hamilton Depression Rating Scale
+HAM-D 17 M: Melancholia Subscale of Hamilton Depression Rating Scale
+HAM-D 17 R: Retardation Subscale of Hamilton Depression Rating Scale
+BACS Digit Sequencing: Brief Assessment of Cognition Digit Sequencing Test
+BACS Immediate Recall Non-Emotional Words List 1: Brief Assessment of Cognition Immediate Recall Test
+BACS Immediate Recall Non-Emotional Words List 3: Brief Assessment of Cognition Immediate Recall Test
+BACS Immediate Recall Emotional Words List 1: Brief Assessment of Cognition Immediate Recall Test
+BACS Immediate Recall Emotional Words List 3: Brief Assessment of Cognition Immediate Recall Test
+BACS Delayed Recognition Non-Emotional Words: Brief Assessment of Cognition Delayed Recognition Test
+BACS Delayed Recognition Emotional Words: Brief Assessment of Cognition Delayed Recognition Test
+BACS False Alarms Non-Emotional Words: Brief Assessment of Cognition False Alarm Test
+BACS False Alarms Emotional Words: Brief Assessment of Cognition False Alarm Test
+BACS Motor Task Token Placement: Brief Assessment of Cognition Motor Speed Test
+BACS Picture Arrangement Ball Movements: Brief Assessment of Cognition Visual Organization Test
+BACS Verbal Fluency Letter: Brief Assessment of Cognition Verbal Fluency Test
+BACS Numeric Matching 1-9 Symbols: Brief Assessment of Cognition Numerical Matching Test
+AIMS: Abnormal Involuntary Movement Scale
+BARS: Barnes Akathisia Rating Scale
+SARS: Simpson Angus Rating Scale
+HR: Heart Rate
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+ELEC: Electrolytes
+CK: Creatine Kinase
+BUN: Blood Urea Nitrogen
+CREAT: Creatinine
+ALP: Alkaline Phosphatase
+PROT: Protein
+ALB: Albumin
+CHOLE: Cholesterol
+GLUC: Glucose
+TRIG: Triglycerides
+HbA1c: Glycosylated Hemoglobin
+INSULIN: Insulin
+PROLACTIN: Prolactin
+HB: Hemoglobin
+RBC: Red Blood Cell Count
+WBC: White Blood Cell Count
+PLT: Platelets
+HCT: Hematocrit
+NEUT: Neutrophils
+LYMPH: Lymphocytes
+MONO: Monocytes
+EOS: Eosinophils
+BASE: Basophils
+ECG: Electrocardiogram
+WEIGHT: Weight Change
+ABDOM_GIRTH: Abdominal Girth Change
+TG: Triglycerides
+LDL3-: Small Dense LDL subfraction 3
+LDL4-: Small Dense LDL subfraction 4
+LDL1-: Large Buoyant LDL subfraction 1
+LDL2-: Large Buoyant LDL subfraction 2
+HDL2: High Density Lipoprotein subtype 2
+HDL3: High Density Lipoprotein subtype 3
+TC: Total Cholesterol
+LDL-C: Low Density Lipoprotein Cholesterol
+HDL-C: High Density Lipoprotein Cholesterol
+VLDL-C: Very Low Density Lipoprotein Cholesterol
+Lp(a): Lipoprotein(a) Cholesterol
+IDL-C: Intermediate Density Lipoprotein Cholesterol
+VLDL1/2: Very Low Density Lipoprotein subfractions 1 and 2
+VLDL3: Very Low Density Lipoprotein subfraction 3
+CMRS: Child Mania Rating Scale
+CGI-BP: Clinical Global Impression-Bipolar Version
+CDRS: Children's Depression Rating Scale
+CDRS-R: Children's Depression Rating Scale – Revised
+CDRS: Children's Depression Rating Scale
+CDRS-R: Children's Depression Rating Scale – Revised
+BMI: Body Mass Index
+HLIP: Hyperlipidemia
+HGlyc: Hyperglycemia
+YMRS: Young Mania Rating Scale
+Y-MRS: Young Mania Rating Scale
+GAF: Global Assessment of Functioning
+HAM-D: Hamilton Rating Scale for Depression
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression-Bipolar Version
+SOFAS: Social and Occupational Functioning Assessment Scale
+SADS: Structured Interview for Affective Disorders and Schizophrenia
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Bipolar Version – Overall Severity Scale
+HAM-A: Hamilton Anxiety Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+7PS: Seven-Point Scale for Illness Severity
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression of Severity
+BDI: Beck Depression Inventory
+HDRS-17: Hamilton Depression Rating Scale-17
+CGAS: Children's Global Assessment Scale
+CDRS-R: Children’s Depression Rating Scale – Revised
+ARS-IV: Attention Deficit Hyperactivity Disorder Rating Scale IV
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impressions – Severity
+TTD: Time to Discontinuation
+MADRS: Montgomery‑Asberg Depression Rating Scale
+HAMA: Hamilton Anxiety Rating Scale
+YMRS: Young Mania Rating Scale
+GBI-HYPO: GBI Hypomanic/Biphasic Scale
+GBI-DEP: GBI Depression Scale
+SF-36: Short Form‑36 Health Survey
+RELAPSE: Relapse occurrence
+CAN_AB: Cannabis Abuse Remission Count
+COC_AB: Cocaine Abuse Remission Count
+ALL_AB: Overall Abuse Remission Count
+Glycerol Ra: Insulin‑stimulated rate of disappearance of glycerol
+Glucose Ra: Rate of appearance of glucose
+Glucose Rd: Insulin‑stimulated rate of disappearance of glucose
+MRI: Abdominal magnetic resonance imaging measurement of subcutaneous and visceral abdominal fat
+DEXA: Whole body dual energy X‑ray absorptiometry measurement of percent total body fat
+YMRS: Young Mania Rating Scale total score change
+MADRS: Montgomery Asberg Depression Rating Scale
+CGI-S: Clinical Global Impression Scale
+DBP: Supine Diastolic Blood Pressure Change (mmHg)
+SBP: Supine Systolic Blood Pressure Change (mmHg)
+PR: Supine Pulse Rate Change (bpm)
+TS: Tanner Stage Category Shift (I‑V)
+PRL: High Prolactin Level Change (ug/L)
+CGAS: Children’s Global Assessment Scale Score (0‑100)
+SAS: Simpson Angus Scale Total Score Change (0‑40)
+BARS: Barnes Akathisia Rating Scale Global Score Change (0‑5)
+CGI-S: Clinical Global Impression of Severity scale
+CGI-I: Clinical Global Impression of Improvement scale
+HAM-A: Hamilton Anxiety Rating Scale
+HAM-D: Hamilton Depression Rating Scale
+BDI: Beck Depression Inventory
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+Q-LES-Q: Quality of Life Enjoyment and Satisfaction Questionnaire
+CocaineAbstinenceDays: Percentage of self‑report cocaine‑abstinent days
+MoneySpentOnCocainePercent: Percentage of money spent on cocaine
+HDRS-21: Hamilton Depression Rating Scale (21-item version)
+CGI-S: Clinical Global Impression‑Severity Scale
+TTR: Time to Relapse
+UKU: UKU Side Effect Rating Scale Sedation Item score
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+YMRS: Young Mania Rating Scale
+YMRS: Young Mania Rating Scale Score
+Weight Gain: Body weight increase relative to baseline
+TC: Total Cholesterol
+HDL: High Density Lipoproteins
+LDL: Low Density Lipoproteins
+TG: Triglycerides
+HAMA-14: Hamilton Anxiety Rating Scale Score
+VAS-20: Visual Analog Scale Score
+HAMD-17: Hamilton Depression Rating Scale Score
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI-BP: Clinical Global Impression‑Bipolar
+AE: Adverse Event
+SAE: Serious Adverse Event
+CTCv3: Common Terminology Criteria for Adverse Events Version 3.0
+BARS: Barnes Akathisia Rating Scale
+YMRS: Young Mania Rating Scale
+HR: Heart Rate
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+HOMA2-%Beta: Homeostasis Model Assessment of Beta-cell Function (%)
+HOMA2-IR: Homeostasis Model Assessment of Insulin Resistance
+LBBB: Left Bundle Branch Block
+AIMS: Abnormal Involuntary Movements Scale
+SAS: Simpson‑Angus Scale
+KM: Kaplan‑Meier Survival Estimate
+HDL: High Density Lipoprotein
+LDL: Low Density Lipoprotein
+ULN: Upper Limit of Normal
+WL: Weight Loss (≥7% decrease)
+WG: Weight Gain (≥7% increase)
+VSCHG: Vital Sign Mean Change
+LABCHG: Lab Value Mean Change
+QTcF: QT Interval Corrected Using Fridericia Formula
+BMI‑Z: Body Mass Index Z‑Score Mean Change
+YMRS: Young Mania Rating Scale
+CGI‑S: Clinical Global Impression – Severity
+ABNLAB: Abnormal Lab Value Incidence
+HDL: High density lipoprotein concentration
+LDL: Low density lipoprotein concentration
+HbA1C: Hemoglobin A1C
+Positive Scale (Schizophrenia)
+DIEPSS: Drug-Induced Extrapyramidal Symptoms Scale
+HAMD-17: Hamilton Depression Rating Scale 17-item
+YMRS: Young Mania Rating Scale
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+Pulse: Heart Rate
+Weight: Body Weight
+Triglycerides: Serum triglyceride concentration
+Glucose (non-fasting): Non-fasting plasma glucose
+Glucose (fasting): Fasting plasma glucose
+QTcF: Corrected QT interval
+BARS: Barnes Akathisia Rating Scale
+AIMS: Abnormal Involuntary Movements Scale
+SAS: Simpson‑Angus Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+ALP: Alkaline Phosphatase
+LDH: Lactate Dehydrogenase
+HDL-C: High Density Lipoprotein Cholesterol
+LDL-C: Low Density Lipoprotein Cholesterol
+HR CV: Heart Rate Criterion Value
+SBP CV: Systolic Blood Pressure Criterion Value
+DBP CV: Diastolic Blood Pressure Criterion Value
+Weight Gain: Weight Increase >7%
+Weight Loss: Weight Decrease >7%
+UDS-Cocaine: Urine Drug Screen for Cocaine
+Cocaine Spending SR: Self-Reported Dollars Spent on Cocaine
+HAMD: Hamilton Rating Scale for Depression
+TLFB: Timeline Followback Method
+BPCoRS: Brief Psychiatric Cognition Rating Scale
+Informant Global Rating: Interview with informant using BPCoRS
+Sleep Disturbance: Sum of 3 items within Hamilton Depression Rating Scale
+CGI-I: Clinical Global Impression – Improvement
+HAM-D 17: Hamilton Depression Rating Scale 17‑item version
+HAM-D 25: Hamilton Depression Rating Scale 25‑item version
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+GAF: Global Assessment of Functioning
+YMRS: Young Mania Rating Scale
+SDS: Sheehan Disability Scale
+CGI-S: Clinical Global Impression – Severity
+HAM-A: Hamilton Anxiety Rating Scale
+Q-LES-Q: Quality of Life Enjoyment and Satisfaction Questionnaire
+Retardation Factor: Sum of 4 items pertaining to retardation within HAM‑D
+Bech Melancholia: Sum of 6 items pertaining to melancholia within HAM‑D
+HDL Ratio: High-Density Lipoprotein Ratio
+ABS: Proportion of subjects abstinent during the last 4 weeks of the trial
+LIPOPROTEIN: Lipoprotein measurements
+INSULIN: Serum insulin measurement
+PHYSICIAN FUNCTIONING SCORE: Physician's judgment of overall functioning
+WELL-BEING SCALE: Subjective well‑being 20‑item scale
+BMI: Body Mass Index
+PERCENTAGE LOSS OF BODY WEIGHT: Percentage loss of body weight
+PLASMA GLUCOSE: Plasma glucose measurement
+WC: Waist circumference
+TG: Triglycerides
+HDL-C: HDL cholesterol
+BP: Blood pressure
+FG: Fasting glucose
+APPETITE VAS: Appetite visual analogue scale
+SOIS: Severity of Illness Score
+HOMA-S: Homeostatic Model Assessment of Insulin Sensitivity
+SBP: Sitting blood pressure
+WEIGHT: Undressed patient weight
+GAF: Global Assessment of Functioning
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+PANSS: Positive and Negative Syndrome Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+LIFE‑RIFT: Life Interference and Relationship Functioning Tool
+YMRS: Young Mania Rating Scale
+SR-RefMedCare: Self‑Report Referral for Medical Care
+SR-HepB-Test: Self‑Report Testing for Hepatitis B
+ImmunizationCount-A&B: Number of Participants Immunized for Hepatitis A and B at 6 Months
+SR-HepC-Test: Self‑Report Testing for Hepatitis C
+SR-HIV-Test: Self‑Report Testing for HIV
+CDRS-R: Children’s Depression Rating Scale‑Revised
+C-GAS: Children’s Global Assessment Scale
+ATT: Attitude Scale (4‑item measure of attitudes toward treatment)
+MSS: Manic Severity Scale (11‑item clinician‑rated instrument)
+ERS: Emotion Regulation Scale (cognitive reappraisal & expressive suppression)
+TCQ: Treatment Credibility Questionnaire
+GFS: General Functioning Scale
+PMSS: Parent Mood Screening Scale (clinician‑administered instrument to parent)
+SAS-SR: Social Adjustment Scale—Self Report
+PHQ-9: Patient Health Questionnaire‑9
+PMHQ: Parent Mania History Questionnaire
+MADRS: Montgomery Asberg Depression Rating Scale Score
+MADRS Response: Reduction in MADRS Score
+Methamphetamine Use Frequency: Self‑reported days per 7‑day week of methamphetamine use
+Stroop Color Word Test T-score: Standardized score of Stroop test performance
+Stroop Color Word Test Completion Time: Time to complete 100 items
+Stroop Color Word Test Items Completed: Number of items completed
+HVLT Total Recall: Raw score of total recall
+HVLT Delayed Recall: Raw score of delayed recall
+HVLT Retention %: Percentage retained
+HVLT Recognition Discrimination Index: Raw score
+HVLT T-score: Standardized score
+IDS-C Score: Inventory of Depressive Symptomatology‑Clinician Rated score
+VAS Methamphetamine Craving Score: Visual analog scale score
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI‑S: Clinical Global Impression – Severity
+RECURRENCE: Occurrence of a mood episode per predefined criteria
+TTR: Time to recurrence of a mood episode
+TFB: Timeline Follow‑Back Self‑Reported Joint Equivalents per Week
+PD-Cannabis: Percent Days of Cannabis Use per Week
+MTD: Maximum Tolerated Dosage
+BMI Change: Body Mass Index Change
+Weight Change: Body Weight Change
+YMRS: Young Mania Rating Scale total score
+HAMD: Hamilton Depression Rating Scale total score
+CGI-BP: Clinical Global Impression – Bipolar Version Severity score
+Weight Change: Difference in weight from baseline to endpoint
+Bilirubin Total Change: Difference in bilirubin total
+Cholesterol Change: Difference in cholesterol
+Triglycerides Change: Difference in triglycerides
+Fasting Blood Glucose Change: Difference in fasting blood glucose
+BMI Change: Difference in body mass index
+% Increase in Weight ≥7%: Percentage of participants with weight increase ≥7%
+Hospitalizations due to relapse: Number of participants hospitalized because of relapse
+Time to Mixed Onset: Time to mixed onset (≥25% reduction on HAMD and YMRS)
+Time to Mixed Response: Time to mixed response (≥50% reduction on HAMD and YMRS)
+HRSD-25: Hamilton Rating Scale for Depression 25-item version
+YMRS: Young Mania Rating Scale
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+YMRS: Young Mania Rating Scale
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+MACS: Mania Acute Change Scale
+YMRS: Young Mania Rating Scale
+IDS-SR: Inventory of Depressive Symptomatology – Self Report
+GGT: Gamma‑glutamyl transferase
+ALT: Alanine aminotransferase
+AST: Aspartate aminotransferase
+PACS: Penn Alcohol Craving Scale
+HD%: Heavy Drinking Days Percentage
+MADRS: Montgomery-Asberg Depression Rating Scale
+SAB: Serum Alcohol Biomarker
+FD: First Drink Days
+NAD%: No Alcohol Day Percentage
+YMRS: Young Mania Rating Scale
+WC: Weight Change from baseline to endpoint
+BMI: Body Mass Index
+CGI-S: Clinical Global Impression – Severity Scale
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+Time to Recurrence of a Mood Event: Time to first recurrence of any mood symptoms
+GAF: Global Assessment of Functioning
+CGI-BP-S: Clinical Global Impression – Bipolar Version – Severity
+BP: Systolic and Diastolic Blood Pressure
+IS: Internal State Scale
+SF-12 PCS: Short Form 12 Physical Component Summary Score
+BMI: Body Mass Index
+TC: Total Cholesterol
+WHO-DAS: World Health Organization Disability Assessment Schedule
+aMT6s: 6‑sulfatoxymelatonin (urinary) adjusted for creatinine
+Weight: Body weight in kilograms
+TC: Total Cholesterol
+SOPS: Scale of Prodromal Symptoms Positive Symptom Sub-scale Score
+MANSA: Manchester Short Assessment of Quality of Life
+CGI-C: Clinical Global Impression – Change
+CGI-S: Clinical Global Impression – Severity
+Global Efficacy Evaluation: Final efficacy assessment of ziprasidone
+BPRS: Brief Psychiatric Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+EPS: Extrapyramidal Symptoms
+HD%: Percent Heavy Drinking Days
+DDD: Drinks per Drinking Day
+AD%: Percent Days Abstinent
+SRDD: Self‑Reported Drinks per Day
+NUM_INT_ANY_MOOD_EP: Number of participants with intervention for any mood episode
+TIME: Time to Intervention for Any Mood Episode
+YMRS: Young Mania Rating Scale Change
+CGI-S: Clinical Global Impression – Severity Change
+TIMan: Time to Intervention for Manic, Hypomanic, or Mixed Episode
+NUM_INT_MAN_HYPO_MIXED_EP: Number of participants with intervention for manic, hypomanic, or mixed episode
+NUM_WITHDRAWAL_EVENT: Number of participants with a withdrawal event
+CGI-I: Clinical Global Impression – Improvement Change
+HAMD-17: Hamilton Depression Rating Scale Change
+TIDep: Time to Intervention for Depressive Episode
+NUM_INT_DEPR_EP: Number of participants with intervention for depressive episode
+TIME_TO_WITHDRAWAL: Time from randomization to withdrawal
+Sleep Quality Scale: Self‑rated sleep quality measure
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression‑Bipolar Version
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+Depressive Symptoms Scale: 10‑item standardized scale for depressive symptoms
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+Lam: Plasma Lamotrigine Concentration
+CGI-S: Clinical Global Impression – Severity Scale Score
+AE: Adverse Event Occurrence
+SAE: Serious Adverse Event Occurrence
+ALP: Alkaline Phosphatase Level
+ALT: Alanine Aminotransferase Level
+AST: Aspartate Aminotransferase Level
+GGT: Gamma‑Glutamyl Transferase Level
+LDH: Lactate Dehydrogenase Level
+TP: Total Protein Level
+Hb: Hemoglobin Level
+Hct: Hematocrit Level
+BMI: Body Mass Index
+RBC: Red Blood Cell Count
+Ca: Calcium Level
+Cl: Chloride Level
+K: Potassium Level
+Na: Sodium Level
+Chol: Cholesterol Level
+TG: Triglyceride Level
+BUN: Blood Urea Nitrogen Level
+Urine Glucose: Urine Glucose Dipstick Result
+Urine Protein: Urine Protein Dipstick Result
+Urine Urobilinogen: Urine Urobilinogen Dipstick Result
+HR: Heart Rate
+Bilirubin: Total Bilirubin Level
+Cr: Creatinine Level
+ECG: Electrocardiogram Finding Category
+Weight: Body Weight
+Platelet Count: Platelet Count
+WBC: White Blood Cell Count
+HAMD-17: Hamilton Depression Rating Scale Score
+YMRS: Young Mania Rating Scale Score
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+CGI‑SI: Clinical Global Impression Severity of Illness score
+DSM‑4: Diagnostic and Statistical Manual of Mental Disorders, 4th Edition criteria for relapse
+DRINKS/WEEK: Average number of drinks/heavy drinking days per week
+HAM-D: Hamilton Depression Rating Scale
+ASEX: Arizona Sexual Experiences Scale
+MADRS: Montgomery Asberg Depression Rating Scale
+CGI-BP: Clinician Global Impression Scale for Bipolar Disorder
+SIS: Sheehan Irritability Scale
+SPS: Sheehan Panic Disorder Scale
+CGI-21 Anxiety: Clinician Global Improvement 21-point Anxiety Scale
+S-STS: Sheehan Suicidality Tracking Scale
+YMRS: Young Mania Rating Scale
+SDS: Sheehan Disability Scale
+PGI-21 Anxiety: Patient Global Improvement 21-point Anxiety Scale
+HAM-A: Hamilton Anxiety Scale
+RISc: Rapid Ideas Scale
+HRSD: Hamilton Rating Scale for Depression
+CVLT: California Verbal Learning Test
+CVLT Trial 1 Correct Items
+CVLT Trial 5 Correct Items
+CVLT Short Delay Free Recall Correct Items
+CVLT Long Delay Free Recall Correct Items
+RVP: Rapid Visual Processing Sustained Attention
+RVPA: Rapid Visual Processing Accuracy Z‑Score
+RVPB: Rapid Visual Processing Bias Z‑Score
+MGH-13: Massachusetts General Hospital 13-item Mania Checklist
+YMRS: Young Mania Rating Scale
+YMRS: Young Mania Rating Scale
+DSM-IV MSC: DSM-IV Mania Symptom Checklist
+YMRS: Young Mania Rating Scale
+Y-BOCS: Yale‑Brown Obsessive‑Compulsive Scale
+MS: Mania Scale
+HDRS: 17‑item Hamilton Depression Rating Scale
+SCWTR: Stroop Color-Word Test Raw Score
+DSFSS: Digit Span Forward Standard Score
+DRWR: Delayed Recall Words Recalled
+CARS-MMS: CARS-M Mania Subscale Score
+CARS-MPS: CARS-M Psychosis Subscale Score
+CARS-M15: CARS-M-15 Total Score
+TMT-A: Trail Making Test A Time
+TMT-B: Trail Making Test B Time
+SSSS: Symbol Search Standard Score
+HAM-D-21: Hamilton Depression Rating Scale Score
+DSBSS: Digit Span Backward Standard Score
+VFRS: Verbal Fluency Raw Score
+CGI-BP: Clinical Global Impression – Bipolar version
+YMRS: Young Mania Rating Scale
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression – Bipolar Version
+CGI-BP: Clinical Global Impression – Bipolar Version Severity of Illness Score (mania)
+YMRS: Young Mania Rating Scale Total Score
+YMRS: Young Mania Rating Scale total score change
+CGI-BP: Clinical Global Impression-Bipolar Version severity of illness score (mania) change
+CGI-BP: Clinical Global Impression – Bipolar version severity rating
+DIEPSS: Drug-Induced Extra-Pyramidal Symptoms Scale severity
+QTcF: Corrected QT interval (Fridericia)
+YMRS: Young Mania Rating Scale total score
+HbA1c: Glycated hemoglobin level
+AE Discontinuation Rate: Percentage of participants whose adverse event caused study withdrawal
+MINI-C: Mini International Neuropsychiatric Interview – Suicidality Module C score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+HRSD: Hamilton Rating Scale for Depression Score
+YMRS: Young Mania Rating Scale Score
+CUS: Cocaine Urine Screen
+BPRS: Brief Psychiatric Rating Scale
+SF-12: Short Form 12 Health Survey
+CDRS-R: Children’s Depression Rating Scale – Revised
+YMRS: Young Mania Rating Scale
+BARS: Barnes Akathisia Rating Scale
+CGI-S: Clinical Global Impression – Severity
+SAFTEE: Systematic Assessment for Treatment of Emergent Events
+AIMS: Abnormal Involuntary Movement Scale
+YMRS: Young Mania Rating Scale Score
+YMRS Change: Young Mania Rating Scale Score Change
+BMI: Body Mass Index
+FAST: Functional Assessment Short Test
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression – Bipolar version
+LIFE-RIFT: Life Interference and Relationship Functioning Test
+PGI-I: Patient Global Impression of Improvement
+WC: Weight Change
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-BP-S: Clinical Global Impression for Bipolar Disorder Severity
+MSSI: Modified Scale for Suicide Ideation
+MRTF: Medication Recommendation Tracking Form
+HRSD: Hamilton Rating Scale for Depression Score
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Short Form Score
+CGI-S: Clinical Global Impression – Severity Scale Score
+HAM-A: Hamilton Anxiety Rating Scale Score
+YMRS: Young Mania Rating Scale total score
+PANSS: Positive and Negative Syndrome Scale total score
+PANSS ACTIVATION SUBSCALE: PANSS activation subscale score
+PANSS SUPPLEMENTAL AGGRESSION RISK SUBSCALE: PANSS Supplemental Aggression Risk subscale score
+CGI-BP-S: Clinical Global Impression – Bipolar Version – Severity score
+MADRS: Montgomery‑Åsberg Depression Rating Scale total score
+REMISSION COUNT: Number of patients with YMRS total score <=12
+RESPONSE COUNT: Number of patients with >=50% reduction in YMRS total score
+DS84: Self-reported depression scale (range 0-84)
+DS52: Self-reported depression scale (range 0-52)
+GLU: Glucose
+VAS-Fullness: Visual Analogue Scale for Appetite Fullness
+LDL: Low‑Density Lipoprotein
+WC: Waist Circumference
+VAS-Hunger: Visual Analogue Scale for Appetite Hunger
+TG: Triglycerides
+HC: Hip Circumference
+HDL: High‑Density Lipoprotein
+BMI: Body Mass Index
+WT: Weight
+TC: Total Cholesterol
+CGI-I: Clinical Global Impression‑Improvement
+PANSS-EC: Positive and Negative Syndrome Scale‑Excited Component
+QIDS-A17-SR: Quick Inventory of Depressive Symptomatology – Adolescents Self‑Report
+QIDS-A17-C: Quick Inventory of Depressive Symptomatology – Adolescents Caregiver
+CGI-BP(I): Clinical Global Impression – Bipolar Version, Improvement
+CGI-BP(S): Clinical Global Impression – Bipolar Version, Severity
+P-YMRS: Parent‑rated Young Mania Rating Scale
+YMRS: Young Mania Rating Scale
+CGI-P: Clinical Global Impression – Pediatric (ADHD)
+TIDep: Time to Intervention for Depression
+TIMan: Time to Intervention for Mania/Hypomania
+TIMix: Time to Intervention for Mixed Episode
+TOBE: Treatment of Bipolar Episodes (first prescription of additional pharmacotherapy, dose increase, ECT, or environmental change)
+TTW: Time to Withdrawal
+TIME: Time to Intervention for Mood Episode
+YMRS: Young Mania Rating Scale
+HDRS: Hamilton Depression Rating Scale
+YMRS Change: Young Mania Rating Scale Score Change
+HDRS Change: Hamilton Depression Rating Scale Score Change
+WCST: Wisconsin Card Sorting Test
+Q-LES-Q: Quality of Life Enjoyment and Satisfaction Questionnaire
+CVLT: California Verbal Learning Test
+Conners CPT: Conner's Continuous Performance Task
+LIFE-RIFT: Life Impact and Functional Impairment Test
+Weight Gain: Weight increase from baseline to last observation
+CPT-IP: Continuous Performance Test, Identical Pairs version Detection Signal (d')
+BAC-A: Brief Assessment Composite Composite T‑Score
+HARS: Hamilton Anxiety Rating Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+Digit Span: Working Memory Test
+AMSQ: Lithium Attitudes Questionnaire Modification
+CGI-BP-I: Clinical Global Impression – Bipolar – Improvement
+CGI-BP-S: Clinical Global Impression – Bipolar – Severity
+CGI-BP-I mania: Clinical Global Impression – Bipolar – Improvement (mania component)
+CGI-BP-S mania: Clinical Global Impression – Bipolar – Severity (mania component)
+CGI-BP-I depression: Clinical Global Impression – Bipolar – Improvement (depression component)
+CGI-BP-S depression: Clinical Global Impression – Bipolar – Severity (depression component)
+PANSS Marder Factor Disorganized Thought: PANSS Marder Factor Disorganized Thought subscale
+PANSS Positive subscale: PANSS Positive subscale
+PANSS Negative subscale: PANSS Negative subscale
+PANSS Marder Factor Negative symptom: PANSS Marder Factor Negative symptom subscale
+PANSS total score: PANSS total score
+PANSS Marder Factor Positive symptom: PANSS Marder Factor Positive symptom subscale
+PANSS General Psychopathology subscale: PANSS General Psychopathology subscale
+PANSS Marder Factor Hostility/Excitement: PANSS Marder Factor Hostility/Excitement subscale
+PANSS Marder Factor Anxiety/Depression: PANSS Marder Factor Anxiety/Depression subscale
+Y-MRS: Young Mania Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+Boyko Classification: subcortical/DWM hyperintensity grading
+MADRS: Montgomery‑Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+FA: Fractional Anisotropy
+CGI-S: Clinical Global Impression – Severity scale
+HRSD: Hamilton Rating Scale for Depression
+CARS-M: Clinician-Administered Rating Scale for Mania
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery-Asberg Depression Rating Scale
+TNA-W: Treatment Nonadherence Past Week
+TNA-M: Treatment Nonadherence Past Month
+TOL: Tolerability Questionnaire
+CDRS-R: Children’s Depression Rating Scale – Revised
+YMRS: Young Mania Rating Scale
+SIGH-ADS: Structured Interview Guide for the Hamilton Depression Rating Scale-HRS-D with Atypical Depression Supplement
+GAF: Global Assessment of Functioning
+NON-HDL: Non-high density lipoprotein cholesterol
+FASTING NON-HDL: Fasting Non-high density lipoprotein cholesterol
+HDL: High-density lipoprotein cholesterol
+TC: Total Cholesterol
+TDEP: Time to Depressive Episode
+TMAN: Time to Manic or Hypomanic Episode
+TSPI: Time Spent in Episodes
+CGI-BD: Clinical Global Impression-Bipolar Version (Severity) Score
+YMRS: Young Mania Rating Scale Score
+MADRS: Montgomery‑Åsberg Depression Rating Scale Score
+MADRS-SU: MADRS Suicide Item Score
+CGI-S-BD: Clinical Global Impressions Scale, Bipolar Version, Severity Score
+HOSMO: Hospitalization for Mood Symptoms
+YMRS: Young Mania Rating Scale
+HypoIG: Hypomania Interview Guide
+MDE: Major Depressive Episode relapse
+CGI-S: Clinical Global Impression – Severity
+BPRS-C: Brief Psychiatric Rating Scale – Clinician version
+CGI-I: Clinical Global Impression – Improvement
+YMRS: Young Mania Rating Scale
+CVLT: California Verbal Learning Test T-score
+MADRS: Montgomery-Asberg Depression Rating Scale total score
+CDT: Carbohydrate-deficient Transferrin serum level
+% Days Abstinent: Self-reported percentage of days without alcohol consumption
+GGT: Gamma-glutamyltransferase serum level
+% Heavy Drinking Days: Self-reported percentage of heavy drinking days
+YMRS: Young Mania Rating Scale total score
+COMPJOB: Competitive Job Participation – Number of participants who worked at least one day in a competitive job
+VASEI: VA Supported Employment Intake Completion – Number of participants who completed an intake for the VA Supported Employment program
+BREAST_SYMP: Breast symptoms
+MENST_DISEASE: Menstrual disorders
+HYPER_PROLACTINEMIA: Hyperprolactinemia
+PROLACTINOMA: Prolactinoma
+HEIGHT_Z: Height Z-score
+TANNER_STAGE: Tanner stage
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+MADRS: Montgomery-Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+LBC: Live Births Count
+FDC: Fetal Deaths Count
+IAC: Induced Abortions Count
+SPLC: Spontaneous Pregnancy Losses Count
+MCM Count: Major Congenital Malformations Count
+EOT: Earliest Trimester of Exposure
+BDNF: Brain-Derived Neurotrophic Factor
+AMI-S: Autobiographical Memory Inventory Short Form
+WC: Waist Circumference
+TG: Triglycerides
+HDL-C: High-Density Lipoprotein Cholesterol
+FG: Fasting Glucose
+BP: Blood Pressure
+QT: QT Interval
+QTc: Corrected QT Interval
+QTcF: QT Interval Corrected Using Fridericia's Formula
+QLESQ-SF: Quality of Life Enjoyment and Satisfaction Questionnaire Total Score Change
+HRSD-17: Hamilton Rating Scale for Depression 17 Item Score
+YMRS: Young Mania Rating Scale Score
+Number of Remitted Participants: Count of participants meeting remission criteria
+MADRS: Montgomery-Asberg Depression Rating Scale
+SDS: Self‑Rated Disability Scale
+DRS: Depression Rating Scale
+ARS: Anxiety Rating Scale
+CGI-BP: Clinical Global Impressions – Bipolar Version
+SIS: Somatic Irritability Scale
+CGI-21: Clinical Global Impressions – Anxiety Scale
+YMRS: Young Mania Rating Scale
+MADRS: Montgomery Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+t1/2: Half-Life
+Cmax: Peak Plasma Concentration
+Tmax: Time to Maximum Concentration
+AUC0-12: Area Under Curve 0-12 Hours
+CDRS-R: Children’s Depression Rating Scale‑Revised Score
+CGI-BP: Clinical Global Impression – Bipolar Version Severity Score
+PQ-LES-Q: Pediatric Quality of Life Enjoyment and Satisfaction Questionnaire Overall Score
+Y-MRS: Young Mania Rating Scale Total Score
+CGAS: Children’s Global Assessment Scale Score
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+BQOL: Brief Quality of Life Scale – Satisfaction with Life in General Item Score
+SOBI-P: Sense of Belonging Instrument – Psychological experience of belonging score
+SOBI-A: Sense of Belonging Instrument – Antecedents fostering belonging score
+MARS: Maryland Assessment of Recovery in Serious Mental Illness Score
+GSES: General Self‑Efficacy Scale Score
+ISMI: Internalized Stigma of Mental Illness Inventory Score
+SFS: Social Functioning Scale – Social Engagement/Withdrawal Subscale Score
+SOFAS: Social and Occupational Functioning Scale
+GAF: Global Assessment of Functioning
+CGI: Clinical Global Impressions
+MEDADJ: Medication Adherence Percentage
+ISS: Internal State Scale
+Perceived Conflict: ISS subscale
+Activation: ISS subscale
+Well‑being: ISS subscale
+Depression: ISS subscale
+BRMS: Bech‑Rafaelsen Mania Rating Scale
+GAF: Global Assessment of Functioning
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+FRS: Framingham Risk Score
+AGE: Age
+SEX: Sex
+SBP: Systolic Blood Pressure
+TC: Total Cholesterol
+HDL-C: High Density Lipoprotein Cholesterol
+DM: Diabetes Mellitus
+SMK: Smoking Status
+CGI-EI: Clinical Global Impression – Evaluation Index
+LIFE-RIFT: Life Impact and Functional Impairment Tool
+CGAS: Children’s Global Assessment Scale Score
+Y-MRS: Young Mania Rating Scale Total Score
+CDRS-R: Children’s Depression Rating Scale‑Revised Total Score
+PQ-LES-Q: Pediatric Quality of Life Enjoyment and Satisfaction Questionnaire Total Score
+CGI-BP Overall: Clinical Global Impression – Bipolar Version Overall Score
+CGI-BP Mania: Clinical Global Impression – Bipolar Version Mania Score
+CGI-BP Depression: Clinical Global Impression – Bipolar Version Depression Score
+Time to Failure: Days from first achieving 50% reduction in Y‑MRS to loss of response
+Time to 50% Response: Days to achieve 50% reduction in Y‑MRS
+PIRS-2: PIRS-2 Insomnia Self-Report Scale
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-BP-S: Clinical Global Impression – Bipolar Version – Severity
+QIDS-SR16: Quick Inventory of Depressive Symptomatology – Self Report 16-item
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+SDS: Sheehan Disability Scale
+YMRS: Young Mania Rating Scale
+PANSS-P: PANSS Positive Subscale
+CDRS: Children's Depression Rating Scale
+YMRS: Young Mania Rating Scale
+D-KEFS: Delis‑Kaplan Executive Function System Composite Score
+HDRS: Hamilton Depression Rating Scale Score
+CGI-S: Clinical Global Impression – Severity Score
+IDS-SR: Inventory of Depressive Symptomatology – Self Report
+HRSD: Hamilton Rating Scale for Depression
+YMRS: Young Mania Rating Scale
+ISMI: Internalized Stigma of Mental Illness
+Stereotype Endorsement subscale: Stereotype Endorsement subscale of ISMI
+Stigma Resistance subscale: Stigma Resistance subscale of ISMI
+Social Withdrawal subscale: Social Withdrawal subscale of ISMI
+Alienation subscale: Alienation subscale of ISMI
+Discrimination Experience subscale: Discrimination Experience subscale of ISMI
+UMES: Utilization of Mental Education Score
+UPES: Utilization of Physical Education Score
+DKS: Diabetes Knowledge Score
+GAF: Global Assessment of Functioning
+UMHS: Utilization of Mental Hospital Score
+SF-36: Short Form 36 Health Survey
+SDS: Sheehan Disability Scale
+SDSCA: Summary of Diabetes Self-Care Activities
+MSPSS: Multidimensional Scale of Perceived Social Support
+PDSMS: Perceived Diabetes Self-Management Scale
+TRQ: Tablets Routine Questionnaire
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI: Clinical Global Impression
+AUDIT: Alcohol Use Disorders Identification Test
+BPRS: Brief Psychiatric Rating Scale
+HamD29: 29‑Item Hamilton Rating Scale for Depression
+QIDS: Quick Inventory of Depressive Symptomatology
+HIGH-C: Structured interview for manic/hypomanic symptoms
+SIGH-ADS: Structured Interview Guide for the Hamilton Depression Rating Scale – Affective Disorder Schedule
+HAMD-17: Hamilton Depression Rating Scale
+REC: Recall Score
+DREC: Delayed Recall Score
+RET: Retention Score
+RI: Recognition Discrimination Index
+SAS: Simpson‑Angus Scale
+TMT-A: Trail Making Test Part A
+TMT-B: Trail Making Test Part B
+WHO-DAS II GA: WHO‑DAS II Getting Around
+WHO-DAS II SC: WHO‑DAS II Self Care
+WHO-DAS II LA: WHO‑DAS II Life Activities
+WHO-DAS II UC: WHO‑DAS II Understand/Communicate
+WHO-DAS II PS: WHO‑DAS II Participation in Society
+WHO-DAS II GP: WHO‑DAS II Getting Along with People
+AKAT: Akathisia Scale
+CGI-BP MS: CGI‑BP Mania Severity
+CGI-BP DS: CGI‑BP Depression Severity
+CGI-BP OS: CGI‑BP Overall Bipolar Illness Severity
+DRS ATT: DRS Attention Subscale
+DRS IP: DRS Initiation/Perseveration Subscale
+DRS CON: DRS Construction Subscale
+DRS CO: DRS Conceptualization Subscale
+DRS MEM: DRS Memory Subscale
+DRS TRS: DRS Total Raw Score
+STROOP W: Stroop Word Subscale
+STROOP C: Stroop Color Subscale
+STROOP CW: Stroop Color‑Word Subscale
+BIS-11: Barratt Impulsiveness Scale 11‑item
+ATTN: Attentional Impulsivity
+MOT: Motor Impulsivity
+NP: Non‑Planning Impulsivity
+PRO: Procrastination Decision‑Making Style
+HV: Hypervigilance Decision‑Making Style
+VIG: Vigilance Decision‑Making Style
+BP: Buckpassing Decision‑Making Style
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+PANSS: Positive and Negative Syndrome Scale
+SOFAS: Social and Occupational Functioning Assessment Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+MATRICS Processing Speed: Processing Speed subtest of the MATRICS battery
+MATRICS Attention: Attention subtest of the MATRICS battery
+MATRICS Working Memory: Working Memory subtest of the MATRICS battery
+MATRICS Verbal Learning: Verbal Learning subtest of the MATRICS battery
+MATRICS Visual Learning: Visual Learning subtest of the MATRICS battery
+MATRICS Problem Solving: Problem Solving subtest of the MATRICS battery
+MATRICS Social Cognition: Social Cognition subtest of the MATRICS battery
+MATRICS Composite: Cognitive Composite score of the MATRICS battery
+MCAS: Multnomah Community Ability Scale
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+VR-12: Veterans Short Form 12-item Survey
+PCS: Physical Component Summary Score
+MCS: Mental Component Summary Score
+SF-12: Short Form 12-item Survey
+ALLCAUSES: Discontinuation due to all causes
+HOMA-IR: Homeostatic Model Assessment for Insulin Resistance
+INSULIN: Fasting Plasma Insulin Level
+GLUC: Fasting Plasma Glucose Level
+BPRS-E: Brief Psychiatric Rating Scale-Extended Total Score
+PCL: PTSD Checklist Total Score
+SF-12: Veterans SF 12 Health Survey Score
+BDI-II: Beck Depression Inventory-II Total Score
+PSYRATS: Psychotic Symptom Rating Scales Total Score
+DERS: Difficulties in Emotion Regulation Scale Total Score
+PSQI: Pittsburgh Sleep Quality Index Total Score
+CAPS: Clinician Administered PTSD Scale Total Score
+CAPS: Clinician Administered PTSD Scale Diagnosis (yes/no)
+YMRS: Young Mania Rating Scale Total Score
+HAM-D: Hamilton Depression Scale Total Score
+YMRS: Young Mania Rating Scale Total Score
+MADRS: Montgomery‑Asberg Depression Rating Scale Total Score
+CGI-BP-S: Clinical Global Impression – Bipolar Version Severity Score
+MADRS10: MADRS Item 10 Score
+C-SSRS: Columbia Suicide Severity Rating Scale
+EtG: Ethyl glucuronide
+PANSS-P: Positive and Negative Syndrome Scale-Positive Subscale Score
+SDS: Sheehan Disability Scale Total Score
+CGI-BP-S: Clinical Global Impression-Bipolar Version-Severity Score
+CGI-BP-S Mania: Clinical Global Impression-Bipolar Version-Mania Score
+CGI-BP-S Depression: Clinical Global Impression-Bipolar Version-Depression Score
+QIDS-SR16: Quick Inventory of Depressive Symptomatology Self Report 16 Total Score
+YMRS: Young Mania Rating Scale Total Score
+MADRS: Montgomery-Asberg Depression Rating Scale Total Score
+TEAE Count: Treatment Emergent Adverse Events Count Leading to Discontinuation
+BISS: Bipolar Illness Severity Scale
+CGI-S: Clinical Global Impression-Severity Scale
+Type I BD Percentage: Proportion of participants with Type I Bipolar Disorder in randomization groups
+Type II BD Percentage: Proportion of participants with Type II Bipolar Disorder in randomization groups
+Divalproex Randomization Percentage: Proportion of participants randomized to Divalproex
+Lithium Randomization Percentage: Proportion of participants randomized to Lithium
+GAS: Global Assessment Scale
+HAMD: Hamilton Depression Rating Scale
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+BODY WEIGHT: Body Weight Measurement
+TIME: Time to intervention or relapse
+TIME-SIS: Time to intervention for any mood episode
+TIMS-SIS: Time to intervention for any mood episode
+TIMan: Time to manic episode
+TIDep: Time to depressive episode
+WE: Weekly exercise duration
+BMI: Body Mass Index
+CSQ-8: Client Satisfaction Questionnaire‑8
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+LIFE: LIFE‑Range of Impaired Functioning Tool
+NEWTX: NEW Tx Scale
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+SDS: Sheehan Disability Scale
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+QIDS-SR16: Quick Inventory of Depressive Symptomatology – Self Report 16-item
+YMRS: Young Mania Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+BW: Body weight
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+HR: Heart Rate
+BT: Body Temperature
+SC: Serum Chemistry
+HB: Hematology
+UA: Urinalysis
+VAS: Visual Analogue Scale for injection‑site pain
+AIMS: Abnormal Involuntary Movement Scale
+SAS: Simpson‑Angus Scale
+DIEPSS: Drug‑Induced Extrapyramidal Symptoms Scale
+BARS: Barnes Akathisia Rating Scale
+ECG: Twelve‑lead Electrocardiogram
+IDS-C30: Inventory of Depressive Symptomatology-Clinician Rated Score
+AEPP_G40Hz: Auditory Evoked Potential Phase Locking G40Hz
+AEPP_G20Hz: Auditory Evoked Potential Phase Locking G20Hz
+AEPP_G30Hz: Auditory Evoked Potential Phase Locking G30Hz
+Gly/Cr: Glycine to Creatine Ratio
+PLG: Plasma Glycine Level
+P300AMP: P300 Amplitude
+N100AMP: N100 Amplitude
+P200AMP: P200 Amplitude
+P50AMP: P50 Amplitude
+MMNAP: Mismatch Negativity Amplitude
+P50R: P50 Ratio (S2/S1)
+P300LAT: P300 Latency
+N100LAT: N100 Latency
+P200LAT: P200 Latency
+GABA/Cr: GABA to Creatine Ratio
+GLU_MET: Glutamate Metabolite Level
+BPRS_TOT: Brief Psychiatric Rating Scale Total Score
+CogCompTS: Cognitive Composite T‑Score
+CGI_TE: Clinical Global Impression Therapeutic Effect Score
+PANSS_TOT: Positive and Negative Symptom Scale Total Score
+HDRS_TOT: Hamilton Depression Rating Scale Total Score
+YMRS_TOT: Young Mania Rating Scale Total Score
+CGI_SEV: Clinical Global Impression Severity Score
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+CGI-BP-C: Clinical Global Impression – Bipolar version, Change scale
+CGI-BP-S: Clinical Global Impression – Bipolar version, Severity scale
+HAM-D17: Hamilton Depression Rating Scale, 17-item version
+DIEPSS: Drug-Induced Extrapyramidal Symptoms Scale
+YMRS: Young Mania Rating Scale
+ABC-C: Aberrant Behavior Checklist-Community total score
+CGI-I: Clinical Global Impressions – Improvement subscale
+Weight Change: Weight change from baseline
+Fat Mass: Fat mass measurement
+Rehosp Count: Count of participants with at least one rehospitalization
+Rehosp Frequency: Total number of rehospitalizations per group
+Mean Days Rehosp: Mean number of days participants were rehospitalized
+TTPIR: Time to first psychiatric inpatient rehospitalization
+CGI-BP-S: Clinical Global Impression – Bipolar Version – Severity
+HAM-D17: Hamilton Depression Rating Scale – 17 Item
+CGI-BP-C: Clinical Global Impression – Bipolar Version – Change
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+SF-36: Short Form-36 Health Survey
+PCS: Physical Component Summary (SF-36)
+MCS: Mental Component Summary (SF-36)
+CGI-BP-M: Modified Clinical Global Impression for Bipolar Disorder
+Adherence %: Total percentage of adherence by treatment group
+MADRS: Montgomery-Asberg Depression Rating Scale
+BPRS: Brief Psychiatric Rating Scale Score
+MADRS Change: Montgomery-Asberg Depression Rating Scale Score Change
+CRP Level: C-reactive Protein Level in mg/L
+IL-6 Level: Interleukin 6 Level in pg/mL
+PDA: Positive Detection Accuracy
+Parent Satisfaction Questionnaire: Composite score 1-5
+Medicaid Pharmacy Prescription Data: Antipsychotic Dose Increase (Yes/No)
+Medicaid Claims Data: Psychosocial Services Received (Yes/No)
+Parental Empowerment Scale: Composite score 1-5
+Brief Problem Monitor: Total Problem Score T‑score 0-80
+Social Support Questionnaire: Composite score 1-5
+HAM-D: Hamilton Depression Rating Scale
+YMRS: Young Mania Rating Scale
+YMRS: Young Mania Rating Scale
+YMRS Change: Young Mania Rating Scale Change in Total Score
+Responder: ≥50% improvement in YMRS total score or YMRS total <12
+YMRS: Young Mania Rating Scale
+YMRS Change: Young Mania Rating Scale Change in Total Score
+Responder: ≥50% improvement in YMRS total score or YMRS total <12
+CGI-BP: Clinical Global Impression – Bipolar Version
+HAM-D: Hamilton Depression Rating Scale
+Ham-D Suicide Item: Ham-D suicide item score
+DRS: Depression rating scale
+YMRS: Young Mania Rating Scale
+BMI: Body Mass Index
+TG: Triglycerides
+FG: Fasting Glucose
+LDL: Low-density Lipoprotein
+BMI: Body Mass Index
+TC: Total Cholesterol
+HDL: High-density Lipoprotein
+WT: Weight
+INS: Insulin
+HbA1c: Glycosylated Hemoglobin
+HRSD-24: Hamilton Rating Scale for Depression Score
+CHAMPS: Community Healthy Activities Model Program for Seniors
+ESE: Exercise Self‑Efficacy
+PHQ-8: Patient Health Questionnaire‑8
+BADS: Behavioral Activation for Depression Scale
+VR-12: Veterans RAND 12
+ACC: Acceptability Scale
+ITE: Intent To Engage
+HAM-D: Hamilton Depression Rating Scale Score
+ASI: Anxiety Sensitivity Index Score
+NEO-FFI-N: Neuroticism Subscale Score
+CSQ: Client Satisfaction Questionnaire Score
+ACS: Affective Control Scale Score
+HAM-A: Hamilton Anxiety Rating Scale Score
+DERS: Difficulties in Emotion Regulation Scale Score
+Functional Connectivity: Anterior Insula – Ventrolateral Prefrontal Cortex
+COMPLIANCE: Percentage of study medication taken
+SDV EPISODE COUNT: Number of first repeated episodes of suicide‑related events
+SA COUNT: Non‑fatal suicide attempts
+IA COUNT: Interrupted suicide attempts
+HS COUNT: Hospitalisations to prevent suicide
+DS COUNT: Deaths from suicide
+RR: Repeat rate of self‑directed violence
+UPSA: Brief University of California, San Diego Performance-Based Skills Assessment
+YMS: Yung Mania Scale
+SFS: Social Functioning Scale
+WHOQoL: World Health Organization Quality of Life Scale
+SOR: Stages of Recovery Instrument
+MATRICS: Measurement and Treatment Research to Improve Cognition in Schizophrenia Consensus Cognitive Battery
+IMI: Intrinsic Motivation Inventory
+MAR: Medication Adherence Rating Scale
+RAND36: RAND 36-Item Health Survey
+MAI: Metacognitive Awareness Inventory
+IDS-C: Inventory of Depressive Symptomatology (Clinician-Rated)
+SAFTE: Systematic Assessment for Treatment Emergent Events
+SI: Suicidal Ideation
+BP: Blood Pressure
+BDI-II: Beck Depression Inventory II
+YMRS: Young Mania Rating Scale
+TEPS-A: Temporal Experience of Pleasure Scale Anticipatory
+TEPS-C: Temporal Experience of Pleasure Scale Consummatory
+MASQ-AD: Mood and Anxiety Symptom Questionnaire – Anhedonic Depression subscale
+BIS-11: Barrett Impulsiveness Scale 11
+IGAT: Instrumental Learning Task Accuracy Gain Condition
+RB: Response Bias
+CRB: Change-in-Response-Bias
+HAMD: Hamilton Depression Rating Scale
+YMRS: Young Mania Rating Scale
+HAMA: Hamilton Anxiety Rating Scale
+QIDS: Quick Inventory of Depressive Symptomatology
+SDD: Standard Drinks per Day
+AUD: Alcohol Use Days
+HDW: Heavy Drinking Days per Week
+SDW: Standard Drinks per Week
+RECURRENCE: Number of subjects experiencing recurrence/relapse of any mood event
+MADRS: Montgomery-Asberg Depression Rating Scale
+YMRS: Young Mania Rating Scale
+ADVERSE EVENTS: Number and percentage of subjects with at least one adverse event and adverse drug reaction
+QOLIE-10-P: Quality of Life in Epilepsy Inventory-10-Parent
+MADRS: Montgomery-Asberg Depression Rating Scale
+PSQI: Pittsburgh Sleep Quality Index
+GAF: Global Assessment of Functioning
+SEIZURE FREQUENCY: Self-reported seizure frequency
+WHODAS 2.0: World Health Organization Disability Assessment Schedule 2.0
+BPRS: Brief Psychiatric Rating Scale
+DAS: Dysfunctional Attitude Scale
+BPRS-24: Brief Psychiatric Rating Scale-24
+SLOF: Social Functioning Scale
+PHQ-9: Patient Health Questionnaire-9 Score
+SF-12: Short Form 12 Health Survey Score
+BW: Body Weight Change (kg)
+YMRS: Young Mania Rating Scale Total Score
+BMIz: BMI z-score
+BMI: Body Mass Index Change (kg/m^2)
+QTCF: QT interval corrected using Fridericia's formula
+QTCB: QT interval corrected using Bazett's correction
+PR: PR interval
+QRS: QRS complex
+QT: QT interval
+RR: RR interval
+HR: Heart rate
+CDRS-R: Children’s Depression Rating Scale‑Revised
+CGI-S: Clinical Global Impression – Severity
+AIMS: Abnormal Involuntary Movement Scale
+CGI-I: Clinical Global Impression – Improvement
+Hb: Hemoglobin
+Hct: Hematocrit
+RBC: Red Blood Cell count
+MCV: Mean Corpuscular Volume
+Plt: Platelet count
+Wbc: White Blood Cell count
+Lymph: Lymphocyte count
+Neu: Neutrophil count
+Baso: Basophil count
+Eos: Eosinophil count
+Mono: Monocyte count
+Bil: Bilirubin total
+Direct Bil: Bilirubin direct
+Indirect Bil: Bilirubin indirect
+AST: Aspartate Aminotransferase
+ALT: Alanine Aminotransferase
+GGT: Gamma Glutamyl Transferase
+LDH: Lactate Dehydrogenase
+ALP: Alkaline Phosphatase
+Prot: Protein
+Alb: Albumin
+BUN: Blood Urea Nitrogen
+Cr: Creatinine
+Urate: Urate
+HDL: High Density Lipoprotein
+LDL: Low Density Lipoprotein
+Chol: Cholesterol
+Na: Sodium
+K: Potassium
+Cl: Chloride
+Ca: Calcium
+Mg: Magnesium
+HCO3: Bicarbonate
+P: Phosphate
+FT4: Free Thyroxine
+TSH: Thyroid Stimulating Hormone
+Prol: Prolactin
+Gluc: Glucose
+HbA1c: Hemoglobin A1c
+TG: Triglycerides
+CK: Creatine Kinase
+SG: Specific Gravity (Urine)
+pH: Urine pH
+UGluc: Urine Glucose
+UProt: Urine Protein
+UKet: Urine Ketones
+SBP: Systolic Blood Pressure Change (mmHg)
+DBP: Diastolic Blood Pressure Change (mmHg)
+HT: Height Change (cm)
+WC: Waist Circumference Change (cm)
+C-SSRS: Columbia Suicide Severity Rating Scale
+BAS: Barnes Akathisia Scale
+SARS: Simpson-Angus Rating Scale
+PRate: Pulse Rate Change (bpm)
+TLFB: Timeline Followback Standard Drinks per Week
+TLFB: Timeline Followback Heavy Drinking Days
+HAMD: Hamilton Rating Scale for Depression Score
+DTW: Dose Timing Window
+MEMS: MEMS-derived Percent Adherence
+SF-12: 12-Item Short Form Survey
+PHQ-9: Patient Health Questionnaire-9
+LDL: Low Density Lipoprotein
+SBP: Systolic Blood Pressure
+HbA1c: Hemoglobin A1c
+CGI: Clinical Global Impression severity score
+BPRS: Brief Psychiatric Rating Scale
+PANSS: Positive and Negative Symptom Scale
+P300: Auditory Evoked Potential Latency (P300)
+N100: Auditory Evoked Potential Latency (N100)
+P200: Auditory Evoked Potential Latency (P200)
+HAM: Hamilton Depression Rating Scale
+P50: Auditory Evoked Potential Amplitude (P50 ratio)
+MMN: Auditory Evoked Potential Amplitude (Mismatch Negativity)
+G40: Auditory Evoked Potential Phase Locking (40 Hz)
+G30: Auditory Evoked Potential Phase Locking (30 Hz)
+G20: Auditory Evoked Potential Phase Locking (20 Hz)
+Cognitive Function T-score: Cognitive Function Domain T-scores
+YMRS: Young Mania Rating Scale
+Glycine/CR Ratio: Brain Glycine to Creatine Ratio measured by Proton MR Spectroscopy
+CDRS: Children's Depression Rating Scale
+YMRS: Young Mania Rating Scale
+PSAT: Probabilistic Selection Task Accuracy
+HRSD: Hamilton Rating Scale for Depression Score
+C-SSRS: Columbia Suicide Severity Rating Scale Count
+YMRS: Young Mania Rating Scale Score
+MCCB: MATRICS Consensus Cognitive Battery Composite T-score
+BPRS: Brief Psychiatric Rating Scale Score
+BISS: Bipolar Inventory of Symptoms Scale Depression Score
+BISS: Bipolar Inventory of Symptoms Scale Mania Score
+BISS: Bipolar Inventory of Symptoms Scale Change Score
+KIOS: KIOS assessment
+eMOOD: eMOOD assessment
+Weeks Not Submitted: Count of weeks not submitted
+ASCVD: Atherosclerotic Cardiovascular Disease 10‑year Risk Score
+MOD_CVRISK: Modifiable Cardiovascular Risk
+ARCMOD_CVRISK: Annual Rate of Change in Modifiable Cardiovascular Risk
+BDNF: Brain-derived Neurotrophic Factor
+YMRS: Young Mania Rating Scale
+CGI-S: Clinical Global Impression – Severity Score
+CGI-BPSeverity: Clinical Global Impression – Bipolar Severity Score
+MADRS: Montgomery‑Asberg Depression Rating Scale Total Score
+Verbal Fluency: Word Generation Test Score
+ANX: Anxiety severity
+DEP: Depression severity
+CI: Clinician impression
+YMRS: Young Mania Rating Scale
+SDM-Q-9: Shared Decision Making Questionnaire-9
+BASIS-24: Brief Assessment of Symptoms and Impairments-24
+HOPE: Patient Hopefulness Question
+PAM: Patient Activation Measure
+MED-SE: Medication Side Effect Score
+SDS: Sheehan Disability Scale
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire – Short Form
+MEDCHECK: Count of medication checks and evaluation visits
+PEMM: Patient Experience of Medication Management
+PSYCHVISIT: Count of psychotherapy visits
+BMI: Body Mass Index
+BMI Z-Score: Normalized BMI z‑score adjusted for age and sex
+OOP: Annual Out‑of‑Pocket Cost
+OUTV: Annual Outpatient Mental Health Visit Count
+PMF: Annual Psychotropic Medication Fill Count
+EDV: Annual Emergency Department Visit Count
+BMF: Annual Bipolar Medication Fill Count
+IH: Annual Inpatient Hospitalization Count
+PANAS-PA: Positive Affect subscale score
+PANAS-NA: Negative Affect subscale score
+LIKERT: Likert Scale Item for Class Liking
+VAS-D: Visual Analogue Scale for Depression
+VAS-A: Visual Analogue Scale for Anxiety
+VAS-E: Visual Analogue Scale for Euphoria
+VAS-AH: Visual Analogue Scale for Auditory Hallucinations
+VAS-VH: Visual Analogue Scale for Visual Hallucinations
+VAS-PAR: Visual Analogue Scale for Paranoia
+VAS-RT: Visual Analogue Scale for Referential Thinking
+VAS-DC: Visual Analogue Scale for Delusions of Control
+VAS-EL: Visual Analogue Scale for Elation
+Accuracy: Proportion of Correct Responses in 2-back Task
+Reaction Time: Time from Presentation to Response
+Mentoring and Communication Support Scale: Self‑report measure of perceived relationship quality with colleagues and supervisors at work
+Collegial Support Subscale: Subscale of Mentoring and Communication Support Scale indicating emotional and knowledge support from coworkers
+Task Support Subscale: Subscale of Mentoring and Communication Support Scale indicating task‑related support from coworkers
+Career Mentoring Subscale: Subscale of Mentoring and Communication Support Scale measuring supervisory mentorship
+Coaching Subscale: Subscale of Mentoring and Communication Support Scale measuring supervisory coaching
+Completion Rate: Percentage of participants who began the intervention and completed the 3‑month training protocol
+Emotion Recognition Test: Self‑report measure of emotion recognition ability (total score 0‑21)
+Emotion Recognition Measure: Self‑report measure of emotion recognition ability (total score 0‑19)
+TASIT: Awareness of Social Inference Test Part 3
+Hostility Total Score: Attributional bias measure of perceived hostility (1‑5)
+Aggression Total Score: Measure of aggression response (1‑5)
+Social Skill Total Score: Measure of social skill demonstrated in role plays (17‑85)
+Vocational Efficacy in Trauma Survivors Scale: Self‑report measure of perceived social support and coping with mental health symptoms at work
+Self Disclosure Subscale: Subscale of Vocational Efficacy in Trauma Survivors Scale measuring comfort disclosing mental health issues
+Workplace Coping Subscale: Subscale of Vocational Efficacy in Trauma Survivors Scale measuring confidence managing mental health symptoms at work
+Social and Community Functioning Score: Self‑report measure of social and community functioning across multiple domains (28‑112)
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-S: Clinical Global Impression – Severity
+MADRS: Montgomery-Asberg Depression Rating Scale
+CGI-S: Clinical Global Impressions-Severity
+SEB: Self‑Efficacy for Exercise Behaviors Scale
+BP: Blood Pressure
+6MWT: Six Minute Walk Test Distance
+BW: Body Weight
+HbA1c: Hemoglobin A1c
+SPS: Social Provisions Scale
+WSS: Word Similarity Scoring
+CN: Color Naming Scoring
+WR: Word Recall Raw Score
+SA: Sort Accuracy Scaled Score
+rCBF: Resting‑State Relative Cerebral Blood Flow in Left Inferior Frontal Gyrus
+RDS: Reverse Digit Span Scaled Score
+LNSS: Letter‑Number Sequencing Speed Raw Seconds
+SR: Story Recall Scaled Score
+CAS: Complex Abstraction Raw Score
+CSG: Card Sorting Count Scaled Score
+QoL: Quality of Life Self‑Report Raw Score
+CSA: Card Sorting Accuracy Scaled Score
+VF: Verbal Fluency Scaled Score
+CO: Expired Carbon Monoxide Level
+SF-1: Single-Item Self-Reported Overall Health Scale
+WCS: Weiss Craving Scale
+BDI-II: Beck Depression Inventory II
+UTS: Urine Toxicology Specimen Proportion
+TLFB: Timeline Followback
+YMRS: Young Mania Rating Scale
+HRSD: Hamilton Rating Scale for Depression
+YMRS: Young Mania Rating Scale
+WHOQOL-BREF: World Health Organization Quality of Life - BREF
+PHQ-9: Patient Health Questionnaire-9 Score
+HRSD: Hamilton Rating Scale for Depression
+YMRS: Young Mania Rating Scale
+WHOQOL-BREF: World Health Organization Quality of Life - BREF
+TLFB: Timeline Followback
+PANSS: Positive and Negative Syndrome Scale
+NCTB: National Cognition Test Battery
+SR Adherence %: Self‑report measure of percentage of days with missed doses
+eCAP Adherence %: Electronic monitoring of bottle openings to determine percent of doses taken
+TRQ: Average Treatment‑Related Questionnaire score across medications
+BSS: Beck Scale for Suicidal Ideation Score
+MADRS: Montgomery‑Åsberg Depression Rating Scale Score
+BW Change: Body Weight Change
+WG: Percentage of weight gain
+BMI: Body Mass Index
+BW: Baseline Weight
+CGI-S: Clinical Global Impression-Severity Score
+CGI-S: Clinical Global Impression – Severity scale
+Rotation and Reading Complex Span Tasks z-score: z‑score of performance on rotation and reading complex span tasks
+Functional Capacity Total Score: total score of financial and communication skill scales
+Working Memory Generalization z-score: z‑score reflecting improvement on training‑like tasks
+BNSS: Brief Negative Symptom Severity Scale Total Score
+SCFS: Social and Community Functioning Scale Total Score
+NBD: n‑back d‑prime
+GMDP: Goal Maintenance d‑prime
+CDPC: Change Detection Proportion Correct
+BPRS: Brief Psychiatric Rating Scale Total Score
+MCCB: MATRICS Consensus Cognitive Battery Composite T‑score
+GLX Concentration: Glutamate and Glutamine Concentration
+GABA+ Concentration: Gamma-aminobutyric Acid Concentration
+YMRS: Young Mania Rating Scale
+CGI-BP: Clinical Global Impression – Bipolar version
+YMRS: Young Mania Rating Scale total score
+CGI-BP: Clinical Global Impression – Bipolar version severity of illness
+GABA: Gamma-aminobutyric Acid Concentration
+NPS: Number of participants completing every session of the combined phase of treatment
+SR Satisfaction: Self‑reported satisfaction rating on a 1–10 scale
+SR_ADHERENCE: Self‑reporting symptoms adherence rate
+ACT_ADHERENCE: Activity tracking adherence rate
+YMRS: Young Mania Rating Scale
+HRSD: 17‑Item Structured Interview Guide for the Hamilton Rating Scale for Depression
+PHQ-9: Patient Health Questionnaire-9 Score
+BPRS: Brief Psychiatric Rating Scale Score
+SOFAS: Social and Occupational Functioning Assessment Scale
+OBQ: OBQ (knowledge of BD management)
+MADRS: Montgomery-Asberg Depression Rating Scale
+DAI-10: Drug Attitude Inventory-10
+SOCRATES: Stages of Change Readiness and Treatment Eagerness Scale
+SRHI: Self-Report Habit Index
+BPRS: Brief Psychiatric Rating Scale
+AMSQ: Attitudes toward Mood Stabilizers Questionnaire
+YMRS: Young Mania Rating Scale
+SF-36: RAND 36-Item Short Form Survey 1.0
+HEDIS: Healthcare Effectiveness Data and Information Set quality metrics
+PCE-1: Dispensed systemic corticosteroid within 14 days of event
+PCE-2: Dispensed bronchodilator within 30 days of event
+SPC-1: Received statin therapy
+SPC-2: Statin adherence 80%
+MMA-1a: Asthma controller medication adherence 50%
+MMA-1b: Asthma controller medication adherence 75%
+AMM-1: Effective acute phase antidepressant treatment 84 days
+AMM-2: Effective continuation phase antidepressant treatment 180 days
+SPD-1: Received statin therapy (any intensity)
+SPD-2: Statin adherence 80% (any intensity)
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire - Short Form
+PAM: Patient Activation Measure
+PACIC: Patient Assessment of Care for Chronic Conditions Survey
+PROMIS PF-6b: PROMIS Physical Function - Short Form 6b
+Q-LES-Q-SF: Quality of Life Enjoyment and Satisfaction Questionnaire-Short Form
+WSAS: Work and Social Adjustment Scale
+Improvement Rating: Self-reported improvement rating
+C-SSRS: Columbia Suicide Severity Rating Scale
+CGI-I: Clinical Global Impression – Improvement
+YMRS: Young Mania Rating Scale
+ISI: Insomnia Severity Index
+CGI-S: Clinical Global Impression – Severity
+HAM-D: Hamilton Depression Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+BP: Systolic and Diastolic Blood Pressure Change
+Pulse Rate: Pulse Rate Change
+BMI z-score: BMI z-score
+C-SSRS: Columbia Suicide Severity Rating Scale
+PR interval: PR Interval Change
+QTcB: QT Interval Corrected Using Bazett's Correction
+QTcF: QT Interval Corrected Using Fridericia's Formula
+QT interval: QT Interval Change
+RR interval: RR Interval Change
+QRS duration: QRS Duration Change
+AIMS: Abnormal Involuntary Movement Scale
+CGI-S: Clinical Global Impression-Severity
+CDRS-R: Children’s Depression Rating Scale – Revised
+YMRS: Young Mania Rating Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+BAS: Barnes Akathisia Scale
+SARS: Simpson-Angus Rating Scale
+CGAS: Children’s Global Assessment Scale
+Heart Rate: Heart Rate Change
+Body Weight: Body Weight Change
+Height: Height Change
+Waist Circumference: Waist Circumference Change
+Hemoglobin: Hemoglobin Level
+Hematocrit: Hematocrit Level
+Erythrocytes: Erythrocyte Count
+Platelets: Platelet Count
+Leukocytes: Leukocyte Count
+Glucose-fasting: Fasting Glucose Level
+Lymphocytes: Lymphocyte Count
+Neutrophils: Neutrophil Count
+Protein: Serum Protein Level
+Albumin: Albumin Level
+Phosphate: Phosphate Level
+Free Thyroxine: Free T4 Level
+Thyroid Stimulating Hormone: TSH Level
+Basophils: Basophil Count
+Eosinophils: Eosinophil Count
+Monocytes: Monocyte Count
+Bilirubin: Bilirubin Levels (Total, Direct, Indirect)
+Aspartate Aminotransferase: AST Level
+Alanine Aminotransferase: ALT Level
+Lactate Dehydrogenase: LDH Level
+Alkaline Phosphatase: ALP Level
+Blood Urea Nitrogen: BUN Level
+Creatinine: Creatinine Level
+Cholesterol: Cholesterol Levels (Total, LDL, HDL)
+Triglycerides: Triglyceride Level
+HbA1c: HbA1c Level
+Sodium: Sodium Level
+Potassium: Potassium Level
+Chloride: Chloride Level
+Calcium: Calcium Level
+Magnesium: Magnesium Level
+Bicarbonate: Bicarbonate Level
+Prolactin: Prolactin Level
+Creatine Kinase: CK Level
+Urobilinogen: Urobilinogen Level
+Urine Specific Gravity: Urine Specific Gravity
+pH: Urine pH
+Urine Glucose: Urine Glucose
+Urine Protein: Urine Protein
+Urine Bilirubin: Urine Bilirubin
+Nitrite: Urine Nitrite
+Leukocyte Esterase: Urine Leukocyte Esterase
+Ketones: Urine Ketones
+DEQ: Drug Effects Questionnaire
+Feel Drug: Subjective feeling of drug
+Feel High: Subjective feeling of high
+Like Drug: Subjective liking of drug
+Want More: Desire for more drug
+CPD Reduction: Mean reduction in cigarettes per day
+QUIT ATT: Self-reported minimum 24-hour quit attempts
+7DPPA-8W: 7-Day Point Prevalence Abstinence at 8 weeks
+7DPPA-6M: 7-Day Point Prevalence Abstinence at 6 months
+C-GAF: Children’s Global Assessment of Functioning Score
+FMS: Five Minute Speech Sample Expressed Emotion Score
+ALIFE: Adolescent Longitudinal Interval Follow‑up Evaluation Consensus Rating
+PSR: Psychiatric Status Rating Score
+CALS: Children’s Affective Lability Scale Score
+STROOP: Stroop Color-Word Interference Test
+GLN: Glutamine Concentration
+GSH: Glutathione Concentration
+PI: Inorganic Phosphate Concentration
+GLU: Glutamate Concentration
+BACS DS: Digit Sequencing Score
+CK: Creatine Kinase Enzyme Rate
+PCr: Phosphocreatine Concentration
+pH: Hydrogen Ion Concentration
+ATP: Adenosine Triphosphate Concentration
+BACS VF Z: Verbal Fluency Subscale Z-Score
+NAD+/NADH: Nicotinamide Adenine Dinucleotide Ratio
+BACS SC: Symbol Coding Score
+NMR: Nicotine Metabolite Ratio
+ALT: Alanine Aminotransferase
+AST: Aspartate Aminotransferase
+CK: Creatine Kinase
+Cr: Creatinine
+Glucose: Blood Glucose
+Urate: Serum Urate
+K: Potassium
+EOS: Eosinophils
+LEUK: Leukocytes
+Hct: Hematocrit
+Hb: Hemoglobin
+WBC: White Blood Cell Count
+PLT: Platelet Count
+PRL: Prolactin
+YMRS: Young Mania Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+PTF%: Percent Time Free (PK metric)
+Cmax: Peak Plasma Concentration
+Cmin: Minimum Plasma Concentration
+Caverage: Average Steady-State Plasma Concentration
+PANSS: Positive and Negative Syndrome Scale
+CGI‑S: Clinical Global Impression – Severity
+CGI‑I: Clinical Global Impression – Improvement
+CGI‑BP: Clinical Global Impression – Bipolar
+VAS: Visual Analogue Scale (Injection‑site Pain)
+SAS: Simpson‑Angus Scale (Extrapyramidal Symptoms)
+BARS: Barnes Akathisia Rating Scale
+C‑SSRS: Columbia Suicide Severity Rating Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+SWN‑S: Subjective Well‑Being Under Neuroleptic Scale
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+Heart Rate: Beats Per Minute
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+Weight: Body Weight
+Temperature: Body Temperature
+Orthostatic Hypotension: Drop in SBP and Rise in HR
+Bradycardia: Heart Rate <=50 BPM
+SVPB: Supraventricular Premature Beat
+VPB: Ventricular Premature Beat
+RBBB: Right Bundle Branch Block
+ST/T Morphology: Myocardial Ischemia and T‑wave Inversion
+QTcB: QT Corrected Interval Bazett
+QTcF: QT Corrected Interval Fridericia
+QTcN: QT Corrected Interval Framingham
+Y-MRS: Young Mania Rating Scale
+SIGH-D: Structured Interview Guide for the Hamilton Depression Rating Scale Score
+DIGIPB D score: Digital Survey for Mood in Bipolar Disorder Depressive Score
+DIGIPB M score: Digital Survey for Mood in Bipolar Disorder Manic Score
+YMRS: Young Mania Rating Scale Score
+SHORT-YMRS: Shortened Young Mania Rating Scale Score
+TOWARD ENERGY: Self-reported Energy Toward Goal Consumption Score
+AWAY ENERGY: Self-reported Energy Away Consumption Score
+COMPLETION SHORTENED SIGH-D: Average Completion of Shortened SIGH-D
+COMPLETION SHORTENED YMRS: Average Completion of Shortened YMRS
+EMA: Ecological Momentary Assessment of NSSI urges and behavior proportion
+EMA 1-5: Ecological Momentary Assessment of NSSI urge/behavior severity score
+SITBI 61: Self‑Injurious Thoughts and Behaviors Interview Item 61 Likelihood of future NSSI thoughts
+SITBI 72: Self‑Injurious Thoughts and Behaviors Interview Item 72 Likelihood of future NSSI engagement
+SITBI 68: Self‑Injurious Thoughts and Behaviors Interview Item 68 Frequency of self‑injury in past week
+SITBI 60: Self‑Injurious Thoughts and Behaviors Interview Item 60 Duration of NSSI thoughts
+SITBI 58: Self‑Injurious Thoughts and Behaviors Interview Item 58 Intensity of worst NSSI thoughts
+SITBI 59: Self‑Injurious Thoughts and Behaviors Interview Item 59 Intensity of average NSSI thoughts
+fMRI dACC: Functional Magnetic Resonance Imaging BOLD signal difference in dorsal anterior cingulate during Cyberball exclusion versus inclusion
+fMRI vlPFC: Functional Magnetic Resonance Imaging BOLD signal difference in ventrolateral prefrontal cortex during Cyberball exclusion versus inclusion
+fMRI AI: Functional Magnetic Resonance Imaging BOLD signal difference in anterior insula during Cyberball exclusion versus inclusion
+tDCS SE Scale: Transcranial Direct Current Stimulation Side‑Effect Severity Scale
+PEC: Positive and Negative Syndrome Scale-Excited Component Total Score
+PEC Change: Positive and Negative Syndrome Scale-Excited Component Change in Total Score
+PSC: Percentage of Sessions Completed
+SS: Session Survey Satisfaction Rating
+TSI: Treatment Satisfaction Interview
+TRQ Past Week Adherence: Subject report of percentage of prescribed medications not taken within the past week
+TRQ Past Month Adherence: Subject report of percentage of prescribed medications not taken within the past month
+Bottle Opening Ratio: Percent of doses taken calculated from bottle opening events
+Adherence Proportion: Proportion of pills missing and presumed taken relative to prescribed
+Drop‑out Proportion: Proportion of subjects who dropped out of treatment
+BPRS-E: Brief Psychiatric Rating Scale‑Expanded Version Score Change
+SOFAS: Social and Occupational Functioning Scale Score Change
+SRHI: Self‑Report Habit Index Total Score
+Housing Instability Index: Housing Instability Index
+CNAS: Community Navigation Abilities Scale
+Empowerment Scale: Empowerment Scale
+HHS: Herth Hope Scale
+RAP: Record of Arrest and Prosecution Sheets
+HSS: Housing Satisfaction Scale
+MARS: Maryland Assessment of Recovery in People with Serious Mental Illness
+Multnomah Community Adjustment Scale: Multnomah Community Adjustment Scale
+YMRS: Young Mania Rating Scale
+ssVEP: Steady-State Visually Evoked Potentials
+P100: Peak Visual Evoked Potential Amplitude
+PANSS: Positive and Negative Syndrome Scale
+IAPS: International Affective Picture System
+MADRS: Montgomery-Åsberg Depression Rating Scale
+MCCB Spatial Span: MCCB Spatial Span Total Raw Score
+MCCB Letter‑Number Span: MCCB Letter‑Number Span Total Raw Score
+TMT Part A: Trail Making Test Part A Completion Time
+TMT Part B: Trail Making Test Part B Completion Time
+BETA-left vLPFC: Beta power in left ventrolateral prefrontal cortex
+BETA-right dLPFC: Beta power in right dorsolateral prefrontal cortex
+BETA-left dLPFC: Beta power in left dorsolateral prefrontal cortex
+BETA-right vLPFC: Beta power in right ventrolateral prefrontal cortex
+FC-RNet-CEN: Functional connectivity among other RNet and CEN regions
+FC-dlPFC-RNet: Functional connectivity between dlPFC and other RNet regions
+FC-vLPFC-RNet: Functional connectivity between vLPFC and other RNet regions
+FC-left-right vLPFC: Functional connectivity between left and right vLPFC
+DDT-immediate: Sum of immediate choices on delay discounting task
+PAC: Theta-gamma Phase-Amplitude Coupling Value
+RB: Response Bias (β) Index
+D': Sensitivity Index (D Prime) Value
+RT: Go/NoGo Task Reaction Time
+SSEQT: Stimulation Side Effects Questionnaire Total Score
+INGESTION DATA TRANSFER LATENCY PERIOD: Time between detection of tablet ingestion by patch and display of ingestion data on mobile device
+TOTAL DETECTION LATENCY: Total time between ingestion of tablet and display of ingestion data on mobile device
+PATCH DETECTION LATENCY PERIOD: Time between ingestion of tablet and detection of ingestion by patch
+PDA: Positive Detection Accuracy calculated as number of total positive detections by patch divided by number of total DOIs

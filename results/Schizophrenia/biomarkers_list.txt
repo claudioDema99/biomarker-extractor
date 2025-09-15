@@ -1,0 +1,2801 @@
+SANS_SLOPE: Slope of SANS total score
+AFF: Affective Flattening or Blunting
+ALOG: Alogia
+AVO: Avolition-Apathy
+ANA: Anhedonia-Asociality
+ATTN: Attention
+Hallucination Change Scale: Hallucination severity change relative to baseline (0–20)
+Hallucination Improvement Scale: 1–7 ordinal scale of improvement/worsening
+Hallucination Frequency Difference: difference between baseline and last assessment frequencies
+Responder Definition (HCS ≤5): criterion for response after rTMS
+BPRS: Brief Psychiatric Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI-S: Clinical Global Impression of Severity
+BPRS: Brief Psychiatric Rating Scale
+ABV: Activation Beta values
+PANSS: Positive and Negative Syndrome Scale
+WM Accuracy: Working Memory accuracy percent
+PANSS: Positive and Negative Syndrome Scale
+BA: Barnes Akathisia Scale
+Weight Change: change in weight from baseline to week 8 in kg
+BMI Change: change from baseline in Body Mass Index (kg/m2) at week 8
+SANS: Scale for the Assessment of Negative Symptoms
+BPRS: Brief Psychiatric Rating Scale
+Composite z-score: Overall composite z-score from neuropsychological tests
+BPRS: Brief Psychiatric Rating Scale
+CGI-S: Clinical Global Impression – Severity
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+SANS: Scale for the Assessment of Negative Symptoms
+NIMH MCCCB: National Institute of Mental Health Measurement and Treatment Research to Improve Cognition in Schizophrenia Neurocognitive Consensus Combined Battery
+CGI: Clinical Global Impression
+CGAS: Child Global Assessment Scale
+Remission: Number of subjects achieving remission defined by PANSS items
+PQLES: Pediatric Quality of Life Enjoyment and Satisfaction
+PANSS-POS: PANSS Positive Subscale
+PANSS-NEG: PANSS Negative Subscale
+PANSS-TOT: PANSS Total
+h squared: Heritability Coefficient
+P50 sensory gating: P50 sensory gating
+Log of the Odds Score: LOD Score
+CHRNA7: Alpha7 nicotinic acetylcholine receptor gene
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+N-back: N-back Task
+BPRS: Brief Psychiatric Rating Scale
+AX CPT: AX Continuous Performance Test
+POP: POP Task
+DMI: Delayed Memory Index
+d-prime: d-prime Sensitivity Index
+AE: Adverse Event
+SAE: Serious Adverse Event
+SRAdherence: Self-Report Adherence
+QOL: Quality of Life Scale
+NSA: Negative Symptom Assessment Scale
+P50: P50 sensory gating
+P50 ratio: Ratio of P50 test wave amplitude to conditioning wave amplitude expressed as a percentage
+Days to Early Discontinuation: Number of days from randomization to early discontinuation
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression-Severity
+Median time to loss of effect: Kaplan-Meier estimate
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impressions of Severity of Illness
+TBF: Total Body Fat
+DXA: Dual Energy X-Ray Absorptiometry
+SANS: Scale for Assessment of Negative Symptoms
+NSA: Negative Symptom Assessment
+QLS: Quality of Life Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+DAI: Drug Attitude Inventory
+PSS: Patient Satisfaction Scale
+Weight change slope: average change in weight per week
+MD: Medication Duration
+PANSS: Positive and Negative Syndrome Scale
+GAS: Global Assessment Scale
+GDS: Geriatric Depression Scale
+MCS: Mental Component Summary
+PCS: Physical Component Summary
+PANSS: Positive and Negative Syndrome Scale
+SF-12: Short Form 12 Health Survey
+CGI-S: Clinical Global Impression of Severity
+CVLT: California Verbal Learning Test
+ME: Mean exposure (mg/day)
+Hb: Hemoglobin
+Hct: Hematocrit
+WBC: Leukocytes
+EOS: Eosinophils
+ALT: Alanine transaminase
+AST: Aspartate aminotransferase
+ALP: Alkaline phosphatase
+TBIL: Total bilirubin
+BUN: Blood urea nitrogen
+Ca: Calcium
+Cl: Chloride
+TC: Total cholesterol
+HDL: High‑density lipoprotein
+LDL: Low‑density lipoprotein
+CK: Creatine kinase
+Cr: Creatinine
+PR: PR interval
+QRS: QRS complex
+QTcB: QT interval corrected by Bazett
+QTcF: QT interval corrected by Fridericia
+SBP: Systolic blood pressure
+DBP: Diastolic blood pressure
+HR: Heart rate
+CGI‑S: Clinical Global Impression – Severity
+BLOOD FOLATE: Baseline blood folate lab levels
+BLOOD B12: Baseline blood B12 lab levels
+SERUM B12: Baseline serum B12 lab levels
+HOMOCYSTEINE: Baseline blood homocysteine lab levels
+DIETARY INTAKE: Baseline dietary intake levels
+SMOKING STATUS: Baseline lab levels by smoking status
+DEFICIT SYNDROME: Baseline lab levels by deficit syndrome status
+MTHFR GENE: Baseline lab levels by MTHFR genotype
+SANS MODIFIED TOTAL: Change from baseline to week 12 on SANS modified total score
+SANS AFFECTION: Affective Flattening or Blunting sub‑scale score
+SANS ALOGIA: Alogia sub‑scale score
+SANS AVOLITION: Avolition‑Apathy sub‑scale score
+SANS ANHEDONIA: Anhedonia‑Asociality sub‑scale score
+SANS ATTENTION: Attention sub‑scale score
+SANS CHANGE: Difference between baseline and week 12 SANS scores
+PANSS: Positive and Negative Syndrome Scale
+PANSS-T: PANSS Total Score
+Exacerbation Incidence: Clinical exacerbation
+CGI-S: Clinical Global Impression of Severity
+AQoL: Australian-developed participant delivered quality of life instrument
+PSP: Personal and Social Performance Scale
+CGI-C: Clinical Global Impression of Change
+PANSS: Positive and Negative Syndrome Scale
+School Placement Questionnaire
+BPRS-A: Brief Psychiatric Rating Scale – Agitated
+CDRS-R: Children’s Depression Rating Scale – Revised
+CGAS: Children’s Global Assessment Scale
+PANSS: Positive and Negative Syndrome Scale
+SARS: Scale for Assessment of Parkinsonism and Related Extrapyramidal Symptoms
+AIMS: Abnormal Involuntary Movements Scale
+CPBAQ: Child and Parent Behavioral Aggression Questionnaire
+CGI-S: Clinical Global Impressions – Severity
+CGI-I: Clinical Global Impressions – Improvement
+CHQ: Child Health Questionnaire
+BAS: Akathisia Scale
+Neurocognitive Index Score
+QLS: Quality of Life Scale
+NSA: Neuropsychological Symptom Assessment
+School Placement Questionnaire: School Placement Questionnaire
+CPBAQ: Child Parent Behavioral Aggression Questionnaire
+CGAS: Children's Global Assessment Scale
+Neurocognitive Index Score: Neurocognitive Index Score
+SARS: Scale for Assessment of Parkinsonian Symptoms
+Tanner Stage: Tanner Adolescent Pubertal Staging Questionnaire
+CHQ: Child Health Questionnaire
+CDRS-R: Children’s Depression Rating Scale – Revised
+AIMS: Abnormal Involuntary Movements Scale
+BPRS-A: Brief Psychiatric Rating Scale – Agitated
+TEAEs: Treatment‑Emergent Adverse Events
+SAEs: Serious Adverse Events
+BAS: Barnes Akathisia Scale
+BPRS: Brief Psychiatric Rating Scale
+Beck Cognitive Insight Scale: Beck Cognitive Insight Scale
+MASC: Maryland Assessment of Social Competence
+WBI: Work Behavior Inventory
+SOPS: Scale Of Prodromal Symptoms
+SOPS total score: Sum of SOPS item ratings
+HCS: Hallucination Change Scale
+AHRS: Auditory Hallucinations Rating Scale
+CGI: Clinical Global Impression
+VAS: Visual Analogue Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression – Severity
+SF-36: Short Form 36 Health Survey
+SUMD: Scale to Assess Unawareness of Mental Disorder
+HospDays: Hospitalization Days
+OutpPhysVisits: Outpatient Physician Visits
+WG≥7%: Weight Gain ≥7%
+Prolactin: Serum Prolactin Level
+TEHighALT: Treatment‑Emergent High Alanine Aminotransferase
+TEHighAST: Treatment‑Emergent High Aspartate Aminotransferase
+TEHighBil: Treatment‑Emergent High Bilirubin
+BPRS: Brief Psychiatric Rating Scale
+FastingGlucose: Fasting Glucose
+FastingChol: Fasting Total Cholesterol
+FastingTrig: Fasting Triglycerides
+IllnessSeverity: Illness Severity Score
+CareHours: Care Hours (unpaid, paid, missed)
+OutpSurgeries: Outpatient Surgeries
+StudyDiscont: Study Discontinuations
+MedSatScore: Medication Satisfaction Score
+CareBurdenScore: Caregiver Burden Score
+MedBeliefScore: Medication Belief / Adherence Score
+BPRS-A: Brief Psychiatric Rating Scale-Anchored
+CGI: Clinical Global Impressions Scale
+PANSS: Positive and Negative Syndrome Scale
+MATRICS: Measurement and Treatment Research to Improve Cognition in Schizophrenia
+RAE: Renal Adverse Events
+Awareness Scale: Rating scale based on clinician interview of patient to determine level of lack of awareness of having a mental disorder
+ESW: Employment/School Weeks – number of weeks in competitive employment or attending regular school courses
+WSFS: 10-point scale of work/school functioning – measured by subtracting baseline rating from rating at 12 months
+MRD: Medication Retention Duration – number of days on randomized medication before switching or dropping out
+SAS: Social Adjustment Scale – records return to work or school and number of weeks in work or school during each 3‑month period
+MCCB: MATRICS Consensus Cognitive Battery Overall Composite T score – change from baseline to 12 months
+BPRS: Brief Psychiatric Rating Scale (relapse indicator) – presence of any of three psychotic relapse or exacerbation categories scored from the BPRS
+Adherence Scale: 5-point scale based on pill counts, MEMS cap readings, plasma assays, and psychiatrist judgments
+SAS: Social Adjustment Scale (modified work section)
+Work Motivation Scale: Work Motivation scale from Work Personality Profile
+Adherence: 5‑point scale adherence (pill counts, MEMS, plasma assays, psychiatrist judgments)
+BPRS: Brief Psychiatric Rating Scale (psychotic relapse/exacerbation)
+MCCB: MATRICS Consensus Cognitive Battery Overall Composite T score
+Quality of Work rating: Quality of Work rating
+Days in psychosocial treatment: Days in psychosocial treatment
+Insight: Clinician‑rated lack of awareness of mental disorder
+Role Functioning Scale: Role functioning rating
+CVLT-II: California Verbal Learning Test - II
+IS: Insulin Sensitivity
+SI: Insulin Sensitivity (net fractional glucose clearance rate per unit change in serum insulin)
+SG: Glucose utilization (insulin‑independent net fractional glucose clearance rate)
+AIRG: Acute insulin response to glucose (incremental area under the curve 0‑10 min)
+OCDS: Obsessive Compulsive Drinking Scale
+HVLT: Hopkins Verbal Learning Test
+PANSS: Positive and Negative Syndrome Scale
+TFB: Timeline Follow Back method
+PDD: Percentage of drinking days
+HD: Heavy drinking days
+FI: Fasting Insulin Level Change
+FG: Fasting Glucose Level Change
+WHR: Waist-Hip Ratio
+LDL: Low-Density Lipoprotein
+HDL-C: High-Density Lipoprotein Cholesterol
+BMI: Body Mass Index
+FTC: Fasting Total Cholesterol
+TG: Triglyceride Levels
+WT: Weight (lbs)
+CGI-I: Clinical Global Impression-Improvement
+PANSS-EC: Positive and Negative Syndrome Scale-Excited Component
+BARS: Behavioral Activity Rating Scale
+CGI-S: CGI Severity of Illness Scale
+Trail Making Test Part A: Trail Making Test Part A
+Trail Making Test Part B: Trail Making Test Part B
+COWAT: Controlled Word Association Test
+CGI-I: CGI Improvement Scale
+RAVLT List B: Single Trial: Rey Auditory Verbal Learning Test List B Single Trial
+BPRS: Brief Psychiatric Rating Scale
+Digit Span: Digit Span
+Letter Number Sequencing: Letter Number Sequencing
+RAVLT List A: Total Trials: Rey Auditory Verbal Learning Test List A Total Trials
+QT interval: QT interval
+QTc: Corrected QT interval
+SANS: Scale for the Assessment of Negative Symptoms
+Digit Symbol Coding: Digit Symbol Coding
+Grooved Pegboard: Number of correctly placed pegs
+CPT-IP: Hit reaction time
+Stroop: Raw interference score
+Stroop: Interference T score
+Letter Number Sequencing: Total score
+FBS: Fasting Blood Sugar
+HbA1c: Hemoglobin A1c
+ADHERENCE: Estimated percent of prescribed medication taken
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+Responder: 30%+ reduction in PANSS total score
+PANSS: Positive and Negative Syndrome Scale
+AIMS: Abnormal Involuntary Movements Scale
+CGI-I: Clinical Global Impressions – Improvement
+CGI-S: Clinical Global Impressions – Severity
+SAS: Simpson-Angus Scale
+GAF: Global Assessment of Functioning
+SCoRS: Schizophrenia Cognition Rating Scale
+CDRS: Calgary Depression Rating Scale
+BAS: Barnes Akathisia Scale
+QTc: Corrected QT Interval
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+PRL: Serum Prolactin Concentration
+SEC: Ziprasidone Side Effect Checklist
+BACS: Brief Assessment of Cognition in Schizophrenia
+SC: Symbol-Coding
+TMT-A: Trail Making Test Part A
+CPT-IP: Continuous Performance Test-Identical Pairs
+WMS-III: Wechsler Memory Scale-3rd Edition
+Spatial Span: Spatial Span test
+Letter-Number Span: Letter-Number Span test
+HVLT-R: Hopkins Verbal Learning Test-Revised
+BVMT-R: Brief Visuospatial Memory Test-Revised
+NAB: Neuropsychological Assessment Battery
+Mazes: Mazes test
+MSCEIT: Mayer-Salovey-Caruso Emotional Intelligence Test
+ke: Elimination Rate Constant
+Slope: Linear Regression Slope
+Half-life: Terminal Elimination Phase Half-Life
+Tmax: Time to Maximum Concentration
+CL/F: Apparent Clearance (oral bioavailability)
+Cmax: Maximum Concentration
+IS: Interference Score
+HRT: Hit Reaction Time
+CH: Correct Hits
+FA: False Alarms
+RE: Random Errors
+HRTSD: Hit Reaction Time Standard Deviation
+ADT: Average Distance from Target
+FUNC: Functional score (0-100)
+MEDADJ: Medication adherence (% medication taken)
+BPRS: Brief Psychiatric Rating Scale
+BPRS_POS: BPRS Positive Subscale mean score (delusions, hallucinations, conceptual disorganization, suspiciousness)
+RELAPSE: Relapse defined by ≥2 point increase to ≥5 on BPRS positive items
+SANS-TOTAL: Total SANS score
+AF: Affective Flattening or Blunting
+AL: Alogia
+AA: Avolition-Apathy
+AN: Anhedonia-Asociality
+AT: Attention
+PANSS-POS: Positive Symptom Subscale of PANSS
+Pls: Plasmalogen level
+GAF: Global Assessment of Functioning
+CGI-S: Clinical Global Impression of Severity
+Hospitalization: All hospitalizations
+Hospitalization: Exacerbation-associated hospitalizations
+MCCB: Matrics Consensus Cognitive Battery composite score
+T-score: Standardized T-score (mean 50, SD 10)
+UPSA: UCSD Performance-Based Skills Assessment Summary Score
+SCoRS: Schizophrenia Cognition Rating Scale Interviewer Global Rating
+MCCB: MATRICS Consensus Cognitive Battery composite T scores
+SCoRS: Schizophrenia Cognition Rating Scale
+UPSA: University of California San Diego Performance-Based Skills Assessment
+CGAS: Child Global Assessment Scale
+CGI-S: Clinical Global Impression – Severity
+PANSS: Positive and Negative Syndrome Scale
+VAS-D: Visual Analog Scale for daytime drowsiness
+VAS-Q: Visual Analog Scale for sleep quality
+MOS SF-36: Medical Outcomes Study Short Form Health Survey-36
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance
+CGI-S: Clinical Global Impression-Severity
+MSQ: Medication Satisfaction Questionnaire
+PSQI: Pittsburgh Sleep Quality Index
+SF-36: Short Form-36 Health Survey
+PANSS: Positive and Negative Syndrome Scale
+TSQM: Treatment Satisfaction Questionnaire for Medication
+COVI Anxiety Scale: Standard COVI Anxiety Scale
+CGI-S: Clinical Global Impression of Severity
+COT: Cotinine level in plasma (ng/mL)
+CO: Exhaled Carbon Monoxide (ppm)
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+List Learning: RBANS List Learning score
+Visual Spatial Construction: RBANS Visual Spatial Construction index score
+Language Index: RBANS Language index score
+Total Score: RBANS Total score
+Smoking Count: Number of cigarettes smoked in past week
+PANSS: Positive and Negative Syndrome Scale
+Positive Scale: PANSS Positive Scale score
+Negative Scale: PANSS Negative Scale score
+General Psychopathology Scale: PANSS General Psychopathology Scale score
+PANSS Total Score: PANSS Total score
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+SEC: Side Effects Checklist
+FTND: Fagerstrom Test for Nicotine Dependence
+CO level change: Expired Carbon Monoxide Level Change
+Psychosis score: Composite psychosis rating
+Anxiety/Depression score: Composite anxiety/depression rating
+BPRS: Brief Psychiatric Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+SANS: Scale for the Assessment of Negative Symptoms
+CGI-I: Clinical Global Impression – Improvement
+MATRICS: Measurement and Treatment Research to Improve Cognition in Schizophrenia
+BACS: Brief Assessment of Cognition in Schizophrenia
+CDSS: Calgary Depression Scale for Schizophrenia
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS-POS: Positive Symptom Subscale
+PANSS-NEG: Negative Symptom Subscale
+PANSS-DIS: Disorganized Thoughts Subscale
+PANSS-H/E: Hostility/Excitement Subscale
+PANSS-ANX: Anxiety/Depression Subscale
+CGI-S: Clinical Global Impression of Severity
+BARS: Barnes Akathisia Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+SAS: Simpson-Angus Scale
+Sleep Evaluation Scale: Sleep Evaluation Scale
+Daytime Drowsiness Evaluation Scale: Daytime Drowsiness Evaluation Scale
+Treatment Satisfaction Scale: Treatment Satisfaction Scale
+PANSS Response: ≥30% reduction in PANSS total score
+CompSubTotal: Composite Subscale Total (difference of positive and negative subscale totals)
+PosSubTotal: Positive Subscale Total (sum of 4 items: delusions, conceptual disorganization, hallucinatory behavior, suspiciousness/persecution)
+NegSubTotal: Negative Subscale Total (sum of 4 items: blunted affect, emotional withdrawal, poor rapport, passive/apathetic social withdrawal)
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-S: Clinical Global Impression of Severity
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+Daytime Sleepiness Score: Measure of daytime sleepiness based on 8 items
+PANSS: Positive and Negative Syndrome Scale (Negative factor)
+Sleep Quality Score: Composite score of seven sleep‑quality components
+Mean T-score: Average standardized score across six cognitive domains
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+Sleep VAS: Self‑Administered Sleep Visual Analogue Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive Subscale
+PANSS Negative Subscale
+PANSS General Psychopathology Subscale
+SANS: Total Score
+SANS Affective Flattening or Blunting
+SANS Alogia
+SANS Avolition-Apathy
+SANS Anhedonia-Asociality
+SANS Attention
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+SFS: Birchwood Social Function Scale
+GCPD: Gordon Continuous Performance Test - Distractibility Version
+Omission Errors: Omission errors
+Commission Errors: Commission errors
+CGI-I: Clinical Global Impression-Improvement
+PANSS-EC: Positive and Negative Syndrome Scale-Excited Component
+PANSS-EC: PANSS Excitement, Hostility, Tension, Uncooperativeness, Poor Impulse Control total score
+ACES: Agitation, Calmness, Sleep-state evaluation scale
+SAS: Simpson-Angus Scale
+CGI-I: Clinical Global Impression – Improvement
+PANSS: Positive and Negative Syndrome Scale (total)
+GAS: Global Assessment Scale
+PANSS positive subscale
+PANSS negative subscale
+CGI-CB: Clinical Global Impression – Clinical Benefit
+BARS: Brief Assessment of Side Effects
+SOFAS: Social and Occupational Functioning Assessment Scale
+CGI-S: Clinical Global Impression – Severity
+Pct change in SAS: Percentage of patients with change in Simpson‑Angus Scale
+Pct change in BARS: Percentage of patients with change in BARS score
+Change in GAS: Change in Global Assessment Scale score
+Change in PANSS total: Change in PANSS total score
+Change in PANSS positive subscale: Change in PANSS positive subscale score
+Change in PANSS negative subscale: Change in PANSS negative subscale score
+Change in CGI-I: Change in CGI‑I score
+Change in CGI-S: Change in CGI‑S score
+Numeric change in CGI-CB: Numerical change in CGI‑CB score
+Prop change in CGI-CB: Proportional change in CGI‑CB score
+Change in SOFAS: Change in SOFAS score
+SWS: Slow Wave Sleep
+REM: Rapid Eye Movement
+INS: Insulin level
+FPG: Fasting plasma glucose
+2h-PG: 2‑hour post‑load plasma glucose
+IGI: Insulinogenic index
+BMI: Body Mass Index
+WC: Waist Circumference
+TG: Triglycerides
+HDL: High Density Lipoprotein cholesterol
+BP: Blood Pressure
+FG: Fasting Glucose
+TG:HDL Ratio: Triglyceride to HDL cholesterol ratio
+LDL: Low Density Lipoprotein cholesterol
+HOMA-%B: Homeostatic Model Assessment of Beta‑cell Function
+HOMA-IR: Homeostatic Model Assessment of Insulin Resistance
+TC: Total Cholesterol
+PANSS: Positive and Negative Syndrome Scale
+RVIP: Rapid Visual Information Processing
+PANAS: Positive and Negative Affect Scale
+HVLT: Hopkins Verbal Learning Test
+B-SIT: Brief Smell Identification Test
+BACS Symbol Coding: BACS Symbol Coding subtest
+Social Trust Game: Social trust game
+GMLT: Go‑Miller Learning Task score
+IT: Information Transfer score
+OCLT: Object Choice Learning Task score
+DT: Delayed Task score
+GMRT: Go‑Miller Retrieval Task score
+GMLT-OCLT Standardized Change Composite Score: Composite of GMLT and OCLT standardized change scores
+PANSS: Positive and Negative Syndrome Scale
+MADRS: Montgomery‑Asberg Depression Rating Scale
+BVMT-R: Brief Visuospatial Memory Test‑Revised
+CGI-S: Clinical Global Impressions‑Severity
+PANSS: Positive and Negative Syndrome Scale
+PANSS N: PANSS Negative Subscale
+PANSS P: PANSS Positive Subscale
+PANSS G: PANSS General Psychopathology Subscale
+PANSS T: PANSS total score
+Delusions (P1): Delusions item of PANSS
+Unusual thought content (G9): Unusual thought content item of PANSS
+Hallucinatory behavior (P3): Hallucinatory behavior item of PANSS
+Conceptual disorganization (P2): Conceptual disorganization item of PANSS
+Mannerisms/posturing (G5): Mannerisms/posturing item of PANSS
+Blunted affect (N1): Blunted affect item of PANSS
+Social withdrawal (N4): Social withdrawal item of PANSS
+Lack of spontaneity (N6): Lack of spontaneity item of PANSS
+CGI-S: Clinical Global Impression of Severity
+CGI-SS: Clinical Global Impression of Severity of Suicide
+CGI-I: Clinical Global Impression of Improvement
+TTD: Time to Discontinuation
+CGI-I: Clinical Global Impression of Improvement
+PANSS: Positive and Negative Syndrome Scale
+Hospitalization: Hospitalization due to worsening of psychotic symptoms
+CGI-SS: Clinical Global Impression of Severity of Suicide
+Violent Behavior: Violent behavior resulting in clinically significant self‑injury, injury to another person, or property damage
+PANSS total score: PANSS total score
+CGI-S: Clinical Global Impression of Severity of Illness
+TEAEs: Treatment-emergent adverse events
+SAE: Serious Adverse Event
+PANSS General Psychopathology subscale score: PANSS General Psychopathology Subscale Score
+PANSS Positive subscale score: PANSS Positive Subscale Score
+PANSS Negative subscale score: PANSS Negative Subscale Score
+PANSS Total score: PANSS Total Score
+PA: Percent Accuracy
+SBP: Systolic Blood Pressure
+BPM: Beats Per Minute
+CGI: Clinical Global Impression scale
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+CDSS: Calgary Depression Scale for Schizophrenia
+PANSS: Positive and Negative Syndrome Scale
+PANSS total score: PANSS Total Score
+PANSS positive: PANSS Positive Symptom Subscale
+PANSS negative: PANSS Negative Symptom Subscale
+PANSS general psychopathology: PANSS General Psychopathology Subscale
+CGI-S: Clinical Global Impression of Severity
+BPRS: Brief Psychiatric Rating Scale
+BPRS Agitation Subscale Score
+BARS: Brief Agitation Rating Scale
+CGI-I: Clinical Global Impression of Improvement
+CNS‑Vital Signs Neurocognitive Test Battery-4-Part Continuous Performance Test: Sustained attention score
+CNS‑Vital Signs Neurocognitive Test Battery: Verbal memory score
+CNS‑Vital Signs Neurocognitive Test Battery: Visual memory score
+CNS‑Vital Signs Neurocognitive Test Battery: Composite memory score
+CNS‑Vital Signs Neurocognitive Test Battery: Executive functioning score
+CNS‑Vital Signs Neurocognitive Test Battery: Emotion perception score
+CNS‑Vital Signs Neurocognitive Test Battery: Non‑verbal reasoning score
+CNS‑Vital Signs Neurocognitive Test Battery: Symbol‑digit coding test processing time
+SANS: Scale for the Assessment of Negative Symptoms 1‑22 Composite Score
+CDSS: Calgary Depression Scale for Schizophrenia
+ESRS‑A: Extrapyramidal Symptoms Rating Scale – Abbreviated
+PANSS: Positive and Negative Syndrome Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS positive subscale: Positive subscale of PANSS
+PANSS negative subscale: Negative subscale of PANSS
+PANSS total score: Total score of PANSS
+CGI-S: Clinical Global Impression of Severity
+CGI-SS: Clinical Global Impression for Severity of Suicidality
+CGI-I: Clinical Global Impression of Improvement
+BT: Bead Task
+DS: Delusions Subscale
+CERT: Certainty Rating Item
+BCIS: Beck Cognitive Insight Scale
+SELF-R: Self-Reflectiveness Subscale of BCIS
+SELF-C: Self-Certainty Subscale of BCIS
+BCIS Composite Index: Composite index of BCIS
+ABA: Alternative Beliefs Assessment
+PANSS: Positive and Negative Syndrome Scale
+SF-36: Short Form 36 Health Survey
+GAF: Global Assessment of Functioning
+CGI-S: Clinical Global Impression of Severity
+Sleep Quality and Daytime Drowsiness Evaluation Scale: Self‑administered sleep and drowsiness assessment
+Paliperidone ER Satisfaction Scale: Patient satisfaction with paliperidone extended release
+PSP: Personal and Social Performance Scale
+CGI-I: Clinical Global Impression – Improvement
+PSP: Personal and Social Performance Scale
+DAI-10: Drug Attitude Inventory 10-item
+Paliperidone ER 6mg/day Continuity: Percentage of participants continuously treated with paliperidone extended‑release 6 mg/day through week 12
+CGI-S: Clinical Global Impression – Severity
+SCL90-R: Symptom Checklist‑90‑Revised
+GSI: Global Severity Index
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+DAI-10: Drug Attitude Inventory‑10
+Sleep quality VAS: Visual Analog Scale for sleep quality
+Daytime Drowsiness VAS: Visual Analog Scale for daytime drowsiness
+SWN-20: Subjective Well‑Being Under Neuroleptic Scale
+PANSS Negative Subscale: PANSS Negative Subscale
+PANSS General Psychopathology Subscale: PANSS General Psychopathology Subscale
+PANSS Positive Subscale: PANSS Positive Subscale
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+Daytime Drowsiness VAS: Visual Analog Scale for daytime drowsiness
+Sleep Quality VAS: Visual Analog Scale for sleep quality
+Krawiecka scale: Krawiecka Scale
+SWN-20: Subjective Well-Being Inventory (SWN-20)
+SCL-90-R: Symptom Checklist-90-Revised
+GSI: Global Severity Index
+SWN-20: Subjective Well‑Being Inventory 20‑item scale
+DAI-10: Drug Attitude Inventory 10‑item questionnaire
+Krawiecka scale: Psychopathology assessment scale
+VAS: Visual Analog Scale
+PSP: Personal and Social Performance Scale
+SCL-90-R: Symptom Checklist‑90 Revised
+GSI: Global Severity Index
+PANSS: Positive and Negative Syndrome Scale
+DET: Detection task
+IDN: Identification task
+OBT: One Back Task
+ISLT: International Shopping List Task
+OCNT: One Card Learning Task
+GMLT: Groton Maze Learning Task
+SEM: Social Emotional Matching
+Time to Relapse: Earliest occurrence of specified events
+CGI-S: Clinical Global Impression of Severity
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+CDSS: Calgary Depression Scale for Schizophrenia
+PANSS: Positive and Negative Syndrome Scale
+PANSS-P: PANSS Positive Scale
+PANSS-N: PANSS Negative Scale
+PANSS-G: PANSS General Psychopathology Scale
+Plasma Cotinine: Plasma cotinine
+MCCB: MATRICS Consensus Cognitive Battery
+MCCB-Domain T-score: Domain T-scores
+MCCB-Composite: Composite score
+Hours Worked Per Week: Average number of hours worked per week
+WBI: Work Behavior Inventory
+PANSS: Positive and Negative Syndrome Scale
+FBG: Fasting Blood Glucose
+HDL: High-Density Lipoprotein
+TG: Serum Triglycerides
+FI: Fasting Insulin
+TC: Total Cholesterol
+HbA1c: Glycosylated Hemoglobin
+LDL: Low-Density Lipoprotein
+MD BW: Mean Difference in Body Weight Change
+PANSS: Positive and Negative Syndrome Scale
+SAS: Simpson-Angus Scale
+SOPS Total: Schizophrenia Outcome Parameter Scale Total
+SOPS Negative symptom scale: Schizophrenia Outcome Parameter Scale Negative
+PSQI: Pittsburgh Sleep Quality Index
+IL6: Interleukin-6 (pg/ml)
+PANSS: Positive and Negative Syndrome Scale
+AE: Adverse Event
+CGI-S: Clinical Global Impression of Severity
+Responder: ≥20% improvement from baseline on PANSS total score
+FTCS: Finger Tapping Correct Sequences per Trial
+OC%: Overnight Change Percentage in Correct Sequences
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impressions-Severity
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+C-SSRS: Columbia Suicide Rating Scale
+EQ-5D: EuroQol 5-Dimension Health Status Instrument
+PANSS: Positive and Negative Syndrome Scale
+UPSA-B: UCSD Performance-Based Skills Assessment
+BAS: Barnes Akathisia Scale
+AIMS: Abnormal Involuntary Movement Scale
+NSA-16: Negative Symptom Assessment 16-item
+BP: Blood Pressure
+GLU: Fasting Glucose
+TC: Total Cholesterol
+LDL: Low-Density Lipoprotein Cholesterol
+HDL: High-Density Lipoprotein Cholesterol
+TG: Triglycerides
+CGI-S: Clinical Global Impression-Severity
+PSP: Personal and Social Performance Scale
+EEG: Electroencephalogram Grading
+MCCB: MATRICS Consensus Cognitive Battery
+QT: QT Interval
+PR: Pulse Rate
+WT: Weight
+TREMOR: Tremor
+NYSTAG: Nystagmus
+REFLEX: Reflexes
+FN_GAIT: Finger-Nose and Gait Test
+ROMBERGS: Romberg's Sign
+MS: Muscular Strength
+MYO_JERK: Myoclonic Jerks
+SAS: Simpson-Angus Scale
+SUB_WELL: Subjective Well-Being Scale
+Working Memory Composite Score: Working Memory Composite Score
+Attention/Processing Speed Composite Score: Attention/Processing Speed Composite Score
+CogState Schizophrenia Battery Composite Score: CogState Schizophrenia Battery Composite Score
+Brief Assessment of Cognition in Schizophrenia (BACS) Composite Score: Brief Assessment of Cognition in Schizophrenia (BACS) Composite Score
+Executive Functioning Composite Score: Executive Functioning Composite Score
+Episodic Memory Composite Score: Episodic Memory Composite Score
+Two-Back Memory Task: Two-Back Memory Task
+Digit Sequencing: Digit Sequencing
+Identification Task: Identification Task
+Detection Task: Detection Task
+Symbol Coding: Symbol Coding
+One Card Learning Task: One Card Learning Task
+Groton Maze Learning Task: Groton Maze Learning Task
+Verbal Memory: Verbal Memory
+Token Motor: Token Motor
+Semantic Fluency: Semantic Fluency
+Letter Fluency: Letter Fluency
+Tower of London: Tower of London
+BACS: Brief Assessment of Cognition in Schizophrenia
+CogState Schizophrenia Battery: CogState Schizophrenia Battery
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+Suicides: Count of suicide events
+Suicide Attempts: Count of suicide attempt events
+Deaths: Count of death events
+Hospitalisations: Count of hospitalisation events
+Cardiac Events: Count of cardiac events
+Arrhythmia: Count of arrhythmia events
+Self Harm: Count of self harm events
+Time to First Hospitalisation: Time from start of study drug to first hospitalisation
+Time to Stop of Study Drug: Time from start of study drug until stop of study drug
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+PANSS: Positive and Negative Syndrome Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS Psychopathological Subscale: PANSS Psychopathological Subscale
+PANSS Positive Subscale: PANSS Positive Subscale
+PANSS Negative Subscale: PANSS Negative Subscale
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+RR: Response rate
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+PANSS positive subscale score: Sum of 7 positive items
+PANSS negative subscale score: Sum of 7 negative items
+PANSS total score: Sum of all items
+CGI-I: Clinical Global Impression of Improvement
+Efficacy-related discontinuation rate: Discontinuation rate related to efficacy
+HVLT-R: Hopkins Verbal Learning Test – Revised
+BRIEF-A: Behavior Rating Inventory of Executive Function – Adult version
+LNS: Letter-Number Sequencing test
+BAS: Barnes Akathisia Scale
+PANSS: Positive and Negative Syndrome Scale
+SANS: Scale for the Assessment of Negative Symptoms
+SANS-18: SANS‑18 total score
+PSQI: Pittsburgh Sleep Quality Index
+CGI-S: Clinical Global Impressions – Severity
+CGI-C: Clinical Global Impressions – Change
+SAS: Simpson-Angus Scale
+BACS: Brief Assessment of Cognition in Schizophrenia
+CDSS: Calgary Depression Scale for Schizophrenia
+ACSA: ACSA scale
+UPSA-B: UCSD Performance-Based Skills Assessment – Brief
+BVMT-R: Brief Visuospatial Memory Test‑Revised
+Spatial Span: Spatial Span task of Wechsler Memory Scales‑III
+LNS: Letter‑Number Sequencing task
+MCCB Composite: MATRICS Consensus Cognitive Battery composite score
+MMN: Auditory mismatch negativity
+HVLT-R: Hopkins Verbal Learning Test‑Revised
+P300b: Visual P300 component
+PANSS: Positive and Negative Syndrome Scale
+PL: Plasma Level
+PANSS-EC: Positive and Negative Syndrome Scale Excited Component
+PANSS-Positive: Positive subscale of PANSS
+PANSS-Negative: Negative subscale of PANSS
+PANSS-G: PANSS-General Psychopathological
+PANSS-Total: PANSS total score
+PANSS-Cluster: PANSS aggression, hostility and depression cluster scores
+CGI-S: Clinical Global Impression, Severity
+CGI-I: Clinical Global Impression, Improvement
+ISI: Shortest stimulus duration/ISI
+PANSS: Positive and Negative Syndrome Scale
+SANS: Scale for the Assessment of Negative Symptoms
+GAS: Global Assessment of Functioning Scale
+MATRICS: Measurement and Treatment Research to Improve Cognition in Schizophrenia
+HQOL: Heinrich Quality of Life Scale
+CDSS: Calgary Depression Scale for Schizophrenia
+DIEPSS: Dysphoric Extrapyramidal Symptom Scale total score
+PANSS-EC: PANSS Excitement Component total score
+ACES: Agitation Calmness and Sleep-state scale
+NCFT: Neuropsychological test measuring psychological functions
+COWAT: Controlled Oral Word Association Test
+CGI: Clinical Global Impression rating scale
+HEQ: Healthcare Economics Questionnaire
+SFS: Social Functioning Scale
+NEO: Neuroticism-Extroversion-Openness Personality Test
+RSQ: Relationship Style Questionnaire
+STAXI: State-Trait Anger Expression Inventory
+PANAS: Positive Affect Negative Affect Schedule
+EI: Emotional Intelligence
+BDI: Beck Depression Inventory
+BAI: Beck Anxiety Inventory
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+SAS: Simpson-Angus Scale
+GAF: Global Assessment of Functioning
+DAI-10: Drug Attitude Inventory 10
+AIMS: Abnormal Involuntary Movement Scale
+CPT: Continuous Performance Test
+TMT: Trail Making Test
+SUMD: Scale to Assess Unawareness of Mental Disorder
+BARS: Barnes Akathisia Rating Scale
+VWM: Visual Working Memory
+PWI: Psychosocial Well-being Index
+TOM: Theory of Mind Scale
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+C-SSRS: Columbia Suicide Severity Rating Scale
+WT: Weight
+HR: Heart Rate
+TBIL: Total Bilirubin
+CPK: Creatine Phosphokinase
+EOS: Eosinophils
+HCT: Hematocrit
+HB: Hemoglobin
+PRL: Prolactin
+SB: Sinus Bradycardia
+SVPB: Supraventricular Premature Beat
+VPB: Ventricular Premature Beat
+RBBB: Right Bundle Branch Block
+QRS: QRS Duration
+STI: Symmetrical T-wave Inversion
+QTcB: QT interval corrected Bazett's formula
+QTcF: QT interval corrected Fridericia's formula
+QTcN: QT corrected FDA Neuropharmacology Division formula
+QTcE: QT corrected fractional exponent correction method
+PANSS: Positive and Negative Syndrome Scale
+PANSS Pos: PANSS Positive Subscale
+PANSS Neg: PANSS Negative Subscale
+PANSS Gen: PANSS General Psychopathology Subscale
+PANSS Resp: PANSS Response (≥20% reduction)
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+MPF: Marder Positive Factor
+MDTF: Marder Disorganized Thought Factor
+MHXEF: Marder Hostility/Excitement Factor
+MADF: Marder Anxiety/Depression Factor
+ECG: Electrocardiogram
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+HR: Heart Rate
+BPRS: Brief Psychiatric Rating Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+CSSB: Computerized Symbolic Substitution Battery
+MCCB: MATRICS Consensus Cognitive Battery
+UPSA: University of California San Diego Performance-Based Skills Assessment
+SANS: Scale for the Assessment of Negative Symptoms
+PK: Pharmacokinetics
+ALT: Alanine Aminotransferase
+ALP: Alkaline Phosphatase
+AST: Aspartate Aminotransferase
+GGT: Gamma-Glutamyl Transferase
+BUN: Blood Urea Nitrogen
+Ca: Calcium
+Cr: Creatinine
+Direct Bilirubin: Direct Bilirubin
+TBil: Total Bilirubin
+TP: Total Protein
+SG: Specific Gravity
+pH: pH
+GLU: Glucose
+PROT: Protein
+BLD: Blood
+KET: Ketone
+BASO: Basophils
+EOS: Eosinophils
+HCT: Hematocrit
+HGB: Hemoglobin
+LYMPH: Lymphocytes
+MCH: Mean Corpuscular Hemoglobin
+MCHC: Mean Corpuscular Hemoglobin Concentration
+MCV: Mean Corpuscular Volume
+MONO: Monocytes
+PLT: Platelet Count
+RBC: Red Blood Cell Count
+RET: Reticulocytes
+NEUT: Neutrophils
+WBC: White Blood Cell Count
+QUIT RATE: proportion of individuals who self report no tobacco use during weeks 5 through 8 confirmed by exhaled carbon monoxide less than 10 ppm
+CO: exhaled carbon monoxide measurement
+SF-36: Short Form 36 Health Survey
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive Subscale: PANSS Positive Subscale
+PANSS Negative Subscale: PANSS Negative Subscale
+CGI-S: Clinical Global Impression of Severity
+PSP: Personal and Social Performance Scale
+PSQI: Pittsburgh Sleep Quality Index
+Satisfaction Scale: 5‑point participant satisfaction evaluation
+ESRS: Extrapyramidal Symptom Rating Scale
+Globulin: Globulin blood levels
+Chloride: Chloride blood levels
+Protein: Protein blood level
+Albumin: Albumin blood levels
+Albumin to Globulin Ratio: A/G ratio in the blood
+Blood Oxytocin Levels: Blood oxytocin levels
+Mean Corrected QT Interval: QTc
+Total Cholesterol: Total cholesterol blood levels
+High-Density Lipoprotein: HDL blood levels
+Low-Density Lipoprotein: LDL blood levels
+Very Low Density Lipoprotein: VLDL blood levels
+Alanine Transaminase/Serum Glutamic-Pyruvic Transaminase: ALT/SGPT blood levels
+Aspartate Aminotransferase/Serum Glutamic-Oxaloacetic Transaminase: AST/SGOT blood levels
+BUN: Blood urea nitrogen
+Glucose: Glucose blood levels
+Potassium: Potassium blood levels
+Sodium: Sodium blood levels
+Calcium: Calcium blood levels
+Triglycerides: Triglyceride blood levels
+Bilirubin: Bilirubin blood level
+Mean Diastolic Blood Pressure: Mean diastolic blood pressure
+Mean Systolic Blood Pressure: Mean systolic blood pressure
+Mean Sitting Pulse: Mean sitting pulse (bpm)
+Mean Weight: Mean weight (kg)
+MCCB Attention Vigilance Domain Score: MCCB Attention Vigilance domain score
+MCCB Reasoning/Problem Solving Domain Score: MCCB Reasoning/Problem Solving domain score
+MCCB Working Memory Domain Score: MCCB Working Memory domain score
+MCCB Processing Speed Domain Score: MCCB Processing Speed domain score
+MCCB Verbal Learning Domain Score: MCCB Verbal Learning domain score
+MCCB Visual Learning Domain Score: MCCB Visual Learning domain score
+MCCB Social Cognition Domain Score: MCCB Social Cognition domain score
+MCCB Composite Score: MCCB Composite Score
+BACS Symbol Digit Test: BACS Symbol Digit test
+Hopkins Verbal Learning Test: HVLT
+Rapid Visual Information Processing: RVIP
+BPRS Total Score: BPRS total score
+SANS Total Score: SANS total score
+CDS Total Score: CDS total score
+AIMS Total Score: AIMS total score
+Simpson-Angus Scale: SAS total score
+Arizona Sexual Experience Scale: ASEX total score
+Global Akathisia Score: Global akathisia score
+Psychosis Score: Psychosis score
+Side Effect Checklist: SEC
+Brief Role Play Positive Affect Score: BRP positive affect items
+Brief Role Play Negative Affect Score: BRP negative affect items
+Brief Role Play Willingness Score: BRP willingness to interact item
+Brief Role Play Reaction Score: BRP reactions to partner item
+HQOL: Heinrichs Quality of Life scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS: Positive and Negative Syndrome Scale
+SAS: Simpson-Angus Scale
+AIMS: Abnormal Involuntary Movement Scale
+C-SSRS: Columbia Suicide Rating Scale
+CGI-S: Clinical Global Impressions – Severity
+CGI-C: Clinical Global Impressions – Change
+PSP: Personal and Social Performance Scale
+UPSA-B: UCSD Performance-Based Skills Assessment – Brief
+NSA-16: Negative Symptom Assessment 16
+MCCB: MATRICS Consensus Cognitive Battery
+EQ-5D: EuroQol Five-Dimension Health Status
+SWN-SF: Subjective Well‑Being Under Neuroleptic Scale – Short Form
+BAS: Barnes Akathisia Scale
+ALT: Alanine Transaminase
+AST: Aspartate Aminotransferase
+Bilirubin: Total Bilirubin
+Alkaline Phosphatase
+Eosinophil Count
+Creatine Phosphokinase
+Total Cholesterol
+Low Density Lipoprotein
+High Density Lipoprotein
+QTcF: Corrected QT Interval (Fridericia)
+PANSS Negative Subscale: 7‑item subscale measuring negative symptoms
+PANSS General Subscale: 16‑item subscale measuring general psychopathology
+PANSS Positive Subscale: 7‑item subscale measuring positive symptoms
+PANSS total score: Sum of positive, negative, and general subscales
+PANSS: Positive and Negative Syndrome Scale
+PANSS Subscores: Positive, Negative, General Psychopathology subscales
+Marder Factor Scores: Positive, Negative, Disorganized, Hostility/Excitement, Anxiety/Depression
+CGI-C: Clinical Global Impression-Change
+CGI-S: Clinical Global Impression-Severity
+EQ-5D: EuroQol-5 Dimension health status index
+EQ-VAS: Visual Analog Scale of EQ-5D
+SF-36: Short Form-36 Health Survey
+TSQM: Treatment Satisfaction Questionnaire for Medication
+SWN-S: Subjective Well-Being Under Neuroleptic Scale
+PSP: Personal and Social Performance Scale
+TR: Treatment Response (>30% decrease in PANSS)
+RE: Relapse Event per Csernansky criteria
+PTS: Physician Treatment Satisfaction Scale
+CC: Csernansky criteria
+PANSS MF Neg: PANSS Marder Factor Negative symptom score
+PANSS Pos: PANSS Positive subscale
+PANSS MF HE: PANSS Marder Factor Hostility/Excitement symptom score
+PANSS MF AD: PANSS Marder Factor Anxiety/Depression symptom score
+PANSS MF DT: PANSS Marder Factor Disorganized Thought symptom score
+PANSS GP: PANSS General Psychopathology subscale
+PANSS Tot: PANSS total score
+PANSS Neg: PANSS Negative subscale
+PANSS MF Pos: PANSS Marder Factor Positive symptom score
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+PANSS Responder: 30% reduction in PANSS total score
+STG: Social Trust Game
+RMET: Reading the Mind in the Eyes Test
+PANAS: Positive and Negative Affect Schedule
+ERT: Emotion Recognition Task
+RVIP: Rapid Visual Information Processing
+B-SIT: Brief Smell Identification Test
+HVLT: Hopkins Verbal Learning Test
+SC: Symbol Coding Subtest
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impressions-Severity scale
+CGI-S: Clinical Global Impressions-Severity scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impressions – Severity
+BOLD signal: Blood Oxygen Level Dependent signal
+Congruence Effect: Congruence effect of the emotional task
+Attention Effect: Attention effect of the emotional task
+Valence Effect: Valence effect of the emotional task
+ACC: Anterior Cingulate Cortex
+PFdlC: Prefrontal Dorso-Lateral Cortex
+Amygdala: Amygdala
+MNWS: Minnesota Nicotine Withdrawal Scale
+FTND: Fagerstrom Test for Nicotine Dependence
+WISDM: Wisconsin Inventory of Smoking Dependence Motives
+VSE: Variability of Standard Error
+BDI: Beck Depression Inventory
+BPRS: Brief Psychiatric Rating Scale
+C-SSRS: Columbia-Suicide Severity Rating Scale
+SANS: Scale for the Assessment of Negative Symptoms
+SAPS: Scale for the Assessment of Positive Symptoms
+AIMS: Abnormal Involuntary Movement Scale
+BAS: Barnes Akathisia Scale
+SAS: Simpson-Angus Scale
+CPT: Continuous Performance Test
+CO: Exhaled Carbon Monoxide
+Cotinine: Nicotine Metabolite Level
+BP: Blood Pressure
+Pulse: Pulse Rate
+Weight: Body Weight
+Beta: Response Tendency
+C-SSRS: Columbia Suicide Rating Scale
+CUI Total Score: Composite Utility Index Total Score
+PANSS Total Score: Positive and Negative Syndrome Scale Total Score
+PANSS Positive Subscale: Positive Subscale of PANSS
+PANSS Negative Subscale: Negative Subscale of PANSS
+PANSS General Psychopathology Subscale: General Psychopathology Subscale of PANSS
+Rate of discontinuation: Rate of Discontinuation
+NSA-16 Total Score: NSA-16 Total Score
+CGI-S: Clinical Global Impression – Severity
+CGI-S: Clinical Global Impression of Severity
+TEAE: Treatment Emergent Adverse Event
+Serious AE: Serious Adverse Event
+ANTIPARKINSONIAN DRUG USE
+WEIGHT CHANGE
+BMI CHANGE
+ADVERSE EVENT (AE) INCIDENCE
+SERIOUS ADVERSE EVENT (SAE) INCIDENCE
+TIME TO LOSS OF EFFECT
+PANSS TOTAL SCORE CHANGE
+CGI‑S: Clinical Global Impression‑Severity
+EXTRAPYRAMIDAL SYMPTOMS INCIDENCE
+DIEPSS TOTAL SCORE CHANGE
+DIEPSS ITEM 9 GLOBAL SCORE CHANGE
+PROLACTIN CHANGE
+FASTING GLUCOSE CHANGE
+HbA1c CHANGE
+INSULIN CHANGE
+ABNORMAL ECG FINDINGS
+CGI-I: Clinical Global Impression of Improvement
+CGI-S: Clinical Global Impression of Severity
+CGAS: Children’s Global Assessment Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS Total Score: PANSS Total Score
+PANSS Hostility: PANSS Hostility Subscore
+PANSS Uncooperativeness: PANSS Uncooperativeness Subscore
+PANSS Item Increase: Absolute increase in PANSS items
+Remission: Remission defined by PANSS items ≤3 sustained 6 months
+Relapse Rate: Overall relapse rate from randomization
+Discontinuation Rate: Percentage of participants discontinued due to all reasons other than sponsor discontinued study
+Hospitalization: Hospitalization due to worsening illness
+Violent Behavior: Violent or aggressive behavior resulting in clinically significant injury
+Suicidal Behavior: Suicidal behavior or answers “yes” to C-SSRS questions
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+TTFPH: Time to first psychiatric hospitalization
+TFI: Treatment Failure Incidence
+CAI: Cognitive Assessment Interview composite score
+UPSA-B: University of California San Diego Performance-Based Skills Assessment – Brief
+MCCB: MATRICS Consensus Cognitive Battery composite score
+PANSS: Positive and Negative Syndrome Scale total score
+WM: Working Memory subscale of MCCB
+AV: Attention and Vigilance subscale of MCCB
+VL: Verbal Learning subscale of MCCB
+VSL: Visual Learning subscale of MCCB
+SP: Speed of Processing subscale of MCCB
+RP: Reasoning and Problem Solving subscale of MCCB
+SC: Social Cognition subscale of MCCB
+GAF: Global Assessment of Functioning
+ESRS-A: Extrapyramidal Symptom Rating Scale – Abbreviated
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+PANSS: Positive and Negative Syndrome Scale
+PANSS positive subscale: Positive subscale of PANSS
+PANSS negative subscale: Negative subscale of PANSS
+PANSS general subscale: General psychopathology subscale of PANSS
+C-SSRS: Columbia Suicide Severity Rating Scale
+C-CASA: Columbia Classification Algorithm of Suicide Assessment
+Hemoglobin: Hemoglobin level
+Hematocrit: Hematocrit level
+Red Blood Cell Count: RBC count
+Mean Corpuscular Volume: MCV
+Mean Corpuscular Hemoglobin: MCH
+Mean Corpuscular Hemoglobin Concentration: MCHC
+Platelets: Platelet count
+White Blood Cell Count: WBC count
+Lymphocytes: Lymphocyte count
+Neutrophils: Neutrophil count
+Eosinophils: Eosinophil count
+Basophils: Basophil count
+Monocytes: Monocyte count
+Activated Partial Thromboplastin Time: aPTT
+Prothrombin Time: PT
+Prothrombin International Ratio: INR
+Bilirubin: Serum bilirubin
+Aspartate Aminotransferase: AST
+Alanine Aminotransferase: ALT
+Alkaline Phosphatase: ALP
+Protein: Serum protein
+Albumin: Serum albumin
+Blood Urea Nitrogen: BUN
+Creatinine: Serum creatinine
+Uric Acid: Serum uric acid
+Sodium: Serum sodium
+Potassium: Serum potassium
+Chloride: Serum chloride
+Calcium: Serum calcium
+Bicarbonate: Serum bicarbonate
+Urinalysis pH: Urine pH
+Glucose: Urine glucose
+Protein: Urine protein
+Blood: Urine blood
+Ketones: Urine ketones
+Urobilinogen: Urine urobilinogen
+Nitrite: Urine nitrite
+Pulse Rate: Heart rate
+Blood Pressure: BP
+Body Temperature: Temperature
+Respiratory Rate: RR
+PR Interval: PR interval
+QRS Interval: QRS interval
+QT Interval: QT interval
+QTcB: QT corrected using Bazett's formula
+QTcF: QT corrected using Fridericia's formula
+TSQM effectiveness: TSQM effectiveness scale
+TSQM side effects: TSQM side effects scale
+TSQM convenience: TSQM convenience scale
+TSQM global satisfaction: TSQM global satisfaction scale
+WBC Count: White blood cell count threshold
+ANC: Absolute neutrophil count threshold
+MDBS-D: Movement Disorder Burden Score for Dystonia
+Fasting Insulin: Fasting insulin level
+HDL: High-density lipoprotein
+LDL: Low-density lipoprotein
+Cholesterol: Total cholesterol
+Triglycerides: Triglyceride level
+HbA1c: Glycosylated hemoglobin
+Prolactin: Serum prolactin
+WT: Patients weight in pounds
+INS: fasting serum insulin uIU/ml
+GLU: Fasting glucose
+CGI-I: Clinical Global Impressions – Improvement
+PQ-LES-Q: Pediatric Quality of Life Enjoyment and Satisfaction Questionnaire
+PANSS: Positive and Negative Syndrome Scale
+PANSS Marder positive: Marder positive symptoms factor of PANSS
+PANSS Marder hostility/excitement: Hostility/excitement factor of PANSS
+PANSS negative subscale: Negative subscale of PANSS
+PANSS Marder negative: Marder negative symptoms factor of PANSS
+PANSS Marder anxiety/depression: Anxiety/depression factor of PANSS
+PANSS general psychopathology: General psychopathology subscale of PANSS
+PANSS Marder disorganized thoughts: Disorganized thoughts factor of PANSS
+PANSS positive & negative combined: Combined positive and negative subscales of PANSS
+PANSS positive subscale: Positive subscale of PANSS
+PANSS total: Total score of PANSS
+PANSS 30% responder: ≥30% reduction in PANSS total
+CGI-S: Clinical Global Impressions – Severity
+CGI-S change: Change from baseline in CGI‑S score
+CGI-I responder: CGI‑I score of 1 or 2
+CGAS: Children’s Global Assessment Scale
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+BOLD: Blood Oxygen Level Dependent (fMRI) signal
+I-CGI-C: Integrated Clinical Global Impression of Change
+E-CGI-C: Efficacy Clinical Global Impression of Change
+ST-CGI-S: Safety and Tolerability Clinical Global Impression of Severity
+I-CGI-S: Integrated Clinical Global Impression of Severity
+E-CGI-S: Efficacy Clinical Global Impression of Severity
+TSQM: Treatment Satisfaction Questionnaire for Medication
+CO: Breath carbon monoxide
+VAS: Visual Analogue Scale
+Bond‑Lader VAS: Modified Bond‑Lader Visual Analogue Scale for sedation
+Quetiapine/Norquetiapine Ratio: Ratio of plasma concentration of quetiapine to nor‑quetiapine
+Attentional Composite Score: Standardized speed of performance score
+TSQM: Treatment Satisfaction Questionnaire for Medication
+ISLT: International Shopping List Task
+GMLT: Groton Maze Learning Test
+ONB: One Back memory task
+SSS: Stanford Sleepiness Scale
+Drop‑out Count: Number of patients who dropped out
+BACS: Brief Assessment of Cognition in Schizophrenia
+LNS: Letter Number Sequencing
+BVMT: Brief Visuospatial Memory Test
+BPRS: Brief Psychiatric Rating Scale
+PRL: Prolactin
+HbA1c: Hemoglobin A1c
+FPG: Fasting Plasma Glucose
+Wt: Weight
+INS: Insulin
+PANSS: Positive and Negative Syndrome Scale
+EPS: Extrapyramidal Symptoms
+BMI: Body Mass Index
+DIEPSS: Drug-Induced Extrapyramidal Symptoms Scale
+VAS: Visual Analog Scale
+Mental Sedation: mental sedation subscale of DIEPSS
+Physical Sedation: physical sedation subscale of DIEPSS
+Tranquilization: tranquilization subscale of DIEPSS
+Other Feelings: other feelings subscale of DIEPSS
+Stroop Test: Stroop test component of CNT
+TMT B: Trail-Making Test B component of CNT
+Wisconsin Card Sorting Test: WCST component of CNT
+Word Fluency Test: word fluency test component of CNT
+SANS: Scale for the Assessment of Negative Symptoms
+NIDSS: Neuroleptic Induced Deficit Syndrome Scale
+Blunted Affect (NIDSS): blunted affect subscore of NIDSS
+Avolition (NIDSS): avolition subscore of NIDSS
+Cognition (NIDSS): cognition subscore of NIDSS
+Total (NIDSS): total score of NIDSS
+SANS-Global: Global score of Scale for the Assessment of Negative Symptoms
+VAS-total score: average of all subscale scores of VAS
+PANSS: Positive and Negative Syndrome Scale
+SDS: Sheehan Disability Scale
+CGI-I: Clinical Global Impression of Improvement
+CGI-S: Clinical Global Impression of Severity
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+Positive Syndrome Scale: Positive Syndrome Scale
+Negative Syndrome Scale: Negative Syndrome Scale
+General Psychopathology: General Psychopathology
+AUC∞: Area under the plasma concentration-time curve from time zero to infinity
+AUCt: Area under the plasma concentration-time curve from time zero to last quantifiable concentration
+Cmax: Highest measured concentration of the drug during dosing interval
+Cmax,u: Highest measured unbound plasma concentration during dosing interval
+Tmax: Time to reach highest measured concentration of the drug during dosing interval
+t1/2,z: Terminal‑phase elimination half‑life
+λz: Elimination rate constant
+CLr: Renal clearance
+CLu/F: Apparent oral clearance of unbound drug
+CL/F: Apparent oral clearance
+Ae,u: Amount of drug excreted unchanged in urine
+fe,u: Fraction excreted unchanged in urine
+ECG: 12‑lead electrocardiogram
+C-SSRS: Columbia Suicide Severity Rating Scale
+PT: Prothrombin time
+INR: International Normalized Ratio
+PTT: Partial Thromboplastin Time
+aPTT: Activated Partial Thromboplastin Time
+BP: Blood pressure
+HR: Heart rate
+Temp: Temperature
+RR: Respiratory rate
+CGI-S: Clinical Global Impression – Severity
+BAS: Akathisia Assessment Scale
+SWN-S: Subjective Well‑Being under Antipsychotic Treatment Scale
+EQ-5D: EuroQol Five‑Dimension Health Status Instrument
+AIMS: Abnormal Involuntary Movement Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive Subscale
+PANSS Negative Subscale
+PANSS General Psychopathology Subscale
+PANSS Total Score
+S-RUM: Structured Risk Utilization Monitor
+PSP: Personal and Social Performance Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+SAS: Simpson-Angus Scale
+NSA-16: Negative Symptom Assessment 16
+PANSS: Positive and Negative Syndrome Scale
+Half‑PONS: Half‑Profile of Nonverbal Sensitivity
+EPTT: Emotional Perspective Taking Task
+TASIT Part III: Awareness of Social Inference Test
+Antisaccade Error Percentage: Error percentage in the antisaccade task
+AUC[0-inf]: Area under the concentration versus time curve from time zero to infinity
+AUC[0-tau]: Area under the concentration versus time curve in a dosing interval
+SAS: Simpson‑Angus Scale
+CGI-S: Clinical Global Impression‑Severity Scale
+AIMS: Abnormal Involuntary Movement Scale
+BPRS: Brief Psychiatric Rating Scale
+BAS: Barnes Akathisia Rating Scale
+TEAE: Treatment‑Emergent Adverse Event
+AE: Adverse Event
+SWN 20: Scale exploring subjective experience of psychotic participants
+DAI: Drug Attitude Inventory
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS General Psychopathology Subscale Score: Subscale of PANSS
+PANSS Positive Subscale: Subscale of PANSS
+PANSS Negative Subscale: Subscale of PANSS
+ESRS: Extrapyramidal Symptom Rating Scale
+CGI-S: Clinical Global Impression – Severity
+Sleep Evaluation Scale: Self‑administered scale rates quality of sleep and daytime drowsiness
+MCCB: MATRICS Consensus Cognition Battery
+WT: Body weight
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+PSP: Personal and Social Performance Scale
+PANSS PF: PANSS Marder Positive Factor Score
+PANSS NF: PANSS Marder Negative Factor Score
+PANSS TF: PANSS Marder Thought Factor Score
+PANSS UH/E: PANSS Marder Uncontrolled Hostility/Excitement Factor Score
+PANSS AD: PANSS Marder Anxiety/Depression Factor Score
+PANSS Positive Subscale Score: Sum of 7 positive PANSS items
+PANSS Negative Subscale Score: Sum of 7 negative PANSS items
+PANSS Total Score: Sum of all PANSS items
+PEC: Psychosis Extrapyramidal Composite Score
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+Response Rate: Reduction >30% from Baseline in PANSS Total Score or CGI‑I score 1 or 2
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression – Severity
+PEC: Psychosis Exacerbation Composite
+PANSS: Positive and Negative Syndrome Scale
+PANSS Marder Factor score – Anxiety/Depression Score
+PANSS Marder Factor score – Uncontrolled Hostility/Excitement Score
+PANSS Marder Factor score – Disorganized Thought Score
+PANSS Marder Factor score – Negative Symptoms Score
+PANSS Marder Factor score – Positive Symptoms Score
+CGI-I: Clinical Global Impression – Improvement
+SCI-PANSS: Structured Clinical Interview – PANSS
+Response Rate: ≥30% improvement in PANSS Total Score or CGI‑I 1–2
+PANSS: Positive and Negative Syndrome Scale
+MFS: PANSS Marder Factor scores
+Positive Factor Score: Sum of 8 positive items
+Negative Factor Score: Sum of 7 negative items
+Thought Factor Score: Sum of 7 items (disorganized thoughts)
+Uncontrolled Hostility/Excitement Factor Score: Sum of 4 items
+Anxiety/Depression Factor Score: Sum of 4 items
+Disorganized Thoughts Factor Score: Sum of 7 items (conceptual disorganization, etc.)
+PANSS Total Score: Sum of all PANSS items
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+PSP: Personal and Social Performance Scale
+RR: Response Rate
+DR: Discontinuation Rate
+TEAE: Treatment‑Emergent Adverse Event
+PEC: Composite Excitement Hostility Tension Uncooperativeness Poor Impulse Control Score
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS-P1: PANSS item P1
+PANSS-P2: PANSS item P2
+PANSS-P3: PANSS item P3
+PANSS-P6: PANSS item P6
+PANSS-P7: PANSS item P7
+PANSS-G8: PANSS item G8
+PANSS-G14: PANSS item G14
+TR: Time to Relapse
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+Inpatient Psychiatric Hospitalization Rate: proportion of patients with ≥ inpatient psychiatric hospitalizations
+MATRICS: MATRICS Consensus Cognitive Battery
+BPRS: Brief Psychiatric Rating Scale
+CGI-S: Clinical Global Impression of Severity
+SANS: Scale for the Assessment of Negative Symptoms
+CDRS: Calgary Depression Rating Scale
+EQ-5D: Self-administered standardized measure of health states
+VAS: 20‑cm visual analogue health status rating
+SF-12v2: Short‑form generic health status questionnaire
+PCS: Physical Component Score composite of physical domains
+SLOF: Modified Social Learning Outcomes Form behavioral functioning scale
+PANSS: Positive and Negative Syndrome Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI-S: Clinical Global Impression – Severity
+BARS: Brief Adherence Rating Scale
+C-SSRS: Columbia Suicide Rating Scale
+CIWA-Ar: Clinical Institute Withdrawal Assessment – Alcohol Revised
+AIMS: Abnormal Involuntary Movement Scale
+SAS: Simpson‑Angus Scale
+CHECKLIST: Participant‑rated withdrawal symptom checklist
+CGI-S: Clinical Global Impression – Severity
+BAS: Barnes Akathisia Scale
+BPRS: Brief Psychiatric Rating Scale
+TE-SIB%: Percent of participants with treatment‑emergent suicidal ideation or behaviour
+Groton Maze Learning Test: Groton Maze Learning Test
+Detection Task: Detection Task
+Identification Task: Identification Task
+One Card Learning Task: One Card Learning Task
+SANS-18: Scale for the Assessment of Negative Symptoms (SANS) 18-item version
+CDSS: Calgary Depression Scale for Schizophrenia
+PANSS: Positive and Negative Syndrome Scale
+SAS: Simpson-Angus Scale
+BAS: Barnes Akathisia Scale
+Cmax: Maximum Concentration
+AUC: Area Under the Curve
+BP: Blood Pressure
+Pulse: Heart Rate
+CogState: CogState Cognitive Battery Scores
+CGI-I: Clinical Global Impression – Improvement
+PANSS: Positive and Negative Syndrome Scale
+BW Change: Body Weight Change
+BPRS: Brief Psychiatric Rating Scale
+IL-2: Interleukin‑2
+IL-8: Interleukin‑8
+CRP: C‑Reactive Protein
+MCCB: MATRICS Consensus Cognitive Battery composite score
+CDS: Calgary Depression Scale
+SANS: Scale for the Assessment of Negative Symptoms
+PANSS: Positive and Negative Syndrome Scale
+PANSS Marder Factor Scores: Positive, Negative, Disorganized Thoughts, Uncontrolled Hostility/Excitement, Anxiety/Depression
+Symptomatic Remission Criterion: Mild or less on specified PANSS items
+Relapse: Hospitalization or predefined PANSS score increases
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+ΔPANSS: Mean change in PANSS total score
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+PSP: Personal and Social Performance Scale
+TR: Time to Relapse
+CGI-S: Clinical Global Impression of Severity
+Paliperidone ER Satisfaction Scale: Participant satisfaction with paliperidone extended release
+PANSS: Positive and Negative Syndrome Scale
+Sleep VAS: Self‑administered sleep visual analogue scale
+PSP: Personal and Social Performance Scale
+PANSS Positive Subscale
+PANSS Negative Subscale
+PANSS Disorganized Thoughts Subscale
+PANSS Uncontrolled Hostility/Excitement Subscale
+PANSS Anxiety/Depression Subscale
+PANSS General Psychopathology Subscale
+PANSS %Improvement: Percentage of participants with ≥20% improvement in PANSS total score
+BPRS: Brief Psychiatric Rating Scale
+PAS: Patient Acceptance Likert Scale
+CGI-GI: CGI Global Improvement subscale
+CGI-S: CGI Severity of Illness subscale
+PANSS-G: PANSS General Subscale
+PANSS-N: PANSS Negative Subscale
+PANSS-P: PANSS Positive Subscale
+CDS: Calgary Depression Scale for Schizophrenia
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression Improvement
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive Subscale: Sum of 7 positive items
+PANSS Negative Subscale: Sum of 7 negative items
+PANSS General Psychopathology Subscale: Sum of 16 items
+AE: Adverse Event
+SAE: Serious Adverse Event
+TEAE: Treatment Emergent Adverse Event
+MCCB: MATRICS Consensus Cognitive Battery
+PPI: Prepulse inhibition of the startle reflex
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+AE Incidence: Percentage of patients presenting one or more adverse events
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+SF-12v2: Short Form 12 Version 2 health survey
+ITA: Interview to Assess...
+PANSS: Positive and Negative Syndrome Scale
+modified SLOF: modified Scale of Living Functioning
+CGI-S: Clinical Global Impression – Severity
+TEAEs: Treatment‑Emergent Adverse Events
+SAEs: Serious Adverse Events
+Smoking: average cigarettes per day at week 12 (LOCF)
+BARS: Brief Adherence Rating Scale
+Fixation Duration: total time of fixation inside each ROI
+Emotion Recognition Accuracy: sum of correct responses
+Ball Toss Difference: number of ball tosses sent to positive partner minus negative partner
+Shape Toss Difference: number of ball tosses sent to shape A minus shape B
+Fixation Count: number of fixations on face
+PANSS: Positive and Negative Syndrome Scale
+CGI-I: Clinical Global Impression – Improvement
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression – Severity
+DAI-10: Drug Attitude Inventory 10-item
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+SFS: Social Functioning Scale
+PSP Improvement: Improvement in PSP score by at least one category
+Symptomatic Remission: Achieving mild or moderate intensity on all 8 PANSS items
+HCS: Hallucination Change Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+SQ: Sleep Quality Self-Administered Scale
+PSP: Personal and Social Performance Scale
+DS: Daytime Drowsiness Self-Administered Scale
+TS: Treatment Satisfaction Scale
+CGI-S: Clinical Global Impression of Severity
+Cpredose: Pre‑dose plasma concentration
+PANSS: Positive and Negative Syndrome Scale
+Cmax: Maximum Concentration
+DIEPSS: Drug‑Induced Extrapyramidal Side Effect Scale
+Tmax: Time to Maximum Concentration
+half‑life: Elimination Half‑Life
+AUCtau: Area Under the Curve over the dosing interval
+Css av: Steady‑State Average Concentration
+Test Meal Consumption: Amount of Test Meal consumed
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive subscale: Positive subscale of PANSS
+PANSS Negative subscale: Negative subscale of PANSS
+PANSS General Psychopathology subscale: General Psychopathology subscale of PANSS
+TEAEs: Treatment‑Emergent Adverse Events
+TEAE: Treatment‑Emergent Adverse Event
+SAE: Serious Adverse Event
+PANSS: Positive Subscale
+PANSS: Negative Subscale
+PANSS: General Psychopathology Subscale
+PANSS: Total Score
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+C-SSRS: Columbia Suicide Severity Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+AE Incidence: Subjects with at least one Adverse Event
+MST: Finger Tapping Motor Sequence Task
+Overnight Improvement: Percent increase in average correct sequences
+Sleep Spindle Density: Spindle density (number/minute) in N2 sleep
+FREL: Relative bioavailability
+AUCt: Area under the concentration‑time curve from time zero to last measurable concentration
+AUC28: Area under the concentration‑time curve from time zero to 28 days
+AUC∞: Area under the concentration‑time curve from time zero to infinity
+CMAX: Maximum plasma concentration
+ORTHOSTATIC BP: Orthostatic blood pressure measurement (supine and standing)
+ORTHOSTATIC HYPOTENSION: Drop in systolic BP ≥20 mmHg and HR increase ≥25 bpm
+HEART RATE CHANGE: Increase or decrease ≥15 bpm
+VAS: Visual Analog Scale for injection site pain
+TEMPERATURE: Body temperature ≥37.8 °C and increase ≥1.1 °C
+ECG: 12‑lead electrocardiogram
+BRADYCARDIA: ≤50 bpm
+QTCPROLONGATION: QTc ≥450 ms
+TRIGLYCERIDES: Fasting triglycerides ≥160 mg/dL (men) or ≥120 mg/dL (women)
+GLUCOSE: Fasting glucose ≥115 mg/dL
+PROLACTIN: > upper limit of normal
+NEUTROPHILS: ≤1,500/mm³
+CK: Creatine phosphokinase ≥3× ULN
+AE: Adverse event
+PANSS: Positive and Negative Syndrome Scale
+RR: Response Rate
+AE: Adverse Event
+SAE: Serious Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+PSP: Personal and Social Performance Scale
+DR: Discontinuation Rate
+VAS: Visual Analog Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression – Severity
+PSP: Personal and Social Performance Scale
+Relapse: Relapse incidence
+PSP Improvement %: Percentage of participants achieving improvement in PSP score by at least one category
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+Sleep Quality VAS: Sleep Quality Visual Analog Scale
+Daytime Drowsiness VAS: Daytime Drowsiness Visual Analog Scale
+PANSS Improvement ≥20%: Percentage of participants with ≥20% improvement in PANSS total score
+CGI: Clinical Global Impression Scale
+CGI-S: Clinical Global Impression of Severity
+PANSS Total Score: PANSS Total Score
+PANSS Positive Subscale Score: PANSS Positive Subscale Score
+PANSS Negative Subscale Score: PANSS Negative Subscale Score
+PSP: Personal and Social Performance Scale
+RR: Responder rate
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+PANSS total score
+PANSS positive subscale score
+PANSS negative subscale score
+PANSS Marder Factor scores
+Positive factor score
+Negative factor score
+Thought factor score
+Uncontrolled hostility/excitement factor score
+Anxiety depression factor score
+PEC score
+CGI-I: Clinical Global Impression of Improvement
+CGI-S: Clinical Global Insight of Severity
+C-SSRS: Columbia Suicide Severity Rating Scale
+GAF: Global Assessment of Functioning
+Cmax: Maximum plasma concentration
+Cmin: Minimum plasma concentration
+Cavg: Average plasma concentration
+AUCtau: Area under the curve over tau
+AUC0-24: Area under the curve 0-24 hours
+Tmax: Time to maximum concentration
+Accumulation index: Ratio of Cmax injection 3 to injection 1
+Accumulation index: Ratio of AUCtau injection 3 to injection 1
+Swing of total risperidone plasma concentrations: (Cmax-Cmin)/Cmin
+Fluctuation of total risperidone plasma concentrations: (Cmax-Cmin)/Cavg
+BAS: Barnes Akathisia Scale
+AIMS: Abnormal Involuntary Movement Scale
+SAS: Simpson‑Angus Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI: Clinical Global Impression
+QTcF: QT corrected interval (Fridericia formula)
+QTcB: QT corrected interval (Bazett formula)
+QTcN: QT corrected interval (Newman formula)
+PR: PR interval
+RR: RR interval
+QRS: QRS complex
+QT: QT interval
+BMI: Body Mass Index
+WC: Waist Circumference
+BW: Body Weight
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+HR: Heart Rate
+Temp: Body Temperature
+RespRate: Respiratory Rate
+AIMS: Abnormal Involuntary Movement Scale
+SAS: Simpson-Angus Scale
+BARS: Barnes Akathisia Rating Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+C-CASA: Columbia Classification Algorithm of Suicide Assessment
+SerumChem: Serum Chemistry
+Hematology: Hematology
+Urinalysis: Urinalysis
+Prolactin: Prolactin Test
+PhysicalExam: Physical Examination Evaluation
+Verbal Memory: Verbal Memory subscale of BACS
+Working Memory: Working Memory subscale of BACS
+Motor Speed: Motor Speed subscale of BACS
+Verbal Fluency: Verbal Fluency subscale of BACS
+Attention and Processing Speed: Attention and Processing speed subscale of BACS
+Executive Function: Executive Function subscale of BACS
+BACS Composite: BACS composite score
+Standard Deviation Score: Standard Deviation Score
+ΔBACS Composite: Change in BACS composite score
+PANSS Total: PANSS total score
+PANSS Positive: PANSS positive score
+PANSS Negative: PANSS negative score
+PANSS General: PANSS general score
+PANSS-POS: PANSS Positive Subscale
+SQS: Sleep Quality Scale
+CGI-S: Clinical Global Impression of Severity
+PSP: Personal and Social Performance Scale
+DDS: Daytime Drowsiness Scale
+SF-36: Short Form 36 Health Survey
+PANSS-GEN: PANSS General Psychopathology Subscale
+PANSS: Positive and Negative Syndrome Scale
+PANSS-NEG: PANSS Negative Subscale
+PANSS: Positive and Negative Syndrome Scale
+GAF: Global Assessment of Functioning
+DAI-10: Drug Attitude Inventory 10
+CGI: Clinical Global Impression
+ESRS: Extrapyramidal Symptom Rating Scale
+SF-36: Short Form Health Survey 36
+PSP: Personal and Social Performance Scale
+IL-4: Interleukin-4
+IL-2: Interleukin-2
+ALC: Absolute Lymphocyte Count
+Trails B: Trail Making Test-Part B
+PANSS: Positive and Negative Syndrome Scale
+IL-6: Interleukin-6
+BACS: Brief Assessment of Cognition in Schizophrenia
+IL-1β: Interleukin-1 beta
+QTcB: Bazett-corrected QT interval
+TNFα: Tumor Necrosis Factor alpha
+IL-8: Interleukin-8
+IFNγ: Interferon gamma
+IL-17A: Interleukin-17A
+IL-10: Interleukin-10
+QLS: Quality of Life Scale
+SWN-S: Subjective Well‑Being under Neuroleptic Drugs – Self‑report
+IAQ: Interview‑Based Antipsychotic Questionnaire
+CGI‑S: Clinical Global Impression – Severity of Illness
+TooL: Tolerability and Quality of Life
+PANSS: Positive and Negative Syndrome Scale
+PANSS General Psychopathology Subscale
+PANSS Marder Factor: negative symptoms
+PANSS Marder Factor: anxiety/depression
+PANSS Marder Factor: uncontrolled hostility/excitement
+PANSS Excited Component
+PANSS Negative Subscale
+PANSS Positive Subscale
+PANSS Disorganized Thoughts
+PANSS Marder Factor: positive symptoms
+PANSS total score
+CGI-S: Clinical Global Impression - Severity of Illness
+CGI-I: Clinical Global Impression - Global Improvement
+PSP: Personal and Social Performance Scale
+PSP functional response rate
+PSP functional remission rate
+PSP domain D: disturbing and aggressive behaviours
+TEAEs: Treatment-emergent adverse events
+CGI-S: Clinical Global Impression of Severity
+GAF: Global Assessment of Functioning
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+EQ-5D: EuroQol Five Dimensions
+EQ-5D VAS: Visual Analogue Scale component of EQ-5D
+EQ-5D Index: Summary index derived from EQ-5D
+ESRS-A: Extrapyramidal Symptom Rating Scale
+CGI-S: Clinical Global Impression of Severity
+C-SSRS: Columbia Suicide Severity Rating Scale
+C-CASA: Columbia Classification Algorithm of Suicide Assessment
+PR interval: PR interval
+QRS interval: QRS interval
+QTc interval: Corrected QT interval
+QTcF interval: Corrected QT interval using Fridericia's formula
+BP: Blood Pressure
+Pulse Rate: Pulse Rate
+ECG: Electrocardiogram
+Total Positive Symptoms: Sum of scores on hallucinatory behavior, unusual thought content, conceptual disorganization
+Total Negative Symptoms: Sum of scores on blunted affect, emotional withdrawal, motor retardation
+ER Ratio: Amplitude of evoked response to second auditory stimulus divided by amplitude of first
+Memory T-score: Normalized word recall score adjusted for age
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+PANSS: Positive and Negative Syndrome Scale
+BARS: Barnes Akathisia Rating Scale
+SAS: Simpson-Angus Scale
+AIMS: Abnormal Involuntary Movement Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+5-HT1A: 5‑Hydroxytryptamine 1A receptor occupancy
+D2/D3: Dopamine D2/D3 receptor occupancy
+SERT: Serotonin Transporter occupancy
+5-HT2A: 5‑Hydroxytryptamine 2A receptor occupancy
+CMR: Cmax Molar Ratio
+AUCR: AUC(0-24) Ratio
+CLR: CLr apparent clearance from urine
+PVABVS: Percentage of participants with markedly abnormal vital signs
+CLF: CL/F apparent clearance from plasma
+TMAX: Time to reach maximum plasma concentration
+CMAX: Maximum observed plasma concentration
+CAV: Cav average plasma concentration
+CAVSS: Cavss average plasma concentration
+PASALV: Percentage of participants with markedly abnormal standard safety laboratory values
+AR: Accumulation ratio Day 7/Day 1
+ER: Estimated Ratio Day 7/Day 1
+PMABC: Percentage of participants meeting markedly abnormal criteria specified by protocol
+FE: Fraction of drug excreted in urine
+AE: Adverse Event
+TEAE: Treatment-emergent adverse event
+AUCTLC: AUC(0-tlqc) total plasma exposure
+AE024: Ae(0-24) total amount excreted in urine
+AUC024: AUC(0-24) total plasma exposure
+MCCB: MATRICS Consensus Cognitive Battery
+UPSA: UCSD Performance-based Skills Assessment
+MMN: Mismatch Negativity
+Cmax,ss: Maximum measured concentration of BI 409306 in plasma at steady‑state
+AUC0-infinity: Area under the concentration‑time curve of BI 409306 in plasma from 0 to infinity after a single dose
+tmax,ss: Time from dosing to maximum measured concentration of BI 409306 in plasma at steady‑state
+Cmax: Maximum measured concentration of BI 409306 in plasma after single dose
+tmax: Time from dosing to maximum measured concentration of BI 409306 in plasma after single dose
+AUCtau,ss: Area under the concentration‑time curve of BI 409306 in plasma at steady state over a uniform dosing interval tau
+DRAE: Drug‑related adverse events
+DR: Discontinuation Reasons
+RR: Relapse Rate
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impression of Severity
+REM: Remission Status
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+AHRS: Auditory Hallucinations Rating Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+Percent change from baseline: Percentage change from baseline
+Weight Gain ≥5%: Significant weight gain threshold
+PANSS General Psychopathology Subscale: PANSS general psychopathology subscale score
+PANSS Excitability Subscale: PANSS excitability subscale score
+PANSS Total Score: PANSS total score
+PANSS Positive Subscale: PANSS positive subscale score
+PANSS Negative Subscale: PANSS negative subscale score
+CGI-S: Clinical Global Impression Severity
+CGAS: Children’s Global Assessment Scale
+PQ-LES-Q % Max: PQ-LES-Q percentage maximum possible score
+PANSS Responder: ≥20% reduction in PANSS
+MCCB Composite Score: MCCB composite score
+T-score: T-score of MCCB composite score
+Z-score: Z-score of symptom domain scores and ERPs
+SP: Speed of Processing
+AV: Attention/Vigilance
+WM: Working Memory
+VL: Verbal Learning
+VLP: Visual Learning
+RP: Reasoning and Problem Solving
+SC: Social Cognition
+ERP: Visual event related potentials
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-I: Clinical Global Impression of Improvement
+PSP: Personal and Social Performance Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+ESRS-A: Extrapyramidal Symptom Rating Scale – Abbreviated
+MDBS-D: Movement Disorder Battery Scale – Dystonia
+CHOL: Cholesterol
+TG: Triglycerides
+HbA1c: Glycosylated Hemoglobin
+LDL: Low Density Lipoprotein
+HDL: High Density Lipoprotein
+INS: Insulin
+PROLACTIN: Prolactin
+PR INTERVAL: PR interval (electrocardiogram)
+QRS INTERVAL: QRS interval (electrocardiogram)
+QTcF: QT interval corrected using Fridericia formula
+SBP: Systolic blood pressure
+DBP: Diastolic blood pressure
+HR: Heart rate
+MARDER FACTORS: negative symptoms, positive symptoms, disorganized thoughts, uncontrolled hostility/excitement, anxiety/depression
+ASSR: Auditory Steady‑State Response
+ERSP: Event‑Related Spectral Perturbation
+PANSS: Positive and Negative Symptom Scale
+SANS: Scale for the Assessment of Negative Symptoms
+MCCB: MATRICS Consensus Cognitive Battery
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression-Severity of Illness
+CGAS: Children's Global Assessment Score
+PANSS: Positive and Negative Syndrome Scale
+CGI-I: Clinical Global Impression-Improvement
+CGI-S: Clinical Global Impression-Severity of Illness
+C-GAS: Children's Global Assessment Scale
+SRA: Self-Reported Adherence
+Cmax: Maximum Plasma Concentration
+AUC0-t: Area Under the Curve from Zero to t
+WoRQ: Readiness for Work Questionnaire
+ASEX: Arizona Sexual Experience Scale
+QLS: Quality of Life Scale
+QLS-IR: Interpersonal Relations domain score of QLS
+QLS-IRole: Instrumental Role domain score of QLS
+QLS-IF: Intrapsychic Foundations domain score of QLS
+QLS-CoA: Common Objects and Activities domain score of QLS
+TooL: Tolerability and Quality of Life
+CGI-S: Clinical Global Impression – Severity
+TEAE: Treatment Emergent Adverse Event count
+CGI-I: Clinical Global Impression Scale-Improvement
+PANSS: Positive and Negative Syndrome Scale
+PANSS G: PANSS General Psychopathology Scale
+PANSS P: PANSS Positive Symptom Scale
+PANSS N: PANSS Negative Symptom Scale
+PANSS Total: PANSS Total Score
+BACS: Brief Assessment of Cognition in Schizophrenia
+BACS Composite: BACS Composite Summary Score
+CGI-I: Clinical Global Impressions – Improvement
+CGI-S: Clinical Global Impressions – Severity
+SANS: Scale for the Assessment of Negative Symptoms
+PANSS Responder %: Percentage of participants achieving ≥20% improvement in PANSS Total
+PHNO: Binding potential of PHNO
+NCFHEB: Binding potential of NCFHEB
+BVMT: Brief Visuospatial Memory Test
+BVMT-R: Brief Visuospatial Memory Test-Revised
+UPSA-B: UCSD Performance-Based Skills Assessment, Version B
+Q-LES: QOL Enjoyment and Satisfaction Questionnaire Short Form
+PSP: Personal and Social Performance Scale
+CGI-S: Clinical Global Impressions Severity Scale
+PANSS: Positive and Negative Syndrome Scale
+NSA-16: Negative Symptom Assessment 16
+MCCB Composite: MATRICS Consensus Cognitive Battery composite score
+TMT-A: Trail Making Test Part A
+BACS-Symbol Coding: Brief Assessment in Cognition in Schizophrenia Symbol Coding
+HVLT-R: Hopkins Verbal Learning Test-Revised
+WM-III SS: Wechsler Memory Scale-III Spatial Span
+NAB Mazes: Neuropsychological Assessment Battery Mazes
+CFAN: Category Fluency Animal Naming
+MES: Mayer-Salovey-Caruso Emotional Intelligence Test Managing Emotions
+CPIT: Continuous Performance Test-Identical Pairs
+WMS: Wechsler Memory Scale-III
+LNS: Letter-Number Sequencing
+Working Memory Composite: Working Memory composite score
+BIS-11: Barratt Impulsiveness Scale 11
+Delay discounting task: Participant‑completed task measuring impulsive behavior
+PSQI: Pittsburgh Sleep Quality Index
+TSQM-14: Treatment Satisfaction Questionnaire for Medication 14
+CGI-I: Clinical Global Impressions – Improvement
+CGI-S: Clinical Global Impressions – Severity
+PANSS: Positive and Negative Syndrome Scale
+MCQ: Monetary Choice Questionnaire
+EDT: Experiential Discounting Task
+PSP: Personal and Social Performance Scale
+SLOF: Specific Levels of Functioning
+DET: Detection Task
+IDN: Identification Task
+OCL: One Card Learning Task
+ONB: One-back Memory Task
+TWOB: Two Back Task
+GML: Groton Maze Learning Task
+SECT: Social Emotional Cognition Task
+ISL: International Shopping List Task
+Composite Cognitive Score: Composite z‑score of cognitive tasks
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+BIS-11: Barratt Impulsiveness Scale 11
+SLOF: Specific Level of Functioning
+PANSS: Positive and Negative Syndrome Scale
+Response Rate: Reduction >30% in PANSS Total Score or CGI‑I 1/2
+HVLT-R: Hopkins Verbal Learning Test‑Revised
+SS: Spatial Span test score
+BACS SC: Brief Assessment of Cognition in Schizophrenia Symbol Coding
+EEG P300 AMP: P300 Amplitude
+EEG P300 LAT: P300 Latency
+PANSS POS: PANSS Positive Subscale
+PANSS NEG: PANSS Negative Subscale
+PANSS GEN: PANSS General Psychopathology Subscale
+CPT HIT: Continuous Performance Test Hit Count
+CAT FLU: Category Fluency Test Correct Words
+HVLT CORR: Hopkins Verbal Learning Test Total Correct Responses
+BOLD fMRI: Blood‑Oxygen‑Level Dependent fMRI Signal
+VEP: Visual Evoked Potential Recording
+MMN: Mismatch Negativity Response
+SAFETY LAB %: Percentage of participants with markedly abnormal safety laboratory tests
+VS: Vital Signs (temperature, respiration, blood pressure, pulse)
+EEG POWER RATIO: High Beta/Low Gamma Power Ratio
+NBACK ACC: n‑back Task Accuracy
+7DPP: 7-Day Point Prevalence Abstinence
+CO: Expired Carbon Monoxide
+MedUse: Self-Report of Taking Medication
+PTFR: Peak-to-Trough Fluctuation Ratio for the Active Moiety
+ΔPANSS: Change in PANSS score from Baseline
+POS: PANSS Positive Scale
+NEG: PANSS Negative Scale
+GEN: PANSS General Psychopathology Scale
+PANSS TOT: PANSS Total Score
+AUCτ: Area under the curve over the dosing interval
+AUC Ratio: Ratio of AUC (0‑28 days) after 4th dose to AUC after first dose
+MMN: Mismatch Negativity
+MCCB: MATRICS Consensus Cognitive Battery
+CAINS: Clinical Assessment Interview for Negative Symptoms
+BPRS: Brief Psychiatric Rating Scale
+BDNF: Brain‑Derived Neurotrophic Factor
+PANSS: Positive and Negative Syndrome Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+CGI-S: Clinical Global Impression of Severity
+MATRICS: Measurement and Treatment Research to Improve Cognition in Schizophrenia
+BPRS: Brief Psychiatric Rating Scale
+SANS: Scale for the Assessment of Negative Symptoms
+BNSS: Brief Negative Symptom Scale
+PANSS: Positive and Negative Syndrome Scale
+QSU-Brief: Brief Questionnaire on Smoking Urges
+MCCB: MATRICS Consensus Cognitive Battery
+MMN: Mismatch Negativity
+TMT: Tone Matching Threshold
+EEDS: Early Escalation of Disease Symptoms composite
+PANSS: Positive and Negative Syndrome Scale total score
+PANSS P1: PANSS item P1
+PANSS P2: PANSS item P2
+PANSS P3: PANSS item P3
+PANSS P6: PANSS item P6
+PANSS P7: PANSS item P7
+PANSS G8: PANSS item G8
+ALC/DAY: Alcohol consumption per day
+WHO: World Health Organization risk categories for alcohol consumption
+ER visit: Emergency Room visit
+PANSS: Positive and Negative Syndrome Scale
+SAFTEE-SI: Systematic Assessment for Treatment Emergent Effects-Systematic Inquiry
+AIMS: Abnormal Involuntary Movement Scale
+UPSA-B: UCSD Performance-based Skills Assessment Brief
+MCCB: MATRICS Consensus Cognitive Battery
+C-SSRS: Columbia Suicide Severity Rating Scale
+TEAE: Treatment-Emergent Adverse Event incidence
+SSP: Social Skills Performance
+SRF: Self‑Reported Functioning
+CP: Cognitive Performance
+DA: Defeatist Attitudes
+NSP: Negative Symptom Severity
+CF: Communication and Financial Functioning
+MRT: Mean residence time
+AUC: Area under the serum concentration-time curve
+Tmax: Time to maximum (peak) drug serum concentration
+Cmax: Maximum (peak) observed drug serum concentration
+VZ/F: Apparent volume of distribution at terminal phase
+CL/F: Apparent total clearance
+t1/2: Biological half life
+λZ: Elimination rate constant
+Cmax: Maximum Concentration
+AUC: Area Under Curve (drug exposure or MMN amplitude × time)
+Cmax: Maximum Plasma Concentration
+Tmax: Time to Maximum Concentration
+C24hr: Concentration at 24‑hour sampling time
+t1/2: Apparent Elimination Half‑Life
+MMN: Mismatch Negativity Amplitude (deviant minus standard)
+MMN peak amplitude: Peak amplitude of MMN waveform
+AUC change from baseline: Change in MMN area under curve from Day –1 to Day 13
+Peak amplitude change from baseline: Change in MMN peak amplitude from Day –1 to Day 13
+AE incidence: Number of participants experiencing at least one adverse event
+Discontinuation due to AE: Number of participants stopping treatment because of an adverse event
+FA: Fractional Anisotropy
+PGI-I: Patient Global Impressions-Improvement
+CGI-S: Clinical Global Impressions-Severity
+PANSS: Positive and Negative Syndrome Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+SCoRS: Schizophrenia Cognition Rating Scale
+MCCB: MATRICS Consensus Cognitive Battery composite score
+AESI: Adverse Events of Special Interest
+SAE: Serious Adverse Event
+PANSS: Positive and Negative Syndrome Scale
+RR: Retention Rate
+CL/F: apparent oral clearance
+AUC: area under concentration-time curve
+Tmax: time to maximum concentration
+Rac: accumulation ratio
+PTR: peak-to-trough ratio
+t1/2: terminal half-life
+Vz/F: apparent volume of distribution
+Cmax: maximum concentration
+Cmin: minimum concentration
+AUCτ: area under concentration-time curve over dosing interval
+PR interval: PR interval
+QRS interval: QRS interval
+QTcF: QTcF corrected QT interval
+Pulse rate: pulse rate
+Blood pressure: blood pressure
+Hb: hemoglobin
+Hct: hematocrit
+RBC: red blood cell count
+MCV: mean corpuscular volume
+MCH: mean corpuscular hemoglobin
+MCHC: mean corpuscular hemoglobin concentration
+PLT: platelet count
+WBC: white blood cell count
+Neutrophils: neutrophil count
+Eosinophils: eosinophil count
+Monocytes: monocyte count
+Basophils: basophil count
+Lymphocytes: lymphocyte count
+BUN: blood urea nitrogen
+Cr: creatinine
+GLC: glucose
+Ca: calcium
+Na: sodium
+K: potassium
+Cl: chloride
+HCO3: bicarbonate
+AST: aspartate aminotransferase
+ALT: alanine aminotransferase
+TBIL: total bilirubin
+ALP: alkaline phosphatase
+PO4: phosphorus
+CHOL: cholesterol
+HDL: high density lipoprotein
+LDL: low density lipoprotein
+UA: uric acid
+Alb: albumin
+TP: total protein
+Urine color: urine color
+Urine appearance: urine appearance
+Specific gravity: specific gravity
+pH: pH
+Glucose (urine): urinary glucose
+Protein (urine): urinary protein
+Blood (urine): urinary blood
+Ketones: urinary ketones
+Nitrites: urinary nitrites
+Leukocyte esterase: urinary leukocyte esterase
+Microscopy: urine microscopy
+Cerebellar tremor: cerebellar tremor
+Non‑cerebellar tremor: non‑cerebellar tremor
+Finger test: finger test
+Nose test: nose test
+Heel test: heel test
+Shin test: shin test
+Romberg: Romberg test
+Tandem walking: tandem walking
+Positional nystagmus: positional nystagmus
+Gaze evoked nystagmus: gaze evoked nystagmus
+Reflexes: reflexes
+Muscle strength: muscle strength
+Cranial nerves: cranial nerves
+Sensory function: sensory function
+SARA: Scale for Assessment and Rating of Ataxia
+AE: adverse event
+SAE: serious adverse event
+TEAE: treatment emergent adverse event
+C-SSRS: Columbia Suicide Severity Rating Scale
+Emax: Maximal target occupancy
+EC50: Plasma concentration giving 50% of Emax
+5-HT6O: 5-HT6 receptor occupancy
+D2O: D2 dopamine receptor occupancy
+D1O: D1 dopamine receptor occupancy
+PET: Positron Emission Tomography
+PANSS: Positive and Negative Syndrome Scale
+AE: Adverse Event
+ADR: Adverse Drug Reaction
+QLS: Quality of Life Scale
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+BPRS: Brief Psychotic Rating Scale
+GPTS: Green Paranoid Thought Scales
+Ideas of reference: Ideas of reference subscale
+Ideas of persecution: Ideas of persecution subscale
+GPTS Total Score: Sum of items for part A and B
+MCCB: MATRICS Consensus Cognitive Battery
+PF-06412562: Plasma concentration of PF-06412562
+LabAbnormCount: Number of participants with blood and urine laboratory test abnormalities
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+PulseRate: Pulse Rate
+QRSInterval: QRS Interval
+PRInterval: PR Interval
+QTcFInterval: QTcF Interval
+MRI_ZStat90: 90th percentile Z-statistic of MRI signal within ROI
+MID_zScore: z-score of reward anticipation/consummation
+C-SSRS: Columbia-Suicide Severity Rating Scale
+C-CASA: Columbia Classification Algorithm of Suicide Assessment
+AE: Adverse Event
+SAE: Serious Adverse Event
+30-day point prevalence abstinence: 30‑day point prevalence abstinence
+7-day point prevalence abstinence: 7‑day point prevalence abstinence
+self‑reported prolonged abstinence: Self‑reported prolonged abstinence
+cotinine assay: Cotinine assay verification
+saliva sample collection: Saliva sample collection
+RBANS: Repeatable Battery for the Assessment of Neuropsychological Status
+RBANS Immediate Memory: Immediate Memory index of RBANS
+RBANS Language: Language index of RBANS
+RBANS Visuospatial: Visuospatial index of RBANS
+RBANS Attention: Attention index of RBANS
+RBANS Delayed Memory: Delayed Memory index of RBANS
+RBANS Total Score: Standardized Total Score of RBANS
+ΔRBANS Total Score: Difference in RBANS Total Score between baseline and follow‑up
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+PANSS: Positive and Negative Syndrome Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+SAS: Simpson‑Angus Scale
+AIMS: Abnormal Involuntary Movement Scale
+BARS: Barnes Akathisia Rating Scale
+VITAL SIGNS: Heart rate, systolic/diastolic blood pressure, respiratory rate, weight
+LAB VALUES: Serum chemistry, hematology, urinalysis, prolactin
+ECG: Electrocardiogram (PR, QRS, QT, QTcB, QTcF)
+TEAE: Treatment Emergent Adverse Event
+AE: Adverse Event
+PANSS: Positive and Negative Syndrome Scale
+PANSS total score: PANSS total score
+PANSS positive subscale: PANSS positive subscale
+PANSS negative subscale: PANSS negative subscale
+PANSS general psychopathology subscale: PANSS general psychopathology subscale
+Marder 5-factor model subscales: Marder 5-factor model subscales
+POS: Positive symptoms (Marder 5-factor model)
+NEG: Negative symptoms (Marder 5-factor model)
+DIS: Disorganized thoughts (Marder 5-factor model)
+IMP: Impulsivity/Hostility (Marder 5-factor model)
+ANX: Anxiety/Depression (Marder 5-factor model)
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+BACS: Brief Assessment of Cognition
+BACS composite z-score: BACS composite z-score
+PSP: Personal and Social Performance Scale
+BNSS: Brief Negative Symptom Scale
+UPSA-B: UPSA-B
+UPSA-B total score: UPSA-B total score
+NSA-16 Retardation Factor Domain: NSA-16 Retardation Factor Domain Score
+CDSS: Calgary Depression Scale for Schizophrenia
+PGI-C: Patient Global Impression – Change
+EEfRT V1: Baseline Press Rate
+EEfRT V2: Choice Reaction Time
+EEfRT V3: Completed Task Proportion
+EEfRT V4: Hard Task Low Probability Proportion
+EEfRT V5: Hard Task Medium Probability Proportion
+EEfRT V6: Hard Task High Probability Proportion
+EEfRT V7: Overall Hard Task Proportion
+EEfRT V8: High Probability Difference
+PANSS Total Score: PANSS Total Score
+PANSS Positive Subscale: PANSS Positive Subscale Score
+PANSS Negative Subscale: PANSS Negative Subscale Score
+PANSS General Psychopathology Subscale: PANSS General Psychopathology Subscale Score
+PANSS Prosocial Factors: PANSS Prosocial Factors Score
+PANSS Marder Negative Factors: PANSS Marder Negative Factors Score
+PANSS Excitement Component: PANSS Excitement Component Score
+PANSS Items P1-P7: PANSS Positive Item Scores
+PANSS Items N1-N7: PANSS Negative Item Scores
+PANSS Items G1-G16: PANSS General Psychopathology Item Scores
+NSA-4 Total Score: NSA-4 Total Score
+NSA-16 Total Score: NSA-16 Total Score
+NSA-16 Emotion/Affect Domain Score: NSA-16 Emotion/Affect Domain Score
+NSA-16 Social Involvement Factor Domain Score: NSA-16 Social Involvement Factor Domain Score
+NSA-16 Communication Factor Domain Score: NSA-16 Communication Factor Domain Score
+NSA-16 Motivation Factor Domain Score: NSA-16 Motivation Factor Domain Score
+NSA-16 Global Negative Symptoms Rating: NSA-16 Global Negative Symptoms Rating
+MCCB Composite Score: MCCB Composite Score
+Global Level of Functioning Score: Global Level of Functioning Score
+CGI: Clinical Global Impression
+General Psychopathology Subscale Score: General Psychopathology Subscale Score
+PANSS 20% Reduction Proportion: PANSS 20% Reduction Proportion
+EEG: Mu Suppression
+Pupil Size: Mean Difference in Pupillary Response
+MCCB: Measurement and Treatment Research to Improve Cognition in Schizophrenia Consensus Cognitive Battery
+MSCEIT: Mayer‑Salovey‑Caruso Emotional Intelligence Test
+UPSA: University of California San Diego Performance-Based Skills Assessment
+MCCB: MATRICS Consensus Cognitive Battery
+mTSR-6: 4-question measure
+CGI-S: Clinical Global Impression of Severity
+BAS: Burden Assessment Scale
+QLS: Quality of Life Scale
+BPRS: Brief Psychiatric Rating Scale
+CGI-S: Clinical Global Impression of Severity
+APS: Auditory Processing Speed
+APS Learning: Auditory Processing Speed Learning
+%PPI: Percent Prepulse Inhibition
+SM: Startle Magnitude
+Habituation: Startle Habituation
+Latency: Startle Latency
+Latency Facilitation: Startle Latency Facilitation
+T-score: Neurocognitive Battery T-score
+CO: Expired Carbon Monoxide
+CRP: C‑reactive Protein
+IL4: Interleukin‑4
+HS: Heidelberg Scale
+IFN-γ: Interferon Gamma
+PANSS: Positive and Negative Syndrome Scale
+IL17: Interleukin‑17
+WBC: White Blood Cell Count
+MoCA: Montreal Cognitive Assessment
+BDNF: Brain-derived neurotrophic factor concentration (ng/mL)
+CPT-IP: Continuous Performance Test – Immediate Post (attention)
+BACS Symbol Coding: Speed of processing test
+WAIS-IV Letter-Number Sequencing: Working memory test
+HVLT-R: Hopkins Verbal Learning Test – Revised (verbal learning)
+AX-CPT: AX-Continuous Performance Task (executive control)
+Composite Z-Score: Mean z-score of cognitive domains
+PANAS Positive Affect: Positive affect score
+PANAS Negative Affect: Negative affect score
+VO2max: Maximal oxygen uptake (aerobic capacity)
+Birchwood Social Functioning Scale: Social functioning score
+BPRS Negative Symptoms: Negative symptom score
+BPRS Positive Symptoms: Positive symptom score
+FET: Facial Emotion Identification Test (emotion perception)
+PONS: Half-Profile of Nonverbal Sensitivity (social perception)
+TASIT Part 2: Awareness of Social Inference Test (theory of mind)
+Empathic Accuracy Test: Empathy score
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+VAS: Visual Analogue Scale
+SAS: Self-Rating Anxiety Scale
+PANSS: Positive and Negative Syndrome Scale
+SDS: Self-rating Depression Scale
+WC: Waist Circumference
+WT: Weight
+PANSS: Positive and Negative Syndrome Scale
+AHRS: Auditory Hallucination Rating Scale
+CGI-S: Clinical Global Impression of Severity
+MCCB: MATRICS Consensus Cognitive Battery
+SCoRS: Social Cognition Rating Scale
+Adverse Event Incidence: Percentage of participants with any Adverse Event
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+LAB: Laboratory Tests
+VS: Vital Signs
+WT: Weight
+WC: Waist Circumference
+ECG: Electrocardiogram
+CGI-S: Clinical Global Impression – Severity
+SAPS: Scale for the Assessment of Positive Symptoms
+SSFB: Self-Administered Scale of Family Burden
+FEICS: Family Emotional Involvement and Criticism Scale
+SANS: Scale for the Assessment of Negative Symptoms
+WHOQOL-BREF: World Health Organization Quality of Life – Brief Version
+SAI‑E: Schedule for the Assessment of Insight Scale – Expanded version
+Medication adherence: categorical adherence
+LM I: Logical Memory Immediate raw score
+LM II: Logical Memory Delayed raw score
+PAL I: Paired Associates Learning Immediate raw score
+PAL II: Paired Associates Learning Delayed raw score
+VPA I: Verbal Paired Associates Immediate raw score
+VPA II: Verbal Paired Associates Delayed raw score
+VPA II Recognition: Verbal Paired Associates Recognition raw score
+MCCB Composite T-score: MATRICS Consensus Cognitive Battery composite t‑score
+SCoRS Total Score: Schizophrenia Cognition Rating Scale total score
+PSP Total Score: Personal and Social Performance total score
+CGI-I Scale: Clinical Global Impression – Improvement score
+CGI-S Scale: Clinical Global Impression – Severity score
+SQLS CV: SQLS Cognition & Vitality sub‑scale
+SQLS P: SQLS Psycho‑social sub‑scale
+SQLS T: SQLS Total score
+Cmax: Population PK model estimated maximum plasma concentration
+AUC: Population PK model estimated area under the curve
+ss‑Cmax: Steady‑state maximum plasma concentration
+QSU-Brief: Questionnaire of Smoking Urges – Brief
+PANSS: Positive and Negative Syndrome Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+CGI-S: Clinical Global Impression – Severity
+BNSS: Brief Negative Symptom Scale
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+DAI-10: Drug Attitude Inventory 10
+KSS: Karolinska Sleepiness Scale
+CGI-I: Clinical Global Impression – Improvement
+CGI-S: Clinical Global Impression – Severity
+PANSS Response: PANSS Response (≥20% or ≥30% reduction)
+BACS: Brief Assessment of Cognition in Schizophrenia
+BACS Composite Score: Mean of normalized subscale scores
+BACS Verbal Memory: raw score 0-75
+BACS Digit Sequencing: raw score 0-28
+BACS Token Motor: raw score 0-100
+BACS Verbal Fluency: raw score 0-225
+BACS Symbol Coding: raw score 0-110
+BACS Tower of London: raw score 0-22
+CGI-SCH-I: Clinician-Global Impression – Schizophrenia – Illness
+CGI-SCH-I Responder: CGI‑SCH‑I score 1 or 2
+CGI-SCH-S: Clinician-Global Impression – Schizophrenia – Severity
+DAI-10: Drug Attitude Inventory – 10-item
+KSS: Karolinska Sleepiness Scale
+NSA-16: Negative Symptom Assessment – 16-item
+NSA-16 Communication: domain score
+NSA-16 Emotion/Affect: domain score
+NSA-16 Social Involvement: domain score
+NSA-16 Motivation: domain score
+NSA-16 Retardation: domain score
+NSA-16 Total Score: sum of item scores
+NSA-16 Responder: ≥20% improvement from baseline
+PANSS: Positive and Negative Syndrome Scale
+PANSS Positive Scale: subscale score
+PANSS Negative Scale: subscale score
+PANSS General Psychopathology Scale: subscale score
+PANSS Total Score: sum of item scores
+PSP: Personal and Social Performance Scale
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+C-SSRS: Columbia Suicide Severity Rating Scale
+MADRS: Montgomery‑Åsberg Depression Rating Scale
+BNSS: Brief Negative Symptom Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+COMPLETION RATE: Percentage of participants able to complete the full study
+VT: Total Distribution Volume
+VND: Non‑Displaceable Volume
+BPP: Binding Potential
+DIEPSS: Drug-Induced Extrapyramidal Symptom Scale
+PANSS: Positive and Negative Syndrome Scale
+Deliberate Self-Injury: Deliberate self‑injury
+Suicidal Ideation: Clinically significant suicidal ideation
+Violent Behaviour: Violent behaviour
+CGI-S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+AE incidence: Adverse Event incidence
+Discontinuation due to AE: Discontinuation due to adverse event
+BOLD: Blood Oxygen Level Dependent response
+d-prime: d-prime context index
+SEL: Social Engagement Latency
+PANSS: Positive and Negative Syndrome Scale (total score)
+PANSS GP: PANSS General Psychopathology Subscale Score
+PANSS N: PANSS Negative Subscale Score
+PANSS P: PANSS Positive Subscale Score
+SWN-20: Subjective Well‑Being Under Neuroleptics Treatment Scale (total score)
+CGI-S: Clinician Global Impression – Severity
+CGI-I: Clinician Global Impression – Improvement
+PSP: Personal and Social Performance Scale (total score)
+Cmax: Maximum Plasma Concentration
+Cmin: Minimum Plasma Concentration
+PANSS: Positive and Negative Syndrome Scale
+CGI-I: Clinical Global Impression – Improvement Scale
+CGI-S: Clinical Global Impression – Severity Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+NY-AACENT: New York Academy of Child and Adolescent Neuropsychology Cognitive Battery
+UKU: Udvalg for Kliniske Undersøgelser Side Effect Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+BARS: Barnes Akathisia Rating Scale
+SAS: Simpson-Angus Scale
+CGAS: Children’s Global Assessment Scale
+Weight (kg): Body weight measurement
+Height (cm): Height measurement
+BMI (kg/m²): Body Mass Index
+Waist circumference (cm): Waist circumference measurement
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+MRS: Magnetic Resonance Spectroscopy
+fMRI BOLD: Blood oxygen level dependent response measured by functional magnetic resonance imaging
+GLU: Glutamate
+PANSS: Positive and Negative Syndrome Scale
+PANSS Negative Factor: PANSS Negative Factor score
+CGI-S: Clinical Global Impression of Severity
+NSA-16: Negative Symptom Assessment 16
+Response: ≥20% reduction in PANSS total score from Randomization
+COT: Cotinine level
+CO: End‑expired Carbon Monoxide level
+ASSR: Auditory Steady‑State Response (gamma 40 Hz) normalized gamma power
+rsFC: Resting‑state Functional Connectivity (fMRI) z‑score
+CPD: Cigarettes Per Day
+ALT: Alanine Aminotransferase
+ALP: Alkaline Phosphatase
+AST: Aspartate Aminotransferase
+Bilirubin: Serum Bilirubin
+Ca: Calcium
+Cl: Chloride
+Cr: Creatinine
+GGT: Gamma‑Glutamyl Transferase
+Glucose: Blood Glucose
+K: Potassium
+Na: Sodium
+Urea: Urea
+RBC: Red Blood Cells
+HCT: Hematocrit
+Hb: Hemoglobin
+WBC: White Blood Cells
+PLT: Platelets
+HR: Heart Rate
+PR: PR Interval
+QRS: QRS Duration
+QTcB: QT Corrected Bazett Interval
+QTcF: QT Corrected Fridericia Interval
+BOLD: Blood‑Oxygen‑Level Dependent Signal Change
+TEMP: Temperature
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+Pulse: Pulse Rate
+RR: Respiratory Rate
+C-SSRS: Columbia Suicide Severity Rating Scale
+TEAE: Treatment‑Emergent Adverse Event
+AE: Adverse Event
+BACS: Brief Assessment of Cognition in Schizophrenia
+VM: Verbal Memory
+DS: Digit Sequencing
+TM: Token Motor
+VF: Verbal Fluency
+SC: Symbol Coding
+TL: Tower of London
+PulseRate: Pulse Rate
+SBP: Systolic Blood Pressure
+DBP: Diastolic Blood Pressure
+BMI: Body Mass Index
+WC: Waist Circumference
+BW: Body Weight
+ALT: Alanine Aminotransferase
+ALP: Alkaline Phosphatase
+AST: Aspartate Aminotransferase
+BIC: Bicarbonate
+BIL: Bilirubin
+CAL: Calcium
+CL: Chloride
+CHOL: Cholesterol
+CREA: Creatinine
+GGT: Gamma Glutamyl Transferase
+GLU: Glucose
+HDL: High-Density Lipoprotein Cholesterol
+LDL: Low-Density Lipoprotein Cholesterol
+LDH: Lactate Dehydrogenase
+PHOS: Phosphate
+K: Potassium
+PROT: Protein
+NA: Sodium
+TG: Triglycerides
+URATE: Urate
+UN: Urea Nitrogen
+Hb: Hemoglobin
+Hct: Hematocrit
+RBC: Red Blood Cell Count
+WBC: White Blood Cell Count
+PLT: Platelets
+HbA1c: Hemoglobin A1c
+HR: Heart Rate
+PR: PR Interval
+QRS: QRS Interval
+QT: QT Interval
+SAS: Simpson-Angus Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+BARS: Barnes Akathisia Rating Scale
+CGI-S: Clinical Global Impression – Severity
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance Scale
+TSQM-9: Treatment Satisfaction Questionnaire for Medication
+SPSR SF-8a: Social Participation Satisfaction Rating Short Form 8a
+AIMS: Abnormal Involuntary Movements Scale
+PANSS: Positive and Negative Syndrome Scale
+PSP: Personal and Social Performance scale
+PANSS: Positive and Negative Syndrome Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+PGI-I: Patient Global Impressions-Improvement
+CGI-S: Clinical Global Impressions-Severity
+Incidence rate of new prescription or increase in dose of an ongoing antipsychotic medication
+Incidence rate of first relapse after 28 weeks of treatment
+BACS: Brief Assessment of Cognition in Schizophrenia
+LUV: Luvadaxistat plasma concentration
+D/T Ratio: D‑serine to total serine ratio
+DS: D‑serine plasma concentration
+LS: L‑serine plasma concentration
+MMN: Mismatch Negativity amplitude
+ASSR: Auditory Steady‑State Response amplitude
+P300: P300 amplitude
+EBC: Eyeblink Conditioning response percentage
+CGI-SCH: Clinical Global Impressions – Schizophrenia
+CGI-SCH-S: CGI-Schizophrenia Severity Subscale
+PANSS: Positive and Negative Syndrome Scale
+PANSS PSFS: PANSS Positive Symptom Functioning Subscale
+PANSS NSFS: PANSS Negative Symptom Functioning Subscale
+CGI-SCH-I: CGI-Schizophrenia Improvement
+BNSS: Brief Negative Symptom Scale
+BACS: Brief Assessment of Cognition in Schizophrenia
+SCoRS: Schizophrenia Cognition Rating Scale
+LUVAX: Luvadaxistat plasma concentration
+STS: Sheehan Suicidality Tracking Scale
+PSP: Personal and Social Performance Scale
+S-AS: Scale for Extrapyramidal Syndromes
+BARS: Barnes Akathisia Rating Scale
+CGI-S: Clinical Global Impression of Severity
+AIMS: Abnormal Involuntary Movement Scale
+NSFS: Marder Negative Symptom Factor Score
+PANSS: Positive and Negative Syndrome Scale
+MAS-A: Metacognition Assessment Scale-Abbreviated
+Self-Reflectivity: self-reflectivity domain of MAS-A
+Understanding of Others' Mind: understanding of the other's mind domain of MAS-A
+Decentration: decentration domain of MAS-A
+Mastery: mastery domain of MAS-A
+Total MAS-A Score: total score of MAS-A
+MNF: Marder negative factor
+PANSS: Positive and Negative Syndrome Scale
+BARS: Barnes Akathisia Rating Scale
+CDSS: Calgary Depression Scale for Schizophrenia
+AIMS: Abnormal Involuntary Movement Scale
+DAI-10: Drug Attitude Inventory‑10
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+CGI-SS: Clinical Global Impression of Suicidality
+CGI-I: Clinical Global Impression – Improvement
+C-SSRS: Columbia Suicide Severity Rating Scale
+SQLS: Schedule for the Deficit Syndrome
+SAS: Simpson‑Angus Scale
+AE: Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+SAE: Serious Adverse Event
+REM: Remission criteria
+STAB: Stability criteria
+REL: Relapse definition
+Hallucination Change Scale: Hallucination Change Scale for AVH
+SAS: Simpson-Angus Scale
+C-SSRS: Columbia Suicide Severity Rating Scale
+BARS: Barnes Akathisia Rating Scale
+UPSA-2-ER: UCSD Performance-Based Skills Assessment 2nd Edition – Extended Range
+AIMS: Abnormal Involuntary Movement Scale
+MCCB: MATRICS Consensus Cognitive Battery
+TEAE: Treatment Emergent Adverse Event
+Ctrough: Trough concentration of ASP4345
+CL/F: Apparent total clearance of MK-8189 in plasma
+C24hr: Concentration of MK-8189 at 24‑hour nominal sampling time
+t1/2: Terminal elimination half‑life of MK-8189
+Vd/F: Apparent volume of distribution of MK-8189
+Cmax: Maximum plasma concentration of MK-8189
+AUC0-24hr: Area under the concentration‑time curve from 0 to 24 hours
+Tmax: Time to reach maximum plasma concentration
+AE: Adverse event occurrence
+Discontinuation due to AE: Study treatment discontinuation attributed to an adverse event
+GCV: Geometric coefficient of variation
+MLCFP: Mean Latency to First Cigarette Puff
+QSU-4: Questionnaire of Smoking Urges, 4-item version
+AX-CPT: AX Version of the Continuous Performance Task
+MCCB: MATRICS Consensus Cognitive Battery
+NP: Number of Puffs
+MCPV: Mean Cigarette Puff Volume
+ERD: Event-Related Desynchronization
+N170: N170 ERP Component
+ASCET: ASCET Task
+CNV: Contingent Negative Variation
+AUC0-last: Area Under the Curve from time 0 to time of last quantifiable concentration
+Cmax: Maximum Serum Concentration
+AEs: Adverse Events
+SAEs: Serious Adverse Events
+AEs-Disc: Adverse Events leading to study discontinuation
+OMH30: Number of Participants who follow-up with Outpatient Mental Health Services attendance within 30 days of hospital discharge
+OMA30: Number of Participants who follow-up with outpatient medical attendance within 30 days of hospital discharge
+HR7: Rates of hospital inpatient readmission within 7 days following discharge
+HR30: Rates of hospital inpatient readmission within 30 days following discharge
+OMH7: Number of Participants who follow-up with Outpatient Mental Health Services attendance within 7 days of hospital discharge
+OMA7: Number of Participants who follow-up with outpatient medical attendance within 7 days of hospital discharge
+AE: Adverse Event
+SAE: Serious Adverse Event
+TEAE: Treatment‑Emergent Adverse Event
+MMN: Mismatch Negativity
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression of Severity
+MNF: Marder Negative Factor score
+CGI-S: Clinical Global Impression of Severity
+MCCB: MATRICS Consensus Cognitive Battery
+C-SSRS: Columbia Suicide Severity Rating Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+SARA: Scale for the Assessment and Rating of Ataxia
+SCoRS: Schizophrenia Cognition Rating Scale
+UPSA-Bi: Brief International UPSA (Functional Capacity Measure)
+PANSS: Positive and Negative Syndrome Scale
+CGI-I: Clinical Global Impression of Improvement
+ADVERSE EVENTS: Adverse Events
+BEAR: Brief Medication Questionnaire
+BDI: Beck Depression Inventory
+DROPOUT RATE: Dropout Rate
+ISST-PLUS: InterSePT Scale for Suicidal Thinking-Plus
+ISST-PLUS PART III SCORE: Severity of suicidal risk
+MAP-SR: Motivation and Pleasure Self‑Report
+PANSS: Positive and Negative Syndrome Scale
+PANSS GENERAL PSYCHOPATHOLOGY SCALE: General items of PANSS
+PANSS NEGATIVE SCALE: Negative items of PANSS
+PANSS POSITIVE SCALE: Positive items of PANSS
+PANSS TOTAL SCORE: Sum of PANSS items
+RESPONSE: ≥20% reduction in PANSS
+SERIOUS ADVERSE EVENTS: Serious Adverse Events
+VITAL SIGNS: Physiologic measurements
+WHOQOL-BREF: World Health Organization Quality of Life – abbreviated
+PANSS: Positive and Negative Symptom Scale
+CRP: C-reactive protein
+FTT: Finger Tapping Task score
+TMT-A: Trail Making Test Part A completion time
+DSST: Digit Symbol Substitution Test correct symbol count
+EEfRT: Hard-task choice percentage
+Insulin: Fasting blood insulin concentration
+Glucose: Fasting blood glucose concentration
+POMS: Profile of Mood States total score
+Tension-Anxiety: POMS tension-anxiety subscale
+Depression-Dejection: POMS depression-dejection subscale
+Anger-Hostility: POMS anger-hostility subscale
+Vigor-Activity: POMS vigor-activity subscale
+Fatigue-Inertia: POMS fatigue-inertia subscale
+Confusion-Bewilderment: POMS confusion-bewilderment subscale
+RT-Go: Reaction Time for Go trials
+RT-NoGo: Reaction Time for NoGo trials
+Omission Error Rate: Omission Error Rate
+False Alarm Error Rate: False Alarm Error Rate
+PANSS: Positive and Negative Syndrome Scale
+MCCB: MATRICS Consensus Cognitive Battery
+SCoRS: Schizophrenia Cognition Rating Scale
+AE: Adverse Event
+SAE: Serious Adverse Event
+CGI-S: Clinician Global Impression of Severity
+CGI-I: Clinician Global Impression of Improvement
+PANSS: Positive and Negative Syndrome Scale
+PANSS Total Score: PANSS Total Score
+PANSS Negative Subscale Score: PANSS Negative Subscale Score
+PANSS Positive Subscale Score: PANSS Positive Subscale Score
+PANSS General Psychopathology Subscale Score: PANSS General Psychopathology Subscale Score
+TEAEs: Treatment-Emergent Adverse Events
+RESPONSE: Response Criterion
+RELAPSE: Relapse Indicator
+IPHP: Inpatient Psychiatric Hospitalization Percentage
+PDC: Proportion of Days Covered
+AE: Adverse Event
+SAE: Serious Adverse Event
+Referral Rate
+DUP: Duration of Untreated Psychosis
+Body weight
+Tmax: Time to maximal observed plasma concentration
+Trough: Pre‑dose plasma concentration
+C-SSRS: Columbia‑Suicide Severity Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+BARS: Barnes Akathisia Rating Scale
+SAS: Simpson‑Angus Scale
+CGI‑S: Clinical Global Impression of Severity
+Cmin: Minimum Observed Plasma Concentration
+Cavg: Average Plasma Concentration
+Cavg,ss: Steady‑State Average Plasma Concentration
+QT interval
+PR interval
+QRS interval
+Heart rate
+Orthostatic Blood Pressure
+Pulse Rate
+Oral Temperature
+Respiratory Rate
+Injection site grading
+AUC: Area Under the Plasma Concentration‑Time Curve
+PANSS: Positive and Negative Syndrome Scale
+Cmax: Maximum Observed Plasma Concentration
+Percent Fluctuation
+Discrimination Accuracy: average correct identification of cigarette type
+MNWS: Minnesota Nicotine Withdrawal Scale
+ABS: Affect-based Withdrawal Scale
+QSU: Questionnaire for Smoking Urges
+mCEQ: modified Cigarette Evaluation Questionnaire
+Composite Withdrawal/Craving Score: composite of z‑scored withdrawal and craving scales
+CO Breathalyzer: Carbon Monoxide concentration in breath
+Smoking Propensity Difference: difference in cigarettes smoked between first two hours and last two hours
+Ki: Kinetic Influx Rate (dopamine synthesis capacity)
+CGI-S: Clinical Global Impression of Severity
+TEAEs: Treatment Emergent Adverse Events
+PSP: Personal and Social Performance Scale
+Relapse: Relapse (clinical event count)
+PANSS: Positive and Negative Syndrome Scale
+Tmax: Time to maximum concentration
+Cmax: Maximum concentration
+PSP: Personal and Social Performance Scale
+CGI‑S: Clinical Global Impression of Severity
+PANSS: Positive and Negative Syndrome Scale
+PA: Percent Accuracy
+BC: Beta Coefficient (Target vs Foil contrast in precuneus)
+FC: Functional Connectivity (precuneus‑BOLD correlation)
+GAS: Goal Attainment Scaling
+EPBAS: Evidence-Based Practice Attitude Scale
+CIRS: Clutter Image Rating Scale
+LSP: Life Skills Profile
+Essen CES: Essen Climate Evaluation Schema
+BOLD FC: Blood Oxygen Level Dependent Functional Connectivity
+BOLD FC Change: Change in BOLD Functional Connectivity
+BOLD SC: Blood Oxygen Level Dependent Signal Change
+Avg Depth Ultrasound: Average depth of implant device placement measured by ultrasound in mm
+Avg Plasma Conc RIS+9OH: Average plasma concentration of active moiety (risperidone + 9 OH risperidone) during implant phase
+Avg Plasma Conc Oral RIS+9OH: Average plasma concentration of active moiety during oral phase
+TEAE Count: Number of Participants with Treatment‑Emergent Adverse Events
+Implantation AE Count: Number of participants who experienced an Adverse Event related to Implantation or Explantation Procedures
+CGI-I: Clinical Global Impression‑Improvement Scale average score
+PANSS: Positive and Negative Syndrome Scale average score
+Implant Migration: Distance >3 cm between incision and proximal end of implant device
+Risperidone Implant Output: Average daily output of risperidone from implant
+Dermal Irritation Incidence: Percentage of implant site assessments with dermal irritation scale rating >0
+CGI-S: Clinical Global Impression – Severity
+C-SSRS: Columbia Suicide Severity Rating Scale
+PANSS-N: PANSS Negative Scale
+CGI-I: Clinical Global Impression – Improvement
+PANSS-P: PANSS Positive Scale
+PANSS-T: PANSS Total Scale
+PANSS-G: PANSS General Psychopathology Scale
+AE incidence: Number of participants with ≥1 AE
+Discontinuation due to AE: Number of participants discontinuing due to ≥1 AE
+Cmax: Maximum Concentration
+Tmax: Time to Maximum Concentration
+t½: Terminal half-life
+C24: Concentration at 24 hours
+CL/F: Clearance apparent bioavailability
+Vd/F: Volume of distribution apparent bioavailability
+AUC0-24: Area Under the Curve 0-24 hours
+NSA-16: Negative Symptom Assessment 16
+CGI-SCH S: Clinical Global Impression of Schizophrenia Scale – Severity
+PANSS: Positive and Negative Syndrome Scale
+ASL signal: Arterial Spin Labeling signal
+BOLD signal: Blood Oxygen Level Dependent signal
+Marder Factor Negative Score: Marder Factor Negative Score derived from PANSS negative and general scales
+PANSS: Positive and Negative Syndrome Scale
+CGI-S: Clinical Global Impression – Severity (modified)
+PANSS Responder: ≥30% change in PANSS total score
+PANSS POS: PANSS positive score
+PANSS NEG: PANSS negative score
+PANSS TOT: PANSS total score
+PANSS RESP: PANSS responder (≥30% improvement)
+PANSS NM: PANSS Negative Marder Factor Score
+CGI-S: Clinical Global Impression of Severity
+SAE: Serious Adverse Event
+TEAEs: Treatment Emergent Adverse Events
+PANSS: Positive and Negative Syndrome Scale
+Prolactin (urine): Prolactin level in urine
+Tmax: Time to maximum concentration
+Orthostatic heart rate change: Change in heart rate supine vs standing
+PANSS Marder factor score: PANSS Marder factor score
+BMI change: Body Mass Index change
+BARS: Barnes Akathisia Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+Prothrombin time: Prothrombin time
+Erythrocyte count: Erythrocyte count
+PANSS negative score: PANSS negative score
+Hemoglobin: Hemoglobin level
+AUC: Area Under Curve
+SAS: Simpson‑Angus Scale
+Platelet count: Platelet count
+Waist circumference change: Waist circumference change
+C-SSRS: Columbia Suicide Severity Rating Scale
+ALT: Alanine aminotransferase
+AST: Aspartate aminotransferase
+ALP: Alkaline phosphatase
+Bilirubin: Total bilirubin
+GGT: Gamma‑glutamyl transferase
+Urine pH: Urine pH
+PANSS positive score: PANSS positive score
+Leukocyte count: Leukocyte count
+aPTT: Activated Partial Thromboplastin Time
+Urine drug screen: Urine drug screen
+AE: Adverse Event
+Orthostatic BP change: Orthostatic blood pressure change
+Lymphocyte count: Lymphocyte count
+Cmax: Maximum serum concentration
+CGI-S: Clinical Global Impression‑Severity
+Weight change: Weight change
+AE procholinergic symptoms: Adverse events related to procholinergic symptoms
+AE anticholinergic symptoms: Adverse events related to anticholinergic symptoms
+Hematocrit: Hematocrit
+ECG mean HR change: ECG mean heart rate change
+Clinically significant abnormal physical exam results count: Count of clinically significant abnormal physical exam findings
+MMN-A: Mismatch Negativity Amplitude
+N100-A: Negative Peak at 100 msec Amplitude
+P3A-A: P3A Amplitude
+MMN-L: Mismatch Negativity Latency
+N100-L: Negative Peak at 100 msec Latency
+P3A-L: P3A Latency
+ITC: Inter‑Trial Coherence Magnitude
+ASSR-Δ: Change in 40‑Hz Auditory Steady‑State Response from Baseline
+C2h: Plasma Nicotine Level at 2 Hours
+AE Discontinuation: number of participants who discontinued study due to an AE
+AE Incidence: number of participants who experienced one or more AEs
+Mu3: Model derived parameter on volatility
+Conditioned Hallucination Report: Participant reports of hearing tones conditional on visual stimuli
+LIWC-I: Personal pronoun usage (I) quantified by Linguistic Inquiry and Word Count
+WinSwitch: Win‑switches assessed in probabilistic reversal learning
+Points: Points achieved during task
+WHO DAS 2.0: WHO DAS 2.0 WHODAS total
+PANSS: Positive symptoms
+PANSS: Negative symptoms
+PANSS: General Psychopathology
+PSYRAT: Auditory hallucinations
+PSYRAT: Delusion
+GVM Test: Verbal Memory Semantic Condition Average
+MCCB: Reasoning and Problem Solving
+IQ: Intelligence
+RAS-DS: Total score
+SAE: Serious Adverse Event
+AE: Adverse Event
+Orthostasis: Orthostatic hypotension defined by vital changes
+LFT: Liver Function Test elevation
+DILI: Drug Induced Liver Injury
+CGI-S: Clinical Global Impression – Severity
+CGI-I: Clinical Global Impression – Improvement
+MSQ: Medication Satisfaction Questionnaire
+IAQ: Investigator’s Assessment Questionnaire
+Cmax: Maximum plasma concentration
+t½: Half-life (time to reduce by 50%)
+AE: Adverse Event
+Tmax: Time to reach Cmax
+QTcF: Fridericia-corrected QT interval
+ΔQTcF: Change from baseline in QTcF
+C24: Plasma concentration 24 hours postdose
+AUC0-last: Area under concentration-time curve from 0 to 24 hours
+AUC0-24: Area under concentration-time curve from 0 to 24 hours postdose
+T1/2: Terminal half‑life
+CMAX: Maximum concentration
+AUC0-INF: Area under the concentration‑time curve from time zero to infinity
+AUC0-28D: Area under the concentration‑time curve from time zero to 28 days
+VZ/F: Apparent volume of distribution
+CL/F: Apparent clearance
+TMAX: Time to maximum concentration
+C28D: Maximum concentration from time zero to 28 days
+AUC0-LAST: Area under the concentration‑time curve from time zero to last measurable concentration
+AE: Adverse event
+AE_DISCONT: Discontinuation due to adverse event
+C-SSRS: Columbia Suicide Severity Rating Scale
+Cmax: Maximum Concentration
+AUC: Area Under the Curve
+BARS: Barnes Akathisia Rating Scale
+AIMS: Abnormal Involuntary Movement Scale
+Tmax: Time to Maximum Concentration

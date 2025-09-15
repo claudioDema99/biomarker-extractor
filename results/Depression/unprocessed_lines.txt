@@ -1,0 +1,7 @@
+
+
+________________________________________________________________
+Riga $60$: nessun biomarker trovato (biomarker = 'None') – saltata.
+
+<|channel|>analysis<|message|>The record describes multiple explicit markers. It reports a composite medication‑adherence metric (Composite Adherence Score – CAS) derived from electronic cap, pill‑count and self‑report data, and also lists separate counts of fully, partially and non‑adherent days. Psychosocial functioning is captured by the Sheehan Disability Scale (SDS) subscale scores. Patient experience is measured with the Client Satisfaction Questionnaire (CSQ) total score. Depressive symptom severity is quantified by the Hamilton Depression Rating Scale 17‑item version (HAMD‑17). Finally, overall well‑being is evaluated through the Short Form Quality of Life Enjoyment and Satisfaction Questionnaire (QLESQ) percent‑of‑maximum score. No other biomarkers or imaging techniques are mentioned.<|return|>
+
