@@ -2,7 +2,7 @@ import json
 import torch
 import gc
 from transformers import AutoTokenizer, AutoModelForCausalLM
-from src.prompts import get_prompt
+from src.prompts import get_prompt, get_system_user_prompt
 import os
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "expandable_segments:True"
 
@@ -46,7 +46,7 @@ def load_model_and_tokenizer():
         # low_cpu_mem_usage=True: Riduce l'uso della memoria CPU durante il caricamento
         model = AutoModelForCausalLM.from_pretrained(
             MODEL_NAME, 
-            torch_dtype=torch.bfloat16 if DEVICE=="cuda" else torch.float32,
+            dtype=torch.bfloat16 if DEVICE=="cuda" else torch.float32,
             device_map="auto",
             trust_remote_code=True,
             low_cpu_mem_usage=True
@@ -65,54 +65,22 @@ def load_model_and_tokenizer():
 def get_token_count(records_json, tokenizer):
     return len(tokenizer.encode(json.dumps(records_json)))
 
-def call_model(records, dataset_type, model, tokenizer, device, max_retries=5, low_reasoning=False, half_shots = False):
+def call_model(task: str, dataset_type: str, model: AutoModelForCausalLM, tokenizer: AutoTokenizer, device: str, records: str="", biomarkers: str="", low_reasoning: bool=False, half_shots: bool=False):
+    max_retries=5
     for attempt in range(max_retries):
         try:
             # Clear memory before each attempt
             if attempt > 0:
                 clear_gpu_memory()
                 print(f" Memory cleared for retry {attempt + 1}")
-            # Adatto i prompt in base al database
-            name, examples, shots = get_prompt(dataset_type)
+            # Build the system and user prompt
+            name, full_name, examples, shots = get_prompt(dataset_type)
+            system_prompt, user_prompt = get_system_user_prompt(task=task, name=name, full_name=full_name, examples=examples, shots=shots, records=records, biomarkers=biomarkers)
             
             if half_shots:
                 split_prompt = "3. Input record:"
                 half_shots = shots.split(split_prompt)
                 shots = half_shots[0]
-
-            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials. 
-            
-MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological, genetical) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.            
-            
-Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records. You have to include techniques or modalities, but only if a marker extracted from these techniques is explicitly present in the text. Example: Magnetic resonance imaging (MRI) is a technique, include it if hippocampal volume (or another quantity extracted from MRI) is present as a marker; Electromiography (EMG) is a technique, include it if affect-modulated startle (AMS) or startle eye-blink is present in the text as a marker. 
-
-MANDATORY OUTPUT RULES (must be followed exactly):
-1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have two keys:
-{{"analysis": "<4-5 concise sentences>", "markers": [list of marker with required syntax]}}
-2. "analysis" must be a single string of 4–5 sentences that reference the evidence in the records.
-3. "markers" must be a JSON array. Each element in the array MUST follow this exact syntax:
-"ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
-**CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
-Examples:{examples}
-4. Collapse duplicates (each marker appears once).
-5. If you cannot follow these rules, output exactly:
-{{"analysis":"", "markers":[]}}
-Always reason with clinical rigor and refer only to evidence in the records.
-"""
-
-            user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records.
-Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
-
-Examples:
-{shots}   
-
-Task: Identify all markers explicitly present in the Records and produce output **only** the exact JSON object required in the prompt.
-
-Input records:
-{json.dumps(records)}
-
-Output:
-"""
 
             messages = [
                 {"role": "system", "content": system_prompt},
@@ -176,25 +144,10 @@ Output:
             )
 
             # chat template di gpt-oss: dividiamo CoT da risposta
-            final_start = '<|end|><|start|>assistant<|channel|>final<|message|>'
+            final_start = '<|end|><|start|>assistant<|channel|>' #final<|message|>'
             if final_start in output_text:
                 parts = output_text.split(final_start)
                 cot = final_start.join(parts[:-1])  # Tutto prima del tag finale
-                response = parts[-1].strip()              # Solo la risposta finale
-                cot = (
-                    cot
-                    .replace('<|channel|>analysis<|message|>', '')
-                    .replace('<|end|>', '')
-                    .strip()
-                )
-                response = (
-                    response
-                    .replace('<|return|>', '')
-                    .strip()
-                )
-            elif final_start[:36] in output_text:
-                parts = output_text.split(final_start[:36])
-                cot = final_start[:36].join(parts[:-1])  # Tutto prima del tag finale
                 response = parts[-1].strip()              # Solo la risposta finale
                 cot = (
                     cot
@@ -212,22 +165,21 @@ Output:
                 response = output_text.strip()
                 # ritorna l'output completo se non trova i tag
                 print(f"No filtering tags found, returning full output.")
-
-            # Isola la sezione JSON anche se c'è testo extra
-            start = response.find('{')
-            end   = response.rfind('}') + 1   # rfind => ultima graffa
+            
+            if task == "groups":
+                # Isola la sezione JSON anche se c'è testo extra
+                start = response.find('[')
+                end   = response.rfind(']') + 1   # rfind => ultima quadra
+            else:
+                # Isola la sezione JSON anche se c'è testo extra
+                start = response.find('{')
+                end   = response.rfind('}') + 1   # rfind => ultima graffa
 
             if start == -1 or end == 0:
                 raise ValueError("JSON structure not found in response")
 
             json_str = response[start:end]
             data = json.loads(json_str)
-
-            # Estrai la lista biomarkers, se esiste
-            biomarkers = data.get("markers", None)
-
-            if not isinstance(biomarkers, list):
-                raise ValueError("Biomarkers is not a list")
             
             if not cot and not response:
                 raise ValueError("Missing CoT and response content")
@@ -236,7 +188,7 @@ Output:
             if attempt > 0:
                 print(f" Successo al tentativo {attempt + 1}")
             
-            return biomarkers, cot, response
+            return data, cot, response
 
         except torch.cuda.OutOfMemoryError as e:
             print(f" OOM Error - Tentativo {attempt + 1}/{max_retries}: {e}")
@@ -271,14 +223,14 @@ def call_model_for_unprocessed_lines(analysis, dataset_type, model, tokenizer, d
                 clear_gpu_memory()
                 print(f" Memory cleared for retry {attempt + 1}")
             # Adatto i prompt in base al database
-            name, examples, shots = get_prompt(dataset_type)
+            name, full_name, examples, shots = get_prompt(dataset_type)
             
             if half_shots:
                 split_prompt = "3. Input record:"
                 half_shots = shots.split(split_prompt)
                 shots = half_shots[0]
 
-            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials. 
+            system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {full_name}'s disease in clinical trials. 
             
 MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological, genetical) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.            
             
@@ -297,7 +249,7 @@ Examples:{examples}
 Always reason with clinical rigor and refer only to evidence in the records.
 """
 
-            user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {name}'s disease analysis. Your task: extract ONLY markers explicitly present in this analysis and produce output **only** the exact JSON object required in the prompt.
+            user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {full_name}'s disease analysis. Your task: extract ONLY markers explicitly present in this analysis and produce output **only** the exact JSON object required in the prompt.
 . Do NOT invent markers not present in the analysis.
 Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
 
@@ -457,9 +409,9 @@ Output:
     return [], "", ""
 
 def calculate_prompt_tokens(tokenizer, dataset_type: str="Alzheimer"):
-    name, examples, shots = get_prompt(dataset_type)
+    name, full_name, examples, shots = get_prompt(dataset_type)
 
-    system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {name}'s disease in clinical trials.
+    system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {full_name}'s disease in clinical trials.
 
 MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.
 
@@ -479,7 +431,7 @@ Examples:{examples}
 Always reason with clinical rigor and refer only to evidence in the records.
 """
 
-    user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records.
+    user_prompt = f"""You are an expert clinical data analyst specialized in identifying markers in {full_name}'s disease clinical trials. Your task: analyze the provided records and extract ONLY markers explicitly present in the text. Do NOT invent markers not present in the records.
 Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
 
 Examples:

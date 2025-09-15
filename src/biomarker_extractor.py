@@ -140,8 +140,11 @@ def process_batch_for_deduplication(batch_df: pd.DataFrame,
 
 def save_logs_as_json(log_entries, filepath):
     """Save log entries as pretty-formatted JSON"""
-    with open(filepath, "w", encoding="utf-8") as f:
-        json.dump(log_entries, f, ensure_ascii=False, indent=2)
+    try:
+        with open(filepath, "w", encoding="utf-8") as f:
+            json.dump(log_entries, f, ensure_ascii=False, indent=2)
+    except (IOError, OSError, PermissionError) as e:
+        print(f"Error saving logs to {filepath}: {e}")
 
 def tokens_of(df_slice, tokenizer):
     """Restituisce (token_count, records_json) per un blocco di righe."""
@@ -185,7 +188,15 @@ def extract_row_from_unprocessed_lines(dataset_type: str):
     
     return row_numbers
 
-def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
+def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFrame, dataset_type: str = "Alzheimer"):
+    # Validate inputs
+    if not isinstance(rows_id, list):
+        raise ValueError("rows_id must be a list")
+    if len(rows_id) != len(df_filtered):
+        raise ValueError("rows_id length must match DataFrame length")
+    if df_filtered.empty:
+        raise ValueError("DataFrame cannot be empty")
+
     all_biomarkers_extended = []
     
     # logs
@@ -227,8 +238,20 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
         print(f"Riga {rows_id[i]}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
-        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, half_shots=half_shots)
-
+        try:
+            data, cot, response = call_model(task="extraction", dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, half_shots=half_shots, records=record)
+            # Estrai la lista biomarkers, se esiste
+            biomarkers = data.get("markers", None)
+            if not isinstance(biomarkers, list):
+                raise ValueError("Biomarkers is not a list")
+        except Exception as e:
+            print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
+            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+                f.write("\n\n________________________________________________________________\n")
+                f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
+                f.write(f"{response}\n\n")            
+            i += 1
+            continue
         if biomarkers is None or biomarkers == "":
             biomarker_value = biomarkers if biomarkers is not None else "None"
             print(f"[WARNING] Riga {rows_id[i]}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
@@ -236,7 +259,6 @@ def extraction(model, tokenizer, device, rows_id, df_filtered: pd.DataFrame, dat
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Riga ${rows_id[i]}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
                 f.write(f"{response}\n\n")
-                #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
             i += 1                  # passa alla riga successiva
         elif biomarkers == []:
             print(f"Empty list of biomarkers, reason: {cot}")
@@ -268,6 +290,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
     """
     Funzione che prova ri-processare (estrarre) le righe che non sono state processate la prima volta con la funzione 'extraction'
     """
+    all_biomarkers_extended = []
 
     # logs
     log_filepath = f"./results/{dataset_type}/extraction_logs.json"
@@ -310,8 +333,20 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
         print("\n_______________________________________________________________________________________")
         # TOKEN COUNT DEL SYSTEM E USER PROMPTS DA RIVEDERE SE LO CAMBIO
         print(f"Riga {row}: {batch_tokens} tokens => {batch_tokens + prompt_tokens} tokens totali")
-        biomarkers, cot, response = call_model(record, dataset_type, model, tokenizer, device, low_reasoning=True, half_shots=half_shots)
-
+        try:
+            data, cot, response = call_model(task="extraction", dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, records=record, low_reasoning=True, half_shots=half_shots)
+            # Estrai la lista biomarkers, se esiste
+            biomarkers = data.get("markers", None)
+            if not isinstance(biomarkers, list):
+                raise ValueError("Biomarkers is not a list")
+        except Exception as e:
+            print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
+            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+                f.write("\n\n________________________________________________________________\n")
+                f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
+                f.write(f"{response}\n\n")            
+            i += 1
+            continue
         if biomarkers is None or biomarkers == "":
             # Definisci le stringhe di delimitazione
             start_string = "<|channel|>analysis<|message|>"
@@ -339,7 +374,16 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
 
             # Se vuoi utilizzare il contenuto estratto più avanti nello script
             if analysis is not None:
-                biomarkers, cot, response = call_model_for_unprocessed_lines(analysis=analysis, dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, low_reasoning=True, half_shots=half_shots)
+                try:
+                    biomarkers, cot, response = call_model_for_unprocessed_lines(analysis=analysis, dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, low_reasoning=True, half_shots=half_shots)
+                except Exception as e:
+                    print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
+                    with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+                        f.write("\n\n________________________________________________________________\n")
+                        f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
+                        f.write(f"{response}\n\n")            
+                    i += 1
+                    continue         
             if biomarkers is None or biomarkers == "":
                 biomarker_value = biomarkers if biomarkers is not None else "None"
                 print(f"[WARNING] Riga {row}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
@@ -350,10 +394,13 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
                 unprocessed_rows_after += 1
             else:
                 print(f"Biomarkers trovati: {biomarkers}")
+                all_biomarkers_extended.extend(biomarkers)
         elif biomarkers == []:
             print(f"Empty list of biomarkers, reason: {cot}")
         else:
             print(f"Biomarkers trovati: {biomarkers}")
+            all_biomarkers_extended.extend(biomarkers)
+            
 
         log_entry = {
             "biomarkers": biomarkers if isinstance(biomarkers, list) else [],
@@ -364,6 +411,10 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
         log_entries.append(log_entry)
         # Save after each batch
         save_logs_as_json(log_entries, log_filepath)
+
+    with open(f"./results/{dataset_type}/biomarkers_list.txt", "a") as f:
+        for biomarker in all_biomarkers_extended:
+            f.write(f"{biomarker}\n")
     
     print(f"Numero di unprocessed_rows prima del secondo tentativo: {unprocessed_rows_before}\nNumero di unprocessed_rows dopo il secondo tentativo: {unprocessed_rows_after}")
 

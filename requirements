@@ -1,10 +1,13 @@
 pandas
 transformers
 accelerate
-PyMuPDF
 chromadb
 sentence-transformers
 langchain
 langchain-community
+langchain-huggingface
+langchain-chroma
+pypdf
 inputimeout
+openpyxl
 # torch

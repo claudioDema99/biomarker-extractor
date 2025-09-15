@@ -4,11 +4,11 @@ import re
 import gc
 from langchain_community.document_loaders import PyPDFLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain_community.embeddings import HuggingFaceEmbeddings
-from langchain_community.vectorstores import Chroma
+from langchain_huggingface import HuggingFaceEmbeddings
+from langchain_chroma import Chroma 
 import torch
 import json
-from src.prompts import get_prompt
+from src.models import call_model
 
 EMBEDDING_MODEL = "sentence-transformers/all-mpnet-base-v2"
 CHUNK_CHARS = 1500
@@ -43,148 +43,14 @@ def clean_paper_text(text: str) -> str:
     text = remove_after_last_occurrence(text, "references")
     return text.strip()
 
-def call_model(biomarker, records, model, tokenizer, device, max_retries=5):
-    name, _, _ = get_prompt("Alzheimer")
-    for attempt in range(max_retries):
-        try:
-            # Clear memory before each attempt
-            if attempt > 0:
-                print(f" Memory cleared for retry {attempt + 1}")
-            # Adatto i prompt in base al database
-            system_prompt = f"""You are an expert in {name}'s markers and their standard nomenclature. Your task is to find the correct, most used, and appropriate acronym for the marker I give you. You must:
-
-1. **ACRONYM IDENTIFICATION**: Provide the most commonly used and standardized acronym/abbreviation for that marker in scientific literature
-2. **STANDARDIZATION**: Use the most widely accepted scientific nomenclature
-
-**Required response format:**
-For each marker, use this JSON structure:
-{{
-  "original_name": "name as provided in the list",
-  "acronym": "STANDARD_ACRONYM"
-}}
-
-If multiple acronyms exist for the same marker, provide the most commonly used one in current scientific literature. Focus on finding the appropriate acronym rather than validating the marker itself."""
-
-            user_prompt = f"""Find the correct and most appropriate acronym for the marker I give you.
-
-CONTEXT FROM DOCUMENTS:
-{records}
-
-MARKER:
-{biomarker}
-
-Identify the most commonly used and standardized acronym/abbreviation mentioned in the provided documents or based on standard scientific nomenclature.
-Provide the answer in the JSON format specified in the system instructions. Focus solely on finding the appropriate acronym."""
-
-            messages = [
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt}
-            ]
-
-            full_prompt = tokenizer.apply_chat_template(
-                messages, 
-                tokenize=False, 
-                add_generation_prompt=True
-            )
-
-            # se vuoi impostare il reasoning su low invece che medium
-            if full_prompt.count(" medium") > 0:
-                full_prompt = full_prompt.replace("medium", "low", 1)
-                print("\n\nChanged reasoning level to low for better performance.\n")
-
-            inputs = tokenizer(
-                full_prompt, 
-                return_tensors="pt", 
-                padding=True, 
-                truncation=True,
-                max_length=8192  # Context window di gpt-oss-20b
-            ).to(device)
-
-            print(f"--- Waiting for the model response ---")
-            # Generazione della risposta
-            with torch.no_grad():
-                outputs = model.generate(
-                    **inputs,
-                    max_new_tokens=4096,          # Massimo numero di nuovi token da generare
-                    do_sample=False,              # Usa greedy decoding (deterministic!!!)
-                    #temperature=0.7,             # Controllo randomness (se do_sample=True) quindi inutile
-                    #top_p=0.9,                   # Nucleus sampling (se do_sample=True) quindi inutile
-                    pad_token_id=tokenizer.eos_token_id,  # Token di padding
-                    eos_token_id=tokenizer.eos_token_id,  # Token di fine sequenza
-                    use_cache=True,               # usiamola
-                    repetition_penalty=1.1,       # Penalità per ripetizioni
-                    length_penalty=1.0            # Penalità per lunghezza
-                )
-
-            input_length = inputs.input_ids.shape[1]
-            generated_tokens = outputs[0][input_length:]
-
-            output_text = tokenizer.decode(
-                generated_tokens, 
-                skip_special_tokens=False,         # Mi servono per filtrare il ragionamento
-                clean_up_tokenization_spaces=True
-            )
-
-            # chat template di gpt-oss: dividiamo CoT da risposta
-            final_start = '<|end|><|start|>assistant<|channel|>final<|message|>'
-            if final_start in output_text:
-                parts = output_text.split(final_start)
-                cot = final_start.join(parts[:-1])  # Tutto prima del tag finale
-                response = parts[-1].strip()              # Solo la risposta finale
-                cot = (
-                    cot
-                    .replace('<|channel|>analysis<|message|>', '')
-                    .replace('<|end|>', '')
-                    .strip()
-                )
-                response = (
-                    response
-                    .replace('<|return|>', '')
-                    .strip()
-                )
-            else:
-                cot = ""
-                response = output_text.strip()
-                # ritorna l'output completo se non trova i tag
-                print(f"No filtering tags found, returning full output.")
-            # QUESTO FUNZIONA SOLO SE HO UN SOLO BIOMARKER, SE NE HO PIÙ DI UNO DEVO CERCARE [] IN QUANTO ESTRAGGO LA LISTA DI DICT
-            start = response.find('{')
-            end   = response.rfind('}') + 1
-            if start == -1 or end == 0:
-                raise ValueError("JSON structure not found in response")
-            response_json = response[start:end]
-            data = json.loads(response_json)
-            # Se arriviamo qui, tutto è andato bene
-            if attempt > 0:
-                print(f" Successo al tentativo {attempt + 1}")
-            return data, cot, response
-
-        except torch.cuda.OutOfMemoryError as e:
-            print(f" OOM Error - Tentativo {attempt + 1}/{max_retries}: {e}")
-            
-            if attempt == max_retries - 1:
-                print(f" Tutti i {max_retries} tentativi falliti per OOM. Ritorno liste vuote.")
-                return {}, "", ""
-            else:
-                print(" Cleaning memory and retrying...")
-                
-        except Exception as e:
-            print(f" Generic Error - Tentativo {attempt + 1}/{max_retries}: {e}")
-            
-            if attempt == max_retries - 1:
-                print(f" Tutti i {max_retries} tentativi falliti. Ritorno liste vuote.")
-                return {}, "", ""
-            else:
-                print(" Riprovo...")
-
-    return {}, "", ""
-
 def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: str="Alzheimer"):
     
     # create chroma db (just first time)
     if create_chroma_db:
         # load and clean all PDFs
         pdf_folder = f"./docs/{dataset_type}"  # path to your 14 PDFs
+        if not os.path.exists(pdf_folder):
+            raise FileNotFoundError(f"PDF folder not found: {pdf_folder}")
         all_cleaned_docs = []
         for pdf_file in os.listdir(pdf_folder):
             if pdf_file.endswith(".pdf"):
@@ -203,23 +69,23 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
         )
         docs = text_splitter.create_documents(all_cleaned_docs)
         print(f"Created {len(docs)} chunks")
+        persist_dir = f"./db/chroma_db_{dataset_type}"
 
         # create embeddings + Chroma collection
         embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
         vectorstore = Chroma.from_documents(
             documents=docs,
             embedding=embedding_model,
-            persist_directory=f"./db/chroma_db_{dataset_type}"
+            persist_directory=persist_dir
         )
-        vectorstore.persist()
-        print(f"Chroma collection {vectorstore._persist_directory} created and persisted")
+        print(f"Chroma collection {persist_dir} created and persisted")
     else:
         # Load persisted collection
         vectorstore = Chroma(
-            persist_directory=f"./db/chroma_db_{dataset_type}",
+            persist_directory=persist_dir,
             embedding_function=embedding_model
         )
-        print(f"Chroma collection {vectorstore._persist_directory} loaded")
+        print(f"Chroma collection {persist_dir} loaded")
 
     # Re-use the same embedding model you used when building the DB
     embedding_model = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
@@ -229,12 +95,16 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
 
     # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
     # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
-    with open(f"./results/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
-        data = json.load(f)
-        biomarkers_w_rows = []
-        for d in data:
-            for i in range(len(d["biomarkers"])):
-                biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
+    try:
+        with open(f"./results/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError) as e:
+        print(f"Error loading extraction logs: {e}")
+        return 
+    biomarkers_w_rows = []
+    for d in data:
+        for i in range(len(d["biomarkers"])):
+            biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
 
     LOG_PATH = f"./results/{dataset_type}/acronyms_logs.json"
     if os.path.exists(LOG_PATH):
@@ -247,10 +117,18 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
     for couples in biomarkers_w_rows:
         biomarker, row_id = couples
         query = f"What's the correct, most used, and appropriate acronym for '{biomarker}'?"
-        results = retriever.get_relevant_documents(query)
+        try:
+            results = retriever.invoke(query)
+            if not results:
+                print(f"Warning: No relevant documents found for '{biomarker}'")
+                # Could try alternative queries or skip
+                continue
+        except Exception as e:
+            print(f"Retrieval error for '{biomarker}': {e}")
+            continue
         cleaned_results = " - ".join([result.page_content for result in results])
         cleaned_results = re.sub(f"\n", "", cleaned_results)
-        data_json, cot, response = call_model(biomarker=biomarker, records=cleaned_results, model=model, tokenizer=tokenizer, device=device)
+        data_json, cot, response = call_model(task="acronyms", dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, biomarkers=biomarker, records=cleaned_results, low_reasoning=True)
         if data_json:
             log_entry = {
                 "original_name": data_json["original_name"],
