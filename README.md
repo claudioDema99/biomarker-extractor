@@ -1,5 +1,7 @@
 # Biomarker Extractor
 
+La seguente è una pipeline semi-automatizzata sviluppata per estrarre, convalidare ed aggregare marcatori e biomarcatori da database di Clinical Trials che contengono informazioni in formato testo libero, pur essendo generalizzabile come data-extractor ad altri dataset non strutturati o semi-strutturati.
+
 ## Setup:
 
 Se non hai un ambiente virtuale, crealo e attivalo:
