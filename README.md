@@ -21,12 +21,12 @@ Il progetto è configurato per funzionare con la cache localizzata in /media/sdb
 
 ```bash
 export XDG_CACHE_HOME=/media/sdb1/ENV_VARS_GPU/.cache
-export TORCHINDUCTOR_CACHE_DIR=/media/sdb1/ENV_VARS_GPU/.cache/torchinductor
-export TRITON_CACHE_DIR=/media/sdb1/ENV_VARS_GPU/.cache/triton
+export TORCHINDUCTOR_CACHE_DIR=/tmp/torchinductor
+export TRITON_CACHE_DIR=/tmp/triton
 export HF_HOME=/media/sdb1/ENV_VARS_GPU/.cache/huggingface
 export TORCH_HOME=/media/sdb1/ENV_VARS_GPU/.cache/torch
-export AMD_COMGR_CACHE_DIR=/media/sdb1/ENV_VARS_GPU/.cache/comgr
-export TMPDIR=/media/sdb1/ENV_VARS_GPU/tmp
+export AMD_COMGR_CACHE_DIR=/tmp/comgr
+export TMPDIR=/tmp
 ```
 
 #### Se utilizzi una GPU AMD con ROCm

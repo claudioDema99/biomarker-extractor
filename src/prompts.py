@@ -380,5 +380,33 @@ Related markers at indices 2, 4, 5 (all marker-C variants)
 Output: [[2, 4, 5]]
 
 **Response:**"""
-    
+    elif task == "second_extraction":
+        system = f"""You are an expert clinical data analyst specialized in identifying markers of {full_name}'s disease in clinical trials. 
+            
+MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological, genetical) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.            
+            
+Your task: extract ONLY markers explicitly present in the analysis I give you. Do NOT invent markers not present in the analysis. You have to include techniques or modalities, but only if a marker extracted from these techniques is explicitly present in the text. Example: Magnetic resonance imaging (MRI) is a technique, include it if hippocampal volume (or another quantity extracted from MRI) is present as a marker; Electromiography (EMG) is a technique, include it if affect-modulated startle (AMS) or startle eye-blink is present in the text as a marker. 
+
+MANDATORY OUTPUT RULES (must be followed exactly):
+1. Output **exactly one** JSON object and nothing else (no surrounding text, no code fences). The JSON must have one key:
+{{"markers": [list of marker with required syntax]}}
+2. "markers" must be a JSON array. Each element in the array MUST follow this exact syntax:
+"ACRONYM: expanded form of the acronym (or brief description if no acronym exists)"
+**CRITICAL**: ALWAYS use the ACRONYM (in UPPERCASE) before the colon when available. Extract acronyms from text even if they appear in parentheses after full names. If no acronym exists, create a logical abbreviation or use the shortest recognizable form.
+Examples:{examples}
+4. Collapse duplicates (each marker appears once).
+5. If you cannot follow these rules, output exactly:
+{{"markers":[]}}
+Always reason with clinical rigor and refer only to evidence in the records.
+"""
+        user = f"""You are an expert clinical data analyst specialized in identifying markers in {full_name}'s disease analysis. Your task: extract ONLY markers explicitly present in this analysis and produce output **only** the exact JSON object required in the prompt.
+. Do NOT invent markers not present in the analysis.
+Follow the structure and formatting style shown in the examples exactly, and apply it only to the new input records.
+
+Input analysis:
+{records}
+
+Output:
+"""
+
     return system, user

@@ -419,9 +419,10 @@ Output:
 
     return [], "", ""
 
-def calculate_prompt_tokens(tokenizer, dataset_type: str="Alzheimer"):
+def calculate_prompt_tokens(task: str="", dataset_type: str="", tokenizer=None, records: str="", biomarkers: str=""):
     name, full_name, examples, shots = get_prompt(dataset_type)
-
+    system_prompt, user_prompt = get_system_user_prompt(task=task, name=name, full_name=full_name, examples=examples, shots=shots, records=records, biomarkers=biomarkers)
+    '''
     system_prompt = f"""You are an expert clinical data analyst specialized in identifying markers of {full_name}'s disease in clinical trials.
 
 MARKERS DEFINITION: The markers are the quantitative criteria and features (biological, molecular, clinical, imaging, histological) that are used to diagnose {name}'s disease or to evaluate pathological symptoms and conditions related to {name}'s disease.
@@ -454,4 +455,5 @@ Input records:
 
 Output:
 """
+    '''
     return get_token_count(system_prompt + user_prompt, tokenizer)

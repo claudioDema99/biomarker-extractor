@@ -209,7 +209,7 @@ def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFram
 
     # questo TOK_MAX dipende da quanto è lungo system_prompt e user_prompt (fissi) + examples e shots (variano tra dataset types)
     # chiamo funzione in models che me lo calcola e restituisce
-    prompt_tokens = calculate_prompt_tokens(tokenizer, dataset_type)
+    prompt_tokens = calculate_prompt_tokens(task="extraction", dataset_type=dataset_type, tokenizer=tokenizer)
     TOK_MAX = 8000 - prompt_tokens
     print(f"Tokens of the prompt = {prompt_tokens}: TOK_MAX of the rows set to {TOK_MAX}")
     i = 0
@@ -314,7 +314,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
 
     # questo TOK_MAX dipende da quanto è lungo system_prompt e user_prompt (fissi) + examples e shots (variano tra dataset types)
     # chiamo funzione in models che me lo calcola e restituisce
-    prompt_tokens = calculate_prompt_tokens(tokenizer, dataset_type)
+    prompt_tokens = calculate_prompt_tokens(task="second_extraction", dataset_type=dataset_type, tokenizer=tokenizer)
     TOK_MAX = 8000 - prompt_tokens
     print(f"Tokens of the prompt = {prompt_tokens}: TOK_MAX of the rows set to {TOK_MAX}")
 
@@ -376,6 +376,11 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
             if analysis is not None:
                 try:
                     biomarkers, cot, response = call_model_for_unprocessed_lines(analysis=analysis, dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, low_reasoning=True, half_shots=half_shots)
+                    #data, cot, response = call_model(task="second_extraction", dataset_type=dataset_type, model=model, tokenizer=tokenizer, device=device, records=analysis, low_reasoning=True, half_shots=half_shots)
+                    # Estrai la lista biomarkers, se esiste
+                    #biomarkers = data.get("markers", None)
+                    #if not isinstance(biomarkers, list):
+                        #raise ValueError("Biomarkers is not a list")
                 except Exception as e:
                     print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
                     with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
