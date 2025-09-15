@@ -9,12 +9,12 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-#### Troubleshooting: Errori di Cache e Variabili d'Ambiente
+## Troubleshooting: Errori di Cache e Variabili d'Ambiente
 
-##### Problema: Segmentation Fault (core dumped)
+### Problema: Segmentation Fault (core dumped)
 Se riscontri errori di tipo Segmentation Fault (core dumped) quando esegui il progetto, il problema è probabilmente legato alle variabili d'ambiente che puntano alla cache di HuggingFace e PyTorch nella directory /home invece che nella directory corretta del progetto.
 
-##### Soluzione
+### Soluzione
 Il progetto è configurato per funzionare con la cache localizzata in /media/sdb1/.cache. Prima di eseguire il codice, assicurati di settare le seguenti variabili d'ambiente:
 
 ```bash
