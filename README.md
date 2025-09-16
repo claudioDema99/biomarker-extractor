@@ -108,20 +108,25 @@ La pipeline è suddivisa in tre fasi principali: **estrazione**, **validazione**
 
 - File generati:
   - `biomarkers.json` — risultato finale aggregato
+  - `filtered_biomarkers.json` — risultato finale filtrato per frequenza
   - `remaining_biomarkers.txt` — lista degli eventuali biomarkers non aggregati durante l'exact matching
 
-- Tutti i file di output vengono salvati nella cartella `results`.
+- Tutti i file finali di output vengono salvati nella cartella `results`.
 
 ## Output / File generati:
 
-I principali file prodotti dalla pipeline (tutti nella cartella `results`) sono:
+I file di logs prodotti dalla pipeline (tutti nella cartella `logs`) sono:
 
   - `biomarkers_list.txt` — lista di tutti i biomarkers estratti, con acronimo e expanded form
   - `unprocessed_lines.txt` — righe saltate perché troppo grandi o complesse: se il file non è presente, significa che tutte le righe del dataset sono state processate
   - `extraction_logs.json` — logs dove vengono salvate la riga processata, gli eventuali markers estratti e la risposta del modello insieme alla relativa CoT (chain-of-thought / ragionamenti)
   - `acronyms_logs.json` — elenco dei biomarkers con nome originale, acronimo identificato, row_id e relativa CoT dell'LLM
-  - `remaining_biomarkers.txt` — lista degli eventuali biomarkers non aggregati durante l'exact matching
+
+I risultati finali (tutti nella cartella `results`) sono:
+
   - `biomarkers.json` — risultato finale aggregato
+  - `filtered_biomarkers.json` — risultato finale filtrato per frequenza
+  - `remaining_biomarkers.txt` — lista degli eventuali biomarkers non aggregati durante l'exact matching
 
 ## Cartelle **non** presenti nella repository:
 
