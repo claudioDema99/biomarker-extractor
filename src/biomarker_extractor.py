@@ -163,7 +163,7 @@ def extract_row_from_unprocessed_lines(dataset_type: str):
         list: Lista di numeri estratti (come interi)
     """
     row_numbers = []
-    file_path = f"./results/{dataset_type}/unprocessed_lines.txt"
+    file_path = f"./logs/{dataset_type}/unprocessed_lines.txt"
     
     try:
         with open(file_path, 'r', encoding='utf-8') as f:
@@ -200,7 +200,7 @@ def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFram
     all_biomarkers_extended = []
     
     # logs
-    log_filepath = f"./results/{dataset_type}/extraction_logs.json"
+    log_filepath = f"./logs/{dataset_type}/extraction_logs.json"
     if os.path.exists(log_filepath):
         with open(log_filepath, "r", encoding="utf-8") as f:
             log_entries = json.load(f)
@@ -246,7 +246,7 @@ def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFram
                 raise ValueError("Biomarkers is not a list")
         except Exception as e:
             print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
-            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+            with open(f"./logs/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
                 f.write(f"{response}\n\n")            
@@ -255,7 +255,7 @@ def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFram
         if biomarkers is None or biomarkers == "":
             biomarker_value = biomarkers if biomarkers is not None else "None"
             print(f"[WARNING] Riga {rows_id[i]}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
-            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+            with open(f"./logs/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Riga ${rows_id[i]}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
                 f.write(f"{response}\n\n")
@@ -281,7 +281,7 @@ def extraction(model, tokenizer, device, rows_id: list, df_filtered: pd.DataFram
 
         print(f"Righe processate: {i} di {len(df_filtered)} ({i / len(df_filtered) * 100:.2f}%)\n")
         
-    with open(f"./results/{dataset_type}/biomarkers_list.txt", "w") as f:
+    with open(f"./logs/{dataset_type}/biomarkers_list.txt", "w") as f:
         for biomarker in all_biomarkers_extended:
             f.write(f"{biomarker}\n")
     return all_biomarkers_extended
@@ -293,7 +293,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
     all_biomarkers_extended = []
 
     # logs
-    log_filepath = f"./results/{dataset_type}/extraction_logs.json"
+    log_filepath = f"./logs/{dataset_type}/extraction_logs.json"
     if os.path.exists(log_filepath):
         with open(log_filepath, "r", encoding="utf-8") as f:
             log_entries = json.load(f)
@@ -341,7 +341,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
                 raise ValueError("Biomarkers is not a list")
         except Exception as e:
             print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
-            with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+            with open(f"./logs/{dataset_type}/unprocessed_lines.txt", "a") as f:
                 f.write("\n\n________________________________________________________________\n")
                 f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
                 f.write(f"{response}\n\n")            
@@ -383,7 +383,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
                         #raise ValueError("Biomarkers is not a list")
                 except Exception as e:
                     print(f"[WARNING] Model call failed for row {rows_id[i]}: {e}")
-                    with open(f"./results/{dataset_type}/unprocessed_lines.txt", "a") as f:
+                    with open(f"./logs/{dataset_type}/unprocessed_lines.txt", "a") as f:
                         f.write("\n\n________________________________________________________________\n")
                         f.write(f"Model call failed for row ${rows_id[i]}$: {e}) – saltata.\n\n")
                         f.write(f"{response}\n\n")            
@@ -392,7 +392,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
             if biomarkers is None or biomarkers == "":
                 biomarker_value = biomarkers if biomarkers is not None else "None"
                 print(f"[WARNING] Riga {row}: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.")
-                with open(f"./results/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
+                with open(f"./logs/{dataset_type}/unprocessed_lines_2.txt", "a") as f:
                     f.write("\n\n________________________________________________________________\n")
                     f.write(f"Riga ${row}$: nessun biomarker trovato (biomarker = '{biomarker_value}') – saltata.\n\n")
                     #f.write(f"outcome_measurement_title:\n{record[0]['outcome_measurement_title']}\n")
@@ -417,7 +417,7 @@ def extraction_unprocessed_lines(model, tokenizer, device, rows_id, df_filtered:
         # Save after each batch
         save_logs_as_json(log_entries, log_filepath)
 
-    with open(f"./results/{dataset_type}/biomarkers_list.txt", "a") as f:
+    with open(f"./logs/{dataset_type}/biomarkers_list.txt", "a") as f:
         for biomarker in all_biomarkers_extended:
             f.write(f"{biomarker}\n")
     

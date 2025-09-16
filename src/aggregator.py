@@ -146,6 +146,85 @@ def has_duplicates(correlations: list):
     all_numbers = [num for sublist in correlations for num in sublist]
     return len(all_numbers) != len(set(all_numbers))
 
+def parse_percentage(percentage_str):
+    """
+    Extract numeric value from percentage string like "33.77 %"
+    """
+    # Remove % symbol and extra spaces, then convert to float
+    numeric_str = re.sub(r'[%\s]', '', percentage_str)
+    return float(numeric_str)
+
+def process_results(biomarkers: None, output_file: str):
+    """
+    Process biomarkers JSON file according to the specified criteria
+    """
+    try:
+        # Read the input JSON file
+        if biomarkers is None:
+            return None
+        
+        # First, remove unwanted keys from all dictionaries
+        cleaned_biomarkers = []
+        for biomarker in biomarkers:
+            try:
+                # Create a copy and remove unwanted keys
+                cleaned_biomarker = biomarker.copy()
+                cleaned_biomarker.pop('occurrences', None)
+                cleaned_biomarker.pop('variants', None)
+                
+                # Parse the total_percentage to validate it
+                parse_percentage(biomarker['total_percentage'])
+                cleaned_biomarkers.append(cleaned_biomarker)
+                
+            except (ValueError, KeyError) as e:
+                print(f"Warning: Could not process percentage for biomarker {biomarker.get('canonical_biomarker', 'unknown')}: {e}")
+                continue
+        
+        # Count how many dictionaries have total_percentage > 10%
+        count_above_10 = 0
+        for biomarker in cleaned_biomarkers:
+            percentage = parse_percentage(biomarker['total_percentage'])
+            if percentage > 10:
+                count_above_10 += 1
+        
+        # Apply filtering logic based on count of items > 10%
+        final_biomarkers = []
+        
+        if 5 < count_above_10 < 20:
+            # If count is between 5 and 20, keep items > 10%
+            threshold = 10
+        elif count_above_10 < 5:
+            # If count is < 5, select items > 5%
+            threshold = 5
+        elif count_above_10 > 20:
+            # If count is > 20, select items > 15%
+            threshold = 15
+        else:
+            # count_above_10 == 5 or count_above_10 == 20 (edge cases)
+            threshold = 10
+        
+        # Filter based on the determined threshold
+        for biomarker in cleaned_biomarkers:
+            percentage = parse_percentage(biomarker['total_percentage'])
+            if percentage > threshold:
+                final_biomarkers.append(biomarker)
+        
+        # Save the processed biomarkers
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(final_biomarkers, f, indent=2, ensure_ascii=False)
+        
+        return final_biomarkers
+        
+    except FileNotFoundError:
+        print(f"Error: Could not find input file '{input_file}'")
+        return None
+    except json.JSONDecodeError as e:
+        print(f"Error: Invalid JSON format in '{input_file}': {e}")
+        return None
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+        return None
+
 def find_rows_from_biomarkers(dict_list, couples):
     """
     Process a list of dictionaries by matching their 'occurrences' with markers in couples.
@@ -283,7 +362,7 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
                 acronyms_w_rows = json.load(f)
         else:
             # Load source data
-            with open(f"./results/{dataset_type}/acronyms_logs.json", "r", encoding="utf-8") as f:
+            with open(f"./logs/{dataset_type}/acronyms_logs.json", "r", encoding="utf-8") as f:
                 data = json.load(f)
                 acronyms_w_rows = []
                 for d in data:
@@ -388,6 +467,7 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
         
         # Sort and save final results
         final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: len(x['occurrences']), reverse=True)
+        _ = process_results(biomarkers=final_biomarkers_sorted, output_file=f"./results/{dataset_type}/filtered_biomarkers.json")
         
         os.makedirs(f"./results/{dataset_type}", exist_ok=True)
         with open(f"./results/{dataset_type}/biomarkers.json", "w", encoding="utf-8") as f:
@@ -548,7 +628,7 @@ def _process_group_variants(group, model, tokenizer, device, dataset_type):
     
     # Restore original occurrences
     group["occurrences"] = original_occurrences
-    print("Variants processed!")
+    print(f"Group {group["canonical_biomarker"]}: variants processed!")
     return group
 
 

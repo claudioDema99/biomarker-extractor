@@ -96,7 +96,7 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
     # creo una lista di couple: ogni couple è formata da un biomarker estratto e dalla riga del dataset dalla quale il biomarker è stato estratto
     # in questo modo, alla fine della pipeline posso risalire alla/e riga/righe nelle quali è presente il biomarkers estratto
     try:
-        with open(f"./results/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
+        with open(f"./logs/{dataset_type}/extraction_logs.json", "r", encoding="utf-8") as f:
             data = json.load(f)
     except (FileNotFoundError, json.JSONDecodeError) as e:
         print(f"Error loading extraction logs: {e}")
@@ -106,7 +106,7 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
         for i in range(len(d["biomarkers"])):
             biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
 
-    LOG_PATH = f"./results/{dataset_type}/acronyms_logs.json"
+    LOG_PATH = f"./logs/{dataset_type}/acronyms_logs.json"
     if os.path.exists(LOG_PATH):
         with open(LOG_PATH, "r", encoding="utf-8") as f:
             log_entries = json.load(f)
