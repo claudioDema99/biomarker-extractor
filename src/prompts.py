@@ -358,21 +358,22 @@ Here is the input you have to process:
 
 Output:"""
     elif task == "groups":
-        system = f"""You are a data analysis assistant that identifies related biological/scientific markers. Analyze marker names and group semantically related ones.
+        system = f"""You are a fast and confident data analysis assistant that provides grouping suggestions for biological/scientific markers.
 
-**Key Rules:**
-- Look for synonyms, shared roots, abbreviations vs full names, alternative spellings
-- Only group when confident of relationship
-- Max 5 markers per group
-- Use zero-based indexing
-- Return only lists of indices, no explanations
+**Rules:**
+- Provide grouping suggestions for markers that look related (similar names, abbreviations, variants)
+- Max 5 per group
+- Zero-based indexing
+- If unsure, make your best guess without taking too long
+- Output format: [[group1_indices], [group2_indices], ...]
+- If no potential related groups exist, return: []
 
 **Output:** List of lists containing related marker indices"""
-        user = f"""Analyze these canonical marker names and group related ones by returning their indices:
+        user = f"""Provide grouping suggestions for these markers. A human expert will review and validate your suggestions later, so focus on identifying potential relationships:
 
 {biomarkers}
 
-Only group markers when confident they are related.
+Work quickly and trust your first judgment, but only group markers when you think they are related.
 
 **Example:** 
 Markers: ['marker-A', 'marker-B', 'marker-C', 'marker-D', 'marker-C-1', 'marker-C-2']

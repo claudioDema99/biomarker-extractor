@@ -125,11 +125,12 @@ def call_model(task: str, dataset_type: str, model: AutoModelForCausalLM, tokeni
             ).to(device)
 
             print(f"--- Waiting for the model response ---")
+            max_tokens = 8192 if task == "groups" else 4096
             # Generazione della risposta
             with torch.no_grad():
                 outputs = model.generate(
                     **inputs,
-                    max_new_tokens=4096,          # Massimo numero di nuovi token da generare
+                    max_new_tokens=max_tokens,          # Massimo numero di nuovi token da generare
                     do_sample=False,              # Usa greedy decoding (deterministic!!!)
                     #temperature=0.7,             # Controllo randomness (se do_sample=True) quindi inutile
                     #top_p=0.9,                   # Nucleus sampling (se do_sample=True) quindi inutile
@@ -219,7 +220,7 @@ def call_model(task: str, dataset_type: str, model: AutoModelForCausalLM, tokeni
             clear_gpu_memory()
             
             if attempt == max_retries - 1:
-                print(f" Tutti i {max_retries} tentativi falliti. Ritorno liste vuote.")
+                print(f" Tutti i {max_retries} tentativi falliti. Ritorno 'None'.")
                 return None, "", response
             else:
                 print(" Riprovo...")

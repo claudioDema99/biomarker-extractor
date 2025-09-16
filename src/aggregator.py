@@ -529,10 +529,13 @@ def _run_merging_loop(parsed_biomarkers, model, tokenizer, device, dataset_type,
         try:
             possible_correlations, _, _ = call_model(task="groups", dataset_type=dataset_type, 
                                              model=model, tokenizer=tokenizer, device=device, 
-                                             biomarkers=canonical_biomarkers, low_reasoning=True)
+                                             biomarkers=canonical_biomarkers)
         except Exception as e:
             print(f"Model call failed: {e}")
-            possible_correlations = []
+            possible_correlations = None
+        
+        if possible_correlations == None or possible_correlations == []:
+            return parsed_biomarkers
         
         if has_duplicates(possible_correlations):
             print("\n=== ERROR: Duplicate indices found! ===")
@@ -628,7 +631,7 @@ def _process_group_variants(group, model, tokenizer, device, dataset_type):
     
     # Restore original occurrences
     group["occurrences"] = original_occurrences
-    print(f"Group {group["canonical_biomarker"]}: variants processed!")
+    print(f"Group {group['canonical_biomarker']}: variants processed!")
     return group
 
 

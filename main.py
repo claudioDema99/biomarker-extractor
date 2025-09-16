@@ -60,7 +60,7 @@ def main():
 
     all_databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
     #databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
-    databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
+    databases = ["Depression", "Schizophrenia"]
 
     model, tokenizer, device = load_model_and_tokenizer()
 
