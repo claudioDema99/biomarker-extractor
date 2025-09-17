@@ -214,13 +214,7 @@ def process_results(biomarkers: None, output_file: str):
             json.dump(final_biomarkers, f, indent=2, ensure_ascii=False)
         
         return final_biomarkers
-        
-    except FileNotFoundError:
-        print(f"Error: Could not find input file '{input_file}'")
-        return None
-    except json.JSONDecodeError as e:
-        print(f"Error: Invalid JSON format in '{input_file}': {e}")
-        return None
+
     except Exception as e:
         print(f"Unexpected error: {e}")
         return None
@@ -264,6 +258,69 @@ def find_rows_from_biomarkers(dict_list, couples):
         dictionary['rows'] = sorted(set(rows))
     
     return dict_list
+
+def reorganize_biomarkers(biomarkers=None, acronyms_w_rows=None):
+    """Funzione principale per riorganizzare i biomarkers secondo la logica richiesta.
+    
+    Args:
+        biomarkers: Lista di biomarkers, ognuno con le sue varianti
+        acronyms_w_rows: Lista di coppie (acronimo, row_id)
+    """
+    
+    if biomarkers is None or acronyms_w_rows is None:
+        print("Impossibile procedere senza i dati necessari.")
+        return None
+
+    # Creazione di un dizionario per mappare acronimi a row_id
+    acronym_to_row_ids = defaultdict(list)
+    all_dashes = r'[\u002D\u2010-\u2015\u2212]'
+    for acronym, row_id in acronyms_w_rows:
+        acronym_to_row_ids[re.sub(all_dashes, '', acronym)].append(row_id)
+        
+    # Processa ogni biomarker
+    for biomarker_idx, biomarker in enumerate(biomarkers):
+        if 'variants' not in biomarker:
+            print(f"Errore: 'variants' non trovato nel biomarker {biomarker_idx}")
+            if 'canonical_biomarker' in biomarker:
+                print(f"Biomarker: {biomarker['canonical_biomarker']}")
+            continue
+        
+        # Inizializzazione del nuovo dizionario rows per questo biomarker
+        new_rows = {}
+        
+        # Per ogni variante in questo biomarker
+        for variant_name, variant_values in biomarker['variants'].items():
+            
+            # Passaggio 1: Prendo la lista completa di tutti i valori
+            if isinstance(variant_values, list):
+                all_values = variant_values.copy()
+            elif variant_values is None:
+                all_values = []
+            else:
+                all_values = [variant_values]
+            
+            # Passaggio 2: Tengo solamente i valori unici (elimino duplicati)
+            # Filtro anche i valori None o vuoti
+            unique_values = list(set(val for val in all_values if val is not None and val != ""))
+            
+            # Passaggio 3: Per ogni valore unico, cerco corrispondenze negli acronimi
+            row_ids_for_variant = []
+            
+            for unique_value in unique_values:   
+                unique_value = re.sub(all_dashes, '', unique_value)
+                # Cerco questo valore negli acronimi
+                if unique_value in acronym_to_row_ids:
+                    matching_rows = acronym_to_row_ids[unique_value]
+                    row_ids_for_variant.extend(matching_rows)
+            
+            # Passaggio 4: Tengo solamente i valori unici anche in questa lista
+            unique_row_ids = list(set(row_ids_for_variant))
+            new_rows[variant_name] = unique_row_ids
+                    
+        # Aggiorno la struttura di questo biomarker
+        biomarker['rows'] = new_rows
+    
+    return biomarkers
 
 def aggregate_similar_strings(string_list):
     """
@@ -449,7 +506,12 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
         # Process variants for each group
         for group in parsed_biomarkers:
             group = _process_group_variants(group, model, tokenizer, device, dataset_type)
-        
+                
+        # Find source rows
+        parsed_biomarkers = find_rows_from_biomarkers(parsed_biomarkers, acronyms_w_rows)
+        # divide rows into variants
+        parsed_biomarkers = reorganize_biomarkers(parsed_biomarkers, acronyms_w_rows)
+
         # Calculate final statistics
         for group in parsed_biomarkers:
             group["total_count"] = f"{len(group['occurrences'])} / {total_len}"
@@ -461,9 +523,6 @@ def aggregation_unified(model=None, tokenizer=None, device=None, total_len=None,
                 for variant_key, variant_list in group["variants"].items():
                     pct = len(variant_list) / len(group['occurrences']) * 100
                     group["variant_percentages"][variant_key] = f"{pct:.2f} %"
-        
-        # Find source rows
-        parsed_biomarkers = find_rows_from_biomarkers(parsed_biomarkers, acronyms_w_rows)
         
         # Sort and save final results
         final_biomarkers_sorted = sorted(parsed_biomarkers, key=lambda x: len(x['occurrences']), reverse=True)

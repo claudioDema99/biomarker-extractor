@@ -175,7 +175,7 @@ def call_model(task: str, dataset_type: str, model: AutoModelForCausalLM, tokeni
                 cot = ""
                 response = output_text.strip()
                 # ritorna l'output completo se non trova i tag
-                print(f"No filtering tags found, returning full output.")
+                raise ValueError("No filtering tags found.")
             
             if task == "groups":
                 # Isola la sezione JSON anche se c'è testo extra

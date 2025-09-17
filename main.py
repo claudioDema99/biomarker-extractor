@@ -60,11 +60,34 @@ def main():
 
     all_databases_list = ["Alzheimer", "Bipolar", "BPD", "CN", "Depression", "Dermatitis", "Diabete", "HT", "Hypertension", "KT", "LT", "MS", "Partial_Seizure", "PS00", "PSO01", "PSO02", "Schizophrenia", "Sclerosis"]
     #databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
-    databases = ["Depression", "Schizophrenia"]
+    databases = ["Alzheimer", "Bipolar", "BPD", "Depression", "Schizophrenia"]
+    databases_selected = []
 
     model, tokenizer, device = load_model_and_tokenizer()
 
-    for database in databases:
+    if len(sys.argv) > 1:
+        arg = sys.argv[1].strip()
+        if arg == "resume":
+            print("Inserisci il nome del database che si vuole analizzare:\n")
+            for database in databases:
+                print(f" - '{database.lower()}'")
+            database = input("\n ->  ")
+            databases_selected.append(database.lower().strip())
+
+    for _database in databases_selected:
+        
+        if _database == "alzheimer":
+            database = "Alzheimer"
+        elif _database == "bipolar":
+            database = "Bipolar"
+        elif _database == "bpd":
+            database = "BPD"
+        elif _database == "depression":
+            database = "Depression"
+        elif _database == "schizophrenia":
+            database = "Schizophrenia"
+        
+        print(f"\nSelezionato database: {database}")
 
         # verifica esistenza cartelle /results e /logs e se necessario le pulisce
         folder_check(folder_name="results", database=database, clean=clean)
@@ -161,9 +184,22 @@ mentre la lista di biomarkers non raggruppati si trovano in 'results/{database}/
     # Invece prima faccio a raggruppamenti "manuali" di tutti i dataset, poi faccio fare all'LLM l'ultima fase (identificazione delle varianti) di tutti i dataset che son giaà stati raggruppati
     if len(sys.argv) > 1:
         if arg == "resume":
-            if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
-                _ = aggregation_resume_part3(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
-                print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
+            for _database in databases_selected:
+                
+                if _database == "alzheimer":
+                    database = "Alzheimer"
+                elif _database == "bipolar":
+                    database = "Bipolar"
+                elif _database == "bpd":
+                    database = "BPD"
+                elif _database == "depression":
+                    database = "Depression"
+                elif _database == "schizophrenia":
+                    database = "Schizophrenia"
+
+                if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):
+                    _ = aggregation_resume_part3(model=model, tokenizer=tokenizer, device=device, total_len=len(rows_id), dataset_type=database)
+                    print(f"""\n\nTutti i biomarkers sono stati analizzati e raggruppati.
 I risultati completi si trovano in 'results/{database}/biomarkers.json',
 i risultati filtrati per frequenza si trovano in 'results/{database}/filtered_biomarkers.json'\n,
 mentre la lista di biomarkers non raggruppati si trovano in 'results/{database}/remaining_biomarkers.txt'""")

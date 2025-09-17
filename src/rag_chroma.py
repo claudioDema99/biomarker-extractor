@@ -102,8 +102,10 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
         print(f"Error loading extraction logs: {e}")
         return 
     biomarkers_w_rows = []
+    all_dashes = r'[\u002D\u2010-\u2015\u2212]'
     for d in data:
         for i in range(len(d["biomarkers"])):
+            d["biomarkers"][i] = re.sub(all_dashes, '-', d["biomarkers"][i])
             biomarkers_w_rows.append((d["biomarkers"][i], d["row_id"]))
 
     LOG_PATH = f"./logs/{dataset_type}/acronyms_logs.json"
@@ -132,7 +134,7 @@ def validation(model, tokenizer, device, create_chroma_db=False, dataset_type: s
         if data_json:
             log_entry = {
                 "original_name": data_json["original_name"],
-                "acronym": data_json["acronym"],
+                "acronym": re.sub(all_dashes, '-', data_json["acronym"]),
                 "row_id": row_id,
                 "cot": cot
             }

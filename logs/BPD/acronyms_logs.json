@@ -1,0 +1,578 @@
+[
+  {
+    "original_name": "PET: Positron Emission Tomography",
+    "acronym": "PET",
+    "row_id": 2,
+    "cot": "We need JSON with original_name and acronym. Original name given: PET: Positron Emission Tomography. Acronym likely PET. So output."
+  },
+  {
+    "original_name": "DERS: Difficulties in Emotion Regulation Scale",
+    "acronym": "DERS",
+    "row_id": 3,
+    "cot": "We need JSON with original_name and acronym. Original name given: DERS: Difficulties in Emotion Regulation Scale. The acronym likely DERS. So output."
+  },
+  {
+    "original_name": "Amygdala Activity: amygdala activity",
+    "acronym": "Amyg.",
+    "row_id": 3,
+    "cot": "We need acronym for Amygdala Activity. Commonly \"AMG\" maybe? But often \"Amyg.\" In neuroimaging, \"amygdala activation\" abbreviated as \"Amyg\". So output JSON."
+  },
+  {
+    "original_name": "Suicide Attempt Count",
+    "acronym": "SA",
+    "row_id": 4,
+    "cot": "We need acronym for Suicide Attempt Count. In document they use \"NASuicide attempts\". So acronym likely \"NAS\" but that's ambiguous. Standard is \"SA\" maybe. But they ask for most commonly used and standardized acronym. In literature often \"SA\" for suicide attempt. Could also be \"SUICIDE_ATTEMPT_COUNT\". But given context, \"NASuicide attempts\" seems abbreviation. I'd choose \"SA\". Provide JSON."
+  },
+  {
+    "original_name": "Borderline Evaluation of Severity Over Time",
+    "acronym": "BEST",
+    "row_id": 6,
+    "cot": "We need acronym for \"Borderline Evaluation of Severity Over Time\". Likely \"BEST\" already given. So acronym is BEST. Provide JSON."
+  },
+  {
+    "original_name": "ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder",
+    "acronym": "ZAN‑BPD",
+    "row_id": 6,
+    "cot": "We need acronym for ZAN-BPD. Standard is ZAN-BPD already. But maybe abbreviation is ZAN-BPD. So output that."
+  },
+  {
+    "original_name": "YMS",
+    "acronym": "YMRS",
+    "row_id": 6,
+    "cot": "We need JSON with original_name \"YMS\" and acronym \"YMRS\"."
+  },
+  {
+    "original_name": "SCL-90-R: Symptom Checklist-90-Revised",
+    "acronym": "SCL-90-R",
+    "row_id": 6,
+    "cot": "We need acronym for SCL-90-R. Standard is SCL‑90‑R. So output JSON."
+  },
+  {
+    "original_name": "SDS: Sheehan Disability Scale",
+    "acronym": "SDS",
+    "row_id": 6,
+    "cot": "We need SDS: Sheehan Disability Scale. Acronym is SDS already. So output JSON."
+  },
+  {
+    "original_name": "MOAS: Modified Overt Aggression Scale",
+    "acronym": "MOAS",
+    "row_id": 6,
+    "cot": "We need JSON with original_name and acronym. Marker given: MOAS: Modified Overt Aggression Scale. Acronym likely MOAS already. So output {\"original_name\":\"MOAS: Modified Overt Aggression Scale\",\"acronym\":\"MOAS\"}"
+  },
+  {
+    "original_name": "GAF: Global Assessment of Functioning Scale",
+    "acronym": "GAF",
+    "row_id": 6,
+    "cot": "We need JSON with original_name and acronym. Original name given: \"GAF: Global Assessment of Functioning Scale\". Acronym likely GAF already. So output {\"original_name\":\"GAF: Global Assessment of Functioning Scale\",\"acronym\":\"GAF\"}"
+  },
+  {
+    "original_name": "SCL-90-R: Symptom Checklist-90-Revised",
+    "acronym": "SCL-90-R",
+    "row_id": 7,
+    "cot": "We need acronym for SCL-90-R. Standard is SCL‑90‑R. So output JSON."
+  },
+  {
+    "original_name": "BPDSI: Borderline Personality Disorder Severity Index",
+    "acronym": "BPDSI",
+    "row_id": 7,
+    "cot": "We need acronym for BPDSI. Standard is BPDSI. But maybe BPD-SI? In literature it's BPDSI. So output."
+  },
+  {
+    "original_name": "Indiana Psychiatric Illness Interview",
+    "acronym": "IPPI",
+    "row_id": 7,
+    "cot": "We need acronym for Indiana Psychiatric Illness Interview. Likely IPPI? But given marker is IPII. Standard might be IPPI? Actually Indiana Psychiatric Illness Interview abbreviation could be IPPI. But they gave IPII. We should output that? The question: Identify most commonly used and standardized acronym. Probably IPPI. So output original_name and acronym."
+  },
+  {
+    "original_name": "MAS-A: Metacognition Assessment Scale- Abbreviated",
+    "acronym": "MAS‑A",
+    "row_id": 7,
+    "cot": "We need acronym for Metacognition Assessment Scale-Abbreviated. Likely MAS-A already. But maybe it's \"MAS-A\". So output that."
+  },
+  {
+    "original_name": "CGI-I: Clinical Global Impressions Improvement",
+    "acronym": "CGI‑I",
+    "row_id": 7,
+    "cot": "We need acronym for CGI-I: Clinical Global Impressions Improvement. The standard abbreviation is CGI-I already. But maybe they want \"CGI‑I\" as is. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "BPRS: Brief Psychiatric Rating Scale",
+    "acronym": "BPRS",
+    "row_id": 7,
+    "cot": "We need JSON with original_name and acronym. Original name given: \"BPRS: Brief Psychiatric Rating Scale\". The acronym already is BPRS. So output that."
+  },
+  {
+    "original_name": "BPD Checklist: Borderline Personality Checklist",
+    "acronym": "BPCL",
+    "row_id": 7,
+    "cot": "We need acronym for BPD Checklist: Borderline Personality Checklist. Likely \"BPCL\" or \"BPD-C\". In literature, \"Borderline Personality Checklist\" abbreviation BPCL. So output JSON."
+  },
+  {
+    "original_name": "MADRS: Montgomery‑Åsberg Depression Rating Scale",
+    "acronym": "MADRS",
+    "row_id": 8,
+    "cot": "We need JSON with original_name and acronym. Original name given: \"MADRS: Montgomery‑Åsberg Depression Rating Scale\". Acronym likely MADRS. So output."
+  },
+  {
+    "original_name": "BPD‑SR: Dimensional self‑report measure of BPD symptoms",
+    "acronym": "BPD‑SR",
+    "row_id": 8,
+    "cot": "We need acronym for BPD-SR. Likely \"BPD-SR\" itself? But maybe \"BPDSR\". Standard is \"BPD-SR\". So output that."
+  },
+  {
+    "original_name": "SRS: Suicide Rating Scale",
+    "acronym": "SRS",
+    "row_id": 8,
+    "cot": "We need acronym for SRS: Suicide Rating Scale. The standard abbreviation is SRS. But maybe they want \"SRS\" already? They ask identify most commonly used and standardized acronym. So output original_name \"SRS: Suicide Rating Scale\", acronym \"SRS\"."
+  },
+  {
+    "original_name": "BDI: Beck Depression Inventory",
+    "acronym": "BDI",
+    "row_id": 8,
+    "cot": "We need output JSON with original_name and acronym. Original name given: \"BDI: Beck Depression Inventory\". The acronym already is BDI. So output that."
+  },
+  {
+    "original_name": "BAI: Beck Anxiety Inventory",
+    "acronym": "BAI",
+    "row_id": 8,
+    "cot": "We need BAI: Beck Anxiety Inventory. Standard acronym is BAI. So output JSON with original_name \"BAI: Beck Anxiety Inventory\" and acronym \"BAI\"."
+  },
+  {
+    "original_name": "Role Performance Questionnaire",
+    "acronym": "RPQ",
+    "row_id": 8,
+    "cot": "We need acronym for Role Performance Questionnaire. Likely RPQ already. But maybe \"R-PQ\"? Standard is RPQ. So output JSON."
+  },
+  {
+    "original_name": "MEAQ-DA: Multidimensional Experiential Avoidance Questionnaire – Distress Aversion subscale",
+    "acronym": "MEAQ-DA",
+    "row_id": 9,
+    "cot": "We need acronym for MEAQ-DA. Likely \"MEAQ-DA\" already. But maybe \"MEAQ-D\" or \"MEAQ-DA\". Standard abbreviation is \"MEAQ-DA\". So output that."
+  },
+  {
+    "original_name": "ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder",
+    "acronym": "ZAN‑BPD",
+    "row_id": 9,
+    "cot": "We need acronym for ZAN-BPD. Standard is ZAN-BPD already. But maybe abbreviation is ZAN-BPD. So output that."
+  },
+  {
+    "original_name": "BPDSS: BPD Severity Scale",
+    "acronym": "BPDSS",
+    "row_id": 10,
+    "cot": "We need acronym for BPD Severity Scale. Standard acronym is BPDSS already. But maybe it's BPDSS? The marker given is BPDSS: BPD Severity Scale. So acronym is BPDSS. Provide JSON."
+  },
+  {
+    "original_name": "BIS: Barratt Impulsiveness Scale",
+    "acronym": "BIS",
+    "row_id": 10,
+    "cot": "We need JSON with original_name and acronym. Original name given: \"BIS: Barratt Impulsiveness Scale\". Acronym likely BIS. So output."
+  },
+  {
+    "original_name": "AA: Anxiety Assessment",
+    "acronym": "HARS",
+    "row_id": 10,
+    "cot": "We need acronym for AA: Anxiety Assessment. In document they mention Hamilton Anxiety Rating Scale (HARS). So abbreviation is HARS. Provide JSON."
+  },
+  {
+    "original_name": "DA: Depression Assessment",
+    "acronym": "BDI‑II",
+    "row_id": 10,
+    "cot": "Marker DA: Depression Assessment. In document we see NABDI II (depression). Likely abbreviation is BDI-II. So output."
+  },
+  {
+    "original_name": "SRS: Self-Report Severity Scale",
+    "acronym": "SRS",
+    "row_id": 10,
+    "cot": "We need acronym for SRS: Self-Report Severity Scale. Likely \"SRS\" already. But maybe \"Self‑report severity scale\" abbreviation is \"SRS\". So output JSON with original_name and acronym \"SRS\"."
+  },
+  {
+    "original_name": "SDS: Sheehan Disability Scale",
+    "acronym": "SDS",
+    "row_id": 10,
+    "cot": "We need SDS: Sheehan Disability Scale. Acronym is SDS already. So output JSON."
+  },
+  {
+    "original_name": "SS: Suicidality Scale",
+    "acronym": "SS",
+    "row_id": 10,
+    "cot": "We need acronym for SS: Suicidality Scale. Likely \"SS\" already. But maybe \"Suicidal Ideation Scale\" is SIS? However given context they use NASuicide attempts. So SS likely stands for \"Suicidality Scale\". Standard abbreviation could be \"SS\". Provide JSON."
+  },
+  {
+    "original_name": "Borderline Personality Scale",
+    "acronym": "BPS",
+    "row_id": 10,
+    "cot": "We need acronym for Borderline Personality Scale. Likely BPS? But maybe BPS stands for Borderline Personality Scale. However common is BPS? There's also BPS = Borderline Personality Scale. So output JSON."
+  },
+  {
+    "original_name": "QoL: Quality of Life Scale",
+    "acronym": "QOL",
+    "row_id": 10,
+    "cot": "We need acronym for QoL: Quality of Life Scale. Commonly QOL or QoL. But scale maybe WHOQOL? However generic is QOL. Provide JSON."
+  },
+  {
+    "original_name": "CI: Comorbidity Interview",
+    "acronym": "CI",
+    "row_id": 10,
+    "cot": "We need acronym for CI: Comorbidity Interview. Likely \"CI\" already. But maybe \"Comorbidity Interview\" abbreviation is \"CI\". So output that."
+  },
+  {
+    "original_name": "Psychopathology Inventory",
+    "acronym": "PI",
+    "row_id": 10,
+    "cot": "We need acronym for Psychopathology Inventory. Likely \"PI\" already given? But maybe \"PI\" stands for Psychopathy Inventory? Actually Psychopathology Inventory abbreviation might be \"PI\". So output JSON with original_name and acronym \"PI\"."
+  },
+  {
+    "original_name": "SAS: Parkinsonism Assessment Scale",
+    "acronym": "PAS",
+    "row_id": 11,
+    "cot": "We need acronym for SAS: Parkinsonism Assessment Scale. The standard acronym likely is PAS? Actually Parkinsonism Assessment Scale abbreviation is PAS. But given marker says SAS: Parkinsonism Assessment Scale. Maybe they want SAS? But we should identify most common acronym. I think it's PAS. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "BMI: Body Mass Index",
+    "acronym": "BMI",
+    "row_id": 11,
+    "cot": "We need JSON with original_name and acronym. Marker given BMI: Body Mass Index. The acronym is BMI already. So output."
+  },
+  {
+    "original_name": "Barnes Akathisia Rating Scale",
+    "acronym": "BARS",
+    "row_id": 11,
+    "cot": "We need acronym for Barnes Akathisia Rating Scale. Standard acronym is BARS. So output JSON."
+  },
+  {
+    "original_name": "C-SSRS: Columbia Suicide Severity Rating Scale",
+    "acronym": "C-SSRS",
+    "row_id": 11,
+    "cot": "We need acronym for C-SSRS? It's already C-SSRS. Maybe they want SSRS? But standard is C-SSRS. So output original_name and acronym same."
+  },
+  {
+    "original_name": "PGI-S: Patient Global Impression – Severity",
+    "acronym": "PGI‑S",
+    "row_id": 11,
+    "cot": "We need acronym for PGI-S: Patient Global Impression – Severity. Standard abbreviation is PGI-S already. But maybe they want \"PGI‑S\" as acronym. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "CGI-I: Clinical Global Impression – Improvement",
+    "acronym": "CGI‑I",
+    "row_id": 11,
+    "cot": "We need acronym for CGI-I. Standard is CGI-I already. So output original_name and acronym \"CGI‑I\"."
+  },
+  {
+    "original_name": "CGI-S: Clinical Global Impression – Severity",
+    "acronym": "CGI‑S",
+    "row_id": 11,
+    "cot": "We need output JSON with original_name and acronym. Marker given: CGI-S: Clinical Global Impression – Severity. The acronym already is CGI-S. So return that."
+  },
+  {
+    "original_name": "Orthostatic Hypotension: Drop in systolic BP ≥20 mmHg and HR increase ≥25 bpm",
+    "acronym": "OH",
+    "row_id": 11,
+    "cot": "We need acronym for Orthostatic Hypotension definition. Common abbreviation is OH. So output JSON."
+  },
+  {
+    "original_name": "Heart Rate: Heart Rate",
+    "acronym": "HR",
+    "row_id": 11,
+    "cot": "We need acronym for Heart Rate. Standard is HR. So output JSON."
+  },
+  {
+    "original_name": "Systolic Blood Pressure: Systolic Blood Pressure",
+    "acronym": "SBP",
+    "row_id": 11,
+    "cot": "We need JSON with original_name and acronym. Marker given: \"Systolic Blood Pressure: Systolic Blood Pressure\". Acronym likely BP_sys or SBP. In docs they use BPsys. Standard is SBP. So choose SBP."
+  },
+  {
+    "original_name": "Diastolic Blood Pressure: Diastolic Blood Pressure",
+    "acronym": "BPdia",
+    "row_id": 11,
+    "cot": "We need JSON with original_name and acronym. Marker given: Diastolic Blood Pressure: Diastolic Blood Pressure. Acronym likely BPdia or DBP. In text they use BPdia. So choose BPdia."
+  },
+  {
+    "original_name": "Weight: Body Weight",
+    "acronym": "BW",
+    "row_id": 11,
+    "cot": "We need acronym for Body Weight. Commonly BW. So output JSON."
+  },
+  {
+    "original_name": "Serum Prolactin Level",
+    "acronym": "PRL",
+    "row_id": 11,
+    "cot": "We need acronym for Serum Prolactin Level. Commonly PRL. So output JSON."
+  },
+  {
+    "original_name": "AIMS: Abnormal Involuntary Movement Scale",
+    "acronym": "AIMS",
+    "row_id": 11,
+    "cot": "We need acronym for AIMS: Abnormal Involuntary Movement Scale. The common acronym is AIMS. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "Alkaline Phosphatase",
+    "acronym": "ALP",
+    "row_id": 11,
+    "cot": "We need JSON with original_name and acronym. Marker given ALP: Alkaline Phosphatase. Standard acronym is ALP. So output."
+  },
+  {
+    "original_name": "AST: Aspartate Aminotransferase",
+    "acronym": "AST",
+    "row_id": 11,
+    "cot": "We need JSON with original_name and acronym. Marker given AST: Aspartate Aminotransferase. Standard acronym is AST. So output."
+  },
+  {
+    "original_name": "Bilirubin",
+    "acronym": "TBIL",
+    "row_id": 11,
+    "cot": "We need acronym for Bilirubin. Standard is TBIL? Usually total bilirubin abbreviated TBIL. So output JSON."
+  },
+  {
+    "original_name": "Cholesterol: Cholesterol",
+    "acronym": "CHOL",
+    "row_id": 11,
+    "cot": "We need acronym for cholesterol. Standard is CHOL. Sometimes LDL, HDL etc but generic cholesterol is CHOL. Provide JSON."
+  },
+  {
+    "original_name": "CK: Creatine Kinase",
+    "acronym": "CK",
+    "row_id": 11,
+    "cot": "We need JSON with original_name \"CK: Creatine Kinase\" and acronym \"CK\". That's already. Ensure format."
+  },
+  {
+    "original_name": "Creatinine",
+    "acronym": "Cr",
+    "row_id": 11,
+    "cot": "We need acronym for creatinine. Standard is Cr. So output JSON."
+  },
+  {
+    "original_name": "Glucose: Glucose",
+    "acronym": "GLU",
+    "row_id": 11,
+    "cot": "We need acronym for glucose. Standard is GLC? Usually GLU. But common abbreviation is \"GLC\" or \"Glu\". In literature often \"GLU\". I'll choose \"GLU\"."
+  },
+  {
+    "original_name": "HDL: High Density Lipoprotein",
+    "acronym": "HDL",
+    "row_id": 11,
+    "cot": "We need output JSON with original_name and acronym. Marker given HDL: High Density Lipoprotein. The acronym is HDL already. So output {\"original_name\":\"HDL: High Density Lipoprotein\",\"acronym\":\"HDL\"}"
+  },
+  {
+    "original_name": "BRAD: Bradycardia",
+    "acronym": "BRAD",
+    "row_id": 12,
+    "cot": "We need acronym for Bradycardia. Commonly BRAD? But usually \"B\" or \"Brady\". Standard abbreviation is \"BCR\"? Actually bradycardia abbreviation is \"BCR\"? No. Usually \"brady.\" but acronym maybe \"BRD\". However in docs they used \"BRAD\". So output that."
+  },
+  {
+    "original_name": "SB: Sinus Bradycardia",
+    "acronym": "SB",
+    "row_id": 12,
+    "cot": "We need acronym for Sinus Bradycardia. Commonly SB? But often \"SB\" stands for \"Sinus Bradycardia\". However sometimes \"SB\" also \"sinus bradycardia\". So output JSON."
+  },
+  {
+    "original_name": "VPB: Ventricular Premature Beat",
+    "acronym": "VPC",
+    "row_id": 12,
+    "cot": "We need acronym for Ventricular Premature Beat. Commonly VPC (ventricular premature contraction) or VPB? Usually VPC. So output JSON."
+  },
+  {
+    "original_name": "Symmetrical T‑wave Inversion",
+    "acronym": "STI",
+    "row_id": 12,
+    "cot": "We need acronym for \"Symmetrical T-wave Inversion\". Common abbreviation: STWI? Actually T-wave inversion is TI. Symmetrical T-wave inversion maybe \"STI\"? But typical is \"TWI\" already given. They want acronym. Maybe \"STI\" stands for Symmetrical T-wave Inversion. I'll output that."
+  },
+  {
+    "original_name": "SAS: Simpson‑Angus Scale",
+    "acronym": "SAS",
+    "row_id": 12,
+    "cot": "We need acronym for Simpson-Angus Scale. Standard abbreviation is SAS. But maybe also S-AS? Actually common is SAS. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "Barnes Akathisia Rating Scale",
+    "acronym": "BARS",
+    "row_id": 12,
+    "cot": "We need acronym for Barnes Akathisia Rating Scale. Standard acronym is BARS. So output JSON."
+  },
+  {
+    "original_name": "C-SSRS: Columbia Suicide Severity Rating Scale",
+    "acronym": "C-SSRS",
+    "row_id": 12,
+    "cot": "We need acronym for C-SSRS? It's already C-SSRS. Maybe they want SSRS? But standard is C-SSRS. So output original_name and acronym same."
+  },
+  {
+    "original_name": "PRL: Prolactin",
+    "acronym": "PRL",
+    "row_id": 12,
+    "cot": "We need JSON with original_name \"PRL: Prolactin\" and acronym likely \"PRL\". But maybe they want \"Prolactin\" abbreviation \"PRL\". So output."
+  },
+  {
+    "original_name": "GLU: Fasting Glucose",
+    "acronym": "FPG",
+    "row_id": 12,
+    "cot": "We need acronym for GLU: Fasting Glucose. Standard is \"FPG\" or \"FBG\". Commonly \"FPG\". Provide JSON."
+  },
+  {
+    "original_name": "HDL: High‑Density Lipoprotein",
+    "acronym": "HDL",
+    "row_id": 12,
+    "cot": "We need HDL. Standard acronym HDL already. So output JSON."
+  },
+  {
+    "original_name": "LDL: Low‑Density Lipoprotein",
+    "acronym": "LDL",
+    "row_id": 12,
+    "cot": "We need JSON with original_name and acronym. Original name given: LDL: Low‑Density Lipoprotein. Standard acronym is LDL already. So output."
+  },
+  {
+    "original_name": "CHOL: Cholesterol",
+    "acronym": "Chol",
+    "row_id": 12,
+    "cot": "We need JSON with original_name \"CHOL: Cholesterol\" and acronym likely \"CHO\". But standard abbreviation is \"Chol.\" In literature often \"Chol\". So acronym \"CHO\"? Actually cholesterol abbreviation is \"Chol\". We'll output that."
+  },
+  {
+    "original_name": "Triglycerides",
+    "acronym": "TG",
+    "row_id": 12,
+    "cot": "We need TG: Triglycerides. Standard acronym is TG. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "CPK: Creatine Phosphokinase",
+    "acronym": "CK",
+    "row_id": 12,
+    "cot": "We need JSON with original_name and acronym. Marker given CPK: Creatine Phosphokinase. Standard acronym is CK (Creatine Kinase) but CPK also used. The question: identify most commonly used and standardized acronym/abbreviation mentioned in provided documents or based on standard scientific nomenclature. Likely CK. So output."
+  },
+  {
+    "original_name": "CREA: Creatinine",
+    "acronym": "CREA",
+    "row_id": 12,
+    "cot": "We need output JSON with original_name \"CREA: Creatinine\" and acronym likely \"CREA\". But maybe standard is \"Cr\". In docs they use CREA. So return CREA."
+  },
+  {
+    "original_name": "Urea Nitrogen",
+    "acronym": "UN",
+    "row_id": 12,
+    "cot": "We need acronym for Urea Nitrogen. Standard is UN. So output JSON."
+  },
+  {
+    "original_name": "Treatment‑Emergent Adverse Events",
+    "acronym": "TEAE",
+    "row_id": 12,
+    "cot": "We need acronym for TEAEs? They already gave TEAEs. Maybe they want \"TEAE\" singular? Standard is TEAE(s). So output original_name \"Treatment‑Emergent Adverse Events\" acronym \"TEAE\"."
+  },
+  {
+    "original_name": "AIMS: Abnormal Involuntary Movements Scale",
+    "acronym": "AIMS",
+    "row_id": 12,
+    "cot": "We need acronym for AIMS: Abnormal Involuntary Movements Scale. Standard acronym is AIMS. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "HR: Heart Rate Standing",
+    "acronym": "HRs",
+    "row_id": 12,
+    "cot": "We need acronym for \"Heart Rate Standing\". Likely \"HR_S\" or \"HRstanding\"? Standard is \"HR standing\" maybe abbreviated as \"HR_standing\" but common is \"HRs\"?? In literature often \"HR\" alone; standing HR sometimes \"HR_s\". I'd choose \"HRs\". Provide JSON."
+  },
+  {
+    "original_name": "WT: Weight",
+    "acronym": "Wt.",
+    "row_id": 12,
+    "cot": "We need acronym for Weight. Commonly BMI, but weight alone often \"Wt\" or \"W\". In docs they used \"BMI\". But marker is WT: Weight. Standard abbreviation is \"Wt.\" So output."
+  },
+  {
+    "original_name": "PGI-S: Patient Global Impression – Severity",
+    "acronym": "PGI‑S",
+    "row_id": 13,
+    "cot": "We need acronym for PGI-S: Patient Global Impression – Severity. Standard abbreviation is PGI-S already. But maybe they want \"PGI‑S\" as acronym. So output JSON with original_name and acronym."
+  },
+  {
+    "original_name": "ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder",
+    "acronym": "ZAN‑BPD",
+    "row_id": 13,
+    "cot": "We need acronym for ZAN-BPD. Standard is ZAN-BPD already. But maybe abbreviation is ZAN-BPD. So output that."
+  },
+  {
+    "original_name": "CGI-S: Clinical Global Impressions – Severity",
+    "acronym": "CGI‑S",
+    "row_id": 13,
+    "cot": "We need output JSON with original_name and acronym. Marker given: CGI-S: Clinical Global Impressions – Severity. The acronym already is CGI-S. So return that."
+  },
+  {
+    "original_name": "DERS: Difficulties in Emotion Regulation Scale",
+    "acronym": "DERS",
+    "row_id": 13,
+    "cot": "We need JSON with original_name and acronym. Original name given: DERS: Difficulties in Emotion Regulation Scale. The acronym likely DERS. So output."
+  },
+  {
+    "original_name": "STAI-S: State‑Trait Anxiety Inventory – State",
+    "acronym": "STAI-State",
+    "row_id": 13,
+    "cot": "We need acronym for STAI-S. Standard is STAI-State. So acronym STAI-S? But they want most common abbreviation. Usually \"STAI-S\" is used. Could also be \"STAI-State\". I'll output that."
+  },
+  {
+    "original_name": "PHQ-9: Patient Health Questionnaire‑9",
+    "acronym": "PHQ-9",
+    "row_id": 13,
+    "cot": "We need JSON with original_name and acronym. Original name given: PHQ-9: Patient Health Questionnaire‑9. The acronym is PHQ-9 already. So output."
+  },
+  {
+    "original_name": "SC",
+    "acronym": "SC",
+    "row_id": 14,
+    "cot": "We need acronym for SC: skin conductance. Standard is SCR? Actually Skin Conductance Response. But abbreviation SC often used. The marker given SC. We should output original_name \"SC\" and acronym \"SCR\"? But question: Identify most commonly used and standardized acronym/abbreviation mentioned in documents or based on standard scientific nomenclature. For skin conductance, common is \"SC\" itself. But maybe \"EDA\" electrodermal activity. However marker listed as SC. So we return SC."
+  },
+  {
+    "original_name": "DBT-Ways of Coping Checklist",
+    "acronym": "WCCL",
+    "row_id": 14,
+    "cot": "We need acronym for DBT-Ways of Coping Checklist. Likely \"WCCL\" already. But maybe \"DBT-WCCL\". The marker given includes that. So acronym likely \"WCCL\". Provide JSON."
+  },
+  {
+    "original_name": "PANAS: Positive and Negative Affect Schedule",
+    "acronym": "PANAS",
+    "row_id": 14,
+    "cot": "We need acronym for PANAS. Standard is PANAS. So output."
+  },
+  {
+    "original_name": "HRV: heart rate variability",
+    "acronym": "HRV",
+    "row_id": 14,
+    "cot": "We need JSON with original_name and acronym. Marker given: HRV: heart rate variability. Acronym likely HRV already. So output."
+  },
+  {
+    "original_name": "BSL23: Abbreviated Borderline Symptom List",
+    "acronym": "BSL‑23",
+    "row_id": 14,
+    "cot": "We need acronym for BS L23? The marker given: \"BSL23: Abbreviated Borderline Symptom List\". Standard acronym likely \"BSL-23\" already. But maybe \"BSL-23\" is the abbreviation. So output JSON."
+  },
+  {
+    "original_name": "SA: Startle Amplitude",
+    "acronym": "SA",
+    "row_id": 14,
+    "cot": "We need acronym for Startle Amplitude. In document they use \"startle amplitude\" but abbreviation? They mention \"AMS\" maybe? Actually AMS stands for Affective Modulation of Startle. But marker SA: Startle Amplitude likely abbreviated as \"SA\". However they ask identify most commonly used and standardized acronym. In literature, startle amplitude often denoted as \"Startle Response\" or \"SR\". But specific marker could be \"SA\". I'd output that."
+  },
+  {
+    "original_name": "DERS: Difficulties in Emotion Regulation Scale",
+    "acronym": "DERS",
+    "row_id": 14,
+    "cot": "We need JSON with original_name and acronym. Original name given: DERS: Difficulties in Emotion Regulation Scale. The acronym likely DERS. So output."
+  },
+  {
+    "original_name": "ZAN-BPD: Zanarini Rating Scale for Borderline Personality Disorder",
+    "acronym": "ZAN‑BPD",
+    "row_id": 15,
+    "cot": "We need acronym for ZAN-BPD. Standard is ZAN-BPD already. But maybe abbreviation is ZAN-BPD. So output that."
+  },
+  {
+    "original_name": "Affective Lability Scale",
+    "acronym": "ALS",
+    "row_id": 15,
+    "cot": "We need acronym for Affective Lability Scale. Commonly ALS? But also \"Affective Lability Scale\" abbreviation is ALS. However sometimes \"ALS\" stands for Amyotrophic lateral sclerosis but here it's scale. So output JSON."
+  },
+  {
+    "original_name": "PSS: Perceived Stress Scale",
+    "acronym": "PSS",
+    "row_id": 15,
+    "cot": "We need JSON with original_name and acronym. Marker given: PSS: Perceived Stress Scale. Standard acronym is PSS. But maybe they want \"PSS\" already? They ask identify most commonly used and standardized acronym. So output: {\"original_name\":\"PSS: Perceived Stress Scale\",\"acronym\":\"PSS\"}"
+  },
+  {
+    "original_name": "DERS: Difficulties in Emotion Regulation Scale",
+    "acronym": "DERS",
+    "row_id": 15,
+    "cot": "We need JSON with original_name and acronym. Original name given: DERS: Difficulties in Emotion Regulation Scale. The acronym likely DERS. So output."
+  }
+]
