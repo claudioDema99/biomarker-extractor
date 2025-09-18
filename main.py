@@ -100,6 +100,9 @@ def main():
             databases_selected.pop(i)
         print(f"Verranno processati in ordine i seguenti database: {databases_selected}")
 
+    if not databases_selected:
+        databases_selected = databases
+        
     for database in databases_selected:
                 
         print(f"\nSelezionato database: {database}")
