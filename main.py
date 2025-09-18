@@ -68,25 +68,40 @@ def main():
     if len(sys.argv) > 1:
         arg = sys.argv[1].strip()
         if arg == "resume":
-            print("Inserisci il nome del database che si vuole analizzare:\n")
+            print("Inserisci il nome del database che si vuole analizzare:\n(se si vogliono analizzare più di un database, inserirli sulla stessa riga separati da spazio o virgola)")
             for database in databases:
                 print(f" - '{database.lower()}'")
-            database = input("\n ->  ")
-            databases_selected.append(database.lower().strip())
+            _database = input("\n ->  ")
+            if _database and all(c.isascii() or c.isspace() or c == ',' for c in _database):
+                # Sostituisce le virgole con spazi e poi divide
+                choice = [x.lower().strip() for x in _database.replace(',', ' ').split()]
+            databases_selected.extend(choice)
+        # raccolgo gli indici e non rimuovo subito per non causare problemi con gli indici nell'iterazione
+        indices_to_remove = []
+        for i, database in enumerate(databases_selected):
+            if database == "alzheimer":
+                databases_selected[i] = "Alzheimer"
+            elif database == "bipolar":
+                databases_selected[i] = "Bipolar"
+            elif database == "bpd":
+                databases_selected[i] = "BPD"
+            elif database == "depression":
+                databases_selected[i] = "Depression"
+            elif database == "schizophrenia":
+                databases_selected[i] = "Schizophrenia"
+            try:
+                if databases_selected[i] not in databases:
+                    raise ValueError(f"Error: {databases_selected[i]} non trovato all'interno della lista dei database disponibili: {databases}")
+            except Exception as e:
+                print(f"{e}\n-Non verrà dunque processato-")
+                indices_to_remove.append(i)
+        # Rimuovi dal fondo verso l'inizio
+        for i in reversed(indices_to_remove):
+            databases_selected.pop(i)
+        print(f"Verranno processati in ordine i seguenti database: {databases_selected}")
 
-    for _database in databases_selected:
-        
-        if _database == "alzheimer":
-            database = "Alzheimer"
-        elif _database == "bipolar":
-            database = "Bipolar"
-        elif _database == "bpd":
-            database = "BPD"
-        elif _database == "depression":
-            database = "Depression"
-        elif _database == "schizophrenia":
-            database = "Schizophrenia"
-        
+    for database in databases_selected:
+                
         print(f"\nSelezionato database: {database}")
 
         # verifica esistenza cartelle /results e /logs e se necessario le pulisce
@@ -184,17 +199,17 @@ mentre la lista di biomarkers non raggruppati si trovano in 'results/{database}/
     # Invece prima faccio a raggruppamenti "manuali" di tutti i dataset, poi faccio fare all'LLM l'ultima fase (identificazione delle varianti) di tutti i dataset che son giaà stati raggruppati
     if len(sys.argv) > 1:
         if arg == "resume":
-            for _database in databases_selected:
+            for database in databases_selected:
                 
-                if _database == "alzheimer":
+                if database == "alzheimer":
                     database = "Alzheimer"
-                elif _database == "bipolar":
+                elif database == "bipolar":
                     database = "Bipolar"
-                elif _database == "bpd":
+                elif database == "bpd":
                     database = "BPD"
-                elif _database == "depression":
+                elif database == "depression":
                     database = "Depression"
-                elif _database == "schizophrenia":
+                elif database == "schizophrenia":
                     database = "Schizophrenia"
 
                 if os.path.exists(f"./checkpoints/parsed_biomarkers_{database}.json") and os.path.exists(f"./checkpoints/acronyms_w_rows_{database}.json"):

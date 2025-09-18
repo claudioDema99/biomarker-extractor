@@ -639,8 +639,9 @@ def _get_user_correlations(possible_correlations, parsed_biomarkers):
         elif user_input == "yes":
             print(f"\nAll groups merged -> {correlation}\n")
             actual_correlations.append(correlation)
-        elif user_input and all(c.isdigit() or c.isspace() for c in user_input):
-            numbers = [int(x) for x in user_input.split()]
+        elif user_input and all(c.isdigit() or c.isspace() or c == ',' for c in user_input):
+            # Sostituisce le virgole con spazi e poi divide
+            numbers = [int(x) for x in user_input.replace(',', ' ').split()]
             print(f"\nSelected group indices merged -> {numbers}\n")
             actual_correlations.append(numbers)
         else:
