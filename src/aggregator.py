@@ -80,7 +80,7 @@ def merge_groups(parsed_biomarkers, actual_correlations):
     # Ordina gli indici da eliminare in ordine decrescente
     # così eliminiamo prima quelli con indici più alti
     indices_to_remove = []
-    
+
     for correlation_group in actual_correlations:
         if len(correlation_group) <= 1:
             continue  # Skip se c'è solo un elemento o nessuno
@@ -88,17 +88,30 @@ def merge_groups(parsed_biomarkers, actual_correlations):
         # Il primo indice sarà quello che manteniamo (target)
         target_idx = correlation_group[0]
         
+        # Verifica che target_idx sia valido
+        if target_idx >= len(result):
+            print(f"ERRORE: target_idx {target_idx} >= len(result) {len(result)}")
+            continue
+            
         # Unisci tutte le occurrences nel dizionario target
         for idx in correlation_group[1:]:
+            # Verifica che idx sia valido
+            if idx >= len(result):
+                print(f"ERRORE: idx {idx} >= len(result) {len(result)}")
+                continue
+                
             result[target_idx]["occurrences"].extend(result[idx]["occurrences"])
             indices_to_remove.append(idx)
-    
+
     # Rimuovi i duplicati e ordina in ordine decrescente
     indices_to_remove = sorted(set(indices_to_remove), reverse=True)
-    
+
     # Elimina gli elementi partendo dagli indici più alti
     for idx in indices_to_remove:
-        result.pop(idx)
+        if idx < len(result):  # Verifica che l'indice sia ancora valido
+            result.pop(idx)
+        else:
+            print(f"ERRORE: Tentativo di rimuovere indice {idx} da lista di lunghezza {len(result)}")
     
     return result
 
@@ -314,11 +327,29 @@ def reorganize_biomarkers(biomarkers=None, acronyms_w_rows=None):
                     row_ids_for_variant.extend(matching_rows)
             
             # Passaggio 4: Tengo solamente i valori unici anche in questa lista
-            unique_row_ids = list(set(row_ids_for_variant))
+            unique_row_ids = sorted(list(set(row_ids_for_variant)))
             new_rows[variant_name] = unique_row_ids
                     
         # Aggiorno la struttura di questo biomarker
         biomarker['rows'] = new_rows
+        
+        # Ordina le coppie (key, percentage) per percentuale decrescente
+        sorted_variants = sorted(
+            biomarker['variant_percentages'].items(),
+            key=lambda x: parse_percentage(x[1]),
+            reverse=True
+        )
+        
+        # Ricostruisci i dizionari ordinati
+        biomarker['variant_percentages'] = dict(sorted_variants)
+        
+        # Riordina rows con lo stesso ordine delle chiavi
+        ordered_rows = {}
+        for variant_name, _ in sorted_variants:
+            if variant_name in biomarker['rows']:
+                ordered_rows[variant_name] = biomarker['rows'][variant_name]
+        
+        biomarker['rows'] = ordered_rows
     
     return biomarkers
 

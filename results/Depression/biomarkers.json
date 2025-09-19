@@ -1,0 +1,6678 @@
+[
+  {
+    "canonical_biomarker": "HDRS",
+    "occurrences": [
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS",
+      "HDRS-17",
+      "HDRS-17",
+      "HDRS-17",
+      "HDRS-24",
+      "HDRS-24",
+      "HDRS50",
+      "HDRS‑17",
+      "HDRS‑17",
+      "HDR",
+      "HDR",
+      "HDR",
+      "ΔHDRS",
+      "ΔHDRS",
+      "ΔHDRS",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D",
+      "HAM-D 6",
+      "HAM-D 6",
+      "HAM-D 6",
+      "HAM-D17",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAM-D6",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-17",
+      "HAMD-21",
+      "HAMD-24",
+      "HAMD-24",
+      "HAMD-28",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D",
+      "HAM‑D17",
+      "HAM‑D6",
+      "HAM‑D 6",
+      "HAM‑D 6",
+      "HAMD‑17",
+      "HAMD‑17",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM‑A",
+      "HAM-D-A",
+      "HAM-D-A",
+      "HAMD-17 A",
+      "HAMD‑R",
+      "HAMD‑R",
+      "ΔHAM‑D",
+      "ΔHAM‑D",
+      "ΔHAM‑D"
+    ],
+    "variants": {
+      "HDRS": [
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS",
+        "HDRS"
+      ],
+      "HDRS-17": [
+        "HDRS-17",
+        "HDRS-17",
+        "HDRS-17"
+      ],
+      "HDRS-24": [
+        "HDRS-24",
+        "HDRS-24"
+      ],
+      "HDRS50": [
+        "HDRS50"
+      ],
+      "HDRS‑17": [
+        "HDRS‑17",
+        "HDRS‑17"
+      ],
+      "HDR": [
+        "HDR",
+        "HDR",
+        "HDR"
+      ],
+      "ΔHDRS": [
+        "ΔHDRS",
+        "ΔHDRS",
+        "ΔHDRS"
+      ],
+      "HAM-D": [
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D",
+        "HAM-D"
+      ],
+      "HAM-D 6": [
+        "HAM-D 6",
+        "HAM-D 6",
+        "HAM-D 6"
+      ],
+      "HAM-D17": [
+        "HAM-D17"
+      ],
+      "HAM-D6": [
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6",
+        "HAM-D6"
+      ],
+      "HAMD": [
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD",
+        "HAMD"
+      ],
+      "HAMD-17": [
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17",
+        "HAMD-17"
+      ],
+      "HAMD-21": [
+        "HAMD-21"
+      ],
+      "HAMD-24": [
+        "HAMD-24",
+        "HAMD-24"
+      ],
+      "HAMD-28": [
+        "HAMD-28"
+      ],
+      "HAM‑D": [
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D",
+        "HAM‑D"
+      ],
+      "HAM‑D17": [
+        "HAM‑D17"
+      ],
+      "HAM‑D6": [
+        "HAM‑D6"
+      ],
+      "HAM‑D 6": [
+        "HAM‑D 6",
+        "HAM‑D 6"
+      ],
+      "HAMD‑17": [
+        "HAMD‑17",
+        "HAMD‑17"
+      ],
+      "HAM‑A": [
+        "HAM‑A",
+        "HAM‑A",
+        "HAM‑A",
+        "HAM‑A",
+        "HAM‑A",
+        "HAM‑A",
+        "HAM‑A"
+      ],
+      "HAM-D-A": [
+        "HAM-D-A",
+        "HAM-D-A"
+      ],
+      "HAMD-17 A": [
+        "HAMD-17 A"
+      ],
+      "HAMD‑R": [
+        "HAMD‑R",
+        "HAMD‑R"
+      ],
+      "ΔHAM‑D": [
+        "ΔHAM‑D",
+        "ΔHAM‑D",
+        "ΔHAM‑D"
+      ]
+    },
+    "total_count": "171 / 361",
+    "total_percentage": "47.37 %",
+    "variant_percentages": {
+      "HDRS": "25.15 %",
+      "HDRS-17": "1.75 %",
+      "HDRS-24": "1.17 %",
+      "HDRS50": "0.58 %",
+      "HDRS‑17": "1.17 %",
+      "HDR": "1.75 %",
+      "ΔHDRS": "1.75 %",
+      "HAM-D": "12.87 %",
+      "HAM-D 6": "1.75 %",
+      "HAM-D17": "0.58 %",
+      "HAM-D6": "4.68 %",
+      "HAMD": "8.19 %",
+      "HAMD-17": "12.28 %",
+      "HAMD-21": "0.58 %",
+      "HAMD-24": "1.17 %",
+      "HAMD-28": "0.58 %",
+      "HAM‑D": "11.70 %",
+      "HAM‑D17": "0.58 %",
+      "HAM‑D6": "0.58 %",
+      "HAM‑D 6": "1.17 %",
+      "HAMD‑17": "1.17 %",
+      "HAM‑A": "4.09 %",
+      "HAM-D-A": "1.17 %",
+      "HAMD-17 A": "0.58 %",
+      "HAMD‑R": "1.17 %",
+      "ΔHAM‑D": "1.75 %"
+    },
+    "rows": [
+      2,
+      5,
+      8,
+      9,
+      11,
+      14,
+      16,
+      17,
+      20,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      35,
+      37,
+      39,
+      41,
+      42,
+      43,
+      45,
+      49,
+      50,
+      52,
+      54,
+      56,
+      57,
+      59,
+      66,
+      72,
+      73,
+      76,
+      78,
+      80,
+      82,
+      84,
+      88,
+      98,
+      100,
+      102,
+      103,
+      104,
+      107,
+      108,
+      109,
+      110,
+      115,
+      121,
+      122,
+      127,
+      128,
+      129,
+      134,
+      135,
+      136,
+      141,
+      142,
+      145,
+      147,
+      153,
+      155,
+      156,
+      159,
+      162,
+      165,
+      166,
+      167,
+      169,
+      173,
+      179,
+      181,
+      182,
+      183,
+      187,
+      190,
+      196,
+      197,
+      205,
+      209,
+      212,
+      213,
+      220,
+      221,
+      222,
+      226,
+      228,
+      231,
+      232,
+      236,
+      237,
+      240,
+      241,
+      244,
+      245,
+      247,
+      248,
+      249,
+      252,
+      256,
+      259,
+      260,
+      264,
+      272,
+      290,
+      296,
+      313,
+      323,
+      328,
+      332,
+      339,
+      343,
+      351,
+      355,
+      358
+    ]
+  },
+  {
+    "canonical_biomarker": "MADRS",
+    "occurrences": [
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS",
+      "MADRS%",
+      "MADRS-10",
+      "MADRS‑S",
+      "MADRS‑S",
+      "MADRS‑S",
+      "MADRS‑S",
+      "MADRS‑S",
+      "MADRS-R",
+      "MADRS-R",
+      "MADRS-R",
+      "MADRS-R",
+      "MADRS-R",
+      "MADRS_R50",
+      "MADRS‑F3",
+      "MADRS‑F4",
+      "ΔMADRS",
+      "ΔMADRS",
+      "ΔMADRS",
+      "ΔMADRS",
+      "ΔMADRS",
+      "ΔMADRS",
+      "RR-MADRS",
+      "RR-MADRS",
+      "MADRS‑R",
+      "MADRS‑R",
+      "MADRS‑R",
+      "MADRS‑R"
+    ],
+    "variants": {
+      "MADRS": [
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS",
+        "MADRS"
+      ],
+      "MADRS%": [
+        "MADRS%"
+      ],
+      "MADRS-10": [
+        "MADRS-10"
+      ],
+      "MADRS‑S": [
+        "MADRS‑S",
+        "MADRS‑S",
+        "MADRS‑S",
+        "MADRS‑S",
+        "MADRS‑S"
+      ],
+      "MADRS-R": [
+        "MADRS-R",
+        "MADRS-R",
+        "MADRS-R",
+        "MADRS-R",
+        "MADRS-R",
+        "MADRS‑R",
+        "MADRS‑R",
+        "MADRS‑R",
+        "MADRS‑R"
+      ],
+      "MADRS_R50": [
+        "MADRS_R50"
+      ],
+      "MADRS‑F3": [
+        "MADRS‑F3"
+      ],
+      "MADRS‑F4": [
+        "MADRS‑F4"
+      ],
+      "ΔMADRS": [
+        "ΔMADRS",
+        "ΔMADRS",
+        "ΔMADRS",
+        "ΔMADRS",
+        "ΔMADRS",
+        "ΔMADRS"
+      ],
+      "RR-MADRS": [
+        "RR-MADRS",
+        "RR-MADRS"
+      ]
+    },
+    "total_count": "122 / 361",
+    "total_percentage": "33.80 %",
+    "variant_percentages": {
+      "MADRS": "77.87 %",
+      "MADRS%": "0.82 %",
+      "MADRS-10": "0.82 %",
+      "MADRS‑S": "4.10 %",
+      "MADRS-R": "7.38 %",
+      "MADRS_R50": "0.82 %",
+      "MADRS‑F3": "0.82 %",
+      "MADRS‑F4": "0.82 %",
+      "ΔMADRS": "4.92 %",
+      "RR-MADRS": "1.64 %"
+    },
+    "rows": [
+      15,
+      18,
+      20,
+      22,
+      34,
+      42,
+      46,
+      52,
+      70,
+      72,
+      79,
+      84,
+      86,
+      89,
+      91,
+      92,
+      94,
+      95,
+      101,
+      120,
+      121,
+      122,
+      123,
+      125,
+      143,
+      144,
+      147,
+      151,
+      156,
+      157,
+      158,
+      159,
+      165,
+      166,
+      171,
+      175,
+      178,
+      179,
+      185,
+      186,
+      187,
+      188,
+      200,
+      203,
+      206,
+      207,
+      209,
+      213,
+      214,
+      216,
+      220,
+      226,
+      237,
+      238,
+      239,
+      240,
+      241,
+      244,
+      246,
+      249,
+      252,
+      256,
+      259,
+      266,
+      267,
+      270,
+      271,
+      273,
+      281,
+      282,
+      283,
+      289,
+      291,
+      299,
+      304,
+      315,
+      319,
+      321,
+      328,
+      334,
+      339,
+      341,
+      343,
+      345,
+      346,
+      350,
+      355,
+      356,
+      358,
+      362
+    ]
+  },
+  {
+    "canonical_biomarker": "PHQ-2",
+    "occurrences": [
+      "PHQ-10",
+      "PHQ-2",
+      "PHQ-2",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-8",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ-9",
+      "PHQ‑8",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "PHQ‑9",
+      "ΔPHQ‑9",
+      "ΔPHQ‑9"
+    ],
+    "variants": {
+      "PHQ-10": [
+        "PHQ-10"
+      ],
+      "PHQ-2": [
+        "PHQ-2",
+        "PHQ-2"
+      ],
+      "PHQ-8": [
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ-8",
+        "PHQ‑8"
+      ],
+      "PHQ-9": [
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ-9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9",
+        "PHQ‑9"
+      ],
+      "ΔPHQ-9": [
+        "ΔPHQ-9"
+      ]
+    },
+    "total_count": "66 / 361",
+    "total_percentage": "18.28 %",
+    "variant_percentages": {
+      "PHQ-10": "1.52 %",
+      "PHQ-2": "3.03 %",
+      "PHQ-8": "12.12 %",
+      "PHQ-9": "80.30 %",
+      "ΔPHQ-9": "1.52 %"
+    },
+    "rows": [
+      29,
+      55,
+      56,
+      100,
+      113,
+      117,
+      132,
+      141,
+      163,
+      176,
+      184,
+      187,
+      193,
+      194,
+      195,
+      204,
+      206,
+      207,
+      208,
+      210,
+      211,
+      212,
+      215,
+      216,
+      223,
+      229,
+      235,
+      258,
+      261,
+      264,
+      269,
+      271,
+      275,
+      277,
+      278,
+      280,
+      287,
+      292,
+      298,
+      300,
+      302,
+      310,
+      311,
+      322,
+      324,
+      328,
+      335,
+      340,
+      345,
+      349,
+      354,
+      357,
+      365,
+      366
+    ]
+  },
+  {
+    "canonical_biomarker": "IDS‑C",
+    "occurrences": [
+      "IDS‑C",
+      "IDS‑C",
+      "IDS‑C",
+      "IDS‑C",
+      "IDS‑C30",
+      "IDS‑C30",
+      "QIDS-C",
+      "QIDS-C",
+      "QIDS-C",
+      "QIDS-C",
+      "QIDS-C16",
+      "QIDS-C16",
+      "QIDS-C16",
+      "QIDS-C16",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR",
+      "QIDS‑SR16",
+      "QIDS‑C16",
+      "QIDS‑C16",
+      "QIDS‑C16",
+      "QIDS",
+      "QIDS",
+      "QIDS",
+      "QIDS",
+      "QIDS",
+      "QIDS",
+      "QIDS‑SR‑16",
+      "QIDS‑SR‑16",
+      "QIDS‑SR‑16",
+      "QIDS‑SR‑16",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS-C",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS‑SR",
+      "IDS",
+      "IDS"
+    ],
+    "variants": {
+      "IDS‑C": [
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C",
+        "IDS‑C"
+      ],
+      "IDS‑C30": [
+        "IDS‑C30",
+        "IDS‑C30"
+      ],
+      "QIDS-C": [
+        "QIDS-C",
+        "QIDS-C",
+        "QIDS-C",
+        "QIDS-C"
+      ],
+      "QIDS-C16": [
+        "QIDS-C16",
+        "QIDS-C16",
+        "QIDS-C16",
+        "QIDS-C16",
+        "QIDS‑C16",
+        "QIDS‑C16",
+        "QIDS‑C16"
+      ],
+      "QIDS‑SR": [
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR",
+        "QIDS‑SR"
+      ],
+      "QIDS‑SR16": [
+        "QIDS‑SR16",
+        "QIDS‑SR‑16",
+        "QIDS‑SR‑16",
+        "QIDS‑SR‑16",
+        "QIDS‑SR‑16"
+      ],
+      "QIDS": [
+        "QIDS",
+        "QIDS",
+        "QIDS",
+        "QIDS",
+        "QIDS",
+        "QIDS"
+      ],
+      "IDS‑SR": [
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR",
+        "IDS‑SR"
+      ],
+      "IDS": [
+        "IDS",
+        "IDS"
+      ]
+    },
+    "total_count": "61 / 361",
+    "total_percentage": "16.90 %",
+    "variant_percentages": {
+      "IDS‑C": "13.11 %",
+      "IDS‑C30": "3.28 %",
+      "QIDS-C": "6.56 %",
+      "QIDS-C16": "11.48 %",
+      "QIDS‑SR": "18.03 %",
+      "QIDS‑SR16": "8.20 %",
+      "QIDS": "9.84 %",
+      "IDS‑SR": "19.67 %",
+      "IDS": "3.28 %"
+    },
+    "rows": [
+      6,
+      12,
+      34,
+      44,
+      50,
+      58,
+      72,
+      78,
+      97,
+      111,
+      112,
+      118,
+      128,
+      139,
+      141,
+      157,
+      161,
+      172,
+      177,
+      183,
+      187,
+      189,
+      214,
+      218,
+      224,
+      250,
+      251,
+      253,
+      263,
+      290,
+      293,
+      294,
+      309,
+      327,
+      331,
+      346,
+      351,
+      354,
+      355
+    ]
+  },
+  {
+    "canonical_biomarker": "CGI‑S",
+    "occurrences": [
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑S",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I",
+      "CGI‑I"
+    ],
+    "variants": {
+      "CGI‑S": [
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S",
+        "CGI‑S"
+      ],
+      "CGI‑I": [
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I",
+        "CGI‑I"
+      ]
+    },
+    "total_count": "61 / 361",
+    "total_percentage": "16.90 %",
+    "variant_percentages": {
+      "CGI‑S": "57.38 %",
+      "CGI‑I": "42.62 %"
+    },
+    "rows": [
+      33,
+      34,
+      43,
+      44,
+      45,
+      50,
+      73,
+      89,
+      101,
+      111,
+      112,
+      115,
+      118,
+      120,
+      121,
+      122,
+      123,
+      128,
+      144,
+      156,
+      157,
+      165,
+      166,
+      170,
+      178,
+      196,
+      206,
+      207,
+      216,
+      226,
+      238,
+      240,
+      241,
+      244,
+      249,
+      252,
+      259,
+      328,
+      333,
+      339,
+      341,
+      350,
+      355,
+      362
+    ]
+  },
+  {
+    "canonical_biomarker": "SSI",
+    "occurrences": [
+      "SSI",
+      "SSI",
+      "SSI",
+      "SSI",
+      "SSI",
+      "SSI",
+      "SSI",
+      "BSSI",
+      "BSSI",
+      "BSSI",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "C-SSRS",
+      "CSSRS",
+      "CSSRS",
+      "CSSRS",
+      "SI",
+      "SI",
+      "SI",
+      "SI",
+      "SI",
+      "SI",
+      "SI",
+      "SI",
+      "SIS",
+      "SIS",
+      "SIS",
+      "SIS"
+    ],
+    "variants": {
+      "SSI": [
+        "SSI",
+        "SSI",
+        "SSI",
+        "SSI",
+        "SSI",
+        "SSI",
+        "SSI"
+      ],
+      "BSSI": [
+        "BSSI",
+        "BSSI",
+        "BSSI"
+      ],
+      "C-SSRS": [
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS",
+        "C-SSRS"
+      ],
+      "CSSRS": [
+        "CSSRS",
+        "CSSRS",
+        "CSSRS"
+      ],
+      "SI": [
+        "SI",
+        "SI",
+        "SI",
+        "SI",
+        "SI",
+        "SI",
+        "SI",
+        "SI"
+      ],
+      "SIS": [
+        "SIS",
+        "SIS",
+        "SIS",
+        "SIS"
+      ]
+    },
+    "total_count": "45 / 361",
+    "total_percentage": "12.47 %",
+    "variant_percentages": {
+      "SSI": "15.56 %",
+      "BSSI": "6.67 %",
+      "C-SSRS": "44.44 %",
+      "CSSRS": "6.67 %",
+      "SI": "17.78 %",
+      "SIS": "8.89 %"
+    },
+    "rows": [
+      47,
+      48,
+      95,
+      101,
+      111,
+      112,
+      118,
+      121,
+      122,
+      128,
+      140,
+      145,
+      149,
+      157,
+      158,
+      165,
+      166,
+      185,
+      188,
+      195,
+      196,
+      225,
+      249,
+      252,
+      255,
+      256,
+      264,
+      265,
+      281,
+      311,
+      332,
+      340,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "BDI",
+    "occurrences": [
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI‑II",
+      "BDI-II",
+      "BDI-II",
+      "BDI-II",
+      "BDI-II"
+    ],
+    "variants": {
+      "BDI": [
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI",
+        "BDI"
+      ],
+      "BDI‑II": [
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI‑II",
+        "BDI-II",
+        "BDI-II",
+        "BDI-II",
+        "BDI-II"
+      ]
+    },
+    "total_count": "35 / 361",
+    "total_percentage": "9.70 %",
+    "variant_percentages": {
+      "BDI": "31.43 %",
+      "BDI‑II": "68.57 %"
+    },
+    "rows": [
+      3,
+      7,
+      10,
+      40,
+      53,
+      55,
+      76,
+      81,
+      87,
+      89,
+      93,
+      106,
+      115,
+      126,
+      127,
+      137,
+      140,
+      168,
+      169,
+      177,
+      179,
+      198,
+      213,
+      217,
+      225,
+      265,
+      272,
+      276,
+      283,
+      295,
+      330,
+      342,
+      352,
+      364
+    ]
+  },
+  {
+    "canonical_biomarker": "PSQI",
+    "occurrences": [
+      "PSQI",
+      "PSQI",
+      "PSQI",
+      "PSQI",
+      "PSQI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "ISI",
+      "DESS",
+      "DESS",
+      "DLMO",
+      "DLMO",
+      "MES",
+      "MES",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM",
+      "REM10",
+      "Rem"
+    ],
+    "variants": {
+      "PSQI": [
+        "PSQI",
+        "PSQI",
+        "PSQI",
+        "PSQI",
+        "PSQI"
+      ],
+      "ISI": [
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI",
+        "ISI"
+      ],
+      "DESS": [
+        "DESS",
+        "DESS"
+      ],
+      "DLMO": [
+        "DLMO",
+        "DLMO"
+      ],
+      "MES": [
+        "MES",
+        "MES"
+      ],
+      "REM": [
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "REM",
+        "Rem"
+      ],
+      "REM10": [
+        "REM10"
+      ]
+    },
+    "total_count": "33 / 361",
+    "total_percentage": "9.14 %",
+    "variant_percentages": {
+      "PSQI": "15.15 %",
+      "ISI": "33.33 %",
+      "DESS": "6.06 %",
+      "DLMO": "6.06 %",
+      "MES": "6.06 %",
+      "REM": "30.30 %",
+      "REM10": "3.03 %"
+    },
+    "rows": [
+      25,
+      41,
+      43,
+      45,
+      49,
+      89,
+      112,
+      118,
+      122,
+      127,
+      128,
+      129,
+      138,
+      141,
+      145,
+      170,
+      195,
+      200,
+      203,
+      204,
+      234,
+      251,
+      343,
+      351,
+      354
+    ]
+  },
+  {
+    "canonical_biomarker": "RR",
+    "occurrences": [
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR",
+      "RR"
+    ],
+    "variants": {
+      "RR": [
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR",
+        "RR"
+      ]
+    },
+    "total_count": "32 / 361",
+    "total_percentage": "8.86 %",
+    "variant_percentages": {
+      "RR": "100.00 %"
+    },
+    "rows": [
+      12,
+      16,
+      37,
+      41,
+      89,
+      94,
+      118,
+      121,
+      122,
+      156,
+      196,
+      200,
+      205,
+      231,
+      249,
+      252,
+      269,
+      270,
+      271,
+      286,
+      293,
+      307,
+      320,
+      335,
+      353
+    ]
+  },
+  {
+    "canonical_biomarker": "AE",
+    "occurrences": [
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "AE",
+      "SAE",
+      "SAE",
+      "SAE",
+      "SAE",
+      "SAE",
+      "SAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "TEAE",
+      "SAFTEE",
+      "SAFTEE"
+    ],
+    "variants": {
+      "AE": [
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE",
+        "AE"
+      ],
+      "SAE": [
+        "SAE",
+        "SAE",
+        "SAE",
+        "SAE",
+        "SAE",
+        "SAE"
+      ],
+      "TEAE": [
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE",
+        "TEAE"
+      ],
+      "SAFTEE": [
+        "SAFTEE",
+        "SAFTEE"
+      ]
+    },
+    "total_count": "30 / 361",
+    "total_percentage": "8.31 %",
+    "variant_percentages": {
+      "AE": "43.33 %",
+      "SAE": "20.00 %",
+      "TEAE": "30.00 %",
+      "SAFTEE": "6.67 %"
+    },
+    "rows": [
+      6,
+      9,
+      73,
+      118,
+      120,
+      140,
+      196,
+      202,
+      216,
+      221,
+      226,
+      240,
+      259,
+      285,
+      293,
+      294,
+      299,
+      316,
+      320,
+      344,
+      348,
+      355
+    ]
+  },
+  {
+    "canonical_biomarker": "GAD-7",
+    "occurrences": [
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD-7",
+      "GAD‑7",
+      "GAD‑7",
+      "GAD‑7",
+      "GAD‑7",
+      "GAD‑7",
+      "GAD‑7",
+      "GAD-7 RR",
+      "GAD-7RR"
+    ],
+    "variants": {
+      "GAD-7": [
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD-7",
+        "GAD‑7",
+        "GAD‑7",
+        "GAD‑7",
+        "GAD‑7",
+        "GAD‑7",
+        "GAD‑7"
+      ],
+      "GAD-7 RR": [
+        "GAD-7 RR",
+        "GAD-7RR"
+      ]
+    },
+    "total_count": "26 / 361",
+    "total_percentage": "7.20 %",
+    "variant_percentages": {
+      "GAD-7": "92.31 %",
+      "GAD-7 RR": "7.69 %"
+    },
+    "rows": [
+      172,
+      206,
+      207,
+      208,
+      210,
+      215,
+      216,
+      226,
+      238,
+      240,
+      241,
+      271,
+      275,
+      276,
+      278,
+      303,
+      310,
+      313,
+      320,
+      333,
+      335,
+      355,
+      360
+    ]
+  },
+  {
+    "canonical_biomarker": "IL-6",
+    "occurrences": [
+      "IL-10",
+      "IL-6",
+      "IL-6",
+      "IL-6",
+      "IL-6",
+      "IL-6",
+      "IL-6",
+      "sIL-6R",
+      "sIL-6R",
+      "IL-1β",
+      "IL-1β",
+      "IL-1Ra",
+      "IL-1Ra",
+      "hs-CRP",
+      "hs-CRP",
+      "hs-CRP",
+      "CRP",
+      "CRP",
+      "CRP",
+      "CRP",
+      "CRP",
+      "TNF‑α",
+      "TNF‑α",
+      "MCP-1",
+      "MCP-1"
+    ],
+    "variants": {
+      "IL-6": [
+        "IL-6",
+        "IL-6",
+        "IL-6",
+        "IL-6",
+        "IL-6",
+        "IL-6"
+      ],
+      "IL-10": [
+        "IL-10"
+      ],
+      "sIL-6R": [
+        "sIL-6R",
+        "sIL-6R"
+      ],
+      "IL-1β": [
+        "IL-1β",
+        "IL-1β"
+      ],
+      "IL-1Ra": [
+        "IL-1Ra",
+        "IL-1Ra"
+      ],
+      "hs-CRP": [
+        "hs-CRP",
+        "hs-CRP",
+        "hs-CRP"
+      ],
+      "CRP": [
+        "CRP",
+        "CRP",
+        "CRP",
+        "CRP",
+        "CRP"
+      ],
+      "TNF‑α": [
+        "TNF‑α",
+        "TNF‑α"
+      ],
+      "MCP-1": [
+        "MCP-1",
+        "MCP-1"
+      ]
+    },
+    "total_count": "25 / 361",
+    "total_percentage": "6.93 %",
+    "variant_percentages": {
+      "IL-6": "24.00 %",
+      "IL-10": "4.00 %",
+      "sIL-6R": "8.00 %",
+      "IL-1β": "8.00 %",
+      "IL-1Ra": "8.00 %",
+      "hs-CRP": "12.00 %",
+      "CRP": "20.00 %",
+      "TNF‑α": "8.00 %",
+      "MCP-1": "8.00 %"
+    },
+    "rows": [
+      39,
+      50,
+      218,
+      253,
+      254,
+      309
+    ]
+  },
+  {
+    "canonical_biomarker": "ALT",
+    "occurrences": [
+      "ALT",
+      "ALT",
+      "ALT",
+      "ALT",
+      "ALT",
+      "ALT",
+      "AST",
+      "AST",
+      "AST",
+      "AST",
+      "AST",
+      "AST",
+      "TBIL",
+      "TBIL",
+      "TBIL",
+      "ALP",
+      "ALP",
+      "ALB",
+      "ALB",
+      "GGT",
+      "GGT",
+      "GGT",
+      "GGT"
+    ],
+    "variants": {
+      "ALT": [
+        "ALT",
+        "ALT",
+        "ALT",
+        "ALT",
+        "ALT",
+        "ALT"
+      ],
+      "AST": [
+        "AST",
+        "AST",
+        "AST",
+        "AST",
+        "AST",
+        "AST"
+      ],
+      "TBIL": [
+        "TBIL",
+        "TBIL",
+        "TBIL"
+      ],
+      "ALP": [
+        "ALP",
+        "ALP"
+      ],
+      "ALB": [
+        "ALB",
+        "ALB"
+      ],
+      "GGT": [
+        "GGT",
+        "GGT",
+        "GGT",
+        "GGT"
+      ]
+    },
+    "total_count": "23 / 361",
+    "total_percentage": "6.37 %",
+    "variant_percentages": {
+      "ALT": "26.09 %",
+      "AST": "26.09 %",
+      "TBIL": "13.04 %",
+      "ALP": "8.70 %",
+      "ALB": "8.70 %",
+      "GGT": "17.39 %"
+    },
+    "rows": [
+      101,
+      118,
+      166,
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "SDS",
+    "occurrences": [
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS",
+      "SDS"
+    ],
+    "variants": {
+      "SDS": [
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS",
+        "SDS"
+      ]
+    },
+    "total_count": "22 / 361",
+    "total_percentage": "6.09 %",
+    "variant_percentages": {
+      "SDS": "100.00 %"
+    },
+    "rows": [
+      42,
+      51,
+      78,
+      101,
+      120,
+      121,
+      122,
+      123,
+      144,
+      191,
+      206,
+      207,
+      216,
+      238,
+      280,
+      282,
+      362
+    ]
+  },
+  {
+    "canonical_biomarker": "SBP",
+    "occurrences": [
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "SBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "DBP",
+      "BP",
+      "BP",
+      "BP"
+    ],
+    "variants": {
+      "SBP": [
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP",
+        "SBP"
+      ],
+      "DBP": [
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP",
+        "DBP"
+      ],
+      "BP": [
+        "BP",
+        "BP",
+        "BP"
+      ]
+    },
+    "total_count": "22 / 361",
+    "total_percentage": "6.09 %",
+    "variant_percentages": {
+      "SBP": "45.45 %",
+      "DBP": "40.91 %",
+      "BP": "13.64 %"
+    },
+    "rows": [
+      51,
+      110,
+      118,
+      187,
+      196,
+      249,
+      252,
+      259,
+      287
+    ]
+  },
+  {
+    "canonical_biomarker": "EPDS",
+    "occurrences": [
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "EPDS",
+      "PPDS",
+      "PPDS"
+    ],
+    "variants": {
+      "EPDS": [
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "EPDS",
+        "PPDS",
+        "PPDS"
+      ]
+    },
+    "total_count": "22 / 361",
+    "total_percentage": "6.09 %",
+    "variant_percentages": {
+      "EPDS": "100.00 %"
+    },
+    "rows": [
+      92,
+      102,
+      148,
+      154,
+      190,
+      219,
+      233,
+      234,
+      243,
+      303,
+      308,
+      313,
+      314,
+      320,
+      328,
+      333,
+      360,
+      361
+    ]
+  },
+  {
+    "canonical_biomarker": "PSSUQ",
+    "occurrences": [
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ",
+      "PSSUQ‑IQ",
+      "PSSUQ‑IQ",
+      "PSSUQ‑IQ",
+      "PSSUQ‑IQ",
+      "PSSUQ‑IQ",
+      "PSSUQ‑IQ"
+    ],
+    "variants": {
+      "PSSUQ": [
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ",
+        "PSSUQ"
+      ],
+      "PSSUQ‑IQ": [
+        "PSSUQ‑IQ",
+        "PSSUQ‑IQ",
+        "PSSUQ‑IQ",
+        "PSSUQ‑IQ",
+        "PSSUQ‑IQ",
+        "PSSUQ‑IQ"
+      ]
+    },
+    "total_count": "18 / 361",
+    "total_percentage": "4.99 %",
+    "variant_percentages": {
+      "PSSUQ": "66.67 %",
+      "PSSUQ‑IQ": "33.33 %"
+    },
+    "rows": [
+      306,
+      307,
+      311,
+      336,
+      338,
+      340
+    ]
+  },
+  {
+    "canonical_biomarker": "Q-LES-Q-SF",
+    "occurrences": [
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q-SF",
+      "Q-LES-Q",
+      "Q-LES-Q",
+      "Q-LES-Q",
+      "Q-LES-Q",
+      "Q‑LES‑Q‑SF",
+      "Q‑LES‑Q‑SF",
+      "Q‑LES‑Q‑SF"
+    ],
+    "variants": {
+      "Q-LES-Q-SF": [
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q-LES-Q-SF",
+        "Q‑LES‑Q‑SF",
+        "Q‑LES‑Q‑SF",
+        "Q‑LES‑Q‑SF"
+      ],
+      "Q-LES-Q": [
+        "Q-LES-Q",
+        "Q-LES-Q",
+        "Q-LES-Q",
+        "Q-LES-Q"
+      ]
+    },
+    "total_count": "16 / 361",
+    "total_percentage": "4.43 %",
+    "variant_percentages": {
+      "Q-LES-Q-SF": "75.00 %",
+      "Q-LES-Q": "25.00 %"
+    },
+    "rows": [
+      66,
+      72,
+      87,
+      94,
+      120,
+      121,
+      122,
+      123,
+      172,
+      224,
+      283
+    ]
+  },
+  {
+    "canonical_biomarker": "EQ‑5D",
+    "occurrences": [
+      "EQ‑5D",
+      "EQ‑5D",
+      "EQ‑5D",
+      "EQ‑5D",
+      "EQ‑5D",
+      "EQ‑VAS",
+      "EQ‑VAS",
+      "EQ‑VAS",
+      "EQ‑VAS",
+      "EQ‑VAS",
+      "EQ‑VAS",
+      "EQ-5D",
+      "EQ-5D",
+      "EQ-5D",
+      "EQ-5D"
+    ],
+    "variants": {
+      "EQ‑5D": [
+        "EQ‑5D",
+        "EQ‑5D",
+        "EQ‑5D",
+        "EQ‑5D",
+        "EQ‑5D",
+        "EQ-5D",
+        "EQ-5D",
+        "EQ-5D",
+        "EQ-5D"
+      ],
+      "EQ‑VAS": [
+        "EQ‑VAS",
+        "EQ‑VAS",
+        "EQ‑VAS",
+        "EQ‑VAS",
+        "EQ‑VAS",
+        "EQ‑VAS"
+      ]
+    },
+    "total_count": "15 / 361",
+    "total_percentage": "4.16 %",
+    "variant_percentages": {
+      "EQ‑5D": "60.00 %",
+      "EQ‑VAS": "40.00 %"
+    },
+    "rows": [
+      43,
+      45,
+      89,
+      90,
+      120,
+      121,
+      122,
+      123,
+      206,
+      207,
+      216
+    ]
+  },
+  {
+    "canonical_biomarker": "HCT",
+    "occurrences": [
+      "HCT",
+      "HCT",
+      "HCT",
+      "HCT",
+      "PLT",
+      "PLT",
+      "PLT",
+      "PLT",
+      "ANC",
+      "ANC",
+      "ANC",
+      "RBC",
+      "RBC"
+    ],
+    "variants": {
+      "HCT": [
+        "HCT",
+        "HCT",
+        "HCT",
+        "HCT",
+        "PLT",
+        "PLT",
+        "PLT",
+        "PLT",
+        "ANC",
+        "ANC",
+        "ANC",
+        "RBC",
+        "RBC"
+      ]
+    },
+    "total_count": "13 / 361",
+    "total_percentage": "3.60 %",
+    "variant_percentages": {
+      "HCT": "100.00 %"
+    },
+    "rows": [
+      118,
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "CDRS‑R",
+    "occurrences": [
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R",
+      "CDRS‑R"
+    ],
+    "variants": {
+      "CDRS‑R": [
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R",
+        "CDRS‑R"
+      ]
+    },
+    "total_count": "11 / 361",
+    "total_percentage": "3.05 %",
+    "variant_percentages": {
+      "CDRS‑R": "100.00 %"
+    },
+    "rows": [
+      35,
+      65,
+      71,
+      104,
+      152,
+      168,
+      225,
+      296,
+      305,
+      332,
+      363
+    ]
+  },
+  {
+    "canonical_biomarker": "AUC",
+    "occurrences": [
+      "AUC",
+      "AUC",
+      "AUC0-60",
+      "AUC_24",
+      "t½",
+      "t½",
+      "t½",
+      "Cmax",
+      "Cmax",
+      "C_avg",
+      "C_avg"
+    ],
+    "variants": {
+      "AUC": [
+        "AUC",
+        "AUC",
+        "AUC0-60",
+        "AUC_24"
+      ],
+      "t½": [
+        "t½",
+        "t½",
+        "t½"
+      ],
+      "Cmax": [
+        "Cmax",
+        "Cmax"
+      ],
+      "C_avg": [
+        "C_avg",
+        "C_avg"
+      ]
+    },
+    "total_count": "11 / 361",
+    "total_percentage": "3.05 %",
+    "variant_percentages": {
+      "AUC": "36.36 %",
+      "t½": "27.27 %",
+      "Cmax": "18.18 %",
+      "C_avg": "18.18 %"
+    },
+    "rows": [
+      73,
+      124,
+      174,
+      196,
+      285,
+      356
+    ]
+  },
+  {
+    "canonical_biomarker": "CR",
+    "occurrences": [
+      "CR",
+      "CR",
+      "CR",
+      "CR",
+      "CR",
+      "CR",
+      "CR",
+      "CR",
+      "Cr",
+      "Cr"
+    ],
+    "variants": {
+      "CR": [
+        "CR",
+        "CR",
+        "CR",
+        "CR",
+        "CR",
+        "CR",
+        "CR",
+        "CR",
+        "Cr",
+        "Cr"
+      ]
+    },
+    "total_count": "10 / 361",
+    "total_percentage": "2.77 %",
+    "variant_percentages": {
+      "CR": "100.00 %"
+    },
+    "rows": [
+      41,
+      196,
+      205,
+      206,
+      227,
+      231,
+      249,
+      252,
+      332,
+      344
+    ]
+  },
+  {
+    "canonical_biomarker": "QTc",
+    "occurrences": [
+      "QTc",
+      "QTc",
+      "QTcF",
+      "QTcF",
+      "QT",
+      "QT",
+      "QT",
+      "QRSd",
+      "QRSd",
+      "QRSd"
+    ],
+    "variants": {
+      "QTc": [
+        "QTc",
+        "QTc"
+      ],
+      "QTcF": [
+        "QTcF",
+        "QTcF"
+      ],
+      "QT": [
+        "QT",
+        "QT",
+        "QT"
+      ],
+      "QRSd": [
+        "QRSd",
+        "QRSd",
+        "QRSd"
+      ]
+    },
+    "total_count": "10 / 361",
+    "total_percentage": "2.77 %",
+    "variant_percentages": {
+      "QTc": "20.00 %",
+      "QTcF": "20.00 %",
+      "QT": "30.00 %",
+      "QRSd": "30.00 %"
+    },
+    "rows": [
+      101,
+      196,
+      249,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "HR",
+    "occurrences": [
+      "HR",
+      "HR",
+      "HR",
+      "HR",
+      "HR",
+      "HR",
+      "HR",
+      "HR",
+      "HRV",
+      "HRV"
+    ],
+    "variants": {
+      "HR": [
+        "HR",
+        "HR",
+        "HR",
+        "HR",
+        "HR",
+        "HR",
+        "HR",
+        "HR"
+      ],
+      "HRV": [
+        "HRV",
+        "HRV"
+      ]
+    },
+    "total_count": "10 / 361",
+    "total_percentage": "2.77 %",
+    "variant_percentages": {
+      "HR": "80.00 %",
+      "HRV": "20.00 %"
+    },
+    "rows": [
+      110,
+      118,
+      136,
+      196,
+      249,
+      252,
+      256,
+      259,
+      283
+    ]
+  },
+  {
+    "canonical_biomarker": "YMRS",
+    "occurrences": [
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS",
+      "YMRS"
+    ],
+    "variants": {
+      "YMRS": [
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS",
+        "YMRS"
+      ]
+    },
+    "total_count": "10 / 361",
+    "total_percentage": "2.77 %",
+    "variant_percentages": {
+      "YMRS": "100.00 %"
+    },
+    "rows": [
+      111,
+      112,
+      118,
+      128,
+      225,
+      281,
+      283,
+      304,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "PROMIS-D",
+    "occurrences": [
+      "PROMIS-D",
+      "PROMIS-D",
+      "PROMIS-D",
+      "PROMIS-A",
+      "PROMIS-A",
+      "PROMIS-A",
+      "PROMIS-PA",
+      "PROMIS-PA",
+      "PROMIS SD",
+      "PROMIS SD"
+    ],
+    "variants": {
+      "PROMIS-D": [
+        "PROMIS-D",
+        "PROMIS-D",
+        "PROMIS-D"
+      ],
+      "PROMIS-A": [
+        "PROMIS-A",
+        "PROMIS-A",
+        "PROMIS-A"
+      ],
+      "PROMIS-PA": [
+        "PROMIS-PA",
+        "PROMIS-PA"
+      ],
+      "PROMIS SD": [
+        "PROMIS SD",
+        "PROMIS SD"
+      ]
+    },
+    "total_count": "10 / 361",
+    "total_percentage": "2.77 %",
+    "variant_percentages": {
+      "PROMIS-D": "30.00 %",
+      "PROMIS-A": "30.00 %",
+      "PROMIS-PA": "20.00 %",
+      "PROMIS SD": "20.00 %"
+    },
+    "rows": [
+      264,
+      344
+    ]
+  },
+  {
+    "canonical_biomarker": "CSQ",
+    "occurrences": [
+      "CSQ",
+      "CSQ",
+      "CSQ",
+      "CSQ-8",
+      "CSQ-8",
+      "CSQ-8",
+      "CSQ‑3",
+      "CSQ‑8",
+      "CSQ‑8"
+    ],
+    "variants": {
+      "CSQ": [
+        "CSQ",
+        "CSQ",
+        "CSQ"
+      ],
+      "CSQ-8": [
+        "CSQ-8",
+        "CSQ-8",
+        "CSQ-8",
+        "CSQ-8",
+        "CSQ-8",
+        "CSQ-8"
+      ],
+      "CSQ‑3": [
+        "CSQ‑3"
+      ]
+    },
+    "total_count": "9 / 361",
+    "total_percentage": "2.49 %",
+    "variant_percentages": {
+      "CSQ": "33.33 %",
+      "CSQ-8": "66.67 %",
+      "CSQ‑3": "11.11 %"
+    },
+    "rows": [
+      176,
+      266,
+      267,
+      293,
+      294,
+      323,
+      336,
+      353,
+      360
+    ]
+  },
+  {
+    "canonical_biomarker": "GAF",
+    "occurrences": [
+      "GAF",
+      "GAF",
+      "GAF",
+      "GAF",
+      "GAF",
+      "GAF",
+      "GAF",
+      "GAF"
+    ],
+    "variants": {
+      "GAF": [
+        "GAF",
+        "GAF",
+        "GAF",
+        "GAF",
+        "GAF",
+        "GAF",
+        "GAF",
+        "GAF"
+      ]
+    },
+    "total_count": "8 / 361",
+    "total_percentage": "2.22 %",
+    "variant_percentages": {
+      "GAF": "100.00 %"
+    },
+    "rows": [
+      72,
+      111,
+      112,
+      118,
+      128,
+      190,
+      264
+    ]
+  },
+  {
+    "canonical_biomarker": "DSS",
+    "occurrences": [
+      "DSS",
+      "DSS",
+      "CADSS",
+      "CADSS",
+      "CADSS",
+      "CADSS",
+      "CADSS",
+      "CADSS"
+    ],
+    "variants": {
+      "DSS": [
+        "DSS",
+        "DSS"
+      ],
+      "CADSS": [
+        "CADSS",
+        "CADSS",
+        "CADSS",
+        "CADSS",
+        "CADSS",
+        "CADSS"
+      ]
+    },
+    "total_count": "8 / 361",
+    "total_percentage": "2.22 %",
+    "variant_percentages": {
+      "DSS": "25.00 %",
+      "CADSS": "75.00 %"
+    },
+    "rows": [
+      85,
+      105,
+      166,
+      214,
+      216,
+      258,
+      281,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "MCS",
+    "occurrences": [
+      "MCS",
+      "MCS",
+      "SF-12 MCS",
+      "SF-12 MCS",
+      "SF-12 MCS",
+      "SF-36 MCS",
+      "SF-8 MCS"
+    ],
+    "variants": {
+      "MCS": [
+        "MCS",
+        "MCS"
+      ],
+      "SF-12 MCS": [
+        "SF-12 MCS",
+        "SF-12 MCS",
+        "SF-12 MCS"
+      ],
+      "SF-36 MCS": [
+        "SF-36 MCS"
+      ],
+      "SF-8 MCS": [
+        "SF-8 MCS"
+      ]
+    },
+    "total_count": "7 / 361",
+    "total_percentage": "1.94 %",
+    "variant_percentages": {
+      "MCS": "28.57 %",
+      "SF-12 MCS": "42.86 %",
+      "SF-36 MCS": "14.29 %",
+      "SF-8 MCS": "14.29 %"
+    },
+    "rows": [
+      11,
+      87,
+      89,
+      191,
+      195,
+      208,
+      215
+    ]
+  },
+  {
+    "canonical_biomarker": "HARS",
+    "occurrences": [
+      "HARS",
+      "HARS",
+      "HARS",
+      "HARS",
+      "HARS",
+      "HARS",
+      "HARS"
+    ],
+    "variants": {
+      "HARS": [
+        "HARS",
+        "HARS",
+        "HARS",
+        "HARS",
+        "HARS",
+        "HARS",
+        "HARS"
+      ]
+    },
+    "total_count": "7 / 361",
+    "total_percentage": "1.94 %",
+    "variant_percentages": {
+      "HARS": "100.00 %"
+    },
+    "rows": [
+      76,
+      111,
+      112,
+      118,
+      213,
+      214
+    ]
+  },
+  {
+    "canonical_biomarker": "VAS",
+    "occurrences": [
+      "VAS",
+      "VAS",
+      "VAS",
+      "NRS",
+      "NRS",
+      "NRS",
+      "NRS"
+    ],
+    "variants": {
+      "VAS": [
+        "VAS",
+        "VAS",
+        "VAS"
+      ],
+      "NRS": [
+        "NRS",
+        "NRS",
+        "NRS",
+        "NRS"
+      ]
+    },
+    "total_count": "7 / 361",
+    "total_percentage": "1.94 %",
+    "variant_percentages": {
+      "VAS": "42.86 %",
+      "NRS": "57.14 %"
+    },
+    "rows": [
+      89,
+      132,
+      167,
+      188,
+      314,
+      320
+    ]
+  },
+  {
+    "canonical_biomarker": "FPG",
+    "occurrences": [
+      "FPG",
+      "FPG",
+      "FPG",
+      "GLU",
+      "GLU",
+      "Glu",
+      "Glu"
+    ],
+    "variants": {
+      "FPG": [
+        "FPG",
+        "FPG",
+        "FPG"
+      ],
+      "GLU": [
+        "GLU",
+        "GLU",
+        "Glu",
+        "Glu"
+      ]
+    },
+    "total_count": "7 / 361",
+    "total_percentage": "1.94 %",
+    "variant_percentages": {
+      "FPG": "42.86 %",
+      "GLU": "57.14 %"
+    },
+    "rows": [
+      101,
+      166,
+      196,
+      203,
+      252,
+      253,
+      287
+    ]
+  },
+  {
+    "canonical_biomarker": "CES‑D",
+    "occurrences": [
+      "CES‑D",
+      "CES‑D",
+      "CES‑D",
+      "CES‑D",
+      "CES‑D",
+      "CES‑D"
+    ],
+    "variants": {
+      "CES‑D": [
+        "CES‑D",
+        "CES‑D",
+        "CES‑D",
+        "CES‑D",
+        "CES‑D",
+        "CES‑D"
+      ]
+    },
+    "total_count": "6 / 361",
+    "total_percentage": "1.66 %",
+    "variant_percentages": {
+      "CES‑D": "100.00 %"
+    },
+    "rows": [
+      4,
+      36,
+      64,
+      201,
+      268
+    ]
+  },
+  {
+    "canonical_biomarker": "PANAS‑NA",
+    "occurrences": [
+      "PANAS‑NA",
+      "PANAS‑NA",
+      "PANAS-P",
+      "PANAS-P",
+      "NAS",
+      "NAS"
+    ],
+    "variants": {
+      "PANAS‑NA": [
+        "PANAS‑NA",
+        "PANAS‑NA"
+      ],
+      "PANAS-P": [
+        "PANAS-P",
+        "PANAS-P"
+      ],
+      "NAS": [
+        "NAS",
+        "NAS"
+      ]
+    },
+    "total_count": "6 / 361",
+    "total_percentage": "1.66 %",
+    "variant_percentages": {
+      "PANAS‑NA": "33.33 %",
+      "PANAS-P": "33.33 %",
+      "NAS": "33.33 %"
+    },
+    "rows": [
+      7,
+      110,
+      136,
+      167,
+      209,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "SF-12",
+    "occurrences": [
+      "SF-12",
+      "SF-12",
+      "SF-20",
+      "SF-36",
+      "SF-36",
+      "SF-36"
+    ],
+    "variants": {
+      "SF-12": [
+        "SF-12",
+        "SF-12"
+      ],
+      "SF-20": [
+        "SF-20"
+      ],
+      "SF-36": [
+        "SF-36",
+        "SF-36",
+        "SF-36"
+      ]
+    },
+    "total_count": "6 / 361",
+    "total_percentage": "1.66 %",
+    "variant_percentages": {
+      "SF-12": "33.33 %",
+      "SF-20": "16.67 %",
+      "SF-36": "50.00 %"
+    },
+    "rows": [
+      55,
+      131,
+      144,
+      211,
+      224,
+      324
+    ]
+  },
+  {
+    "canonical_biomarker": "PSS",
+    "occurrences": [
+      "PSS",
+      "PSS",
+      "PSS",
+      "PSS",
+      "PSS",
+      "PSS-10"
+    ],
+    "variants": {
+      "PSS": [
+        "PSS",
+        "PSS",
+        "PSS",
+        "PSS",
+        "PSS"
+      ],
+      "PSS-10": [
+        "PSS-10"
+      ]
+    },
+    "total_count": "6 / 361",
+    "total_percentage": "1.66 %",
+    "variant_percentages": {
+      "PSS": "83.33 %",
+      "PSS-10": "16.67 %"
+    },
+    "rows": [
+      165,
+      224,
+      243,
+      276,
+      333,
+      335
+    ]
+  },
+  {
+    "canonical_biomarker": "SHAPS",
+    "occurrences": [
+      "SHAPS",
+      "SHAPS",
+      "SHAPS",
+      "SHAPS",
+      "SHAPS-C",
+      "SHAPS-C"
+    ],
+    "variants": {
+      "SHAPS": [
+        "SHAPS",
+        "SHAPS",
+        "SHAPS",
+        "SHAPS"
+      ],
+      "SHAPS-C": [
+        "SHAPS-C",
+        "SHAPS-C"
+      ]
+    },
+    "total_count": "6 / 361",
+    "total_percentage": "1.66 %",
+    "variant_percentages": {
+      "SHAPS": "66.67 %",
+      "SHAPS-C": "33.33 %"
+    },
+    "rows": [
+      166,
+      218,
+      253,
+      281,
+      327,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "CPAS",
+    "occurrences": [
+      "CPAS",
+      "CPAS",
+      "PAS",
+      "PAS",
+      "PAS"
+    ],
+    "variants": {
+      "CPAS": [
+        "CPAS",
+        "CPAS"
+      ],
+      "PAS": [
+        "PAS",
+        "PAS",
+        "PAS"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "CPAS": "40.00 %",
+      "PAS": "60.00 %"
+    },
+    "rows": [
+      28,
+      110,
+      136,
+      166,
+      337
+    ]
+  },
+  {
+    "canonical_biomarker": "SE",
+    "occurrences": [
+      "SE",
+      "SE",
+      "SE",
+      "SE",
+      "SE"
+    ],
+    "variants": {
+      "SE": [
+        "SE",
+        "SE",
+        "SE",
+        "SE",
+        "SE"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "SE": "100.00 %"
+    },
+    "rows": [
+      50,
+      136,
+      138,
+      204,
+      310
+    ]
+  },
+  {
+    "canonical_biomarker": "SCL-20",
+    "occurrences": [
+      "SCL-20",
+      "SCL-20",
+      "SCL-20",
+      "SCL-20R",
+      "SCLR"
+    ],
+    "variants": {
+      "SCL-20": [
+        "SCL-20",
+        "SCL-20",
+        "SCL-20"
+      ],
+      "SCL-20R": [
+        "SCL-20R"
+      ],
+      "SCLR": [
+        "SCLR"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "SCL-20": "60.00 %",
+      "SCL-20R": "20.00 %",
+      "SCLR": "20.00 %"
+    },
+    "rows": [
+      51,
+      77,
+      191
+    ]
+  },
+  {
+    "canonical_biomarker": "DR",
+    "occurrences": [
+      "DR",
+      "DR",
+      "DR",
+      "DR",
+      "DR"
+    ],
+    "variants": {
+      "DR": [
+        "DR",
+        "DR",
+        "DR",
+        "DR",
+        "DR"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "DR": "100.00 %"
+    },
+    "rows": [
+      56,
+      140,
+      284,
+      299,
+      332
+    ]
+  },
+  {
+    "canonical_biomarker": "WSAS",
+    "occurrences": [
+      "WSAS",
+      "WSAS",
+      "SAS",
+      "SAS",
+      "SAS"
+    ],
+    "variants": {
+      "WSAS": [
+        "WSAS",
+        "WSAS",
+        "SAS",
+        "SAS",
+        "SAS"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "WSAS": "100.00 %"
+    },
+    "rows": [
+      72,
+      101,
+      144,
+      286,
+      309
+    ]
+  },
+  {
+    "canonical_biomarker": "BOLD",
+    "occurrences": [
+      "%BOLD",
+      "BOLD",
+      "BOLD",
+      "BOLD",
+      "BOLD"
+    ],
+    "variants": {
+      "%BOLD": [
+        "%BOLD",
+        "BOLD",
+        "BOLD",
+        "BOLD",
+        "BOLD"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "%BOLD": "100.00 %"
+    },
+    "rows": [
+      83,
+      107,
+      187,
+      192,
+      325
+    ]
+  },
+  {
+    "canonical_biomarker": "STAI‑S",
+    "occurrences": [
+      "STAI‑S",
+      "STAI‑S",
+      "STAI‑S",
+      "STAI‑T",
+      "STAI‑T"
+    ],
+    "variants": {
+      "STAI‑S": [
+        "STAI‑S",
+        "STAI‑S",
+        "STAI‑S"
+      ],
+      "STAI‑T": [
+        "STAI‑T",
+        "STAI‑T"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "STAI‑S": "60.00 %",
+      "STAI‑T": "40.00 %"
+    },
+    "rows": [
+      89,
+      218,
+      224
+    ]
+  },
+  {
+    "canonical_biomarker": "WHOQOL‑BREF",
+    "occurrences": [
+      "WHOQOL‑BREF",
+      "WHOQOL‑BREF",
+      "WHOQOL‑BREF",
+      "WHOQOL",
+      "WHOQOL"
+    ],
+    "variants": {
+      "WHOQOL‑BREF": [
+        "WHOQOL‑BREF",
+        "WHOQOL‑BREF",
+        "WHOQOL‑BREF"
+      ],
+      "WHOQOL": [
+        "WHOQOL",
+        "WHOQOL"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "WHOQOL‑BREF": "60.00 %",
+      "WHOQOL": "40.00 %"
+    },
+    "rows": [
+      106,
+      176,
+      236,
+      266,
+      267
+    ]
+  },
+  {
+    "canonical_biomarker": "RSES",
+    "occurrences": [
+      "RSES",
+      "RSES",
+      "RSES",
+      "GSES",
+      "GSES"
+    ],
+    "variants": {
+      "RSES": [
+        "RSES",
+        "RSES",
+        "RSES",
+        "GSES",
+        "GSES"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "RSES": "100.00 %"
+    },
+    "rows": [
+      106,
+      126,
+      336
+    ]
+  },
+  {
+    "canonical_biomarker": "RT",
+    "occurrences": [
+      "RT",
+      "RT",
+      "RT",
+      "RT",
+      "RT"
+    ],
+    "variants": {
+      "RT": [
+        "RT",
+        "RT",
+        "RT",
+        "RT",
+        "RT"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "RT": "100.00 %"
+    },
+    "rows": [
+      130,
+      138,
+      192,
+      201,
+      218
+    ]
+  },
+  {
+    "canonical_biomarker": "BHS",
+    "occurrences": [
+      "BHS",
+      "BHS",
+      "BHS",
+      "BHS",
+      "BHS-4"
+    ],
+    "variants": {
+      "BHS": [
+        "BHS",
+        "BHS",
+        "BHS",
+        "BHS"
+      ],
+      "BHS-4": [
+        "BHS-4"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "BHS": "80.00 %",
+      "BHS-4": "20.00 %"
+    },
+    "rows": [
+      140,
+      145,
+      198,
+      255,
+      337
+    ]
+  },
+  {
+    "canonical_biomarker": "SUS",
+    "occurrences": [
+      "SUS",
+      "SUS",
+      "SUS",
+      "SUS",
+      "SUS"
+    ],
+    "variants": {
+      "SUS": [
+        "SUS",
+        "SUS",
+        "SUS",
+        "SUS",
+        "SUS"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "SUS": "100.00 %"
+    },
+    "rows": [
+      164,
+      235,
+      279,
+      280,
+      335
+    ]
+  },
+  {
+    "canonical_biomarker": "BADS",
+    "occurrences": [
+      "BADS",
+      "BADS",
+      "BADS",
+      "BADS",
+      "BADS"
+    ],
+    "variants": {
+      "BADS": [
+        "BADS",
+        "BADS",
+        "BADS",
+        "BADS",
+        "BADS"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "BADS": "100.00 %"
+    },
+    "rows": [
+      250,
+      263,
+      277,
+      310,
+      323
+    ]
+  },
+  {
+    "canonical_biomarker": "SSE-Q",
+    "occurrences": [
+      "SSE-Q",
+      "SSE-Q",
+      "SSE‑Q",
+      "SSE‑Q",
+      "SSE‑Q"
+    ],
+    "variants": {
+      "SSE-Q": [
+        "SSE-Q",
+        "SSE-Q",
+        "SSE‑Q",
+        "SSE‑Q",
+        "SSE‑Q"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "SSE-Q": "100.00 %"
+    },
+    "rows": [
+      276
+    ]
+  },
+  {
+    "canonical_biomarker": "IQ",
+    "occurrences": [
+      "10IQ",
+      "17IQ",
+      "IQ",
+      "IQ",
+      "IQ"
+    ],
+    "variants": {
+      "10IQ": [
+        "10IQ"
+      ],
+      "17IQ": [
+        "17IQ"
+      ],
+      "IQ": [
+        "IQ",
+        "IQ",
+        "IQ"
+      ]
+    },
+    "total_count": "5 / 361",
+    "total_percentage": "1.39 %",
+    "variant_percentages": {
+      "10IQ": "20.00 %",
+      "17IQ": "20.00 %",
+      "IQ": "60.00 %"
+    },
+    "rows": [
+      301,
+      306,
+      307,
+      338
+    ]
+  },
+  {
+    "canonical_biomarker": "AR",
+    "occurrences": [
+      "AR",
+      "AR",
+      "AR",
+      "AR"
+    ],
+    "variants": {
+      "AR": [
+        "AR",
+        "AR",
+        "AR",
+        "AR"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "AR": "100.00 %"
+    },
+    "rows": [
+      21,
+      228,
+      344,
+      346
+    ]
+  },
+  {
+    "canonical_biomarker": "BAI",
+    "occurrences": [
+      "BAI",
+      "BAI",
+      "BAI",
+      "BAI"
+    ],
+    "variants": {
+      "BAI": [
+        "BAI",
+        "BAI",
+        "BAI",
+        "BAI"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BAI": "100.00 %"
+    },
+    "rows": [
+      30,
+      92,
+      177,
+      263
+    ]
+  },
+  {
+    "canonical_biomarker": "PR",
+    "occurrences": [
+      "PR",
+      "PR",
+      "PR",
+      "PR"
+    ],
+    "variants": {
+      "PR": [
+        "PR",
+        "PR",
+        "PR",
+        "PR"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "PR": "100.00 %"
+    },
+    "rows": [
+      41,
+      196,
+      249,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "COPE",
+    "occurrences": [
+      "COPE",
+      "COPE",
+      "COPE-PF",
+      "COPE-PF"
+    ],
+    "variants": {
+      "COPE": [
+        "COPE",
+        "COPE"
+      ],
+      "COPE-PF": [
+        "COPE-PF",
+        "COPE-PF"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "COPE": "50.00 %",
+      "COPE-PF": "50.00 %"
+    },
+    "rows": [
+      47,
+      149,
+      263
+    ]
+  },
+  {
+    "canonical_biomarker": "BW",
+    "occurrences": [
+      "BW",
+      "BW",
+      "BW",
+      "BW"
+    ],
+    "variants": {
+      "BW": [
+        "BW",
+        "BW",
+        "BW",
+        "BW"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BW": "100.00 %"
+    },
+    "rows": [
+      81,
+      191,
+      196,
+      243
+    ]
+  },
+  {
+    "canonical_biomarker": "AIMS",
+    "occurrences": [
+      "AIMS",
+      "AIMS",
+      "AIM",
+      "AIM"
+    ],
+    "variants": {
+      "AIMS": [
+        "AIMS",
+        "AIMS"
+      ],
+      "AIM": [
+        "AIM",
+        "AIM"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "AIMS": "50.00 %",
+      "AIM": "50.00 %"
+    },
+    "rows": [
+      101,
+      144,
+      279,
+      280
+    ]
+  },
+  {
+    "canonical_biomarker": "BAS",
+    "occurrences": [
+      "BAS",
+      "BAS",
+      "BASO",
+      "Baso"
+    ],
+    "variants": {
+      "BAS": [
+        "BAS",
+        "BAS",
+        "BASO",
+        "Baso"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BAS": "100.00 %"
+    },
+    "rows": [
+      101,
+      144,
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "SBI",
+    "occurrences": [
+      "SBI",
+      "SBI",
+      "SBI-AA",
+      "SBI-AA"
+    ],
+    "variants": {
+      "SBI": [
+        "SBI",
+        "SBI"
+      ],
+      "SBI-AA": [
+        "SBI-AA",
+        "SBI-AA"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "SBI": "50.00 %",
+      "SBI-AA": "50.00 %"
+    },
+    "rows": [
+      112
+    ]
+  },
+  {
+    "canonical_biomarker": "BUN",
+    "occurrences": [
+      "BUN",
+      "BUN",
+      "BUN",
+      "BUN"
+    ],
+    "variants": {
+      "BUN": [
+        "BUN",
+        "BUN",
+        "BUN",
+        "BUN"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BUN": "100.00 %"
+    },
+    "rows": [
+      118,
+      166,
+      196
+    ]
+  },
+  {
+    "canonical_biomarker": "UA",
+    "occurrences": [
+      "UA",
+      "UA",
+      "UA",
+      "UA"
+    ],
+    "variants": {
+      "UA": [
+        "UA",
+        "UA",
+        "UA",
+        "UA"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "UA": "100.00 %"
+    },
+    "rows": [
+      118,
+      166
+    ]
+  },
+  {
+    "canonical_biomarker": "WBC",
+    "occurrences": [
+      "WBC",
+      "WBC",
+      "WBC",
+      "WBC"
+    ],
+    "variants": {
+      "WBC": [
+        "WBC",
+        "WBC",
+        "WBC",
+        "WBC"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "WBC": "100.00 %"
+    },
+    "rows": [
+      118,
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "HADS‑A",
+    "occurrences": [
+      "HADS‑A",
+      "HADS‑A",
+      "HADS‑D",
+      "HADS‑D"
+    ],
+    "variants": {
+      "HADS-A": [
+        "HADS-A"
+      ],
+      "HADS-D": [
+        "HADS-D"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "HADS-A": "25.00 %",
+      "HADS-D": "25.00 %"
+    },
+    "rows": [
+      132,
+      170
+    ]
+  },
+  {
+    "canonical_biomarker": "IDAS‑D",
+    "occurrences": [
+      "IDAS‑D",
+      "IDAS‑D",
+      "IDAS",
+      "IDAS"
+    ],
+    "variants": {
+      "IDAS‑D": [
+        "IDAS‑D",
+        "IDAS‑D"
+      ],
+      "IDAS": [
+        "IDAS",
+        "IDAS"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "IDAS‑D": "50.00 %",
+      "IDAS": "50.00 %"
+    },
+    "rows": [
+      150,
+      225,
+      317
+    ]
+  },
+  {
+    "canonical_biomarker": "BSS",
+    "occurrences": [
+      "BSS",
+      "BSS",
+      "BSS",
+      "BSS"
+    ],
+    "variants": {
+      "BSS": [
+        "BSS",
+        "BSS",
+        "BSS",
+        "BSS"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BSS": "100.00 %"
+    },
+    "rows": [
+      157,
+      255,
+      311,
+      321
+    ]
+  },
+  {
+    "canonical_biomarker": "AMS",
+    "occurrences": [
+      "AMS",
+      "AMS",
+      "AMS",
+      "AMS"
+    ],
+    "variants": {
+      "AMS": [
+        "AMS",
+        "AMS",
+        "AMS",
+        "AMS"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "AMS": "100.00 %"
+    },
+    "rows": [
+      55,
+      191,
+      352
+    ]
+  },
+  {
+    "canonical_biomarker": "BMI",
+    "occurrences": [
+      "BMI",
+      "BMI",
+      "BMI-z",
+      "BMIz"
+    ],
+    "variants": {
+      "BMI": [
+        "BMI",
+        "BMI"
+      ],
+      "BMI-z": [
+        "BMI-z",
+        "BMIz"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "BMI": "50.00 %",
+      "BMI-z": "50.00 %"
+    },
+    "rows": [
+      196,
+      227
+    ]
+  },
+  {
+    "canonical_biomarker": "CL",
+    "occurrences": [
+      "CL",
+      "CL",
+      "Cl",
+      "Cl"
+    ],
+    "variants": {
+      "CL": [
+        "CL",
+        "CL",
+        "Cl",
+        "Cl"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "CL": "100.00 %"
+    },
+    "rows": [
+      196,
+      252,
+      285
+    ]
+  },
+  {
+    "canonical_biomarker": "EAS",
+    "occurrences": [
+      "EAS",
+      "EAS",
+      "EAS",
+      "EAS"
+    ],
+    "variants": {
+      "EAS": [
+        "EAS",
+        "EAS",
+        "EAS",
+        "EAS"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "EAS": "100.00 %"
+    },
+    "rows": [
+      227
+    ]
+  },
+  {
+    "canonical_biomarker": "HEI‑15",
+    "occurrences": [
+      "HEI‑15",
+      "HEI‑15",
+      "HEI‑2015",
+      "HEI‑2015"
+    ],
+    "variants": {
+      "HEI‑15": [
+        "HEI‑15",
+        "HEI‑15"
+      ],
+      "HEI‑2015": [
+        "HEI‑2015",
+        "HEI‑2015"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "HEI‑15": "50.00 %",
+      "HEI‑2015": "50.00 %"
+    },
+    "rows": [
+      227
+    ]
+  },
+  {
+    "canonical_biomarker": "MVPA",
+    "occurrences": [
+      "MVPA",
+      "MVPA",
+      "MVPA",
+      "MVPA"
+    ],
+    "variants": {
+      "MVPA": [
+        "MVPA",
+        "MVPA",
+        "MVPA",
+        "MVPA"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "MVPA": "100.00 %"
+    },
+    "rows": [
+      227,
+      262
+    ]
+  },
+  {
+    "canonical_biomarker": "MRR",
+    "occurrences": [
+      "MRR",
+      "MRR",
+      "MRR",
+      "MRR"
+    ],
+    "variants": {
+      "MRR": [
+        "MRR",
+        "MRR",
+        "MRR",
+        "MRR"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "MRR": "100.00 %"
+    },
+    "rows": [
+      259,
+      271,
+      355
+    ]
+  },
+  {
+    "canonical_biomarker": "ΔDS",
+    "occurrences": [
+      "ΔDS",
+      "ΔDS",
+      "DS‑6",
+      "DS‑9"
+    ],
+    "variants": {
+      "ΔDS": [
+        "ΔDS",
+        "ΔDS"
+      ],
+      "DS‑6": [
+        "DS‑6"
+      ],
+      "DS‑9": [
+        "DS‑9"
+      ]
+    },
+    "total_count": "4 / 361",
+    "total_percentage": "1.11 %",
+    "variant_percentages": {
+      "ΔDS": "50.00 %",
+      "DS‑6": "25.00 %",
+      "DS‑9": "25.00 %"
+    },
+    "rows": [
+      353,
+      360
+    ]
+  },
+  {
+    "canonical_biomarker": "WHODAS",
+    "occurrences": [
+      "WHODAS",
+      "WHODAS",
+      "WHODAS 2.0"
+    ],
+    "variants": {
+      "WHODAS": [
+        "WHODAS",
+        "WHODAS"
+      ],
+      "WHODAS 2.0": [
+        "WHODAS 2.0"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "WHODAS": "66.67 %",
+      "WHODAS 2.0": "33.33 %"
+    },
+    "rows": [
+      42,
+      229,
+      275
+    ]
+  },
+  {
+    "canonical_biomarker": "IC",
+    "occurrences": [
+      "IC",
+      "IC",
+      "IC"
+    ],
+    "variants": {
+      "IC": [
+        "IC",
+        "IC",
+        "IC"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "IC": "100.00 %"
+    },
+    "rows": [
+      47,
+      307,
+      338
+    ]
+  },
+  {
+    "canonical_biomarker": "ATT",
+    "occurrences": [
+      "ATT",
+      "ATT",
+      "ATT6"
+    ],
+    "variants": {
+      "ATT": [
+        "ATT",
+        "ATT"
+      ],
+      "ATT6": [
+        "ATT6"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "ATT": "66.67 %",
+      "ATT6": "33.33 %"
+    },
+    "rows": [
+      63,
+      137,
+      324
+    ]
+  },
+  {
+    "canonical_biomarker": "PCS",
+    "occurrences": [
+      "PCS",
+      "PCS",
+      "PCS"
+    ],
+    "variants": {
+      "PCS": [
+        "PCS",
+        "PCS",
+        "PCS"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "PCS": "100.00 %"
+    },
+    "rows": [
+      87,
+      89,
+      191
+    ]
+  },
+  {
+    "canonical_biomarker": "MPR",
+    "occurrences": [
+      "MPR",
+      "MPR",
+      "MPR"
+    ],
+    "variants": {
+      "MPR": [
+        "MPR",
+        "MPR",
+        "MPR"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "MPR": "100.00 %"
+    },
+    "rows": [
+      90,
+      117,
+      329
+    ]
+  },
+  {
+    "canonical_biomarker": "SA",
+    "occurrences": [
+      "SA",
+      "SA",
+      "SA"
+    ],
+    "variants": {
+      "SA": [
+        "SA",
+        "SA",
+        "SA"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "SA": "100.00 %"
+    },
+    "rows": [
+      105,
+      113,
+      199
+    ]
+  },
+  {
+    "canonical_biomarker": "Hb",
+    "occurrences": [
+      "Hb",
+      "Hb",
+      "Hb"
+    ],
+    "variants": {
+      "Hb": [
+        "Hb",
+        "Hb",
+        "Hb"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "Hb": "100.00 %"
+    },
+    "rows": [
+      118,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "CM",
+    "occurrences": [
+      "CM",
+      "CM",
+      "CM"
+    ],
+    "variants": {
+      "CM": [
+        "CM",
+        "CM",
+        "CM"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "CM": "100.00 %"
+    },
+    "rows": [
+      160,
+      196,
+      247
+    ]
+  },
+  {
+    "canonical_biomarker": "MoCA",
+    "occurrences": [
+      "MoCA",
+      "MoCA",
+      "MoCA"
+    ],
+    "variants": {
+      "MoCA": [
+        "MoCA",
+        "MoCA",
+        "MoCA"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "MoCA": "100.00 %"
+    },
+    "rows": [
+      170,
+      220,
+      271
+    ]
+  },
+  {
+    "canonical_biomarker": "NA",
+    "occurrences": [
+      "NA",
+      "Na",
+      "Na+"
+    ],
+    "variants": {
+      "NA": [
+        "NA",
+        "Na"
+      ],
+      "Na+": [
+        "Na+"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "NA": "66.67 %",
+      "Na+": "33.33 %"
+    },
+    "rows": [
+      196,
+      252,
+      348
+    ]
+  },
+  {
+    "canonical_biomarker": "DS",
+    "occurrences": [
+      "DS",
+      "DS",
+      "DS"
+    ],
+    "variants": {
+      "DS": [
+        "DS",
+        "DS",
+        "DS"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "DS": "100.00 %"
+    },
+    "rows": [
+      203,
+      265,
+      274
+    ]
+  },
+  {
+    "canonical_biomarker": "DSST",
+    "occurrences": [
+      "DSST",
+      "DSST",
+      "DSST"
+    ],
+    "variants": {
+      "DSST": [
+        "DSST",
+        "DSST",
+        "DSST"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "DSST": "100.00 %"
+    },
+    "rows": [
+      218,
+      253,
+      290
+    ]
+  },
+  {
+    "canonical_biomarker": "NPS",
+    "occurrences": [
+      "NPS",
+      "NPS",
+      "NPS"
+    ],
+    "variants": {
+      "NPS": [
+        "NPS",
+        "NPS",
+        "NPS"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "NPS": "100.00 %"
+    },
+    "rows": [
+      194,
+      264
+    ]
+  },
+  {
+    "canonical_biomarker": "CASA",
+    "occurrences": [
+      "CASA",
+      "CASA",
+      "CASA"
+    ],
+    "variants": {
+      "CASA": [
+        "CASA",
+        "CASA",
+        "CASA"
+      ]
+    },
+    "total_count": "3 / 361",
+    "total_percentage": "0.83 %",
+    "variant_percentages": {
+      "CASA": "100.00 %"
+    },
+    "rows": [
+      306,
+      307,
+      340
+    ]
+  },
+  {
+    "canonical_biomarker": "GDS",
+    "occurrences": [
+      "GDS",
+      "GDS"
+    ],
+    "variants": {
+      "GDS": [
+        "GDS",
+        "GDS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "GDS": "100.00 %"
+    },
+    "rows": [
+      13,
+      38
+    ]
+  },
+  {
+    "canonical_biomarker": "RESP",
+    "occurrences": [
+      "RESP",
+      "RESP"
+    ],
+    "variants": {
+      "RESP": [
+        "RESP",
+        "RESP"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "RESP": "100.00 %"
+    },
+    "rows": [
+      25,
+      111
+    ]
+  },
+  {
+    "canonical_biomarker": "QoL",
+    "occurrences": [
+      "QOL-5",
+      "QoL"
+    ],
+    "variants": {
+      "QoL": [
+        "QoL"
+      ],
+      "QOL-5": [
+        "QOL-5"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "QoL": "50.00 %",
+      "QOL-5": "50.00 %"
+    },
+    "rows": [
+      30,
+      131
+    ]
+  },
+  {
+    "canonical_biomarker": "SR",
+    "occurrences": [
+      "SR",
+      "SR"
+    ],
+    "variants": {
+      "SR": [
+        "SR",
+        "SR"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SR": "100.00 %"
+    },
+    "rows": [
+      34,
+      54
+    ]
+  },
+  {
+    "canonical_biomarker": "SCID",
+    "occurrences": [
+      "SCID",
+      "SCID"
+    ],
+    "variants": {
+      "SCID": [
+        "SCID",
+        "SCID"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SCID": "100.00 %"
+    },
+    "rows": [
+      38,
+      229
+    ]
+  },
+  {
+    "canonical_biomarker": "NR",
+    "occurrences": [
+      "NR",
+      "N_R"
+    ],
+    "variants": {
+      "NR": [
+        "NR",
+        "N_R"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "NR": "100.00 %"
+    },
+    "rows": [
+      41,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "REC",
+    "occurrences": [
+      "REC",
+      "REC"
+    ],
+    "variants": {
+      "REC": [
+        "REC",
+        "REC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "REC": "100.00 %"
+    },
+    "rows": [
+      41,
+      329
+    ]
+  },
+  {
+    "canonical_biomarker": "NS",
+    "occurrences": [
+      "NS",
+      "NS"
+    ],
+    "variants": {
+      "NS": [
+        "NS",
+        "NS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "NS": "100.00 %"
+    },
+    "rows": [
+      56,
+      194
+    ]
+  },
+  {
+    "canonical_biomarker": "APGAR",
+    "occurrences": [
+      "APGAR",
+      "APGAR"
+    ],
+    "variants": {
+      "APGAR": [
+        "APGAR",
+        "APGAR"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "APGAR": "100.00 %"
+    },
+    "rows": [
+      81,
+      320
+    ]
+  },
+  {
+    "canonical_biomarker": "ΔBW",
+    "occurrences": [
+      "ΔBW",
+      "ΔBW"
+    ],
+    "variants": {
+      "ΔBW": [
+        "ΔBW",
+        "ΔBW"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "ΔBW": "100.00 %"
+    },
+    "rows": [
+      95,
+      268
+    ]
+  },
+  {
+    "canonical_biomarker": "ANX",
+    "occurrences": [
+      "ANX",
+      "ANX"
+    ],
+    "variants": {
+      "ANX": [
+        "ANX",
+        "ANX"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "ANX": "100.00 %"
+    },
+    "rows": [
+      110,
+      136
+    ]
+  },
+  {
+    "canonical_biomarker": "PHS",
+    "occurrences": [
+      "PHS",
+      "PHS"
+    ],
+    "variants": {
+      "PHS": [
+        "PHS",
+        "PHS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PHS": "100.00 %"
+    },
+    "rows": [
+      110,
+      342
+    ]
+  },
+  {
+    "canonical_biomarker": "SB",
+    "occurrences": [
+      "SB",
+      "SB"
+    ],
+    "variants": {
+      "SB": [
+        "SB",
+        "SB"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SB": "100.00 %"
+    },
+    "rows": [
+      111
+    ]
+  },
+  {
+    "canonical_biomarker": "SSS",
+    "occurrences": [
+      "SSS",
+      "SSS"
+    ],
+    "variants": {
+      "SSS": [
+        "SSS",
+        "SSS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SSS": "100.00 %"
+    },
+    "rows": [
+      115,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "GSE",
+    "occurrences": [
+      "GSE",
+      "GSE"
+    ],
+    "variants": {
+      "GSE": [
+        "GSE",
+        "GSE"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "GSE": "100.00 %"
+    },
+    "rows": [
+      126,
+      324
+    ]
+  },
+  {
+    "canonical_biomarker": "WT",
+    "occurrences": [
+      "WT",
+      "Wt"
+    ],
+    "variants": {
+      "WT": [
+        "WT",
+        "Wt"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "WT": "100.00 %"
+    },
+    "rows": [
+      136,
+      204
+    ]
+  },
+  {
+    "canonical_biomarker": "PS",
+    "occurrences": [
+      "PS",
+      "PS"
+    ],
+    "variants": {
+      "PS": [
+        "PS",
+        "PS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PS": "100.00 %"
+    },
+    "rows": [
+      137,
+      364
+    ]
+  },
+  {
+    "canonical_biomarker": "PSI‑SF",
+    "occurrences": [
+      "PSI‑SF",
+      "PSI‑SF"
+    ],
+    "variants": {
+      "PSI‑SF": [
+        "PSI‑SF",
+        "PSI‑SF"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PSI‑SF": "100.00 %"
+    },
+    "rows": [
+      137,
+      263
+    ]
+  },
+  {
+    "canonical_biomarker": "MSPSS",
+    "occurrences": [
+      "MSPSS",
+      "MSPSS"
+    ],
+    "variants": {
+      "MSPSS": [
+        "MSPSS",
+        "MSPSS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MSPSS": "100.00 %"
+    },
+    "rows": [
+      137,
+      342
+    ]
+  },
+  {
+    "canonical_biomarker": "IY",
+    "occurrences": [
+      "IY",
+      "IY"
+    ],
+    "variants": {
+      "IY": [
+        "IY",
+        "IY"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "IY": "100.00 %"
+    },
+    "rows": [
+      137
+    ]
+  },
+  {
+    "canonical_biomarker": "PH",
+    "occurrences": [
+      "PH",
+      "pH"
+    ],
+    "variants": {
+      "PH": [
+        "PH",
+        "pH"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PH": "100.00 %"
+    },
+    "rows": [
+      140,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "RC",
+    "occurrences": [
+      "RC",
+      "RC"
+    ],
+    "variants": {
+      "RC": [
+        "RC",
+        "RC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "RC": "100.00 %"
+    },
+    "rows": [
+      149,
+      220
+    ]
+  },
+  {
+    "canonical_biomarker": "PC",
+    "occurrences": [
+      "PC",
+      "PC%"
+    ],
+    "variants": {
+      "PC": [
+        "PC"
+      ],
+      "PC%": [
+        "PC%"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PC": "50.00 %",
+      "PC%": "50.00 %"
+    },
+    "rows": [
+      149,
+      274
+    ]
+  },
+  {
+    "canonical_biomarker": "NAc",
+    "occurrences": [
+      "NAc",
+      "NAc"
+    ],
+    "variants": {
+      "NAc": [
+        "NAc",
+        "NAc"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "NAc": "100.00 %"
+    },
+    "rows": [
+      150,
+      317
+    ]
+  },
+  {
+    "canonical_biomarker": "CGAS",
+    "occurrences": [
+      "CGAS",
+      "CGAS"
+    ],
+    "variants": {
+      "CGAS": [
+        "CGAS",
+        "CGAS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CGAS": "100.00 %"
+    },
+    "rows": [
+      152,
+      168
+    ]
+  },
+  {
+    "canonical_biomarker": "SAS‑SR",
+    "occurrences": [
+      "SAS‑SR",
+      "SAS‑SR"
+    ],
+    "variants": {
+      "SAS‑SR": [
+        "SAS‑SR",
+        "SAS‑SR"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SAS‑SR": "100.00 %"
+    },
+    "rows": [
+      152,
+      168
+    ]
+  },
+  {
+    "canonical_biomarker": "PRISE",
+    "occurrences": [
+      "PRISE",
+      "PRISE"
+    ],
+    "variants": {
+      "PRISE": [
+        "PRISE",
+        "PRISE"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "PRISE": "100.00 %"
+    },
+    "rows": [
+      157,
+      185
+    ]
+  },
+  {
+    "canonical_biomarker": "ALC",
+    "occurrences": [
+      "ALC",
+      "ALC"
+    ],
+    "variants": {
+      "ALC": [
+        "ALC",
+        "ALC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "ALC": "100.00 %"
+    },
+    "rows": [
+      165,
+      196
+    ]
+  },
+  {
+    "canonical_biomarker": "SDQ",
+    "occurrences": [
+      "SDQ",
+      "SDQ"
+    ],
+    "variants": {
+      "SDQ": [
+        "SDQ",
+        "SDQ"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SDQ": "100.00 %"
+    },
+    "rows": [
+      166,
+      259
+    ]
+  },
+  {
+    "canonical_biomarker": "EPA%",
+    "occurrences": [
+      "EPA%",
+      "EPA%"
+    ],
+    "variants": {
+      "EPA%": [
+        "EPA%",
+        "EPA%"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "EPA%": "100.00 %"
+    },
+    "rows": [
+      173
+    ]
+  },
+  {
+    "canonical_biomarker": "MCV",
+    "occurrences": [
+      "MCV",
+      "MCV"
+    ],
+    "variants": {
+      "MCV": [
+        "MCV",
+        "MCV"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MCV": "100.00 %"
+    },
+    "rows": [
+      180,
+      196
+    ]
+  },
+  {
+    "canonical_biomarker": "SEC",
+    "occurrences": [
+      "SEC",
+      "SEC"
+    ],
+    "variants": {
+      "SEC": [
+        "SEC",
+        "SEC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SEC": "100.00 %"
+    },
+    "rows": [
+      185,
+      188
+    ]
+  },
+  {
+    "canonical_biomarker": "MET‑min/week",
+    "occurrences": [
+      "MET‑min/week",
+      "MET‑min/week"
+    ],
+    "variants": {
+      "MET‑min/week": [
+        "MET‑min/week",
+        "MET‑min/week"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MET‑min/week": "100.00 %"
+    },
+    "rows": [
+      191,
+      333
+    ]
+  },
+  {
+    "canonical_biomarker": "EOS",
+    "occurrences": [
+      "EOS",
+      "EOS"
+    ],
+    "variants": {
+      "EOS": [
+        "EOS",
+        "EOS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "EOS": "100.00 %"
+    },
+    "rows": [
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "AMC",
+    "occurrences": [
+      "AMC",
+      "AMC"
+    ],
+    "variants": {
+      "AMC": [
+        "AMC",
+        "AMC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "AMC": "100.00 %"
+    },
+    "rows": [
+      196,
+      335
+    ]
+  },
+  {
+    "canonical_biomarker": "INR",
+    "occurrences": [
+      "INR",
+      "INR"
+    ],
+    "variants": {
+      "INR": [
+        "INR",
+        "INR"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "INR": "100.00 %"
+    },
+    "rows": [
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "CO₂",
+    "occurrences": [
+      "CO₂",
+      "CO₂"
+    ],
+    "variants": {
+      "CO₂": [
+        "CO₂",
+        "CO₂"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CO₂": "100.00 %"
+    },
+    "rows": [
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "Ca",
+    "occurrences": [
+      "Ca",
+      "Ca"
+    ],
+    "variants": {
+      "Ca": [
+        "Ca",
+        "Ca"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "Ca": "100.00 %"
+    },
+    "rows": [
+      196,
+      252
+    ]
+  },
+  {
+    "canonical_biomarker": "MFAS",
+    "occurrences": [
+      "MFAS",
+      "MFAS"
+    ],
+    "variants": {
+      "MFAS": [
+        "MFAS",
+        "MFAS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MFAS": "100.00 %"
+    },
+    "rows": [
+      198,
+      243
+    ]
+  },
+  {
+    "canonical_biomarker": "TTR",
+    "occurrences": [
+      "TTR",
+      "TTR"
+    ],
+    "variants": {
+      "TTR": [
+        "TTR",
+        "TTR"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "TTR": "100.00 %"
+    },
+    "rows": [
+      200,
+      238
+    ]
+  },
+  {
+    "canonical_biomarker": "D-KEFS",
+    "occurrences": [
+      "D-KEFS",
+      "D-KEFS"
+    ],
+    "variants": {
+      "D-KEFS": [
+        "D-KEFS",
+        "D-KEFS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "D-KEFS": "100.00 %"
+    },
+    "rows": [
+      203,
+      265
+    ]
+  },
+  {
+    "canonical_biomarker": "HSI",
+    "occurrences": [
+      "HSI",
+      "HSI"
+    ],
+    "variants": {
+      "HSI": [
+        "HSI",
+        "HSI"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "HSI": "100.00 %"
+    },
+    "rows": [
+      206,
+      207
+    ]
+  },
+  {
+    "canonical_biomarker": "WM",
+    "occurrences": [
+      "WM",
+      "WM"
+    ],
+    "variants": {
+      "WM": [
+        "WM",
+        "WM"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "WM": "100.00 %"
+    },
+    "rows": [
+      216,
+      230
+    ]
+  },
+  {
+    "canonical_biomarker": "AS",
+    "occurrences": [
+      "AS",
+      "AS"
+    ],
+    "variants": {
+      "AS": [
+        "AS",
+        "AS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "AS": "100.00 %"
+    },
+    "rows": [
+      217,
+      292
+    ]
+  },
+  {
+    "canonical_biomarker": "MFI",
+    "occurrences": [
+      "MFI",
+      "MFI"
+    ],
+    "variants": {
+      "MFI": [
+        "MFI",
+        "MFI"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MFI": "100.00 %"
+    },
+    "rows": [
+      218,
+      253
+    ]
+  },
+  {
+    "canonical_biomarker": "FTT",
+    "occurrences": [
+      "FTT",
+      "FTT"
+    ],
+    "variants": {
+      "FTT": [
+        "FTT",
+        "FTT"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "FTT": "100.00 %"
+    },
+    "rows": [
+      218,
+      253
+    ]
+  },
+  {
+    "canonical_biomarker": "TEPS",
+    "occurrences": [
+      "TEPS",
+      "TEPS"
+    ],
+    "variants": {
+      "TEPS": [
+        "TEPS",
+        "TEPS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "TEPS": "100.00 %"
+    },
+    "rows": [
+      225,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "MS",
+    "occurrences": [
+      "MS",
+      "MS"
+    ],
+    "variants": {
+      "MS": [
+        "MS",
+        "MS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MS": "100.00 %"
+    },
+    "rows": [
+      227
+    ]
+  },
+  {
+    "canonical_biomarker": "HRSD",
+    "occurrences": [
+      "HRSD",
+      "HRSD"
+    ],
+    "variants": {
+      "HRSD": [
+        "HRSD",
+        "HRSD"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "HRSD": "100.00 %"
+    },
+    "rows": [
+      242,
+      318
+    ]
+  },
+  {
+    "canonical_biomarker": "RRS",
+    "occurrences": [
+      "RRS",
+      "RRS"
+    ],
+    "variants": {
+      "RRS": [
+        "RRS",
+        "RRS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "RRS": "100.00 %"
+    },
+    "rows": [
+      243,
+      299
+    ]
+  },
+  {
+    "canonical_biomarker": "CC",
+    "occurrences": [
+      "CC",
+      "CC"
+    ],
+    "variants": {
+      "CC": [
+        "CC",
+        "CC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CC": "100.00 %"
+    },
+    "rows": [
+      243,
+      348
+    ]
+  },
+  {
+    "canonical_biomarker": "BPRS",
+    "occurrences": [
+      "BPRS",
+      "BPRS"
+    ],
+    "variants": {
+      "BPRS": [
+        "BPRS",
+        "BPRS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "BPRS": "100.00 %"
+    },
+    "rows": [
+      258,
+      343
+    ]
+  },
+  {
+    "canonical_biomarker": "ECG",
+    "occurrences": [
+      "ECG",
+      "ECG"
+    ],
+    "variants": {
+      "ECG": [
+        "ECG",
+        "ECG"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "ECG": "100.00 %"
+    },
+    "rows": [
+      118,
+      259
+    ]
+  },
+  {
+    "canonical_biomarker": "GDI",
+    "occurrences": [
+      "GDI",
+      "GDI"
+    ],
+    "variants": {
+      "GDI": [
+        "GDI",
+        "GDI"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "GDI": "100.00 %"
+    },
+    "rows": [
+      261
+    ]
+  },
+  {
+    "canonical_biomarker": "HNK",
+    "occurrences": [
+      "HNK",
+      "HNK"
+    ],
+    "variants": {
+      "HNK": [
+        "HNK",
+        "HNK"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "HNK": "100.00 %"
+    },
+    "rows": [
+      264
+    ]
+  },
+  {
+    "canonical_biomarker": "d'",
+    "occurrences": [
+      "d'",
+      "d'"
+    ],
+    "variants": {
+      "d'": [
+        "d'",
+        "d'"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "d'": "100.00 %"
+    },
+    "rows": [
+      264
+    ]
+  },
+  {
+    "canonical_biomarker": "CT",
+    "occurrences": [
+      "CT",
+      "CT%"
+    ],
+    "variants": {
+      "CT": [
+        "CT"
+      ],
+      "CT%": [
+        "CT%"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CT": "50.00 %",
+      "CT%": "50.00 %"
+    },
+    "rows": [
+      278,
+      329
+    ]
+  },
+  {
+    "canonical_biomarker": "Vd",
+    "occurrences": [
+      "Vd",
+      "Vd"
+    ],
+    "variants": {
+      "Vd": [
+        "Vd",
+        "Vd"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "Vd": "100.00 %"
+    },
+    "rows": [
+      285,
+      358
+    ]
+  },
+  {
+    "canonical_biomarker": "FPN",
+    "occurrences": [
+      "FPN",
+      "FPN"
+    ],
+    "variants": {
+      "FPN": [
+        "FPN",
+        "FPN"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "FPN": "100.00 %"
+    },
+    "rows": [
+      289,
+      345
+    ]
+  },
+  {
+    "canonical_biomarker": "CEQ",
+    "occurrences": [
+      "CEQ",
+      "CEQ"
+    ],
+    "variants": {
+      "CEQ": [
+        "CEQ",
+        "CEQ"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CEQ": "100.00 %"
+    },
+    "rows": [
+      294
+    ]
+  },
+  {
+    "canonical_biomarker": "MAAS",
+    "occurrences": [
+      "MAAS",
+      "MAAS"
+    ],
+    "variants": {
+      "MAAS": [
+        "MAAS",
+        "MAAS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MAAS": "100.00 %"
+    },
+    "rows": [
+      299,
+      361
+    ]
+  },
+  {
+    "canonical_biomarker": "FIBSER",
+    "occurrences": [
+      "FIBSER",
+      "FIBSER"
+    ],
+    "variants": {
+      "FIBSER": [
+        "FIBSER",
+        "FIBSER"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "FIBSER": "100.00 %"
+    },
+    "rows": [
+      302,
+      309
+    ]
+  },
+  {
+    "canonical_biomarker": "MARS",
+    "occurrences": [
+      "MARS",
+      "MARS"
+    ],
+    "variants": {
+      "MARS": [
+        "MARS",
+        "MARS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "MARS": "100.00 %"
+    },
+    "rows": [
+      302,
+      326
+    ]
+  },
+  {
+    "canonical_biomarker": "SMSRC",
+    "occurrences": [
+      "SMSRC",
+      "SMSRC"
+    ],
+    "variants": {
+      "SMSRC": [
+        "SMSRC",
+        "SMSRC"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SMSRC": "100.00 %"
+    },
+    "rows": [
+      306
+    ]
+  },
+  {
+    "canonical_biomarker": "RL",
+    "occurrences": [
+      "RL",
+      "RL"
+    ],
+    "variants": {
+      "RL": [
+        "RL",
+        "RL"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "RL": "100.00 %"
+    },
+    "rows": [
+      306
+    ]
+  },
+  {
+    "canonical_biomarker": "CSU",
+    "occurrences": [
+      "CSU",
+      "CSU"
+    ],
+    "variants": {
+      "CSU": [
+        "CSU",
+        "CSU"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CSU": "100.00 %"
+    },
+    "rows": [
+      306,
+      311
+    ]
+  },
+  {
+    "canonical_biomarker": "SS",
+    "occurrences": [
+      "SS",
+      "SS"
+    ],
+    "variants": {
+      "SS": [
+        "SS",
+        "SS"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SS": "100.00 %"
+    },
+    "rows": [
+      310,
+      338
+    ]
+  },
+  {
+    "canonical_biomarker": "SF-20PF",
+    "occurrences": [
+      "SF-20PF",
+      "SF-36 PF"
+    ],
+    "variants": {
+      "SF-20PF": [
+        "SF-20PF"
+      ],
+      "SF-36 PF": [
+        "SF-36 PF"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "SF-20PF": "50.00 %",
+      "SF-36 PF": "50.00 %"
+    },
+    "rows": [
+      55,
+      324
+    ]
+  },
+  {
+    "canonical_biomarker": "CCAPS-SA",
+    "occurrences": [
+      "CCAPS-SA",
+      "CCAPS-SA"
+    ],
+    "variants": {
+      "CCAPS-SA": [
+        "CCAPS-SA",
+        "CCAPS-SA"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "CCAPS-SA": "100.00 %"
+    },
+    "rows": [
+      336
+    ]
+  },
+  {
+    "canonical_biomarker": "ΔRT",
+    "occurrences": [
+      "ΔRT",
+      "ΔRT"
+    ],
+    "variants": {
+      "ΔRT": [
+        "ΔRT",
+        "ΔRT"
+      ]
+    },
+    "total_count": "2 / 361",
+    "total_percentage": "0.55 %",
+    "variant_percentages": {
+      "ΔRT": "100.00 %"
+    },
+    "rows": [
+      352,
+      363
+    ]
+  }
+]

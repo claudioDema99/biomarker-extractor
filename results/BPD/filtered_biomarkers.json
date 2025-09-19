@@ -1,0 +1,195 @@
+[
+  {
+    "canonical_biomarker": "CGI‑I",
+    "total_count": "6 / 14",
+    "total_percentage": "42.86 %",
+    "variant_percentages": {
+      "CGI‑I": "33.33 %",
+      "PGI‑S": "33.33 %",
+      "CGI‑S": "33.33 %"
+    },
+    "rows": {
+      "CGI‑I": [
+        7,
+        11
+      ],
+      "PGI‑S": [
+        11,
+        13
+      ],
+      "CGI‑S": [
+        11,
+        13
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "DERS",
+    "total_count": "4 / 14",
+    "total_percentage": "28.57 %",
+    "variant_percentages": {
+      "DERS": "100.00 %"
+    },
+    "rows": {
+      "DERS": [
+        3,
+        13,
+        14,
+        15
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "C-SSRS",
+    "total_count": "4 / 14",
+    "total_percentage": "28.57 %",
+    "variant_percentages": {
+      "C-SSRS": "100.00 %"
+    },
+    "rows": {
+      "C-SSRS": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "CK",
+    "total_count": "4 / 14",
+    "total_percentage": "28.57 %",
+    "variant_percentages": {
+      "CK": "100.00 %"
+    },
+    "rows": {
+      "CK": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "ZAN‑BPD",
+    "total_count": "3 / 14",
+    "total_percentage": "21.43 %",
+    "variant_percentages": {
+      "ZAN-BPD": "33.33 %"
+    },
+    "rows": {
+      "ZAN-BPD": [
+        9,
+        13,
+        15
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "SAS",
+    "total_count": "3 / 14",
+    "total_percentage": "21.43 %",
+    "variant_percentages": {
+      "SAS": "100.00 %"
+    },
+    "rows": {
+      "SAS": [
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "BARS",
+    "total_count": "3 / 14",
+    "total_percentage": "21.43 %",
+    "variant_percentages": {
+      "BARS": "100.00 %"
+    },
+    "rows": {
+      "BARS": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "AIMS",
+    "total_count": "3 / 14",
+    "total_percentage": "21.43 %",
+    "variant_percentages": {
+      "AIMS": "100.00 %"
+    },
+    "rows": {
+      "AIMS": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "SCL-90-R",
+    "total_count": "2 / 14",
+    "total_percentage": "14.29 %",
+    "variant_percentages": {
+      "SCL-90-R": "100.00 %"
+    },
+    "rows": {
+      "SCL-90-R": [
+        6,
+        7
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "SDS",
+    "total_count": "2 / 14",
+    "total_percentage": "14.29 %",
+    "variant_percentages": {
+      "SDS": "100.00 %"
+    },
+    "rows": {
+      "SDS": [
+        6,
+        10
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "HR",
+    "total_count": "2 / 14",
+    "total_percentage": "14.29 %",
+    "variant_percentages": {
+      "HR": "100.00 %"
+    },
+    "rows": {
+      "HR": [
+        11
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "PRL",
+    "total_count": "2 / 14",
+    "total_percentage": "14.29 %",
+    "variant_percentages": {
+      "PRL": "100.00 %"
+    },
+    "rows": {
+      "PRL": [
+        11,
+        12
+      ]
+    }
+  },
+  {
+    "canonical_biomarker": "SC",
+    "total_count": "2 / 14",
+    "total_percentage": "14.29 %",
+    "variant_percentages": {
+      "SC": "100.00 %"
+    },
+    "rows": {
+      "SC": [
+        11,
+        14
+      ]
+    }
+  }
+]
